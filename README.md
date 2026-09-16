@@ -9,6 +9,7 @@ exámenes ni claves de respuesta** (las claves se revisan en clase).
 
 ## Cómo descargar
 
+- **Sitio web (recomendado):** <https://lara-montano.github.io/ingles-6-practica/> abre los simuladores con un clic y reproduce los audios sin descargar nada.
 - **Todo de una vez:** botón verde **Code → Download ZIP** (≈ 44 MB) y descomprime.
 - **Un archivo suelto:** entra a la carpeta, abre el archivo y usa el botón de descarga
   (*Download raw file*). Los audios son `.m4a`: se reproducen en cualquier teléfono o computadora.
