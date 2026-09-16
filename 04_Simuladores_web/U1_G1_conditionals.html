@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE CONDITIONALS MACHINE · English 6 · Unit 1 "The Prepared Mind"
+  Grammar 1 — the conditional system (zero, first, second, third + mixed)
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Three modes: Explore (the machine) · Build (produce) · Drill (graded).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 1 · The Conditionals Machine · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --vocab:#B0338A; --vocablt:#F7E6F1;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--green),var(--greendark)); color:#fff;
+    padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#CBE9D9; text-transform:uppercase}
+  header h1{font-size:clamp(25px,4.8vw,38px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#DFF2E8; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif;
+    background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--greendark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--greendark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--greendark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-green{background:var(--green)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--green); background:var(--greenlt); color:var(--greendark)}
+
+  /* ---------- machine ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 4px}
+  .leverbox{margin:12px 0 4px}
+  input[type=range]{-webkit-appearance:none; appearance:none; width:100%; height:14px; border-radius:999px;
+    background:linear-gradient(90deg,#1F7A4D 0%,#18937A 34%,#7A4FB0 67%,#C0392B 100%); outline:none; cursor:pointer}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none; width:32px; height:32px; border-radius:50%; background:#fff; border:4px solid var(--greendark); box-shadow:0 2px 8px rgba(0,0,0,.3); cursor:grab}
+  input[type=range]::-moz-range-thumb{width:26px; height:26px; border-radius:50%; background:#fff; border:4px solid var(--greendark); box-shadow:0 2px 8px rgba(0,0,0,.3); cursor:grab}
+  .stations{display:grid; grid-template-columns:repeat(4,1fr); gap:6px; margin-top:8px}
+  .stations button{border:0; background:none; font:800 12px Lato,sans-serif; color:#888; cursor:pointer; padding:6px 2px; border-radius:8px; line-height:1.25}
+  .stations button.on{background:#fff; box-shadow:0 1px 4px rgba(0,0,0,.12)}
+  .stations .em{display:block; font-size:18px}
+  .gauge{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; margin:8px 0 2px}
+  .gauge i{display:block; height:100%; border-radius:999px; transition:width .35s ease, background .35s ease}
+  .gaugelab{font-size:12px; font-weight:800; color:#888}
+  .sentence{font-size:clamp(18px,3.3vw,26px); font-weight:800; text-align:center; padding:20px 12px; background:var(--greenlt); border-radius:12px; margin:12px 0 8px; min-height:92px; display:flex; align-items:center; justify-content:center; flex-wrap:wrap}
+  .sentence.flip{animation:flip .3s ease}
+  @keyframes flip{from{opacity:0; transform:translateY(8px)} to{opacity:1}}
+  .vif,.vres{border-radius:6px; padding:0 5px; font-style:normal}
+  .vif{background:var(--grammarlt); color:var(--grammar); box-shadow:inset 0 -2px 0 var(--grammar)}
+  .vres{background:var(--navylt); color:var(--navy); box-shadow:inset 0 -2px 0 var(--navy)}
+  .vif.masked,.vres.masked{color:transparent; box-shadow:inset 0 -2px 0 currentColor; position:relative; cursor:pointer; min-width:52px}
+  .vif.masked::after,.vres.masked::after{content:"? "attr(data-hint); position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .revealbtn{display:block; margin:2px auto 0}
+  .ctx{text-align:center; color:#555; font-size:14px; min-height:22px; font-weight:600}
+  .legend{display:flex; gap:14px; justify-content:center; font-size:12px; font-weight:800; margin-top:8px; flex-wrap:wrap}
+  .legend .vif,.legend .vres{padding:1px 8px}
+  .typerow{display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:center; margin:12px 0 4px}
+  .typebadge{font-size:15px; padding:6px 16px; border-radius:999px; color:#fff; font-weight:900; letter-spacing:.02em}
+  .meaning{font-size:15px; font-weight:700}
+  .formula{text-align:center; font-family:ui-monospace,Menlo,Consolas,monospace; font-size:14px; font-weight:700; background:#fff; border:1.5px dashed var(--rule); border-radius:10px; padding:8px 10px; margin:8px auto 0; max-width:560px}
+  .rails{margin-top:14px}
+  .rail{display:flex; gap:6px; align-items:center; flex-wrap:wrap; margin:6px 0}
+  .rail .lab{font-size:12px; font-weight:900; width:80px; color:#888; text-transform:uppercase; letter-spacing:.04em}
+  .rail .cell{padding:5px 12px; border-radius:999px; border:2px solid var(--rule); font-size:13px; font-weight:700; color:#999; background:#fff}
+  .rail.if .cell.on{border-color:var(--grammar); color:var(--grammar); background:var(--grammarlt)}
+  .rail.res .cell.on{border-color:var(--navy); color:var(--navy); background:var(--navylt)}
+  .stepnote{text-align:center; font-size:13px; font-weight:800; color:var(--greendark); margin-top:8px}
+
+  .comma{border:2px solid var(--grammar); border-radius:12px; padding:12px 14px; background:var(--grammarlt); margin-top:6px}
+  .comma .seg,.seg2{display:flex; border:2px solid var(--grammar); border-radius:999px; overflow:hidden; width:max-content; margin:8px 0}
+  .comma .seg button{border:0; background:#fff; padding:6px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:var(--grammar)}
+  .comma .seg button.on{background:var(--grammar); color:#fff}
+  .comma .demo{font-size:18px; font-weight:800; margin-top:4px}
+  .comma .demo b{color:var(--think)}
+
+  /* mixed timeline (now a first-class visible card) */
+  .seg2{border-color:var(--rule)}
+  .seg2 button{border:0; background:#fff; padding:7px 15px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .mixrow{display:flex; gap:18px; flex-wrap:wrap; margin-bottom:10px}
+  .mixrow .lab{font-size:12px; font-weight:900; color:#888; text-transform:uppercase; display:block; margin-bottom:4px}
+  .zones{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:10px 0}
+  .zone{border-radius:10px; padding:10px; min-height:64px}
+  .zone.past{background:var(--soft); border:2px dashed var(--rule)}
+  .zone.now{background:var(--greenlt); border:2px dashed var(--green)}
+  .zone .zlab{font-size:11px; font-weight:900; letter-spacing:.08em; color:#888; text-transform:uppercase}
+  .zone.now .zlab{color:var(--greendark)}
+  .half{display:inline-block; margin-top:6px; padding:5px 10px; border-radius:8px; font-weight:800; font-size:14px}
+  .half.ifh{background:var(--grammarlt); color:var(--grammar)}
+  .half.resh{background:var(--navylt); color:var(--navy)}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--green); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.orange{background:var(--grammar)} .btn.ghost{background:#fff; color:var(--greendark); border:2px solid var(--green)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--green); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--green)}
+  .segbig button.on{background:var(--green); color:#fff}
+  .bctx{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--excep); font-size:16px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips.ifg button.on{border-color:var(--grammar); background:var(--grammarlt); color:var(--grammar)}
+  .bchips.resg button.on{border-color:var(--navy); background:var(--navylt); color:var(--navy)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(18px,3vw,24px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--greendark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--greendark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--green); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.9vw,22px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick,.stn .w.rightpick{background:var(--think); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--greendark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--green); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ .rail .lab{width:100%} nav button{padding:9px 12px; font-size:14px} .zones{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">⚗️</span>
+  <div class="wrap">
+    <div class="kicker">English 6 · Unit 1 · The Prepared Mind</div>
+    <h1>⚙️ The Conditionals Machine</h1>
+    <div class="sub"><b>Grammar 1</b> — the conditional system: zero · first · second · third · mixed. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🎛️ Explore how it works</span><span>🔧 Build your own</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="machine">🎛️ Explore<small>see the rule move</small></button>
+    <button data-tab="build">🔧 Build<small>make one yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ============================ EXPLORE / MACHINE ============================ -->
+  <section class="tab on" id="tab-machine">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Pull the reality lever</h2>
+      <p class="muted">The golden rule: as the situation becomes <b>less real</b>, the verb <b>"moves one step back"</b>
+        in time. Pick a scenario, move the lever, and the <b>same idea</b> changes conditional.
+        <span class="es">(Cuanto menos real es la situación, el verbo retrocede un paso.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the verbs, guess, then reveal</label>
+
+      <h3>1 · Choose a science scenario</h3>
+      <div class="chips" id="scChips"></div>
+
+      <h3>2 · Move the lever from real to imaginary</h3>
+      <div class="leverbox">
+        <input type="range" id="lever" min="0" max="3" step="1" value="0" aria-label="Reality lever">
+        <div class="stations" id="stations"></div>
+      </div>
+      <div class="gauge"><i id="gaugeFill"></i></div>
+      <div class="gaugelab" id="gaugeLab"></div>
+
+      <div class="sentence" id="sentence"></div>
+      <div style="text-align:center"><button class="btn ghost small revealbtn" id="revealBtn" style="display:none">Reveal the verbs ✓</button></div>
+      <div class="ctx" id="ctx"></div>
+      <div class="legend"><span class="vif">if-clause verb</span><span class="vres">result verb</span></div>
+
+      <div class="typerow"><span class="typebadge" id="typeBadge"></span><span class="meaning" id="meaning"></span></div>
+      <div class="formula" id="formula"></div>
+
+      <div class="rails">
+        <div class="rail if"><span class="lab">if-clause</span>
+          <span class="cell" data-i="0">present simple</span><span class="cell" data-i="1">past simple</span><span class="cell" data-i="2">past perfect</span></div>
+        <div class="rail res"><span class="lab">result</span>
+          <span class="cell" data-i="0">present simple</span><span class="cell" data-i="1">will + base</span><span class="cell" data-i="2">would + base</span><span class="cell" data-i="3">would have + p.p.</span></div>
+      </div>
+      <div class="stepnote">⬅️ One step less real = both verbs move one step back in time.</div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Special case</span>
+      <h2>Mixed conditionals — the timeline test</h2>
+      <p class="muted">Real life mixes times, so conditionals mix too. Set each half on the timeline: both halves in the
+        <b>same</b> zone → a normal conditional; halves in <b>different</b> zones → a <b>mixed</b> conditional.</p>
+      <div class="mixrow">
+        <div><span class="lab">if-clause (the cause)</span>
+          <div class="seg2" id="mixIf"><button data-v="past" class="on">PAST (unreal)</button><button data-v="now">NOW (unreal)</button></div></div>
+        <div><span class="lab">result (the effect)</span>
+          <div class="seg2" id="mixRes"><button data-v="now" class="on">NOW</button><button data-v="past">PAST</button></div></div>
+      </div>
+      <div class="zones">
+        <div class="zone past"><span class="zlab">◀ Past (closed)</span><div id="zonePast"></div></div>
+        <div class="zone now"><span class="zlab">Now / today ▶</span><div id="zoneNow"></div></div>
+      </div>
+      <div class="sentence" id="mixSentence" style="background:var(--exceplt); font-size:20px"></div>
+      <div class="typerow"><span class="typebadge" id="mixBadge" style="background:var(--excep)"></span><span class="meaning" id="mixMeaning"></span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 The comma rule</span>
+      <h2>Which order? Then the comma follows</h2>
+      <p class="muted"><b>if</b>-clause first → comma in the middle. Result first → <b>no</b> comma.</p>
+      <div class="comma"><div class="seg" id="commaSeg"><button data-v="iffirst" class="on">if-clause first</button><button data-v="resfirst">result first</button></div><div class="demo" id="commaDemo"></div></div>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> visualises Grammar 1's "one step back" rule, the mixed-conditional timeline (the manual's diagram) and the comma rule. Turn on <b>Predict first</b> to keep the manual's "guess before you check" habit.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> a conditional by choosing the tense of each half, then <i>transform</i> real situations — the manual's rewrite exercises, with instant validation.</li>
+          <li><b>Drill</b> merges the old quizzes into one graded engine (★ identify/choose · ★★ fix the error/complete · ★★★ transform/inversion/mixed) with a running score and streak.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============================ BUILD ============================ -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-green">🔧 Your turn to produce</span>
+      <h2>Build a conditional</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <!-- assemble -->
+      <div id="assembleBox">
+        <p class="muted">Read the situation, then choose the right <b>tense for each half</b>. The machine builds the sentence — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">The if-clause verb should be…</div><div class="bchips ifg" id="ifChips">
+          <button data-v="present">present simple</button><button data-v="past">past simple</button><button data-v="pastperf">past perfect</button></div></div>
+        <div class="bgroup"><div class="glab">The result verb should be…</div><div class="bchips resg" id="resChips">
+          <button data-v="pres">present simple</button><button data-v="will">will + base</button><button data-v="would">would + base</button><button data-v="wouldhave">would have + p.p.</button></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot">
+          <button class="btn" id="bBuild">Build it 🔧</button>
+          <button class="btn ghost" id="bNext">New situation →</button>
+          <span class="bscore" id="bScore">Built: 0</span>
+        </div>
+      </div>
+
+      <!-- transform -->
+      <div id="transformBox" style="display:none">
+        <p class="muted">Rewrite each situation as a conditional. Type your sentence and check it against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="Start with If …"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next situation →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ DRILL ============================ -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ identify &amp; choose · ★★ fix the error &amp; complete · ★★★ transform, inversion &amp; mixed.
+        Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead">
+        <div class="qbar"><i id="dFill" style="width:0%"></i></div>
+        <span class="sc" id="dScore">Score: 0</span>
+        <span class="st" id="dStreak">🔥 0</span>
+      </div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 6 · Unit 1 «The Prepared Mind» · Grammar 1 — the conditional system · Level B1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE CONDITIONALS MACHINE — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 6 Class Manual (Grammar 1).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[.,]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · THE MACHINE
+===================================================================== */
+var TYPES = [
+  {name:"ZERO CONDITIONAL",  color:"var(--green)",  meaning:"a fact that is always true",
+   formula:"if + present simple  →  present simple", reality:100, station:"ALWAYS TRUE", em:"🔬", ifIdx:0, resIdx:0},
+  {name:"FIRST CONDITIONAL", color:"#18937A", meaning:"a real, possible future",
+   formula:"if + present simple  →  will + base form", reality:70, station:"REAL FUTURE", em:"🎯", ifIdx:0, resIdx:1},
+  {name:"SECOND CONDITIONAL", color:"var(--excep)", meaning:"an unreal / imaginary present",
+   formula:"if + past simple  →  would + base form", reality:25, station:"IMAGINARY NOW", em:"💭", ifIdx:1, resIdx:2},
+  {name:"THIRD CONDITIONAL", color:"var(--think)", meaning:"an unreal / imaginary past",
+   formula:"if + past perfect  →  would have + past participle", reality:0, station:"IMAGINARY PAST", em:"⏳", ifIdx:2, resIdx:3}
+];
+/* each step: sentence split so verbs can be masked. ifv/resv are the verb texts. */
+var SCEN = {
+  fleming:{label:"🧫 Fleming & the mold", steps:[
+    {pre:"If bacteria ", ifv:"enter", mid:" a wound, they ", resv:"cause", post:" an infection.", c:"Always true — a fact of biology. Real + always → zero."},
+    {pre:"If we ", ifv:"test", mid:" this mold, we ", resv:"will find", post:" an antibiotic.", c:"A real, possible future — we can actually test it. Real + future → first."},
+    {pre:"If I ", ifv:"worked", mid:" in Fleming’s lab, I ", resv:"would study", post:" every strange dish.", c:"Imaginary now — I don’t work there. Unreal + now → second."},
+    {pre:"If Fleming ", ifv:"had cleaned", mid:" his lab, he ", resv:"wouldn’t have discovered", post:" penicillin.", c:"An imaginary past — luckily he didn’t. Unreal + past → third."}
+  ]},
+  funding:{label:"💰 The lab funding", steps:[
+    {pre:"If a lab ", ifv:"runs", mid:" out of money, its research ", resv:"stops", post:".", c:"A general truth about how labs work. Real + always → zero."},
+    {pre:"If the funding ", ifv:"arrives", mid:" next month, we ", resv:"will buy", post:" a new microscope.", c:"A real future possibility — it may well arrive. Real + future → first."},
+    {pre:"If we ", ifv:"had", mid:" a bigger lab, we ", resv:"could run", post:" more experiments.", c:"Imaginary now — our lab is small. Unreal + now → second."},
+    {pre:"If the grant ", ifv:"had arrived", mid:" on time, we ", resv:"would have finished", post:" the study.", c:"An imaginary past — it arrived late. Unreal + past → third."}
+  ]},
+  glass:{label:"🔥 Heating glass", steps:[
+    {pre:"If you ", ifv:"heat", mid:" glass, it ", resv:"becomes", post:" soft.", c:"A law of physics — always true. Real + always → zero."},
+    {pre:"If you ", ifv:"heat", mid:" this beaker, the liquid ", resv:"will expand", post:".", c:"A real future action you can do right now. Real + future → first."},
+    {pre:"If glass ", ifv:"weren’t", mid:" so fragile, we ", resv:"would use", post:" it everywhere.", c:"Imaginary now — glass is fragile. Unreal + now → second (were for all persons)."},
+    {pre:"If the technician ", ifv:"had heated", mid:" it slowly, it ", resv:"wouldn’t have cracked", post:".", c:"An imaginary past — it cracked. Unreal + past → third."}
+  ]}
+};
+var curScen = "fleming", predictMode = false, revealed = false;
+Object.keys(SCEN).forEach(function(k){
+  var b = document.createElement("button"); b.innerHTML = SCEN[k].label; b.dataset.k = k;
+  if(k===curScen) b.classList.add("on");
+  b.addEventListener("click", function(){ curScen=k; document.querySelectorAll("#scChips button").forEach(function(x){ x.classList.toggle("on", x.dataset.k===k); }); revealed=false; renderMachine(true); });
+  $("scChips").appendChild(b);
+});
+TYPES.forEach(function(t,i){
+  var b = document.createElement("button"); b.innerHTML = '<span class="em">'+t.em+'</span>'+t.station;
+  b.addEventListener("click", function(){ $("lever").value=i; revealed=false; renderMachine(true); });
+  $("stations").appendChild(b);
+});
+$("lever").addEventListener("input", function(){ revealed=false; renderMachine(true); });
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderMachine(false); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderMachine(false); });
+function renderMachine(animate){
+  var i=+$("lever").value, t=TYPES[i], sc=SCEN[curScen].steps[i];
+  var mask = predictMode && !revealed;
+  var ifSpan = '<span class="vif'+(mask?" masked":"")+'" data-hint="if-verb">'+sc.ifv+'</span>';
+  var resSpan = '<span class="vres'+(mask?" masked":"")+'" data-hint="result">'+sc.resv+'</span>';
+  var s=$("sentence"); s.innerHTML = "<span>"+sc.pre+ifSpan+sc.mid+resSpan+sc.post+"</span>";
+  if(animate){ s.classList.remove("flip"); void s.offsetWidth; s.classList.add("flip"); }
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  $("ctx").textContent = mask ? "Predict both verbs, then reveal." : sc.c;
+  $("typeBadge").textContent=t.name; $("typeBadge").style.background=t.color;
+  $("meaning").textContent="= "+t.meaning;
+  $("formula").textContent=t.formula;
+  $("gaugeFill").style.width=t.reality+"%"; $("gaugeFill").style.background=t.color;
+  $("gaugeLab").textContent="Reality level: "+t.reality+"%"+(t.reality===0?" — the past is closed":"");
+  document.querySelectorAll("#stations button").forEach(function(b,j){ b.classList.toggle("on", j===i); });
+  document.querySelectorAll(".rail.if .cell").forEach(function(c){ c.classList.toggle("on", +c.dataset.i===t.ifIdx); });
+  document.querySelectorAll(".rail.res .cell").forEach(function(c){ c.classList.toggle("on", +c.dataset.i===t.resIdx); });
+  if(mask){ document.querySelectorAll("#sentence .masked").forEach(function(el){ el.addEventListener("click", function(){ revealed=true; renderMachine(false); }); }); }
+}
+renderMachine(false);
+
+/* mixed timeline */
+var MIX = {
+  "past|now":{s:'If I <i class="vif">had studied</i> medicine, I <i class="vres">would be</i> a doctor <b>now</b>.', badge:"⭐ MIXED", m:"past cause → present result (past perfect → would + base)", star:true, ifH:"If I had studied medicine", resH:"I’d be a doctor now", ifZone:"past", resZone:"now"},
+  "now|past":{s:'If I <i class="vif">weren’t</i> afraid of blood, I <i class="vres">would have studied</i> medicine.', badge:"⭐ MIXED", m:"present cause → past result (past simple → would have + p.p.)", star:true, ifH:"If I weren’t afraid of blood", resH:"I’d have studied medicine", ifZone:"now", resZone:"past"},
+  "past|past":{s:'If I <i class="vif">had studied</i> medicine, I <i class="vres">would have become</i> a doctor.', badge:"THIRD CONDITIONAL", m:"both halves in the PAST — a normal third conditional", star:false, ifH:"If I had studied medicine", resH:"I’d have become a doctor", ifZone:"past", resZone:"past"},
+  "now|now":{s:'If I <i class="vif">weren’t</i> afraid of blood, I <i class="vres">would study</i> medicine.', badge:"SECOND CONDITIONAL", m:"both halves NOW — a normal second conditional", star:false, ifH:"If I weren’t afraid of blood", resH:"I’d study medicine", ifZone:"now", resZone:"now"}
+};
+var mixIf="past", mixRes="now";
+function segInit(id,setter){ document.querySelectorAll("#"+id+" button").forEach(function(b){ b.addEventListener("click", function(){ document.querySelectorAll("#"+id+" button").forEach(function(x){ x.classList.toggle("on", x===b); }); setter(b.dataset.v); renderMix(); }); }); }
+segInit("mixIf", function(v){ mixIf=v; }); segInit("mixRes", function(v){ mixRes=v; });
+function renderMix(){
+  var m=MIX[mixIf+"|"+mixRes], s=$("mixSentence"); s.innerHTML="<span>"+m.s+"</span>";
+  s.classList.remove("flip"); void s.offsetWidth; s.classList.add("flip");
+  $("mixBadge").textContent=m.badge; $("mixBadge").style.background = m.star?"var(--excep)":(m.badge.indexOf("SECOND")>=0?"var(--excep)":"var(--think)");
+  $("mixMeaning").textContent="= "+m.m;
+  $("zonePast").innerHTML=""; $("zoneNow").innerHTML="";
+  $(m.ifZone==="past"?"zonePast":"zoneNow").innerHTML += '<span class="half ifh">'+m.ifH+'</span>';
+  $(m.resZone==="past"?"zonePast":"zoneNow").innerHTML += '<span class="half resh">'+m.resH+'</span>';
+}
+renderMix();
+
+/* comma */
+var commaOrder="iffirst";
+function renderComma(){ $("commaDemo").innerHTML = commaOrder==="iffirst" ? 'If you heat ice<b>,</b> it melts. &nbsp;<span class="es" style="font-size:14px">— comma needed</span>' : 'Ice melts if you heat it. &nbsp;<span class="es" style="font-size:14px">— no comma</span>'; }
+document.querySelectorAll("#commaSeg button").forEach(function(b){ b.addEventListener("click", function(){ commaOrder=b.dataset.v; document.querySelectorAll("#commaSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); renderComma(); }); });
+renderComma();
+
+/* =====================================================================
+   BUILD · assemble + transform
+===================================================================== */
+var RULE = {
+  ZERO:"Zero: present → present (a general truth).",
+  FIRST:"First: present → will + base (a real future).",
+  SECOND:"Second: past → would + base (imaginary now; use <i>were</i> for all persons).",
+  THIRD:"Third: past perfect → would have + p.p. (imaginary past).",
+  MIXED:"Mixed: past perfect → would + base (past cause, present result)."
+};
+var BUILD = [
+  {ctx:"A possible result of tomorrow’s weather.", sub:"Real future", em:"🎯", ifC:"present", resC:"will", type:"FIRST",
+   tpl:"If it {IF} tomorrow, we {RES} the field trip.", ifv:"rains", resv:"will cancel"},
+  {ctx:"A fact of chemistry — it happens every time.", sub:"Always true", em:"🔬", ifC:"present", resC:"pres", type:"ZERO",
+   tpl:"If you {IF} blue and yellow, you {RES} green.", ifv:"mix", resv:"get"},
+  {ctx:"You are not taller — you’re just imagining it.", sub:"Imaginary now", em:"💭", ifC:"past", resC:"would", type:"SECOND",
+   tpl:"If I {IF} taller, I {RES} basketball.", ifv:"were", resv:"would play"},
+  {ctx:"A regret about last week’s exam.", sub:"Imaginary past", em:"⏳", ifC:"pastperf", resC:"wouldhave", type:"THIRD",
+   tpl:"If she {IF} harder, she {RES} the exam.", ifv:"had studied", resv:"would have passed"},
+  {ctx:"You missed the bus, so you’re late right now.", sub:"Past cause → present result", em:"⭐", ifC:"pastperf", resC:"would", type:"MIXED",
+   tpl:"If I {IF} the bus, I {RES} at work now.", ifv:"hadn’t missed", resv:"would be"},
+  {ctx:"A lab safety instruction.", sub:"Real future", em:"🎯", ifC:"present", resC:"will", type:"FIRST",
+   tpl:"If the alarm {IF}, everyone {RES} the building.", ifv:"rings", resv:"will leave"}
+];
+var bi=0, bIf=null, bRes=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function renderBuild(){
+  var it=BUILD[bi]; bIf=null; bRes=null;
+  $("bctx").innerHTML = it.em+" "+it.ctx+"<small>Target: "+it.sub+"</small>";
+  document.querySelectorAll("#ifChips button, #resChips button").forEach(function(x){ x.classList.remove("on","wrongpick"); });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+document.querySelectorAll("#ifChips button").forEach(function(b){ b.addEventListener("click", function(){ bIf=b.dataset.v; document.querySelectorAll("#ifChips button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); }); });
+document.querySelectorAll("#resChips button").forEach(function(b){ b.addEventListener("click", function(){ bRes=b.dataset.v; document.querySelectorAll("#resChips button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); }); });
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bIf||!bRes){ r.className="bresult bad"; r.innerHTML="Choose a tense for <b>both</b> halves first."; return; }
+  var okIf=bIf===it.ifC, okRes=bRes===it.resC;
+  if(okIf&&okRes){
+    var sent=it.tpl.replace("{IF}",'<span class="vif">'+it.ifv+'</span>').replace("{RES}",'<span class="vres">'+it.resv+'</span>');
+    r.className="bresult good"; r.innerHTML="✅ "+sent+'<div class="bnote">'+RULE[it.type]+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    if(!okIf) document.querySelector('#ifChips button[data-v="'+bIf+'"]').classList.add("wrongpick");
+    if(!okRes) document.querySelector('#resChips button[data-v="'+bRes+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ Not yet. "+(okIf?"":"Check the if-clause. ")+(okRes?"":"Check the result. ")+"<br><span class='bnote'>Hint — "+RULE[it.type]+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+/* transform */
+var TRANS = [
+  {ctx:"I didn’t back up my files, so I lost my data. <b>(third)</b>", accept:["if i had backed up my files i wouldn't have lost my data"], model:"If I had backed up my files, I wouldn’t have lost my data."},
+  {ctx:"She doesn’t speak Japanese, so she won’t apply for the Tokyo internship. <b>(second)</b>", accept:["if she spoke japanese she would apply for the tokyo internship"], model:"If she spoke Japanese, she would apply for the Tokyo internship."},
+  {ctx:"Maybe I’ll get a scholarship. Then I’ll study biotechnology. <b>(first)</b>", accept:["if i get a scholarship i'll study biotechnology","if i get a scholarship i will study biotechnology"], model:"If I get a scholarship, I’ll study biotechnology."},
+  {ctx:"He drank three coffees, so he can’t sleep now. <b>(mixed)</b>", accept:["if he hadn't drunk three coffees he could sleep now","if he hadn't drunk three coffees he would be able to sleep now"], model:"If he hadn’t drunk three coffees, he could sleep now."},
+  {ctx:"You press this button and the machine stops. <b>(zero)</b>", accept:["if you press this button the machine stops"], model:"If you press this button, the machine stops."},
+  {ctx:"We didn’t measure the temperature, so we can’t explain the result now. <b>(mixed)</b>", accept:["if we had measured the temperature we could explain the result now"], model:"If we had measured the temperature, we could explain the result now."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML="Rewrite as a conditional: "+it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value);
+  var ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow (identify/choose · fix/complete · transform/inversion/mixed)
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Identify the type", q:"“If you heat a magnet too much, it loses its magnetism.”",
+   o:["Zero conditional","First conditional","Second conditional","Third conditional"], a:0, w:"Present → present: a general truth. 🔬"},
+  {kind:"mc", diff:1, tag:"Choose the form", q:"“If you ___ tonight, you’ll pass tomorrow.”",
+   o:["study","studied","will study"], a:0, w:"First conditional keeps the present in the if-clause. No <i>will</i> there."},
+  {kind:"mc", diff:1, tag:"Identify the type", q:"“If our team were on the committee, we would fund research.”",
+   o:["Zero","First","Second","Third"], a:2, w:"Past + would: an unreal present. 💭"},
+  {kind:"error", diff:2, tag:"Fix the error", words:["If","I","will see","her,","I’ll","give","her","the","message."], bad:2,
+   fixOld:"will see", fixNew:"see", w:"Never <i>will</i> in the if-clause. Spanish uses the present (“si la <b>veo</b>”) — English does the same."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["Unless","you","don’t","hurry,","we’ll","be","late."], bad:2,
+   fixOld:"don’t hurry", fixNew:"hurry", w:"<b>Unless</b> already means “if… not”. Drop the <i>don’t</i>."},
+  {kind:"fill", diff:2, tag:"Complete", q:"“If water ___ (reach) 100 °C, it boils.”", accept:["reaches"], w:"Zero conditional: present simple (a fact)."},
+  {kind:"fill", diff:2, tag:"Complete", q:"“If I ___ (be) a scientist, I would study the oceans.”", accept:["were"], w:"Second conditional: use <i>were</i> for all persons."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["When","I","win","the","lottery,","I","would","buy","a","telescope."], bad:6,
+   fixOld:"would", fixNew:"will", w:"A real future after <b>when</b> takes <i>will</i>, not would."},
+  {kind:"mc", diff:3, tag:"Mixed conditional", q:"“We ___ lost now if you had brought the map.”",
+   o:["wouldn’t be","wouldn’t have been","aren’t","won’t be"], a:0, w:"MIXED: past cause (had brought) → present result (“now”) = would + base."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["If","he","would have asked","me,","I","would","have","said","yes."], bad:2,
+   fixOld:"would have asked", fixNew:"had asked", w:"Third conditional needs the <b>past perfect</b> in the if-clause: <i>If he had asked…</i>"},
+  {kind:"fill", diff:3, tag:"Inversion", q:"Formal, no “if”: “___ I known about the meeting, I would have attended.”", accept:["had"], w:"Drop <i>if</i> and invert: <b>Had I known…</b>"},
+  {kind:"fill", diff:3, tag:"Transform (mixed)", q:"Rewrite: “I didn’t sleep, so I’m tired now.”", accept:["if i had slept i wouldn't be tired now","if i had slept i would not be tired now"], w:"Past cause → present result: If I had slept, I wouldn’t be tired now."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("cond_drill_best")||0); if(dscore>best){ store("cond_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Mastered. You’re ready for the ★★★ homework." : dscore>=8?"Strong — review the exceptions box and go again." : "Re-read Grammar 1, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j; var ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, '<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value); var ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

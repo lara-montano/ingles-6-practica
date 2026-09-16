@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE REPORTING MACHINE · English 6 · Unit 2 "Wish You Were Here"
+  Grammar 7 — reported speech (backshift, say/tell, questions, commands)
+  Three modes: Explore (direct→reported) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 7 · The Reporting Machine · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --teal:#0E7C7B; --tealdark:#09504F; --teallt:#E1F1F0;
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--teal),var(--tealdark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#BFE6E4; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#D6EEED; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--tealdark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--tealdark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--tealdark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-teal{background:var(--teal)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--teal); background:var(--teallt); color:var(--tealdark)}
+
+  /* ---------- transformer spotlight ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .xcard{border-radius:12px; padding:14px 16px; margin:8px 0; position:relative}
+  .xcard .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase}
+  .xcard .snt{font-size:clamp(18px,3.1vw,24px); font-weight:800; margin-top:4px; line-height:1.55}
+  .xdirect{background:var(--navylt); border:2px solid var(--navy)}
+  .xdirect .role{color:var(--navy)}
+  .xreported{background:var(--teallt); border:2px solid var(--teal)}
+  .xreported .role{color:var(--tealdark)}
+  .arrowdown{text-align:center; font-size:26px; color:var(--grammar); margin:-2px 0}
+  .rrep{background:var(--teallt); color:var(--tealdark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--teal)}
+  .rverb{background:var(--grammarlt); color:var(--grammar); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--grammar)}
+  .rpron{background:#D8EFE1; color:var(--greendark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--green)}
+  .rtime{background:var(--exceplt); color:var(--excep); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--excep)}
+  .rverb.masked{color:transparent; box-shadow:inset 0 -2px 0 var(--grammar); position:relative; cursor:pointer; min-width:56px; display:inline-block}
+  .rverb.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .changes{list-style:none; margin:10px 0 0}
+  .changes li{position:relative; padding:3px 0 3px 22px; font-size:14px; font-weight:600; color:#555}
+  .changes li::before{content:"→"; position:absolute; left:0; top:3px; color:var(--grammar); font-weight:900}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px}
+  .legend span{border-radius:6px; padding:1px 8px}
+
+  /* backshift dial */
+  .tensechips{display:flex; gap:6px; flex-wrap:wrap; margin:8px 0}
+  .tensechips button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 11px; font:700 13px Lato,sans-serif; cursor:pointer}
+  .tensechips button.on{border-color:var(--navy); background:var(--navylt); color:var(--navy)}
+  .tenseout{background:var(--soft); border-radius:12px; padding:16px; text-align:center; margin-top:6px}
+  .tenseout .map{font-size:clamp(17px,2.8vw,22px); font-weight:800}
+  .tenseout .map .a{color:var(--navy)} .tenseout .map .b{color:var(--grammar)}
+  .tenseout .ex{font-size:14px; color:#555; margin-top:8px; font-weight:600}
+
+  /* special cases selector */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+  .shiftgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:6px; margin-top:4px}
+  .shiftgrid div{background:#fff; border:1.5px solid var(--rule); border-radius:8px; padding:6px 10px; font-size:14px; font-weight:700}
+  .shiftgrid .a{color:var(--navy)} .shiftgrid .b{color:var(--excep)}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--teal); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--tealdark); border:2px solid var(--teal)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--teal); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--teal)}
+  .segbig button.on{background:var(--teal); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--teal); background:var(--teallt); color:var(--tealdark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--tealdark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--tealdark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--teal); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick,.stn .w.rightpick{background:var(--think); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--tealdark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--teal); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🗣️</span>
+  <div class="wrap">
+    <div class="kicker">English 6 · Unit 2 · Wish You Were Here</div>
+    <h1>🗣️ The Reporting Machine</h1>
+    <div class="sub"><b>Grammar 7</b> — reported speech: backshift, <i>say/tell</i>, questions &amp; commands. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🔁 Explore the shift</span><span>🔧 Build a report</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🔁 Explore<small>watch it shift</small></button>
+    <button data-tab="build">🔧 Build<small>report it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>From “quote” to report: the backshift</h2>
+      <p class="muted">When we report words later, the moment of speaking is now in the <b>past</b>, so the verb
+        <b>“shifts one tense back”</b>. Pronouns and time/place words also move. Pick an example and see what
+        changes. <span class="es">(El verbo retrocede un tiempo; también cambian pronombres y palabras de tiempo/lugar.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the shifted verb, guess, then reveal</label>
+
+      <h3>1 · Choose what was said</h3>
+      <div class="chips" id="scChips"></div>
+
+      <div class="xcard xdirect"><div class="role">Direct speech — the exact words</div><div class="snt" id="directSnt"></div></div>
+      <div class="arrowdown">⬇</div>
+      <div class="xcard xreported"><div class="role">Reported speech — told later</div><div class="snt" id="reportedSnt"></div></div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the shifted verb ✓</button></div>
+
+      <h3>What changed?</h3>
+      <ul class="changes" id="changes"></ul>
+      <div class="legend"><span class="rrep">say / tell</span><span class="rverb">verb (backshift)</span><span class="rpron">pronoun</span><span class="rtime">time / place / linker</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">💡 The backshift dial</span>
+      <h2>One tense back — every form</h2>
+      <p class="muted">Tap a direct-speech form to see what it becomes in a report.
+        <span class="es">(Regla general: cada forma retrocede un paso.)</span></p>
+      <div class="tensechips" id="dialChips"></div>
+      <div class="tenseout"><div class="map" id="dialMap"></div><div class="ex" id="dialEx"></div></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ The other changes &amp; traps</span>
+      <h2>Say vs tell, time words &amp; when NOT to shift</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="saytell" class="on">say vs tell</button><button data-v="timeplace">time &amp; place</button><button data-v="stilltrue">still true</button><button data-v="modals">modals</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> shows Grammar 7's backshift on statements, questions and commands, colour-coding every change (reporting verb, verb backshift, pronoun, time/place). The dial is the tense-shift rule; the special-cases card covers say/tell, time &amp; place words, "no shift when still true", and modals.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> a report by choosing the backshifted verb, then <i>transform</i> full statements, questions and commands (exercises A–C), with validation.</li>
+          <li><b>Drill</b> merges the quizzes into one graded engine (★ say/tell &amp; word order · ★★ fix the error/backshift · ★★★ report questions &amp; commands, still-true, must) with a score and streak.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-teal">🔧 Your turn to produce</span>
+      <h2>Build a report</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the exact words, then choose the <b>backshifted verb</b> the report needs. The machine builds it — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">The reported verb should be…</div><div class="bchips" id="verbChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New quote →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Report each sentence — statement, question or command. Type it and check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the reported sentence"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next sentence →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ say/tell &amp; word order · ★★ fix the error &amp; backshift · ★★★ report questions &amp; commands.
+        Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 6 · Unit 2 «Wish You Were Here» · Grammar 7 — reported speech · Level B1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE REPORTING MACHINE — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 6 Class Manual (Grammar 7).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · direct → reported spotlight
+===================================================================== */
+var SCEN = {
+  statement:{label:"💬 A statement",
+    direct:'“I <b>am booking</b> the flights <b>now</b>,” said Ana.',
+    reported:'Ana <span class="rrep">said</span> (that) <span class="rpron">she</span> <span class="rverb">was booking</span> the flights <span class="rtime">then</span>.',
+    changes:["present → past: <i>am booking</i> → <b>was booking</b>", "pronoun: <i>I</i> → <b>she</b>", "time word: <i>now</i> → <b>then</b>"]},
+  whq:{label:"❓ A wh- question",
+    direct:'“Where <b>do you live</b>?” she asked.',
+    reported:'She <span class="rrep">asked</span> me where <span class="rpron">I</span> <span class="rverb">lived</span>.',
+    changes:["statement word order + no <i>do</i>: <i>do you live</i> → <b>I lived</b>", "keep the question word <i>where</i>", "present → past"]},
+  ynq:{label:"❓ A yes/no question",
+    direct:'“<b>Are you</b> ready?” he asked.',
+    reported:'He <span class="rrep">asked</span> <span class="rtime">whether</span> <span class="rpron">I</span> <span class="rverb">was</span> ready.',
+    changes:["yes/no question → add <b>if / whether</b>", "statement word order: <i>are you</i> → <b>I was</b>", "present → past"]},
+  command:{label:"📢 A command",
+    direct:'“<b>Wait here</b>,” she said.',
+    reported:'She <span class="rrep">told</span> <span class="rpron">me</span> <span class="rverb">to wait</span> <span class="rtime">there</span>.',
+    changes:["command → <b>tell + object + to +</b> base verb", "<i>say</i> → <b>told me</b> (tell needs a person)", "place word: <i>here</i> → <b>there</b>"]}
+};
+var curScen = "statement", predictMode = false, revealed = false;
+Object.keys(SCEN).forEach(function(k){
+  var b = document.createElement("button"); b.innerHTML = SCEN[k].label; b.dataset.k = k;
+  if(k===curScen) b.classList.add("on");
+  b.addEventListener("click", function(){ curScen=k; document.querySelectorAll("#scChips button").forEach(function(x){ x.classList.toggle("on", x.dataset.k===k); }); revealed=false; renderScen(); });
+  $("scChips").appendChild(b);
+});
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderScen(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderScen(); });
+function renderScen(){
+  var s = SCEN[curScen];
+  $("directSnt").innerHTML = s.direct;
+  $("reportedSnt").innerHTML = s.reported;
+  var ul=$("changes"); ul.innerHTML="";
+  s.changes.forEach(function(c){ var li=document.createElement("li"); li.innerHTML=c; ul.appendChild(li); });
+  var mask = predictMode && !revealed;
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask){
+    document.querySelectorAll("#reportedSnt .rverb").forEach(function(el){ el.classList.add("masked"); el.addEventListener("click", function(){ revealed=true; renderScen(); }); });
+  }
+}
+renderScen();
+
+/* backshift dial */
+var DIAL = [
+  {t:"present simple",   map:'<span class="a">present simple</span> → <span class="b">past simple</span>', ex:'“I <b>live</b> here.” → She said she <b>lived</b> there.'},
+  {t:"present continuous",map:'<span class="a">am/is/are + -ing</span> → <span class="b">was/were + -ing</span>', ex:'“I <b>am booking</b> it.” → He said he <b>was booking</b> it.'},
+  {t:"past simple",      map:'<span class="a">past simple</span> → <span class="b">past perfect</span>', ex:'“We <b>visited</b> Rome.” → They said they <b>had visited</b> Rome.'},
+  {t:"present perfect",  map:'<span class="a">have/has + p.p.</span> → <span class="b">had + p.p.</span>', ex:'“I <b>have checked in</b>.” → She said she <b>had checked in</b>.'},
+  {t:"will",             map:'<span class="a">will</span> → <span class="b">would</span>', ex:'“I <b>will</b> call you.” → She said she <b>would</b> call me.'},
+  {t:"can",              map:'<span class="a">can</span> → <span class="b">could</span>', ex:'“I <b>can</b> swim.” → He said he <b>could</b> swim.'},
+  {t:"may",              map:'<span class="a">may</span> → <span class="b">might</span>', ex:'“It <b>may</b> rain.” → She said it <b>might</b> rain.'},
+  {t:"must (obligation)",map:'<span class="a">must</span> → <span class="b">had to</span>', ex:'“You <b>must</b> show ID.” → He said we <b>had to</b> show ID.'}
+];
+var curDial=0;
+DIAL.forEach(function(d,i){
+  var b=document.createElement("button"); b.textContent=d.t; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curDial=i; document.querySelectorAll("#dialChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderDial(); });
+  $("dialChips").appendChild(b);
+});
+function renderDial(){ var d=DIAL[curDial]; $("dialMap").innerHTML=d.map; $("dialEx").innerHTML=d.ex; }
+renderDial();
+
+/* special cases */
+var SC = {
+  saytell:"<b>tell</b> needs a person right after it; <b>say</b> does not. ✔ She <b>told me</b> she was leaving. · ✔ She <b>said</b> she was leaving. · ✘ She said <s>me</s>… · ✘ She told <s>that</s>…",
+  timeplace:'<b>“Here and now” has moved</b>, so time and place words shift:<div class="shiftgrid"><div><span class="a">now</span> → <span class="b">then</span></div><div><span class="a">today</span> → <span class="b">that day</span></div><div><span class="a">tomorrow</span> → <span class="b">the next day</span></div><div><span class="a">yesterday</span> → <span class="b">the day before</span></div><div><span class="a">here</span> → <span class="b">there</span></div><div><span class="a">this</span> → <span class="b">that</span></div><div><span class="a">ago</span> → <span class="b">before</span></div><div><span class="a">tonight</span> → <span class="b">that night</span></div></div>',
+  stilltrue:"<b>Don’t shift when it’s still true.</b> A general truth or fact that’s still valid can keep the present: “The museum <b>opens</b> at nine.” → The guide said the museum <b>opens</b> at nine. Also, after a <b>present-tense</b> reporting verb: She <b>says</b> she <b>is</b> tired (not <i>was</i>).",
+  modals:"<b>Already-back modals don’t change:</b> would, could, might, should, ought to, had better. “You <b>should</b> rest.” → She said I <b>should</b> rest. And <b>must → had to</b> for obligation, but it <b>stays must</b> for a deduction: “It <b>must</b> be late.” → He said it <b>must</b> be late."
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.saytell;
+
+/* =====================================================================
+   BUILD · assemble (backshifted verb) + transform (report it)
+===================================================================== */
+var BUILD = [
+  {direct:'“I <b>am</b> tired,” she said.', frame:'She said she {V} tired.', options:["was","is","had been"], correct:"was", note:"present → past: am → was."},
+  {direct:'“We <b>visited</b> Rome,” he said.', frame:'He said they {V} Rome.', options:["had visited","visited","have visited"], correct:"had visited", note:"past simple → past perfect: visited → had visited."},
+  {direct:'“I <b>will</b> call you,” she said.', frame:'She said she {V} me.', options:["would call","will call","called"], correct:"would call", note:"will → would."},
+  {direct:'“I <b>can</b> swim,” he said.', frame:'He said he {V}.', options:["could swim","can swim","had swum"], correct:"could swim", note:"can → could."},
+  {direct:'“We <b>have checked in</b>,” they said.', frame:'They said they {V}.', options:["had checked in","have checked in","checked in"], correct:"had checked in", note:"present perfect → past perfect."},
+  {direct:'“You <b>must</b> show your passport,” she said.', frame:'She said we {V} show our passport.', options:["had to","must","would have to"], correct:"had to", note:"must (obligation) → had to."}
+];
+var bi=0, bPick=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function renderBuild(){
+  var it=BUILD[bi]; bPick=null;
+  $("bctx").innerHTML = "Exact words: "+it.direct;
+  var wrap=$("verbChips"); wrap.innerHTML="";
+  it.options.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ bPick=op; document.querySelectorAll("#verbChips button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bPick){ r.className="bresult bad"; r.innerHTML="Choose the reported verb first."; return; }
+  if(bPick===it.correct){
+    var sent=it.frame.replace("{V}", '<span class="rverb">'+it.correct+'</span>');
+    r.className="bresult good"; r.innerHTML="✅ "+sent+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    document.querySelector('#verbChips button[data-v="'+bPick+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ Not that one. <span class='bnote'>Hint — "+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:'“I’m booking the flights now,” said Ana.', accept:["ana said she was booking the flights then","ana said that she was booking the flights then","ana said she was booking the flights"], model:"Ana said (that) she was booking the flights then."},
+  {ctx:'“Where is the station?” the tourist asked.', accept:["the tourist asked where the station was"], model:"The tourist asked where the station was."},
+  {ctx:'“Do you have a reservation?” the receptionist asked me.', accept:["the receptionist asked me if i had a reservation","the receptionist asked me whether i had a reservation"], model:"The receptionist asked me if/whether I had a reservation."},
+  {ctx:'“Fasten your seatbelts,” the crew said to the passengers.', accept:["the crew told the passengers to fasten their seatbelts"], model:"The crew told the passengers to fasten their seatbelts."},
+  {ctx:'“Please don’t use flash,” the guard said to us.', accept:["the guard asked us not to use flash"], model:"The guard asked us not to use flash."},
+  {ctx:'“I’ll send you the photos tomorrow,” Leo said.', accept:["leo said he would send me the photos the next day","leo said that he would send me the photos the next day"], model:"Leo said he would send me the photos the next day."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML="Report it: "+it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"say or tell?", q:"“She ___ me that the hotel was full.”", o:["told","said"], a:0, w:"‘tell’ needs a person right after it: told me."},
+  {kind:"mc", diff:1, tag:"say or tell?", q:"“He ___ that the flight had been delayed.”", o:["said","told"], a:0, w:"‘say’ takes no person before ‘that’: said that…"},
+  {kind:"mc", diff:1, tag:"Word order", q:"“The guide asked us where ___.”", o:["we were from","were we from"], a:0, w:"Reported questions use statement word order: where we were from."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["He","asked","me","where","do","I","live."], bad:4, fixOld:"where do I live", fixNew:"where I lived", w:"No ‘do’ in a reported question, and use statement order + backshift: where I lived."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["She","said","me","that","the","tour","was","full."], bad:1, fixOld:"said me", fixNew:"told me", w:"‘say’ can’t take a person. Use ‘told me’ (or ‘said that…’)."},
+  {kind:"fill", diff:2, tag:"Backshift", q:"“I can’t find my passport,” she said. → She said she ___ her passport.", accept:["couldn't find"], w:"can → could: couldn’t find."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["She","said","she","will","come","to","the","party."], bad:3, fixOld:"will", fixNew:"would", w:"Backshift: will → would."},
+  {kind:"mc", diff:2, tag:"Still true?", q:"“Our host said the market ___ every morning — it still does.”", o:["opens","opened"], a:0, w:"A fact that’s still true keeps the present: opens."},
+  {kind:"fill", diff:3, tag:"Report a question", q:"“Are you ready?” he asked. → He asked ___ ready. (fill 3 words)", accept:["if i was","whether i was"], w:"yes/no question → if/whether + statement order: He asked if I was ready."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["He","told","to","wait","near","the","gate."], bad:1, fixOld:"told to wait", fixNew:"told me to wait", w:"‘tell’ needs a person: told me to wait."},
+  {kind:"fill", diff:3, tag:"Report a command", q:"“Don’t walk on the coral,” the instructor said to them. → The instructor told them ___ on the coral. (2 words + verb)", accept:["not to walk"], w:"Negative command → tell + object + not to + base: not to walk."},
+  {kind:"mc", diff:3, tag:"must → ?", q:"“It must be late,” he said. (a deduction) →", o:["He said it must be late.","He said it had to be late."], a:0, w:"‘must’ for deduction stays ‘must’; only obligation becomes ‘had to’."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("reported_drill_best")||0); if(dscore>best){ store("reported_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Reported perfectly. Ready for the ★★★ homework." : dscore>=8?"Good reporting — review the special-cases card and go again." : "Re-read Grammar 7, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, '<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

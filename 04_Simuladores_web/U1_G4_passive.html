@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE PASSIVE TRANSFORMER · English 6 · Unit 1 "The Prepared Mind"
+  Grammar 4 — the passive voice (the language of science)
+  Three modes: Explore (the transformer) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 4 · The Passive Transformer · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --vocab:#B0338A; --vocablt:#F7E6F1;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--green),var(--greendark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#CBE9D9; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#DFF2E8; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--greendark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--greendark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--greendark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-green{background:var(--green)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--green); background:var(--greenlt); color:var(--greendark)}
+
+  /* ---------- transformer spotlight ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .xcard{border-radius:12px; padding:14px 16px; margin:8px 0; position:relative}
+  .xcard .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase}
+  .xcard .snt{font-size:clamp(18px,3.2vw,25px); font-weight:800; margin-top:4px; line-height:1.5}
+  .xactive{background:var(--navylt); border:2px solid var(--navy)}
+  .xactive .role{color:var(--navy)}
+  .xpassive{background:var(--greenlt); border:2px solid var(--green)}
+  .xpassive .role{color:var(--greendark)}
+  .arrowdown{text-align:center; font-size:26px; color:var(--grammar); margin:-2px 0}
+  .vsubj{background:#D8EFE1; color:var(--greendark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--green)}
+  .vbe{background:var(--navylt); color:var(--navy); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--navy)}
+  .vpp{background:var(--grammarlt); color:var(--grammar); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--grammar)}
+  .vby{background:#EDEDED; color:#777; border-radius:6px; padding:0 5px; font-style:italic}
+  .xactive .doer{background:#CDD8E6; color:var(--navy); border-radius:6px; padding:0 5px}
+  .vbe.masked,.vpp.masked{color:transparent; box-shadow:inset 0 -2px 0 currentColor; position:relative; cursor:pointer; min-width:44px; display:inline-block}
+  .vbe.masked::after,.vpp.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .steps{list-style:none; margin:10px 0 0; counter-reset:s}
+  .steps li{position:relative; padding:4px 0 4px 30px; font-size:14px; font-weight:600; color:#555}
+  .steps li::before{counter-increment:s; content:counter(s); position:absolute; left:0; top:3px; width:20px; height:20px; background:var(--grammar); color:#fff; border-radius:50%; font-size:12px; font-weight:900; text-align:center; line-height:20px}
+  .doernote{font-size:13px; color:#555; font-weight:700; margin-top:8px; background:var(--soft); border-radius:8px; padding:8px 10px; border-left:3px solid var(--green)}
+  .doertoggle{display:inline-flex; align-items:center; gap:7px; font-weight:800; font-size:14px; margin-top:6px; cursor:pointer}
+  .legend{display:flex; gap:12px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px}
+
+  /* tense dial */
+  .tensechips{display:flex; gap:6px; flex-wrap:wrap; margin:8px 0}
+  .tensechips button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 11px; font:700 13px Lato,sans-serif; cursor:pointer}
+  .tensechips button.on{border-color:var(--navy); background:var(--navylt); color:var(--navy)}
+  .tenseout{background:var(--soft); border-radius:12px; padding:16px; text-align:center; margin-top:6px}
+  .tenseout .ex{font-size:clamp(18px,3vw,24px); font-weight:800}
+  .tenseout .fm{font-family:ui-monospace,Menlo,Consolas,monospace; font-weight:700; font-size:14px; margin-top:8px; color:#555}
+
+  /* lab report */
+  .labseg{display:flex; border:2px solid var(--green); border-radius:999px; overflow:hidden; width:max-content; margin:8px 0}
+  .labseg button{border:0; background:#fff; padding:7px 15px; font:800 13px Lato,sans-serif; cursor:pointer; color:var(--green)}
+  .labseg button.on{background:var(--green); color:#fff}
+  .labtext{font-size:16px; line-height:1.7; background:var(--soft); border-radius:10px; padding:14px}
+  .labtext .pv{background:var(--grammarlt); color:var(--grammar); border-radius:5px; padding:0 4px; font-weight:800}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--green); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--greendark); border:2px solid var(--green)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--green); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--green)}
+  .segbig button.on{background:var(--green); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:16px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips.beg button.on{border-color:var(--navy); background:var(--navylt); color:var(--navy)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(18px,3vw,24px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--greendark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--greendark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--green); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.9vw,22px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick,.stn .w.rightpick{background:var(--think); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--greendark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--green); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🔬</span>
+  <div class="wrap">
+    <div class="kicker">English 6 · Unit 1 · The Prepared Mind</div>
+    <h1>🔄 The Passive Transformer</h1>
+    <div class="sub"><b>Grammar 4</b> — the passive voice, the language of science. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🎛️ Explore the transform</span><span>🔧 Build your own</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🎛️ Explore<small>see it transform</small></button>
+    <button data-tab="build">🔧 Build<small>make one yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Shift the spotlight: active → passive</h2>
+      <p class="muted">In the <b>active</b> voice the subject <b>does</b> the action; in the <b>passive</b> it
+        <b>receives</b> it. Form: the right tense of <b>be</b> + the <b>past participle</b>; the doer, if useful,
+        follows <b>by</b>. <span class="es">(La ciencia usa la pasiva cuando importa la acción, no quién la hizo.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the passive verbs, guess, then reveal</label>
+
+      <h3>1 · Choose a sentence</h3>
+      <div class="chips" id="scChips"></div>
+
+      <div class="xcard xactive"><div class="role">Active — who did it matters</div><div class="snt" id="activeSnt"></div></div>
+      <div class="arrowdown">⬇</div>
+      <div class="xcard xpassive"><div class="role">Passive — what happened matters</div><div class="snt" id="passiveSnt"></div></div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the verbs ✓</button></div>
+
+      <label class="doertoggle"><input type="checkbox" id="doerChk"> Show the doer (<i>by …</i>)</label>
+      <div class="doernote" id="doerNote"></div>
+
+      <ol class="steps">
+        <li>The <b>object</b> of the active sentence becomes the new <b>subject</b>.</li>
+        <li>Keep the same tense of <b>be</b>, then add the <b>past participle</b>.</li>
+        <li>Add <b><i>by</i> + doer</b> only if it is useful.</li>
+      </ol>
+      <div class="legend"><span class="vsubj">new subject</span><span class="vbe">be</span><span class="vpp">past participle</span><span class="vby">by + doer (optional)</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">💡 The passive in every tense</span>
+      <h2>Same idea, one tense at a time</h2>
+      <p class="muted">The passive works in <b>every</b> tense: change the tense of <b>be</b> and keep the past
+        participle. Tap a tense. <span class="es">(Solo cambia el tiempo de «be».)</span></p>
+      <div class="tensechips" id="tenseChips"></div>
+      <div class="tenseout"><div class="ex" id="tenseEx"></div><div class="fm" id="tenseFm"></div></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-green">🔬 Why science loves the passive</span>
+      <h2>The lab-report rewrite</h2>
+      <p class="muted">A lab report sounds objective when the <b>action</b>, not the person, is the subject.
+        Compare the two versions of the same report.</p>
+      <div class="labseg" id="labSeg"><button data-v="personal" class="on">Too personal</button><button data-v="passive">Scientific (passive)</button></div>
+      <div class="labtext" id="labText"></div>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> shows Grammar 4's active/passive "spotlight", the three-step tip and when to drop the doer (exception 5). The tense dial is the "passive in every tense" table; the lab-report rewrite is exercise F. Turn on <b>Predict first</b> for "guess before you check".</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> a passive by choosing the tense of <i>be</i>, then <i>transform</i> active sentences (including the two-object and reporting-verb patterns), with instant validation.</li>
+          <li><b>Drill</b> merges the old quizzes into one graded engine (★ identify/choose · ★★ fix the error/complete · ★★★ by/with, two objects, reporting) with a running score and streak.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-green">🔧 Your turn to produce</span>
+      <h2>Build a passive</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the active sentence, then choose the <b>tense of “be”</b> the passive needs. The machine builds it — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">Which tense of “be”?</div><div class="bchips beg" id="beChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New sentence →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Rewrite each active sentence in the passive. Type it and check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the passive sentence"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next sentence →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ identify &amp; choose · ★★ fix the error &amp; complete · ★★★ by/with, two objects &amp; reporting verbs.
+        Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 6 · Unit 1 «The Prepared Mind» · Grammar 4 — the passive voice · Level B1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE PASSIVE TRANSFORMER — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 6 Class Manual (Grammar 4).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[.,]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · transformer spotlight
+===================================================================== */
+var SCEN = [
+  {label:"🧫 Fleming & penicillin",
+   active:'Fleming <span class="doer">discovered</span> penicillin in 1928.',
+   passiveNo:'Penicillin <span class="vbe">was</span> <span class="vpp">discovered</span> in 1928.',
+   passiveWith:'Penicillin <span class="vbe">was</span> <span class="vpp">discovered</span> <span class="vby">by Fleming</span> in 1928.',
+   defDoer:true, note:"The doer is famous and interesting, so here we usually keep <i>by Fleming</i>."},
+  {label:"🦠 Studying the virus",
+   active:'Scientists <span class="doer">are studying</span> the new virus.',
+   passiveNo:'The new virus <span class="vbe">is</span> <span class="vpp">being studied</span>.',
+   passiveWith:'The new virus <span class="vbe">is</span> <span class="vpp">being studied</span> <span class="vby">by scientists</span>.',
+   defDoer:false, note:"The doer (<i>scientists</i>) is obvious, so we normally drop <i>by scientists</i>."},
+  {label:"🌍 Portuguese in Brazil",
+   active:'People <span class="doer">speak</span> Portuguese in Brazil.',
+   passiveNo:'Portuguese <span class="vbe">is</span> <span class="vpp">spoken</span> in Brazil.',
+   passiveWith:'Portuguese <span class="vbe">is</span> <span class="vpp">spoken</span> <span class="vby">by people</span> in Brazil.',
+   defDoer:false, note:"“People in general” is never named — drop the doer. <i>(by people)</i> sounds unnatural."},
+  {label:"⚙️ The power cut",
+   active:'A power cut <span class="doer">damaged</span> the equipment.',
+   passiveNo:'The equipment <span class="vbe">was</span> <span class="vpp">damaged</span>.',
+   passiveWith:'The equipment <span class="vbe">was</span> <span class="vpp">damaged</span> <span class="vby">by a power cut</span>.',
+   defDoer:true, note:"The cause (<i>a power cut</i>) is the real news, so keep <i>by a power cut</i>."}
+];
+var curScen = 0, predictMode = false, revealed = false;
+SCEN.forEach(function(s,i){
+  var b = document.createElement("button"); b.innerHTML = s.label; b.dataset.k = i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curScen=i; document.querySelectorAll("#scChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); $("doerChk").checked=SCEN[i].defDoer; revealed=false; renderScen(); });
+  $("scChips").appendChild(b);
+});
+$("doerChk").addEventListener("change", renderScen);
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderScen(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderScen(); });
+function renderScen(){
+  var s = SCEN[curScen];
+  $("activeSnt").innerHTML = s.active;
+  $("passiveSnt").innerHTML = $("doerChk").checked ? s.passiveWith : s.passiveNo;
+  $("doerNote").innerHTML = "🔎 " + s.note;
+  var mask = predictMode && !revealed;
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask){
+    document.querySelectorAll("#passiveSnt .vbe, #passiveSnt .vpp").forEach(function(el){
+      el.classList.add("masked");
+      el.addEventListener("click", function(){ revealed=true; renderScen(); });
+    });
+  }
+}
+$("doerChk").checked = SCEN[0].defDoer;
+renderScen();
+
+/* tense dial */
+var TENSES = [
+  {t:"present simple",    ex:'The results <span class="vbe">are</span> <span class="vpp">published</span> online.', fm:"am / is / are + past participle"},
+  {t:"present continuous",ex:'The theory <span class="vbe">is being</span> <span class="vpp">tested</span>.', fm:"am / is / are being + past participle"},
+  {t:"past simple",       ex:'Radiation <span class="vbe">was</span> <span class="vpp">discovered</span> in 1896.', fm:"was / were + past participle"},
+  {t:"past continuous",   ex:'The data <span class="vbe">was being</span> <span class="vpp">analyzed</span>.', fm:"was / were being + past participle"},
+  {t:"present perfect",   ex:'The cure <span class="vbe">has been</span> <span class="vpp">found</span>.', fm:"has / have been + past participle"},
+  {t:"past perfect",      ex:'The sample <span class="vbe">had been</span> <span class="vpp">contaminated</span>.', fm:"had been + past participle"},
+  {t:"future (will)",     ex:'The paper <span class="vbe">will be</span> <span class="vpp">reviewed</span>.', fm:"will be + past participle"},
+  {t:"modal",             ex:'The tank <span class="vbe">must be</span> <span class="vpp">sealed</span>.', fm:"modal + be + past participle"},
+  {t:"going to",          ex:'The bridge <span class="vbe">is going to be</span> <span class="vpp">rebuilt</span>.', fm:"is going to be + past participle"},
+  {t:"infinitive",        ex:'The results need <span class="vbe">to be</span> <span class="vpp">checked</span>.', fm:"to be + past participle"}
+];
+var curTense = 0;
+TENSES.forEach(function(t,i){
+  var b = document.createElement("button"); b.textContent = t.t; b.dataset.k = i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curTense=i; document.querySelectorAll("#tenseChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderTense(); });
+  $("tenseChips").appendChild(b);
+});
+function renderTense(){ var t=TENSES[curTense]; $("tenseEx").innerHTML=t.ex; $("tenseFm").textContent="be = "+t.fm; }
+renderTense();
+
+/* lab-report rewrite */
+var LAB = {
+  personal:'First <b>we cleaned</b> the test tubes. Then <b>we added</b> five drops of iodine. <b>We heated</b> the mixture for two minutes. <b>We observed</b> a color change. Finally, <b>we recorded</b> the results and <b>someone photographed</b> the sample.',
+  passive:'First the test tubes <span class="pv">were cleaned</span>. Then five drops of iodine <span class="pv">were added</span>. The mixture <span class="pv">was heated</span> for two minutes. A color change <span class="pv">was observed</span>. Finally, the results <span class="pv">were recorded</span> and the sample <span class="pv">was photographed</span>.'
+};
+document.querySelectorAll("#labSeg button").forEach(function(b){ b.addEventListener("click", function(){ document.querySelectorAll("#labSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("labText").innerHTML=LAB[b.dataset.v]; }); });
+$("labText").innerHTML = LAB.personal;
+
+/* =====================================================================
+   BUILD · assemble (tense of be) + transform (rewrite)
+===================================================================== */
+var BE_TENSES = [
+  {v:"present", label:"present (is/are)"},
+  {v:"past", label:"past (was/were)"},
+  {v:"presperf", label:"present perfect (has/have been)"},
+  {v:"future", label:"future (will be)"},
+  {v:"prescont", label:"present continuous (is/are being)"},
+  {v:"modal", label:"modal (must be)"}
+];
+var BUILD = [
+  {active:'Scientists <span class="doer">test</span> the vaccine.', target:"present simple", be:"present",
+   passive:'The vaccine <span class="vbe">is</span> <span class="vpp">tested</span>.', note:"Present simple passive: am/is/are + past participle."},
+  {active:'They <span class="doer">built</span> the telescope in 1990.', target:"past simple", be:"past",
+   passive:'The telescope <span class="vbe">was</span> <span class="vpp">built</span> in 1990.', note:"Past simple passive: was/were + past participle."},
+  {active:'They <span class="doer">have found</span> a cure.', target:"present perfect", be:"presperf",
+   passive:'A cure <span class="vbe">has been</span> <span class="vpp">found</span>.', note:"Present perfect passive: has/have been + past participle."},
+  {active:'The team <span class="doer">will analyze</span> the data.', target:"future (will)", be:"future",
+   passive:'The data <span class="vbe">will be</span> <span class="vpp">analyzed</span>.', note:"Future passive: will be + past participle."},
+  {active:'Technicians <span class="doer">are testing</span> the samples.', target:"present continuous", be:"prescont",
+   passive:'The samples <span class="vbe">are being</span> <span class="vpp">tested</span>.', note:"Present continuous passive: is/are being + past participle."},
+  {active:'You <span class="doer">must wear</span> goggles.', target:"modal", be:"modal",
+   passive:'Goggles <span class="vbe">must be</span> <span class="vpp">worn</span>.', note:"Modal passive: modal + be + past participle."}
+];
+var bi=0, bBe=null, bBuilt=0;
+BE_TENSES.forEach(function(t){
+  var b=document.createElement("button"); b.textContent=t.label; b.dataset.v=t.v;
+  b.addEventListener("click", function(){ bBe=t.v; document.querySelectorAll("#beChips button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+  $("beChips").appendChild(b);
+});
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function renderBuild(){
+  var it=BUILD[bi]; bBe=null;
+  $("bctx").innerHTML = "Active: "+it.active+"<small>Target tense: "+it.target+"</small>";
+  document.querySelectorAll("#beChips button").forEach(function(x){ x.classList.remove("on","wrongpick"); });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bBe){ r.className="bresult bad"; r.innerHTML="Choose a tense of <b>be</b> first."; return; }
+  if(bBe===it.be){ r.className="bresult good"; r.innerHTML="✅ "+it.passive+'<div class="bnote">'+it.note+"</div>"; bBuilt++; $("bScore").textContent="Built: "+bBuilt; }
+  else { document.querySelector('#beChips button[data-v="'+bBe+'"]').classList.add("wrongpick"); r.className="bresult bad"; r.innerHTML="❌ Not that tense. <span class='bnote'>Hint — "+it.note+"</span>"; }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"Alexander Fleming discovered penicillin.", accept:["penicillin was discovered by alexander fleming","penicillin was discovered"], model:"Penicillin was discovered by Alexander Fleming."},
+  {ctx:"Someone had already switched off the machine.", accept:["the machine had already been switched off"], model:"The machine had already been switched off."},
+  {ctx:"People speak Portuguese in Brazil.", accept:["portuguese is spoken in brazil"], model:"Portuguese is spoken in Brazil."},
+  {ctx:"They gave Marie Curie the prize. <b>(person first)</b>", accept:["marie curie was given the prize"], model:"Marie Curie was given the prize."},
+  {ctx:"People say the site is dangerous. <b>(start with It)</b>", accept:["it is said that the site is dangerous"], model:"It is said that the site is dangerous."},
+  {ctx:"Experts say the comet will return in 2061. <b>(start with the subject)</b>", accept:["the comet is said to return in 2061"], model:"The comet is said to return in 2061."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML="Rewrite in the passive: "+it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Active or passive?", q:"“The theory is being tested.”", o:["Passive","Active"], a:0, w:"The subject (the theory) receives the action → passive."},
+  {kind:"mc", diff:1, tag:"Complete", q:"They have found a cure → “A cure ___.”", o:["has been found","has found","was find"], a:0, w:"Present perfect passive: has been + past participle."},
+  {kind:"mc", diff:1, tag:"Which is correct?", q:"Penicillin + discover (1928):", o:["Penicillin was discovered in 1928.","Penicillin was discover in 1928.","Penicillin were discovered in 1928."], a:0, w:"Singular subject + was + past participle."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["Penicillin","was","discover","in","1928."], bad:2, fixOld:"discover", fixNew:"discovered", w:"The passive needs the past participle: <i>was discovered</i>."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["The","results","was","published","last","week."], bad:2, fixOld:"was", fixNew:"were", w:"<b>Results</b> is plural — <i>be</i> must agree: were published."},
+  {kind:"fill", diff:2, tag:"Complete", q:"“Radiation ___ (discover) in 1896.”", accept:["was discovered"], w:"Past simple passive: was + past participle."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["An","earthquake","was","happened","during","the","night."], bad:2, fixOld:"was happened", fixNew:"happened", w:"<b>Happen</b> is intransitive — no passive: An earthquake happened."},
+  {kind:"fill", diff:2, tag:"Complete", q:"“Goggles ___ (must / wear) at all times.”", accept:["must be worn"], w:"Modal passive: modal + be + past participle."},
+  {kind:"mc", diff:3, tag:"by or with?", q:"“The rock was cut ___ a diamond blade.”", o:["with","by"], a:0, w:"<i>with</i> = the instrument; <i>by</i> = the doer."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["This","theory","was","proposed","for","a","young","researcher."], bad:4, fixOld:"for", fixNew:"by", w:"The doer follows <b>by</b>, not <i>for</i>."},
+  {kind:"fill", diff:3, tag:"Two objects", q:"Rewrite, person first: “They gave her a prize.”", accept:["she was given a prize"], w:"English prefers the person as subject: She was given a prize."},
+  {kind:"fill", diff:3, tag:"Reporting verbs", q:"Start with It: “People believe the medicine is effective.”", accept:["it is believed that the medicine is effective"], w:"It is believed that the medicine is effective."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("passive_drill_best")||0); if(dscore>best){ store("passive_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Mastered. You’re ready for the ★★★ homework." : dscore>=8?"Strong — review the exceptions box and go again." : "Re-read Grammar 4, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, '<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE DEDUCTION DETECTIVE · English 6 · Unit 2 "Wish You Were Here"
+  Grammar 5 — past modals of deduction (must/might/can't have + p.p.)
+  Three modes: Explore (certainty thermometer) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 5 · The Deduction Detective · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --teal:#0E7C7B; --tealdark:#09504F; --teallt:#E1F1F0;   /* Unit 2 identity */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --gold:#C9A227; --goldlt:#FaF3DE;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--teal),var(--tealdark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#BFE6E4; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#D6EEED; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--tealdark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--tealdark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--tealdark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-teal{background:var(--teal)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--teal); background:var(--teallt); color:var(--tealdark)}
+
+  /* ---------- thermometer ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 4px}
+  .leverbox{margin:12px 0 4px}
+  input[type=range]{-webkit-appearance:none; appearance:none; width:100%; height:14px; border-radius:999px;
+    background:linear-gradient(90deg,#C0392B 0%,#D9761A 32%,#C9A227 60%,#1F7A4D 100%); outline:none; cursor:pointer}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none; width:32px; height:32px; border-radius:50%; background:#fff; border:4px solid var(--tealdark); box-shadow:0 2px 8px rgba(0,0,0,.3); cursor:grab}
+  input[type=range]::-moz-range-thumb{width:26px; height:26px; border-radius:50%; background:#fff; border:4px solid var(--tealdark); box-shadow:0 2px 8px rgba(0,0,0,.3); cursor:grab}
+  .stations{display:grid; grid-template-columns:repeat(4,1fr); gap:6px; margin-top:8px}
+  .stations button{border:0; background:none; font:800 12px Lato,sans-serif; color:#888; cursor:pointer; padding:6px 2px; border-radius:8px; line-height:1.25}
+  .stations button.on{background:#fff; box-shadow:0 1px 4px rgba(0,0,0,.12)}
+  .stations .em{display:block; font-size:18px}
+  .gauge{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; margin:8px 0 2px}
+  .gauge i{display:block; height:100%; border-radius:999px; transition:width .35s ease, background .35s ease}
+  .gaugelab{font-size:12px; font-weight:800; color:#888}
+  .sentence{font-size:clamp(18px,3.3vw,25px); font-weight:800; text-align:center; padding:20px 12px; background:var(--teallt); border-radius:12px; margin:12px 0 8px; min-height:92px; display:flex; align-items:center; justify-content:center; flex-wrap:wrap}
+  .sentence.flip{animation:flip .3s ease}
+  @keyframes flip{from{opacity:0; transform:translateY(8px)} to{opacity:1}}
+  .vmod{border-radius:6px; padding:0 5px; font-weight:800}
+  .vpp{border-radius:6px; padding:0 5px; background:var(--navylt); color:var(--navy); box-shadow:inset 0 -2px 0 var(--navy)}
+  .vmod.masked,.vpp.masked{color:transparent !important; box-shadow:inset 0 -2px 0 currentColor; position:relative; cursor:pointer; min-width:56px; display:inline-block}
+  .vmod.masked::after,.vpp.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .ctx{text-align:center; color:#555; font-size:14px; min-height:22px; font-weight:600}
+  .legend{display:flex; gap:14px; justify-content:center; font-size:12px; font-weight:800; margin-top:8px; flex-wrap:wrap}
+  .legend .vpp{padding:1px 8px}
+  .typerow{display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:center; margin:12px 0 4px}
+  .typebadge{font-size:15px; padding:6px 16px; border-radius:999px; color:#fff; font-weight:900; letter-spacing:.02em}
+  .meaning{font-size:15px; font-weight:700}
+  .formula{text-align:center; font-family:ui-monospace,Menlo,Consolas,monospace; font-size:14px; font-weight:700; background:#fff; border:1.5px dashed var(--rule); border-radius:10px; padding:8px 10px; margin:8px auto 0; max-width:560px}
+  .revealbtn{display:block; margin:2px auto 0}
+
+  /* special cases selector */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+  .notewarn{margin-top:10px; font-size:13px; font-weight:800; color:var(--think); background:var(--thinklt); border-radius:8px; padding:8px 10px}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--teal); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--tealdark); border:2px solid var(--teal)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--teal); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--teal)}
+  .segbig button.on{background:var(--teal); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:16px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips.modg button.on{border-color:var(--teal); background:var(--teallt); color:var(--tealdark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(18px,3vw,24px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--tealdark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--tealdark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--teal); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.9vw,22px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick,.stn .w.rightpick{background:var(--think); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--tealdark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--teal); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🕵️</span>
+  <div class="wrap">
+    <div class="kicker">English 6 · Unit 2 · Wish You Were Here</div>
+    <h1>🕵️ The Deduction Detective</h1>
+    <div class="sub"><b>Grammar 5</b> — past modals of deduction: <i>must / might / can’t have</i> + past participle. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🌡️ Explore the certainty</span><span>🔧 Build a deduction</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🌡️ Explore<small>how sure are you?</small></button>
+    <button data-tab="build">🔧 Build<small>make a deduction</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Read the evidence, set your certainty</h2>
+      <p class="muted">When we don’t <b>know</b> what happened, we <b>deduce</b> from the evidence. The <b>modal</b>
+        shows how sure we are; the form is always <b>modal + have + past participle</b>. Pick a case and slide the
+        thermometer. <span class="es">(El modal marca la certeza; la forma no cambia.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the modal, guess, then reveal</label>
+
+      <h3>1 · Choose a case</h3>
+      <div class="chips" id="scChips"></div>
+
+      <h3>2 · Slide the certainty thermometer</h3>
+      <div class="leverbox">
+        <input type="range" id="lever" min="0" max="3" step="1" value="3" aria-label="Certainty thermometer">
+        <div class="stations" id="stations"></div>
+      </div>
+      <div class="gauge"><i id="gaugeFill"></i></div>
+      <div class="gaugelab" id="gaugeLab"></div>
+
+      <div class="sentence" id="sentence"></div>
+      <div style="text-align:center"><button class="btn ghost small revealbtn" id="revealBtn" style="display:none">Reveal the modal ✓</button></div>
+      <div class="ctx" id="ctx"></div>
+      <div class="legend"><span class="vmod" style="color:var(--tealdark);box-shadow:inset 0 -2px 0 var(--tealdark)">modal + have</span><span class="vpp">past participle</span></div>
+
+      <div class="typerow"><span class="typebadge" id="typeBadge"></span><span class="meaning" id="meaning"></span></div>
+      <div class="formula" id="formula"></div>
+      <div style="text-align:center; margin-top:10px; font-size:13px; font-weight:800; color:var(--think)">⚠️ The opposite of <i>must have</i> is <i>can’t have</i> — never <i>mustn’t have</i>.</div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Look-alikes &amp; special cases</span>
+      <h2>Four things that trip people up</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="could" class="on">could have</button><button data-v="should">should have</button><button data-v="cont">continuous</button><button data-v="pass">passive</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Grammar 5's certainty thermometer: the modal marks how sure the speaker is (must have ≈95% yes → can't have ≈95% no). The special-cases card covers <i>could have</i>'s two jobs, <i>should have</i> (not deduction), and the continuous &amp; passive forms.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> a deduction by choosing the modal that fits the certainty, then <i>transform</i> situations into deductions (exercise C), with validation.</li>
+          <li><b>Drill</b> merges the quizzes into one graded engine (★ how-certain/choose · ★★ fix the error/complete · ★★★ could-have, continuous &amp; passive) with a score and streak.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-teal">🔧 Your turn to produce</span>
+      <h2>Build a deduction</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the evidence and the certainty, then choose the <b>modal</b> that fits. The machine builds the deduction — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">Which modal fits the certainty?</div><div class="bchips modg" id="modChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New case →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Turn each situation into a deduction about the past. Type it and check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="e.g. He must have missed his flight."><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next situation →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ how certain? &amp; choose · ★★ fix the error &amp; complete · ★★★ could-have, continuous &amp; passive.
+        Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 6 · Unit 2 «Wish You Were Here» · Grammar 5 — past modals of deduction · Level B1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE DEDUCTION DETECTIVE — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 6 Class Manual (Grammar 5).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[.,!]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · certainty thermometer
+===================================================================== */
+var LEVELS = [
+  {name:"CAN’T / COULDN’T HAVE", color:"var(--think)", meaning:"almost sure it did NOT happen", form:"can’t / couldn’t have + past participle", pct:5, station:"IMPOSSIBLE", em:"🚫"},
+  {name:"MIGHT NOT / MAY NOT HAVE", color:"var(--grammar)", meaning:"probably not — but not sure", form:"might not / may not have + past participle", pct:35, station:"PROBABLY NOT", em:"🤔"},
+  {name:"MIGHT / MAY / COULD HAVE", color:"var(--gold)", meaning:"possible — one option among several", form:"might / may / could have + past participle", pct:60, station:"MAYBE", em:"❓"},
+  {name:"MUST HAVE", color:"var(--green)", meaning:"almost sure it happened — the only logical conclusion", form:"must have + past participle", pct:95, station:"CERTAIN", em:"✅"}
+];
+var SCEN = {
+  wet:{label:"💧 The wet ground", steps:[
+    {pre:"It ", mod:"can’t have", pp:"rained", post:" — there isn’t a single cloud and the roof is dry.", c:"Impossible: the evidence rules it out."},
+    {pre:"It ", mod:"might not have", pp:"rained", post:" — the street cleaners pass at dawn.", c:"Probably not: there’s another likely explanation."},
+    {pre:"It ", mod:"might have", pp:"rained", post:" last night — or maybe it was the sprinklers.", c:"Maybe: one possibility among several."},
+    {pre:"It ", mod:"must have", pp:"rained", post:" last night — the ground is soaked.", c:"Almost certain: the only logical conclusion."}
+  ]},
+  suitcase:{label:"🧳 Marta’s suitcase", steps:[
+    {pre:"She ", mod:"can’t have", pp:"left", post:" for the airport — she’d never go without it.", c:"Impossible: she would never leave it behind."},
+    {pre:"She ", mod:"might not have", pp:"packed", post:" yet — the case is still open.", c:"Probably not: it looks unfinished."},
+    {pre:"She ", mod:"might have", pp:"decided", post:" to travel light.", c:"Maybe: one explanation among several."},
+    {pre:"She ", mod:"must have", pp:"forgotten", post:" it.", c:"Almost certain: the obvious explanation."}
+  ]},
+  bus:{label:"🚌 The empty bus", steps:[
+    {pre:"The bus ", mod:"can’t have", pp:"been", post:" full — it’s a public holiday.", c:"Impossible: nobody travels today."},
+    {pre:"The passengers ", mod:"might not have", pp:"boarded", post:" yet.", c:"Probably not: maybe it hasn’t left."},
+    {pre:"The driver ", mod:"might have", pp:"taken", post:" a different route.", c:"Maybe: one possibility."},
+    {pre:"Everyone ", mod:"must have", pp:"got", post:" off at the beach stop.", c:"Almost certain: where else would they go?"}
+  ]}
+};
+var curScen = "wet", predictMode = false, revealed = false;
+Object.keys(SCEN).forEach(function(k){
+  var b = document.createElement("button"); b.innerHTML = SCEN[k].label; b.dataset.k = k;
+  if(k===curScen) b.classList.add("on");
+  b.addEventListener("click", function(){ curScen=k; document.querySelectorAll("#scChips button").forEach(function(x){ x.classList.toggle("on", x.dataset.k===k); }); revealed=false; renderTherm(true); });
+  $("scChips").appendChild(b);
+});
+LEVELS.forEach(function(t,i){
+  var b = document.createElement("button"); b.innerHTML = '<span class="em">'+t.em+'</span>'+t.station;
+  b.addEventListener("click", function(){ $("lever").value=i; revealed=false; renderTherm(true); });
+  $("stations").appendChild(b);
+});
+$("lever").addEventListener("input", function(){ revealed=false; renderTherm(true); });
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderTherm(false); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderTherm(false); });
+function renderTherm(animate){
+  var i=+$("lever").value, t=LEVELS[i], sc=SCEN[curScen].steps[i];
+  var mask = predictMode && !revealed;
+  var modSpan = '<span class="vmod'+(mask?" masked":"")+'" style="color:'+t.color+';box-shadow:inset 0 -2px 0 '+t.color+'">'+sc.mod+'</span>';
+  var ppSpan = '<span class="vpp'+(mask?" masked":"")+'">'+sc.pp+'</span>';
+  var s=$("sentence"); s.innerHTML = "<span>"+sc.pre+modSpan+" "+ppSpan+sc.post+"</span>";
+  if(animate){ s.classList.remove("flip"); void s.offsetWidth; s.classList.add("flip"); }
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  $("ctx").textContent = mask ? "Predict the modal, then reveal." : sc.c;
+  $("typeBadge").textContent=t.name; $("typeBadge").style.background=t.color;
+  $("meaning").textContent="= "+t.meaning;
+  $("formula").textContent=t.form;
+  $("gaugeFill").style.width=t.pct+"%"; $("gaugeFill").style.background=t.color;
+  $("gaugeLab").textContent="Certainty it happened: ≈"+t.pct+"%";
+  document.querySelectorAll("#stations button").forEach(function(b,j){ b.classList.toggle("on", j===i); });
+  if(mask){ document.querySelectorAll("#sentence .masked").forEach(function(el){ el.addEventListener("click", function(){ revealed=true; renderTherm(false); }); }); }
+}
+renderTherm(false);
+
+/* special-cases selector */
+var SC = {
+  could:"<b>could have</b> does two jobs. <b>(a) Deduction:</b> “He could have missed the train.” (= maybe he did). <b>(b) Missed opportunity:</b> “You could have called me!” (= you were able to, but you didn’t). Context decides which one.",
+  should:"<b>should have</b> is <u>not</u> a deduction. It shows the past went against a duty or an expectation: “You should have checked the passport dates.” (criticism) · “They should have landed by now.” (expectation). For a deduction, use <i>must / might / can’t have</i>.",
+  cont:"<b>Continuous form</b> — for an action <i>in progress</i> in the past: modal + <b>have been</b> + <i>-ing</i>. “The road is muddy — it <b>must have been raining</b> for hours.”",
+  pass:"<b>Passive form</b> — when the subject receives the action: modal + <b>have been</b> + past participle. “The tickets <b>must have been booked</b> months ago.”"
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.could;
+
+/* =====================================================================
+   BUILD · assemble (modal) + transform (rewrite)
+===================================================================== */
+var MODS = [
+  {v:"musthave", label:"must have", color:"var(--green)"},
+  {v:"mighthave", label:"might have", color:"var(--gold)"},
+  {v:"mightnothave", label:"might not have", color:"var(--grammar)"},
+  {v:"canthave", label:"can’t have", color:"var(--think)"}
+];
+function modColor(v){ for(var i=0;i<MODS.length;i++){ if(MODS[i].v===v) return MODS[i].color; } return "var(--ink)"; }
+function modLabel(v){ for(var i=0;i<MODS.length;i++){ if(MODS[i].v===v) return MODS[i].label; } return v; }
+var BUILD = [
+  {ev:"The guide knows every street.", target:"almost certain — ≈95% yes", mod:"musthave", pre:"She ", pp:"grown up", post:" here.", note:"must have = the only logical conclusion."},
+  {ev:"They aren’t here yet; the road is long.", target:"possible — ≈50%", mod:"mighthave", pre:"They ", pp:"stopped", post:" for gas.", note:"might / could have = one possibility among several."},
+  {ev:"He never carries any cash.", target:"impossible — ≈95% no", mod:"canthave", pre:"He ", pp:"paid", post:" cash.", note:"can’t have = I’m almost sure it did NOT happen."},
+  {ev:"The streets are white this morning.", target:"almost certain — ≈95% yes", mod:"musthave", pre:"It ", pp:"snowed", post:" during the night.", note:"must have = the only explanation that fits."},
+  {ev:"The 6 a.m. train was canceled.", target:"impossible — ≈95% no", mod:"canthave", pre:"He ", pp:"taken", post:" the 6 a.m. train.", note:"can’t have = it was impossible."},
+  {ev:"Her phone may be off, or there’s no signal.", target:"possible — ≈50%", mod:"mighthave", pre:"She ", pp:"turned", post:" her phone off.", note:"might have = uncertain, one option."}
+];
+var bi=0, bMod=null, bBuilt=0;
+MODS.forEach(function(m){
+  var b=document.createElement("button"); b.textContent=m.label; b.dataset.v=m.v;
+  b.addEventListener("click", function(){ bMod=m.v; document.querySelectorAll("#modChips button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+  $("modChips").appendChild(b);
+});
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function renderBuild(){
+  var it=BUILD[bi]; bMod=null;
+  $("bctx").innerHTML = "Evidence: "+it.ev+"<small>Your certainty: "+it.target+"</small>";
+  document.querySelectorAll("#modChips button").forEach(function(x){ x.classList.remove("on","wrongpick"); });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bMod){ r.className="bresult bad"; r.innerHTML="Choose a <b>modal</b> first."; return; }
+  if(bMod===it.mod){
+    var col=modColor(it.mod);
+    var sent=it.pre+'<span class="vmod" style="color:'+col+';box-shadow:inset 0 -2px 0 '+col+'">'+modLabel(it.mod)+'</span> <span class="vpp">'+it.pp+'</span>'+it.post;
+    r.className="bresult good"; r.innerHTML="✅ "+sent+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    document.querySelector('#modChips button[data-v="'+bMod+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ Not that modal. <span class='bnote'>Hint — "+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"Javier was supposed to be on the 3 p.m. flight, but he isn’t here.", accept:["he must have missed his flight","he must have missed the flight","he might have taken a later flight","he might have missed his flight"], model:"He must have missed his flight."},
+  {ctx:"Annie is on vacation, so you didn’t see her downtown.", accept:["you can't have seen annie downtown","you couldn't have seen annie downtown","you can't have seen annie","you couldn't have seen annie"], model:"You can’t have seen Annie downtown."},
+  {ctx:"Petra and Marcus’s car is still in the driveway.", accept:["they can't have left yet","they couldn't have left yet","they must not have left yet","they can't have left for their road trip yet"], model:"They can’t have left yet."},
+  {ctx:"The beach bag is full of sand and the towels are wet.", accept:["they must have gone to the beach","they must have been swimming"], model:"They must have gone to the beach."},
+  {ctx:"The ground is soaked this morning.", accept:["it must have rained last night","it must have rained"], model:"It must have rained last night."},
+  {ctx:"Diego lived here for years, so he didn’t get lost.", accept:["he can't have got lost","he can't have gotten lost","he couldn't have got lost","he couldn't have gotten lost"], model:"He can’t have got lost."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML="Make a deduction: "+it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"How certain?", q:"“The guide must have grown up here — she knows every street.”", o:["≈95% yes — almost certain","≈50% — possible","≈95% no — impossible"], a:0, w:"‘must have’ = the only logical conclusion (almost certain it happened)."},
+  {kind:"mc", diff:1, tag:"Choose the modal", q:"“The bus is empty. Everyone ___ at the beach stop.”", o:["must have got off","can’t have got off"], a:0, w:"The empty bus is strong evidence → must have got off."},
+  {kind:"mc", diff:1, tag:"Choose the modal", q:"“You ___ the whole guidebook already — you started an hour ago!”", o:["can’t have finished","must have finished"], a:0, w:"An hour is far too short → can’t have finished (impossible)."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["She","must","have","took","the","early","ferry."], bad:3, fixOld:"took", fixNew:"taken", w:"Always the past participle after ‘have’: must have <b>taken</b>."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["He","musted","have","lost","our","reservation."], bad:1, fixOld:"musted have", fixNew:"must have", w:"Modals never take -ed: <b>must have</b> (not ‘musted’)."},
+  {kind:"fill", diff:2, tag:"Complete", q:"“The streets are white. It ___ (snow) during the night.”", accept:["must have snowed"], w:"Strong evidence → must have + past participle: must have snowed."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["I","must","have","being","asleep","when","you","called."], bad:3, fixOld:"being", fixNew:"been", w:"The past participle of ‘be’ is <b>been</b>: must have been asleep."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["They","should","of","packed","sunscreen."], bad:2, fixOld:"should of", fixNew:"should have", w:"‘should’ve’ only sounds like ‘should of’. Write <b>should have</b>."},
+  {kind:"mc", diff:3, tag:"Deduction or missed opportunity?", q:"“You could have called me!” (said in an annoyed voice)", o:["A missed opportunity — you didn’t call","A deduction — maybe you called"], a:0, w:"Here ‘could have’ = an unused opportunity: you were able to call, but you didn’t."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["It","can","have","been","a","mistake."], bad:1, fixOld:"can have", fixNew:"could / may / might have", w:"There is no affirmative ‘can have’. Use could / may / might have been."},
+  {kind:"mc", diff:3, tag:"Which form?", q:"“The road is muddy — it ___ for hours.” (action in progress)", o:["must have been raining","must have rained","must be raining"], a:0, w:"Action in progress in the past = modal + have been + -ing: must have been raining."},
+  {kind:"fill", diff:3, tag:"Passive deduction", q:"“The tickets ___ (book) months ago.” (modal + passive)", accept:["must have been booked"], w:"Passive deduction: modal + have been + past participle."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("pastmodals_drill_best")||0); if(dscore>best){ store("pastmodals_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Case closed, detective. Ready for the ★★★ homework." : dscore>=8?"Good deducing — review the special-cases card and go again." : "Re-read Grammar 5, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, '<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>
