@@ -1,6 +1,6 @@
 # Inglés 6 · Material de práctica (B1+)
 
-Ejercicios de práctica de **Inglés 6** (nivel B1+, semestre 2026-2): un simulacro tipo SELLI, el
+Ejercicios de práctica de **Inglés 6** (nivel B1+): un simulacro tipo SELLI, el
 **SELLI Gym** de comprensión auditiva, el **Listening Lab** con los episodios de *In the Lab FM* y
 diez **simuladores web** de gramática. Todo es material original de práctica; **no incluye
 exámenes ni claves de respuesta** (las claves se revisan en clase).
