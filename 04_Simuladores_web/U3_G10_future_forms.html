@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE FORECAST MACHINE · English 6 · Unit 3 "The Shape of Things to Come"
+  Grammar 10 — future forms for predictions (will / going to / might,
+  future continuous, future perfect, certainty adverbs, time clauses)
+  Three modes: Explore (certainty + timeline) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 10 · The Forecast Machine · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --indigo:#3A3A8C; --indigodark:#25255C; --indigolt:#E7E7F4;   /* Unit 3 identity */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --gold:#C9A227; --goldlt:#FAF3DE;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--indigo),var(--indigodark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#C9C9EE; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#DCDCF3; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--indigodark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--indigodark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--indigodark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-indigo{background:var(--indigo)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--indigo); background:var(--indigolt); color:var(--indigodark)}
+
+  /* ---------- certainty thermometer ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 4px}
+  .leverbox{margin:12px 0 4px}
+  input[type=range]{-webkit-appearance:none; appearance:none; width:100%; height:14px; border-radius:999px;
+    background:linear-gradient(90deg,#C0392B 0%,#D9761A 28%,#C9A227 50%,#1F7A4D 76%,#124D30 100%); outline:none; cursor:pointer}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none; width:32px; height:32px; border-radius:50%; background:#fff; border:4px solid var(--indigodark); box-shadow:0 2px 8px rgba(0,0,0,.3); cursor:grab}
+  input[type=range]::-moz-range-thumb{width:26px; height:26px; border-radius:50%; background:#fff; border:4px solid var(--indigodark); box-shadow:0 2px 8px rgba(0,0,0,.3); cursor:grab}
+  .stations{display:grid; grid-template-columns:repeat(5,1fr); gap:4px; margin-top:8px}
+  .stations button{border:0; background:none; font:800 11px Lato,sans-serif; color:#888; cursor:pointer; padding:6px 2px; border-radius:8px; line-height:1.25}
+  .stations button.on{background:#fff; box-shadow:0 1px 4px rgba(0,0,0,.12)}
+  .stations .em{display:block; font-size:18px}
+  .gauge{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; margin:8px 0 2px}
+  .gauge i{display:block; height:100%; border-radius:999px; transition:width .35s ease, background .35s ease}
+  .gaugelab{font-size:12px; font-weight:800; color:#888}
+  .sentence{font-size:clamp(18px,3.3vw,25px); font-weight:800; text-align:center; padding:20px 12px; background:var(--indigolt); border-radius:12px; margin:12px 0 8px; min-height:92px; display:flex; align-items:center; justify-content:center; flex-wrap:wrap}
+  .sentence.flip{animation:flip .3s ease}
+  @keyframes flip{from{opacity:0; transform:translateY(8px)} to{opacity:1}}
+  .vmod{border-radius:6px; padding:0 5px; font-weight:800}
+  .vbase{border-radius:6px; padding:0 5px; background:var(--navylt); color:var(--navy); box-shadow:inset 0 -2px 0 var(--navy)}
+  .vmod.masked,.vbase.masked,.vf.masked{color:transparent !important; box-shadow:inset 0 -2px 0 currentColor; position:relative; cursor:pointer; min-width:56px; display:inline-block}
+  .vmod.masked::after,.vbase.masked::after,.vf.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .ctx{text-align:center; color:#555; font-size:14px; min-height:22px; font-weight:600}
+  .legend{display:flex; gap:14px; justify-content:center; font-size:12px; font-weight:800; margin-top:8px; flex-wrap:wrap}
+  .legend .vbase{padding:1px 8px}
+  .typerow{display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:center; margin:12px 0 4px}
+  .typebadge{font-size:15px; padding:6px 16px; border-radius:999px; color:#fff; font-weight:900; letter-spacing:.02em}
+  .meaning{font-size:15px; font-weight:700}
+  .formula{text-align:center; font-family:ui-monospace,Menlo,Consolas,monospace; font-size:14px; font-weight:700; background:#fff; border:1.5px dashed var(--rule); border-radius:10px; padding:8px 10px; margin:8px auto 0; max-width:600px}
+  .advnote{text-align:center; margin-top:10px; font-size:13px; font-weight:800; color:var(--grammar)}
+  .revealbtn{display:block; margin:2px auto 0}
+
+  /* ---------- timeline ---------- */
+  .tensechips{display:flex; gap:6px; flex-wrap:wrap; margin:8px 0}
+  .tensechips button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 11px; font:700 13px Lato,sans-serif; cursor:pointer}
+  .tensechips button.on{border-color:var(--navy); background:var(--navylt); color:var(--navy)}
+  .tl{position:relative; height:118px; margin:14px 0 4px; background:#fff; border:1.5px solid var(--rule); border-radius:12px; overflow:hidden}
+  .tlline{position:absolute; left:4%; right:2%; top:58px; height:3px; background:var(--rule)}
+  .tlline::after{content:""; position:absolute; right:-2px; top:-6px; border:7px solid transparent; border-left:11px solid var(--rule)}
+  .tlnow{position:absolute; left:4%; top:62px; transform:translateX(-50%); font-size:11px; font-weight:900; color:var(--navy); letter-spacing:.06em}
+  .tlnow::before{content:""; display:block; width:12px; height:12px; border-radius:50%; background:var(--navy); margin:-15px auto 5px}
+  .tlmark{position:absolute; top:22px; transform:translateX(-50%); text-align:center; transition:left .4s ease}
+  .tlmark i{display:block; width:3px; height:40px; background:var(--grammar); margin:0 auto; border-radius:2px}
+  .tlmark b{display:block; font-size:12px; color:var(--grammar); white-space:nowrap; margin-top:6px}
+  .tlmark .flag{position:absolute; top:-22px; left:50%; transform:translateX(-50%); font-size:18px}
+  .tlact{position:absolute; top:46px; height:26px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:900; color:#fff; white-space:nowrap; transition:left .4s ease, width .4s ease}
+  .tldot{width:26px; border-radius:50%; background:var(--indigo); transform:translateX(-50%)}
+  .tlbar{background:var(--indigo); transform:translateX(-50%)}
+  .tldone{background:var(--green)}
+  .tlevid{background:var(--grammar)}
+  .tlsent{font-size:clamp(17px,3vw,23px); font-weight:800; text-align:center; padding:14px 12px; background:var(--soft); border-radius:12px; margin-top:10px; line-height:1.6}
+  .vf{background:var(--indigolt); color:var(--indigodark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--indigo)}
+  .tlrule{margin-top:8px; border-left:4px solid var(--navy); background:var(--navylt); border-radius:0 10px 10px 0; padding:8px 12px; font-size:14px; font-weight:700; color:#333}
+
+  /* special cases selector */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+
+  /* errors card */
+  .errlist{list-style:none; margin-top:6px}
+  .errlist li{display:flex; gap:10px; align-items:center; flex-wrap:wrap; padding:8px 0; border-bottom:1px dashed var(--rule); font-size:15px; font-weight:700}
+  .errlist .bad{color:var(--think)} .errlist .bad::before{content:"✘ "}
+  .errlist .good{color:var(--green); display:none} .errlist .good::before{content:"✔ "}
+  .errlist .why{display:none; margin:0; flex-basis:100%; font-size:13px; padding:6px 10px}
+  .errlist li.open .good,.errlist li.open .why{display:block}
+  .errlist li.open .fixbtn{display:none}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--indigo); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--indigodark); border:2px solid var(--indigo)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--indigo); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--indigo)}
+  .segbig button.on{background:var(--indigo); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--indigo); background:var(--indigolt); color:var(--indigodark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--indigodark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--indigodark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--indigo); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick,.stn .w.rightpick{background:var(--think); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--indigodark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--indigo); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} .stations button{font-size:10px} .tlmark b{font-size:10px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🔭</span>
+  <div class="wrap">
+    <div class="kicker">English 6 · Unit 3 · The Shape of Things to Come</div>
+    <h1>🔭 The Forecast Machine</h1>
+    <div class="sub"><b>Grammar 10</b> — future forms for predictions: <i>will / going to / might</i>, future continuous &amp; future perfect. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🌡️ Explore the certainty</span><span>🔧 Build a prediction</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🌡️ Explore<small>how sure? which moment?</small></button>
+    <button data-tab="build">🔧 Build<small>make a prediction</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>There is no single “future tense” — set your certainty</h2>
+      <p class="muted">English chooses a form to show <b>how sure</b> you are. Pick a prediction about technology and slide the
+        thermometer: the <b>modal</b> changes, the base verb stays. <span class="es">(El modal marca la certeza; el verbo base no cambia.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the modal, guess, then reveal</label>
+
+      <h3>1 · Choose a prediction</h3>
+      <div class="chips" id="scChips"></div>
+
+      <h3>2 · Slide the certainty thermometer</h3>
+      <div class="leverbox">
+        <input type="range" id="lever" min="0" max="4" step="1" value="4" aria-label="Certainty thermometer">
+        <div class="stations" id="stations"></div>
+      </div>
+      <div class="gauge"><i id="gaugeFill"></i></div>
+      <div class="gaugelab" id="gaugeLab"></div>
+
+      <div class="sentence" id="sentence"></div>
+      <div style="text-align:center"><button class="btn ghost small revealbtn" id="revealBtn" style="display:none">Reveal the modal ✓</button></div>
+      <div class="ctx" id="ctx"></div>
+      <div class="legend"><span class="vmod" style="color:var(--indigodark);box-shadow:inset 0 -2px 0 var(--indigodark)">modal / adverb</span><span class="vbase">base verb</span></div>
+
+      <div class="typerow"><span class="typebadge" id="typeBadge"></span><span class="meaning" id="meaning"></span></div>
+      <div class="formula" id="formula"></div>
+      <div class="advnote">📍 Adverb position: <i>will <b>probably</b> fall</i> (after <i>will</i>) · <i><b>probably</b> won’t fall</i> (before <i>won’t</i>).</div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">🕒 The timeline</span>
+      <h2>Which form for which moment?</h2>
+      <p class="muted">Choose a form, then move the marker with a time expression. The drawing shows <b>what kind</b> of future you mean:
+        a point, an action in progress, or an action completed before a point. <span class="es">(La expresión de tiempo te dice qué forma usar.)</span></p>
+      <label class="predictbar"><input type="checkbox" id="predictTl"> 🔮 Predict first — hide the verb form</label>
+      <h3>1 · The form</h3>
+      <div class="tensechips" id="formChipsX"></div>
+      <h3>2 · Move the marker</h3>
+      <div class="chips" id="markChips"></div>
+      <div class="tl"><div class="tlline"></div><div class="tlnow">NOW</div><div id="tlDraw"></div></div>
+      <div class="tlsent" id="tlSent"></div>
+      <div style="text-align:center"><button class="btn ghost small revealbtn" id="revealTl" style="display:none">Reveal the form ✓</button></div>
+      <div class="tlrule" id="tlRule"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Special cases</span>
+      <h2>Six things that decide the form</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="goingto" class="on">going to vs will</button><button data-v="perfect">future perfect + by</button><button data-v="cont">continuous + at / this time</button><button data-v="timecl">when / as soon as / until</button><button data-v="wont">won’t vs might not</button><button data-v="other">timetables &amp; plans</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠️ Common errors</span>
+      <h2>Errors Spanish speakers make</h2>
+      <p class="muted">Read the sentence, find the problem, then tap <b>Fix</b> to check. <span class="es">(Errores típicos: adivina la corrección antes de verla.)</span></p>
+      <ul class="errlist" id="errList"></ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Grammar 10 in two axes: the certainty thermometer (won’t → probably won’t → may/might/could → will probably → will definitely, with adverb position) and the timeline (will for a prediction, going to for present evidence, future continuous for an action in progress at a moment, future perfect for an action completed before a point, with their time markers). The special-cases card covers will vs going to, by / this time / at, present after time linkers, won’t vs might not, and timetables / arrangements / about to / shall; the errors card is the manual’s pitfall list.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> a prediction by choosing the time expression and the form (exercises A and B), then <i>transform</i> prompts into predictions with validation (exercises B, D and the error clinic).</li>
+          <li><b>Drill</b> merges the quizzes into one graded engine (★ evidence vs opinion, certainty, form choice · ★★ fix the error (<i>will to</i>, <i>when … will</i>), complete, adverb position · ★★★ future perfect vs simple, future continuous, time clauses, going to) with a score and streak.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-indigo">🔧 Your turn to produce</span>
+      <h2>Build a prediction</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the idea and the kind of future it needs, then choose the <b>time expression</b> and the <b>form</b>. The machine builds the prediction — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">Time expression / opener</div><div class="bchips" id="timeChips"></div></div>
+        <div class="bgroup"><div class="glab">Verb form</div><div class="bchips" id="formChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New idea →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Write each idea as a prediction with the form or expression in brackets. Type it and check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="e.g. By 2050, engineers will have solved…"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next idea →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ evidence or opinion? how sure? which form? · ★★ fix the error &amp; complete · ★★★ future perfect, continuous, time clauses.
+        Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 6 · Unit 3 «The Shape of Things to Come» · Grammar 10 — future forms for predictions · Level B1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE FORECAST MACHINE — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 6 Class Manual (Grammar 10).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · certainty thermometer
+===================================================================== */
+var LEVELS = [
+  {name:"WON’T", color:"var(--think)", meaning:"sure it will NOT happen", form:"won’t / will not + base verb · will definitely not", pct:5, station:"NO WAY", em:"🚫", c:"Certain in the negative: won’t + base verb."},
+  {name:"PROBABLY WON’T", color:"var(--grammar)", meaning:"improbable", form:"probably won’t + base verb · is unlikely to + base verb", pct:25, station:"IMPROBABLE", em:"🌧️", c:"Improbable: the adverb goes BEFORE won’t."},
+  {name:"MAY / MIGHT / COULD", color:"var(--gold)", meaning:"possible — nobody is sure", form:"may / might / could + base verb · perhaps / maybe … will", pct:50, station:"POSSIBLE", em:"❓", c:"Possible: a less certain prediction — one option among several."},
+  {name:"WILL PROBABLY", color:"var(--green)", meaning:"probable", form:"will probably + base verb · is likely to + base verb · It’s likely (that)…", pct:75, station:"PROBABLE", em:"👍", c:"Probable: the adverb goes AFTER will."},
+  {name:"WILL (DEFINITELY)", color:"var(--greendark)", meaning:"very sure — a prediction or belief", form:"will (definitely / certainly) + base verb · is bound to + base verb", pct:95, station:"VERY SURE", em:"✅", c:"Very sure: will + base verb — an opinion, belief or strong prediction."}
+];
+var MODS = ["won’t","probably won’t","might","will probably","will definitely"];
+var SCEN = {
+  robots:{label:"🤖 Robots &amp; jobs", pre:"Robots ", verb:"do", post:" more jobs than humans by 2040."},
+  cars:{label:"🚗 Driverless cars", pre:"Driverless cars ", verb:"be", post:" normal within twenty years."},
+  battery:{label:"🔋 Batteries", pre:"Batteries ", verb:"last", post:" a week on one charge."}
+};
+var curScen = "robots", predictMode = false, revealed = false;
+Object.keys(SCEN).forEach(function(k){
+  var b = document.createElement("button"); b.innerHTML = SCEN[k].label; b.dataset.k = k;
+  if(k===curScen) b.classList.add("on");
+  b.addEventListener("click", function(){ curScen=k; document.querySelectorAll("#scChips button").forEach(function(x){ x.classList.toggle("on", x.dataset.k===k); }); revealed=false; renderTherm(true); });
+  $("scChips").appendChild(b);
+});
+LEVELS.forEach(function(t,i){
+  var b = document.createElement("button"); b.innerHTML = '<span class="em">'+t.em+'</span>'+t.station;
+  b.addEventListener("click", function(){ $("lever").value=i; revealed=false; renderTherm(true); });
+  $("stations").appendChild(b);
+});
+$("lever").addEventListener("input", function(){ revealed=false; renderTherm(true); });
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderTherm(false); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderTherm(false); });
+function renderTherm(animate){
+  var i=+$("lever").value, t=LEVELS[i], sc=SCEN[curScen];
+  var mask = predictMode && !revealed;
+  var modSpan = '<span class="vmod'+(mask?" masked":"")+'" style="color:'+t.color+';box-shadow:inset 0 -2px 0 '+t.color+'">'+MODS[i]+'</span>';
+  var s=$("sentence"); s.innerHTML = "<span>"+sc.pre+modSpan+' <span class="vbase">'+sc.verb+"</span>"+sc.post+"</span>";
+  if(animate){ s.classList.remove("flip"); void s.offsetWidth; s.classList.add("flip"); }
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  $("ctx").textContent = mask ? "Predict the modal, then reveal." : t.c;
+  $("typeBadge").textContent=t.name; $("typeBadge").style.background=t.color;
+  $("meaning").textContent="= "+t.meaning;
+  $("formula").textContent=t.form;
+  $("gaugeFill").style.width=t.pct+"%"; $("gaugeFill").style.background=t.color;
+  $("gaugeLab").textContent="How sure the speaker is: ≈"+t.pct+"%";
+  document.querySelectorAll("#stations button").forEach(function(b,j){ b.classList.toggle("on", j===i); });
+  if(mask){ document.querySelectorAll("#sentence .masked").forEach(function(el){ el.addEventListener("click", function(){ revealed=true; renderTherm(false); }); }); }
+}
+renderTherm(false);
+
+/* =====================================================================
+   EXPLORE · timeline — which form for which moment
+===================================================================== */
+var TL = [
+  {t:"will + base", vis:"dot", rule:"<b>will + base verb</b> — a prediction, belief or instant decision about a future point. No evidence needed: <i>I think…</i>", m:[
+    {t:"in ten years", pos:55, s:'In ten years, robots <span class="vf">will do</span> more jobs than humans.'},
+    {t:"within twenty years", pos:75, s:'I think driverless cars <span class="vf">will be</span> normal within twenty years.'},
+    {t:"one day", pos:92, s:'One day, batteries <span class="vf">will last</span> a week on one charge.'}]},
+  {t:"be going to + base", vis:"evid", rule:"<b>be going to + base verb</b> — a prediction from <b>present evidence</b>: you can see the cause now, so the result is on its way.", m:[
+    {t:"any second now", pos:18, s:'Look at the code — it <span class="vf">is going to crash</span>.'},
+    {t:"soon", pos:30, s:'Those dark clouds mean the launch <span class="vf">is going to be</span> delayed.'}]},
+  {t:"will be + -ing", vis:"bar", rule:"<b>Future continuous</b> — <i>will be</i> + <i>-ing</i>: an action <b>in progress at</b> a future moment. Markers: <i>this time next year · at 8 tomorrow · then</i>.", m:[
+    {t:"this time next year", pos:52, s:'This time next year, we <span class="vf">will be using</span> driverless taxis.'},
+    {t:"at 8 tomorrow", pos:22, s:'Don’t call at 8 tomorrow — I <span class="vf">will be traveling</span> then.'},
+    {t:"this time in ten years", pos:82, s:'This time in ten years, many of us <span class="vf">will be working</span> from home.'}]},
+  {t:"will have + p.p.", vis:"done", rule:"<b>Future perfect</b> — <i>will have</i> + past participle: an action <b>completed before</b> a future point. Marker: <i>by</i> + a point (<i>by 2050, by the end of the decade</i>).", m:[
+    {t:"by 2050", pos:86, s:'By 2050, engineers <span class="vf">will have solved</span> many of today’s problems.'},
+    {t:"by the end of the decade", pos:48, s:'By the end of the decade, most homes <span class="vf">will have installed</span> solar panels.'},
+    {t:"by 2030", pos:30, s:'By 2030, we <span class="vf">will have replaced</span> all petrol cars.'}]}
+];
+var curTl=0, curMark=0, predictTl=false, revealedTl=false;
+TL.forEach(function(f,i){
+  var b=document.createElement("button"); b.textContent=f.t; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curTl=i; curMark=0; revealedTl=false; document.querySelectorAll("#formChipsX button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderTl(); });
+  $("formChipsX").appendChild(b);
+});
+$("predictTl").addEventListener("change", function(){ predictTl=this.checked; revealedTl=false; renderTl(); });
+$("revealTl").addEventListener("click", function(){ revealedTl=true; renderTl(); });
+function renderTl(){
+  var f=TL[curTl], m=f.m[curMark], mask=predictTl && !revealedTl;
+  var mc=$("markChips"); mc.innerHTML="";
+  f.m.forEach(function(x,j){
+    var b=document.createElement("button"); b.textContent=x.t; if(j===curMark) b.classList.add("on");
+    b.addEventListener("click", function(){ curMark=j; revealedTl=false; renderTl(); }); mc.appendChild(b);
+  });
+  var p=m.pos, act="";
+  if(f.vis==="dot") act='<div class="tlact tldot" style="left:'+p+'%">●</div>';
+  else if(f.vis==="evid") act='<div class="tlact tlevid" style="left:4%;width:'+(p-4)+'%;border-radius:0 8px 8px 0">👀 evidence now → result</div>';
+  else if(f.vis==="bar") act='<div class="tlact tlbar" style="left:'+p+'%;width:30%">in progress at that moment</div>';
+  else act='<div class="tlact tldone" style="left:6%;width:'+(p-9)+'%">completed before ✓</div>';
+  $("tlDraw").innerHTML = act+'<div class="tlmark" style="left:'+p+'%"><span class="flag">🚩</span><i></i><b>'+m.t+'</b></div>';
+  $("tlSent").innerHTML = m.s;
+  $("tlRule").innerHTML = f.rule;
+  $("revealTl").style.display = mask ? "inline-block" : "none";
+  if(mask){ document.querySelectorAll("#tlSent .vf").forEach(function(el){ el.classList.add("masked"); el.addEventListener("click", function(){ revealedTl=true; renderTl(); }); }); }
+}
+renderTl();
+
+/* special cases */
+var SC = {
+  goingto:"<b>going to</b> = there is <b>present evidence</b> for the prediction: <i>Those clouds mean it’s <b>going to</b> rain.</i> · <b>will</b> = an <b>opinion or belief</b>: <i>I think it’<b>ll</b> rain.</i> · For an <b>instant decision</b>, always <i>will</i>: <i>That’s the doorbell — I’<b>ll</b> get it.</i> (✘ <i>I’m going to get it</i> when you decide now.)",
+  perfect:"<b>Future perfect + by.</b> <i>will have</i> + past participle = an action <b>completed before</b> a future point, and <i>by</i> marks that point: <i><b>By 2050</b>, engineers <b>will have solved</b> many of today’s problems.</i> ✘ <i>By 2040 robots will replace many jobs</i> → ✔ <i>… <b>will have replaced</b></i>.",
+  cont:"<b>Future continuous + at / this time.</b> <i>will be</i> + <i>-ing</i> = an action <b>in progress</b> at a future moment: <i><b>This time next week</b> I’<b>ll be flying</b> to Berlin.</i> · <i>Don’t call <b>at 8</b> — I’<b>ll be traveling</b> then.</i> ✘ <i>This time tomorrow I fly to Lima</i>.",
+  timecl:"<b>After when, as soon as, before, after, until, if</b> (time &amp; conditional linkers) use the <b>present</b>, never <i>will</i>: <i>When the update <b>arrives</b>, I’ll install it.</i> · <i>As soon as the software <b>updates</b>, the bug will disappear.</i> ✘ <i>When I <s>will</s> arrive, I’ll text you.</i>",
+  wont:"<b>won’t</b> = you are sure it will <b>not</b> happen (≈5%): <i>Prices <b>won’t</b> fall.</i> · <b>might not / may not</b> = it is <b>possible</b> that it won’t: <i>Robots <b>may not</b> understand human emotions for a long time.</i> · Careful: <b>won’t</b> can also mean <b>refusal</b>: <i>The laptop <b>won’t</b> turn on</i> (= refuses to).",
+  other:"Not every future is a prediction. <b>Present continuous</b> = a fixed <b>arrangement</b> (time/place set): <i>We’<b>re meeting</b> the investors at ten.</i> · <b>Present simple</b> = a <b>timetable</b>: <i>The conference <b>starts</b> on Monday.</i> (✘ <i>I go to Tokyo next week</i> for a personal plan.) · <b>be about to</b> = the very near future: <i>The demo is <b>about to</b> start.</i> · <b>shall</b> for offers/suggestions with I/we: <i><b>Shall</b> we begin?</i>"
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.goingto;
+
+/* common errors */
+var ERR = [
+  {bad:"I will to call you.", good:"I will call you.", why:"No <i>to</i> after <i>will</i>: will + base verb."},
+  {bad:"When I will arrive, I’ll text you.", good:"When I arrive, I’ll text you.", why:"After <i>when / as soon as / until</i>, use the present, never <i>will</i>."},
+  {bad:"It will probably will rain.", good:"It will probably rain.", why:"One <i>will</i> only; <i>probably</i> goes after it."},
+  {bad:"That’s the doorbell — I’m going to get it.", good:"That’s the doorbell — I’ll get it.", why:"An instant decision (decided now) takes <i>will</i>, not <i>going to</i>."},
+  {bad:"By 2040 robots will replace many jobs.", good:"By 2040 robots will have replaced many jobs.", why:"<i>by</i> + a point = completed before that point → future perfect."},
+  {bad:"This time tomorrow I fly to Lima.", good:"This time tomorrow I will be flying to Lima.", why:"<i>this time tomorrow</i> = in progress at that moment → future continuous."},
+  {bad:"In 2050 we will living on Mars.", good:"In 2050 we will be living on Mars.", why:"The continuous needs <i>be</i>: will <b>be</b> + -ing."}
+];
+ERR.forEach(function(e){
+  var li=document.createElement("li");
+  li.innerHTML='<span class="bad">'+e.bad+'</span><button class="btn ghost small fixbtn">Fix ✓</button><span class="good">'+e.good+'</span><div class="why">'+e.why+'</div>';
+  li.querySelector(".fixbtn").addEventListener("click", function(){ li.classList.add("open"); });
+  $("errList").appendChild(li);
+});
+
+/* =====================================================================
+   BUILD · assemble (time expression + form) + transform (write it)
+===================================================================== */
+var BUILD = [
+  {ctx:"engineers · solve many of today’s problems", hint:"completed before a future point", frame:"{T}, engineers {F} many of today’s problems.", times:["This time next year","By 2050","In a minute"], tOk:"By 2050", forms:["will solve","will be solving","will have solved"], fOk:"will have solved", note:"by + a point → future perfect: will have + past participle."},
+  {ctx:"we · use driverless taxis", hint:"in progress at a future moment", frame:"{T}, we {F} driverless taxis.", times:["By 2050","This time next year","One day"], tOk:"This time next year", forms:["will have used","will be using","will use"], fOk:"will be using", note:"this time next year → future continuous: will be + -ing."},
+  {ctx:"the phone · die", hint:"a prediction from present evidence", frame:"{T} the phone {F}.", times:["Look at that battery icon —","By 2040","I think"], tOk:"Look at that battery icon —", forms:["will die","is going to die","will be dying"], fOk:"is going to die", note:"present evidence (the battery icon) → going to."},
+  {ctx:"driverless cars · be normal", hint:"an opinion or belief about the future", frame:"I think driverless cars {F} normal {T}.", times:["within twenty years","by 8 tomorrow","this time tomorrow"], tOk:"within twenty years", forms:["are","will have been","will be"], fOk:"will be", note:"an opinion (I think…) → will + base verb."},
+  {ctx:"most homes · install solar panels", hint:"completed before the end of the decade", frame:"{T}, most homes {F} solar panels.", times:["This time next week","By the end of the decade","At 8 tomorrow"], tOk:"By the end of the decade", forms:["will be installing","install","will have installed"], fOk:"will have installed", note:"by the end of the decade → future perfect: will have + past participle."},
+  {ctx:"I · travel — don’t call me then", hint:"in progress at that moment", frame:"Don’t call {T} — I {F} then.", times:["by 8 tomorrow","at 8 tomorrow","one day"], tOk:"at 8 tomorrow", forms:["will have traveled","will be traveling","travel"], fOk:"will be traveling", note:"at 8 tomorrow → future continuous: will be + -ing."},
+  {ctx:"the update · arrive → I install it", hint:"a time clause: present, not will", frame:"{T} the update {F}, I’ll install it.", times:["By","When","This time"], tOk:"When", forms:["will arrive","is going to arrive","arrives"], fOk:"arrives", note:"after when / as soon as / until → present simple, never will."},
+  {ctx:"prices · fall", hint:"probable — with an adverb of certainty", frame:"Prices {F} {T}.", times:["once the patent will expire","once the patent expires","when the patent will expire"], tOk:"once the patent expires", forms:["will probably will fall","will probably fall","will fall probably"], fOk:"will probably fall", note:"probably goes after will (one will only); after once, the present."}
+];
+var bi=0, bTime=null, bForm=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function chipGroup(id, list, onPick){
+  var wrap=$(id); wrap.innerHTML="";
+  list.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ onPick(op); document.querySelectorAll("#"+id+" button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+}
+function renderBuild(){
+  var it=BUILD[bi]; bTime=null; bForm=null;
+  $("bctx").innerHTML = "Idea: "+it.ctx+"<small>Kind of future: "+it.hint+"</small>";
+  chipGroup("timeChips", it.times, function(v){ bTime=v; });
+  chipGroup("formChips", it.forms, function(v){ bForm=v; });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bTime || !bForm){ r.className="bresult bad"; r.innerHTML="Choose a <b>time expression</b> and a <b>form</b> first."; return; }
+  var tOk=bTime===it.tOk, fOk=bForm===it.fOk;
+  if(tOk && fOk){
+    var sent=it.frame.replace("{T}", '<span class="rtime" style="color:var(--grammar)">'+it.tOk+'</span>').replace("{F}", '<span class="vf">'+it.fOk+'</span>');
+    r.className="bresult good"; r.innerHTML="✅ "+sent+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    if(!tOk) document.querySelector('#timeChips button[data-v="'+bTime+'"]').classList.add("wrongpick");
+    if(!fOk) document.querySelector('#formChips button[data-v="'+bForm+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ "+(!tOk&&!fOk?"Neither fits.":!tOk?"The form fits, the time expression does not.":"The time expression fits, the form does not.")+" <span class='bnote'>Hint — "+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"engineers / solve many of today’s problems (future perfect, by 2040)", accept:["by 2040 engineers will have solved many of today's problems","engineers will have solved many of today's problems by 2040","by 2040 engineers'll have solved many of today's problems"], model:"By 2040, engineers will have solved many of today’s problems."},
+  {ctx:"we / test the new prototype (future continuous, this time next year)", accept:["this time next year we will be testing the new prototype","this time next year we'll be testing the new prototype","we will be testing the new prototype this time next year","we'll be testing the new prototype this time next year"], model:"This time next year, we will be testing the new prototype."},
+  {ctx:"Those dark clouds mean the launch / be delayed (going to)", accept:["those dark clouds mean the launch is going to be delayed","the launch is going to be delayed"], model:"Those dark clouds mean the launch is going to be delayed."},
+  {ctx:"the software / update → the bug / disappear (as soon as)", accept:["as soon as the software updates the bug will disappear","the bug will disappear as soon as the software updates","as soon as the software updates the bug'll disappear","as soon as the software has updated the bug will disappear"], model:"As soon as the software updates, the bug will disappear."},
+  {ctx:"prices / fall — probable (will + probably)", accept:["prices will probably fall"], model:"Prices will probably fall."},
+  {ctx:"robots / understand human emotions — possible, negative (may / not)", accept:["robots may not understand human emotions","robots might not understand human emotions"], model:"Robots may not understand human emotions."},
+  {ctx:"most countries / ban petrol cars (future perfect, by 2050)", accept:["by 2050 most countries will have banned petrol cars","most countries will have banned petrol cars by 2050","by 2050 most countries'll have banned petrol cars"], model:"By 2050, most countries will have banned petrol cars."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML="Predict: "+it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Evidence or opinion?", q:"“Look at the smoke — the server ___ crash!”", o:["is going to","will"], a:0, w:"Present evidence (the smoke) → going to."},
+  {kind:"mc", diff:1, tag:"How sure?", q:"“Robots will definitely do more housework.” How sure is the speaker?", o:["very sure","possible — one option among several","improbable"], a:0, w:"will definitely / is bound to = very sure."},
+  {kind:"mc", diff:1, tag:"Which form?", q:"“This time next year, we ___ the new prototype.”", o:["’ll be testing","’ll test"], a:0, w:"this time next year = in progress at a future moment → future continuous."},
+  {kind:"mc", diff:1, tag:"Which form?", q:"“By 2040, engineers ___ many of today’s problems.”", o:["will have solved","will solve"], a:0, w:"by + a point = completed before that point → future perfect."},
+  {kind:"mc", diff:1, tag:"Deciding now", q:"“Wait — I ___ the door.” (deciding at this moment)", o:["’ll get","’m getting"], a:0, w:"An instant decision always takes will."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["In","the","future,","robots","will","to","cook","for","us."], bad:5, fixOld:"will to cook", fixNew:"will cook", w:"No ‘to’ after will: will + base verb."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["When","the","update","will","arrive,","install","it."], bad:3, fixOld:"will arrive", fixNew:"arrives", w:"After when / as soon as / until, use the present, never will."},
+  {kind:"fill", diff:2, tag:"Complete", q:"“By the end of the decade, most homes ___ (install) solar panels.”", accept:["will have installed","'ll have installed","will've installed"], w:"by + a point → future perfect: will have + past participle."},
+  {kind:"mc", diff:2, tag:"Adverb position", q:"“Prices ___ fall once the patent expires.” (improbable)", o:["probably won’t","won’t probably"], a:0, w:"In a negative, the adverb goes before won’t: probably won’t."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["By","2030","we","will","replace","all","petrol","cars."], bad:4, fixOld:"will replace", fixNew:"will have replaced", w:"by 2030 = completed before that point → future perfect."},
+  {kind:"fill", diff:3, tag:"Complete", q:"“Don’t call at 8 — I ___ (travel) then.”", accept:["will be traveling","'ll be traveling","will be travelling","'ll be travelling"], w:"at 8 … then = in progress at that moment → will be + -ing."},
+  {kind:"fill", diff:3, tag:"Time clause", q:"“As soon as the software ___ (update), the bug will disappear.”", accept:["updates","has updated"], w:"After as soon as, use the present, not will: updates."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["Those","wires","are","hot —","the","machine","will","overheat."], bad:6, fixOld:"will overheat", fixNew:"is going to overheat", w:"Present evidence (the hot wires) → going to."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("forecast_drill_best")||0); if(dscore>best){ store("forecast_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Forecast confirmed. Ready for the ★★★ homework." : dscore>=8?"Good forecasting — review the special-cases card and go again." : "Re-read Grammar 10, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, '<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE RELATIVE MACHINE · English 6 · Unit 2 "Wish You Were Here"
+  Grammar 8 — relative clauses (who/which/that/whose/where/when, defining vs
+  non-defining + the comma rule, dropping the object pronoun, prepositions)
+  Three modes: Explore (comma switch) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 8 · The Relative Machine · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --teal:#0E7C7B; --tealdark:#09504F; --teallt:#E1F1F0;
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--teal),var(--tealdark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#BFE6E4; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#D6EEED; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--tealdark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--tealdark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--tealdark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-teal{background:var(--teal)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--teal); background:var(--teallt); color:var(--tealdark)}
+
+  /* ---------- comma switch spotlight ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .cswitch{display:flex; border:2px solid var(--navy); border-radius:12px; overflow:hidden; width:max-content; max-width:100%; margin:6px 0 10px; flex-wrap:wrap}
+  .cswitch button{border:0; background:#fff; padding:9px 16px; font:800 14px Lato,sans-serif; cursor:pointer; color:var(--navy)}
+  .cswitch button.on{background:var(--navy); color:#fff}
+  .cswitch button b{font-size:19px; color:var(--think)} .cswitch button.on b{color:#FFD3CC}
+  .xcard{border-radius:12px; padding:14px 16px; margin:8px 0; position:relative}
+  .xcard .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase}
+  .xcard .snt{font-size:clamp(18px,3.1vw,24px); font-weight:800; margin-top:4px; line-height:1.65}
+  .xsent{background:var(--teallt); border:2px solid var(--teal)}
+  .xsent .role{color:var(--tealdark)}
+  .xsent.bad{background:var(--thinklt); border-color:var(--think)}
+  .xsent.bad .role{color:var(--think)}
+  .nope{font-size:13px; color:var(--think); font-weight:900; text-transform:uppercase; letter-spacing:.05em}
+  .rcl{background:#fff; border-radius:8px; padding:1px 6px; box-shadow:inset 0 -3px 0 var(--teal)}
+  .rpr{background:var(--grammarlt); color:var(--grammar); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--grammar)}
+  .cm{color:var(--think); font-size:1.35em; font-weight:900; line-height:0; padding:0 1px}
+  .rpr.masked{color:transparent; position:relative; cursor:pointer; min-width:56px; display:inline-block}
+  .rpr.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .setbox{display:flex; align-items:center; gap:12px; flex-wrap:wrap; background:var(--soft); border-radius:12px; padding:12px 14px; margin-top:8px}
+  .setbox .lab{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase; color:#888; width:100%}
+  .icos{display:flex; gap:6px; flex-wrap:wrap}
+  .ico{font-size:26px; width:46px; height:46px; display:flex; align-items:center; justify-content:center; border-radius:50%; background:#fff; border:2px solid var(--rule); transition:all .25s}
+  .ico.on{border-color:var(--teal); background:var(--teallt); box-shadow:0 0 0 3px rgba(14,124,123,.18)}
+  .ico.off{opacity:.22; filter:grayscale(1)}
+  .bubble{background:#fff; border:2px solid var(--excep); color:var(--excep); border-radius:12px; padding:6px 11px; font-weight:800; font-size:13px}
+  .bubble.def{border-color:var(--teal); color:var(--tealdark)} .bubble.no{border-color:var(--think); color:var(--think)}
+  .mean{margin-top:8px; font-size:15px; font-weight:600; color:#444; background:#fff; border-left:4px solid var(--navy); padding:8px 12px; border-radius:0 10px 10px 0}
+  .mean b{color:var(--navy)}
+  .testbox{margin-top:10px; font-size:14px; font-weight:600; color:#555; background:var(--grammarlt); border-left:4px solid var(--grammar); padding:8px 12px; border-radius:0 10px 10px 0}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px}
+  .legend span{border-radius:6px; padding:1px 8px}
+
+  /* pronoun chooser */
+  .tensechips{display:flex; gap:6px; flex-wrap:wrap; margin:8px 0}
+  .tensechips button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 11px; font:700 13px Lato,sans-serif; cursor:pointer}
+  .tensechips button.on{border-color:var(--navy); background:var(--navylt); color:var(--navy)}
+  .tenseout{background:var(--soft); border-radius:12px; padding:16px; text-align:center; margin-top:6px}
+  .tenseout .map{font-size:clamp(17px,2.8vw,22px); font-weight:800}
+  .tenseout .map .a{color:var(--navy)} .tenseout .map .b{color:var(--grammar)}
+  .tenseout .ex{font-size:clamp(17px,2.8vw,22px); font-weight:800; margin-top:6px}
+  .tenseout .note{font-size:14px; color:#555; margin-top:8px; font-weight:600}
+  .facts{display:flex; gap:6px; flex-wrap:wrap; justify-content:center; margin-top:8px}
+  .facts span{font-size:12px; font-weight:800; border-radius:6px; padding:2px 8px; background:#fff; border:1.5px solid var(--rule); color:#555}
+  .facts .ok{color:var(--green); border-color:var(--green)} .facts .no{color:var(--think); border-color:var(--think)}
+
+  /* omission card */
+  .droptoggle{display:inline-flex; align-items:center; gap:7px; font-weight:800; font-size:14px; margin-top:8px; cursor:pointer}
+  .oout{background:var(--soft); border-radius:12px; padding:14px; text-align:center; margin-top:8px}
+  .oout .ph{font-size:clamp(18px,3vw,24px); font-weight:800}
+  .gone{color:#aaa; text-decoration:line-through; text-decoration-color:var(--think); text-decoration-thickness:3px}
+  .verdict{display:inline-block; margin-top:8px; border-radius:8px; padding:6px 12px; font-weight:700; font-size:14px; text-align:left}
+  .verdict.ok{background:var(--greenlt); color:var(--greendark); border:1.5px solid var(--green)}
+  .verdict.no{background:var(--thinklt); color:var(--think); border:1.5px solid var(--think)}
+  .verdict.info{background:var(--navylt); color:var(--navy); border:1.5px solid var(--navy)}
+
+  /* special cases selector */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+
+  /* typical errors */
+  .errlist{margin-top:6px}
+  .err{border:1.5px solid var(--rule); border-radius:10px; padding:9px 12px; margin:6px 0; cursor:pointer; font-weight:700; background:#fff}
+  .err .bad{color:var(--think)} .err .hint{font-size:12px; color:#999; font-weight:800; float:right}
+  .err .fix{display:none; margin-top:5px; color:var(--greendark)} .err.open .fix{display:block} .err.open .hint{display:none}
+  .err .rsn{display:block; font-weight:600; color:#555; font-size:13px; margin-top:2px}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--teal); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--tealdark); border:2px solid var(--teal)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--teal); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--teal)}
+  .segbig button.on{background:var(--teal); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--teal); background:var(--teallt); color:var(--tealdark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--tealdark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--tealdark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--teal); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick,.stn .w.rightpick{background:var(--think); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--tealdark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--teal); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🔗</span>
+  <div class="wrap">
+    <div class="kicker">English 6 · Unit 2 · Wish You Were Here</div>
+    <h1>🔗 The Relative Machine</h1>
+    <div class="sub"><b>Grammar 8</b> — relative clauses: <i>who / which / that / whose / where / when</i>, defining vs non-defining &amp; the comma rule. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🔀 Explore the comma switch</span><span>🔧 Build a clause</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🔀 Explore<small>flip the switch</small></button>
+    <button data-tab="build">🔧 Build<small>join it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>The comma switch: defining vs non-defining</h2>
+      <p class="muted">A relative clause gives more information about a noun, joining two ideas into one smoother sentence.
+        A <b>defining</b> clause identifies <b>which one</b> — essential information, <b>no commas</b>. A <b>non-defining</b>
+        clause adds <b>extra</b> information about something already identified — always inside <b>commas</b>, and never with
+        <i>that</i>. Flip the switch and watch the meaning change. <span class="es">(Sin comas = identifica cuál; con comas = solo añade un dato.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the relative pronoun, guess, then reveal</label>
+
+      <h3>1 · Choose a sentence</h3>
+      <div class="chips" id="swChips"></div>
+      <h3>2 · Flip the comma switch</h3>
+      <div class="cswitch" id="commaSw"><button data-v="no" class="on">no commas · defining</button><button data-v="yes"><b>,</b> commas <b>,</b> · non-defining</button></div>
+
+      <div class="xcard xsent" id="swCard"><div class="role" id="swRole"></div><div class="snt" id="swSnt"></div></div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the pronoun ✓</button></div>
+
+      <div class="setbox"><span class="lab">Who or what are we talking about?</span><div class="icos" id="swIcons"></div><div class="bubble" id="swBubble"></div></div>
+      <div class="mean" id="swMean"></div>
+      <div class="testbox">🧪 <b>Test:</b> put the clause in brackets. If you still know exactly who or what you mean, it is <b>non-defining</b> — use commas.</div>
+      <div class="legend"><span class="rpr">relative pronoun</span><span class="rcl">relative clause</span><span style="color:var(--think)">, commas = non-defining ,</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">💡 Which pronoun?</span>
+      <h2>Who, which, that, whose, where, when — and whom</h2>
+      <p class="muted">Tap a pronoun to see what it is used for, an example, and why it is the right choice there.
+        <span class="es">(El pronombre depende del sustantivo: persona, cosa, posesión, lugar o tiempo.)</span></p>
+      <div class="tensechips" id="pronChips"></div>
+      <div class="tenseout"><div class="map" id="pronMap"></div><div class="ex" id="pronEx"></div><div class="note" id="pronWhy"></div><div class="facts" id="pronFacts"></div></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-teal">✂️ Can I omit the pronoun?</span>
+      <h2>Drop it only when it is the object (defining clauses)</h2>
+      <p class="muted">Choose a phrase, then try to drop the pronoun. Quick test: is there a subject (<i>we, they, I</i>, a noun)
+        right after the pronoun? Yes → the pronoun is the <b>object</b> → optional. No → it is the <b>subject</b> → keep it.
+        <i>Whose</i> is never dropped. <span class="es">(Solo se omite el pronombre objeto, y solo sin comas.)</span></p>
+      <div class="chips" id="omChips"></div>
+      <label class="droptoggle"><input type="checkbox" id="dropChk"> ✂️ Drop the pronoun</label>
+      <div class="oout"><div class="ph" id="omPh"></div><div id="omVerdict"></div></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Exceptions &amp; special cases</span>
+      <h2>That in commas, prepositions, where vs which…</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="that" class="on">that + commas</button><button data-v="prep">prepositions</button><button data-v="idea">which = whole idea</button><button data-v="where">where vs which</button><button data-v="when">when vs which</button><button data-v="whose">whose for things</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠️ Typical errors of Spanish speakers</span>
+      <h2>Spot the mistake, then tap to reveal the fix</h2>
+      <p class="muted">Each sentence has one typical error. Decide what is wrong first — <b>guess before you check</b>.
+        <span class="es">(Errores frecuentes por influencia del español.)</span></p>
+      <div class="errlist" id="errList"></div>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Grammar 8's "big divide": the comma switch shows the same sentence as defining (no commas, it narrows the set) and non-defining (commas, it adds a fact about the whole set), including a proper name that can only be non-defining and <i>that → which</i> inside commas. The pronoun chooser is the six-row table (plus formal <i>whom</i>); the omission card is exercise D; the special-cases card is the exceptions box (that in commas, prepositions, whole-idea which, where/when vs which, whose for things); the errors card is the pitfall box plus the error hunt of Task set 12.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> a sentence by choosing the pronoun and deciding on the commas (exercises A and C), then <i>transform</i> pairs of sentences into one (exercise B), with validation, a comma check and a model answer.</li>
+          <li><b>Drill</b> is one graded engine (★ pronoun choice &amp; commas · ★★ fix the error &amp; drop the pronoun · ★★★ where vs which, the meaning of the commas, whole-idea which, fronted preposition) with a score and streak.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-teal">🔧 Your turn to produce</span>
+      <h2>Build a relative clause</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the sentence, choose the <b>relative pronoun</b> and decide whether the clause needs <b>commas</b>. The machine joins it — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">Relative pronoun</div><div class="bchips" id="pronPick"></div></div>
+        <div class="bgroup"><div class="glab">Commas?</div><div class="bchips" id="commaPick"><button data-v="no">no commas — defining</button><button data-v="yes">, commas , — non-defining</button></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New sentence →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Join the two sentences into one with a relative clause. Add commas where needed. Type it and check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the joined sentence"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next pair →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ choose the pronoun &amp; the commas · ★★ fix the error &amp; drop the pronoun · ★★★ where vs which, meaning, whole-idea which, formal prepositions.
+        Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 6 · Unit 2 «Wish You Were Here» · Grammar 8 — relative clauses · Level B1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE RELATIVE MACHINE — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 6 Class Manual (Grammar 8).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · the comma switch (defining narrows the set, non-defining adds a fact)
+===================================================================== */
+var SW = [
+  {label:"🛂 The passengers", pre:"The passengers", pron:"who", cl:"had visas", post:"boarded first.",
+   icons:["🧑","👩","🧔","👩‍🦱","👨","👩‍🦰"], keep:[0,2,3], bubble:"they all had visas",
+   def:"only the passengers with visas boarded first — the clause picks them out of the group.",
+   nd:"all the passengers boarded first — and, by the way, they all had visas."},
+  {label:"👩‍✈️ My sister", pre:"My sister", pron:"who", cl:"lives in Lima", post:"is a pilot.",
+   icons:["👩","👩‍🦱","👩‍🦰"], keep:[1], ndIcons:["👩‍✈️"], bubble:"my only sister — she lives in Lima",
+   def:"I have more than one sister; the clause tells you which one — the one in Lima.",
+   nd:"I have one sister. The clause just adds a fact about her."},
+  {label:"🚌 The tours", pre:"The tours", pron:"that", ndPron:"which", cl:"leave at dawn", post:"are cheaper.",
+   icons:["🚌","🚌","🚌","🚌","🚌"], keep:[0,3], bubble:"all of them leave at dawn",
+   def:"only the dawn tours are cheaper; the other tours are not.",
+   nd:"all the tours are cheaper, and they all leave at dawn. Inside commas <i>that</i> is not allowed, so the machine changed the pronoun."},
+  {label:"🏔️ Machu Picchu", pre:"Machu Picchu", pron:"which", cl:"sits high in the Andes", post:"attracts millions of visitors.",
+   icons:["🏔️"], keep:[0], proper:true, bubble:"it sits high in the Andes",
+   def:"not possible — there is only one Machu Picchu, so there is nothing to narrow down. A proper name is already identified.",
+   nd:"Machu Picchu is already identified; the clause adds extra information, so it needs commas."}
+];
+var curSw=0, commas=false, predictMode=false, revealed=false;
+SW.forEach(function(s,i){
+  var b=document.createElement("button"); b.innerHTML=s.label; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curSw=i; commas=!!s.proper; revealed=false; document.querySelectorAll("#swChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderSw(); });
+  $("swChips").appendChild(b);
+});
+document.querySelectorAll("#commaSw button").forEach(function(b){ b.addEventListener("click", function(){ commas=b.dataset.v==="yes"; revealed=false; renderSw(); }); });
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderSw(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderSw(); });
+function renderSw(){
+  var s=SW[curSw], pr=(commas&&s.ndPron)?s.ndPron:s.pron, bad=!!s.proper&&!commas;
+  document.querySelectorAll("#commaSw button").forEach(function(b){ b.classList.toggle("on", (b.dataset.v==="yes")===commas); });
+  var cm=commas?'<span class="cm">,</span>':"";
+  var clause='<span class="rcl"><span class="rpr">'+pr+'</span> '+s.cl+'</span>';
+  var sent=s.pre+cm+" "+clause+(s.post==="."?".":cm+" "+s.post);
+  $("swCard").className="xcard xsent"+(bad?" bad":"");
+  $("swRole").textContent=commas?"Non-defining — inside commas — extra information about the whole set":"Defining — no commas — picks out which ones";
+  $("swSnt").innerHTML=(bad?'<span class="nope">✘ not possible · </span>':"")+sent;
+  var icons=(commas&&s.ndIcons)?s.ndIcons:s.icons, html="";
+  icons.forEach(function(ic,j){ html+='<span class="ico '+((commas||s.keep.indexOf(j)>=0)?"on":"off")+'">'+ic+'</span>'; });
+  $("swIcons").innerHTML=html;
+  $("swBubble").className="bubble"+(bad?" no":commas?"":" def");
+  $("swBubble").innerHTML=bad?"✘ only one — nothing to narrow down":commas?"💬 "+s.bubble:"🔍 only these ones";
+  $("swMean").innerHTML="<b>Meaning:</b> "+(commas?s.nd:s.def);
+  var mask=predictMode&&!revealed;
+  $("revealBtn").style.display=mask?"inline-block":"none";
+  if(mask){ document.querySelectorAll("#swSnt .rpr").forEach(function(el){ el.classList.add("masked"); el.addEventListener("click", function(){ revealed=true; renderSw(); }); }); }
+}
+renderSw();
+
+/* pronoun chooser */
+var PRON = [
+  {p:"who", use:"people", ex:"the guide <b>who</b> showed us the ruins", why:"<i>the guide</i> is a person, and <i>who</i> is the subject of <i>showed</i> — so it cannot be dropped.", f:["ok|✔ defining","ok|✔ non-defining","x|drop it only as the object: the people (who) I met"]},
+  {p:"which", use:"things / animals", ex:"the beach <b>which</b> we visited", why:"<i>the beach</i> is a thing; here <i>which</i> is the object of <i>visited</i> (we visited it), so you may drop it: <i>the beach we visited</i>.", f:["ok|✔ defining","ok|✔ non-defining","x|also = a whole idea: …, which ruined our plans"]},
+  {p:"that", use:"people or things — defining only", ex:"the hotel <b>that</b> we booked", why:"<i>that</i> replaces <i>who</i> or <i>which</i> in a defining clause; it is the object of <i>booked</i>, so it is optional.", f:["ok|✔ defining","no|✘ non-defining — never inside commas"]},
+  {p:"whose", use:"possession (people and things)", ex:"a traveler <b>whose</b> bag was lost", why:"the bag belongs to the traveler → <i>whose</i>. It also works for things: <i>a country whose beaches are famous</i>. Not <i>who’s</i> (= who is).", f:["ok|✔ defining","ok|✔ non-defining","no|✘ never dropped"]},
+  {p:"where", use:"places", ex:"the town <b>where</b> I was born", why:"<i>the town</i> is a place and the clause after it is complete (<i>I was born</i>). Same as <i>the town (that) I was born <b>in</b></i>.", f:["ok|✔ defining","ok|✔ non-defining","x|needs a full clause after it"]},
+  {p:"when", use:"times", ex:"the year <b>when</b> we met", why:"<i>the year</i> is a time and the clause after it is complete (<i>we met</i>).", f:["ok|✔ defining","ok|✔ non-defining","x|needs a full clause after it"]},
+  {p:"whom", use:"people as the object — formal", ex:"the guide <b>with whom</b> we traveled", why:"the formal object form of <i>who</i>, typical after a preposition. Everyday English prefers <i>the guide (who) we traveled with</i>.", f:["ok|✔ defining","ok|✔ non-defining","x|formal register"]}
+];
+var curPron=0;
+PRON.forEach(function(d,i){
+  var b=document.createElement("button"); b.textContent=d.p; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curPron=i; document.querySelectorAll("#pronChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderPron(); });
+  $("pronChips").appendChild(b);
+});
+function renderPron(){
+  var d=PRON[curPron];
+  $("pronMap").innerHTML='<span class="a">'+d.p+'</span> → <span class="b">'+d.use+'</span>';
+  $("pronEx").innerHTML=d.ex; $("pronWhy").innerHTML="Why here? "+d.why;
+  $("pronFacts").innerHTML=d.f.map(function(x){ var p=x.split("|"); return '<span class="'+p[0]+'">'+p[1]+'</span>'; }).join("");
+}
+renderPron();
+
+/* can I omit the pronoun? */
+var OMIT = [
+  {pre:"the museum", pron:"that", rest:"we visited", ok:true, why:"<b>object</b> — the clause has its own subject (<i>we</i>): we visited the museum."},
+  {pre:"the artist", pron:"who", rest:"painted this", ok:false, why:"<b>subject</b> — nothing else can do the painting; without <i>who</i> the link disappears."},
+  {pre:"the food", pron:"which", rest:"they served", ok:true, why:"<b>object</b> — the clause already has a subject (<i>they</i>)."},
+  {pre:"the man", pron:"whose", rest:"car broke down", ok:false, why:"<b>whose</b> carries the possession — it is never dropped."},
+  {pre:"the hotel", pron:"that", rest:"overlooks the bay", ok:false, why:"<b>subject</b> — <i>that</i> is the one that overlooks the bay."},
+  {pre:"the people", pron:"who", rest:"I met", ok:true, why:"<b>object</b> — I met the people; the subject <i>I</i> is already there."}
+];
+var curOm=0;
+OMIT.forEach(function(o,i){
+  var b=document.createElement("button"); b.textContent=o.pre+" "+o.pron+" "+o.rest; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curOm=i; $("dropChk").checked=false; document.querySelectorAll("#omChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderOm(); });
+  $("omChips").appendChild(b);
+});
+$("dropChk").addEventListener("change", renderOm);
+function renderOm(){
+  var o=OMIT[curOm], drop=$("dropChk").checked, v;
+  $("omPh").innerHTML=o.pre+" "+(drop?'<span class="gone">'+o.pron+'</span>':'<span class="rpr">'+o.pron+'</span>')+" "+o.rest;
+  if(!drop) v='<span class="verdict info">'+(o.ok?"✂️ You may drop it — try the switch. ":"🔒 Keep it. ")+o.why+'</span>';
+  else v=o.ok?'<span class="verdict ok">✔ Correct: <i>'+o.pre+" "+o.rest+'</i>. '+o.why+'</span>':'<span class="verdict no">✘ Not possible. '+o.why+'</span>';
+  $("omVerdict").innerHTML=v;
+}
+renderOm();
+
+/* special cases */
+var SC = {
+  that:"<b>That only in defining clauses</b> — never inside commas. ✘ Paris, <s>that</s> I love, is… → ✔ Paris, <b>which</b> I love, is… · ✘ My brother, <s>that</s> lives in Berlin, … → ✔ My brother, <b>who</b> lives in Berlin, … <span class='es'>(Con comas, nunca that.)</span>",
+  prep:"<b>Prepositions.</b> Informal English leaves the preposition at the <b>end</b>: <i>the town <b>that</b> I come <b>from</b></i> · <i>the hostel (<b>which</b>) we stayed <b>at</b></i>. Formal English moves it to the <b>front</b>, and then only <b>which</b> (things) or <b>whom</b> (people) can follow it — never <i>that</i>: <i>the town <b>from which</b> I come</i> · <i>the guide <b>with whom</b> we traveled</i>. ✘ the town from that I come.",
+  idea:"<b>Which for a whole idea</b> (non-defining): <i>The flight was canceled, <b>which</b> ruined our plans.</i> Here <i>which</i> = the whole first clause, not one noun. Always a comma before it. <span class='es'>(= lo cual)</span>",
+  where:"<b>Where vs which.</b> Use <b>where</b> for a place + a <b>full clause</b>: <i>the hostel <b>where</b> we stayed</i>. If the verb needs a preposition, use <b>which/that</b> + preposition: <i>the hostel (<b>which</b>) we stayed <b>at</b></i>. ✘ the hostel where we stayed <s>at</s> (<i>where</i> already contains the preposition). And if the place is the <b>object</b> of the verb (<i>visit, see, love</i>): <i>the city (<b>that</b>) we visited</i>, not <i>where</i>.",
+  when:"<b>When vs which.</b> Same logic for times: <b>when</b> + a full clause: <i>the year <b>when</b> we met</i> · <i>the day <b>when</b> the ferry was canceled</i>. If the time word is the <b>object</b> of the verb, use <b>which/that</b> (or nothing): <i>the summer (<b>that</b>) we spent in Cusco</i>. Formal: <i>the day <b>on which</b> we arrived</i>.",
+  whose:"<b>Whose works for people and things:</b> <i>a traveler <b>whose</b> bag was lost</i> · <i>a country <b>whose</b> beaches are famous</i> · <i>a hotel <b>whose</b> rooms face the sea</i>. Never <i>who’s</i> (= who is): ✘ people <s>who’s</s> bags → ✔ people <b>whose</b> bags."
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.that;
+
+/* typical errors — tap to reveal */
+var ERR = [
+  {bad:"The man <b>which</b> helped us spoke Spanish.", fix:"The man <b>who / that</b> helped us spoke Spanish.", rsn:"which is for things; a person takes who (or that in a defining clause)."},
+  {bad:"My father <b>who is a doctor</b> lives here. <span class='es'>(only one father)</span>", fix:"My father<b>,</b> who is a doctor<b>,</b> lives here.", rsn:"one father = already identified → the clause only adds a fact → commas."},
+  {bad:"The city <b>that</b> I was born…", fix:"The city <b>where</b> I was born… / The city that I was born <b>in</b>…", rsn:"born needs in: use where, or keep that and add the preposition."},
+  {bad:"people <b>who’s</b> bags…", fix:"people <b>whose</b> bags…", rsn:"who’s = who is; possession needs whose."},
+  {bad:"Rome, <b>that</b> is beautiful, is always busy.", fix:"Rome, <b>which</b> is beautiful, is always busy.", rsn:"that never goes inside commas: non-defining → which."},
+  {bad:"This is the town <b>where</b> I was born <b>in</b>.", fix:"This is the town <b>where</b> I was born. / …the town <b>which</b> I was born <b>in</b>.", rsn:"where already contains the preposition — one or the other, not both."},
+  {bad:"The city <b>where</b> I visited last year was beautiful.", fix:"The city <b>(which / that)</b> I visited last year was beautiful.", rsn:"visit takes a direct object → which/that (or drop it); where needs a full clause after it."},
+  {bad:"The people that <b>they</b> live there are friendly.", fix:"The people <b>who / that</b> live there are friendly.", rsn:"no double subject: the relative pronoun is already the subject. <span class='es'>(no repitas «ellos»)</span>"}
+];
+var errWrap=$("errList");
+ERR.forEach(function(e){
+  var d=document.createElement("div"); d.className="err";
+  d.innerHTML='<span class="hint">tap to reveal</span><span class="bad">✘ '+e.bad+'</span><div class="fix">✔ '+e.fix+'<span class="rsn">'+e.rsn+'</span></div>';
+  d.addEventListener("click", function(){ d.classList.toggle("open"); });
+  errWrap.appendChild(d);
+});
+
+/* =====================================================================
+   BUILD · assemble (pronoun + commas) + transform (join two sentences)
+===================================================================== */
+var BUILD = [
+  {pre:"That’s the pilot", cl:"landed the plane safely", post:".", options:["who","which","whose","that"], ok:["who","that"], commas:false, wp:"a person as the subject of the clause → who (or that).", wc:"the clause identifies which pilot → defining → no commas."},
+  {pre:"This is the village", cl:"my grandparents grew up", post:".", options:["where","which","that","when"], ok:["where"], commas:false, wp:"a place + a full clause (my grandparents grew up) → where.", wc:"it identifies which village → defining → no commas."},
+  {pre:"We met a couple", cl:"flight had been canceled twice", post:".", options:["whose","who","which","that"], ok:["whose"], commas:false, wp:"the flight belongs to the couple → possession → whose.", wc:"it identifies which couple → defining → no commas."},
+  {pre:"Summer is the season", cl:"the coast gets crowded", post:".", options:["when","where","which","that"], ok:["when"], commas:false, wp:"a time + a full clause → when.", wc:"it identifies which season → defining → no commas."},
+  {pre:"The suitcase", cl:"they lost", post:"was never found.", options:["which","who","whose","that"], ok:["which","that"], commas:false, wp:"a thing, object of lost → which (or that); you could even drop it.", wc:"it identifies which suitcase → defining → no commas."},
+  {pre:"Machu Picchu", cl:"sits high in the Andes", post:"attracts millions of visitors.", options:["which","that","who","where"], ok:["which"], commas:true, wp:"a place as the subject of sits → which; that is impossible inside commas.", wc:"a proper name is already identified → non-defining → commas."},
+  {pre:"The guide", cl:"we hired", post:"spoke four languages.", options:["who","which","whose","that"], ok:["who","that"], commas:false, wp:"a person, object of hired → who (or that); it could even be dropped.", wc:"it identifies which guide → defining → no commas."},
+  {pre:"Reykjavik", cl:"it barely gets dark in June", post:"is magical in summer.", options:["where","which","that","when"], ok:["where"], commas:true, wp:"a place + a full clause (it barely gets dark) → where.", wc:"a proper name is already identified → non-defining → commas."},
+  {pre:"My sister", hint:"I have one sister", cl:"lives in Lima", post:"is a pilot.", options:["who","which","whose","that"], ok:["who"], commas:true, wp:"a person as the subject → who; not that, because the clause sits inside commas.", wc:"one sister = already identified → the clause only adds a fact → commas."},
+  {pre:"The flight was canceled", cl:"ruined our plans", post:".", options:["which","that","who","when"], ok:["which"], commas:true, wp:"which refers to the whole idea (the cancellation).", wc:"a whole-idea which is always non-defining → comma."}
+];
+var bi=0, bPick=null, bComma=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+document.querySelectorAll("#commaPick button").forEach(function(b){
+  b.addEventListener("click", function(){ bComma=b.dataset.v==="yes"; document.querySelectorAll("#commaPick button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+});
+function frameS(it,pr,cm){
+  var c=cm?'<span class="cm">,</span>':"", cl='<span class="rcl"><span class="rpr">'+pr+'</span> '+it.cl+'</span>';
+  return it.pre+c+" "+cl+(it.post==="."?".":c+" "+it.post);
+}
+function renderBuild(){
+  var it=BUILD[bi]; bPick=null; bComma=null;
+  $("bctx").innerHTML="Join it: "+it.pre+" <u>___</u> "+it.cl+(it.post==="."?".":" "+it.post)+(it.hint?"<small>("+it.hint+")</small>":"");
+  var wrap=$("pronPick"); wrap.innerHTML="";
+  it.options.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ bPick=op; document.querySelectorAll("#pronPick button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+  document.querySelectorAll("#commaPick button").forEach(function(x){ x.classList.remove("on"); x.classList.remove("wrongpick"); });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bPick||bComma===null){ r.className="bresult bad"; r.innerHTML="Choose a pronoun and decide on the commas first."; return; }
+  if(it.ok.indexOf(bPick)<0){
+    document.querySelector('#pronPick button[data-v="'+bPick+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ Not that pronoun. <span class='bnote'>Hint — "+it.wp+"</span>"; return;
+  }
+  if(bComma!==it.commas){
+    document.querySelector('#commaPick button[data-v="'+(bComma?"yes":"no")+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ Good pronoun, wrong commas. <span class='bnote'>Hint — "+it.wc+"</span>"; return;
+  }
+  r.className="bresult good"; r.innerHTML="✅ "+frameS(it,bPick,it.commas)+'<div class="bnote">'+it.wp+" "+it.wc+"</div>";
+  bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+/* transform: accepted answers are [text, commas required] pairs */
+function alts(heads,tails,c){ var out=[]; heads.forEach(function(h){ tails.forEach(function(t){ out.push([t?h+" "+t:h, c]); }); }); return out; }
+var TRANS = [
+  {ctx:"We stayed in a hostel. The hostel had a rooftop garden.", ok:alts(["we stayed in a hostel"],["that had a rooftop garden","which had a rooftop garden"],0), model:"We stayed in a hostel that/which had a rooftop garden."},
+  {ctx:"My cousin is a tour guide. She speaks five languages.", ok:alts(["my cousin who speaks five languages is a tour guide","my cousin who is a tour guide speaks five languages"],[""],2), model:"My cousin, who speaks five languages, is a tour guide."},
+  {ctx:"That’s the restaurant. We had dinner there.", ok:alts(["that's the restaurant","that is the restaurant"],["where we had dinner","that we had dinner at","which we had dinner at","we had dinner at","at which we had dinner"],0), model:"That’s the restaurant where we had dinner. / …(that/which) we had dinner at."},
+  {ctx:"The flight was delayed by six hours. This ruined our first day.", ok:[["the flight was delayed by six hours which ruined our first day",1]], model:"The flight was delayed by six hours, which ruined our first day."},
+  {ctx:"I met a traveler. His backpack weighed 30 kilos.", ok:[["i met a traveler whose backpack weighed 30 kilos",0],["i met a traveler whose backpack weighed thirty kilos",0]], model:"I met a traveler whose backpack weighed 30 kilos."},
+  {ctx:"Lisbon is a beautiful city. I’ve visited it three times.", ok:alts(["lisbon which i've visited three times is a beautiful city","lisbon which i have visited three times is a beautiful city"],[""],2).concat(alts(["lisbon is a beautiful city"],["that i've visited three times","which i've visited three times","i've visited three times","that i have visited three times","which i have visited three times","i have visited three times"],0)), model:"Lisbon, which I’ve visited three times, is a beautiful city."},
+  {ctx:"The hotel has a rooftop pool. We booked it.", ok:alts(["the hotel"],["that we booked has a rooftop pool","which we booked has a rooftop pool","we booked has a rooftop pool"],0), model:"The hotel (that/which) we booked has a rooftop pool."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML="Join them: "+it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], raw=$("tInput").value, val=norm(raw), hit=null;
+  it.ok.forEach(function(p){ if(!hit&&norm(p[0])===val) hit=p; });
+  var nc=(raw.match(/,/g)||[]).length, ok=!!hit&&nc>=hit[1];
+  $("tInput").className=ok?"ok":"no"; $("tWhy").className="why show";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; $("tWhy").innerHTML='<span class="k">✓ Correct.</span> <b>'+it.model+"</b>"; }
+  else if(hit){ $("tWhy").innerHTML='<span class="k" style="color:var(--grammar)">Almost:</span> the words are right, but a non-defining clause needs commas: <b>'+it.model+"</b>"; }
+  else { $("tWhy").innerHTML='<span class="k" style="color:var(--think)">Model answer:</span> <b>'+it.model+"</b>"; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Which pronoun?", q:"“That’s the guide ___ took us to the ruins.”", o:["who","which","whose"], a:0, w:"A person as the subject of the clause → who (or that)."},
+  {kind:"mc", diff:1, tag:"Which pronoun?", q:"“Autumn is the season ___ the prices drop.”", o:["where","when","which"], a:1, w:"A time + a full clause → when."},
+  {kind:"fill", diff:1, tag:"Which pronoun?", q:"“This is the beach ___ we saw the turtles.” (1 word)", accept:["where"], w:"A place + a full clause (we saw the turtles) → where."},
+  {kind:"mc", diff:1, tag:"Commas or not?", q:"“The tourists who arrived early got the best seats.”", o:["No commas — defining: only those tourists got the best seats.","Commas — non-defining: all the tourists arrived early."], a:0, w:"The clause identifies which tourists → defining → no commas."},
+  {kind:"mc", diff:1, tag:"Commas or not?", q:"“My brother who lives in Berlin is a chef.” (I have one brother)", o:["No commas — defining.","Commas — non-defining: My brother, who lives in Berlin, is a chef."], a:1, w:"One brother = already identified; the clause only adds a fact → commas."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["The","man","which","helped","us","spoke","Spanish."], bad:2, fixOld:"which", fixNew:"who / that", w:"‘which’ is for things; a person takes ‘who’ (or ‘that’ in a defining clause)."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["Rome,","that","is","beautiful,","is","always","busy."], bad:1, fixOld:"that", fixNew:"which", w:"‘that’ never goes inside commas: a non-defining clause needs ‘which’."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["We","met","people","who’s","flights","were","delayed."], bad:3, fixOld:"who’s", fixNew:"whose", w:"‘who’s’ = who is; possession needs ‘whose’."},
+  {kind:"mc", diff:2, tag:"Drop the pronoun?", q:"In which phrase can you delete the relative pronoun?", o:["the tour that we booked","the pilot who flew the plane","the woman whose bag was stolen"], a:0, w:"Only an object pronoun in a defining clause can go: ‘the tour we booked’; in the others it is the subject, or ‘whose’."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["The","city","where","I","visited","last","year","was","beautiful."], bad:2, fixOld:"where I visited", fixNew:"(which / that) I visited", w:"‘visit’ takes a direct object → which/that (or nothing); ‘where’ needs a full clause after it."},
+  {kind:"mc", diff:3, tag:"What does it mean?", q:"“The passengers, who had visas, boarded first.” — with commas, this means…", o:["Only the passengers with visas boarded first.","All the passengers had visas, and they all boarded first."], a:1, w:"Commas = non-defining: the clause adds a fact about all the passengers; without commas it would select only some."},
+  {kind:"fill", diff:3, tag:"Join the ideas", q:"“The ferry was canceled. This ruined our plans.” → The ferry was canceled, ___ ruined our plans. (1 word)", accept:["which"], w:"‘which’ can refer to a whole idea — always non-defining, after a comma."},
+  {kind:"fill", diff:3, tag:"Formal preposition", q:"Make it formal — move the preposition to the front: “the town that I come from” → “the town ___ I come.” (2 words)", accept:["from which"], w:"A fronted preposition takes ‘which’ (things) or ‘whom’ (people), never ‘that’: from which."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("relative_drill_best")||0); if(dscore>best){ store("relative_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Relative clauses mastered. Ready for the ★★★ homework." : dscore>=8?"Good joining — review the comma switch and the special-cases card, then go again." : "Re-read Grammar 8, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, '<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE PATTERN MACHINE · English 6 · Unit 2 "Wish You Were Here"
+  Grammar 6 — verb + object + infinitive (to / bare / from + -ing / that-clause)
+  Three modes: Explore (fill the slots) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 6 · The Pattern Machine · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --teal:#0E7C7B; --tealdark:#09504F; --teallt:#E1F1F0;
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--teal),var(--tealdark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#BFE6E4; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#D6EEED; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--tealdark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--tealdark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--tealdark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-teal{background:var(--teal)} .tag-navy{background:var(--navy)}
+
+  /* ---------- pattern machine ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:4px}
+  .dialgroup{margin-top:8px}
+  .tensechips{display:flex; gap:6px; flex-wrap:wrap; margin:2px 0 4px}
+  .tensechips button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 11px; font:700 13px Lato,sans-serif; cursor:pointer}
+  .tensechips button.on{border-color:var(--teal); background:var(--teallt); color:var(--tealdark)}
+  .tensechips button.exv{border-style:dashed; border-color:#C9B8E3; color:var(--excep)}
+  .tensechips button.exv.on{border-style:solid; border-color:var(--excep); background:var(--exceplt)}
+  .machine{display:flex; gap:8px; flex-wrap:wrap; margin:12px 0 4px}
+  .slot{flex:1 1 150px; border:2px solid; border-radius:12px; padding:9px 12px; text-align:center; min-height:78px; position:relative}
+  .slot .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase; opacity:.85}
+  .slot .val{font-size:clamp(17px,2.9vw,22px); font-weight:800; margin-top:3px; line-height:1.35}
+  .slot.verb{background:var(--teallt); border-color:var(--teal); color:var(--tealdark)}
+  .slot.obj{background:#D8EFE1; border-color:var(--green); color:var(--greendark)}
+  .slot.obj.none{background:var(--thinklt); border-color:var(--think); color:var(--think); border-style:dashed}
+  .slot.comp{background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)}
+  .slot.comp.ex{background:var(--exceplt); border-color:var(--excep); color:var(--excep)}
+  .slot.masked{cursor:pointer} .slot.masked .val{color:transparent}
+  .slot.masked::after{content:"?"; position:absolute; left:0; right:0; top:24px; bottom:0; color:#999; font-size:28px; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .plus{align-self:center; font-size:22px; font-weight:900; color:#bbb}
+  .patrow{display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin:8px 0 2px}
+  .patbadge{display:inline-block; color:#fff; font-weight:900; font-size:13px; padding:5px 14px; border-radius:999px; background:var(--grammar)}
+  .patbadge.ex{background:var(--excep)}
+  .ruleline{font-size:14px; font-weight:700; color:#555}
+  .sentence{font-size:clamp(18px,3.2vw,25px); font-weight:800; text-align:center; padding:16px 12px; background:var(--soft); border-radius:12px; margin:10px 0 6px; line-height:1.7}
+  .sverb{background:var(--teallt); color:var(--tealdark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--teal)}
+  .sobj{background:#D8EFE1; color:var(--greendark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--green)}
+  .scomp{background:var(--grammarlt); color:var(--grammar); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--grammar)}
+  .scomp.ex{background:var(--exceplt); color:var(--excep); box-shadow:inset 0 -2px 0 var(--excep)}
+  .scomp.masked{color:transparent; position:relative; cursor:pointer; min-width:70px; display:inline-block}
+  .scomp.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .vnote{font-size:13px; font-weight:700; color:var(--excep); margin-top:6px; text-align:center; min-height:18px}
+  .contrast{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:8px; margin-top:4px}
+  .contrast div{border-radius:10px; padding:9px 12px; font-weight:700; font-size:15px; border:2px solid}
+  .contrast .ok{background:var(--greenlt); border-color:var(--green); color:var(--greendark)}
+  .contrast .no{background:var(--thinklt); border-color:var(--think); color:var(--think)}
+  .contrast small{display:block; font-size:11px; font-weight:900; letter-spacing:.06em; text-transform:uppercase; opacity:.8}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:12px}
+  .legend span{border-radius:6px; padding:1px 8px}
+
+  /* three shapes */
+  .shapes{display:grid; gap:6px; margin-top:6px}
+  .shapes div{background:#fff; border:1.5px solid var(--rule); border-radius:8px; padding:7px 11px; font-size:14px; font-weight:700; display:flex; gap:10px; flex-wrap:wrap; align-items:baseline}
+  .shapes .a{color:var(--grammar); min-width:290px} .shapes .b{color:#444; font-weight:600; font-style:italic}
+
+  /* special cases selector */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+
+  /* error clinic */
+  .errrow{border:2px solid var(--rule); border-radius:10px; padding:9px 12px; margin-top:8px; cursor:pointer; font-weight:700; font-size:15px}
+  .errrow .no{color:var(--think)} .errrow .gl{color:#777; font-style:italic; font-weight:600; font-size:13px}
+  .errrow .hint{font-size:11px; color:#999; font-weight:900; text-transform:uppercase; letter-spacing:.05em; margin-left:6px}
+  .errrow .yes{display:none; color:var(--greendark); margin-top:4px}
+  .errrow.open{border-color:var(--green); background:var(--greenlt)} .errrow.open .yes{display:block} .errrow.open .hint{display:none}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--teal); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--tealdark); border:2px solid var(--teal)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--teal); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--teal)}
+  .segbig button.on{background:var(--teal); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--teal); background:var(--teallt); color:var(--tealdark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--tealdark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--tealdark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--teal); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick,.stn .w.rightpick{background:var(--think); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--tealdark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--teal); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} .shapes .a{min-width:0} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🎛️</span>
+  <div class="wrap">
+    <div class="kicker">English 6 · Unit 2 · Wish You Were Here</div>
+    <h1>🎛️ The Pattern Machine</h1>
+    <div class="sub"><b>Grammar 6</b> — verb + object + infinitive: with <i>to</i>, without <i>to</i> (<i>make/let</i>), <i>from + -ing</i>, that-clause. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🎛️ Explore the slots</span><span>🔧 Build a sentence</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🎛️ Explore<small>watch the slots fill</small></button>
+    <button data-tab="build">🔧 Build<small>assemble it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Someone makes someone else act: three slots</h2>
+      <p class="muted">Verbs of <b>advice, permission, orders and wishes</b> share one skeleton:
+        <b>subject + verb + object + (<i>not</i>) + <i>to</i> + base form</b>. Pick a verb on the dial and watch the
+        machine fill the slots — the famous exceptions change the last one. <span class="es">(Alguien hace que otro
+        actúe: verbo + objeto + infinitivo con to; make/let van sin to.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the slot after the object, guess, then reveal</label>
+
+      <h3>1 · Pick a verb on the dial</h3>
+      <div id="dial"></div>
+
+      <h3>2 · Watch the slots fill</h3>
+      <div class="machine">
+        <div class="slot verb"><div class="role">verb</div><div class="val" id="slotVerb"></div></div>
+        <span class="plus">+</span>
+        <div class="slot obj" id="slotObj"><div class="role">object</div><div class="val" id="slotObjVal"></div></div>
+        <span class="plus">+</span>
+        <div class="slot comp" id="slotComp"><div class="role" id="slotCompRole">complement</div><div class="val" id="slotCompVal"></div></div>
+      </div>
+      <div class="patrow"><span class="patbadge" id="patBadge"></span><span class="ruleline" id="ruleLine"></span></div>
+      <div class="sentence" id="sentence"></div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the slot ✓</button></div>
+      <div class="vnote" id="vnote"></div>
+
+      <h3>With <i>to</i> or without <i>to</i>?</h3>
+      <div class="contrast" id="contrast"></div>
+      <div class="legend"><span class="sverb">verb</span><span class="sobj">object</span><span class="scomp">to-infinitive (the pattern)</span><span class="scomp ex">exception form</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">💡 Three shapes, one skeleton</span>
+      <h2>Positive, negative infinitive, negative verb</h2>
+      <div class="shapes">
+        <div><span class="a">verb + object + infinitive</span><span class="b">The guide <b>advised us to book</b> early.</span></div>
+        <div><span class="a">verb + object + <i>not</i> + infinitive</span><span class="b">She <b>warned us not to swim</b> at night.</span></div>
+        <div><span class="a">negative verb + object + infinitive</span><span class="b">We <b>don’t expect everyone to like</b> camping.</span></div>
+      </div>
+      <p class="muted" style="margin-top:10px">This pattern is how English <b>reports</b> commands and advice:
+        “Check in two hours early.” → <i>The agent <b>told me to check in</b> two hours early.</i> ·
+        “Don’t leave your passport in the room.” → <i>He <b>advised me not to leave</b> it there.</i>
+        <span class="es">(Así se reportan órdenes y consejos — vuelve en Grammar 7.)</span></p>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ The famous exceptions</span>
+      <h2>Seven verbs that break the skeleton</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="makelet" class="on">make / let</button><button data-v="help">help</button><button data-v="suggest">suggest / recommend</button><button data-v="want">want</button><button data-v="prevent">prevent / stop</button><button data-v="perc">see / hear / watch</button><button data-v="passive">passive</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">🚫 Error clinic</span>
+      <h2>The three classic Spanish-speaker errors (+1)</h2>
+      <p class="muted">Spanish uses <i>que</i> + subjunctive; English uses object + infinitive. Tap each sentence to fix it — <b>guess before you check.</b> <span class="es">(“Quiero que…” no se traduce con that.)</span></p>
+      <div id="clinic"></div>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Grammar 6's rule table as a machine: the dial groups the verbs by the manual's four families (advice &amp; persuasion, permission, orders &amp; requests, wishes &amp; expectations) plus the exceptions; the third slot turns purple when the complement is not a to-infinitive. The special-cases card follows the manual's list (make/let, help, suggest/recommend, want, prevent/stop, perception verbs, passive incl. <i>be made to</i>); the error clinic is the pitfall box.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> a sentence by choosing the verb and the complement form, then <i>transform</i> quotes and Spanish sentences with a given verb (exercise C + the homework translation challenge), with validation.</li>
+          <li><b>Drill</b> merges the quizzes into one graded engine (★ spot the pattern &amp; choose the form · ★★ fix the error &amp; complete · ★★★ suggest, want, passive &amp; translation) with a score and streak.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-teal">🔧 Your turn to produce</span>
+      <h2>Build a sentence</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the situation, then choose the <b>verb</b> that fits the meaning and the <b>complement form</b> it takes. The machine assembles the sentence — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">Which verb fits the situation?</div><div class="bchips" id="verbChips"></div></div>
+        <div class="bgroup"><div class="glab">…and which form follows it?</div><div class="bchips" id="compChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New situation →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Rewrite each quote — or translate the Spanish — using the verb in parentheses. Type it and check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="e.g. She asked him to stay."><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next sentence →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ spot the pattern &amp; choose the form · ★★ fix the error &amp; complete · ★★★ suggest, want, passive &amp; translation.
+        Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 6 · Unit 2 «Wish You Were Here» · Grammar 6 — verb + object + infinitive · Level B1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE PATTERN MACHINE — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 6 Class Manual (Grammar 6).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · the pattern machine (verb dial → three slots)
+===================================================================== */
+var FORMS = {
+  toinf:{role:"to-infinitive", pat:"verb + object + to-infinitive", ex:false, rule:"verb + object + <i>to</i> + base form."},
+  neg:{role:"not + to-infinitive", pat:"verb + object + not + to-infinitive", ex:false, rule:"<i>not</i> goes before <i>to</i>: warned us <b>not to</b> swim."},
+  negv:{role:"to-infinitive", pat:"negative verb + object + to-infinitive", ex:false, rule:"the verb is negative; the infinitive keeps <i>to</i>."},
+  bare:{role:"bare infinitive", pat:"verb + object + bare infinitive", ex:true, rule:"<i>make</i> and <i>let</i> take NO <i>to</i>."},
+  both:{role:"(to) infinitive", pat:"verb + object + (to) infinitive", ex:true, rule:"<i>help</i> accepts both forms."},
+  noobj:{role:"-ing / that-clause", pat:"verb + -ing  ·  verb + (that) clause", ex:true, rule:"<i>suggest</i> and <i>recommend</i> do NOT take object + infinitive."},
+  from:{role:"from + -ing", pat:"verb + object + from + -ing", ex:true, rule:"<i>prevent</i> and <i>stop</i> use <i>from + -ing</i>."},
+  perc:{role:"bare infinitive / -ing", pat:"verb + object + bare infinitive or -ing", ex:true, rule:"bare infinitive = complete action · <i>-ing</i> = action in progress."}
+};
+var FAMS = ["advice & persuasion","permission","orders & requests","wishes & expectations","the exceptions"];
+/* v verb · fam family · s subject · vf verb form · o object ("" = none) · c complement · t tail · f form · bad wrong phrase · bl label of the wrong box · n note */
+var VERBS = [
+  {v:"advise", fam:0, s:"The guide", vf:"advised", o:"us", c:"to book", t:" early.", f:"toinf", bad:"advised us book"},
+  {v:"encourage", fam:0, s:"We", vf:"encourage", o:"visitors", c:"to try", t:" local food.", f:"toinf", bad:"encourage visitors try"},
+  {v:"persuade", fam:0, s:"She", vf:"persuaded", o:"her boss", c:"to give", t:" her two extra days.", f:"toinf", bad:"persuaded her boss give"},
+  {v:"convince", fam:0, s:"My aunt", vf:"convinced", o:"me", c:"to buy", t:" travel insurance.", f:"toinf", bad:"convinced me buy"},
+  {v:"remind", fam:0, s:"The crew", vf:"reminded", o:"passengers", c:"to have", t:" their passports ready.", f:"toinf", bad:"reminded passengers have"},
+  {v:"warn", fam:0, s:"She", vf:"warned", o:"us", c:"not to swim", t:" at night.", f:"neg", bad:"warned us to not swim", bl:"wrong order", n:"Never ‘to not’: the negative is not + to + base form."},
+  {v:"allow", fam:1, s:"The airline", vf:"allowed", o:"us", c:"to board", t:" first with the baby.", f:"toinf", bad:"allowed us board", n:"Unlike let, allow keeps to."},
+  {v:"permit", fam:1, s:"The hotel", vf:"permitted", o:"guests", c:"to smoke", t:" on the terrace.", f:"toinf", bad:"permitted to smoke", bl:"missing object", n:"permit needs an object (or -ing): permitted guests to smoke / permitted smoking."},
+  {v:"tell", fam:2, s:"The agent", vf:"told", o:"me", c:"to check in", t:" two hours early.", f:"toinf", bad:"told me check in"},
+  {v:"ask", fam:2, s:"The clerk", vf:"asked", o:"us", c:"to sign", t:" the form.", f:"toinf", bad:"asked us sign"},
+  {v:"order", fam:2, s:"The officer", vf:"ordered", o:"him", c:"to open", t:" every bag.", f:"toinf", bad:"ordered him open"},
+  {v:"force", fam:2, s:"The storm", vf:"forced", o:"the captain", c:"to return", t:" to port.", f:"toinf", bad:"forced the captain return"},
+  {v:"get", fam:2, s:"The agency", vf:"got", o:"a local family", c:"to host", t:" the students.", f:"toinf", bad:"got a local family host"},
+  {v:"want", fam:3, s:"I", vf:"want", o:"you", c:"to come", t:" with us.", f:"toinf", bad:"want that you come", bl:"that-clause", n:"Spanish “quiero que vengas” → English want + object + to-infinitive, never want that."},
+  {v:"would like", fam:3, s:"I", vf:"’d like", o:"you", c:"to meet", t:" my host family.", f:"toinf", bad:"’d like that you meet", bl:"that-clause", n:"would like works like want: no that-clause."},
+  {v:"expect", fam:3, s:"We", vf:"don’t expect", o:"everyone", c:"to like", t:" camping.", f:"negv", bad:"don’t expect everyone like"},
+  {v:"need", fam:3, s:"We", vf:"need", o:"someone", c:"to drive", t:" the van.", f:"toinf", bad:"need someone drive"},
+  {v:"invite", fam:3, s:"Jane", vf:"invited", o:"Nelly", c:"to join", t:" their trek.", f:"toinf", bad:"invited Nelly join"},
+  {v:"make", fam:4, s:"The airline", vf:"made", o:"us", c:"pay", t:" extra.", f:"bare", bad:"made us to pay", n:"BUT in the passive, make recovers to: We were made to pay extra."},
+  {v:"let", fam:4, s:"My parents", vf:"let", o:"me", c:"travel", t:" alone.", f:"bare", bad:"let me to travel", n:"Let has no passive — use be allowed to: I was allowed to travel alone."},
+  {v:"help", fam:4, s:"She", vf:"helped", o:"me", c:"(to) carry", t:" the bags.", f:"both", n:"Both are correct: helped me carry / helped me to carry."},
+  {v:"suggest", fam:4, s:"He", vf:"suggested", o:"", c:"visiting / (that) I (should) visit", t:" Oaxaca.", f:"noobj", bad:"suggested me to visit", bl:"object + to-infinitive", n:"No object slot: suggest + -ing, or suggest + (that) + subject + (should) + base form."},
+  {v:"recommend", fam:4, s:"He", vf:"recommended", o:"", c:"visiting / that I visit", t:" Oaxaca.", f:"noobj", bad:"recommended me to visit", bl:"object + to-infinitive", n:"Same as suggest: recommended visiting / recommended that I visit."},
+  {v:"prevent", fam:4, s:"The storm", vf:"prevented", o:"us", c:"from landing", t:".", f:"from", bad:"prevented us to land"},
+  {v:"stop", fam:4, s:"Nothing will", vf:"stop", o:"me", c:"from visiting", t:" Japan.", f:"from", bad:"stop me to visit", n:"After stop, from is optional: stop me (from) visiting."},
+  {v:"watch", fam:4, s:"We", vf:"watched", o:"the sun", c:"set / setting", t:".", f:"perc", bad:"watched the sun to set", n:"set = we saw the whole sunset · setting = we saw it in progress."}
+];
+var curV = 0, predictMode = false, revealed = false;
+FAMS.forEach(function(f,fi){
+  var g=document.createElement("div"); g.className="dialgroup"; g.innerHTML='<div class="glab">'+f+'</div>';
+  var row=document.createElement("div"); row.className="tensechips";
+  VERBS.forEach(function(v,i){
+    if(v.fam!==fi) return;
+    var b=document.createElement("button"); b.textContent=v.v; b.dataset.k=i; if(fi===4) b.classList.add("exv");
+    if(i===curV) b.classList.add("on");
+    b.addEventListener("click", function(){ curV=i; document.querySelectorAll("#dial button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); revealed=false; renderMachine(); });
+    row.appendChild(b);
+  });
+  g.appendChild(row); $("dial").appendChild(g);
+});
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderMachine(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderMachine(); });
+function renderMachine(){
+  var v=VERBS[curV], F=FORMS[v.f], mask=predictMode && !revealed, exc=F.ex?" ex":"";
+  $("slotVerb").textContent=v.vf;
+  $("slotObj").className="slot obj"+(v.o?"":" none"); $("slotObjVal").textContent=v.o||"✘ no object";
+  $("slotComp").className="slot comp"+(mask?"":exc)+(mask?" masked":""); $("slotCompRole").textContent=mask?"complement":F.role; $("slotCompVal").textContent=v.c;
+  $("patBadge").className="patbadge"+(mask?"":exc); $("patBadge").textContent=mask?"? — which form?":F.pat;
+  $("ruleLine").innerHTML=mask?"Predict: to-infinitive, bare infinitive, from + -ing or a that-clause? Then reveal.":"<b>"+FAMS[v.fam]+"</b> · "+F.rule;
+  $("sentence").innerHTML=v.s+' <span class="sverb">'+v.vf+'</span> '+(v.o?'<span class="sobj">'+v.o+'</span> ':'')+'<span class="scomp'+(mask?" masked":exc)+'" id="sc">'+v.c+'</span>'+v.t;
+  $("vnote").textContent=mask?"":(v.n||"");
+  $("revealBtn").style.display=mask?"inline-block":"none";
+  var ct=$("contrast"); ct.innerHTML="";
+  if(mask){ ct.innerHTML='<div class="ok" style="opacity:.5"><small>hidden</small>Reveal the slot to see the contrast.</div>'; }
+  else if(v.f==="both"){ ct.innerHTML='<div class="ok"><small>✔ with to</small>'+v.vf+' '+v.o+' to carry</div><div class="ok"><small>✔ without to</small>'+v.vf+' '+v.o+' carry</div>'; }
+  else {
+    var good='<div class="ok"><small>✔ '+(F.ex?"correct — "+F.role:"with to")+'</small>'+v.vf+' '+(v.o?v.o+' ':'')+v.c+'</div>';
+    var badLab=v.bl||(F.ex?"with to":"without to");
+    var badBox='<div class="no"><small>✘ '+badLab+'</small>'+v.bad+'</div>';
+    ct.innerHTML=F.ex?badBox+good:good+badBox;
+  }
+  if(mask){ $("slotComp").onclick=function(){ revealed=true; renderMachine(); }; $("sc").onclick=$("slotComp").onclick; } else { $("slotComp").onclick=null; }
+}
+renderMachine();
+
+/* special cases */
+var SC = {
+  makelet:"<b>make</b> and <b>let</b> take NO <i>to</i> (bare infinitive). ✔ The airline <b>made us pay</b> extra. ✘ made us <s>to</s> pay · ✔ My parents <b>let me travel</b> alone. ✘ let me <s>to</s> travel. Careful: <i>allow</i> and <i>permit</i> DO keep <i>to</i> — allowed me <b>to travel</b>.",
+  help:"<b>help</b> accepts both: She helped me <b>(to) carry</b> the bags. ✔ helped me carry · ✔ helped me to carry. <span class='es'>(Las dos formas son correctas.)</span>",
+  suggest:"<b>suggest</b> and <b>recommend</b> do NOT take object + infinitive. ✘ He suggested <s>me to visit</s> Oaxaca. ✔ He suggested <b>(that) I (should) visit</b> Oaxaca. · ✔ He suggested <b>visiting</b> Oaxaca. · ✔ He recommended <b>that I visit</b> / <b>visiting</b> Oaxaca.",
+  want:"<b>want</b> never takes a <i>that</i>-clause. ✘ I want <s>that you come</s> with us. ✔ I want <b>you to come</b> with us. Same for <i>would like</i>: I’d like <b>you to meet</b> my host family. <span class='es'>(“Quiero que vengas” ≠ want that.)</span>",
+  prevent:"<b>prevent</b> and <b>stop</b> use <b>from + -ing</b>: The storm <b>prevented us from landing</b>. · Nothing will <b>stop me (from) visiting</b> Japan. ✘ prevented us <s>to land</s>.",
+  perc:"<b>Perception verbs</b> (<i>see, hear, watch, feel</i>) take a <b>bare infinitive</b> for a complete action or <b>-ing</b> for an action in progress: We watched the sun <b>set</b>. / We watched the sun <b>setting</b>.",
+  passive:"<b>Passive of the pattern</b> — the object becomes the subject: Passengers <b>are asked to arrive</b> early. · We <b>were told not to drink</b> the tap water. In the passive, <b>make recovers <i>to</i></b>: We <b>were made to pay</b> extra. <i>Let</i> has no passive — use <i>be allowed to</i>: I <b>was allowed to</b> travel alone."
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.makelet;
+
+/* error clinic (pitfall box) */
+var CLINIC = [
+  {no:"I want that you help me.", gl:"“quiero que me ayudes”", yes:"I want <b>you to help</b> me."},
+  {no:"She suggested me to take the bus.", gl:"“me sugirió que…”", yes:"She suggested <b>that I take</b> the bus. / She suggested <b>taking</b> the bus."},
+  {no:"They made us to wait.", gl:"“nos hicieron esperar”", yes:"They made us <b>wait</b>."},
+  {no:"The hotel permitted to smoke.", gl:"missing object", yes:"The hotel permitted <b>guests to smoke</b>. / permitted <b>smoking</b>."}
+];
+CLINIC.forEach(function(c){
+  var d=document.createElement("div"); d.className="errrow";
+  d.innerHTML='<span class="no">✘ '+c.no+'</span> <span class="gl">('+c.gl+')</span><span class="hint">tap to fix</span><div class="yes">✔ '+c.yes+'</div>';
+  d.addEventListener("click", function(){ d.classList.toggle("open"); });
+  $("clinic").appendChild(d);
+});
+
+/* =====================================================================
+   BUILD · assemble (verb + complement) + transform (rewrite)
+===================================================================== */
+var BUILD = [
+  {ctx:"Security officer: “Remove your shoes.” — everyone had to obey.", s:"Security", o:"everyone", verbs:["made","let","suggested"], v:"made", comps:["remove","to remove","removing"], c:"remove", t:" their shoes.", pat:"verb + object + bare infinitive", note:"make + object + bare infinitive — no to.", vh:"Nobody had a choice: that is make."},
+  {ctx:"Mom: “OK, you can choose the destination this year.” (informal permission)", s:"My parents", o:"me", verbs:["let","made","warned"], v:"let", comps:["choose","to choose","choosing"], c:"choose", t:" the destination this year.", pat:"verb + object + bare infinitive", note:"let + object + bare infinitive — no to.", vh:"Informal permission: let."},
+  {ctx:"Guide: “Don’t drink the river water — it’s dangerous!”", s:"Our guide", o:"us", verbs:["warned","let","made"], v:"warned", comps:["not to drink","to not drink","don’t drink"], c:"not to drink", t:" the river water.", pat:"verb + object + not + to-infinitive", note:"warn + object + not + to-infinitive — not goes before to.", vh:"A warning about danger: warn."},
+  {ctx:"The fog was so thick that our plane could not take off.", s:"The heavy fog", o:"our plane", verbs:["prevented","forced","allowed"], v:"prevented", comps:["from taking","to take","taking"], c:"from taking", t:" off.", pat:"verb + object + from + -ing", note:"prevent + object + from + -ing.", vh:"The fog stopped it from happening: prevent."},
+  {ctx:"Doctor: “I think you should rest for a week.” (a suggestion, no pressure)", s:"The doctor", o:"", verbs:["suggested","forced","prevented"], v:"suggested", comps:["that I rest","me to rest","me resting"], c:"that I rest", t:" for a week.", pat:"verb + (that) clause — no object + infinitive", note:"suggest never takes object + infinitive: suggest + (that) clause or -ing.", vh:"Gentle advice, no pressure: suggest."},
+  {ctx:"Hostel sign: “Cyclists may leave their bikes in the yard.” (formal permission)", s:"The hostel", o:"cyclists", verbs:["allows","makes","prevents"], v:"allows", comps:["to leave","leave","leaving"], c:"to leave", t:" their bikes in the yard.", pat:"verb + object + to-infinitive", note:"allow + object + to-infinitive — unlike let, allow keeps to.", vh:"Formal permission: allow."},
+  {ctx:"The volunteers carried the kayaks together with us.", s:"Volunteers", o:"us", verbs:["helped","made","let"], v:"helped", comps:["(to) carry","carrying","from carrying"], c:"(to) carry", t:" the kayaks to the beach.", pat:"verb + object + (to) infinitive", note:"help accepts both: helped us (to) carry.", vh:"They did it with us: help."},
+  {ctx:"“Quiero que vengas con nosotros.” — say it in English.", s:"I", o:"you", verbs:["want","suggest","let"], v:"want", comps:["to come","that you come","come"], c:"to come", t:" with us.", pat:"verb + object + to-infinitive", note:"want + object + to-infinitive — never want that.", vh:"“Quiero que…” = want."},
+  {ctx:"My uncle showed me how to surf, lesson by lesson.", s:"My uncle", o:"me", verbs:["taught","made","prevented"], v:"taught", comps:["to surf","surf","surfing"], c:"to surf", t:" in Sayulita.", pat:"verb + object + to-infinitive", note:"teach + object + to-infinitive.", vh:"Lessons, step by step: teach."},
+  {ctx:"They made us wait outside the embassy for hours. Say it in the passive.", s:"We", o:"", verbs:["were made","made","were let"], v:"were made", comps:["to wait","wait","waiting"], c:"to wait", t:" outside the embassy for hours.", pat:"passive: be made + to-infinitive", note:"In the passive, make recovers to: were made to wait (let has no passive).", vh:"Passive: we + were made."}
+];
+var bi=0, bV=null, bC=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function chipRow(id, list, onPick){
+  var wrap=$(id); wrap.innerHTML="";
+  list.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ onPick(op); wrap.querySelectorAll("button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+}
+function renderBuild(){
+  var it=BUILD[bi]; bV=null; bC=null;
+  $("bctx").innerHTML = it.ctx+"<small>Subject: "+it.s+(it.o?" · object: "+it.o:"")+"</small>";
+  chipRow("verbChips", it.verbs, function(v){ bV=v; });
+  chipRow("compChips", it.comps, function(c){ bC=c; });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bV || !bC){ r.className="bresult bad"; r.innerHTML="Choose a <b>verb</b> and a <b>form</b> first."; return; }
+  if(bV!==it.v){
+    document.querySelector('#verbChips button[data-v="'+bV+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ Not that verb. <span class='bnote'>Hint — "+it.vh+"</span>"; return;
+  }
+  if(bC!==it.c){
+    document.querySelector('#compChips button[data-v="'+bC+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ Right verb, wrong form. <span class='bnote'>Hint — "+it.note+"</span>"; return;
+  }
+  var ex=(it.c.indexOf("to ")===0||it.c.indexOf("not to")===0)?"":" ex";
+  var sent=it.s+' <span class="sverb">'+it.v+'</span> '+(it.o?'<span class="sobj">'+it.o+'</span> ':'')+'<span class="scomp'+ex+'">'+it.c+'</span>'+it.t;
+  r.className="bresult good"; r.innerHTML="✅ "+sent+'<div class="bnote">'+it.pat+" · "+it.note+"</div>";
+  bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"“I suggest that you check in online.” — the agent, to me (advise)", accept:["the agent advised me to check in online"], model:"The agent advised me to check in online."},
+  {ctx:"“You mustn’t stay longer than 90 days.” — the official, to Edwin (warn)", accept:["the official warned edwin not to stay longer than 90 days","the official warned edwin not to stay more than 90 days"], model:"The official warned Edwin not to stay longer than 90 days."},
+  {ctx:"“Don’t walk on the coral!” — the instructor, to the tourists (tell)", accept:["the instructor told the tourists not to walk on the coral"], model:"The instructor told the tourists not to walk on the coral."},
+  {ctx:"“Would you like to join our trek?” — Jane, to Nelly (invite)", accept:["jane invited nelly to join their trek","jane invited nelly to join her trek","jane invited nelly to join the trek"], model:"Jane invited Nelly to join their trek."},
+  {ctx:"“Buy travel insurance — really, do it!” — my aunt, to me (persuade)", accept:["my aunt persuaded me to buy travel insurance"], model:"My aunt persuaded me to buy travel insurance."},
+  {ctx:"“You can board first with the baby.” — the airline, to us (allow)", accept:["the airline allowed us to board first with the baby"], model:"The airline allowed us to board first with the baby."},
+  {ctx:"“Quiero que me ayudes con la reservación.” — translate (want)", accept:["i want you to help me with the reservation","i want you to help me with the booking"], model:"I want you to help me with the reservation."},
+  {ctx:"“Nos hicieron esperar dos horas en migración.” — translate (make)", accept:["they made us wait two hours at immigration","they made us wait for two hours at immigration"], model:"They made us wait (for) two hours at immigration."},
+  {ctx:"“El guía nos sugirió llegar temprano.” — translate (suggest)", accept:["the guide suggested that we arrive early","the guide suggested we arrive early","the guide suggested that we should arrive early","the guide suggested we should arrive early","the guide suggested arriving early"], model:"The guide suggested (that) we arrive early. / The guide suggested arriving early."},
+  {ctx:"“Mis papás no me dejaron viajar solo.” — translate (let)", accept:["my parents didn't let me travel alone","my parents did not let me travel alone"], model:"My parents didn’t let me travel alone."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML="Rewrite it: "+it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Which pattern?", q:"“We ask guests not to play music after 10.”", o:["verb + object + not + infinitive","negative verb + object + infinitive","verb + object + bare infinitive"], a:0, w:"The verb is positive and the infinitive is negative: ask + object + not + to-infinitive."},
+  {kind:"mc", diff:1, tag:"Choose the form", q:"“The flight attendant asked us ___ our seatbelts.”", o:["to fasten","fasten","fastening"], a:0, w:"ask + object + to-infinitive."},
+  {kind:"mc", diff:1, tag:"make", q:"“The heat made everyone ___ very slowly.”", o:["move","to move","moving"], a:0, w:"make + object + bare infinitive — no to."},
+  {kind:"mc", diff:1, tag:"would like", q:"“I’d like ___ the photos from Chiapas.”", o:["you to see","that you see","you seeing"], a:0, w:"would like / want + object + to-infinitive — never a that-clause."},
+  {kind:"mc", diff:1, tag:"allow", q:"“The park rangers don’t allow visitors ___ the monkeys.”", o:["to feed","feed","feeding"], a:0, w:"allow + object + to-infinitive (unlike let, allow keeps to)."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["Security","made","everyone","to","remove","their","shoes."], bad:3, fixOld:"made everyone to remove", fixNew:"made everyone remove", w:"make + object + bare infinitive: no to after make."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["The","rain","prevented","us","to","climb","the","pyramid."], bad:4, fixOld:"prevented us to climb", fixNew:"prevented us from climbing", w:"prevent + object + from + -ing."},
+  {kind:"fill", diff:2, tag:"Complete", q:"“The tour company expects clients ___ (arrive) 15 minutes early.”", accept:["to arrive"], w:"expect + object + to-infinitive: to arrive."},
+  {kind:"fill", diff:2, tag:"Complete", q:"“Volunteers helped us ___ (carry) the kayaks to the beach.”", accept:["carry","to carry"], w:"help accepts both: helped us (to) carry."},
+  {kind:"mc", diff:3, tag:"suggest", q:"“The receptionist ___ the earlier shuttle.” (suggest)", o:["suggested taking","suggested us to take","suggested us taking"], a:0, w:"suggest never takes object + infinitive: suggest + -ing or suggested (that) we take."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["I","want","that","my","brother","comes","to","the","beach","with","us."], bad:2, fixOld:"want that my brother comes", fixNew:"want my brother to come", w:"want never takes a that-clause: want + object + to-infinitive."},
+  {kind:"fill", diff:3, tag:"Passive of make", q:"They made us wait outside the embassy. → “We ___ outside the embassy.” (passive, 4 words)", accept:["were made to wait"], w:"In the passive, make recovers to: were made to wait."},
+  {kind:"fill", diff:3, tag:"Translate", q:"“Te aconsejo que no bebas el agua de la llave.” → “I ___ the tap water.” (advise)", accept:["advise you not to drink"], w:"advise + object + not + to-infinitive: advise you not to drink."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("voinf_drill_best")||0); if(dscore>best){ store("voinf_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Every slot in place. Ready for the ★★★ homework." : dscore>=8?"Good pattern control — review the exceptions card and go again." : "Re-read Grammar 6, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, '<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

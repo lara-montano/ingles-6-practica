@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE WISHING MACHINE · English 6 · Unit 1 "The Prepared Mind"
+  Grammar 2 — wish, if only & would rather (+ it's time, hope vs wish)
+  Three modes: Explore (reality→wish) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 2 · The Wishing Machine · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--green),var(--greendark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#CBE9D9; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#DFF2E8; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--greendark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--greendark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--greendark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-green{background:var(--green)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--green); background:var(--greenlt); color:var(--greendark)}
+
+  /* ---------- transformer spotlight: reality → wish ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .xcard{border-radius:12px; padding:14px 16px; margin:8px 0; position:relative}
+  .xcard .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase}
+  .xcard .snt{font-size:clamp(18px,3.1vw,24px); font-weight:800; margin-top:4px; line-height:1.55}
+  .xreal{background:var(--navylt); border:2px solid var(--navy)}
+  .xreal .role{color:var(--navy)}
+  .xwish{background:var(--greenlt); border:2px solid var(--green)}
+  .xwish .role{color:var(--greendark)}
+  .arrowdown{text-align:center; font-size:26px; color:var(--grammar); margin:-2px 0}
+  .rwish{background:#D8EFE1; color:var(--greendark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--green)}
+  .rverb{background:var(--grammarlt); color:var(--grammar); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--grammar)}
+  .rverb.masked{color:transparent; box-shadow:inset 0 -2px 0 var(--grammar); position:relative; cursor:pointer; min-width:56px; display:inline-block}
+  .rverb.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .formpill{display:inline-block; background:#fff; color:var(--greendark); border:1.5px solid var(--green); border-radius:999px; padding:3px 12px; font-weight:800; font-size:13px; margin-top:10px}
+  .changes{list-style:none; margin:10px 0 0}
+  .changes li{position:relative; padding:3px 0 3px 22px; font-size:14px; font-weight:600; color:#555}
+  .changes li::before{content:"→"; position:absolute; left:0; top:3px; color:var(--grammar); font-weight:900}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px}
+  .legend span{border-radius:6px; padding:1px 8px}
+
+  /* time ruler: where the wish points */
+  .ruler{display:flex; align-items:center; justify-content:center; flex-wrap:wrap; margin-top:6px}
+  .tnode{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:6px 14px; font-weight:900; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:#999}
+  .tnode.on{border-color:var(--green); background:var(--greenlt); color:var(--greendark)}
+  .tnode.on::before{content:"🌠 "}
+  .tline{width:34px; height:2px; background:var(--rule)}
+  .rulercap{text-align:center; font-size:13px; font-weight:700; color:#666; margin-top:8px}
+
+  /* one-step-back dial */
+  .tensechips{display:flex; gap:6px; flex-wrap:wrap; margin:8px 0}
+  .tensechips button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 11px; font:700 13px Lato,sans-serif; cursor:pointer}
+  .tensechips button.on{border-color:var(--navy); background:var(--navylt); color:var(--navy)}
+  .tenseout{background:var(--soft); border-radius:12px; padding:16px; text-align:center; margin-top:6px}
+  .tenseout .map{font-size:clamp(17px,2.8vw,22px); font-weight:800}
+  .tenseout .map .a{color:var(--navy)} .tenseout .map .b{color:var(--grammar)}
+  .tenseout .ex{font-size:14px; color:#555; margin-top:8px; font-weight:600}
+
+  /* special cases selector */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+
+  /* typical mistakes */
+  .errlist{list-style:none; margin-top:6px}
+  .errlist li{background:var(--thinklt); border:1.5px solid #EFC9C3; border-radius:10px; padding:7px 11px; margin:6px 0; font-size:15px; font-weight:600; color:#444}
+  .errlist .x{color:var(--think); text-decoration:line-through} .errlist .v{color:var(--greendark); font-weight:800}
+  .errlist small{display:block; color:#777; font-weight:700; font-size:12px}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--green); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--greendark); border:2px solid var(--green)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--green); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--green)}
+  .segbig button.on{background:var(--green); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--green); background:var(--greenlt); color:var(--greendark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--greendark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--greendark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--green); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick,.stn .w.rightpick{background:var(--think); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--greendark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--green); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🌠</span>
+  <div class="wrap">
+    <div class="kicker">English 6 · Unit 1 · The Prepared Mind</div>
+    <h1>🌠 The Wishing Machine</h1>
+    <div class="sub"><b>Grammar 2</b> — <i>wish, if only &amp; would rather</i>: talking about the unreal (+ <i>it’s time</i>, <i>hope</i> vs <i>wish</i>). <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🔁 Explore the wish</span><span>🔧 Build a wish</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🔁 Explore<small>reality → wish</small></button>
+    <button data-tab="build">🔧 Build<small>wish it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>From reality to wish: the same “one step back”</h2>
+      <p class="muted"><b>Wish</b> and <b>if only</b> express that reality is <b>not</b> the way we want it. Like the unreal
+        conditionals, they push the verb <b>one tense back</b> to signal “this isn’t true”. Pick a situation and
+        watch reality turn into a wish. <span class="es">(El verbo retrocede un tiempo para marcar que no es real.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the shifted verb, guess, then reveal</label>
+
+      <h3>1 · Choose the situation</h3>
+      <div class="chips" id="scChips"></div>
+
+      <div class="xcard xreal"><div class="role">Reality — what is true</div><div class="snt" id="realSnt"></div></div>
+      <div class="arrowdown">⬇</div>
+      <div class="xcard xwish"><div class="role">The wish — what I want instead</div><div class="snt" id="wishSnt"></div><div class="formpill" id="formPill"></div></div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the shifted verb ✓</button></div>
+
+      <h3>Where does the wish point?</h3>
+      <div class="ruler"><span class="tnode" data-t="past">Past</span><span class="tline"></span><span class="tnode" data-t="now">Now</span><span class="tline"></span><span class="tnode" data-t="future">Future</span></div>
+      <div class="rulercap" id="rulerCap"></div>
+
+      <h3>What changed?</h3>
+      <ul class="changes" id="changes"></ul>
+      <div class="legend"><span class="rwish">wish word</span><span class="rverb">verb — one step back</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">💡 The one-step-back dial</span>
+      <h2>Real tense → wish tense</h2>
+      <p class="muted">Tap the real situation’s form to see what it becomes inside a wish.
+        <span class="es">(Regla general: cada forma retrocede un paso.)</span></p>
+      <div class="tensechips" id="dialChips"></div>
+      <div class="tenseout"><div class="map" id="dialMap"></div><div class="ex" id="dialEx"></div></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Exceptions &amp; special cases</span>
+      <h2>Hope vs wish, would rather, it’s time &amp; friends</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="hopewish" class="on">hope vs wish</button><button data-v="rather">would rather</button><button data-v="time">it’s time</button><button data-v="ifonly">if only</button><button data-v="wouldself">“I wish I would” ✗</button><button data-v="were">was / were</button><button data-v="wishto">wish to / wish you</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠ Typical mistakes of Spanish speakers</span>
+      <h2>Eight traps — and the fix</h2>
+      <p class="muted">The same slips appear in every exam: the verb did not step back, <i>would</i> was used about yourself, or <i>hope</i> replaced <i>wish</i>.
+        <span class="es">(Revisa el tiempo del verbo antes de entregar.)</span></p>
+      <ul class="errlist">
+        <li><span class="x">I wish I know the answer. / I wish I have more time.</span> → <span class="v">I wish I knew the answer. / I wish I had more time.</span><small>one step back: present → past simple</small></li>
+        <li><span class="x">I wish I would have studied.</span> → <span class="v">I wish I had studied.</span><small>past regret = past perfect, no would</small></li>
+        <li><span class="x">I wish I would be taller.</span> → <span class="v">I wish I were taller.</span><small>wish… would is never about yourself</small></li>
+        <li><span class="x">I wish to be taller.</span> (meaning regret) → <span class="v">I wish I were taller.</span><small>wish + to = want (formal), not regret</small></li>
+        <li><span class="x">I hope I studied more last year.</span> → <span class="v">I wish I had studied more last year.</span><small>past regret, not hope</small></li>
+        <li><span class="x">It’s time we go. / It’s time that we go.</span> → <span class="v">It’s time we went.</span><small>it’s time + past simple</small></li>
+        <li><span class="x">I’d rather you don’t smoke here.</span> → <span class="v">I’d rather you didn’t smoke here.</span><small>would rather + someone + past simple</small></li>
+        <li><span class="x">I’d rather to go home.</span> → <span class="v">I’d rather go home.</span><small>same subject: base form, no to</small></li>
+      </ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> shows Grammar 2's "one step back" on six situations (present unreal, ability, past regret, wish + would, would rather + person, it's time), colour-coding the wish word and the shifted verb, with a time ruler. The dial is the tense-shift table; the special-cases card is the exceptions box (hope vs wish, would rather, it's time, if only, wish…would about yourself, were, wish to / wish you); the red card is the pitfall box.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> a wish by choosing the verb form (exercise A), then <i>transform</i> real facts into wishes, preferences and it's-time sentences (exercise B and Task set 2), with validation.</li>
+          <li><b>Drill</b> merges exercises C–D into one graded engine (★ hope/wish &amp; choose the form · ★★ fix the error/complete · ★★★ past regrets, wish…would, rewrite) with a score and streak.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-green">🔧 Your turn to produce</span>
+      <h2>Build a wish</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the reality, then choose the <b>verb form</b> the wish needs. The machine builds it — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">The wish needs…</div><div class="bchips" id="verbChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New situation →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Rewrite each fact as a wish, regret or preference, following the cue in brackets. Type it and check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the wish sentence"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next fact →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ hope vs wish &amp; choose the form · ★★ fix the error &amp; complete · ★★★ past regrets, wish… would &amp; rewrite.
+        Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 6 · Unit 1 «The Prepared Mind» · Grammar 2 — wish, if only &amp; would rather · Level B1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE WISHING MACHINE — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 6 Class Manual (Grammar 2).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · reality → wish spotlight
+===================================================================== */
+var SCEN = {
+  now:{label:"😕 Present unreal", form:"wish + past simple", when:"now",
+    real:'I <b>don’t know</b> the answer.',
+    wish:'I <span class="rwish">wish</span> I <span class="rverb">knew</span> the answer.',
+    cap:"Regret about NOW: it isn’t true, so the verb steps back to the past simple.",
+    changes:["present → past simple: <i>don’t know</i> → <b>knew</b> (one step back)", "the fact is negative, the wish is positive: I don’t know ↔ I wish I knew", "<b>if only</b> = the same, but stronger and more emotional: <b>If only</b> I knew the answer!"]},
+  can:{label:"💪 Ability / state", form:"wish + could + base", when:"now",
+    real:'I <b>can’t speak</b> Japanese.',
+    wish:'I <span class="rwish">wish</span> I <span class="rverb">could speak</span> Japanese.',
+    cap:"Wanting a different ability or state NOW: can → could.",
+    changes:["<i>can</i> → <b>could</b> (one step back) + base form", "a past ability you didn’t use → <b>could have</b> + p.p.: I wish I <b>could have gone</b> to the conference", "with <i>be</i>, use <b>were</b> for all persons: I wish I <b>were</b> more organized"]},
+  past:{label:"⏪ Past regret", form:"wish + past perfect", when:"past",
+    real:'I <b>didn’t study</b> hard enough.',
+    wish:'I <span class="rwish">wish</span> I <span class="rverb">had studied</span> harder.',
+    cap:"Regret about the PAST: it already happened, so the verb goes back to the past perfect.",
+    changes:["past simple → past perfect: <i>didn’t study</i> → <b>had studied</b>", "more emotional: <b>If only</b> I had listened to you!", "✘ I wish I <s>would have</s> studied → ✔ I wish I <b>had</b> studied"]},
+  would:{label:"😤 Annoyance / wanting change", form:"wish + would + base", when:"future",
+    real:'It <b>keeps raining</b> — and I want it to stop.',
+    wish:'I <span class="rwish">wish</span> it <span class="rverb">would stop</span> raining.',
+    cap:"Wanting something (or someone) else to CHANGE from now on: wish + would + base form.",
+    changes:["annoying action → <b>would + base</b>: keeps raining → would stop", "about <b>someone or something else</b>: I wish my neighbor <b>would turn down</b> that music", "never about yourself: ✘ I wish I <s>would be</s> taller → ✔ I wish I <b>were</b> taller"]},
+  rather:{label:"🙏 Preference (would rather)", form:"would rather + someone + past simple", when:"now",
+    real:'You <b>touch</b> the samples — I prefer that you don’t.',
+    wish:'I<span class="rwish">’d rather</span> you <span class="rverb">didn’t touch</span> the samples.',
+    cap:"A preference about what ANOTHER person does: a past-tense verb with a present meaning.",
+    changes:["<i>would rather</i> + someone + <b>past simple</b>: didn’t touch", "same subject → <b>base form</b>: I’d rather <b>stay</b> home (✘ <s>to stay</s>)", "✘ I’d rather you <s>don’t</s> smoke here → ✔ I’d rather you <b>didn’t</b> smoke here"]},
+  time:{label:"⏰ It’s time", form:"it’s (high / about) time + past simple", when:"now",
+    real:'We <b>should leave</b> now — we’re late.',
+    wish:'<span class="rwish">It’s time</span> we <span class="rverb">left</span>.',
+    cap:"It should already be happening NOW: a past-tense verb with a present meaning.",
+    changes:["<i>it’s time</i> + subject + <b>past simple</b>: we left", "<i>high / about</i> adds urgency: It’s <b>high time</b> this university <b>had</b> a bigger lab", "✘ It’s time we <s>go</s> → ✔ It’s time we <b>went</b>"]}
+};
+var curScen = "now", predictMode = false, revealed = false;
+Object.keys(SCEN).forEach(function(k){
+  var b = document.createElement("button"); b.innerHTML = SCEN[k].label; b.dataset.k = k;
+  if(k===curScen) b.classList.add("on");
+  b.addEventListener("click", function(){ curScen=k; document.querySelectorAll("#scChips button").forEach(function(x){ x.classList.toggle("on", x.dataset.k===k); }); revealed=false; renderScen(); });
+  $("scChips").appendChild(b);
+});
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderScen(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderScen(); });
+function renderScen(){
+  var s = SCEN[curScen];
+  $("realSnt").innerHTML = s.real;
+  $("wishSnt").innerHTML = s.wish;
+  $("formPill").textContent = "form: "+s.form;
+  document.querySelectorAll(".ruler .tnode").forEach(function(n){ n.classList.toggle("on", n.dataset.t===s.when); });
+  $("rulerCap").textContent = s.cap;
+  var ul=$("changes"); ul.innerHTML="";
+  s.changes.forEach(function(c){ var li=document.createElement("li"); li.innerHTML=c; ul.appendChild(li); });
+  var mask = predictMode && !revealed;
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask){
+    document.querySelectorAll("#wishSnt .rverb").forEach(function(el){ el.classList.add("masked"); el.addEventListener("click", function(){ revealed=true; renderScen(); }); });
+  }
+}
+renderScen();
+
+/* one-step-back dial */
+var DIAL = [
+  {t:"present simple",    map:'<span class="a">present simple</span> → <span class="b">past simple</span>', ex:'I <b>don’t know</b> the answer. → I wish I <b>knew</b> the answer.'},
+  {t:"am / is / are",     map:'<span class="a">am / is / are</span> → <span class="b">were</span> (all persons)', ex:'I’<b>m not</b> taller. → I wish I <b>were</b> taller.'},
+  {t:"can",               map:'<span class="a">can</span> → <span class="b">could</span> + base', ex:'I <b>can’t remember</b> her name. → I wish I <b>could remember</b> her name.'},
+  {t:"past simple",       map:'<span class="a">past simple</span> → <span class="b">past perfect</span>', ex:'I <b>didn’t back up</b> my files. → I wish I <b>had backed up</b> my files.'},
+  {t:"annoying action",   map:'<span class="a">keeps doing it</span> → <span class="b">would</span> + base', ex:'My phone <b>keeps interrupting</b> me. → I wish my phone <b>would stop</b> interrupting me.'},
+  {t:"couldn’t (past)",   map:'<span class="a">couldn’t</span> → <span class="b">could have</span> + p.p.', ex:'I <b>couldn’t go</b> to the conference. → I wish I <b>could have gone</b> to the conference.'},
+  {t:"it’s time / would rather", map:'<span class="a">present idea</span> → <span class="b">past simple</span>', ex:'We should leave. → It’s time we <b>left</b>. · Please don’t touch it. → I’d rather you <b>didn’t touch</b> it.'}
+];
+var curDial=0;
+DIAL.forEach(function(d,i){
+  var b=document.createElement("button"); b.textContent=d.t; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curDial=i; document.querySelectorAll("#dialChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderDial(); });
+  $("dialChips").appendChild(b);
+});
+function renderDial(){ var d=DIAL[curDial]; $("dialMap").innerHTML=d.map; $("dialEx").innerHTML=d.ex; }
+renderDial();
+
+/* special cases */
+var SC = {
+  hopewish:"<b>hope</b> + present/future is for things that are still <b>possible</b>; <b>wish</b> is for the impossible or unlikely. ✔ I <b>hope</b> it doesn’t rain tomorrow. (still open) · ✔ I <b>wish</b> it wasn’t raining. (it is) · ✔ We <b>hope</b> you have a safe trip. · ✘ I <s>hope</s> I studied more last year → ✔ I <b>wish</b> I <b>had studied</b> more last year (a past regret, not a hope).",
+  rather:"<b>would rather + base form</b> when it’s the same subject: I’d rather <b>stay</b> home. (✘ I’d rather <s>to stay</s>) · <b>would rather + someone + past simple</b> = I prefer that another person do something: I’d rather you <b>didn’t touch</b> the samples. · She’d rather we <b>came</b> tomorrow. (✘ I’d rather you <s>don’t</s> smoke here → ✔ <b>didn’t</b>)",
+  time:"<b>It’s (high / about) time + past simple</b> = it should already be happening now: It’s time we <b>left</b>. · It’s <b>high</b> time this university <b>had</b> a bigger lab. (✘ It’s time we <s>go</s> → ✔ <b>went</b>) · When you name no subject, the <b>to-infinitive</b> is also correct: It’s time <b>to leave</b>. But <i>it’s time + subject</i> → past simple, never <s>it’s time that we go</s>.",
+  ifonly:"<b>If only</b> means the same as <i>wish</i> but is <b>stronger and more emotional</b> — same tenses, often with an exclamation mark: <b>If only</b> I <b>had listened</b> to you! (past) · <b>If only</b> I <b>were</b> better at mathematics! (now) · <b>If only</b> I <b>knew</b> what the professor wanted! (now)",
+  wouldself:"<b>wish + would</b> is for <b>other people and annoying situations</b> you want to change: I wish my neighbor <b>would turn down</b> that music. · Scientists wish governments <b>would fund</b> basic research more generously. You <b>cannot</b> use <i>wish… would</i> about yourself, because you control your own actions: ✘ I wish I <s>would be</s> taller → ✔ I wish I <b>were</b> taller. And for the past: ✘ I wish I <s>would have</s> studied → ✔ I wish I <b>had studied</b>.",
+  were:"<b>were for all persons</b>, as in the second conditional: ✔ I wish I <b>were</b> more organized. · ✔ She wishes she <b>were</b> here. · ✔ If only I <b>were</b> better at mathematics! You will also hear <i>was</i> in informal English (I wish it <i>wasn’t</i> raining), but <b>were</b> is the safe form in exams and writing.",
+  wishto:"<b>wish + to-infinitive</b> exists but means <b>want</b> (formal), <b>not</b> regret: We <b>wish to</b> thank our sponsors. (= we want to) · <b>wish + object + noun</b> = a polite good wish, again no regret: I <b>wish you</b> good luck. · We <b>wish you</b> a safe trip. So for a regret: ✘ I <s>wish to be</s> taller → ✔ I wish I <b>were</b> taller."
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.hopewish;
+
+/* =====================================================================
+   BUILD · assemble (verb form) + transform (rewrite the fact)
+===================================================================== */
+var BUILD = [
+  {real:"I don’t have more time to finish the experiment.", frame:'I <span class="rwish">wish</span> I {V} more time to finish the experiment.', options:["had","have","would have"], correct:"had", note:"Regret about now → wish + past simple: had."},
+  {real:"She didn’t take good notes during the lecture.", frame:'She <span class="rwish">wishes</span> she {V} better notes during the lecture.', options:["had taken","took","would take"], correct:"had taken", note:"Regret about the past → wish + past perfect: had taken."},
+  {real:"It keeps raining, so we can’t use the telescope.", frame:'I <span class="rwish">wish</span> it {V} raining so we could use the telescope.', options:["would stop","stops","had stopped"], correct:"would stop", note:"Wanting something else to change → wish + would + base: would stop."},
+  {real:"I’m not good at mathematics.", frame:'<span class="rwish">If only</span> I {V} better at mathematics!', options:["were","would be","am"], correct:"were", note:"were for all persons — and never wish… would about yourself."},
+  {real:"They can’t travel to the research station in Antarctica.", frame:'They <span class="rwish">wish</span> they {V} to the research station in Antarctica.', options:["could travel","can travel","would travel"], correct:"could travel", note:"A different ability → wish + could + base: could travel."},
+  {real:"He dropped chemistry in high school — and regrets it.", frame:'He <span class="rwish">wishes</span> he {V} chemistry in high school.', options:["hadn’t dropped","didn’t drop","wouldn’t drop"], correct:"hadn’t dropped", note:"Past regret → past perfect: hadn’t dropped."},
+  {real:"This school should have bought new microscopes long ago.", frame:'<span class="rwish">It’s high time</span> this school {V} new microscopes.', options:["bought","buys","will buy"], correct:"bought", note:"it’s (high) time + past simple: bought."},
+  {real:"You touch the controls without permission — I prefer that you don’t.", frame:'I<span class="rwish">’d rather</span> you {V} the controls without permission.', options:["didn’t touch","don’t touch","not touch"], correct:"didn’t touch", note:"would rather + someone + past simple: didn’t touch."},
+  {real:"I prefer to stay home tonight — my own choice.", frame:'I<span class="rwish">’d rather</span> {V} home tonight.', options:["stay","to stay","stayed"], correct:"stay", note:"Same subject → would rather + base form, no ‘to’."}
+];
+var bi=0, bPick=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function renderBuild(){
+  var it=BUILD[bi]; bPick=null;
+  $("bctx").innerHTML = "Reality: "+it.real+"<small>The wish: "+it.frame.replace("{V}", "<u>_____</u>")+"</small>";
+  var wrap=$("verbChips"); wrap.innerHTML="";
+  it.options.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ bPick=op; document.querySelectorAll("#verbChips button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bPick){ r.className="bresult bad"; r.innerHTML="Choose the verb form first."; return; }
+  if(bPick===it.correct){
+    var sent=it.frame.replace("{V}", '<span class="rverb">'+it.correct+'</span>');
+    r.className="bresult good"; r.innerHTML="✅ "+sent+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    document.querySelector('#verbChips button[data-v="'+bPick+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ Not that one. <span class='bnote'>Hint — "+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"I can’t remember her name. <b>(WISH + COULD)</b>", accept:["i wish i could remember her name","if only i could remember her name"], model:"I wish I could remember her name."},
+  {ctx:"I didn’t back up my files. <b>(WISH or IF ONLY)</b>", accept:["i wish i had backed up my files","if only i had backed up my files","i wish i'd backed up my files","if only i'd backed up my files"], model:"I wish I had backed up my files. / If only I had backed up my files."},
+  {ctx:"My phone keeps interrupting me. <b>(WISH … WOULD)</b>", accept:["i wish my phone would stop interrupting me","if only my phone would stop interrupting me","i wish my phone wouldn't interrupt me","i wish my phone would not interrupt me","i wish my phone wouldn't keep interrupting me","i wish my phone would not keep interrupting me"], model:"I wish my phone would stop interrupting me."},
+  {ctx:"I don’t speak German. <b>(WISH)</b>", accept:["i wish i spoke german","if only i spoke german","i wish i could speak german","if only i could speak german"], model:"I wish I spoke German. (or: I wish I could speak German.)"},
+  {ctx:"We didn’t apply for the grant last year. <b>(WISH or IF ONLY)</b>", accept:["i wish we had applied for the grant last year","if only we had applied for the grant last year","we wish we had applied for the grant last year","i wish we'd applied for the grant last year","if only we'd applied for the grant last year","we wish we'd applied for the grant last year"], model:"I wish we had applied for the grant last year."},
+  {ctx:"I’m not very organized. <b>(WISH)</b>", accept:["i wish i were more organized","if only i were more organized","i wish i was more organized","if only i was more organized","i wish i were more organised","if only i were more organised","i wish i was more organised","if only i was more organised"], model:"I wish I were more organized. (were for all persons)"},
+  {ctx:"We should leave now — we’re late. <b>(IT’S TIME + past simple)</b>", accept:["it's time we left","it is time we left","it's high time we left","it is high time we left","it's about time we left","it is about time we left"], model:"It’s time we left."},
+  {ctx:"You keep recording my presentation, and I prefer that you don’t. <b>(I’D RATHER)</b>", accept:["i'd rather you didn't record my presentation","i would rather you didn't record my presentation","i'd rather you did not record my presentation","i would rather you did not record my presentation"], model:"I’d rather you didn’t record my presentation."},
+  {ctx:"My neighbor plays loud music every night. <b>(WISH … WOULD)</b>", accept:["i wish my neighbor wouldn't play loud music every night","i wish my neighbor would not play loud music every night","i wish my neighbour wouldn't play loud music every night","i wish my neighbour would not play loud music every night","i wish my neighbor would stop playing loud music every night","i wish my neighbour would stop playing loud music every night","if only my neighbor wouldn't play loud music every night","if only my neighbour wouldn't play loud music every night"], model:"I wish my neighbor wouldn’t play loud music every night."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML="Rewrite: "+it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"hope or wish?", q:"“I ___ the experiment works tomorrow.” (still possible)", o:["hope","wish"], a:0, w:"Still possible → hope + present/future."},
+  {kind:"mc", diff:1, tag:"hope or wish?", q:"“I ___ I had more free time this semester.” (I don’t)", o:["wish","hope"], a:0, w:"Not true now → wish + past simple."},
+  {kind:"mc", diff:1, tag:"Which form?", q:"“I wish I ___ the answer.” (I don’t know it)", o:["knew","know","had known"], a:0, w:"Regret about now → wish + past simple: knew."},
+  {kind:"mc", diff:1, tag:"Now or past?", q:"“She wishes she ___ better notes during the lecture.” (she didn’t)", o:["had taken","took","takes"], a:0, w:"Regret about the past → wish + past perfect: had taken."},
+  {kind:"mc", diff:1, tag:"would rather", q:"“I’d rather ___ home tonight.” (my own choice)", o:["stay","to stay","stayed"], a:0, w:"Same subject → would rather + base form, no ‘to’."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["I","wish","I","would","have","more","money."], bad:3, fixOld:"would have", fixNew:"had", w:"A wish about now takes the past simple, and wish… would is never about yourself: had."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["It’s","time","we","go","home."], bad:3, fixOld:"go", fixNew:"went", w:"it’s time + past simple: went."},
+  {kind:"fill", diff:2, tag:"Complete", q:"“I wish my lab partner ___ (arrive) on time for once.” (an annoying habit you want to change — 2 words)", accept:["would arrive"], w:"Someone else’s annoying habit → wish + would + base: would arrive."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["I’d","rather","you","don’t","record","this."], bad:3, fixOld:"don’t", fixNew:"didn’t", w:"would rather + someone + past simple: didn’t."},
+  {kind:"fill", diff:3, tag:"Complete", q:"“If only she ___ (listen) to me last week.” (she didn’t — 2 words)", accept:["had listened"], w:"Past regret → if only + past perfect: had listened."},
+  {kind:"mc", diff:3, tag:"wish… would?", q:"“I wish I ___ taller.”", o:["were","would be","am"], a:0, w:"No wish… would about yourself; were for all persons."},
+  {kind:"fill", diff:3, tag:"Rewrite as a wish", q:"“I didn’t back up my files.” → (start with I wish or If only)", accept:["i wish i had backed up my files","if only i had backed up my files","i wish i'd backed up my files","if only i'd backed up my files"], w:"Past regret → wish / if only + past perfect: I wish I had backed up my files."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["I","hope","I","had","studied","harder","last","semester."], bad:1, fixOld:"hope", fixNew:"wish", w:"A past regret takes wish (+ past perfect), not hope."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("wish_drill_best")||0); if(dscore>best){ store("wish_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Wished perfectly. Ready for the ★★★ homework." : dscore>=8?"Good wishing — review the special-cases card and go again." : "Re-read Grammar 2, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, '<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>
