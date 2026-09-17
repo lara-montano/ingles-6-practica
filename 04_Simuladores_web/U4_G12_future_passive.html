@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE PASSIVE FORECASTER · English 6 · Unit 4 "Ahead of the Curve"
+  Grammar 12 — the future passive (will be / going to be + past participle,
+  negatives & questions, by + doer, two objects, when + present passive)
+  Three modes: Explore (active → future passive) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 12 · The Passive Forecaster · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --wine:#8C2F53; --winedark:#5E1F38; --winelt:#F4E5EC;   /* Unit 4 identity */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--wine),var(--winedark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#F0C4D6; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#F7DCE7; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--winedark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--winedark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--winedark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-wine{background:var(--wine)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--wine); background:var(--winelt); color:var(--winedark)}
+
+  /* ---------- forecast spotlight ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .xcard{border-radius:12px; padding:14px 16px; margin:8px 0; position:relative}
+  .xcard .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase}
+  .xcard .snt{font-size:clamp(18px,3.1vw,24px); font-weight:800; margin-top:4px; line-height:1.55}
+  .xactive{background:var(--navylt); border:2px solid var(--navy)}
+  .xactive .role{color:var(--navy)}
+  .xactive .doer{background:#CDD8E6; color:var(--navy); border-radius:6px; padding:0 5px}
+  .xpassive{background:var(--winelt); border:2px solid var(--wine)}
+  .xpassive .role{color:var(--winedark)}
+  .arrowdown{text-align:center; font-size:26px; color:var(--grammar); margin:-2px 0}
+  .vsubj{background:#EBCFDC; color:var(--winedark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--wine)}
+  .vbe{background:var(--navylt); color:var(--navy); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--navy)}
+  .vpp{background:var(--grammarlt); color:var(--grammar); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--grammar)}
+  .vby{background:#EDEDED; color:#777; border-radius:6px; padding:0 5px; font-style:italic}
+  .vbe.masked,.vpp.masked{color:transparent; position:relative; cursor:pointer; min-width:44px; display:inline-block}
+  .vbe.masked::after,.vpp.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .doertoggle{display:inline-flex; align-items:center; gap:7px; font-weight:800; font-size:14px; margin-top:6px; cursor:pointer}
+  .doernote{font-size:13px; color:#555; font-weight:700; margin-top:8px; background:var(--soft); border-radius:8px; padding:8px 10px; border-left:3px solid var(--wine)}
+  .changes{list-style:none; margin:10px 0 0}
+  .changes li{position:relative; padding:3px 0 3px 22px; font-size:14px; font-weight:600; color:#555}
+  .changes li::before{content:"→"; position:absolute; left:0; top:3px; color:var(--grammar); font-weight:900}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px}
+  .legend span{border-radius:6px; padding:1px 8px}
+
+  /* forecast dial + time strip */
+  .tensechips{display:flex; gap:6px; flex-wrap:wrap; margin:8px 0}
+  .tensechips button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 11px; font:700 13px Lato,sans-serif; cursor:pointer}
+  .tensechips button.on{border-color:var(--navy); background:var(--navylt); color:var(--navy)}
+  .tenseout{background:var(--soft); border-radius:12px; padding:16px; text-align:center; margin-top:6px}
+  .tenseout .ex{font-size:clamp(17px,2.9vw,23px); font-weight:800; line-height:1.6}
+  .tenseout .fm{font-family:ui-monospace,Menlo,Consolas,monospace; font-weight:700; font-size:13px; margin-top:8px; color:#555}
+  .tenseout .nt{font-size:14px; color:#555; margin-top:8px; font-weight:600}
+  .strip{position:relative; height:88px; margin:12px 0 0; background:#fff; border:1.5px solid var(--rule); border-radius:12px; overflow:hidden; text-align:left}
+  .sline{position:absolute; left:5%; right:3%; top:42px; height:3px; background:var(--rule)}
+  .sline::after{content:""; position:absolute; right:-2px; top:-6px; border:7px solid transparent; border-left:11px solid var(--rule)}
+  .snow{position:absolute; left:5%; top:46px; transform:translateX(-50%); font-size:11px; font-weight:900; color:var(--navy); letter-spacing:.06em}
+  .snow::before{content:""; display:block; width:12px; height:12px; border-radius:50%; background:var(--navy); margin:-15px auto 5px}
+  .sact{position:absolute; top:30px; height:26px; padding:0 9px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:900; color:#fff; white-space:nowrap; background:var(--grammar)}
+  .sdot{width:26px; padding:0; border-radius:50%; background:var(--wine); transform:translateX(-50%); font-size:13px}
+  .sdot.no{background:var(--think)}
+  .sdone{background:var(--green)}
+  .strig{background:var(--navy); transform:translateX(-50%)}
+  .slab{position:absolute; top:60px; transform:translateX(-50%); font-size:11px; font-weight:800; color:var(--grammar); white-space:nowrap}
+
+  /* special cases selector */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+
+  /* errors card */
+  .errlist{list-style:none; margin-top:6px}
+  .errlist li{display:flex; gap:10px; align-items:center; flex-wrap:wrap; padding:8px 0; border-bottom:1px dashed var(--rule); font-size:15px; font-weight:700}
+  .errlist .bad{color:var(--think)} .errlist .bad::before{content:"✘ "}
+  .errlist .good{color:var(--green); display:none} .errlist .good::before{content:"✔ "}
+  .errlist .why{display:none; margin:0; flex-basis:100%; font-size:13px; padding:6px 10px}
+  .errlist li.open .good,.errlist li.open .why{display:block}
+  .errlist li.open .fixbtn{display:none}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--wine); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--winedark); border:2px solid var(--wine)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--wine); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--wine)}
+  .segbig button.on{background:var(--wine); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--wine); background:var(--winelt); color:var(--winedark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--winedark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--winedark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--wine); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick,.stn .w.rightpick{background:var(--think); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--winedark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--wine); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} .slab,.sact{font-size:10px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">👗</span>
+  <div class="wrap">
+    <div class="kicker">English 6 · Unit 4 · Ahead of the Curve</div>
+    <h1>👗 The Passive Forecaster</h1>
+    <div class="sub"><b>Grammar 12</b> — the future passive: <i>will be</i> / <i>going to be</i> + past participle, negatives &amp; questions, when to name the doer. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🔦 Explore the shift</span><span>🔧 Build a forecast</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🔦 Explore<small>watch it shift</small></button>
+    <button data-tab="build">🔧 Build<small>forecast it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Shift the spotlight — into the future</h2>
+      <p class="muted">You met the passive in <b>Grammar 4</b> (<i>be</i> + past participle) and predictions in <b>Grammar 10</b> (<i>will</i>, <i>going to</i>).
+        The <b>future passive</b> joins them: put <i>be</i> into the future — <b>will be + past participle</b> — to say what will be made, worn and sold
+        when the doer is <b>unknown, obvious or unimportant</b>. <span class="es">(Pasiva de futuro: will + be + participio; el agente se omite si es obvio o no importa.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide <i>be</i> + participle, guess, then reveal</label>
+
+      <h3>1 · Choose a forecast</h3>
+      <div class="chips" id="scChips"></div>
+
+      <div class="xcard xactive"><div class="role">Active — who will do it</div><div class="snt" id="activeSnt"></div></div>
+      <div class="arrowdown">⬇</div>
+      <div class="xcard xpassive"><div class="role">Future passive — what will happen</div><div class="snt" id="passiveSnt"></div></div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the verb ✓</button></div>
+
+      <label class="doertoggle"><input type="checkbox" id="doerChk"> Do we need the doer? Show <i>by …</i></label>
+      <div class="doernote" id="doerNote"></div>
+
+      <h3>What changed?</h3>
+      <ul class="changes" id="changes"></ul>
+      <div class="legend"><span class="vsubj">new subject</span><span class="vbe">will be · going to be · will have been</span><span class="vpp">past participle</span><span class="vby">by + doer (optional)</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">🎛️ The forecast dial</span>
+      <h2>Every future passive in the manual</h2>
+      <p class="muted">Tap a form. Only the <b>auxiliary</b> changes — the past participle stays. The strip shows where the action sits on the way from NOW to the future.
+        <span class="es">(Cambia solo el auxiliar; el participio no.)</span></p>
+      <div class="tensechips" id="dialChips"></div>
+      <div class="tenseout"><div class="ex" id="dialEx"></div><div class="fm" id="dialFm"></div>
+        <div class="strip"><div class="sline"></div><div class="snow">NOW</div><div id="stripDraw"></div></div>
+        <div class="nt" id="dialNote"></div></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Exceptions &amp; special cases</span>
+      <h2>Seven things to check before you forecast</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="when" class="on">when / if → present</button><button data-v="by">by + doer?</button><button data-v="two">two objects</button><button data-v="goingto">going to &amp; modals</button><button data-v="perfect">will have been</button><button data-v="negq">negatives &amp; questions</button><button data-v="dropbe">don’t drop be</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠️ Common errors</span>
+      <h2>Errors Spanish speakers make</h2>
+      <p class="muted">Read the sentence, find the problem, then tap <b>Fix</b> to check. <span class="es">(Errores típicos: adivina la corrección antes de verla.)</span></p>
+      <ul class="errlist" id="errList"></ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Grammar 12's active → future-passive table as a spotlight (will, won't, question, going to, <i>by a famous artist</i>, two objects, <i>will have been</i>), colour-coding new subject / auxiliary / participle / <i>by</i>-phrase, with the doer toggle (unknown, obvious or unimportant → drop it) and "Predict first". The dial lists every form the section teaches (will be, won't be, question order, going to be, modal + be, future perfect passive, present passive after when/if). The special-cases card is the exceptions box; the errors card is the pitfall box plus the error hunts (exercise D, Task set 25).</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> the passive by choosing the auxiliary and the participle (exercises B–C), then <i>transform</i> active sentences, deciding about the doer (exercise B, C3, Task set 25, Unit test B), with validation.</li>
+          <li><b>Drill</b> merges the exercises into one graded engine (★ identify, complete, negative, going to, question · ★★ fix the participle, don't drop <i>be</i>, modal passive · ★★★ present after <i>when</i>, two objects, future perfect passive, keep the doer?) with a score and streak.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-wine">🔧 Your turn to produce</span>
+      <h2>Build a forecast</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the active sentence, then choose the <b>auxiliary</b> (<i>be</i> in the future) and the <b>past participle</b> the passive needs. The machine builds it — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">Auxiliary — be in the future</div><div class="bchips" id="auxChips"></div></div>
+        <div class="bgroup"><div class="glab">Past participle</div><div class="bchips" id="ppChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New sentence →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Rewrite each active sentence in the future passive and decide about the doer — the hint tells you. Type it and check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="e.g. Recycled materials will be used…"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next sentence →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ identify &amp; choose the form · ★★ fix the participle, don’t drop <i>be</i>, modals · ★★★ <i>when</i>, two objects, <i>will have been</i>, the doer.
+        Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 6 · Unit 4 «Ahead of the Curve» · Grammar 12 — the future passive · Level B1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE PASSIVE FORECASTER — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 6 Class Manual (Grammar 12).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · active → future passive spotlight
+===================================================================== */
+var SCEN = [
+  {label:"♻️ Recycled materials",
+   active:'Designers <span class="doer">will use</span> recycled materials.',
+   passiveNo:'<span class="vsubj">Recycled materials</span> <span class="vbe">will be</span> <span class="vpp">used</span>.',
+   passiveWith:'<span class="vsubj">Recycled materials</span> <span class="vbe">will be</span> <span class="vpp">used</span> <span class="vby">by designers</span>.',
+   defDoer:false, note:"The doer (<i>designers</i>) is obvious, so we drop <i>by designers</i> — the news is the material.",
+   changes:["the object becomes the new subject: <b>recycled materials</b>", "<i>will use</i> → <b>will be used</b>: will + be + past participle", "the doer is obvious → no <i>by designers</i>"]},
+  {label:"👟 Shoes in stores",
+   active:'Factories <span class="doer">won’t sell</span> shoes in stores.',
+   passiveNo:'<span class="vsubj">Shoes</span> <span class="vbe">won’t be</span> <span class="vpp">sold</span> in stores.',
+   passiveWith:'<span class="vsubj">Shoes</span> <span class="vbe">won’t be</span> <span class="vpp">sold</span> <span class="vby">by factories</span> in stores.',
+   defDoer:false, note:"Negative: <i>won’t be</i> + past participle. The doer (<i>factories</i>) is unimportant — drop it.",
+   changes:["new subject: <b>shoes</b>", "<i>won’t sell</i> → <b>won’t be sold</b>: won’t + be + past participle (sell – sold – sold)", "the doer is unimportant → dropped"]},
+  {label:"❓ How sneakers are made",
+   active:'How <span class="doer">will they make</span> sneakers?',
+   passiveNo:'How <span class="vbe">will</span> <span class="vsubj">sneakers</span> <span class="vbe">be</span> <span class="vpp">made</span>?',
+   passiveWith:'How <span class="vbe">will</span> <span class="vsubj">sneakers</span> <span class="vbe">be</span> <span class="vpp">made</span> <span class="vby">by them</span>?',
+   defDoer:false, note:"<i>They</i> = nobody in particular, so <i>by them</i> is never kept.",
+   changes:["question order: (Wh-) + <b>will</b> + subject + <b>be</b> + past participle", "<i>they make</i> → <b>sneakers be made</b> (make – made – made)", "<i>they</i> = people in general → never <i>by them</i>"]},
+  {label:"🏭 The factory (going to)",
+   active:'The owners <span class="doer">are going to close</span> the factory next year.',
+   passiveNo:'<span class="vsubj">The factory</span> <span class="vbe">is going to be</span> <span class="vpp">closed</span> next year.',
+   passiveWith:'<span class="vsubj">The factory</span> <span class="vbe">is going to be</span> <span class="vpp">closed</span> <span class="vby">by the owners</span> next year.',
+   defDoer:false, note:"<i>going to</i> works the same way: <i>is / are going to be</i> + past participle. The owners are obvious — drop them.",
+   changes:["new subject: <b>the factory</b>", "<i>are going to close</i> → <b>is going to be closed</b>: going to + be + past participle", "<i>be</i> agrees with the new subject: <i>the factory</i> → <b>is</b>"]},
+  {label:"🎨 A famous artist",
+   active:'A famous artist <span class="doer">will design</span> the next collection.',
+   passiveNo:'<span class="vsubj">The next collection</span> <span class="vbe">will be</span> <span class="vpp">designed</span>.',
+   passiveWith:'<span class="vsubj">The next collection</span> <span class="vbe">will be</span> <span class="vpp">designed</span> <span class="vby">by a famous artist</span>.',
+   defDoer:true, note:"Keep the person only if it adds information — <i>a famous artist</i> does, so keep <i>by a famous artist</i>.",
+   changes:["new subject: <b>the next collection</b>", "<i>will design</i> → <b>will be designed</b>", "the doer adds information → keep <b>by a famous artist</b>"]},
+  {label:"🧾 Every customer",
+   active:'Shops <span class="doer">will give</span> every customer a discount.',
+   passiveNo:'<span class="vsubj">Every customer</span> <span class="vbe">will be</span> <span class="vpp">given</span> a discount.',
+   passiveWith:'<span class="vsubj">Every customer</span> <span class="vbe">will be</span> <span class="vpp">given</span> a discount <span class="vby">by shops</span>.',
+   defDoer:false, note:"Two-object verbs put the <b>person</b> first, as in any passive. The doer (<i>shops</i>) is obvious — drop it.",
+   changes:["two objects → the <b>person</b> becomes the subject: <b>every customer</b>", "<i>will give</i> → <b>will be given</b> (give – gave – given)", "the other object stays after the participle: <i>a discount</i>"]},
+  {label:"🚗 By 2050 (advanced)",
+   active:'By 2050, governments <span class="doer">will have banned</span> most petrol cars.',
+   passiveNo:'By 2050, <span class="vsubj">most petrol cars</span> <span class="vbe">will have been</span> <span class="vpp">banned</span>.',
+   passiveWith:'By 2050, <span class="vsubj">most petrol cars</span> <span class="vbe">will have been</span> <span class="vpp">banned</span> <span class="vby">by governments</span>.',
+   defDoer:false, note:"Future perfect passive: <i>will have been</i> + past participle = completed before 2050. The doer is obvious — drop it.",
+   changes:["new subject: <b>most petrol cars</b>", "<i>will have banned</i> → <b>will have been banned</b>: will have been + past participle", "<i>by 2050</i> = completed before that point"]}
+];
+var curScen = 0, predictMode = false, revealed = false;
+SCEN.forEach(function(s,i){
+  var b = document.createElement("button"); b.innerHTML = s.label; b.dataset.k = i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curScen=i; document.querySelectorAll("#scChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); $("doerChk").checked=SCEN[i].defDoer; revealed=false; renderScen(); });
+  $("scChips").appendChild(b);
+});
+$("doerChk").addEventListener("change", renderScen);
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderScen(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderScen(); });
+function renderScen(){
+  var s = SCEN[curScen];
+  $("activeSnt").innerHTML = s.active;
+  $("passiveSnt").innerHTML = $("doerChk").checked ? s.passiveWith : s.passiveNo;
+  $("doerNote").innerHTML = "🔎 " + s.note;
+  var ul=$("changes"); ul.innerHTML="";
+  s.changes.forEach(function(c){ var li=document.createElement("li"); li.innerHTML=c; ul.appendChild(li); });
+  var mask = predictMode && !revealed;
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask){
+    document.querySelectorAll("#passiveSnt .vbe, #passiveSnt .vpp").forEach(function(el){ el.classList.add("masked"); el.addEventListener("click", function(){ revealed=true; renderScen(); }); });
+  }
+}
+$("doerChk").checked = SCEN[0].defDoer;
+renderScen();
+
+/* forecast dial + time strip */
+var DIAL = [
+  {t:"will be + p.p.", ex:'In the future, more clothes <span class="vbe">will be</span> <span class="vpp">made</span> from recycled plastic.', fm:"will + be + past participle", vis:"dot", mark:"in the future", note:"A prediction about what will be done — the doer is unknown, obvious or unimportant."},
+  {t:"won’t be + p.p.", ex:'Size labels <span class="vbe">won’t be</span> <span class="vpp">needed</span> because everything will fit.', fm:"won’t (will not) + be + past participle", vis:"no", mark:"won’t happen", note:"Negative: the same structure with won’t."},
+  {t:"Will … be + p.p.?", ex:'How <span class="vbe">will</span> fabrics <span class="vbe">be</span> <span class="vpp">tested</span> for quality?', fm:"(Wh-) + will + subject + be + past participle?", vis:"q", mark:"will it?", note:"Question: will jumps in front of the subject; be stays behind it."},
+  {t:"going to be + p.p.", ex:'The factory <span class="vbe">is going to be</span> <span class="vpp">closed</span> next year.', fm:"am / is / are going to be + past participle", vis:"evid", mark:"next year", note:"going to works the same way — be agrees with the new subject."},
+  {t:"modal + be + p.p.", ex:'These fabrics <span class="vbe">can be</span> <span class="vpp">recycled</span>. Gloves <span class="vbe">must be</span> <span class="vpp">worn</span>.', fm:"can / must / should + be + past participle", vis:"dot", mark:"any time", note:"Modals take the same structure: modal + be + past participle."},
+  {t:"will have been + p.p.", ex:'By 2050, most petrol cars <span class="vbe">will have been</span> <span class="vpp">banned</span>.', fm:"will have been + past participle (future perfect passive — advanced)", vis:"done", mark:"by 2050", note:"Completed before a future point; by marks that point."},
+  {t:"when / if + present passive", ex:'When the design <span class="vbe">is</span> <span class="vpp">approved</span>, production <b>will begin</b>.', fm:"when / as soon as / before / after / if + is / are + past participle → no will!", vis:"trig", mark:"is approved", note:"No will after when, as soon as, before, after, if: the present passive points to the future."}
+];
+var curDial=0;
+DIAL.forEach(function(d,i){
+  var b=document.createElement("button"); b.textContent=d.t; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curDial=i; document.querySelectorAll("#dialChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderDial(); });
+  $("dialChips").appendChild(b);
+});
+function stripHtml(d){
+  var p=62;
+  if(d.vis==="dot") return '<div class="sact sdot" style="left:'+p+'%">●</div><div class="slab" style="left:'+p+'%">'+d.mark+'</div>';
+  if(d.vis==="no") return '<div class="sact sdot no" style="left:'+p+'%">✘</div><div class="slab" style="left:'+p+'%;color:var(--think)">'+d.mark+'</div>';
+  if(d.vis==="q") return '<div class="sact sdot" style="left:'+p+'%">?</div><div class="slab" style="left:'+p+'%">'+d.mark+'</div>';
+  if(d.vis==="evid") return '<div class="sact" style="left:5%;width:52%;border-radius:0 8px 8px 0">plan now → result</div><div class="sact sdot" style="left:'+p+'%">●</div><div class="slab" style="left:'+p+'%">'+d.mark+'</div>';
+  if(d.vis==="done") return '<div class="sact sdone" style="left:8%;width:60%">completed before ✓</div><div class="slab" style="left:80%">🚩 '+d.mark+'</div>';
+  return '<div class="sact strig" style="left:34%">when … '+d.mark+'</div><div class="sact sdot" style="left:74%">●</div><div class="slab" style="left:74%">production will begin</div>';
+}
+function renderDial(){ var d=DIAL[curDial]; $("dialEx").innerHTML=d.ex; $("dialFm").textContent=d.fm; $("stripDraw").innerHTML=stripHtml(d); $("dialNote").textContent=d.note; }
+renderDial();
+
+/* special cases */
+var SC = {
+  when:"<b>No will after when, as soon as, before, after, if.</b> Use the <b>present passive</b>: <i>When the design <b>is approved</b>, production will begin.</i> · <i>As soon as the store <b>is opened</b>, prices will drop.</i> ✘ <i>When the app <s>will be</s> launched…</i> → ✔ <i>When the app <b>is</b> launched…</i> <span class='es'>(Como en Grammar 10: tras when / if, presente.)</span>",
+  by:"<b>Keep the person only if it adds information</b> — with <i>by</i>: <i>The collection will be designed <b>by a famous artist</b>.</i> Drop the doer when it is <b>unknown</b> (<i>Clothes will be printed at home</i>), <b>obvious</b> (<i>Recycled materials will be used</i> — by designers, of course) or <b>unimportant</b> (<i>Taxes will be reduced</i>). Still true from Grammar 4: <i>by</i> = doer, <i>with</i> = tool.",
+  two:"<b>Two-object verbs put the person first</b>, as in any passive: <i>They will give every customer a discount</i> → <i><b>Every customer</b> will be given a discount.</i> · <i><b>Every buyer</b> will be given a digital receipt.</i> The other object stays after the participle.",
+  goingto:"<b>going to works the same way:</b> <i>The factory <b>is going to be closed</b> next year.</i> — <i>be</i> agrees with the new subject (<i>is / are going to be</i> + past participle). <b>So do modals:</b> <i>These fabrics <b>can be recycled</b>. Gloves <b>must be worn</b>.</i>",
+  perfect:"<b>Future perfect passive</b> (advanced): <i>will have been</i> + past participle = completed <b>before</b> a future point, marked with <i>by</i>: <i><b>By 2050</b>, most petrol cars <b>will have been banned</b>.</i>",
+  negq:"<b>Negative:</b> <i>won’t be</i> + past participle — <i>Shoes <b>won’t be sold</b> in stores. Size labels <b>won’t be needed</b>.</i> · <b>Question:</b> (Wh-) + <i>will</i> + subject + <i>be</i> + past participle — <i>How <b>will</b> sneakers <b>be made</b>? <b>Will</b> the shoes <b>be made</b> in Vietnam?</i>",
+  dropbe:"<b>Don’t drop be:</b> the participle alone is not a passive. ✘ <i>Shoes will sold</i> → ✔ <i>Shoes will <b>be</b> sold</i>. And use the <b>past participle</b>, never the base form: ✘ <i>will be make</i> → ✔ <i>will be <b>made</b></i> (regular: <i>-ed</i> · irregular: <i>made, sold, given, shown, worn</i>)."
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.when;
+
+/* common errors */
+var ERR = [
+  {bad:"Clothes will be make with the shopper in mind.", good:"Clothes will be made with the shopper in mind.", why:"The passive needs the past participle: will be <b>made</b>."},
+  {bad:"The shoes will sold online.", good:"The shoes will be sold online.", why:"Don’t drop <i>be</i>: will <b>be</b> + past participle."},
+  {bad:"More unisex clothing will be make.", good:"More unisex clothing will be made.", why:"<i>make</i> is the base form; the participle is <b>made</b>."},
+  {bad:"When the app will be launched, prices will drop.", good:"When the app is launched, prices will drop.", why:"No <i>will</i> after <i>when</i>: present passive."},
+  {bad:"New designs will be show online.", good:"New designs will be shown online.", why:"Irregular participle: show – showed – <b>shown</b>."},
+  {bad:"Old jeans will turned into new fabric.", good:"Old jeans will be turned into new fabric.", why:"<i>will</i> + <b>be</b> + past participle — never skip <i>be</i>."},
+  {bad:"More sustainable fabrics will be use in the future.", good:"More sustainable fabrics will be used in the future.", why:"Regular participle: use → <b>used</b>."}
+];
+ERR.forEach(function(e){
+  var li=document.createElement("li");
+  li.innerHTML='<span class="bad">'+e.bad+'</span><button class="btn ghost small fixbtn">Fix ✓</button><span class="good">'+e.good+'</span><div class="why">'+e.why+'</div>';
+  li.querySelector(".fixbtn").addEventListener("click", function(){ li.classList.add("open"); });
+  $("errList").appendChild(li);
+});
+
+/* =====================================================================
+   BUILD · assemble (auxiliary + participle) + transform (rewrite)
+===================================================================== */
+var BUILD = [
+  {active:'Designers <span class="doer">will use</span> recycled materials.', hint:"will + be + participle", frame:'<span class="vsubj">Recycled materials</span> {A} {P}.', auxs:["will be","will","will been"], aOk:"will be", pps:["used","use","using"], pOk:"used", note:"will + be + past participle: will be used."},
+  {active:'Factories <span class="doer">won’t sell</span> shoes in stores.', hint:"negative", frame:'<span class="vsubj">Shoes</span> {A} {P} in stores.', auxs:["won’t be","won’t","will not"], aOk:"won’t be", pps:["sold","sell","selled"], pOk:"sold", note:"Negative: won’t be + past participle (sell – sold – sold)."},
+  {active:'How <span class="doer">will they make</span> sneakers?', hint:"question", frame:'How will <span class="vsubj">sneakers</span> {A} {P}?', auxs:["be","been","being"], aOk:"be", pps:["made","make","maked"], pOk:"made", note:"Question: (Wh-) + will + subject + be + past participle."},
+  {active:'The owners <span class="doer">are going to close</span> the factory next year.', hint:"going to", frame:'<span class="vsubj">The factory</span> {A} {P} next year.', auxs:["is going to be","are going to be","is going to"], aOk:"is going to be", pps:["closed","close","closing"], pOk:"closed", note:"going to + be + past participle; be agrees with the new subject (the factory → is)."},
+  {active:'Clothing companies <span class="doer">will make</span> more unisex clothing.', hint:"will + be + participle", frame:'<span class="vsubj">More unisex clothing</span> {A} {P}.', auxs:["will be","will","will have"], aOk:"will be", pps:["made","make","making"], pOk:"made", note:"will be + past participle: make – made – made."},
+  {active:'Shops <span class="doer">will give</span> every customer a discount.', hint:"two objects — person first", frame:'<span class="vsubj">Every customer</span> {A} {P} a discount.', auxs:["will be","will been","will"], aOk:"will be", pps:["given","gave","give"], pOk:"given", note:"Two objects → the person first; give – gave – given."},
+  {active:'By 2050, governments <span class="doer">will have banned</span> most petrol cars.', hint:"future perfect (advanced)", frame:'By 2050, <span class="vsubj">most petrol cars</span> {A} {P}.', auxs:["will have been","will be","will have"], aOk:"will have been", pps:["banned","ban","banning"], pOk:"banned", note:"Future perfect passive: will have been + past participle."},
+  {active:'When they <span class="doer">approve</span> the design, production will begin.', hint:"after when!", frame:'When <span class="vsubj">the design</span> {A} {P}, production will begin.', auxs:["is","will be","is going to be"], aOk:"is", pps:["approved","approve","approving"], pOk:"approved", note:"No will after when: present passive (is approved)."},
+  {active:'You <span class="doer">can recycle</span> these fabrics.', hint:"modal", frame:'<span class="vsubj">These fabrics</span> {A} {P}.', auxs:["can be","can","can been"], aOk:"can be", pps:["recycled","recycle","recycling"], pOk:"recycled", note:"Modal passive: modal + be + past participle."},
+  {active:'Stores <span class="doer">will show</span> new designs online.', hint:"irregular participle", frame:'<span class="vsubj">New designs</span> {A} {P} online.', auxs:["will be","will","will been"], aOk:"will be", pps:["shown","showed","show"], pOk:"shown", note:"Irregular participle: show – showed – shown."},
+  {active:'You <span class="doer">must wear</span> gloves.', hint:"modal", frame:'<span class="vsubj">Gloves</span> {A} {P}.', auxs:["must be","must","must to be"], aOk:"must be", pps:["worn","wore","wear"], pOk:"worn", note:"Modal passive: must be + past participle (wear – wore – worn)."}
+];
+var bi=0, bAux=null, bPp=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function chipGroup(id, list, onPick){
+  var wrap=$(id); wrap.innerHTML="";
+  list.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ onPick(op); document.querySelectorAll("#"+id+" button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+}
+function renderBuild(){
+  var it=BUILD[bi]; bAux=null; bPp=null;
+  $("bctx").innerHTML = "Active: "+it.active+"<small>Make it passive — "+it.hint+"</small>";
+  chipGroup("auxChips", it.auxs, function(v){ bAux=v; });
+  chipGroup("ppChips", it.pps, function(v){ bPp=v; });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bAux || !bPp){ r.className="bresult bad"; r.innerHTML="Choose an <b>auxiliary</b> and a <b>participle</b> first."; return; }
+  var aOk=bAux===it.aOk, pOk=bPp===it.pOk;
+  if(aOk && pOk){
+    var sent=it.frame.replace("{A}", '<span class="vbe">'+it.aOk+'</span>').replace("{P}", '<span class="vpp">'+it.pOk+'</span>');
+    r.className="bresult good"; r.innerHTML="✅ "+sent+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    if(!aOk) document.querySelector('#auxChips button[data-v="'+bAux+'"]').classList.add("wrongpick");
+    if(!pOk) document.querySelector('#ppChips button[data-v="'+bPp+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ "+(!aOk&&!pOk?"Neither fits.":!aOk?"The participle fits, the auxiliary does not.":"The auxiliary fits, the participle does not.")+" <span class='bnote'>Hint — "+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"Designers will use recycled materials in their collections. <b>(drop the doer)</b>", accept:["recycled materials will be used in their collections","recycled materials'll be used in their collections"], model:"Recycled materials will be used in their collections."},
+  {ctx:"Clothing companies will make more unisex clothing. <b>(drop the doer)</b>", accept:["more unisex clothing will be made","more unisex clothing'll be made"], model:"More unisex clothing will be made."},
+  {ctx:"Governments will reduce taxes on eco-friendly clothing. <b>(the doer: your choice)</b>", accept:["taxes on eco-friendly clothing will be reduced","taxes on eco-friendly clothing will be reduced by governments","taxes on eco-friendly clothing'll be reduced","taxes on eco friendly clothing will be reduced","taxes on eco friendly clothing will be reduced by governments"], model:"Taxes on eco-friendly clothing will be reduced (by governments)."},
+  {ctx:"City organizations will provide recycling facilities. <b>(drop the doer)</b>", accept:["recycling facilities will be provided","recycling facilities'll be provided"], model:"Recycling facilities will be provided."},
+  {ctx:"Factories won’t sell shoes in stores. <b>(drop the doer)</b>", accept:["shoes won't be sold in stores","shoes will not be sold in stores"], model:"Shoes won’t be sold in stores."},
+  {ctx:"A famous artist will design the next collection. <b>(keep the doer — it adds information)</b>", accept:["the next collection will be designed by a famous artist","the next collection'll be designed by a famous artist"], model:"The next collection will be designed by a famous artist."},
+  {ctx:"How will they test fabrics for quality? <b>(a question)</b>", accept:["how will fabrics be tested for quality"], model:"How will fabrics be tested for quality?"},
+  {ctx:"They are going to close the factory next year. <b>(going to)</b>", accept:["the factory is going to be closed next year","the factory's going to be closed next year","next year the factory is going to be closed"], model:"The factory is going to be closed next year."},
+  {ctx:"They will give every buyer a digital receipt. <b>(person first)</b>", accept:["every buyer will be given a digital receipt","every buyer'll be given a digital receipt"], model:"Every buyer will be given a digital receipt."},
+  {ctx:"By 2050, they will have banned most petrol cars. <b>(future perfect)</b>", accept:["by 2050 most petrol cars will have been banned","most petrol cars will have been banned by 2050","by 2050 most petrol cars'll have been banned","by 2050 most petrol cars will've been banned"], model:"By 2050, most petrol cars will have been banned."},
+  {ctx:"When they approve the design, production will start. <b>(careful: when!)</b>", accept:["when the design is approved production will start","production will start when the design is approved"], model:"When the design is approved, production will start."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML="Rewrite in the future passive: "+it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Active or passive?", q:"“The shoes will be made in Vietnam.”", o:["Passive","Active"], a:0, w:"The subject (the shoes) receives the action: will be + past participle → passive."},
+  {kind:"mc", diff:1, tag:"Complete", q:"Designers will use recycled plastic → “Recycled plastic ___.”", o:["will be used","will used","will be use"], a:0, w:"Future passive: will + be + past participle."},
+  {kind:"mc", diff:1, tag:"Negative", q:"“Size labels ___ because everything will fit.”", o:["won’t be needed","won’t needed","won’t be need"], a:0, w:"Negative: won’t be + past participle."},
+  {kind:"mc", diff:1, tag:"going to", q:"They are going to close the factory → “The factory ___ next year.”", o:["is going to be closed","is going to closed","will going to be closed"], a:0, w:"going to works the same way: is going to be + past participle."},
+  {kind:"mc", diff:1, tag:"Question", q:"“How ___?” (make / sneakers)", o:["will sneakers be made","will be sneakers made","sneakers will be made"], a:0, w:"Question: (Wh-) + will + subject + be + past participle."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["The","jackets","will","be","make","from","ocean","plastic."], bad:4, fixOld:"make", fixNew:"made", w:"The passive needs the past participle, not the base form: will be made."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["New","designs","will","be","show","online."], bad:4, fixOld:"show", fixNew:"shown", w:"Irregular participle: show – showed – shown."},
+  {kind:"fill", diff:2, tag:"Don’t drop be", q:"“The clothes will sold directly to buyers.” Correct the verb: The clothes ___ directly to buyers.", accept:["will be sold","'ll be sold"], w:"The participle alone is not a passive: will + be + sold."},
+  {kind:"fill", diff:2, tag:"Modal passive", q:"“These jackets ___ (can / recycle) at any store.”", accept:["can be recycled"], w:"Modal passive: modal + be + past participle."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["When","the","store","will","be","opened,","prices","will","drop."], bad:3, fixOld:"will be opened", fixNew:"is opened", w:"No will after when: use the present passive."},
+  {kind:"fill", diff:3, tag:"Two objects", q:"“Every buyer ___ (give) a digital receipt.”", accept:["will be given","'ll be given"], w:"Two-object verbs put the person first: will be given (give – gave – given)."},
+  {kind:"fill", diff:3, tag:"Future perfect passive", q:"“By 2050, most petrol cars ___ (ban).”", accept:["will have been banned","'ll have been banned","will've been banned"], w:"by + a point → will have been + past participle."},
+  {kind:"mc", diff:3, tag:"Keep the doer?", q:"A famous artist will design the next collection. → Which passive keeps the useful information?", o:["The next collection will be designed by a famous artist.","The next collection will be designed.","The next collection will be designed for a famous artist."], a:0, w:"Keep the doer with by only when it adds information — a famous artist does."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("futpassive_drill_best")||0); if(dscore>best){ store("futpassive_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Trend confirmed. Ready for the ★★★ homework." : dscore>=8?"Good forecasting — review the special-cases card and go again." : "Re-read Grammar 12, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, '<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

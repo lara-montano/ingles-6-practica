@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE GERUND MACHINE · English 6 · Unit 4 "Ahead of the Curve"
+  Grammar 11 — the gerund after a preposition (verb / adjective / noun +
+  preposition, complex prepositions, the "to" trap, negative gerund)
+  Three modes: Explore (fill the slots) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 11 · The Gerund Machine · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --wine:#8C2F53; --winedark:#5E1F38; --winelt:#F4E5EC;   /* Unit 4 identity */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--wine),var(--winedark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#F1C4D5; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#F7DCE7; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--winedark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--winedark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--winedark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-wine{background:var(--wine)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--wine); background:var(--winelt); color:var(--winedark)}
+
+  /* ---------- the gerund machine (dial → three slots) ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:4px}
+  .dialgroup{margin-top:8px}
+  .tensechips{display:flex; gap:6px; flex-wrap:wrap; margin:2px 0 4px}
+  .tensechips button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 11px; font:700 13px Lato,sans-serif; cursor:pointer}
+  .tensechips button.on{border-color:var(--wine); background:var(--winelt); color:var(--winedark)}
+  .tensechips button.exv{border-style:dashed; border-color:#C9B8E3; color:var(--excep)} .tensechips button.exv.on{border-style:solid; border-color:var(--excep); background:var(--exceplt)}
+  .machine{display:flex; gap:8px; flex-wrap:wrap; margin:12px 0 4px}
+  .slot{flex:1 1 150px; border:2px solid; border-radius:12px; padding:9px 12px; text-align:center; min-height:78px; position:relative}
+  .slot .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase; opacity:.85}
+  .slot .val{font-size:clamp(17px,2.9vw,22px); font-weight:800; margin-top:3px; line-height:1.35}
+  .slot.head{background:var(--winelt); border-color:var(--wine); color:var(--winedark)} .slot.head.none{background:#F3F3F3; border-color:#BBB; color:#888; border-style:dashed}
+  .slot.prep{background:var(--navylt); border-color:var(--navy); color:var(--navy)} .slot.prep.trap{background:var(--exceplt); border-color:var(--excep); color:var(--excep)}
+  .slot.ing{background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)}
+  .slot.masked{cursor:pointer} .slot.masked .val{color:transparent}
+  .slot.masked::after{content:"?"; position:absolute; left:0; right:0; top:24px; bottom:0; color:#999; font-size:28px; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .plus{align-self:center; font-size:22px; font-weight:900; color:#bbb}
+  .patrow{display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin:8px 0 2px}
+  .patbadge{display:inline-block; color:#fff; font-weight:900; font-size:13px; padding:5px 14px; border-radius:999px; background:var(--grammar)}
+  .patbadge.ex{background:var(--excep)}
+  .ruleline{font-size:14px; font-weight:700; color:#555}
+  .sentence{font-size:clamp(18px,3.2vw,25px); font-weight:800; text-align:center; padding:16px 12px; background:var(--soft); border-radius:12px; margin:10px 0 6px; line-height:1.7}
+  .shead{background:var(--winelt); color:var(--winedark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--wine)}
+  .sprep{background:var(--navylt); color:var(--navy); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--navy)} .sprep.trap{background:var(--exceplt); color:var(--excep); box-shadow:inset 0 -2px 0 var(--excep)}
+  .sing{background:var(--grammarlt); color:var(--grammar); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--grammar)}
+  .sing.masked{color:transparent; position:relative; cursor:pointer; min-width:70px; display:inline-block} .sing.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .vnote{font-size:13px; font-weight:700; color:var(--excep); margin-top:6px; text-align:center; min-height:18px}
+  .contrast{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:8px; margin-top:4px}
+  .contrast div{border-radius:10px; padding:9px 12px; font-weight:700; font-size:15px; border:2px solid}
+  .contrast .ok{background:var(--greenlt); border-color:var(--green); color:var(--greendark)} .contrast .no{background:var(--thinklt); border-color:var(--think); color:var(--think)}
+  .contrast small{display:block; font-size:11px; font-weight:900; letter-spacing:.06em; text-transform:uppercase; opacity:.8}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:12px}
+  .legend span{border-radius:6px; padding:1px 8px}
+
+  /* the two "to"s */
+  .twocol{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:8px; margin-top:4px}
+  .twocol div{border-radius:10px; padding:10px 12px; border:2px solid; font-weight:700; font-size:14px; line-height:1.5}
+  .twocol .inf{background:var(--navylt); border-color:var(--navy); color:var(--navy)} .twocol .pre{background:var(--exceplt); border-color:var(--excep); color:var(--excep)}
+  .twocol small{display:block; font-size:11px; font-weight:900; letter-spacing:.06em; text-transform:uppercase; opacity:.8}
+  .totest{background:var(--soft); border-radius:12px; padding:14px 16px; margin-top:6px; text-align:center}
+  .totest .verdict{font-size:clamp(15px,2.6vw,19px); font-weight:800} .totest .verdict.pre{color:var(--excep)} .totest .verdict.inf{color:var(--navy)}
+  .totest .ex{font-size:clamp(16px,2.8vw,21px); color:#333; margin-top:8px; font-weight:800}
+
+  /* special cases selector */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+
+  /* errors card */
+  .errlist{list-style:none; margin-top:6px}
+  .errlist li{display:flex; gap:10px; align-items:center; flex-wrap:wrap; padding:8px 0; border-bottom:1px dashed var(--rule); font-size:15px; font-weight:700}
+  .errlist .bad{color:var(--think)} .errlist .bad::before{content:"✘ "} .errlist .good{color:var(--green); display:none} .errlist .good::before{content:"✔ "}
+  .errlist .why{display:none; margin:0; flex-basis:100%; font-size:13px; padding:6px 10px}
+  .errlist li.open .good,.errlist li.open .why{display:block}
+  .errlist li.open .fixbtn{display:none}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--wine); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--winedark); border:2px solid var(--wine)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--wine); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--wine)}
+  .segbig button.on{background:var(--wine); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--wine); background:var(--winelt); color:var(--winedark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--winedark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--winedark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--wine); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick,.stn .w.rightpick{background:var(--think); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--winedark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--wine); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">👗</span>
+  <div class="wrap">
+    <div class="kicker">English 6 · Unit 4 · Ahead of the Curve</div>
+    <h1>👗 The Gerund Machine</h1>
+    <div class="sub"><b>Grammar 11</b> — the gerund after a preposition: <i>interested in working, instead of buying, look forward to seeing</i>. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>👗 Explore the slots</span><span>🔧 Build a sentence</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">👗 Explore<small>watch the slots fill</small></button>
+    <button data-tab="build">🔧 Build<small>assemble it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>After any preposition, the verb takes <i>-ing</i></h2>
+      <p class="muted">The rule is simple: after <b>any</b> preposition, a verb takes the <b>gerund</b> (the <i>-ing</i> form) — never the
+        infinitive. Prepositions attach to <b>verbs</b>, <b>adjectives</b> and <b>nouns</b>, or come as short words of their own.
+        Pick a head word on the dial and watch the machine fill the slots. <span class="es">(Tras una preposición, el verbo va en -ing:
+        interested in working, no “in to work”.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the -ing slot, guess the form, then reveal</label>
+
+      <h3>1 · Pick a head word on the dial</h3>
+      <div id="dial"></div>
+
+      <h3>2 · Watch the slots fill</h3>
+      <div class="machine">
+        <div class="slot head" id="slotHead"><div class="role" id="slotHeadRole">head word</div><div class="val" id="slotHeadVal"></div></div>
+        <span class="plus">+</span>
+        <div class="slot prep" id="slotPrep"><div class="role" id="slotPrepRole">preposition</div><div class="val" id="slotPrepVal"></div></div>
+        <span class="plus">+</span>
+        <div class="slot ing" id="slotIng"><div class="role">-ing form (gerund)</div><div class="val" id="slotIngVal"></div></div>
+      </div>
+      <div class="patrow"><span class="patbadge" id="patBadge"></span><span class="ruleline" id="ruleLine"></span></div>
+      <div class="sentence" id="sentence"></div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the -ing slot ✓</button></div>
+      <div class="vnote" id="vnote"></div>
+
+      <h3>Gerund or infinitive after the preposition?</h3>
+      <div class="contrast" id="contrast"></div>
+      <div class="legend"><span class="shead">head word</span><span class="sprep">preposition</span><span class="sprep trap">to as a preposition</span><span class="sing">-ing form (gerund)</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">💡 The two “to”s</span>
+      <h2>Infinitive <i>to</i> or preposition <i>to</i>?</h2>
+      <div class="twocol">
+        <div class="inf"><small>to + base form = infinitive</small>I want <b>to go</b>. · She decided <b>to wear</b> the red dress. · I’d like <b>to try</b> it on.</div>
+        <div class="pre"><small>to + -ing = to is a preposition</small>I look forward <b>to going</b>. · I’m not used <b>to wearing</b> a suit. · Staff object <b>to wearing</b> uniforms.</div>
+      </div>
+      <p class="muted" style="margin-top:10px"><b>The test:</b> if you can replace “<i>to</i> + verb” with “<i>to it</i>”, then <i>to</i> is a preposition → use <i>-ing</i>.
+        Tap a sentence and run the test. <span class="es">(Si puedes decir “to it”, ese to es preposición: -ing.)</span></p>
+      <div class="tensechips" id="toChips"></div>
+      <div class="totest"><div class="verdict" id="toVerdict"></div><div class="ex" id="toEx"></div></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Exceptions &amp; special cases</span>
+      <h2>Seven things to watch after a preposition</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="totrap" class="on">the ‘to’ trap</button><button data-v="neg">not + -ing</button><button data-v="subject">gerund as subject</button><button data-v="afraid">afraid of / afraid to</button><button data-v="poss">possessive + -ing</button><button data-v="short">by · without · instead of</button><button data-v="being">being + …</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠️ Common errors</span>
+      <h2>Errors Spanish speakers make</h2>
+      <p class="muted">Read the sentence, find the problem, then tap <b>Fix</b> to check. <span class="es">(Errores típicos: adivina la corrección antes de verla.)</span></p>
+      <ul class="errlist" id="errList"></ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Grammar 11’s two tables as a machine: the dial follows the manual’s groups (verb / adjective / noun + preposition, prepositions on their own) plus the “to” trap as a fifth, purple group; the middle slot turns purple whenever <i>to</i> is a preposition. The “two to’s” card runs the manual’s <i>to it</i> test on exercise-D sentences; the special-cases card follows the exceptions box (to trap, negative gerund, gerund as subject, <i>afraid of / to</i>, possessive) plus <i>by / without / instead of</i> and <i>being</i> from the exercises; the errors card is the pitfall box.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> a sentence by choosing the preposition and the verb form (exercises A, C and D), then <i>transform</i> two ideas into one sentence with a preposition + gerund (Task set 24 and the mixed review), with validation.</li>
+          <li><b>Drill</b> merges the quizzes into one graded engine (★ which form / which preposition / name the structure · ★★ fix the error &amp; complete (<i>used to wear</i>, <i>good in</i>, <i>by copying</i>) · ★★★ the “to” trap, negative gerund, <i>afraid of / to</i>, join two ideas) with a score and streak.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-wine">🔧 Your turn to produce</span>
+      <h2>Build a sentence</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the idea and its head word, then choose the <b>preposition</b> it takes and the <b>verb form</b> that follows. The machine assembles the sentence — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">Which preposition goes with the head word?</div><div class="bchips" id="prepChips"></div></div>
+        <div class="bgroup"><div class="glab">…and which verb form follows it?</div><div class="bchips" id="formChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New idea →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Join the two ideas in one sentence using the word in parentheses + a gerund. Type it and check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="e.g. She bought the dress without trying it on."><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next pair →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ which form? which preposition? name the structure · ★★ fix the error &amp; complete · ★★★ the ‘to’ trap, <i>not</i> + -ing, <i>afraid of / to</i>, join two ideas.
+        Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 6 · Unit 4 «Ahead of the Curve» · Grammar 11 — the gerund after a preposition · Level B1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE GERUND MACHINE — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 6 Class Manual (Grammar 11).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · the gerund machine (head-word dial → three slots)
+===================================================================== */
+var FAMS = [
+  {t:"verb + preposition", role:"verb", pat:"verb + preposition + gerund", rule:"The verb’s preposition takes <i>-ing</i>: <b>think about buying</b>. Phrasal verbs like <i>give up / end up / keep on</i> work the same way."},
+  {t:"adjective + preposition", role:"adjective", pat:"adjective + preposition + gerund", rule:"The adjective’s preposition takes <i>-ing</i>: <b>good at drawing</b>."},
+  {t:"noun + preposition", role:"noun", pat:"noun + preposition + gerund", rule:"The noun’s preposition takes <i>-ing</i>: <b>no point in following</b>."},
+  {t:"preposition on its own (short & complex)", role:"no head word", pat:"preposition + gerund", rule:"A short or complex preposition on its own also takes <i>-ing</i>: <b>without paying</b>, <b>instead of dressing up</b>."},
+  {t:"the ‘to’ trap — to as a preposition", role:"expression ending in to", pat:"… to (preposition) + gerund", rule:"Here <i>to</i> is a <b>preposition</b> (test: <i>to it</i>), so the verb takes <i>-ing</i>, not the infinitive: <b>look forward to hearing</b>."}
+];
+/* h chip · fam family · s lead text · head head word(s) ("" = none) · prep · g gerund · t tail · bad wrong chunk · bl label of the wrong box · n note · to: to-trap */
+var HEADS = [
+  {h:"believe in", fam:0, s:"Our brand", head:"believes", prep:"in", g:"paying", t:" workers fairly.", bad:"believes in to pay"},
+  {h:"focus on", fam:0, s:"The industry needs to", head:"focus", prep:"on", g:"designing", t:" eco-friendly clothing.", bad:"focus on to design"},
+  {h:"insist on", fam:0, s:"My grandmother", head:"insists", prep:"on", g:"ironing", t:" every shirt.", bad:"insists on to iron"},
+  {h:"succeed in", fam:0, s:"The designer", head:"succeeded", prep:"in", g:"launching", t:" a second collection.", bad:"succeeded in to launch"},
+  {h:"apologize for", fam:0, s:"They", head:"apologized", prep:"for", g:"arriving", t:" late to the show.", bad:"apologized for to arrive"},
+  {h:"worry about", fam:0, s:"Don’t", head:"worry", prep:"about", g:"wearing", t:" the wrong thing.", bad:"worry about to wear"},
+  {h:"dream of", fam:0, s:"She", head:"dreams", prep:"of", g:"opening", t:" her own boutique.", bad:"dreams of to open"},
+  {h:"think about", fam:0, s:"I’m", head:"thinking", prep:"about", g:"buying", t:" new shoes.", bad:"thinking about to buy"},
+  {h:"give up", fam:0, s:"He", head:"gave", prep:"up", g:"following", t:" every trend.", bad:"gave up to follow", n:"A phrasal verb: the particle up works like a preposition, so -ing follows."},
+  {h:"end up", fam:0, s:"She", head:"ended", prep:"up", g:"wearing", t:" jeans to the party.", bad:"ended up to wear"},
+  {h:"keep on", fam:0, s:"Prices", head:"keep", prep:"on", g:"rising", t:" every season.", bad:"keep on to rise"},
+  {h:"interested in", fam:1, s:"I’m", head:"interested", prep:"in", g:"working", t:" in fashion.", bad:"interested in to work"},
+  {h:"good at", fam:1, s:"She’s", head:"good", prep:"at", g:"drawing", t:" clothes.", bad:"good in drawing", bl:"wrong preposition", n:"good at — never good in."},
+  {h:"afraid of", fam:1, s:"He’s", head:"afraid", prep:"of", g:"looking", t:" old-fashioned.", bad:"afraid of to look", n:"afraid of + -ing = a fear. Compare afraid to + base form (see special cases)."},
+  {h:"wary of", fam:1, s:"She’s", head:"wary", prep:"of", g:"dressing", t:" too casually.", bad:"wary of to dress"},
+  {h:"keen on", fam:1, s:"Shoppers are", head:"keen", prep:"on", g:"buying", t:" from ethical brands.", bad:"keen on to buy"},
+  {h:"excited about", fam:1, s:"I’m", head:"excited", prep:"about", g:"buying", t:" a dress for the wedding.", bad:"excited about to buy"},
+  {h:"worried about", fam:1, s:"I was", head:"worried", prep:"about", g:"wearing", t:" the wrong thing, but everyone was casual.", bad:"worried about to wear"},
+  {h:"tired of", fam:1, s:"I’m", head:"tired", prep:"of", g:"ironing", t:" shirts.", bad:"tired of to iron"},
+  {h:"capable of", fam:1, s:"Fast fashion is", head:"capable", prep:"of", g:"changing", t:" a look overnight.", bad:"capable of to change"},
+  {h:"responsible for", fam:1, s:"The industry is", head:"responsible", prep:"for", g:"producing", t:" tons of waste.", bad:"responsible for to produce"},
+  {h:"point in", fam:2, s:"There’s no", head:"point", prep:"in", g:"following", t:" every trend.", bad:"point in to follow"},
+  {h:"idea of", fam:2, s:"I like the", head:"idea", prep:"of", g:"renting", t:" clothes for big events.", bad:"idea of to rent"},
+  {h:"way of", fam:2, s:"Thrifting is a cheap", head:"way", prep:"of", g:"updating", t:" your wardrobe.", bad:"way of to update"},
+  {h:"instead of", fam:3, s:"We wore jeans", head:"", prep:"instead of", g:"dressing", t:" up.", bad:"instead of to dress", n:"instead of + -ing = the alternative."},
+  {h:"because of", fam:3, s:"The shop closed", head:"", prep:"because of", g:"losing", t:" its young customers.", bad:"because of to lose"},
+  {h:"in addition to", fam:3, to:true, s:"", head:"", prep:"In addition to", g:"selling", t:" clothes, the store repairs them.", bad:"In addition to sell", bl:"infinitive — but to is a preposition", n:"Listed twice in the manual: complex preposition AND ‘to’ trap (in addition to it ✔)."},
+  {h:"in spite of", fam:3, s:"She looked elegant", head:"", prep:"in spite of", g:"wearing", t:" jeans.", bad:"in spite of to wear"},
+  {h:"apart from", fam:3, s:"", head:"", prep:"Apart from", g:"shopping", t:" online, she never buys clothes.", bad:"Apart from to shop"},
+  {h:"as well as", fam:3, s:"The brand recycles fabric", head:"", prep:"as well as", g:"using", t:" ocean plastic.", bad:"as well as to use"},
+  {h:"by", fam:3, s:"She succeeded", head:"", prep:"by", g:"taking", t:" a risk.", bad:"by to take", n:"by + -ing = the method: how did she succeed?"},
+  {h:"after", fam:3, s:"", head:"", prep:"After", g:"trying", t:" on six jackets, he bought none.", bad:"After to try"},
+  {h:"before", fam:3, s:"Check the label", head:"", prep:"before", g:"washing", t:" it.", bad:"before to wash"},
+  {h:"without", fam:3, s:"You can’t leave", head:"", prep:"without", g:"paying", t:".", bad:"without to pay", n:"without + -ing = not doing it."},
+  {h:"look forward to", fam:4, to:true, s:"I", head:"look forward", prep:"to", g:"hearing", t:" from you.", bad:"look forward to hear", bl:"infinitive — but to is a preposition", n:"The manual’s matching exercise calls this a phrasal verb + gerund: I look forward to it ✔."},
+  {h:"be used to", fam:4, to:true, s:"I’m not", head:"used", prep:"to", g:"wearing", t:" a suit.", bad:"used to wear", bl:"infinitive — but to is a preposition", n:"be used to + -ing = it is normal for me (I’m used to it ✔)."},
+  {h:"get used to", fam:4, to:true, s:"You’ll", head:"get used", prep:"to", g:"dressing", t:" up for work.", bad:"get used to dress", bl:"infinitive — but to is a preposition"},
+  {h:"be accustomed to", fam:4, to:true, s:"She’s", head:"accustomed", prep:"to", g:"shopping", t:" in small boutiques.", bad:"accustomed to shop", bl:"infinitive — but to is a preposition"},
+  {h:"object to", fam:4, to:true, s:"Staff", head:"object", prep:"to", g:"wearing", t:" uniforms.", bad:"object to wear", bl:"infinitive — but to is a preposition"},
+  {h:"be committed to", fam:4, to:true, s:"The brand is", head:"committed", prep:"to", g:"reducing", t:" waste.", bad:"committed to reduce", bl:"infinitive — but to is a preposition"},
+  {h:"prefer X to", fam:4, to:true, s:"I", head:"prefer walking", prep:"to", g:"driving", t:" to the mall.", bad:"prefer walking to drive", bl:"infinitive — but to is a preposition", n:"prefer X to Y: both sides take -ing."}
+];
+var curH = 11, predictMode = false, revealed = false;
+FAMS.forEach(function(f,fi){
+  var g=document.createElement("div"); g.className="dialgroup"; g.innerHTML='<div class="glab">'+f.t+'</div>';
+  var row=document.createElement("div"); row.className="tensechips";
+  HEADS.forEach(function(h,i){
+    if(h.fam!==fi) return;
+    var b=document.createElement("button"); b.textContent=h.h; b.dataset.k=i; if(h.to) b.classList.add("exv");
+    if(i===curH) b.classList.add("on");
+    b.addEventListener("click", function(){ curH=i; document.querySelectorAll("#dial button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); revealed=false; renderMachine(); });
+    row.appendChild(b);
+  });
+  g.appendChild(row); $("dial").appendChild(g);
+});
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderMachine(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderMachine(); });
+function chunk(h){ return (h.head?h.head+" ":"")+h.prep+" "+h.g; }
+function renderMachine(){
+  var h=HEADS[curH], F=FAMS[h.fam], mask=predictMode && !revealed, trap=!!h.to;
+  $("slotHead").className="slot head"+(h.head?"":" none"); $("slotHeadRole").textContent=F.role; $("slotHeadVal").textContent=h.head||"—";
+  $("slotPrep").className="slot prep"+(trap?" trap":""); $("slotPrepRole").textContent=trap?"to = a preposition!":"preposition"; $("slotPrepVal").textContent=h.prep;
+  var is=$("slotIng"); is.className="slot ing"+(mask?" masked":""); $("slotIngVal").textContent=h.g;
+  $("patBadge").className="patbadge"+(trap&&!mask?" ex":""); $("patBadge").textContent=mask?"? — which form?":F.pat;
+  $("ruleLine").innerHTML=mask?"Predict: -ing, to + base form, or base form? Then reveal.":F.rule;
+  $("sentence").innerHTML=(h.s?h.s+" ":"")+(h.head?'<span class="shead">'+h.head+'</span> ':'')+'<span class="sprep'+(trap?" trap":"")+'">'+h.prep+'</span> <span class="sing'+(mask?" masked":"")+'" id="si">'+h.g+'</span>'+h.t;
+  $("vnote").textContent=mask?"":(h.n||"");
+  $("revealBtn").style.display=mask?"inline-block":"none";
+  var ct=$("contrast");
+  if(mask){ ct.innerHTML='<div class="ok" style="opacity:.5"><small>hidden</small>Reveal the slot to see the contrast.</div>'; }
+  else { ct.innerHTML='<div class="ok"><small>✔ preposition + -ing</small>'+chunk(h)+'</div><div class="no"><small>✘ '+(h.bl||"infinitive after a preposition")+'</small>'+h.bad+'</div>'; }
+  if(mask){ is.onclick=function(){ revealed=true; renderMachine(); }; $("si").onclick=is.onclick; } else { is.onclick=null; }
+}
+renderMachine();
+
+/* the two "to"s — run the manual's "to it" test */
+/* a = text before "to" · b = text after the verb · v base form · g gerund · pre: is this "to" a preposition? */
+var TOTEST = [
+  {a:"I want", b:" a new jacket.", v:"buy", g:"buying", pre:false},
+  {a:"I look forward", b:" the new collection.", v:"see", g:"seeing", pre:true},
+  {a:"She decided", b:" the red dress.", v:"wear", g:"wearing", pre:false},
+  {a:"He’s not used", b:" formal clothes.", v:"wear", g:"wearing", pre:true},
+  {a:"Staff object", b:" uniforms.", v:"wear", g:"wearing", pre:true},
+  {a:"I’d like", b:" it on.", v:"try", g:"trying", pre:false},
+  {a:"In addition", b:" clothes, the store repairs them.", v:"sell", g:"selling", pre:true},
+  {a:"I prefer walking", b:".", v:"drive", g:"driving", pre:true}
+];
+var curTo=0;
+TOTEST.forEach(function(x,i){
+  var b=document.createElement("button"); b.textContent=x.a+" to … ("+x.v+")"; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curTo=i; document.querySelectorAll("#toChips button").forEach(function(y){ y.classList.toggle("on", +y.dataset.k===i); }); renderTo(); });
+  $("toChips").appendChild(b);
+});
+function renderTo(){
+  var x=TOTEST[curTo], v=$("toVerdict");
+  v.className="verdict "+(x.pre?"pre":"inf");
+  v.innerHTML = x.pre ? "“"+x.a+" to <b>it</b>” ✔ works → <i>to</i> is a <b>preposition</b> → <i>-ing</i>" : "“"+x.a+" to <b>it</b>” ✘ does not work → <i>to</i> + base form = <b>infinitive</b>";
+  $("toEx").innerHTML = x.a+(x.pre?' <span class="sprep trap">to</span> <span class="sing">'+x.g+'</span>':' <span class="sprep">to '+x.v+'</span>')+x.b;
+}
+renderTo();
+
+/* special cases */
+var SC = {
+  totrap:"<b>Some expressions end in <i>to</i> as a preposition</b>, so the next verb takes <i>-ing</i>, not the infinitive: <i>look forward to · be/get used to · be accustomed to · object to · be committed to · in addition to · prefer X to</i>. ✔ I look forward <b>to hearing</b> from you. ✘ <s>to hear</s> · ✔ I’m not used <b>to wearing</b> a suit. ✘ <s>to wear</s>. <b>Test:</b> if you can replace “to + verb” with “<b>to it</b>”, then <i>to</i> is a preposition → use <i>-ing</i>.",
+  neg:"<b>Negative gerund:</b> put <i>not</i> <b>before</b> the <i>-ing</i>: I apologize <b>for not calling</b>. · Thanks <b>for not laughing</b> at my outfit. · She’s proud <b>of not following</b> every trend. ✘ <s>for to not call</s>, <s>for not to call</s>.",
+  subject:"<b>A gerund as subject needs no preposition</b> — it just acts as a noun: <b>Following</b> every trend is expensive. · <b>Buying</b> a new ‘eco’ jacket every year is not really the answer. The preposition rule only applies when there IS a preposition.",
+  afraid:"<b>afraid of vs afraid to.</b> <i>afraid of + -ing</i> = <b>a fear</b>: She’s afraid <b>of falling</b> in those heels. · <i>afraid to + base form</i> = <b>too frightened to act</b>: He was afraid <b>to ask</b> the price. Both exist, with different meanings. <span class='es'>(Miedo a que pase algo vs. no atreverse a hacerlo.)</span>",
+  poss:"<b>Possessive before a gerund</b> (formal): I don’t mind <b>his</b> leaving early. · They objected to <b>our</b> changing the dress code. <span class='es'>(Formal: posesivo + -ing.)</span>",
+  short:"<b>Short prepositions on their own take -ing too.</b> <i>by</i> + -ing = <b>the method</b>: She succeeded <b>by taking</b> a risk. · <i>without</i> + -ing = <b>not doing it</b>: You can’t leave <b>without paying</b>. · <i>instead of</i> + -ing = <b>the alternative</b>: We wore jeans <b>instead of dressing up</b>. · <i>before / after</i> + -ing: Check the label <b>before washing</b> it. ✘ <s>instead of to go</s>, <s>without to pay</s>.",
+  being:"<b>The gerund of <i>be</i> is <i>being</i></b>, and it follows a preposition like any other gerund: She’s worried <b>about being</b> underdressed. · I’m tired <b>of being told</b> what to wear (<i>being</i> + past participle = a passive gerund). ✘ <s>worried about be underdressed</s>."
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.totrap;
+
+/* common errors (pitfall box) */
+var ERR = [
+  {bad:"I’m interested in to work in fashion.", good:"I’m interested in working in fashion.", why:"After a preposition (<i>in</i>) the verb takes <i>-ing</i>, never <i>to</i> + base form."},
+  {bad:"I look forward to meet you.", good:"I look forward to meeting you.", why:"In <i>look forward to</i>, <i>to</i> is a preposition (<i>to it</i>) → <i>-ing</i>."},
+  {bad:"We stayed home instead of to go out.", good:"We stayed home instead of going out.", why:"<i>instead of</i> is a preposition → <i>going</i>."},
+  {bad:"She’s good in drawing.", good:"She’s good at drawing.", why:"The adjective <i>good</i> takes <i>at</i>, not <i>in</i>."},
+  {bad:"Thanks for to help me.", good:"Thanks for helping me.", why:"<i>for</i> is a preposition → <i>helping</i>."},
+  {bad:"I’m used to wear jeans. (= it’s normal for me)", good:"I’m used to wearing jeans.", why:"<i>be used to</i> + <i>-ing</i>: <i>to</i> is a preposition here (<i>I’m used to it</i>)."},
+  {bad:"He left without to say goodbye.", good:"He left without saying goodbye.", why:"<i>without</i> is a preposition → <i>saying</i>."}
+];
+ERR.forEach(function(e){
+  var li=document.createElement("li");
+  li.innerHTML='<span class="bad">'+e.bad+'</span><button class="btn ghost small fixbtn">Fix ✓</button><span class="good">'+e.good+'</span><div class="why">'+e.why+'</div>';
+  li.querySelector(".fixbtn").addEventListener("click", function(){ li.classList.add("open"); });
+  $("errList").appendChild(li);
+});
+
+/* =====================================================================
+   BUILD · assemble (preposition + verb form) + transform (join two ideas)
+===================================================================== */
+var BUILD = [
+  {ctx:"I’m excited · buy a dress for the wedding", hint:"adjective + preposition", frame:"I’m excited {P} {G} a dress for the wedding.", preps:["about","for","in"], pOk:"about", forms:["buying","to buy","buy"], gOk:"buying", note:"excited about + -ing."},
+  {ctx:"She’s good · design her own clothes", hint:"adjective + preposition (careful with the preposition)", frame:"She’s good {P} {G} her own clothes.", preps:["in","at","on"], pOk:"at", forms:["to design","design","designing"], gOk:"designing", note:"good at + -ing — never good in."},
+  {ctx:"I’m interested · work in the fashion industry", hint:"adjective + preposition", frame:"I’m interested {P} {G} in the fashion industry.", preps:["on","about","in"], pOk:"in", forms:["working","to work","work"], gOk:"working", note:"interested in + -ing."},
+  {ctx:"We should focus on productivity · not criticize people’s clothes (= the alternative)", hint:"complex preposition", frame:"We should focus on productivity {P} {G} people’s clothes.", preps:["instead","instead of","in spite of"], pOk:"instead of", forms:["to criticize","criticizing","criticize"], gOk:"criticizing", note:"instead of + -ing = the alternative."},
+  {ctx:"The company was praised · develop easy-care fabrics", hint:"participle/adjective + preposition", frame:"The company was praised {P} {G} easy-care fabrics.", preps:["by","for","about"], pOk:"for", forms:["developing","develop","to develop"], gOk:"developing", note:"praised for + -ing."},
+  {ctx:"I’m looking forward · see the new collection", hint:"the ‘to’ trap", frame:"I’m looking forward {P} {G} the new collection.", preps:["to","for","at"], pOk:"to", forms:["see","to see","seeing"], gOk:"seeing", note:"look forward to + -ing: to is a preposition (to it)."},
+  {ctx:"You can’t succeed · copy everyone else (= the method)", hint:"short preposition on its own", frame:"You can’t succeed {P} {G} everyone else.", preps:["by","with","for"], pOk:"by", forms:["copying","to copy","copy"], gOk:"copying", note:"by + -ing = the method."},
+  {ctx:"He’s not used · wear formal clothes (= it isn’t normal for him)", hint:"the ‘to’ trap", frame:"He’s not used {P} {G} formal clothes.", preps:["to","of","with"], pOk:"to", forms:["wear","wearing","to wear"], gOk:"wearing", note:"be used to + -ing: to is a preposition here (he’s not used to it)."},
+  {ctx:"There’s no point · follow every trend", hint:"noun + preposition", frame:"There’s no point {P} {G} every trend.", preps:["in","of","for"], pOk:"in", forms:["to follow","following","follow"], gOk:"following", note:"no point in + -ing."},
+  {ctx:"I apologize · I didn’t call (negative)", hint:"verb + preposition + negative gerund", frame:"I apologize {P} {G}.", preps:["for","of","at"], pOk:"for", forms:["not calling","to not call","not to call"], gOk:"not calling", note:"apologize for + not + -ing: not goes before the gerund."}
+];
+var bi=0, bPrep=null, bForm=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function chipRow(id, list, onPick){
+  var wrap=$(id); wrap.innerHTML="";
+  list.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ onPick(op); wrap.querySelectorAll("button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+}
+function renderBuild(){
+  var it=BUILD[bi]; bPrep=null; bForm=null;
+  $("bctx").innerHTML = "Idea: "+it.ctx+"<small>Pattern: "+it.hint+"</small>";
+  chipRow("prepChips", it.preps, function(v){ bPrep=v; });
+  chipRow("formChips", it.forms, function(v){ bForm=v; });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bPrep || !bForm){ r.className="bresult bad"; r.innerHTML="Choose a <b>preposition</b> and a <b>verb form</b> first."; return; }
+  var pOk=bPrep===it.pOk, fOk=bForm===it.gOk;
+  if(pOk && fOk){
+    var sent=it.frame.replace("{P}", '<span class="sprep'+(it.pOk==="to"?" trap":"")+'">'+it.pOk+'</span>').replace("{G}", '<span class="sing">'+it.gOk+'</span>');
+    r.className="bresult good"; r.innerHTML="✅ "+sent+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    if(!pOk) document.querySelector('#prepChips button[data-v="'+bPrep+'"]').classList.add("wrongpick");
+    if(!fOk) document.querySelector('#formChips button[data-v="'+bForm+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ "+(!pOk&&!fOk?"Neither fits.":!pOk?"The verb form fits, the preposition does not.":"The preposition fits, the verb form does not.")+" <span class='bnote'>Hint — "+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"I bought new shoes. I didn’t repair my old ones. (instead of)", accept:["i bought new shoes instead of repairing my old ones"], model:"I bought new shoes instead of repairing my old ones."},
+  {ctx:"She’s worried. She might be underdressed. (about)", accept:["she's worried about being underdressed","she is worried about being underdressed"], model:"She’s worried about being underdressed."},
+  {ctx:"He saved money. He made his own clothes. (by)", accept:["he saved money by making his own clothes"], model:"He saved money by making his own clothes."},
+  {ctx:"I’m interested. I want to study design. (in)", accept:["i'm interested in studying design","i am interested in studying design"], model:"I’m interested in studying design."},
+  {ctx:"They left. They didn’t say goodbye. (without)", accept:["they left without saying goodbye"], model:"They left without saying goodbye."},
+  {ctx:"She bought the dress. She didn’t try it on. (without)", accept:["she bought the dress without trying it on"], model:"She bought the dress without trying it on."},
+  {ctx:"We wore jeans. We didn’t dress up. (instead of)", accept:["we wore jeans instead of dressing up"], model:"We wore jeans instead of dressing up."},
+  {ctx:"I’m not interested in the latest styles. (WEARING)", accept:["i'm not interested in wearing the latest styles","i am not interested in wearing the latest styles"], model:"I’m not interested in wearing the latest styles."},
+  {ctx:"I apologize. I didn’t call. (for)", accept:["i apologize for not calling","i apologise for not calling"], model:"I apologize for not calling."},
+  {ctx:"We look forward. We will meet the designer. (to)", accept:["we look forward to meeting the designer","we're looking forward to meeting the designer","we are looking forward to meeting the designer"], model:"We look forward to meeting the designer."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML="Join: "+it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Which form?", q:"“I’m thinking about ___ a new jacket.”", o:["buying","to buy"], a:0, w:"After a preposition (about), the verb takes -ing."},
+  {kind:"mc", diff:1, tag:"Which form?", q:"“I want ___ a new jacket.”", o:["to buy","buying"], a:0, w:"No preposition here: want + to-infinitive (to + base form)."},
+  {kind:"mc", diff:1, tag:"Which preposition?", q:"“She’s good ___ drawing clothes.”", o:["at","in"], a:0, w:"The adjective good takes at, not in: good at drawing."},
+  {kind:"mc", diff:1, tag:"The ‘to’ trap", q:"“We look forward to ___ the designer.”", o:["meeting","meet"], a:0, w:"In look forward to, to is a preposition (to it) → -ing."},
+  {kind:"mc", diff:1, tag:"Name the structure", q:"“She’s wary of dressing too casually.”", o:["adjective + preposition + gerund","verb + preposition + gerund","complex preposition + gerund"], a:0, w:"wary is an adjective, of is its preposition, dressing is the gerund."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["He’s","not","used","to","wear","formal","clothes."], bad:4, fixOld:"used to wear", fixNew:"used to wearing", w:"be used to + -ing: here to is a preposition (he’s not used to it)."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["She’s","good","in","making","clothes."], bad:2, fixOld:"good in", fixNew:"good at", w:"The adjective good takes at, never in."},
+  {kind:"fill", diff:2, tag:"Complete", q:"“The company was praised for ___ (develop) easy-care fabrics.”", accept:["developing"], w:"for + -ing: praised for developing."},
+  {kind:"fill", diff:2, tag:"Complete", q:"“You can’t succeed ___ (by / copy) everyone else.” (2 words)", accept:["by copying","by copying everyone else"], w:"by + -ing = the method: by copying."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["I","look","forward","to","hear","from","you."], bad:4, fixOld:"to hear", fixNew:"to hearing", w:"look forward to + -ing: this to is a preposition, not the infinitive marker."},
+  {kind:"fill", diff:3, tag:"Negative gerund", q:"“I apologize for ___ (not / call).” (2 words)", accept:["not calling","for not calling"], w:"Negative gerund: not goes before the -ing form."},
+  {kind:"mc", diff:3, tag:"afraid of / afraid to", q:"She was too frightened to ask the price. → “She was afraid ___ the price.”", o:["to ask","of asking"], a:0, w:"afraid to + base form = too frightened to act; afraid of + -ing = a fear."},
+  {kind:"fill", diff:3, tag:"Join the ideas", q:"They left. They didn’t say goodbye. (without) → “They left ___ goodbye.” (2 words)", accept:["without saying","without saying goodbye"], w:"without + -ing: without saying goodbye."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("gerundprep_drill_best")||0); if(dscore>best){ store("gerundprep_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Every -ing in place. Ready for the ★★★ homework." : dscore>=8?"Good — review the ‘to’ trap and the special-cases card, then go again." : "Re-read Grammar 11, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, '<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

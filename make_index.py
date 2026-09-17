@@ -19,6 +19,10 @@ SIMS = [
  ("u2","Unit 2 · Grammar 8","Relative clauses","Defining vs non-defining, the comma switch, who / which / that / whose / where / when.","U2_G8_relative_clauses.html"),
  ("u3","Unit 3 · Grammar 9","Noun clauses","Clauses as subject or object: that / wh- / whether, statement word order, <i>What we need is…</i>","U3_G9_noun_clauses.html"),
  ("u3","Unit 3 · Grammar 10","Future forms for predictions","will / going to / might, future continuous and future perfect on a certainty thermometer and a timeline.","U3_G10_future_forms.html"),
+ ("u4","Unit 4 · Grammar 11","The gerund after a preposition","interested in working, instead of buying, and the <i>look forward to</i> trap.","U4_G11_gerund_after_preposition.html"),
+ ("u4","Unit 4 · Grammar 12","The future passive","will be + participle: recycled materials will be used. When to name the doer.","U4_G12_future_passive.html"),
+ ("u5","Unit 5 · Grammar 13","The future in the past","was going to · would · was supposed to · was about to: the plans we never kept.","U5_G13_future_in_the_past.html"),
+ ("u5","Unit 5 · Grammar 14","The future progressive","will be + -ing: an action in progress at a future moment, on a timeline.","U5_G14_future_progressive.html"),
 ]
 GYM = {1:"5:36",2:"4:56",3:"4:49",4:"3:58",5:"3:57",6:"4:01",7:"3:59",8:"3:01",9:"3:19",10:"3:06",11:"3:46",12:"3:48",13:"3:52",14:"3:49",15:"4:01",16:"4:05",17:"3:45",18:"4:21",19:"4:25",20:"3:55"}
 BLOCKS = [

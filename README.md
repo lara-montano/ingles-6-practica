@@ -2,7 +2,7 @@
 
 Ejercicios de práctica de **Inglés 6** (nivel B1+): un simulacro tipo SELLI, el
 **SELLI Gym** de comprensión auditiva, el **Listening Lab** con los episodios de *In the Lab FM* y
-diez **simuladores web** de gramática. Todo es material original de práctica; **no incluye
+catorce **simuladores web** de gramática. Todo es material original de práctica; **no incluye
 exámenes ni claves de respuesta** (las claves se revisan en clase).
 
 **Autor:** Prof. Daniel Lara · Instagram [@profe.daniellara](https://www.instagram.com/profe.daniellara/) · [Google Scholar](https://scholar.google.com/citations?user=ifG2_hwAAAAJ)
@@ -21,7 +21,7 @@ exámenes ni claves de respuesta** (las claves se revisan en clase).
 | `01_SELLI_Mock_U1-U2/` | **Simulacro tipo SELLI** de las Units 1–2: 70 reactivos, 75 min (Listening 16 · Structure 20 · Vocabulary 14 · Reading 20). Cuadernillo de 10 págs. + audio de 10:30. | Reproduce el audio **una sola vez y sin pausar**: trae las instrucciones, el ejemplo y los 12 s de respuesta de cada reactivo. Después resuelve las Partes II–IV en unos 60 min. Al final llena la hoja de perfil: lo que importa es qué fila salió baja. |
 | `02_SELLI_Gym/` | **20 sesiones de listening** en formato SELLI/ITP: 8 reactivos cada una, 160 en total. Cuadernillo de 21 págs. + un audio por sesión (3–6 min). | Una sesión por día. Lee las cuatro opciones **antes** de darle *play*; el audio corre solo (numera, habla, pregunta y deja los segundos de respuesta). Sesiones 1–3 se oyen dos veces; de la 4 en adelante, una sola. |
 | `03_Listening_Lab/` | **Fichas de listening** de las 5 unidades (8 págs.), **cuestionarios** de los episodios (11 págs.), los **6 episodios** de *In the Lab FM*, sus **transcripts** y una **lectura del manual leída en voz alta** (*Four Trips That Went Sideways*, 2:53). | Cada episodio se escucha **dos veces**: primero por la idea general, luego con la tarea de la ficha. El transcript se abre **después** de la segunda escucha. |
-| `04_Simuladores_web/` | **10 simuladores interactivos** de gramática (Grammar 1–10): condicionales, wish / would rather, conectores condicionales, voz pasiva, modales de deducción en pasado, verbo + objeto + infinitivo, reported speech, relative clauses, noun clauses y future forms. | Descarga el `.html` y ábrelo con doble clic: funciona **sin internet**, en computadora o celular. Tres modos: *Explore* (ver la regla en acción) → *Build* (armar oraciones) → *Drill* (práctica graduada con marcador). |
+| `04_Simuladores_web/` | **14 simuladores interactivos** de gramática (Grammar 1–14, el curso completo): condicionales, wish / would rather, conectores condicionales, voz pasiva, modales de deducción en pasado, verbo + objeto + infinitivo, reported speech, relative clauses, noun clauses, future forms, gerundio tras preposición, future passive, future in the past y future progressive. | Descarga el `.html` y ábrelo con doble clic: funciona **sin internet**, en computadora o celular. Tres modos: *Explore* (ver la regla en acción) → *Build* (armar oraciones) → *Drill* (práctica graduada con marcador). |
 
 ## Episodios de *In the Lab FM*
 

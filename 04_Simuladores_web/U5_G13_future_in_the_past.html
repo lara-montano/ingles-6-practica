@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE HINDSIGHT MACHINE · English 6 · Unit 5 "Where There's a Will"
+  Grammar 13 — the future in the past (was going to, would, was supposed to,
+  past continuous, was about to, was to)
+  Three modes: Explore (viewpoint timeline) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 13 · The Hindsight Machine · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --mind:#6A2C91; --minddark:#45195E; --mindlt:#EEE6F4;   /* Unit 5 identity (royal purple) */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;                      /* exceptions boxes only — lighter violet, distinct from --mind */
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --rose:#8C2F53; --roselt:#F4E5EC;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--mind),var(--minddark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#DCC8EC; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#E8DAF2; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--minddark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--minddark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--minddark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-mind{background:var(--mind)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--mind); background:var(--mindlt); color:var(--minddark)}
+
+  /* ---------- viewpoint timeline ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .tl{position:relative; height:134px; margin:12px 0 4px; background:#fff; border:1.5px solid var(--rule); border-radius:12px; overflow:hidden}
+  .tlline{position:absolute; left:3%; right:3%; top:66px; height:3px; background:var(--rule)}
+  .tlline::after{content:""; position:absolute; right:-2px; top:-6px; border:7px solid transparent; border-left:11px solid var(--rule)}
+  .tlnow{position:absolute; left:91%; top:74px; transform:translateX(-50%); font-size:11px; font-weight:900; color:var(--navy); letter-spacing:.06em}
+  .tlnow::before{content:""; display:block; width:12px; height:12px; border-radius:50%; background:var(--navy); margin:-15px auto 5px}
+  .tlthen{position:absolute; left:16%; top:22px; transform:translateX(-50%); text-align:center}
+  .tlthen i{display:block; width:3px; height:46px; background:var(--mind); margin:0 auto; border-radius:2px}
+  .tlthen b{display:block; font-size:11px; color:var(--mind); white-space:nowrap; margin-top:6px; letter-spacing:.06em}
+  .tlthen .flag{position:absolute; top:-20px; left:50%; transform:translateX(-50%); font-size:18px}
+  .tlarrow{position:absolute; left:16%; width:42%; top:40px; height:0; border-top:3px dashed var(--mind)}
+  .tlarrow::after{content:""; position:absolute; right:-3px; top:-8px; border:7px solid transparent; border-left:11px solid var(--mind)}
+  .tlarrow small{position:absolute; left:50%; top:-22px; transform:translateX(-50%); font-size:11px; font-weight:900; color:var(--mind); white-space:nowrap}
+  .tlplan{position:absolute; left:60%; top:40px; transform:translateX(-50%); text-align:center}
+  .tlplan i{display:block; width:3px; height:28px; background:var(--rule); margin:0 auto; border-radius:2px}
+  .tlplan .box{display:inline-block; margin-top:6px; border-radius:8px; padding:3px 9px; font-size:11px; font-weight:900; color:#fff; white-space:nowrap; background:#8A8A8A; transition:background .3s}
+  .tlplan .box.yes{background:var(--green)} .tlplan .box.no{background:var(--think)}
+  .tlsent{font-size:clamp(17px,3vw,23px); font-weight:800; text-align:center; padding:14px 12px; background:var(--soft); border-radius:12px; margin-top:10px; line-height:1.7}
+  .vf{background:var(--mindlt); color:var(--minddark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--mind)}
+  .vf.c-grammar{background:var(--grammarlt); color:var(--grammar); box-shadow:inset 0 -2px 0 var(--grammar)}
+  .vf.c-navy{background:var(--navylt); color:var(--navy); box-shadow:inset 0 -2px 0 var(--navy)}
+  .vf.c-green{background:var(--greenlt); color:var(--greendark); box-shadow:inset 0 -2px 0 var(--green)}
+  .vf.c-rose{background:var(--roselt); color:var(--rose); box-shadow:inset 0 -2px 0 var(--rose)}
+  .vf.c-ink{background:#ECECEC; color:#444; box-shadow:inset 0 -2px 0 #777}
+  .vf.masked{color:transparent !important; position:relative; cursor:pointer; min-width:56px; display:inline-block}
+  .vf.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .tlrule{margin-top:8px; border-left:4px solid var(--navy); background:var(--navylt); border-radius:0 10px 10px 0; padding:8px 12px; font-size:14px; font-weight:700; color:#333}
+  .tlrule .outnote{margin-top:4px; font-weight:600; color:#555}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px}
+  .legend span{border-radius:6px; padding:1px 8px}
+  .tip{margin-top:12px; border-left:4px solid var(--mind); background:var(--mindlt); border-radius:0 10px 10px 0; padding:8px 12px; font-size:14px; font-weight:700; color:#333}
+
+  /* hindsight dial */
+  .tensechips{display:flex; gap:6px; flex-wrap:wrap; margin:8px 0}
+  .tensechips button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 11px; font:700 13px Lato,sans-serif; cursor:pointer}
+  .tensechips button.on{border-color:var(--navy); background:var(--navylt); color:var(--navy)}
+  .tenseout{background:var(--soft); border-radius:12px; padding:16px; text-align:center; margin-top:6px}
+  .tenseout .map{font-size:clamp(17px,2.8vw,22px); font-weight:800}
+  .tenseout .map .a{color:var(--navy)} .tenseout .map .b{color:var(--grammar)}
+  .tenseout .ex{font-size:14px; color:#555; margin-top:8px; font-weight:600}
+
+  /* special cases selector */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+
+  /* common errors */
+  .errlist{list-style:none; margin-top:6px}
+  .errlist li{display:flex; gap:10px; align-items:center; flex-wrap:wrap; padding:8px 0; border-bottom:1px dashed var(--rule); font-size:15px; font-weight:700}
+  .errlist .bad{color:var(--think)} .errlist .bad::before{content:"✘ "}
+  .errlist .good{color:var(--green); display:none} .errlist .good::before{content:"✔ "}
+  .errlist .why{display:none; margin:0; flex-basis:100%; font-size:13px; padding:6px 10px}
+  .errlist li.open .good,.errlist li.open .why{display:block}
+  .errlist li.open .fixbtn{display:none}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--mind); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--minddark); border:2px solid var(--mind)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--mind); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--mind)}
+  .segbig button.on{background:var(--mind); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--mind); background:var(--mindlt); color:var(--minddark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--minddark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--minddark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--mind); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick,.stn .w.rightpick{background:var(--think); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--minddark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--mind); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} .tlarrow small{font-size:10px} .tlplan .box{font-size:10px; padding:3px 6px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🕰️</span>
+  <div class="wrap">
+    <div class="kicker">English 6 · Unit 5 · Where There's a Will</div>
+    <h1>🕰️ The Hindsight Machine</h1>
+    <div class="sub"><b>Grammar 13</b> — the future in the past: <i>was going to · would · was supposed to · was about to</i>. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🕰️ Explore the viewpoint</span><span>🔧 Build a then-future</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🕰️ Explore<small>look back at the plan</small></button>
+    <button data-tab="build">🔧 Build<small>say what was going to happen</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Looking forward from a point in the past</h2>
+      <p class="muted">Sometimes we talk about something that was <b>still in the future</b> at an earlier moment — a plan, an
+        intention or an obligation we had <b>then</b>. English marks this with special <b>future-in-the-past</b> forms, and they
+        very often describe things that <b>didn't happen</b>. Pick a form, then choose the outcome and watch the ending change.
+        <span class="es">(El futuro visto desde un punto del pasado: los planes, obligaciones y promesas de entonces.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the form, guess, then reveal</label>
+
+      <h3>1 · The form</h3>
+      <div class="chips" id="formChips"></div>
+      <h3>2 · What happened in the end?</h3>
+      <div class="chips" id="outChips"></div>
+
+      <div class="tl"><div class="tlline"></div><div id="tlDraw"></div><div class="tlnow">NOW</div></div>
+      <div class="tlsent" id="tlSent"></div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the form ✓</button></div>
+      <div class="tlrule" id="tlRule"></div>
+      <div class="legend" id="legend"></div>
+      <div class="tip">🧭 Ask: was this a <b>plan</b>, an <b>obligation</b>, a <b>prediction/report</b>, or an <b>arrangement</b>?
+        Plan → <i>was going to</i> · Obligation → <i>was supposed to</i> · Prediction/report → <i>would</i> · Arrangement → <i>was + -ing</i>.</div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">🔁 The hindsight dial</span>
+      <h2>Then vs now: the same future, one step back</h2>
+      <p class="muted">A future form seen from the past moves <b>one step back</b>, exactly as in reported speech (Grammar 7):
+        <i>will → would</i>, <i>am going to → was going to</i>. Time words move too: <i>tonight → that night</i>, <i>tomorrow → the next day</i>.
+        <span class="es">(La forma de futuro retrocede un paso; también las palabras de tiempo.)</span></p>
+      <div class="tensechips" id="dialChips"></div>
+      <div class="tenseout"><div class="map" id="dialMap"></div><div class="ex" id="dialEx"></div></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Exceptions &amp; special cases</span>
+      <h2>Which form, and what it really means</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="wouldgo" class="on">would vs going to</button><button data-v="expected">supposed to = expected</button><button data-v="usedto">used to ≠ going to</button><button data-v="but">the but clause</button><button data-v="habit">would = habit</button><button data-v="stories">about to / was to</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠️ Common errors</span>
+      <h2>Errors Spanish speakers make</h2>
+      <p class="muted">Read the sentence, find the problem, then tap <b>Fix</b> to check. <span class="es">(Errores típicos: adivina la corrección antes de verla.)</span></p>
+      <ul class="errlist" id="errList"></ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Grammar 13's viewpoint: a THEN marker in the past looking forward to a planned moment before NOW, with the six forms of the manual (<i>was going to</i>, <i>was supposed to</i>, <i>would</i>, past continuous, <i>was about to</i>, <i>was to</i>) and an outcome toggle that shows the <i>but</i> rule (exception 4). The dial is the "one step back" idea (<i>will → would</i>, Grammar 7); the special-cases card is the manual's five exceptions plus the two story forms; the errors card is the pitfall list plus the homework error hunt.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> a sentence by choosing the form for a described situation (exercises A, B and D), then <i>transform</i> situations into future-in-the-past sentences (exercise C, Task set 30 and the Unit 5 review), with validation.</li>
+          <li><b>Drill</b> merges the quizzes into one graded engine (★ choose the form &amp; its meaning · ★★ fix the error (<i>was go to</i>, <i>was suppose</i>, <i>we was</i>) &amp; complete · ★★★ report it, <i>would to</i>, <i>about to</i>, <i>would</i> as a habit) with a score and streak.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-mind">🔧 Your turn to produce</span>
+      <h2>Build a then-future</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the situation and ask: <b>plan · obligation · prediction/report · arrangement · on the point of?</b> Then choose the form. The machine builds the sentence — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">The form should be…</div><div class="bchips" id="verbChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New situation →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Rewrite each situation with a future-in-the-past form — the word in brackets tells you which. Type it and check against the model. <span class="es">(Acepta formas plenas y contracciones.)</span></p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the sentence"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next situation →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ choose the form &amp; its meaning · ★★ fix the error &amp; complete · ★★★ report it, <i>about to</i>, <i>would</i> as a habit.
+        Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 6 · Unit 5 «Where There's a Will» · Grammar 13 — the future in the past · Level B1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE HINDSIGHT MACHINE — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 6 Class Manual (Grammar 13).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · viewpoint timeline — THEN looks forward to a plan
+===================================================================== */
+var FORMS = [
+  {chip:"was/were going to", c:"c-mind", pre:"I ", form:"was going to", post:" start the gym in January", arrow:"a plan, seen from THEN",
+   rule:"<b>was/were going to</b> + base — a past <b>plan or intention</b>. Very often the plan didn’t happen, and the result comes after <b>but</b>.",
+   end:{no:", <b>but</b> I never went.", yes:" — and I did.", unk:"."},
+   note:{no:"The <b>but</b> clause shows the plan changed: a broken plan, the most common use.", yes:"Without <b>but</b>, the plan may still have happened — here it did.", unk:"No <b>but</b>, no result: we only know the plan existed <i>then</i>."}},
+  {chip:"was/were supposed to", c:"c-grammar", pre:"We ", form:"were supposed to", post:" hand in the essay on Monday", arrow:"an obligation, seen from THEN",
+   rule:"<b>was/were supposed to</b> + base — a past <b>obligation</b>, often unmet (keep the <i>-d</i> on <i>supposed</i>).",
+   end:{no:", <b>but</b> nobody did.", yes:", and we did.", unk:"."},
+   note:{no:"An unmet obligation: the duty existed then, and <b>but</b> tells us it was not done.", yes:"The obligation was met — less common, so the sentence says so.", unk:"Only the obligation is stated; we don’t know if it was met."}},
+  {chip:"would", c:"c-navy", pre:"She said she ", form:"would", post:" help me with the project", arrow:"a promise, reported from THEN",
+   rule:"<b>would</b> + base — a <b>foreseen or reported</b> future: <i>will</i> becomes <i>would</i> (Grammar 7).",
+   end:{no:", <b>but</b> she never showed up.", yes:", and she did.", unk:"."},
+   note:{no:"A reported promise that was not kept.", yes:"A reported promise that was kept.", unk:"A report only tells us what she said <i>then</i>, not what happened."}},
+  {chip:"was/were + -ing", c:"c-green", pre:"I ", form:"was leaving", post:" the next day, so I packed", arrow:"an arrangement, seen from THEN",
+   rule:"<b>past continuous</b> (<i>was/were + -ing</i>) — a <b>scheduled or arranged</b> future in the past.",
+   end:{no:" — <b>but</b> the trip was cancelled.", yes:" — and off I went.", unk:"."},
+   note:{no:"Even a firm arrangement can fall through: <b>but</b> gives the change.", yes:"An arrangement usually goes ahead — that is why the packing makes sense.", unk:"The arrangement was real then; the sentence says no more."}},
+  {chip:"was/were about to", c:"c-rose", pre:"I ", form:"was about to", post:" get down to work", arrow:"the very next moment, seen from THEN",
+   rule:"<b>was/were about to</b> + base — <b>on the point of</b> doing something (useful in stories), often interrupted with <b>when</b>.",
+   end:{no:" <b>when</b> my phone rang — and that was the end of that.", yes:" <b>when</b> my phone rang; I ignored it and started.", unk:" <b>when</b> my phone rang."},
+   note:{no:"The interruption with <b>when</b> stopped the action.", yes:"Interrupted, but the action still happened.", unk:"We know the moment and the interruption, not the result."}},
+  {chip:"was/were to", c:"c-ink", pre:"They ", form:"were to", post:" meet again years later", arrow:"destiny, seen from THEN",
+   rule:"<b>was/were to</b> + base — formal: <b>destiny or arrangement</b>, useful in stories.",
+   end:{no:", <b>but</b> they never did.", yes:" — and they did.", unk:"."},
+   note:{no:"Formal and rare; with <b>but</b>, it was not to be.", yes:"Destiny: what was arranged or fated came true.", unk:"A formal way of saying the future held this — context tells the rest."}}
+];
+var OUTS = [{k:"no", t:"✘ it didn’t happen"},{k:"yes", t:"✔ it happened"},{k:"unk", t:"❓ we don’t know"}];
+var curForm=0, curOut="no", predictMode=false, revealed=false;
+FORMS.forEach(function(f,i){
+  var b=document.createElement("button"); b.textContent=f.chip; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curForm=i; revealed=false; document.querySelectorAll("#formChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderTl(); });
+  $("formChips").appendChild(b);
+});
+OUTS.forEach(function(o){
+  var b=document.createElement("button"); b.textContent=o.t; b.dataset.k=o.k;
+  if(o.k===curOut) b.classList.add("on");
+  b.addEventListener("click", function(){ curOut=o.k; document.querySelectorAll("#outChips button").forEach(function(x){ x.classList.toggle("on", x.dataset.k===o.k); }); renderTl(); });
+  $("outChips").appendChild(b);
+});
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderTl(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderTl(); });
+function renderTl(){
+  var f=FORMS[curForm], mask=predictMode && !revealed, lab="";
+  OUTS.forEach(function(o){ if(o.k===curOut) lab=o.t; });
+  $("tlDraw").innerHTML='<div class="tlthen"><span class="flag">🚩</span><i></i><b>THEN</b></div>'+
+    '<div class="tlarrow"><small>'+f.arrow+'</small></div>'+
+    '<div class="tlplan"><i></i><span class="box '+curOut+'">'+lab+'</span></div>';
+  $("tlSent").innerHTML=f.pre+'<span class="vf '+f.c+(mask?" masked":"")+'">'+f.form+'</span>'+f.post+f.end[curOut];
+  $("tlRule").innerHTML=f.rule+'<div class="outnote">'+f.note[curOut]+'</div>';
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask){ document.querySelectorAll("#tlSent .masked").forEach(function(el){ el.addEventListener("click", function(){ revealed=true; renderTl(); }); }); }
+}
+FORMS.forEach(function(f){ var s=document.createElement("span"); s.className="vf "+f.c; s.textContent=f.chip; $("legend").appendChild(s); });
+renderTl();
+
+/* hindsight dial — now → then */
+var DIAL = [
+  {t:"going to → was going to", map:'<span class="a">am/is/are going to</span> → <span class="b">was/were going to</span>', ex:'Now: “I’<b>m going to</b> start the gym.” → Then: I <b>was going to</b> start the gym, but I never went.'},
+  {t:"will → would", map:'<span class="a">will</span> → <span class="b">would</span>', ex:'“I <b>will</b> help.” → She said she <b>would</b> help. (reported speech, Grammar 7)'},
+  {t:"supposed to → was supposed to", map:'<span class="a">am/is/are supposed to</span> → <span class="b">was/were supposed to</span>', ex:'“We’<b>re supposed to</b> meet at six.” → We <b>were supposed to</b> meet at six, but nobody came.'},
+  {t:"am -ing → was -ing", map:'<span class="a">am/is/are + -ing</span> → <span class="b">was/were + -ing</span>', ex:'“I’<b>m leaving</b> tomorrow.” → I <b>was leaving</b> the next day, so I packed.'},
+  {t:"about to → was about to", map:'<span class="a">am/is/are about to</span> → <span class="b">was/were about to</span>', ex:'“I’<b>m about to</b> leave.” → I <b>was about to</b> leave when the phone rang.'},
+  {t:"is to → was to", map:'<span class="a">am/is/are to</span> → <span class="b">was/were to</span>', ex:'“They <b>are to</b> meet next year.” (formal) → They <b>were to</b> meet again years later.'}
+];
+var curDial=0;
+DIAL.forEach(function(d,i){
+  var b=document.createElement("button"); b.textContent=d.t; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curDial=i; document.querySelectorAll("#dialChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderDial(); });
+  $("dialChips").appendChild(b);
+});
+function renderDial(){ var d=DIAL[curDial]; $("dialMap").innerHTML=d.map; $("dialEx").innerHTML=d.ex; }
+renderDial();
+
+/* special cases */
+var SC = {
+  wouldgo:"<b>would vs was going to.</b> Both look forward from the past, but <b>was going to</b> stresses a <b>plan or intention</b>; <b>would</b> is more for <b>predictions</b> and <b>reported speech</b> (<i>will → would</i>, Grammar 7): “I <b>will</b> help.” → She said she <b>would</b> help. · I <b>was going to</b> study medicine, but I changed my mind.",
+  expected:"<b>was supposed to has a second meaning</b> — “people said / expected”: The film <b>was supposed to</b> be great (= that was its reputation). Compare the obligation: You <b>were supposed to</b> finish the report yesterday.",
+  usedto:"<b>Don’t confuse with used to.</b> I <b>used to</b> run = a past <b>habit</b>; I <b>was going to</b> run = a past <b>plan</b>. Different meanings entirely. ✘ <i>I used to call you, but I forgot</i> (meaning a plan) → ✔ I <b>was going to</b> call you, but I forgot.",
+  but:"<b>The result is usually shown with but</b>: the plan changed — I was going to…, <b>but</b>… . Without <b>but</b>, the plan may still have happened: I <b>was going to</b> call you (maybe I did). Try the outcome toggle in the first card.",
+  habit:"<b>would for repeated past actions</b> (narrative): Every summer, we <b>would</b> visit the lake. Here <b>would</b> = a past habit, not a future — <b>context decides</b>. Compare: She said she <b>would</b> visit (a reported future).",
+  stories:"<b>Two more, useful in stories.</b> <b>was about to</b> + base = on the point of, often interrupted with <b>when</b>: I <b>was about to</b> leave <b>when</b> the phone rang. · Formal <b>was to</b> + base = destiny or arrangement: They <b>were to</b> meet again years later."
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.wouldgo;
+
+/* common errors */
+var ERR = [
+  {bad:"I was go to call you.", good:"I was going to call you.", why:"The form is was/were <b>going to</b> + base verb."},
+  {bad:"I was suppose to work.", good:"I was supposed to work.", why:"<i>-d</i> on <b>supposed</b>: was supposed to."},
+  {bad:"She said she will help.", good:"She said she would help.", why:"Reported speech: <i>will</i> → <b>would</b>."},
+  {bad:"I would to travel.", good:"I would travel.", why:"No <i>to</i> after <b>would</b>: would + base verb."},
+  {bad:"I used to call you, but I forgot.", good:"I was going to call you, but I forgot.", why:"A plan that changed is <b>was going to</b>; <i>used to</i> = a past habit."},
+  {bad:"I will call you last night, but I forgot.", good:"I was going to call you last night, but I forgot.", why:"A future seen from the past needs a past form: <b>was going to</b>, not <i>will</i>."},
+  {bad:"I was supposed start at nine.", good:"I was supposed to start at nine.", why:"<b>supposed to</b> + base verb — don’t drop <i>to</i>."},
+  {bad:"We was supposed to meet at noon.", good:"We were supposed to meet at noon.", why:"Plural subject → <b>were</b> supposed to."}
+];
+ERR.forEach(function(e){
+  var li=document.createElement("li");
+  li.innerHTML='<span class="bad">'+e.bad+'</span><button class="btn ghost small fixbtn">Fix ✓</button><span class="good">'+e.good+'</span><div class="why">'+e.why+'</div>';
+  li.querySelector(".fixbtn").addEventListener("click", function(){ li.classList.add("open"); });
+  $("errList").appendChild(li);
+});
+
+/* =====================================================================
+   BUILD · assemble (choose the form) + transform (write it)
+===================================================================== */
+var BUILD = [
+  {ctx:'<b>My plan:</b> study last night. <b>Reality:</b> I felt too tired.', frame:'I {V} study last night, but I felt too tired.', options:["was going to","was supposed to","used to"], correct:"was going to", note:"A past plan or intention → was going to + base."},
+  {ctx:'<b>Our obligation:</b> meet at six. <b>Reality:</b> nobody came.', frame:'We {V} meet at six, but nobody came.', options:["were supposed to","were going","would"], correct:"were supposed to", note:"A past obligation (not met) → was/were supposed to + base."},
+  {ctx:'<b>Her promise:</b> “I will email you the notes.”', frame:'She promised she {V} email me the notes.', options:["would","will","was going"], correct:"would", note:"A reported future: will → would."},
+  {ctx:'<b>At the start of the year:</b> my intention was to stop procrastinating. <b>Reality:</b> I’m still doing it!', frame:'At the start of the year, I {V} stop procrastinating — I’m still doing it!', options:["was going to","used to","would to"], correct:"was going to", note:"A past plan → was going to; used to = a past habit, and would never takes to."},
+  {ctx:'<b>In 2005:</b> few people believed this prediction about phones and cameras.', frame:'In 2005, few people believed that phones {V} replace cameras.', options:["would","will","were supposed to"], correct:"would", note:"A foreseen future from the past → would (not will)."},
+  {ctx:'<b>Our arrangement:</b> an early flight, so we couldn’t stay long.', frame:'We couldn’t stay long — we {V} an early flight.', options:["were catching","were going","would catch"], correct:"were catching", note:"An arranged future in the past → past continuous: was/were + -ing."},
+  {ctx:'<b>On the point of leaving.</b> Then the phone rang.', frame:'I {V} leave when the phone rang.', options:["was about to","was supposed about","was going"], correct:"was about to", note:"On the point of doing something → was about to + base, often interrupted with when."},
+  {ctx:'<b>A childhood habit:</b> visiting my grandparents every summer.', frame:'As a child, I {V} visit my grandparents every summer.', options:["used to","was going to","was supposed to"], correct:"used to", note:"A past habit → used to; was going to = a past plan. Different meanings entirely."},
+  {ctx:'<b>The film’s reputation:</b> everyone said it was great. <b>Reality:</b> it was boring.', frame:'The film {V} be great, but it was boring.', options:["was supposed to","used to","would to"], correct:"was supposed to", note:"was supposed to also means “people said / expected”."},
+  {ctx:'<b>Formal, in a story:</b> destiny brought them together again years later.', frame:'They {V} meet again years later.', options:["were to","were going","would to"], correct:"were to", note:"Formal was/were to + base = destiny or arrangement."}
+];
+var bi=0, bPick=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function renderBuild(){
+  var it=BUILD[bi]; bPick=null;
+  $("bctx").innerHTML = "Situation: "+it.ctx;
+  var wrap=$("verbChips"); wrap.innerHTML="";
+  it.options.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ bPick=op; document.querySelectorAll("#verbChips button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bPick){ r.className="bresult bad"; r.innerHTML="Choose the form first."; return; }
+  if(bPick===it.correct){
+    var sent=it.frame.replace("{V}", '<span class="vf">'+it.correct+'</span>');
+    r.className="bresult good"; r.innerHTML="✅ "+sent+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    document.querySelector('#verbChips button[data-v="'+bPick+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ Not that one. <span class='bnote'>Hint — "+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:'Plan on Monday: “I’ll finish the essay tonight.” It didn’t happen. (GOING)', accept:["i was going to finish the essay that night but i didn't","i was going to finish the essay that night but i did not","i was going to finish the essay that night but i didn't finish it"], model:"I was going to finish the essay that night, but I didn’t."},
+  {ctx:'My plan was to call you. I forgot. (GOING)', accept:["i was going to call you but i forgot"], model:"I was going to call you, but I forgot."},
+  {ctx:'Your obligation was to clean the lab. You didn’t. (SUPPOSED)', accept:["you were supposed to clean the lab but you didn't","you were supposed to clean the lab but you did not"], model:"You were supposed to clean the lab, but you didn’t."},
+  {ctx:'He said, “I will start tomorrow.” (WOULD)', accept:["he said he would start the next day","he said that he would start the next day","he said he'd start the next day","he said that he'd start the next day","he said he would start the following day","he said that he would start the following day"], model:"He said (that) he would start the next day."},
+  {ctx:'My arrangement: flying to Lima the next morning. (past continuous)', accept:["i was flying to lima the next morning"], model:"I was flying to Lima the next morning."},
+  {ctx:'I was on the point of leaving. The phone rang. (ABOUT)', accept:["i was about to leave when the phone rang"], model:"I was about to leave when the phone rang."},
+  {ctx:'“I will help you,” she said. (WOULD)', accept:["she said she would help me","she said that she would help me","she said she'd help me","she said that she'd help me"], model:"She said (that) she would help me."},
+  {ctx:'I planned to study medicine, but I changed my mind. (GOING)', accept:["i was going to study medicine but i changed my mind"], model:"I was going to study medicine, but I changed my mind."},
+  {ctx:'In 1995, nobody knew the internet was about to change everything. (WOULD)', accept:["in 1995 nobody knew the internet would change everything","in 1995 nobody knew that the internet would change everything"], model:"In 1995, nobody knew the internet would change everything."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML="Rewrite it: "+it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Which form?", q:"“I ___ call you, but I lost my phone.”", o:["was going to","used to"], a:0, w:"A past plan that changed → was going to; used to is a past habit."},
+  {kind:"mc", diff:1, tag:"Which form?", q:"“She said she ___ email me later.”", o:["would","will"], a:0, w:"Reported speech: will → would."},
+  {kind:"mc", diff:1, tag:"Which form?", q:"“We ___ submit it on Friday, but nobody did.”", o:["were supposed to","were going"], a:0, w:"A past obligation → were supposed to + base (and going needs to)."},
+  {kind:"mc", diff:1, tag:"Plan or habit?", q:"“As a kid, I ___ play football every weekend.” (a habit)", o:["used to","was going to"], a:0, w:"A past habit → used to; was going to = a past plan."},
+  {kind:"mc", diff:1, tag:"What does it express?", q:"“You were supposed to hand it in on Monday.” This is…", o:["a past obligation (not done)","a past plan or intention","a reported future"], a:0, w:"was supposed to = a past obligation, often unmet."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["I","was","go","to","help","you,","but","I","ran","out","of","time."], bad:2, fixOld:"was go to", fixNew:"was going to", w:"The form is was/were going to + base."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["We","was","supposed","to","meet","at","noon."], bad:1, fixOld:"was", fixNew:"were", w:"Plural subject → were supposed to."},
+  {kind:"fill", diff:2, tag:"Complete", q:"“Nobody thought that smartphones ___ change the world so fast.” (will → ?)", accept:["would"], w:"A foreseen future from the past → would."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["I","was","suppose","to","study","last","night."], bad:2, fixOld:"suppose", fixNew:"supposed", w:"-d on supposed: was supposed to."},
+  {kind:"fill", diff:3, tag:"Report it", q:"“I will finish it tonight,” he said. → He said he ___ finish it that night. (one word)", accept:["would"], w:"Reported speech: will → would (and tonight → that night)."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["She","would","to","travel","the","world."], bad:2, fixOld:"would to", fixNew:"would", w:"No to after would: would + base verb."},
+  {kind:"fill", diff:3, tag:"Complete", q:"“I ___ leave when it started to rain.” (on the point of leaving — 3 words)", accept:["was about to"], w:"On the point of → was about to + base, interrupted with when."},
+  {kind:"mc", diff:3, tag:"would: future or habit?", q:"“Every summer, we would visit the lake.” Here would is…", o:["a past habit (repeated action)","a future seen from the past","a reported will"], a:0, w:"would + base can be a past habit in narrative — context decides."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("hindsight_drill_best")||0); if(dscore>best){ store("hindsight_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Perfect hindsight. Ready for the ★★★ homework." : dscore>=8?"Good — review the special-cases card and go again." : "Re-read Grammar 13, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, '<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>
