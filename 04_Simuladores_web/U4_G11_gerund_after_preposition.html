@@ -575,10 +575,10 @@ renderTrans();
 ===================================================================== */
 var DRILL = [
   {kind:"mc", diff:1, tag:"Which form?", q:"“I’m thinking about ___ a new jacket.”", o:["buying","to buy"], a:0, w:"After a preposition (about), the verb takes -ing."},
-  {kind:"mc", diff:1, tag:"Which form?", q:"“I want ___ a new jacket.”", o:["to buy","buying"], a:0, w:"No preposition here: want + to-infinitive (to + base form)."},
+  {kind:"mc", diff:1, tag:"Which form?", q:"“I want ___ a new jacket.”", o:["buying", "to buy"], a:1, w:"No preposition here: want + to-infinitive (to + base form)."},
   {kind:"mc", diff:1, tag:"Which preposition?", q:"“She’s good ___ drawing clothes.”", o:["at","in"], a:0, w:"The adjective good takes at, not in: good at drawing."},
-  {kind:"mc", diff:1, tag:"The ‘to’ trap", q:"“We look forward to ___ the designer.”", o:["meeting","meet"], a:0, w:"In look forward to, to is a preposition (to it) → -ing."},
-  {kind:"mc", diff:1, tag:"Name the structure", q:"“She’s wary of dressing too casually.”", o:["adjective + preposition + gerund","verb + preposition + gerund","complex preposition + gerund"], a:0, w:"wary is an adjective, of is its preposition, dressing is the gerund."},
+  {kind:"mc", diff:1, tag:"The ‘to’ trap", q:"“We look forward to ___ the designer.”", o:["meet", "meeting"], a:1, w:"In look forward to, to is a preposition (to it) → -ing."},
+  {kind:"mc", diff:1, tag:"Name the structure", q:"“She’s wary of dressing too casually.”", o:["complex preposition + gerund", "verb + preposition + gerund", "adjective + preposition + gerund"], a:2, w:"wary is an adjective, of is its preposition, dressing is the gerund."},
   {kind:"error", diff:2, tag:"Fix the error", words:["He’s","not","used","to","wear","formal","clothes."], bad:4, fixOld:"used to wear", fixNew:"used to wearing", w:"be used to + -ing: here to is a preposition (he’s not used to it)."},
   {kind:"error", diff:2, tag:"Fix the error", words:["She’s","good","in","making","clothes."], bad:2, fixOld:"good in", fixNew:"good at", w:"The adjective good takes at, never in."},
   {kind:"fill", diff:2, tag:"Complete", q:"“The company was praised for ___ (develop) easy-care fabrics.”", accept:["developing"], w:"for + -ing: praised for developing."},

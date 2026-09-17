@@ -566,14 +566,14 @@ renderTrans();
 ===================================================================== */
 var DRILL = [
   {kind:"mc", diff:1, tag:"Evidence or opinion?", q:"“Look at the smoke — the server ___ crash!”", o:["is going to","will"], a:0, w:"Present evidence (the smoke) → going to."},
-  {kind:"mc", diff:1, tag:"How sure?", q:"“Robots will definitely do more housework.” How sure is the speaker?", o:["very sure","possible — one option among several","improbable"], a:0, w:"will definitely / is bound to = very sure."},
+  {kind:"mc", diff:1, tag:"How sure?", q:"“Robots will definitely do more housework.” How sure is the speaker?", o:["possible — one option among several", "very sure", "improbable"], a:1, w:"will definitely / is bound to = very sure."},
   {kind:"mc", diff:1, tag:"Which form?", q:"“This time next year, we ___ the new prototype.”", o:["’ll be testing","’ll test"], a:0, w:"this time next year = in progress at a future moment → future continuous."},
-  {kind:"mc", diff:1, tag:"Which form?", q:"“By 2040, engineers ___ many of today’s problems.”", o:["will have solved","will solve"], a:0, w:"by + a point = completed before that point → future perfect."},
+  {kind:"mc", diff:1, tag:"Which form?", q:"“By 2040, engineers ___ many of today’s problems.”", o:["will solve", "will have solved"], a:1, w:"by + a point = completed before that point → future perfect."},
   {kind:"mc", diff:1, tag:"Deciding now", q:"“Wait — I ___ the door.” (deciding at this moment)", o:["’ll get","’m getting"], a:0, w:"An instant decision always takes will."},
   {kind:"error", diff:2, tag:"Fix the error", words:["In","the","future,","robots","will","to","cook","for","us."], bad:5, fixOld:"will to cook", fixNew:"will cook", w:"No ‘to’ after will: will + base verb."},
   {kind:"error", diff:2, tag:"Fix the error", words:["When","the","update","will","arrive,","install","it."], bad:3, fixOld:"will arrive", fixNew:"arrives", w:"After when / as soon as / until, use the present, never will."},
   {kind:"fill", diff:2, tag:"Complete", q:"“By the end of the decade, most homes ___ (install) solar panels.”", accept:["will have installed","'ll have installed","will've installed"], w:"by + a point → future perfect: will have + past participle."},
-  {kind:"mc", diff:2, tag:"Adverb position", q:"“Prices ___ fall once the patent expires.” (improbable)", o:["probably won’t","won’t probably"], a:0, w:"In a negative, the adverb goes before won’t: probably won’t."},
+  {kind:"mc", diff:2, tag:"Adverb position", q:"“Prices ___ fall once the patent expires.” (improbable)", o:["won’t probably", "probably won’t"], a:1, w:"In a negative, the adverb goes before won’t: probably won’t."},
   {kind:"error", diff:3, tag:"Fix the error", words:["By","2030","we","will","replace","all","petrol","cars."], bad:4, fixOld:"will replace", fixNew:"will have replaced", w:"by 2030 = completed before that point → future perfect."},
   {kind:"fill", diff:3, tag:"Complete", q:"“Don’t call at 8 — I ___ (travel) then.”", accept:["will be traveling","'ll be traveling","will be travelling","'ll be travelling"], w:"at 8 … then = in progress at that moment → will be + -ing."},
   {kind:"fill", diff:3, tag:"Time clause", q:"“As soon as the software ___ (update), the bug will disappear.”", accept:["updates","has updated"], w:"After as soon as, use the present, not will: updates."},

@@ -562,10 +562,10 @@ renderTrans();
 ===================================================================== */
 var DRILL = [
   {kind:"mc", diff:1, tag:"Subject or object?", q:"“What she invented changed medicine.” — the noun clause works as the…", o:["subject","object"], a:0, w:"Swap the clause for It — It changed medicine — so the clause is the subject."},
-  {kind:"mc", diff:1, tag:"Which introducer?", q:"“I’d like to know ___ the office of the future will look like.”", o:["what","how","that"], a:0, w:"look like needs an object inside the clause, so the wh- word is what."},
-  {kind:"mc", diff:1, tag:"Word order", q:"“Nobody knows ___.”", o:["how the app works","how does the app work","how works the app"], a:0, w:"Inside a noun clause use statement order: no does, subject before verb."},
+  {kind:"mc", diff:1, tag:"Which introducer?", q:"“I’d like to know ___ the office of the future will look like.”", o:["how", "what", "that"], a:1, w:"look like needs an object inside the clause, so the wh- word is what."},
+  {kind:"mc", diff:1, tag:"Word order", q:"“Nobody knows ___.”", o:["how works the app", "how does the app work", "how the app works"], a:2, w:"Inside a noun clause use statement order: no does, subject before verb."},
   {kind:"mc", diff:1, tag:"Singular or plural?", q:"“What we need ___ ideas.”", o:["is","are"], a:0, w:"A subject clause counts as one thing, so the verb is singular: is."},
-  {kind:"mc", diff:1, tag:"wh- + to", q:"“Could you show me ___ to unlock this laptop?”", o:["how","what","why"], a:0, w:"wh- + to-infinitive is a short noun clause: show me how to unlock it."},
+  {kind:"mc", diff:1, tag:"wh- + to", q:"“Could you show me ___ to unlock this laptop?”", o:["what", "how", "why"], a:1, w:"wh- + to-infinitive is a short noun clause: show me how to unlock it."},
   {kind:"error", diff:2, tag:"Fix the error", words:["I","don’t","know","where","is","the","charger."], bad:4, fixOld:"where is the charger", fixNew:"where the charger is", w:"Statement order inside the clause: the verb goes after its subject."},
   {kind:"error", diff:2, tag:"Fix the error", words:["Tell","me","what","did","you","download."], bad:3, fixOld:"what did you download", fixNew:"what you downloaded", w:"No did inside a noun clause; the main verb takes the past: downloaded."},
   {kind:"fill", diff:2, tag:"Complete", q:"“Is this app safe?” → I wonder ___ this app is safe. (one word)", accept:["whether","if"], w:"A yes/no question becomes a whether/if clause with statement order."},
@@ -573,7 +573,7 @@ var DRILL = [
   {kind:"fill", diff:3, tag:"Spotlight pattern", q:"Rewrite with a what-clause: “We need trust.” → ___ trust. (3 words)", accept:["what we need is"], w:"The what-clause is the subject and takes a singular verb: What we need is trust."},
   {kind:"error", diff:3, tag:"Fix the error", words:["The","what","I","need","is","a","faster","connection."], bad:0, fixOld:"The what I need", fixNew:"What I need", w:"Spanish lo que is just what — never “the what”."},
   {kind:"fill", diff:3, tag:"Preparatory It", q:"Start with It: “That the internet changed everything is obvious.”", accept:["it is obvious that the internet changed everything","it's obvious that the internet changed everything"], w:"A heavy that-clause moves to the end and It fills the subject slot."},
-  {kind:"mc", diff:3, tag:"After a preposition", q:"“Engineers are worried about ___ the chip can be hacked.”", o:["the fact that","that","if"], a:0, w:"A bare that-clause cannot follow a preposition; wrap it with the fact that."}
+  {kind:"mc", diff:3, tag:"After a preposition", q:"“Engineers are worried about ___ the chip can be hacked.”", o:["if", "that", "the fact that"], a:2, w:"A bare that-clause cannot follow a preposition; wrap it with the fact that."}
 ];
 var di=0, dscore=0, dstreak=0, ddone=false;
 function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }

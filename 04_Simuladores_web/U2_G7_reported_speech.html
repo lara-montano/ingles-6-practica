@@ -453,13 +453,13 @@ renderTrans();
 ===================================================================== */
 var DRILL = [
   {kind:"mc", diff:1, tag:"say or tell?", q:"“She ___ me that the hotel was full.”", o:["told","said"], a:0, w:"‘tell’ needs a person right after it: told me."},
-  {kind:"mc", diff:1, tag:"say or tell?", q:"“He ___ that the flight had been delayed.”", o:["said","told"], a:0, w:"‘say’ takes no person before ‘that’: said that…"},
+  {kind:"mc", diff:1, tag:"say or tell?", q:"“He ___ that the flight had been delayed.”", o:["told", "said"], a:1, w:"‘say’ takes no person before ‘that’: said that…"},
   {kind:"mc", diff:1, tag:"Word order", q:"“The guide asked us where ___.”", o:["we were from","were we from"], a:0, w:"Reported questions use statement word order: where we were from."},
   {kind:"error", diff:2, tag:"Fix the error", words:["He","asked","me","where","do","I","live."], bad:4, fixOld:"where do I live", fixNew:"where I lived", w:"No ‘do’ in a reported question, and use statement order + backshift: where I lived."},
   {kind:"error", diff:2, tag:"Fix the error", words:["She","said","me","that","the","tour","was","full."], bad:1, fixOld:"said me", fixNew:"told me", w:"‘say’ can’t take a person. Use ‘told me’ (or ‘said that…’)."},
   {kind:"fill", diff:2, tag:"Backshift", q:"“I can’t find my passport,” she said. → She said she ___ her passport.", accept:["couldn't find"], w:"can → could: couldn’t find."},
   {kind:"error", diff:2, tag:"Fix the error", words:["She","said","she","will","come","to","the","party."], bad:3, fixOld:"will", fixNew:"would", w:"Backshift: will → would."},
-  {kind:"mc", diff:2, tag:"Still true?", q:"“Our host said the market ___ every morning — it still does.”", o:["opens","opened"], a:0, w:"A fact that’s still true keeps the present: opens."},
+  {kind:"mc", diff:2, tag:"Still true?", q:"“Our host said the market ___ every morning — it still does.”", o:["opened", "opens"], a:1, w:"A fact that’s still true keeps the present: opens."},
   {kind:"fill", diff:3, tag:"Report a question", q:"“Are you ready?” he asked. → He asked ___ ready. (fill 3 words)", accept:["if i was","whether i was"], w:"yes/no question → if/whether + statement order: He asked if I was ready."},
   {kind:"error", diff:3, tag:"Fix the error", words:["He","told","to","wait","near","the","gate."], bad:1, fixOld:"told to wait", fixNew:"told me to wait", w:"‘tell’ needs a person: told me to wait."},
   {kind:"fill", diff:3, tag:"Report a command", q:"“Don’t walk on the coral,” the instructor said to them. → The instructor told them ___ on the coral. (2 words + verb)", accept:["not to walk"], w:"Negative command → tell + object + not to + base: not to walk."},

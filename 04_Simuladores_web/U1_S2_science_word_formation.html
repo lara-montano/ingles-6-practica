@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE WORD FOUNDRY · English 6 · Unit 1 "The Prepared Mind"
+  Structure 2 — word formation: building science words (roots, prefixes, suffixes)
+  Three modes: Explore (forge a word) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Structure 2 · The Word Foundry · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --vocab:#B0338A; --vocablt:#F7E6F1;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--green),var(--greendark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#CBE9D9; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#DFF2E8; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--greendark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--greendark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--greendark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-green{background:var(--green)} .tag-navy{background:var(--navy)} .tag-vocab{background:var(--vocab)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--green); background:var(--greenlt); color:var(--greendark)}
+
+  /* ---------- the foundry ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .xcard{border-radius:12px; padding:14px 16px; margin:8px 0; position:relative}
+  .xcard .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase}
+  .xcard .snt{font-size:clamp(20px,3.4vw,27px); font-weight:900; margin-top:4px; line-height:1.5; text-align:center}
+  .xeq{background:var(--navylt); border:2px solid var(--navy); text-align:center}
+  .xeq .role{color:var(--navy)} .xeq .snt{font-size:clamp(17px,2.9vw,22px); font-weight:800}
+  .xout{background:var(--greenlt); border:2px solid var(--green)} .xout .role{color:var(--greendark)}
+  .arrowdown{text-align:center; font-size:26px; color:var(--grammar); margin:-2px 0}
+  .rroot{background:var(--navylt); color:var(--navy); border-radius:7px 0 0 7px; padding:1px 2px 1px 7px; box-shadow:inset 0 -3px 0 var(--navy)}
+  .rsuf{background:var(--grammarlt); color:var(--grammar); border-radius:0 7px 7px 0; padding:1px 7px 1px 2px; box-shadow:inset 0 -3px 0 var(--grammar)}
+  .rpre{background:var(--exceplt); color:var(--excep); border-radius:7px 0 0 7px; padding:1px 2px 1px 7px; box-shadow:inset 0 -3px 0 var(--excep)}
+  .masked{color:transparent; position:relative; cursor:pointer; display:inline-block; min-width:110px; background:#DDE3DF; border-radius:7px; box-shadow:inset 0 -3px 0 var(--grammar)}
+  .masked::after{content:"?"; position:absolute; inset:0; color:#888; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .fmeta{display:flex; gap:8px; flex-wrap:wrap; align-items:center; justify-content:center; margin-top:8px; font-size:14px; font-weight:700; color:#444}
+  .cls{display:inline-block; background:var(--vocab); color:#fff; border-radius:999px; padding:2px 11px; font-size:12px; font-weight:900; letter-spacing:.03em}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px; justify-content:center}
+  .legend span{border-radius:6px; padding:1px 8px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+
+  /* suffix / prefix reference grids */
+  .jobgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:8px; margin-top:6px}
+  .jobgrid div{background:var(--vocablt); border:1.5px solid var(--rule); border-radius:10px; padding:8px 11px; font-size:14px}
+  .jobgrid b{display:block; color:var(--vocab); font-size:12px; text-transform:uppercase; letter-spacing:.05em}
+  .jobgrid i{color:var(--grammar); font-style:normal; font-weight:800}
+
+  /* live word family */
+  .famgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:8px; margin-top:6px}
+  .fam{background:#fff; border:2px solid var(--rule); border-radius:10px; padding:9px 11px; text-align:center}
+  .fam .lab{display:block; font-size:11px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#8a8a8a}
+  .fam b{font-size:17px; color:var(--navy)}
+  .fam.chg{border-color:var(--grammar); background:var(--grammarlt)} .fam.chg b{color:var(--grammar)} .fam.none b{color:#bbb}
+  .famnote{margin-top:8px; font-size:14px; font-weight:700; color:var(--grammar)}
+
+  /* spelling tiles */
+  .sptiles{display:grid; grid-template-columns:repeat(auto-fit,minmax(215px,1fr)); gap:9px; margin-top:6px}
+  .sptile{border:2px solid var(--grammar); background:var(--grammarlt); border-radius:12px; padding:10px 12px}
+  .sptile b{display:block; color:var(--grammar); font-size:14px} .sptile span{font-size:14px; font-weight:700; color:#444}
+  .sptile.extra{border-color:var(--rule); background:var(--soft)} .sptile.extra b{color:#777}
+
+  /* special cases selector */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; flex-wrap:wrap; max-width:100%}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+  .prechips{display:flex; gap:6px; flex-wrap:wrap; margin:8px 0}
+  .prechips button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 11px; font:700 13px Lato,sans-serif; cursor:pointer}
+  .prechips button.on{border-color:var(--navy); background:var(--navylt); color:var(--navy)}
+  .preout{background:var(--soft); border-radius:12px; padding:16px; text-align:center; margin-top:6px}
+  .preout .map{font-size:clamp(17px,2.8vw,22px); font-weight:800}
+  .preout .map .a{color:var(--navy)} .preout .map .b{color:var(--excep)}
+  .preout .ex{font-size:14px; color:#555; margin-top:8px; font-weight:600}
+  .mist{list-style:none} .mist li{padding:4px 0; font-size:15px; font-weight:700}
+  .mist .no{color:var(--think); text-decoration:line-through} .mist .yes{color:var(--green)}
+  .mist small{display:block; font-weight:600; color:#777; font-style:italic}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--green); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--greendark); border:2px solid var(--green)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--green); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--green)}
+  .segbig button.on{background:var(--green); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--green); background:var(--greenlt); color:var(--greendark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--greendark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--greendark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--green); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick{background:var(--think); color:#fff}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--greendark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--green); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🏗️</span>
+  <div class="wrap">
+    <div class="kicker">English 6 · Unit 1 · The Prepared Mind</div>
+    <h1>🏗️ The Word Foundry</h1>
+    <div class="sub"><b>Structure 2</b> — word formation: building science words from roots, prefixes &amp; suffixes. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🏗️ Explore the foundry</span><span>🔧 Build the word</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🏗️ Explore<small>forge a word</small></button>
+    <button data-tab="build">🔧 Build<small>make it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Root + suffix = a science word</h2>
+      <p class="muted">English recycles roots. Choose a <b>root</b>, then a <b>suffix</b>: the foundry welds them and
+        tells you the <b>word class</b> (the job the word does) and the meaning.
+        <span class="es">(Aprende las palabras en familia, no sueltas.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the forged word, guess, then reveal</label>
+
+      <h3>1 · Choose a root</h3>
+      <div class="chips" id="rootChips"></div>
+      <h3>2 · Choose a suffix</h3>
+      <div class="chips" id="sufChips"></div>
+
+      <div class="xcard xeq"><div class="role">The weld</div><div class="snt" id="fEq"></div></div>
+      <div class="arrowdown">⬇</div>
+      <div class="xcard xout">
+        <div class="role">Forged word</div>
+        <div class="snt" id="fWord"></div>
+        <div class="fmeta"><span class="cls" id="fCls"></span><span id="fMean"></span></div>
+        <div class="bnote" id="fRule" style="text-align:center"></div>
+      </div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the word ✓</button></div>
+      <div class="legend"><span class="rroot">root</span><span class="rsuf">suffix</span><span class="rpre">prefix</span></div>
+
+      <h3>The suffix toolbox — which ending does which job</h3>
+      <div class="jobgrid">
+        <div><b>noun · thing / idea</b><i>-tion, -sion, -ment, -ance/-ence, -ity, -ness</i><br>invention, treatment, resistance, activity</div>
+        <div><b>noun · person</b><i>-er, -or, -ist, -ian</i><br>researcher, inventor, biologist, technician</div>
+        <div><b>adjective</b><i>-al, -ic, -ical, -ive, -able, -ous, -ful, -less</i><br>chemical, atomic, creative, famous, useless</div>
+        <div><b>adverb</b><i>-ly</i><br>carefully, genetically</div>
+        <div><b>verb</b><i>-ize, -ify, -ate</i><br>modernize, simplify, activate</div>
+        <div><b>field of study</b><i>-ology, -ics</i><br>biology, genetics, physics <span class="es">(y ojo: <b>-ics</b> lleva verbo en singular)</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-vocab">🧬 Live word family</span>
+      <h2>One root, five jobs</h2>
+      <p class="muted">The family of the root you chose above. The <b>orange</b> cell is the one the spelling note under the grid is about.
+        A dash means the manual’s table has no common member for that job.
+        <span class="es">(Familia de palabras: misma raíz, distinto trabajo.)</span></p>
+      <div class="famgrid" id="famGrid"></div>
+      <div class="famnote" id="famNote"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-grammar">✍️ Spelling watch</span>
+      <h2>What changes when the suffix arrives</h2>
+      <div class="sptiles">
+        <div class="sptile"><b>-ic adjective + -ally</b><span>scientific → scientific<u>ally</u> · basic → basically · genetic → genetically. <span class="es">(nunca <i>-icly</i>)</span></span></div>
+        <div class="sptile"><b>final -e drops</b><span>innovate → innovation · observe → observation · create → creation.</span></div>
+        <div class="sptile"><b>final -y becomes -i-</b><span>curious → curiosity, as the manual’s Spelling watch lists it: the -ous ending gives way to -osity and the -i- is kept.</span></div>
+        <div class="sptile extra"><b>doubled consonant (extra)</b><span>Not in this section of the manual, but worth knowing: plan → planner, control → controlled.</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">🔤 The prefix dial</span>
+      <h2>Changing the meaning from the front</h2>
+      <p class="muted">Tap a prefix to see what it does. <span class="es">(El prefijo cambia el significado; el sufijo cambia la clase de palabra.)</span></p>
+      <div class="prechips" id="preChips"></div>
+      <div class="preout"><div class="map" id="preMap"></div><div class="ex" id="preEx"></div></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-green">🔎 Word-class detector</span>
+      <h2>First decide the job, then choose the ending</h2>
+      <p class="muted">Read the sentence and the gap. <b>Which class of word does the gap need?</b> Decide before you
+        touch a suffix — that is how the exam question is solved.
+        <span class="es">(Primero la clase de palabra, después el sufijo.)</span></p>
+      <div class="bctx" id="detCtx"></div>
+      <div class="bgroup"><div class="glab">The gap needs a…</div><div class="bchips" id="detChips"></div></div>
+      <div class="bresult" id="detResult"></div>
+      <div class="bfoot"><button class="btn ghost" id="detNext">Next sentence →</button></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Word-formation traps</span>
+      <h2>Five places where careful students still fall</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="ics" class="on">-ics</button><button data-v="ly">-ly adjectives</button><button data-v="value">invaluable</button><button data-v="pairs">economic(al)</button><button data-v="medic">medic</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠️ Typical mistakes — Spanish speakers</span>
+      <h2>The five the manual marks</h2>
+      <ul class="mist">
+        <li><span class="no">scientifical</span> → <span class="yes">scientific</span><small>El adjetivo termina en -ic, no en -ical, en esta familia.</small></li>
+        <li><span class="no">scientifics say…</span> → <span class="yes">scientists say…</span><small>La persona es scientist (-ist); scientific es adjetivo y no se pluraliza.</small></li>
+        <li><span class="no">a big discover</span> → <span class="yes">a great discovery</span><small>discover es verbo; el sustantivo es discovery.</small></li>
+        <li><span class="no">benefical</span> → <span class="yes">bene<b>fi</b>cial</span><small>No se pierde la sílaba -fi-.</small></li>
+        <li><span class="no">The genetics are complex.</span> → <span class="yes">Genetics <b>is</b> complex.</span><small>Los sustantivos en -ics son singulares y no llevan artículo aquí.</small></li>
+      </ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> puts Structure 2 on screen: the foundry welds the root and the suffix of the manual’s family table, the live family card is that same table, and the spelling card is the “Spelling watch”. The prefix dial is the prefix toolbox; the traps card is the exception box; the mistakes card is the pitfall box.</li>
+          <li><b>Build</b> is productive: <i>Assemble</i> = choose the word class and the piece (suffix, or prefix + suffix) for exercise B and the homework sentences; <i>Transform</i> = type the form, with a model answer.</li>
+          <li><b>Drill</b> merges the checks into one graded engine (★ suffix jobs &amp; negative prefixes · ★★ word form in context, -ics, economic/economical · ★★★ prefix + suffix together, -bly adverbs) with score, streak and best result.</li>
+          <li>Every selector is <b>tap to choose</b> — no dragging, so it works on a phone. Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-green">🔧 Your turn to produce</span>
+      <h2>Build the word</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the sentence, choose the <b>class</b> the gap needs and the <b>piece</b> you add to the root.
+          The foundry builds the word and states the rule — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">The gap needs a…</div><div class="bchips" id="clsChips"></div></div>
+        <div class="bgroup"><div class="glab">Add this piece</div><div class="bchips" id="pieceChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Forge it 🔨</button><button class="btn ghost" id="bNext">New sentence →</button><span class="bscore" id="bScore">Forged: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Write the correct form of the word in parentheses. Watch the spelling and the prefixes.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the word"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next sentence →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ suffix jobs &amp; negative prefixes · ★★ the right form in context · ★★★ prefix + suffix together.
+        Keep your streak alive. <span class="es">(Misma escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 6 · Unit 1 «The Prepared Mind» · Structure 2 — word formation: building science words · Level B1+
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE WORD FOUNDRY — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 6 Class Manual (Structure 2).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+function weld(pre, stem, suf){ return (pre?'<span class="rpre">'+pre+'</span>':"")+'<span class="rroot">'+stem+'</span><span class="rsuf">'+suf+'</span>'; }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · the foundry + the live word family
+===================================================================== */
+var FAMLAB = ["noun · thing","noun · person","verb","adjective","adverb"];
+var ROOTS = [
+  {r:"science", fam:["science","scientist","—","scientific","scientifically"], ch:1, chn:"science → scient- + -ist: the stem loses the -ce.",
+   b:[{s:"-ist", stem:"scient", suf:"ist", w:"scientist", c:"noun · person", m:"a person who works in science", n:"-ist names the person in a field: scientist, biologist, chemist."},
+      {s:"-ic", stem:"scientif", suf:"ic", w:"scientific", c:"adjective", m:"connected with science", n:"-ic builds the adjective: science → scientific. ✘ scientifical."},
+      {s:"-ally", stem:"scientific", suf:"ally", w:"scientifically", c:"adverb", m:"in a scientific way", n:"Adjectives in -ic take -ally, never -icly."}]},
+  {r:"discover", fam:["discovery","discoverer","discover","discoverable","—"], ch:0, chn:"discover + -y → discovery: the thing noun of this family uses -y.",
+   b:[{s:"-y", stem:"discover", suf:"y", w:"discovery", c:"noun · thing", m:"something found for the first time", n:"✘ a big discover → ✔ a great discovery: the noun is discovery."},
+      {s:"-er", stem:"discover", suf:"er", w:"discoverer", c:"noun · person", m:"the person who finds it", n:"-er names the person who does the verb."},
+      {s:"-able", stem:"discover", suf:"able", w:"discoverable", c:"adjective", m:"that can be discovered", n:"-able = able to be + verb."}]},
+  {r:"develop", fam:["development","developer","develop","developing / developed","—"], ch:0, chn:"develop + -ment: no spelling change, just the ending.",
+   b:[{s:"-ment", stem:"develop", suf:"ment", w:"development", c:"noun · thing", m:"a new step or advance", n:"-ment turns a verb into the thing or the process."},
+      {s:"-er", stem:"develop", suf:"er", w:"developer", c:"noun · person", m:"the person or company that develops", n:"-er again names the doer."}]},
+  {r:"benefit", fam:["benefit","beneficiary","benefit","beneficial","beneficially"], ch:3, chn:"benefit → benefic- + -ial: the final t becomes c. ✘ benefical — the -fi- stays.",
+   b:[{s:"-ial", stem:"benefic", suf:"ial", w:"beneficial", c:"adjective", m:"producing a good result", n:"After be, seem or prove, the adjective is beneficial."},
+      {s:"-ially", stem:"benefic", suf:"ially", w:"beneficially", c:"adverb", m:"in a way that helps", n:"Adjective + -ly: beneficial → beneficially."}]},
+  {r:"curious", fam:["curiosity","—","—","curious","curiously"], ch:0, chn:"Spelling watch: final -y becomes -i-, curious → curiosity.",
+   b:[{s:"-ity", stem:"curios", suf:"ity", w:"curiosity", c:"noun · thing", m:"the wish to know", n:"-ity makes the abstract noun: curious → curios- + -ity."},
+      {s:"-ly", stem:"curious", suf:"ly", w:"curiously", c:"adverb", m:"in a curious way", n:"Adjective + -ly = adverb."}]},
+  {r:"gene", fam:["gene / genetics","geneticist","—","genetic","genetically"], ch:4, chn:"genetic + -ally: -ic adjectives take -ally.",
+   b:[{s:"-ic", stem:"genet", suf:"ic", w:"genetic", c:"adjective", m:"connected with genes", n:"The adjective of gene is genetic: a strong genetic component."},
+      {s:"-ist", stem:"genetic", suf:"ist", w:"geneticist", c:"noun · person", m:"a scientist who studies genes", n:"-ist on the field word gives the specialist."},
+      {s:"-ics", stem:"genet", suf:"ics", w:"genetics", c:"noun · field", m:"the study of genes", n:"Nouns in -ics take a singular verb: Genetics is complex."},
+      {s:"-ally", stem:"genetic", suf:"ally", w:"genetically", c:"adverb", m:"in terms of genes", n:"-ic + -ally again: genetically."}]},
+  {r:"medicine", fam:["medicine","medic","medicate","medical","medically"], ch:3, chn:"medicine → medic- + -al: the -ine is trimmed.",
+   b:[{s:"-al", stem:"medic", suf:"al", w:"medical", c:"adjective", m:"connected with medicine", n:"Before a noun we need the adjective: urgent medical attention."},
+      {s:"-ate", stem:"medic", suf:"ate", w:"medicate", c:"verb", m:"to treat with medicine", n:"-ize, -ify and -ate build verbs."},
+      {s:"-ally", stem:"medic", suf:"ally", w:"medically", c:"adverb", m:"from a medical point of view", n:"medical + -ly = medically."}]},
+  {r:"observe", fam:["observation","observer","observe","observable","observably"], ch:0, chn:"Spelling watch: the final -e drops, observe → observation.",
+   b:[{s:"-ation", stem:"observ", suf:"ation", w:"observation", c:"noun · thing", m:"what you see and note", n:"-ation is the noun of many -ate/-e verbs; the -e drops."},
+      {s:"-er", stem:"observ", suf:"er", w:"observer", c:"noun · person", m:"the person who watches", n:"-er names the doer; the -e drops here too."},
+      {s:"-able", stem:"observ", suf:"able", w:"observable", c:"adjective", m:"that can be seen", n:"-able = able to be observed."}]},
+  {r:"experiment", fam:["experiment","experimenter","experiment","experimental","experimentally"], ch:4, chn:"experimental + -ly → experimentally (two l’s).",
+   b:[{s:"-al", stem:"experiment", suf:"al", w:"experimental", c:"adjective", m:"still being tested", n:"-al is one of the commonest adjective endings."},
+      {s:"-er", stem:"experiment", suf:"er", w:"experimenter", c:"noun · person", m:"the person who runs the experiment", n:"Here the noun and the verb are the same word: an experiment / to experiment."},
+      {s:"-ally", stem:"experiment", suf:"ally", w:"experimentally", c:"adverb", m:"by experiment", n:"experimental ends in -al, so the adverb keeps both l’s."}]},
+  {r:"innovate", fam:["innovation","innovator","innovate","innovative","innovatively"], ch:0, chn:"Spelling watch: the final -e drops, innovate → innovation.",
+   b:[{s:"-ation", stem:"innov", suf:"ation", w:"innovation", c:"noun · thing", m:"a new idea or method", n:"Verb in -ate → noun in -ation, and the -e drops."},
+      {s:"-or", stem:"innovat", suf:"or", w:"innovator", c:"noun · person", m:"a person who innovates", n:"Some families take -or, not -er: inventor, innovator, creator."},
+      {s:"-ive", stem:"innovat", suf:"ive", w:"innovative", c:"adjective", m:"new and original", n:"-ive builds adjectives: creative, inventive, innovative."}]}
+];
+var curRoot = 0, curSuf = 0, predictMode = false, revealed = false;
+ROOTS.forEach(function(R,i){
+  var b = document.createElement("button"); b.textContent = R.r; b.dataset.k = i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){
+    curRoot = i; curSuf = 0; revealed = false;
+    document.querySelectorAll("#rootChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); });
+    renderSufChips(); renderForge(); renderFamily();
+  });
+  $("rootChips").appendChild(b);
+});
+function renderSufChips(){
+  var wrap = $("sufChips"); wrap.innerHTML = "";
+  ROOTS[curRoot].b.forEach(function(B,j){
+    var b = document.createElement("button"); b.textContent = B.s; b.dataset.k = j;
+    if(j===curSuf) b.classList.add("on");
+    b.addEventListener("click", function(){
+      curSuf = j; revealed = false;
+      document.querySelectorAll("#sufChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===j); });
+      renderForge();
+    });
+    wrap.appendChild(b);
+  });
+}
+function renderForge(){
+  var R = ROOTS[curRoot], B = R.b[curSuf];
+  $("fEq").innerHTML = '<span class="rroot" style="border-radius:7px; padding:1px 7px">'+R.r+'</span> + <span class="rsuf" style="border-radius:7px; padding:1px 7px">'+B.s+"</span>";
+  var mask = predictMode && !revealed;
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask){
+    $("fWord").innerHTML = '<span class="masked" id="maskWord">'+B.w+"</span>";
+    $("fCls").textContent = "?"; $("fMean").textContent = "Guess the word, then reveal."; $("fRule").textContent = "";
+    $("maskWord").addEventListener("click", function(){ revealed = true; renderForge(); });
+  } else {
+    $("fWord").innerHTML = weld("", B.stem, B.suf);
+    $("fCls").textContent = B.c; $("fMean").textContent = "= "+B.m; $("fRule").textContent = B.n;
+  }
+}
+$("predictChk").addEventListener("change", function(){ predictMode = this.checked; revealed = false; renderForge(); });
+$("revealBtn").addEventListener("click", function(){ revealed = true; renderForge(); });
+function renderFamily(){
+  var R = ROOTS[curRoot], g = $("famGrid"); g.innerHTML = "";
+  R.fam.forEach(function(w,i){
+    var d = document.createElement("div");
+    d.className = "fam" + (i===R.ch?" chg":"") + (w==="—"?" none":"");
+    d.innerHTML = '<span class="lab">'+FAMLAB[i]+"</span><b>"+w+"</b>";
+    g.appendChild(d);
+  });
+  $("famNote").textContent = "⚙ "+R.chn;
+}
+renderSufChips(); renderForge(); renderFamily();
+
+/* prefix dial */
+var PRE = [
+  {p:"un-", m:"not / opposite", ex:"unlikely, unknown, unexpected, unnecessary"},
+  {p:"in-", m:"not", ex:"invisible, incomplete, independent"},
+  {p:"im-", m:"not (before p, b, m)", ex:"impossible, impatient, imbalanced, immature"},
+  {p:"il- / ir-", m:"not (before l / before r)", ex:"illegal, illogical, irregular, irresponsible, irrational"},
+  {p:"dis-", m:"not / opposite", ex:"disagree, dishonest, disappear"},
+  {p:"non-", m:"not", ex:"non-toxic"},
+  {p:"mis-", m:"wrongly", ex:"misunderstand, miscalculate"},
+  {p:"re-", m:"again", ex:"redesign, retest, rebuild"},
+  {p:"over- / under-", m:"too much / too little", ex:"overheat, underestimate"},
+  {p:"inter-", m:"between", ex:"international, interact"},
+  {p:"anti-", m:"against", ex:"antibiotic, antisocial"},
+  {p:"bio- / micro-", m:"life / small", ex:"biology, microscope"},
+  {p:"co-", m:"together", ex:"cooperate, co-author"}
+];
+var curPre = 0;
+PRE.forEach(function(P,i){
+  var b = document.createElement("button"); b.textContent = P.p; b.dataset.k = i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curPre=i; document.querySelectorAll("#preChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderPre(); });
+  $("preChips").appendChild(b);
+});
+function renderPre(){
+  var P = PRE[curPre];
+  $("preMap").innerHTML = '<span class="a">'+P.p+'</span> = <span class="b">'+P.m+"</span>";
+  $("preEx").textContent = P.ex;
+}
+renderPre();
+
+/* word-class detector */
+var CLS = [{k:"nt",t:"noun · thing"},{k:"np",t:"noun · person"},{k:"v",t:"verb"},{k:"adj",t:"adjective"},{k:"adv",t:"adverb"}];
+var DET = [
+  {s:"The results were ___ different from what we expected.", root:"complete", cls:"adv", clue:"The gap describes the adjective <b>different</b>, so it must be an adverb.", stem:"complete", suf:"ly", w:"completely"},
+  {s:"The patient needed urgent ___ attention.", root:"medicine", cls:"adj", clue:"The gap sits before the noun <b>attention</b>, so it must be an adjective.", stem:"medic", suf:"al", w:"medical"},
+  {s:"___ is the engine of every laboratory.", root:"curious", cls:"nt", clue:"The gap is the subject of <b>is</b>, so it must be a noun (a thing, not a person).", stem:"Curios", suf:"ity", w:"Curiosity"},
+  {s:"The town’s water was tested by an independent ___.", root:"research", cls:"np", clue:"After <b>an independent</b> we need a noun, and it is a <b>who</b> — a person.", stem:"research", suf:"er", w:"researcher"},
+  {s:"Doctors ___ the patient every six hours.", root:"medicine", cls:"v", clue:"After the subject <b>Doctors</b> the sentence needs its verb.", stem:"medic", suf:"ate", w:"medicate"}
+];
+var dti = 0;
+function renderDet(){
+  var it = DET[dti];
+  $("detCtx").innerHTML = it.s+"<small>root: "+it.root+"</small>";
+  var wrap = $("detChips"); wrap.innerHTML = "";
+  CLS.forEach(function(C){
+    var b = document.createElement("button"); b.textContent = C.t; b.dataset.v = C.k;
+    b.addEventListener("click", function(){ pickDet(C.k, b); });
+    wrap.appendChild(b);
+  });
+  $("detResult").className = "bresult"; $("detResult").innerHTML = "";
+}
+function pickDet(k, btn){
+  var it = DET[dti], r = $("detResult");
+  document.querySelectorAll("#detChips button").forEach(function(x){ x.classList.remove("on","wrongpick"); });
+  if(k===it.cls){
+    btn.classList.add("on");
+    r.className = "bresult good";
+    r.innerHTML = "✅ "+it.s.replace("___", weld("", it.stem, it.suf))+'<div class="bnote">'+it.clue+" → "+it.root+" becomes <b>"+it.w+"</b>.</div>";
+  } else {
+    btn.classList.add("wrongpick");
+    r.className = "bresult bad";
+    r.innerHTML = "❌ Look again at the words around the gap. <span class='bnote'>"+it.clue+"</span>";
+  }
+}
+$("detNext").addEventListener("click", function(){ dti=(dti+1)%DET.length; renderDet(); });
+renderDet();
+
+/* traps */
+var SC = {
+  ics:"<b>Nouns in -ics are singular.</b> Genetics <b>is</b> fascinating. Physics <b>was</b> my favorite subject. <span class='es'>(En español decimos “las matemáticas son”, pero en inglés el verbo va en singular.)</span>",
+  ly:"<b>Not every -ly word is an adverb.</b> <i>friendly, lively, lonely, likely</i> are <b>adjectives</b>. To make the adverb, use a phrase: <i>in a friendly way</i>.",
+  value:"<b>invaluable</b> = extremely valuable — it is <u>not</u> the opposite of valuable. <i>priceless</i> = worth too much to put a price on · <i>worthless</i> = worth nothing.",
+  pairs:"<b>economic</b> (of the economy) vs <b>economical</b> (cheap to use): solar panels are an economical choice. · <b>historic</b> (important in history) vs <b>historical</b> (related to history).",
+  medic:"<b>medic</b> is informal (a doctor, especially military); the field is <b>medicine</b> and the adjective is <b>medical</b>. ✔ urgent medical attention."
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML = SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.ics;
+
+/* =====================================================================
+   BUILD · assemble (class + piece) + transform (write the form)
+===================================================================== */
+var BUILD = [
+  {s:"Her research proved ___ to thousands of patients.", root:"benefit", cls:"adj", piece:"-ial", opts:["-ial","-ment","-ist","-ion"], stem:"benefic", suf:"ial", w:"beneficial", n:"After proved we need an adjective: benefit → beneficial (✘ benefical)."},
+  {s:"He answered all our questions very ___.", root:"science", cls:"adv", piece:"-ally", opts:["-ic","-ly","-ally","-ist"], stem:"scientific", suf:"ally", w:"scientifically", n:"It says how he answered → adverb, and -ic adjectives take -ally."},
+  {s:"___ is the engine of every laboratory.", root:"curious", cls:"nt", piece:"-ity", opts:["-ly","-ity","-ment","-ous"], stem:"Curios", suf:"ity", w:"Curiosity", n:"The subject of is must be a noun, and this family builds it with -ity: curious → curiosity."},
+  {s:"The town’s water was tested by an independent ___.", root:"research", cls:"np", piece:"-er", opts:["-ion","-ive","-er","-ist"], stem:"research", suf:"er", w:"researcher", n:"A person who researches: -er names the doer."},
+  {s:"New ___ in solar panels arrive every year.", root:"develop", cls:"nt", piece:"-ment", opts:["-ation","-able","-ment","-er"], stem:"develop", suf:"ments", w:"developments", n:"Verb + -ment = the thing; arrive is plural, so developments."},
+  {s:"The patient needed urgent ___ attention.", root:"medicine", cls:"adj", piece:"-al", opts:["-al","-ate","-ally","-ist"], stem:"medic", suf:"al", w:"medical", n:"Before the noun attention we need the adjective medical."},
+  {s:"Volcanic activity here is ___ — even experts get surprised.", root:"predict", cls:"adj", piece:"un- + -able", opts:["-able","un- + -able","in- + -able","-ion"], pre:"un", stem:"predict", suf:"able", w:"unpredictable", n:"Not able to be predicted: un- + predict + -able. ✘ impredictable."},
+  {s:"The species’ ___ alarmed the biologists.", root:"appear", cls:"nt", piece:"dis- + -ance", opts:["-ance","un- + -ance","dis- + -ance","-ment"], pre:"dis", stem:"appear", suf:"ance", w:"disappearance", n:"The opposite of appearing, as a noun: dis- + appear + -ance."}
+];
+var bi=0, bCls=null, bPiece=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function chipRow(id, items, labelOf, onPick){
+  var wrap=$(id); wrap.innerHTML="";
+  items.forEach(function(v){
+    var b=document.createElement("button"); b.textContent=labelOf(v); b.dataset.v=v;
+    b.addEventListener("click", function(){ onPick(v); document.querySelectorAll("#"+id+" button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+}
+function renderBuild(){
+  var it=BUILD[bi]; bCls=null; bPiece=null;
+  $("bctx").innerHTML = it.s+"<small>root: "+it.root+"</small>";
+  chipRow("clsChips", CLS.map(function(c){ return c.k; }), function(k){ var f=CLS.filter(function(c){ return c.k===k; })[0]; return f.t; }, function(v){ bCls=v; });
+  chipRow("pieceChips", it.opts, function(v){ return v; }, function(v){ bPiece=v; });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bCls || !bPiece){ r.className="bresult bad"; r.innerHTML="Choose the class <b>and</b> the piece first."; return; }
+  var cOk = bCls===it.cls, pOk = bPiece===it.piece;
+  if(cOk && pOk){
+    r.className="bresult good";
+    r.innerHTML="✅ "+it.s.replace("___", weld(it.pre||"", it.stem, it.suf))+'<div class="bnote">'+it.n+"</div>";
+    bBuilt++; $("bScore").textContent="Forged: "+bBuilt;
+  } else {
+    if(!cOk) document.querySelector('#clsChips button[data-v="'+bCls+'"]').classList.add("wrongpick");
+    if(!pOk) document.querySelector('#pieceChips button[data-v="'+bPiece+'"]').classList.add("wrongpick");
+    r.className="bresult bad";
+    r.innerHTML="❌ "+(cOk?"The class is right, but not that piece.":"Check the class first — look at the words around the gap.")+" <span class='bnote'>Hint — "+it.n+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"The ___ of penicillin changed medicine forever. (discover)", accept:["discovery"], model:"discovery — the noun, not the verb: ✘ a big discover."},
+  {ctx:"Make it negative: possible → ___", accept:["impossible"], model:"impossible — im- goes before p, b and m."},
+  {ctx:"Building the telescope was a huge ___ achievement. (science)", accept:["scientific"], model:"scientific — before the noun achievement we need the adjective."},
+  {ctx:"Every year, ___ find new ways to repair damaged DNA. (gene)", accept:["geneticists"], model:"geneticists — the person noun in -ist, plural because of find."},
+  {ctx:"The idea was born from a simple ___: rainwater tanks accumulate sediment. (observe)", accept:["observation"], model:"observation — the final -e of observe drops before -ation."},
+  {ctx:"Such a powerful tool must be used ___. (responsible)", accept:["responsibly"], model:"responsibly — adjectives in -ble form their adverb in -bly."},
+  {ctx:"Poor handwriting led to a serious ___ between the doctors. (understand)", accept:["misunderstanding"], model:"misunderstanding — mis- = wrongly, and the noun takes -ing here."},
+  {ctx:"Solar panels are an ___ choice in sunny regions — cheap to run. (economy)", accept:["economical"], model:"economical = cheap to use (economic = of the economy)."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").textContent=it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Person or field?", q:"The field is chemistry and the adjective is chemical. The person is ___.", o:["a chemist", "a chemistry", "a chemical"], a:0, w:"-ist names the person in a field: chemist, biologist, scientist."},
+  {kind:"mc", diff:1, tag:"Which class?", q:"“He answered all our questions very ___.”", o:["scientific", "scientifically", "scientifics"], a:1, w:"It says how he answered → adverb; -ic adjectives take -ally."},
+  {kind:"fill", diff:1, tag:"Negative prefix", q:"Make it negative: possible → ___", accept:["impossible"], w:"im- goes before p, b and m: impossible."},
+  {kind:"error", diff:1, tag:"Fix the error", words:["Scientifics","say","the","vaccine","is","safe."], bad:0, fixOld:"Scientifics", fixNew:"Scientists", w:"The person noun is scientist (-ist); scientific is the adjective and has no plural."},
+  {kind:"mc", diff:1, tag:"Suffix jobs", q:"Which suffix builds a VERB?", o:["-ous", "-ment", "-ify"], a:2, w:"-ize, -ify and -ate build verbs: modernize, simplify, activate."},
+  {kind:"fill", diff:2, tag:"Word form", q:"“Her research proved ___ to thousands of patients.” (benefit)", accept:["beneficial"], w:"After proved we need the adjective beneficial — keep the -fi-, ✘ benefical."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["Genetics","are","complex","and","fascinating."], bad:1, fixOld:"Genetics are", fixNew:"Genetics is", w:"Nouns in -ics take a singular verb: Genetics is complex."},
+  {kind:"mc", diff:2, tag:"economic / economical", q:"“Solar panels are an ___ choice in sunny regions — they are cheap to run.”", o:["economical", "economic", "economically"], a:0, w:"economical = cheap to use; economic = of the economy; economically is the adverb."},
+  {kind:"fill", diff:2, tag:"Word form", q:"“___ is the engine of every laboratory.” (curious)", accept:["curiosity"], w:"The subject must be a noun: curious → curiosity, built with -ity."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["The","species’","disappear","alarmed","the","biologists."], bad:2, fixOld:"disappear", fixNew:"disappearance", w:"The subject must be the noun, not the bare verb: dis- + appear + -ance = disappearance."},
+  {kind:"fill", diff:3, tag:"Adverb", q:"“Such a powerful tool must be used ___.” (responsible)", accept:["responsibly"], w:"Adjectives in -ble form their adverb in -bly: responsible → responsibly."},
+  {kind:"mc", diff:3, tag:"Prefix + suffix", q:"“Volcanic activity here is ___ — even experts get surprised.” (predict)", o:["impredictable", "unpredictable", "unpredictible"], a:1, w:"un- + predict + -able. The Spanish impredecible does not transfer."},
+  {kind:"fill", diff:3, tag:"Prefix + suffix", q:"Sediment makes the water look ___. (drink — negative)", accept:["undrinkable"], w:"un- + drink + -able = undrinkable."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i6_s2_drill_best")||0); if(dscore>best){ store("i6_s2_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"The foundry is yours. Ready for the ★★★ homework." : dscore>=8?"Solid — review the traps card and the spelling watch, then go again." : "Re-read Structure 2, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">✓ Correct.</span> ':'<span class="k">✗ Not that one: the green part is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

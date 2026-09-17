@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE INTENSITY LAB · English 6 · Unit 1 "The Prepared Mind"
+  Structure 1 — adverb + adjective collocations (gradable vs extreme,
+  absolutely/completely/totally · very/extremely/really · highly/deeply/seriously)
+  Three modes: Explore (sort & test) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Structure 1 · The Intensity Lab · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;   /* Unit 1 identity */
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+  header{background:linear-gradient(135deg,var(--green),var(--greendark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#BFE3CE; text-transform:uppercase} header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#D8EFE1; font-size:clamp(13px,2.3vw,16px)} .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--greendark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none} section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--greendark); margin-bottom:6px} .card h3{font-size:15px; color:var(--greendark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px} .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-green{background:var(--green)} .tag-navy{background:var(--navy)}
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--green); background:var(--greenlt); color:var(--greendark)}
+  /* ---------- tap classifier ---------- */
+  .clfhead{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin:8px 0 4px; font-size:13px; font-weight:800; color:#777}
+  .pool{display:flex; gap:8px; flex-wrap:wrap; margin:8px 0 12px; min-height:44px} .tok{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--ink); user-select:none}
+  .tok.sel{border-color:var(--grammar); background:var(--grammarlt); color:var(--grammar); box-shadow:0 0 0 3px rgba(217,118,26,.22)}
+  .bins{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:12px}
+  .bin{border:2px dashed var(--rule); border-radius:14px; padding:12px; background:var(--soft); cursor:pointer; min-height:126px; transition:background .15s,border-color .15s}
+  .bin .bname{font-size:13px; font-weight:900; letter-spacing:.05em; text-transform:uppercase} .bin .bsub{font-size:12.5px; color:#777; font-weight:700; margin-bottom:6px}
+  .bin .bset{display:flex; gap:6px; flex-wrap:wrap}
+  .bin .bset span{background:#fff; border:1.5px solid var(--rule); border-radius:8px; padding:3px 9px; font-size:14px; font-weight:700}
+  .bgrad{border-color:var(--navy)} .bgrad .bname{color:var(--navy)} .bgrad .bset span{border-color:var(--navy); color:var(--navy)}
+  .bext{border-color:var(--green)} .bext .bname{color:var(--greendark)} .bext .bset span{border-color:var(--green); color:var(--greendark)}
+  .bin.hit{background:var(--greenlt); border-style:solid} .bin.miss{background:var(--thinklt); border-color:var(--think); border-style:solid}
+  .clfmsg{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; min-height:40px} .clfmsg b{color:var(--grammar)}
+  .clfmsg.ok{border-left-color:var(--green); background:var(--greenlt)} .clfmsg.ok b{color:var(--greendark)}
+  .clfmsg.no{border-left-color:var(--think); background:var(--thinklt)} .clfmsg.no b{color:var(--think)}
+  /* ---------- intensity dial ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .pairchips{display:flex; gap:6px; flex-wrap:wrap; margin:8px 0} .pairchips button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 11px; font:700 13px Lato,sans-serif; cursor:pointer}
+  .pairchips button.on{border-color:var(--navy); background:var(--navylt); color:var(--navy)}
+  input[type=range]{-webkit-appearance:none; appearance:none; width:100%; height:12px; border-radius:999px; background:linear-gradient(90deg,var(--navylt),var(--greenlt),var(--green)); outline:none; margin:16px 0 4px}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none; width:32px; height:32px; border-radius:50%; background:#fff; border:4px solid var(--greendark); box-shadow:0 2px 8px rgba(0,0,0,.3); cursor:grab}
+  input[type=range]::-moz-range-thumb{width:26px; height:26px; border-radius:50%; background:#fff; border:4px solid var(--greendark); box-shadow:0 2px 8px rgba(0,0,0,.3); cursor:grab}
+  .ticks{display:flex; justify-content:space-between; font-size:11px; font-weight:900; letter-spacing:.05em; color:#999; text-transform:uppercase} .ticks span.on{color:var(--greendark)}
+  .dialout{background:var(--soft); border-radius:12px; padding:18px 14px; text-align:center; margin-top:10px}
+  .dialout .snt{font-size:clamp(20px,3.6vw,28px); font-weight:900}
+  .radv{background:var(--greenlt); color:var(--greendark); border-radius:6px; padding:0 6px; box-shadow:inset 0 -2px 0 var(--green)}
+  .radj{background:var(--navylt); color:var(--navy); border-radius:6px; padding:0 6px; box-shadow:inset 0 -2px 0 var(--navy)}
+  .radv.masked{color:transparent; box-shadow:inset 0 -2px 0 var(--green); position:relative; cursor:pointer; min-width:72px; display:inline-block}
+  .radv.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .dialout .fits{font-size:14.5px; font-weight:700; color:#555; margin-top:10px} .dialout .fits .y{color:var(--greendark)} .dialout .fits .n{color:var(--think)}
+  /* ---------- combination checker ---------- */
+  .combo{border-radius:12px; padding:16px; margin-top:12px; text-align:center; border:2px solid var(--rule); background:var(--soft)}
+  .combo .pairtxt{font-size:clamp(19px,3.3vw,26px); font-weight:900} .combo .verdict{font-size:13px; font-weight:900; letter-spacing:.06em; text-transform:uppercase; margin-bottom:4px}
+  .combo .cwhy{font-size:14.5px; font-weight:600; color:#555; margin-top:8px}
+  .combo.good{border-color:var(--green); background:var(--greenlt)} .combo.good .verdict{color:var(--greendark)}
+  .combo.bad{border-color:var(--think); background:var(--thinklt)} .combo.bad .verdict{color:var(--think)} .combo.bad .pairtxt{color:var(--think); text-decoration:line-through}
+  /* special cases selector */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777} .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333} .scout b{color:var(--excep)}
+  .shiftgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:6px; margin-top:6px}
+  .shiftgrid div{background:#fff; border:1.5px solid var(--rule); border-radius:8px; padding:6px 10px; font-size:14px; font-weight:700} .shiftgrid .a{color:var(--navy)} .shiftgrid .b{color:var(--excep)}
+  /* common errors */
+  .errlist{list-style:none; margin-top:6px}
+  .errlist li{display:flex; gap:10px; align-items:center; flex-wrap:wrap; padding:8px 0; border-bottom:1px dashed var(--rule); font-size:15px; font-weight:700}
+  .errlist .bad{color:var(--think)} .errlist .bad::before{content:"✘ "} .errlist .good{color:var(--green); display:none} .errlist .good::before{content:"✔ "}
+  .errlist .why{display:none; margin:0; flex-basis:100%; font-size:13px; padding:6px 10px}
+  .errlist li.open .good,.errlist li.open .why{display:block} .errlist li.open .fixbtn{display:none}
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--green); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)} .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--greendark); border:2px solid var(--green)} .btn.small{padding:8px 14px; font-size:14px} .btn[disabled]{opacity:.45; cursor:not-allowed}
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--green); border-radius:12px; overflow:hidden; width:max-content; max-width:100%; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--green)}
+  .segbig button.on{background:var(--green); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px} .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px} .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--green); background:var(--greenlt); color:var(--greendark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block} .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px} .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--greendark); margin-left:auto}
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--greendark)} .drillhead .st{font-weight:900; color:var(--grammar)} .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--green); transition:width .3s} .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)} .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick{background:var(--think); color:#fff}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)} .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block} .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0} .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px} .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--greendark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px} details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--green); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} }
+</style>
+</head>
+<body>
+<header>
+  <span class="deco">⚡</span>
+  <div class="wrap">
+    <div class="kicker">English 6 · Unit 1 · The Prepared Mind</div>
+    <h1>⚡ The Intensity Lab</h1>
+    <div class="sub"><b>Structure 1</b> — adverb + adjective collocations: gradable vs extreme. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🧪 Sort the two families</span><span>🔧 Build the pair</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🧪 Explore<small>sort &amp; test</small></button>
+    <button data-tab="build">🔧 Build<small>make the pair</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+<main class="wrap">
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Two families of adjectives</h2>
+      <p class="muted">Adverbs like <i>very, completely, highly</i> make adjectives stronger — but they are
+        <b>not interchangeable</b>. English first splits adjectives in two: <b>gradable</b> (more or less is
+        possible) and <b>extreme / absolute</b> (all or nothing).
+        <span class="es">(Antes de elegir el adverbio, decide a qué familia pertenece el adjetivo.)</span></p>
+      <p class="muted"><b>Tap an adjective, then tap its box.</b> <span class="es">(Toca la palabra y luego la casilla — funciona con dedo o ratón.)</span></p>
+      <div class="clfhead"><span id="clfCount">Sorted: 0 / 0</span><button class="btn ghost small" id="clfReset" style="margin-left:auto">Reset ↺</button></div>
+      <div class="pool" id="clfPool"></div>
+      <div class="bins">
+        <div class="bin bgrad" data-fam="grad"><div class="bname">Gradable</div>
+          <div class="bsub">more or less is possible → very / extremely / really</div><div class="bset" id="binGrad"></div></div>
+        <div class="bin bext" data-fam="ext"><div class="bname">Extreme / non-gradable</div>
+          <div class="bsub">all or nothing → absolutely / completely / totally</div><div class="bset" id="binExt"></div></div>
+      </div>
+      <div class="clfmsg" id="clfMsg">Tap an adjective above, then tap the box you think it belongs to.</div>
+    </div>
+    <div class="card">
+      <span class="boxtag tag-navy">💡 The intensity dial</span>
+      <h2>Turn it up: <i>very tired</i> → <i>absolutely exhausted</i></h2>
+      <p class="muted">Slide the dial. Step 1 intensifies a <b>gradable</b> adjective; step 2 swaps it for the
+        <b>extreme</b> adjective that already contains “very”. Watch which adverbs each step admits.
+        <span class="es">(No se sube de intensidad con el mismo adjetivo: se cambia de adjetivo y de adverbio.)</span></p>
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the adverb, guess, then reveal</label>
+      <div class="pairchips" id="pairChips"></div>
+      <input type="range" id="dial" min="0" max="2" step="1" value="1">
+      <div class="ticks" id="ticks"><span>Plain</span><span>Strong</span><span>Extreme</span></div>
+      <div class="dialout">
+        <div class="snt" id="dialSnt"></div>
+        <div class="fits" id="dialFits"></div>
+      </div>
+      <div style="text-align:center; margin-top:8px"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the adverb ✓</button></div>
+    </div>
+    <div class="card">
+      <span class="boxtag tag-green">🧱 Learn them as blocks</span>
+      <h2>Which adjectives each adverb partners</h2>
+      <p class="muted">Some pairs are “fixed friends”: store them as one unit, not as two words.
+        <span class="es">(Memoriza el bloque completo, no las piezas.)</span></p>
+      <div class="chips" id="advChips"></div>
+      <div class="dialout" style="text-align:left">
+        <div class="snt" id="advPartners" style="font-size:clamp(16px,2.6vw,20px)"></div>
+        <div class="fits" id="advEx"></div>
+      </div>
+    </div>
+    <div class="card">
+      <span class="boxtag tag-grammar">🔍 The impossible-combination meter</span>
+      <h2>Test any combination</h2>
+      <p class="muted">Pick one adverb and one adjective. The meter marks the pair ✔ natural or ✘ impossible and
+        tells you why in one line. <span class="es">(Prueba las combinaciones que te suenan dudosas.)</span></p>
+      <h3>1 · Adverb</h3>
+      <div class="chips" id="cAdv"></div>
+      <h3>2 · Adjective</h3>
+      <div class="chips" id="cAdj"></div>
+      <div class="combo" id="comboOut"><div class="verdict">Choose an adverb and an adjective</div><div class="pairtxt">? + ?</div></div>
+    </div>
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Special cases</span>
+      <h2>The adverbs that break the two-family rule</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="really" class="on">really (both)</button><button data-v="quite">quite (two meanings)</button><button data-v="highly">highly</button><button data-v="fixed">fixed formal pairs</button><button data-v="builtin">“very” inside the word</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+    <div class="card">
+      <span class="boxtag tag-think">⚠️ Common errors</span>
+      <h2>Errors Spanish speakers make</h2>
+      <p class="muted">Spanish <i>muy</i> translates everything; English does not — check the adjective family first.
+        Read the sentence, find the problem, then tap <b>Fix</b>. <span class="es">(Adivina la corrección antes de verla.)</span></p>
+      <ul class="errlist" id="errList"></ul>
+    </div>
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Structure 1 in four moves: the tap classifier is the gradable / extreme table (17 adjectives from the manual); the intensity dial is the “extreme adjectives already contain very” rule (tired→exhausted, cold→freezing, old→ancient, big→enormous, good→perfect); the blocks card is the collocation table (absolutely · completely · totally · highly · deeply · seriously); the meter checks any adverb + adjective pair. The special-cases card covers <i>really</i>, the two meanings of <i>quite</i>, formal <i>highly</i>, the fixed formal pairs and the built-in “very”; the errors card is the manual’s pitfall list.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> the pair by choosing the adverb (exercise C and the Homework Book gap-fills), then <i>transform</i> weak <i>very + adjective</i> into strong collocations (exercise D), with validation and a model answer.</li>
+          <li><b>Drill</b> merges the quizzes into one graded engine — 13 items, 5 ★ / 4 ★★ / 4 ★★★, each level mixing multiple choice, error-hunting and typed answers (★★★ adds the pitfalls, the two meanings of <i>quite</i> and the full-pair upgrade) — with a score and streak.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-green">🔧 Your turn to produce</span>
+      <h2>Build the collocation</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+      <div id="assembleBox">
+        <p class="muted">Read the sentence, then choose the <b>adverb</b> the adjective needs. The machine builds the pair — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">The adverb should be…</div><div class="bchips" id="advPick"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New sentence →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+      <div id="transformBox" style="display:none">
+        <p class="muted">Upgrade the weak <i>very + adjective</i>. Type the stronger <b>adverb + adjective</b> pair and check it against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the adverb + adjective pair"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next sentence →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ natural or not, choose the adverb, first fixes · ★★ the odd one out, harder fixes, complete ·
+        ★★★ pitfalls, <i>quite</i>, upgrade the whole pair. Keep your streak alive.
+        <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 6 · Unit 1 «The Prepared Mind» · Structure 1 — adverb + adjective collocations · Level B1+
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE INTENSITY LAB — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 6 Class Manual (Structure 1).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+/* =====================================================================
+   EXPLORE 1 · tap classifier (tap a word, then tap a box)
+===================================================================== */
+var WORDS = [
+  {w:"cold",       f:"grad", why:"A bit cold, very cold, extremely cold — degrees are possible."},
+  {w:"tired",      f:"grad", why:"You can be slightly tired or very tired: it has degrees."},
+  {w:"good",       f:"grad", why:"Quite good, very good, really good — a scale, not a limit."},
+  {w:"useful",     f:"grad", why:"More or less useful is possible → very / extremely useful."},
+  {w:"likely",     f:"grad", why:"Probability has degrees → very likely, highly likely."},
+  {w:"accurate",   f:"grad", why:"Measurements can be more or less accurate → extremely accurate."},
+  {w:"successful", f:"grad", why:"Success has degrees → very successful, highly successful."},
+  {w:"unusual",    f:"grad", why:"Something can be a little or very unusual → highly unusual."},
+  {w:"freezing",   f:"ext",  why:"freezing = very cold. The “very” is already inside the word."},
+  {w:"exhausted",  f:"ext",  why:"exhausted = very tired → absolutely / completely exhausted."},
+  {w:"perfect",    f:"ext",  why:"Perfect is the top of the scale: nothing is more perfect."},
+  {w:"impossible", f:"ext",  why:"All or nothing → absolutely impossible, never “very impossible”."},
+  {w:"wrong",      f:"ext",  why:"Here it is absolute → completely / totally wrong."},
+  {w:"right",      f:"ext",  why:"Right is absolute → absolutely right."},
+  {w:"unique",     f:"ext",  why:"unique = one of a kind; there are no degrees of unique."},
+  {w:"essential",  f:"ext",  why:"All or nothing → absolutely essential."},
+  {w:"amazed",     f:"ext",  why:"Already a strong feeling → absolutely amazed."}
+];
+var clfSel = null, clfDone = 0;
+function setMsg(cls, html){ var m=$("clfMsg"); m.className="clfmsg"+(cls?" "+cls:""); m.innerHTML=html; }
+function flash(bin, cls){ bin.classList.add(cls); setTimeout(function(){ bin.classList.remove(cls); }, 420); }
+function renderClf(){
+  var pool=$("clfPool"); pool.innerHTML=""; clfSel=null; clfDone=0;
+  $("binGrad").innerHTML=""; $("binExt").innerHTML=""; $("clfCount").textContent="Sorted: 0 / "+WORDS.length;
+  WORDS.forEach(function(it, i){ var b=document.createElement("button"); b.className="tok"; b.textContent=it.w; b.dataset.i=i;
+    b.addEventListener("click", function(){ clfSel=i; document.querySelectorAll("#clfPool .tok").forEach(function(x){ x.classList.toggle("sel", x===b); }); setMsg("", "Now tap the box: <b>Gradable</b> or <b>Extreme / non-gradable</b>."); });
+    pool.appendChild(b);
+  });
+}
+document.querySelectorAll(".bin").forEach(function(bin){
+  bin.addEventListener("click", function(){
+    if(clfSel===null){ setMsg("", "Tap an <b>adjective</b> first, then tap a box."); return; }
+    var it=WORDS[clfSel], fam=bin.dataset.fam, tok=document.querySelector('#clfPool .tok[data-i="'+clfSel+'"]');
+    if(fam!==it.f){ flash(bin,"miss"); setMsg("no", "<b>✘ "+it.w+"</b> goes in the other box — "+it.why); return; }
+    var s=document.createElement("span"); s.textContent=it.w; $(fam==="grad"?"binGrad":"binExt").appendChild(s);
+    if(tok) tok.remove(); clfSel=null; clfDone++; $("clfCount").textContent="Sorted: "+clfDone+" / "+WORDS.length; flash(bin,"hit");
+    setMsg("ok", "<b>✔ "+it.w+"</b> — "+it.why+(clfDone===WORDS.length?" <b>All 17 sorted.</b>":""));
+  });
+});
+$("clfReset").addEventListener("click", function(){ renderClf(); setMsg("", "Tap an adjective above, then tap the box you think it belongs to."); });
+renderClf();
+/* =====================================================================
+   EXPLORE 2 · intensity dial (plain → strong → extreme)
+===================================================================== */
+var PAIRS = [
+  {g:"tired", e:"exhausted", ga:"very", ea:"absolutely", s:"After twelve hours of work the team was", note:"exhausted = very tired"},
+  {g:"cold",  e:"freezing",  ga:"very", ea:"absolutely", s:"The lab was", note:"freezing = very cold"},
+  {g:"old",   e:"ancient",   ga:"very", ea:"absolutely", s:"The telescope in the hall is", note:"ancient = very old"},
+  {g:"big",   e:"enormous",  ga:"very", ea:"absolutely", s:"The new lecture hall is", note:"enormous = very big"},
+  {g:"good",  e:"perfect",   ga:"very", ea:"absolutely", s:"Her calculations were", note:"perfect = as good as possible"}
+];
+var curPair = 0, dialVal = 1, predictMode = false, revealed = false;
+PAIRS.forEach(function(p, i){
+  var b=document.createElement("button"); b.textContent=p.g+" → "+p.e; b.dataset.k=i; if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curPair=i; revealed=false; document.querySelectorAll("#pairChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderDial(); });
+  $("pairChips").appendChild(b);
+});
+$("dial").addEventListener("input", function(){ dialVal=+this.value; revealed=false; renderDial(); });
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderDial(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderDial(); });
+function renderDial(){
+  var p=PAIRS[curPair], snt, fits, mask=predictMode && !revealed && dialVal>0;
+  if(dialVal===0){
+    snt = p.s+' <span class="radj">'+p.g+"</span>.";
+    fits = "Level 0 — no adverb at all. The adjective is <b>gradable</b>, so you can still raise it.";
+  } else if(dialVal===1){
+    snt = p.s+' <span class="radv">'+p.ga+'</span> <span class="radj">'+p.g+"</span>.";
+    fits = '<span class="y">✔ very · extremely · really '+p.g+'</span> <span style="color:#777">(<i>quite '+p.g+'</i> works too, but it weakens: “fairly”)</span><br><span class="n">✘ absolutely '+p.g+" · completely "+p.g+"</span> — gradable adjectives refuse the absolute adverbs.";
+  } else {
+    snt = p.s+' <span class="radv">'+p.ea+'</span> <span class="radj">'+p.e+"</span>.";
+    fits = '<span class="y">✔ absolutely · completely · totally · utterly · really '+p.e+'</span><br><span class="n">✘ very '+p.e+" · extremely "+p.e+"</span> — "+p.note+", so “very” is already inside the word.";
+  }
+  $("dialSnt").innerHTML=snt; $("dialFits").innerHTML=fits;
+  document.querySelectorAll("#ticks span").forEach(function(s, i){ s.classList.toggle("on", i===dialVal); });
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask){ document.querySelectorAll("#dialSnt .radv").forEach(function(el){ el.classList.add("masked"); el.addEventListener("click", function(){ revealed=true; renderDial(); }); }); }
+}
+renderDial();
+/* =====================================================================
+   EXPLORE 3 · collocation blocks (adverb → its partners)
+===================================================================== */
+var ADVB = [
+  {a:"absolutely", p:"right · correct · perfect · amazed · essential · impossible", ex:"Careful notes are <b>absolutely essential</b> in any laboratory."},
+  {a:"completely", p:"wrong · different · new · accurate · unexpected", ex:"The results of the second test were <b>completely different</b> from the first."},
+  {a:"totally",    p:"wrong · different · unexpected · successful", ex:"Röntgen’s discovery of X-rays was <b>totally unexpected</b> — he wasn’t looking for them."},
+  {a:"highly",     p:"unlikely · likely · successful · accurate · unusual · effective · recommended", ex:"The vaccine campaign was <b>highly successful</b>: cases fell by 90 %."},
+  {a:"deeply",     p:"concerned · disappointed · sorry · moved", ex:"Climate scientists are <b>deeply concerned</b> about the loss of Arctic ice."},
+  {a:"seriously",  p:"wrong · ill · injured · damaged", ex:"The storm left the antenna <b>seriously damaged</b>."}
+];
+var curAdvb = 0;
+ADVB.forEach(function(d, i){
+  var b=document.createElement("button"); b.textContent=d.a; b.dataset.k=i; if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curAdvb=i; document.querySelectorAll("#advChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderAdvb(); });
+  $("advChips").appendChild(b);
+});
+function renderAdvb(){ var d=ADVB[curAdvb]; $("advPartners").innerHTML='<span class="radv">'+d.a+'</span> + <span class="radj">'+d.p+"</span>"; $("advEx").innerHTML=d.ex; }
+renderAdvb();
+/* =====================================================================
+   EXPLORE 4 · impossible-combination meter
+===================================================================== */
+var CADV = ["very","extremely","really","absolutely","completely","totally","highly","deeply","seriously"];
+var CADJ = [
+  {w:"cold",       f:"grad", ok:["very","extremely","really"]},
+  {w:"tired",      f:"grad", ok:["very","extremely","really"]},
+  {w:"successful", f:"grad", ok:["very","extremely","really","highly","totally"]},
+  {w:"accurate",   f:"grad", ok:["very","extremely","really","highly","completely","totally"]},
+  {w:"unlikely",   f:"grad", ok:["very","extremely","really","highly"]},
+  {w:"concerned",  f:"grad", ok:["very","extremely","really","deeply"]},
+  {w:"injured",    f:"grad", ok:["really","seriously"], fixed:"seriously injured"},
+  {w:"freezing",   f:"ext",  ok:["absolutely","completely","totally","really"]},
+  {w:"exhausted",  f:"ext",  ok:["absolutely","completely","totally","really"]},
+  {w:"perfect",    f:"ext",  ok:["absolutely","completely","totally","really"]},
+  {w:"wrong",      f:"ext",  ok:["absolutely","completely","totally","really","seriously"]},
+  {w:"essential",  f:"ext",  ok:["absolutely","completely","totally","really"]},
+  {w:"impossible", f:"ext",  ok:["absolutely","completely","totally","really"]}
+];
+var pickAdv = null, pickAdj = null;
+function buildChips(host, list, cb){
+  list.forEach(function(v, i){
+    var b=document.createElement("button"); b.textContent=v; b.dataset.k=i;
+    b.addEventListener("click", function(){ document.querySelectorAll("#"+host+" button").forEach(function(x){ x.classList.toggle("on", x===b); }); cb(i); renderCombo(); });
+    $(host).appendChild(b);
+  });
+}
+buildChips("cAdv", CADV, function(i){ pickAdv=CADV[i]; });
+buildChips("cAdj", CADJ.map(function(a){ return a.w; }), function(i){ pickAdj=CADJ[i]; });
+function comboWhy(adv, adj, ok){
+  if(ok){
+    if(adv==="really") return "<b>really</b> is the universal intensifier — it works with both families.";
+    if(adj.f==="grad" && (adv==="very"||adv==="extremely")) return "<b>"+adj.w+"</b> is gradable, so very / extremely / really fit.";
+    if(adj.f==="ext" && adv!=="seriously") return "<b>"+adj.w+"</b> is extreme, so absolutely / completely / totally fit.";
+    if(adv==="highly") return "<b>highly</b> = “very” in formal style, with probability and success words.";
+    if(adv==="deeply") return "<b>deeply</b> partners feelings: concerned, disappointed, sorry, moved.";
+    if(adv==="seriously") return "<b>seriously</b> partners damage and illness: wrong, ill, injured, damaged.";
+    return "<b>"+adj.w+"</b> is gradable, but it also names a limit you can reach — so it takes <b>"+adv+"</b> as a fixed block, not only very / extremely.";
+  }
+  if(adj.fixed) return "English keeps a fixed partner here: <b>"+adj.fixed+"</b>.";
+  if(adj.f==="ext" && (adv==="very"||adv==="extremely")) return "<b>"+adj.w+"</b> is extreme (all or nothing): “very” is already inside it. Use absolutely / completely / totally.";
+  if(adj.f==="grad" && (adv==="absolutely"||adv==="completely"||adv==="totally")) return "<b>"+adj.w+"</b> is gradable (more or less is possible): the safe adverbs are very / extremely / really. Only the blocks in your collocation table take an absolute adverb.";
+  if(adv==="highly") return "<b>highly</b> goes with probability and success words: unlikely, likely, successful, accurate, unusual, effective, recommended.";
+  if(adv==="deeply") return "<b>deeply</b> goes with feelings: concerned, disappointed, sorry, moved.";
+  if(adv==="seriously") return "Your collocation blocks give <b>seriously</b> only damage and illness partners: wrong, ill, injured, damaged.";
+  return "Not a pair English uses — check the collocation blocks above.";
+}
+function renderCombo(){
+  var box=$("comboOut");
+  if(!pickAdv || !pickAdj){ box.className="combo"; box.innerHTML='<div class="verdict">Choose an adverb and an adjective</div><div class="pairtxt">'+(pickAdv||"?")+" + "+(pickAdj?pickAdj.w:"?")+"</div>"; return; }
+  var ok = pickAdj.ok.indexOf(pickAdv)>=0;
+  box.className = "combo "+(ok?"good":"bad");
+  box.innerHTML = '<div class="verdict">'+(ok?"✔ Natural":"✘ Impossible combination")+'</div><div class="pairtxt">'+pickAdv+" "+pickAdj.w+'</div><div class="cwhy">'+comboWhy(pickAdv, pickAdj, ok)+"</div>";
+}
+renderCombo();
+/* =====================================================================
+   EXPLORE 5 · special cases
+===================================================================== */
+var SC = {
+  really:"<b>really</b> is the universal intensifier: it works with <b>both</b> families. ✔ really cold (gradable) · ✔ really impossible (extreme) · ✔ really freezing. When you are not sure which family an adjective belongs to, <b>really</b> is the safe choice.",
+  quite:'<b>quite</b> changes meaning with the family:<div class="shiftgrid"><div><span class="a">quite good</span> → <span class="b">more or less good</span></div><div><span class="a">quite impossible</span> → <span class="b">completely impossible</span></div></div>With a <b>gradable</b> adjective it weakens (“fairly”); with an <b>extreme</b> adjective it means “absolutely”. Same word, opposite force.',
+  highly:"<b>highly</b> = “very” in <b>formal</b> style, and it keeps narrow company: probability and success words. ✔ highly unlikely · highly likely · highly successful · highly accurate · highly unusual · highly effective · highly recommended. ✘ highly wrong · ✘ highly freezing · ✘ highly impossible.",
+  fixed:'<b>Fixed formal pairs</b> — store the block, not the pieces:<div class="shiftgrid"><div class="b">highly recommended</div><div class="b">deeply sorry</div><div class="b">seriously injured</div><div class="b">utterly ridiculous</div><div class="b">fully aware</div><div class="b">perfectly normal</div></div>',
+  builtin:'<b>Extreme adjectives already contain “very”.</b> That is exactly why <i>very</i> sounds wrong with them:<div class="shiftgrid"><div><span class="a">exhausted</span> = <span class="b">very tired</span></div><div><span class="a">freezing</span> = <span class="b">very cold</span></div><div><span class="a">ancient</span> = <span class="b">very old</span></div></div>To intensify one of these, change the <b>adverb</b>, not the temperature: <i>absolutely exhausted</i>.'
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML = SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.really;
+/* =====================================================================
+   EXPLORE 6 · common errors
+===================================================================== */
+var ERR = [
+  {bad:"The result was very perfect.", good:"The result was absolutely perfect.", why:"<i>perfect</i> is extreme: it takes absolutely / completely, never <i>very</i>."},
+  {bad:"This method is very unique.", good:"This method is unique. / absolutely unique.", why:"<i>unique</i> means one of a kind — there are no degrees of unique."},
+  {bad:"After the night shift we were absolutely tired.", good:"…we were completely exhausted. / very tired.", why:"<i>tired</i> is gradable: keep <i>very tired</i>, or upgrade the adjective to <i>exhausted</i>."},
+  {bad:"Her answer was completely good.", good:"Her answer was really good.", why:"<i>good</i> is gradable, so the absolute adverbs do not fit: really / very good."},
+  {bad:"The lake water was very freezing.", good:"The lake water was absolutely freezing.", why:"<i>freezing</i> = very cold; the “very” is already inside the adjective."},
+  {bad:"That outcome is highly impossible.", good:"That outcome is absolutely impossible.", why:"<i>highly</i> partners probability words (unlikely, likely); <i>impossible</i> is absolute."},
+  {bad:"Her measurements were absolutely accurate.", good:"Her measurements were extremely / completely accurate.", why:"<i>accurate</i> takes extremely, highly or completely — not <i>absolutely</i>."},
+  {bad:"The bridge was completely damaged by the flood.", good:"The bridge was seriously damaged by the flood.", why:"Damage words take <i>seriously</i>: seriously damaged, seriously injured."}
+];
+ERR.forEach(function(e){
+  var li=document.createElement("li");
+  li.innerHTML='<span class="bad">'+e.bad+'</span><button class="btn ghost small fixbtn">Fix ✓</button><span class="good">'+e.good+'</span><div class="why">'+e.why+"</div>";
+  li.querySelector(".fixbtn").addEventListener("click", function(){ li.classList.add("open"); }); $("errList").appendChild(li);
+});
+/* =====================================================================
+   BUILD · assemble (choose the adverb) + transform (upgrade the pair)
+===================================================================== */
+var BUILD = [
+  {ctx:"Röntgen’s discovery of X-rays was {A} unexpected — he wasn’t looking for them at all.", options:["totally","seriously","deeply"], correct:"totally", note:"<i>unexpected</i> is extreme → totally / completely unexpected."},
+  {ctx:"Careful notes are {A} essential in any laboratory.", options:["very","absolutely","highly"], correct:"absolutely", note:"<i>essential</i> is all-or-nothing → absolutely essential."},
+  {ctx:"It is {A} unlikely that life exists on the surface of Venus.", options:["absolutely","completely","highly"], correct:"highly", note:"<i>highly</i> is the formal partner of probability words: highly unlikely."},
+  {ctx:"The storm left the antenna {A} damaged.", options:["absolutely","seriously","deeply"], correct:"seriously", note:"Damage words take <i>seriously</i>: seriously damaged."},
+  {ctx:"After twelve hours of work we were {A} exhausted.", options:["very","highly","completely"], correct:"completely", note:"<i>exhausted</i> already means very tired → completely / absolutely exhausted."},
+  {ctx:"We are {A} grateful for your donation.", options:["deeply","seriously","totally"], correct:"deeply", note:"<i>deeply</i> partners feelings: deeply grateful, deeply sorry, deeply concerned."},
+  {ctx:"The vaccine campaign was {A} successful: cases fell by 90 %.", options:["absolutely","highly","deeply"], correct:"highly", note:"<i>highly</i> partners success words: highly successful, highly effective."},
+  {ctx:"The lab was {A} freezing this morning.", options:["very","highly","absolutely"], correct:"absolutely", note:"<i>freezing</i> = very cold, an extreme adjective → absolutely freezing."},
+  {ctx:"Visitors were {A} amazed by the robot’s precision.", options:["absolutely","very","seriously"], correct:"absolutely", note:"<i>amazed</i> is already a strong feeling → absolutely amazed."},
+  {ctx:"It’s {A} recommended to book in advance.", options:["absolutely","deeply","highly"], correct:"highly", note:"Fixed formal pair: highly recommended."},
+  {ctx:"The first hypothesis was {A} wrong, so the team started again.", options:["completely","very","highly"], correct:"completely", note:"<i>wrong</i> is absolute here → completely / totally wrong."},
+  {ctx:"A {A} trained team monitors the volcano day and night.", options:["absolutely","highly","seriously"], correct:"highly", note:"<i>highly</i> also marks level of skill: a highly trained team."}
+];
+var bi = 0, bPick = null, bBuilt = 0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m; $("assembleBox").style.display=m==="assemble"?"block":"none"; $("transformBox").style.display=m==="transform"?"block":"none";
+  });
+});
+function renderBuild(){
+  var it=BUILD[bi]; bPick=null;
+  $("bctx").innerHTML = it.ctx.replace("{A}", "<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>");
+  var wrap=$("advPick"); wrap.innerHTML="";
+  it.options.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ bPick=op; document.querySelectorAll("#advPick button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bPick){ r.className="bresult bad"; r.innerHTML="Choose the adverb first."; return; }
+  if(bPick===it.correct){
+    var sent=it.ctx.replace("{A}", '<span class="radv">'+it.correct+"</span>");
+    r.className="bresult good"; r.innerHTML="✅ "+sent+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    document.querySelector('#advPick button[data-v="'+bPick+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ Not that one. <span class='bnote'>Hint — "+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+var TRANS = [
+  {ctx:"The lab was <b>very cold</b> this morning.", accept:["absolutely freezing","completely freezing","totally freezing","utterly freezing","really freezing"], model:"absolutely freezing"},
+  {ctx:"After 12 hours of work, we were <b>very tired</b>.", accept:["completely exhausted","absolutely exhausted","totally exhausted","utterly exhausted"], model:"completely exhausted"},
+  {ctx:"Her calculations were <b>very good</b> — no errors at all.", accept:["absolutely perfect","completely accurate","extremely accurate","totally perfect","highly accurate"], model:"absolutely perfect / completely accurate"},
+  {ctx:"The old method and the new one are <b>very different</b>.", accept:["completely different","totally different"], model:"completely / totally different"},
+  {ctx:"Winning twice is <b>very improbable</b>.", accept:["highly unlikely","very unlikely","extremely unlikely"], model:"highly unlikely"},
+  {ctx:"The results were <b>very surprising</b> — nobody predicted them.", accept:["totally unexpected","completely unexpected"], model:"totally / completely unexpected"},
+  {ctx:"The new lecture hall is <b>very big</b>.", accept:["absolutely enormous","completely enormous","totally enormous","utterly enormous","really enormous"], model:"absolutely enormous"},
+  {ctx:"Her prediction was <b>very exact</b>.", accept:["extremely accurate","completely accurate","highly accurate"], model:"extremely / completely accurate"},
+  {ctx:"The patient is <b>very ill</b>.", accept:["seriously ill"], model:"seriously ill"},
+  {ctx:"We are <b>very grateful</b> for your donation.", accept:["deeply grateful"], model:"deeply grateful"}
+];
+var ti = 0, tDone = 0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML="Upgrade it: "+it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+/* =====================================================================
+   DRILL · one graded flow (13 items · 5★ / 4★★ / 4★★★)
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Natural or not?", q:"Which combination is natural?", o:["very cold", "absolutely cold"], a:0, w:"<i>cold</i> is gradable (more or less is possible) → very / extremely / really cold."},
+  {kind:"mc", diff:1, tag:"Natural or not?", q:"Which combination is natural?", o:["very right", "absolutely right"], a:1, w:"<i>right</i> is absolute — all or nothing → absolutely right."},
+  {kind:"mc", diff:1, tag:"Choose the adverb", q:"Rain tomorrow is ___ unlikely, says the forecast.", o:["highly", "absolutely"], a:0, w:"<i>highly</i> is the partner of probability words: highly unlikely, highly likely."},
+  {kind:"error", diff:1, tag:"Fix the error", words:["The","results","were","very","wrong,","so","we","started","again."], bad:3, fixOld:"very wrong", fixNew:"completely wrong", w:"<i>wrong</i> is absolute here, so it takes completely / totally, not very."},
+  {kind:"fill", diff:1, tag:"Complete it", q:"The lake water was ___ freezing, but we swam anyway. (one adverb)", accept:["absolutely","completely","totally","utterly","really"], w:"<i>freezing</i> is extreme → absolutely / completely / totally / utterly (or the universal <i>really</i>)."},
+  {kind:"mc", diff:2, tag:"Odd one out", q:"Which adjective does NOT collocate with <b>absolutely</b>?", o:["perfect","amazed","tired","essential"], a:2, w:"<i>absolutely</i> needs an extreme adjective; <i>tired</i> is gradable → very tired, or absolutely exhausted."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["She","was","absolutely","tired","after","the","night","shift."], bad:2, fixOld:"absolutely tired", fixNew:"very tired (or completely exhausted)", w:"The adjective <i>tired</i> is fine — the adverb is not. <i>tired</i> is gradable, so keep <i>very tired</i>; if you want the extreme, change both halves: <i>completely exhausted</i>."},
+  {kind:"fill", diff:2, tag:"Complete it", q:"Careful notes are ___ essential in any laboratory. (one adverb)", accept:["absolutely","completely","totally","utterly"], w:"<i>essential</i> is extreme → absolutely / completely / totally / utterly; the manual’s pair is <i>absolutely essential</i>."},
+  {kind:"mc", diff:2, tag:"Which adverb?", q:"Which adverb partners <i>concerned</i>, <i>disappointed</i> and <i>sorry</i>?", o:["seriously", "deeply", "highly"], a:1, w:"<i>deeply</i> partners feelings: deeply concerned, deeply sorry, deeply moved."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["The","new","method","is","completely","good","for","small","samples."], bad:4, fixOld:"completely good", fixNew:"really good", w:"<i>good</i> is gradable, so the absolute adverbs do not fit: really / very good."},
+  {kind:"fill", diff:3, tag:"Upgrade the pair", q:"Winning twice is very improbable. → Winning twice is ___. (adverb + adjective)", accept:["highly unlikely","very unlikely","extremely unlikely"], w:"The formal probability pair is <i>highly unlikely</i>."},
+  {kind:"mc", diff:3, tag:"The quite trap", q:"“The talk was <b>quite good</b>.” This means the talk was…", o:["more or less good", "completely good"], a:0, w:"<i>quite</i> + gradable = more or less; <i>quite</i> + extreme (quite impossible) = completely."},
+  {kind:"fill", diff:3, tag:"Upgrade the pair", q:"By midnight the engineers were very tired. → By midnight they were ___. (adverb + adjective)", accept:["completely exhausted","absolutely exhausted","totally exhausted","utterly exhausted"], w:"Upgrade both halves: tired → exhausted, and very → completely / absolutely."}
+];
+var di = 0, dscore = 0, dstreak = 0, ddone = false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i6_s1_drill_best")||0); if(dscore>best){ store("i6_s1_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Both families under control. Ready for the ★★★ homework." : dscore>=8?"Good collocating — review the blocks card and go again." : "Re-read Structure 1, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+"</button>"; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+"</span> "; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">\u2713 Correct.</span> ':'<span class="k">\u2717 Not that one: the green part is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

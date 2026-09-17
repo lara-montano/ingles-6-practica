@@ -428,16 +428,16 @@ renderTrans();
 ===================================================================== */
 var DRILL = [
   {kind:"mc", diff:1, tag:"Match the meaning", q:"“as long as” means…", o:["only if","except if","because"], a:0, w:"“as long as” sets a condition = only if."},
-  {kind:"mc", diff:1, tag:"Choose the linker", q:"“The experiment is safe ___ you follow the protocol.”", o:["as long as","in case"], a:0, w:"“as long as” = only if (a condition)."},
+  {kind:"mc", diff:1, tag:"Choose the linker", q:"“The experiment is safe ___ you follow the protocol.”", o:["in case", "as long as"], a:1, w:"“as long as” = only if (a condition)."},
   {kind:"mc", diff:1, tag:"Choose the linker", q:"“Save your work ___ the computer crashes.”", o:["in case","unless"], a:0, w:"“in case” = a precaution, done in advance."},
   {kind:"error", diff:2, tag:"Fix the error", words:["Unless","you","don’t","hurry,","we’ll","be","late."], bad:2, fixOld:"don’t hurry", fixNew:"hurry", w:"“unless” already means “if… not”. Drop the “don’t”."},
   {kind:"error", diff:2, tag:"Fix the error", words:["Once","that","the","test","ends,","hand","in","your","paper."], bad:1, fixOld:"Once that", fixNew:"Once", w:"“una vez que” ≠ “once that”. Just: Once the test ends…"},
   {kind:"fill", diff:2, tag:"Complete", q:"“Keep a printed copy ___ the file gets corrupted.” (a precaution)", accept:["in case"], w:"A precaution done in advance = in case."},
-  {kind:"mc", diff:2, tag:"even if / even though", q:"“___ it’s expensive, I’ll buy it.” (I don’t know the price yet)", o:["Even if","Even though"], a:0, w:"A condition you’re unsure about → even if. (even though = a known fact.)"},
+  {kind:"mc", diff:2, tag:"even if / even though", q:"“___ it’s expensive, I’ll buy it.” (I don’t know the price yet)", o:["Even though", "Even if"], a:1, w:"A condition you’re unsure about → even if. (even though = a known fact.)"},
   {kind:"error", diff:2, tag:"Fix the error", words:["In","case","that","it","rains,","take","a","jacket."], bad:2, fixOld:"In case that", fixNew:"In case", w:"No “that” after “in case”: In case it rains…"},
   {kind:"mc", diff:3, tag:"in case vs if", q:"“I’ll take an umbrella ___ it rains.” (as a precaution, before)", o:["in case","if"], a:0, w:"A precaution done beforehand → in case. (“if” = a reaction, after it starts.)"},
   {kind:"fill", diff:3, tag:"Rewrite (UNLESS)", q:"“If you don’t wear goggles, you can’t enter.” →", accept:["unless you wear goggles you can't enter","unless you wear goggles you cannot enter"], w:"if… not → unless: Unless you wear goggles, you can’t enter."},
-  {kind:"mc", diff:3, tag:"since = ?", q:"“We’ve known each other ___ 2019.”", o:["since","because"], a:0, w:"With a point in past time, “since” is a time word, not “because”."},
+  {kind:"mc", diff:3, tag:"since = ?", q:"“We’ve known each other ___ 2019.”", o:["because", "since"], a:1, w:"With a point in past time, “since” is a time word, not “because”."},
   {kind:"mc", diff:3, tag:"whether or not", q:"“The launch will happen ___ it rains or not.”", o:["whether","unless"], a:0, w:"“whether … or not” covers both cases at once."}
 ];
 var di=0, dscore=0, dstreak=0, ddone=false;

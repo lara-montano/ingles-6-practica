@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE STACKING MACHINE · English 6 · Unit 4 "Ahead of the Curve"
+  Structure 8 — noun modifiers (noun + noun): order, head, singular rule
+  Three modes: Explore (stack the nouns) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Structure 8 · The Stacking Machine · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --wine:#8C2F53; --winedark:#5E1F38; --winelt:#F4E5EC;   /* Unit 4 identity */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--wine),var(--winedark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#F0C9D8; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#F6DCE6; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--winedark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none} section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--winedark); margin-bottom:6px} .card h3{font-size:15px; color:var(--winedark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px} .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-wine{background:var(--wine)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)} .chips button.on{border-color:var(--wine); background:var(--winelt); color:var(--winedark)}
+
+  /* ---------- the stacking machine ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .mach{background:var(--soft); border-radius:12px; padding:14px 10px; margin-top:8px} .slots{display:flex; gap:7px; flex-wrap:wrap; justify-content:center}
+  .slot{min-width:88px; min-height:50px; border:2px dashed var(--rule); border-radius:10px; background:#fff; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:4px 10px; font:800 clamp(14px,2.4vw,17px) Lato,sans-serif; color:#c2c2c2; cursor:pointer}
+  .slot .n{font-size:10px; letter-spacing:.06em; font-weight:900; color:#bbb; text-transform:uppercase}
+  .slot.head{border-color:var(--wine); background:var(--winelt)} .slot.head .n{color:var(--wine)}
+  .slot.filled{border-style:solid; border-color:var(--navy); background:var(--navylt); color:var(--navy)}
+  .slot.filled.head{border-color:var(--wine); background:var(--winelt); color:var(--winedark)} .slot.target{border-color:var(--grammar); box-shadow:0 0 0 3px var(--grammarlt)}
+  .bin{display:flex; gap:7px; flex-wrap:wrap; justify-content:center; margin-top:14px}
+  .bin button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:9px 14px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .bin button.sel{border-color:var(--grammar); background:var(--grammarlt); color:var(--grammar); box-shadow:0 0 0 3px var(--grammarlt)}
+  .machhint{text-align:center; font-size:13px; font-weight:700; color:#8a8a8a; margin-top:12px} .modelline{text-align:center; font-size:14px; font-weight:800; color:#777; margin-top:8px}
+  .sout{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:14px; border-radius:12px; margin-top:12px; display:none}
+  .sout.good{background:var(--greenlt); border:2px solid var(--green); display:block} .sout.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .gloss{font-size:15px; font-weight:700; color:#555; margin-top:8px}
+  .rhead,.rmod,.radj{border-radius:6px; padding:0 5px}
+  .rhead{background:var(--winelt); color:var(--winedark); box-shadow:inset 0 -2px 0 var(--wine)}
+  .rmod{background:var(--grammarlt); color:var(--grammar); box-shadow:inset 0 -2px 0 var(--grammar)}
+  .radj{background:var(--exceplt); color:var(--excep); box-shadow:inset 0 -2px 0 var(--excep)}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px; justify-content:center} .legend span{border-radius:6px; padding:1px 8px}
+
+  /* ---------- singular rule contrast ---------- */
+  .vs{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px}
+  .vsbox{border-radius:12px; padding:12px 14px; text-align:center}
+  .vsbad{background:var(--thinklt); border:2px solid var(--think)} .vsgood{background:var(--greenlt); border:2px solid var(--green)}
+  .vsbox .lab{font-size:11px; font-weight:900; letter-spacing:.07em; text-transform:uppercase}
+  .vsbad .lab{color:var(--think)} .vsgood .lab{color:var(--greendark)} .vsgood .p{color:var(--greendark)}
+  .vsbox .p{font-size:clamp(16px,2.9vw,21px); font-weight:800; margin-top:3px}
+  .vsbad .p{color:var(--think); text-decoration:line-through}
+  .vsnote{margin-top:9px; font-size:14px; font-weight:700; color:#555; text-align:center}
+
+  /* ---------- of ↔ chain compressor ---------- */
+  .xcard{border-radius:12px; padding:13px 16px; margin:8px 0; position:relative}
+  .xcard .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase} .xcard .snt{font-size:clamp(17px,3vw,23px); font-weight:800; margin-top:4px; line-height:1.55}
+  .xlong{background:var(--navylt); border:2px solid var(--navy)} .xlong .role{color:var(--navy)}
+  .xshort{background:var(--winelt); border:2px solid var(--wine)} .xshort .role{color:var(--winedark)}
+  .arrowdown{text-align:center; font-size:26px; color:var(--grammar); margin:-2px 0}
+  .masked{display:inline-block; min-width:180px; min-height:1.3em; color:transparent; position:relative; cursor:pointer; background:#EDEDED; border-radius:8px; vertical-align:middle}
+  .masked::after{content:"? ? ?"; position:absolute; inset:0; color:#9a9a9a; font-weight:900; letter-spacing:.16em; display:flex; align-items:center; justify-content:center}
+
+  /* ---------- special cases + pitfalls ---------- */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; flex-wrap:wrap; max-width:100%}
+  .seg2 button{border:0; background:#fff; padding:7px 13px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333} .scout b{color:var(--excep)}
+  .fixrow{display:flex; gap:8px; align-items:center; flex-wrap:wrap; padding:7px 0; border-bottom:1px dashed var(--rule); font-size:15px; font-weight:700}
+  .fixrow:last-of-type{border-bottom:0} .fixrow .arw{color:var(--grammar); font-weight:900}
+  .fixrow .bad{color:var(--think); text-decoration:line-through} .fixrow .good{color:var(--greendark); font-weight:800}
+  .fixrow .nt{color:#777; font-weight:600; font-size:13px; flex:1; min-width:170px}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--wine); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)} .btn[disabled]{opacity:.45; cursor:not-allowed}
+  .btn.ghost{background:#fff; color:var(--winedark); border:2px solid var(--wine)} .btn.small{padding:8px 14px; font-size:14px}
+  .brow{display:flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-top:14px; align-items:center}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--wine); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--wine)} .segbig button.on{background:var(--wine); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--wine); background:var(--winelt); color:var(--winedark)} .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block} .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px} .bscore{font-weight:900; color:var(--winedark); margin-left:auto}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--winedark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--wine); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)} .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick{background:var(--think); color:#fff}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)} .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block} .why .k{color:var(--green); font-weight:900} .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px} .medal{font-size:48px; text-align:center} .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--winedark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none} details.teacher .inner{padding:0 16px 14px; font-size:14px} details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--wine); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} .vs{grid-template-columns:1fr} .slot{min-width:74px; padding:4px 7px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🧱</span>
+  <div class="wrap">
+    <div class="kicker">English 6 · Unit 4 · Ahead of the Curve</div>
+    <h1>🧱 The Stacking Machine</h1>
+    <div class="sub"><b>Structure 8</b> — noun modifiers (noun + noun): the order, the head, the singular rule. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🧱 Explore the stack</span><span>🔧 Build a phrase</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🧱 Explore<small>stack the nouns</small></button>
+    <button data-tab="build">🔧 Build<small>make it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Stack the nouns: the head goes last</h2>
+      <p class="muted">English piles nouns up to describe a product in a few words. The <b>last noun is the head</b> — the main thing; every noun to its left describes the one on its <b>right</b>. Read a long chain <b>from right to left</b>. <span class="es">(El núcleo va al final; se lee de derecha a izquierda.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the model order, guess, then reveal</label>
+
+      <h3>1 · Choose a product phrase</h3>
+      <div class="chips" id="stChips"></div>
+
+      <div class="mach">
+        <div class="slots" id="slots"></div>
+        <div class="bin" id="bin"></div>
+        <div class="machhint">👆 Tap a word, then tap the slot where it goes. Tap a word in a slot to take it back. <span class="es">(Sin arrastrar: tocar y colocar.)</span></div>
+        <div class="modelline" id="modelLine"></div>
+        <div style="text-align:center; margin-top:6px"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the model order ✓</button></div>
+      </div>
+
+      <div class="sout" id="sout"></div>
+      <div class="brow">
+        <button class="btn" id="sCheck">Stack it 🧱</button>
+        <button class="btn ghost small" id="sClear">Clear ↺</button>
+        <button class="btn ghost small" id="sNext">New phrase →</button>
+        <span class="bscore" id="sScore">Stacked: 0</span>
+      </div>
+      <div class="legend"><span class="radj">adjective</span><span class="rmod">noun modifier</span><span class="rhead">head noun</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠️ The singular rule</span>
+      <h2>The modifier noun is singular</h2>
+      <p class="muted">The noun that describes works like an adjective, so it drops the plural <b>-s</b> — even when the idea is plural: <b>a two-door car</b>, never <i>two-doors</i>. Tap a pair to see it before and after. <span class="es">(El sustantivo que modifica va en singular.)</span></p>
+      <div class="chips" id="sgChips"></div>
+      <div class="vs">
+        <div class="vsbox vsbad"><div class="lab">✘ before</div><div class="p" id="sgBad"></div></div>
+        <div class="vsbox vsgood"><div class="lab">✔ after</div><div class="p" id="sgGood"></div></div>
+      </div>
+      <div class="vsnote" id="sgNote"></div>
+      <p class="muted" style="margin-top:10px">⭐ Careful: a few fixed compounds keep the plural — <b>a sports car</b>, <b>a clothes shop</b>, <b>a sales team</b>. See the special-cases card below.</p>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">🗜️ The compressor</span>
+      <h2>From the long <i>of / for / that</i> version to the chain</h2>
+      <p class="muted">Both versions are correct English. The long one explains; the compressed one is what labels, adverts and product names use. Pick a phrase and compress it. <span class="es">(La versión larga explica; la comprimida es la de las etiquetas y anuncios.)</span></p>
+      <div class="chips" id="cpChips"></div>
+      <div class="xcard xlong"><div class="role">Long version — with of / for / that</div><div class="snt" id="cpLong"></div></div>
+      <div class="arrowdown">⬇</div>
+      <div class="xcard xshort"><div class="role">Compressed — noun + noun</div><div class="snt" id="cpShort"></div></div>
+      <div style="text-align:center"><button class="btn ghost small" id="cpBtn" style="display:none">Compress ⚙</button></div>
+      <div class="gloss" id="cpNote"></div>
+      <p class="muted" style="margin-top:10px"><b>Which one when?</b> Use the chain for a <b>type of thing</b> (a water bottle, a retail price). Go back to <b>of</b> when the chain grows past about three modifiers: ✔ <b>the manager of the customer service department</b>.</p>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Exceptions &amp; special cases</span>
+      <h2>Plurals that stay, possessives, spelling &amp; overload</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="singular" class="on">singular first</button><button data-v="plural">but plural</button><button data-v="possessive">noun or ’s</button><button data-v="spelling">one word or two</button><button data-v="adjfirst">adjectives</button><button data-v="overload">don’t overload</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">🚑 Typical mistakes</span>
+      <h2>What Spanish speakers usually get wrong</h2>
+      <p class="muted">In Spanish the head comes first and the modifier follows with <i>de</i> (<i>botella de agua</i>); in English the order is reversed and the head lands at the end. <span class="es">(Invierte el orden del español y lee la cadena de derecha a izquierda.)</span></p>
+      <div id="pitList"></div>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Structure 8 made touchable: the stacking machine uses the manual’s own jumbled/correct pairs (<i>luxury car production line</i>, <i>soft drink can manufacturing process</i>, <i>sportswear design concept</i>, <i>Brasília children’s clothing factory</i>, <i>uniformed city street cleaners</i>) and reads each chain right to left. The singular card, the compressor, the five exceptions and the pitfall box come straight from the section.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> the modifier + head for a given meaning (exercise C), then <i>transform</i> — ordering tasks and error corrections from exercises B and D plus Task set 26 of the Homework Book.</li>
+          <li><b>Drill</b> is one graded flow of 13 items (★ head and singular · ★★ order and error correction · ★★★ four-word chains, possessive, fixed plurals) with score, streak and best result on the device.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio. Touch only: no drag and drop.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-wine">🔧 Your turn to produce</span>
+      <h2>Build a noun phrase</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the meaning, then choose the <b>modifier</b> and the <b>head</b>. The machine stacks them — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">The modifier (it describes)</div><div class="bchips" id="modChips"></div></div>
+        <div class="bgroup"><div class="glab">The head (the main thing)</div><div class="bchips" id="headChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Stack it 🔧</button><button class="btn ghost" id="bNext">New meaning →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Order the words, rewrite the phrase or correct the mistake. Type the <b>noun phrase only</b> and check it against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the noun phrase"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next phrase →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ head &amp; singular · ★★ order &amp; fix the error · ★★★ long chains, possessive &amp; fixed plurals. Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 6 · Unit 4 «Ahead of the Curve» · Structure 8 — noun modifiers (noun + noun) · Level B1+
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE STACKING MACHINE — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 6 Class Manual (Structure 8).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE 1 · the stacking machine (tap a word, tap a slot)
+===================================================================== */
+function tag(c,w){ return '<span class="'+c+'">'+w+"</span>"; }
+var STACK = [
+  {label:"🚗 A production line", art:"a", bin:["car","line","production","luxury"], answer:["luxury","car","production","line"], adj:0,
+   gloss:"Right to left: a <b>line</b> ← for <b>production</b> ← of <b>cars</b> ← that are <b>luxury</b>.", note:"The head is line. Production is closest to it because it is the most closely linked; luxury is the most general description, so it goes furthest left."},
+  {label:"🥤 A can-making process", art:"a", bin:["manufacturing","process","soft drink","can"], answer:["soft drink","can","manufacturing","process"], adj:0,
+   gloss:"Right to left: a <b>process</b> ← for <b>manufacturing</b> ← <b>cans</b> ← for <b>soft drinks</b>.", note:"Four steps, one head. Note can, not cans: the modifier noun stays singular."},
+  {label:"👟 A design idea", art:"a", bin:["concept","design","sportswear"], answer:["sportswear","design","concept"], adj:0,
+   gloss:"Right to left: a <b>concept</b> ← for the <b>design</b> ← of <b>sportswear</b>.", note:"Two modifiers and one head. Three modifiers is usually the comfortable limit; beyond that, go back to of."},
+  {label:"🧵 A clothing factory", art:"a", bin:["children’s clothing","Brasília","factory"], answer:["Brasília","children’s clothing","factory"], adj:0,
+   gloss:"Right to left: a <b>factory</b> ← for <b>children’s clothing</b> ← in <b>Brasília</b>.", note:"The place name is the most general description, so it goes furthest from the head."},
+  {label:"🧹 City workers", art:"", bin:["street","city","cleaners","uniformed"], answer:["uniformed","city","street","cleaners"], adj:1,
+   gloss:"Right to left: <b>cleaners</b> ← of <b>streets</b> ← in the <b>city</b> ← who wear a <b>uniform</b>.", note:"Uniformed is an adjective, so it comes before the noun modifiers."},
+  {label:"🎾 Tennis shoes", art:"", bin:["leather","tennis","shoes","white"], answer:["white","leather","tennis","shoes"], adj:1,
+   gloss:"Right to left: <b>shoes</b> ← for <b>tennis</b> ← made of <b>leather</b> ← that are <b>white</b>.", note:"Colour is an adjective: adjectives go before the noun modifiers, as in a beautiful silk evening dress."}
+];
+function builtPhrase(it){
+  var parts=[], n=it.answer.length;
+  it.answer.forEach(function(w,i){ parts.push(tag(i===n-1?"rhead":(i<it.adj?"radj":"rmod"), w)); });
+  return (it.art?it.art+" ":"")+parts.join(" ");
+}
+var si=0, sel=-1, placed=[], predictMode=false, revealed=false, sDone=0;
+function resetSlots(){ placed=[]; sel=-1; for(var i=0;i<STACK[si].answer.length;i++) placed.push(-1); $("sout").className="sout"; $("sout").innerHTML=""; }
+STACK.forEach(function(it,k){
+  var b=document.createElement("button"); b.innerHTML=it.label; b.dataset.k=k;
+  if(k===0) b.classList.add("on");
+  b.addEventListener("click", function(){ si=k; revealed=false; document.querySelectorAll("#stChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===k); }); resetSlots(); renderStack(); });
+  $("stChips").appendChild(b);
+});
+function slotClick(){
+  var i=+this.dataset.i;
+  if(placed[i]>=0){ placed[i]=-1; sel=-1; renderStack(); return; }
+  if(sel>=0){ placed[i]=sel; sel=-1; renderStack(); }
+}
+function renderStack(){
+  var it=STACK[si], n=it.answer.length, i;
+  var sl=$("slots"); sl.innerHTML="";
+  for(i=0;i<n;i++){
+    var d=document.createElement("div");
+    d.className="slot"+(i===n-1?" head":"")+(placed[i]>=0?" filled":"")+(sel>=0&&placed[i]<0?" target":"");
+    d.dataset.i=i;
+    d.innerHTML='<span class="n">'+(i===n-1?"head":(i+1))+"</span>"+(placed[i]>=0?it.bin[placed[i]]:"·");
+    d.addEventListener("click", slotClick);
+    sl.appendChild(d);
+  }
+  var bn=$("bin"); bn.innerHTML="";
+  it.bin.forEach(function(w,j){
+    if(placed.indexOf(j)>=0) return;
+    var b=document.createElement("button"); b.textContent=w; b.dataset.j=j;
+    if(j===sel) b.classList.add("sel");
+    b.addEventListener("click", function(){ sel = (sel===j ? -1 : j); renderStack(); });
+    bn.appendChild(b);
+  });
+  var mask = predictMode && !revealed;
+  $("modelLine").innerHTML = mask ? 'Model order: <span class="masked">&nbsp;</span>'
+    : "Model order: <b>"+(it.art?it.art+" ":"")+it.answer.join(" ")+"</b>";
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask){ document.querySelector("#modelLine .masked").addEventListener("click", function(){ revealed=true; renderStack(); }); }
+}
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; cpShown=false; renderStack(); renderComp(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderStack(); });
+$("sClear").addEventListener("click", function(){ resetSlots(); renderStack(); });
+$("sNext").addEventListener("click", function(){
+  si=(si+1)%STACK.length; revealed=false; resetSlots();
+  document.querySelectorAll("#stChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===si); }); renderStack();
+});
+$("sCheck").addEventListener("click", function(){
+  var it=STACK[si], out=$("sout"), got=[], i;
+  for(i=0;i<placed.length;i++){ if(placed[i]<0){ out.className="sout bad"; out.innerHTML="Fill every slot first — tap a word, then tap a slot."; return; } got.push(it.bin[placed[i]]); }
+  if(got.join(" ")===it.answer.join(" ")){
+    out.className="sout good";
+    out.innerHTML="✅ "+builtPhrase(it)+'<div class="gloss">'+it.gloss+'</div><div class="bnote">'+it.note+"</div>";
+    sDone++; $("sScore").textContent="Stacked: "+sDone;
+  } else {
+    out.className="sout bad";
+    out.innerHTML="❌ Not that order. <span class='bnote'>The head goes in the last slot, and each noun describes the one on its right. Take a word back by tapping it.</span>";
+  }
+});
+resetSlots(); renderStack();
+
+/* EXPLORE 2 · the singular rule */
+var SING = [
+  {k:"shoe shop", bad:"a shoes shop", good:"a shoe shop", note:"= a shop for shoes. The idea is plural, the modifier noun is not."},
+  {k:"two-door car", bad:"a two-doors car", good:"a two-door car", note:"Number + noun modifier: singular, and normally hyphenated."},
+  {k:"ten-year plan", bad:"a ten-years plan", good:"a ten-year plan", note:"Ten years long, but the modifier drops the -s."},
+  {k:"three-bedroom flat", bad:"a three-bedrooms flat", good:"a three-bedroom flat", note:"Three bedrooms inside; three-bedroom describes the flat."},
+  {k:"five-star hotel", bad:"a five-stars hotel", good:"a five-star hotel", note:"Same rule with any number + noun."},
+  {k:"car production line", bad:"a cars production line", good:"a car production line", note:"The rule holds inside a long chain too."}
+];
+var sgi=0;
+SING.forEach(function(it,k){
+  var b=document.createElement("button"); b.textContent=it.k; b.dataset.k=k;
+  if(k===0) b.classList.add("on");
+  b.addEventListener("click", function(){ sgi=k; document.querySelectorAll("#sgChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===k); }); renderSing(); });
+  $("sgChips").appendChild(b);
+});
+function renderSing(){ var it=SING[sgi]; $("sgBad").textContent=it.bad; $("sgGood").textContent=it.good; $("sgNote").textContent=it.note; }
+renderSing();
+
+/* EXPLORE 3 · the compressor */
+var COMP = [
+  {long:"a production line for luxury cars", short:"a luxury car production line", note:"The manual’s own example: a line for production of cars that are luxury."},
+  {long:"a shop that sells shoes", short:"a shoe shop", note:"The head is shop; shoe describes it, in the singular."},
+  {long:"a cup for coffee", short:"a coffee cup", note:"A type of cup — not a cup with coffee in it right now."},
+  {long:"a ticket for a concert", short:"a concert ticket", note:"Drop the preposition and the article of the second noun."},
+  {long:"a factory that makes cars", short:"a car factory", note:"That-clause out, noun modifier in."},
+  {long:"a plan that lasts five years", short:"a five-year plan", note:"Number + singular noun, hyphenated."},
+  {long:"a bottle for water", short:"a water bottle", note:"Spanish keeps the head first (botella de agua); English puts it last."},
+  {long:"the price you pay in shops", short:"the retail price", note:"The compressed version is the one price lists actually use."}
+];
+var cpi=0, cpShown=false;
+COMP.forEach(function(it,k){
+  var b=document.createElement("button"); b.textContent=it.short; b.dataset.k=k;
+  if(k===0) b.classList.add("on");
+  b.addEventListener("click", function(){ cpi=k; cpShown=false; document.querySelectorAll("#cpChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===k); }); renderComp(); });
+  $("cpChips").appendChild(b);
+});
+function renderComp(){
+  var it=COMP[cpi], mask = predictMode && !cpShown;
+  $("cpLong").textContent=it.long;
+  $("cpShort").innerHTML = mask ? '<span class="masked">&nbsp;</span>' : "<b>"+it.short+"</b>";
+  $("cpNote").innerHTML = mask ? "" : it.note;
+  $("cpBtn").style.display = mask ? "inline-block" : "none";
+  if(mask){ document.querySelector("#cpShort .masked").addEventListener("click", function(){ cpShown=true; renderComp(); }); }
+}
+$("cpBtn").addEventListener("click", function(){ cpShown=true; renderComp(); });
+renderComp();
+
+/* EXPLORE 4 · special cases */
+var SC = {
+  singular:"<b>The modifier noun is singular</b> — even for a plural idea. ✔ a <b>shoe</b> shop (= a shop for shoes) · ✔ a <b>ten-year</b> plan · ✔ a <b>three-bedroom</b> flat. ✘ <s>shoes shop</s> · ✘ <s>ten-years plan</s>",
+  plural:"<b>But some nouns stay plural</b> in fixed compounds: a <b>sports</b> car · a <b>clothes</b> shop · a <b>sales</b> team · an <b>arms</b> race · a <b>customs</b> officer. <span class='es'>(Son compuestos fijos: apréndelos como bloque.)</span>",
+  possessive:"<b>Noun modifier or possessive?</b> a <b>company</b> car = a type of car, the kind a company provides · the <b>company’s</b> car = the car that belongs to that company. <span class='es'>(El modificador nombra el tipo; el posesivo, el dueño.)</span>",
+  spelling:"<b>One word, two words or a hyphen?</b> One word: <b>toothbrush</b>, <b>keyboard</b> · two words: <b>bus stop</b>, <b>credit card</b> · hyphenated: <b>T-shirt</b>, <b>dry-cleaner</b>. There is no rule — a dictionary decides. <span class='es'>(No lo adivines: búscalo.)</span>",
+  adjfirst:"<b>Adjectives come before the noun modifiers.</b> a beautiful <b>silk evening</b> dress: opinion, size and colour first, then the nouns that classify the head.",
+  overload:"<b>Don’t overload the chain.</b> Three modifiers is usually the comfortable limit. Beyond that, go back to <b>of</b>: ✔ the manager <b>of</b> the customer service department."
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.singular;
+
+/* EXPLORE 5 · typical mistakes */
+var PIT = [
+  ["a shoes shop","a shoe shop","the modifier noun is singular"],
+  ["a five-stars hotel","a five-star hotel","number + singular noun, hyphenated"],
+  ["a car luxury factory","a luxury car factory","each noun describes the one on its right"],
+  ["a bottle water","a water bottle","the head goes last — read right to left: a bottle for water"],
+  ["a cars production line","a car production line","the singular rule holds inside long chains"],
+  ["a three-bedrooms apartment","a three-bedroom apartment","three bedrooms inside, three-bedroom outside"]
+];
+(function(){ var h="";
+  PIT.forEach(function(p){ h+='<div class="fixrow"><span class="bad">'+p[0]+'</span><span class="arw">→</span><span class="good">'+p[1]+'</span><span class="nt">'+p[2]+"</span></div>"; });
+  $("pitList").innerHTML=h; })();
+
+/* =====================================================================
+   BUILD · assemble (modifier + head) + transform (write the phrase)
+===================================================================== */
+var BUILD = [
+  {mean:"a shop that sells shoes", art:"a", mod:["shoes","shoe","shop"], modA:"shoe", head:["selling","shoe","shop"], headA:"shop", note:"The modifier noun is singular even for a plural idea: a shoe shop."},
+  {mean:"a cup for coffee", art:"a", mod:["coffees","cup","coffee"], modA:"coffee", head:["cup","coffee","drink"], headA:"cup", note:"Cup is the head — the main thing; coffee only describes it."},
+  {mean:"a plan that lasts five years", art:"a", mod:["five-year","five-years","year-five"], modA:"five-year", head:["years","plan","planning"], headA:"plan", note:"Number + singular noun, normally hyphenated: a five-year plan."},
+  {mean:"a factory that makes cars", art:"a", mod:["cars","making","car"], modA:"car", head:["cars","maker","factory"], headA:"factory", note:"Factory is the head; car describes it, in the singular."},
+  {mean:"a ticket for a concert", art:"a", mod:["concerts","concert","ticket"], modA:"concert", head:["entry","ticket","concert"], headA:"ticket", note:"Drop for a and stack the nouns: a concert ticket."},
+  {mean:"a hotel with five stars", art:"a", mod:["five-star","five-stars","star-five"], modA:"five-star", head:["stars","hotels","hotel"], headA:"hotel", note:"Five stars inside, five-star outside: a five-star hotel."},
+  {mean:"a bottle for water", art:"a", mod:["waters","bottle","water"], modA:"water", head:["water","bottle","drink"], headA:"bottle", note:"English puts the head last, the opposite of botella de agua."},
+  {mean:"the price you pay in shops", art:"the", mod:["retails","retail","shop-price"], modA:"retail", head:["price","retail","prices"], headA:"price", note:"Price is the head; retail says which kind of price."},
+  {mean:"a fast car built for sport", art:"a", mod:["sports","sport","speed"], modA:"sports", head:["car","sports","cars"], headA:"car", note:"A fixed compound that keeps the plural: a sports car (also clothes shop, sales team, arms race, customs officer)."},
+  {mean:"the team that handles sales", art:"the", mod:["sale","sales","selling"], modA:"sales", head:["sales","teams","team"], headA:"team", note:"Another fixed plural compound: the sales team."}
+];
+var bi=0, bMod=null, bHead=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function fillChips(id, list, onPick){
+  var wrap=$(id); wrap.innerHTML="";
+  list.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ onPick(op); document.querySelectorAll("#"+id+" button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+}
+function renderBuild(){
+  var it=BUILD[bi]; bMod=null; bHead=null;
+  $("bctx").innerHTML = "Meaning: <i>"+it.mean+"</i>";
+  fillChips("modChips", it.mod, function(v){ bMod=v; });
+  fillChips("headChips", it.head, function(v){ bHead=v; });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bMod || !bHead){ r.className="bresult bad"; r.innerHTML="Choose a modifier and a head first."; return; }
+  var mOk = bMod===it.modA, hOk = bHead===it.headA;
+  if(mOk && hOk){
+    r.className="bresult good";
+    r.innerHTML='✅ '+it.art+' <span class="rmod">'+it.modA+'</span> <span class="rhead">'+it.headA+'</span><div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    if(!mOk) document.querySelector('#modChips button[data-v="'+bMod+'"]').classList.add("wrongpick");
+    if(!hOk) document.querySelector('#headChips button[data-v="'+bHead+'"]').classList.add("wrongpick");
+    var tip = !hOk ? "The head is the main thing, and it goes last." : "Check the modifier: singular, and it must describe the head.";
+    r.className="bresult bad"; r.innerHTML="❌ Not yet. <span class='bnote'>"+tip+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"Put the words in order: <b>car / line / production / luxury</b>", accept:["luxury car production line","a luxury car production line"], model:"a luxury car production line"},
+  {ctx:"Put the words in order: <b>manufacturing / soft drink / process / can</b>", accept:["soft drink can manufacturing process","a soft drink can manufacturing process","soft-drink can manufacturing process","a soft-drink can manufacturing process"], model:"a soft drink can manufacturing process"},
+  {ctx:"Put the words in order: <b>engine / production / airplane / line</b>", accept:["airplane engine production line","an airplane engine production line"], model:"an airplane engine production line"},
+  {ctx:"Put the words in order: <b>leather / white / tennis / shoes</b>", accept:["white leather tennis shoes"], model:"white leather tennis shoes"},
+  {ctx:"Put the words in order: <b>vanilla / chewing / sugar-free / gum</b>", accept:["sugar-free vanilla chewing gum","sugar free vanilla chewing gum"], model:"sugar-free vanilla chewing gum"},
+  {ctx:"Put the words in order — the head is <b>price</b>, and <i>retail</i> is the modifier closest to it: <b>European / retail / market / price</b>", accept:["european market retail price","the european market retail price","a european market retail price"], model:"the European market retail price"},
+  {ctx:"Put the words in order: <b>concept / design / sportswear</b>", accept:["sportswear design concept","a sportswear design concept"], model:"a sportswear design concept"},
+  {ctx:"Put the words in order: <b>uniformed / street / city / cleaners</b>", accept:["uniformed city street cleaners","the uniformed city street cleaners"], model:"uniformed city street cleaners"},
+  {ctx:"Rewrite as a noun + noun modifier: <b>the price you pay in shops</b>", accept:["retail price","the retail price"], model:"the retail price"},
+  {ctx:"Rewrite as a noun + noun modifier: <b>a ticket for a concert</b>", accept:["concert ticket","a concert ticket"], model:"a concert ticket"},
+  {ctx:"Correct the phrase: <b>a cars production line</b>", accept:["car production line","a car production line"], model:"a car production line"},
+  {ctx:"Correct the phrase: <b>a three-bedrooms apartment</b>", accept:["three-bedroom apartment","a three-bedroom apartment","three bedroom apartment","a three bedroom apartment"], model:"a three-bedroom apartment"},
+  {ctx:"Correct the phrase: <b>a bottle water</b>", accept:["water bottle","a water bottle"], model:"a water bottle"},
+  {ctx:"Correct the phrase: <b>a car luxury factory</b>", accept:["luxury car factory","a luxury car factory"], model:"a luxury car factory"}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML=it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"The singular rule", q:"Which phrase is correct?", o:["a shoe shop", "a shoes shop"], a:0, w:"The modifier noun stays singular, even when the idea is plural: a shoe shop."},
+  {kind:"mc", diff:1, tag:"Find the head", q:"In “a car factory”, which word is the head — the main thing?", o:["car","factory"], a:1, w:"The head is the last noun; everything before it describes it."},
+  {kind:"error", diff:1, tag:"Fix the error", words:["We","stayed","in","a","five-stars","hotel."], bad:4, fixOld:"five-stars", fixNew:"five-star", w:"Number + noun modifier stays singular: a five-star hotel."},
+  {kind:"fill", diff:1, tag:"Compress it", q:"a cup for coffee → a ___ (two words)", accept:["coffee cup","a coffee cup"], w:"Cup is the head and goes last; coffee describes it."},
+  {kind:"mc", diff:1, tag:"Right to left", q:"Which phrase means “a bottle for water”?", o:["a water bottle", "a bottle water"], a:0, w:"English puts the head last, so bottle goes at the end and water describes it."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["She","works","on","a","cars","production","line."], bad:4, fixOld:"cars", fixNew:"car", w:"Modifier nouns are singular, even inside a long chain: a car production line."},
+  {kind:"fill", diff:2, tag:"Compress it", q:"a plan that lasts five years → a ___ (two words)", accept:["five-year plan","a five-year plan","five year plan","a five year plan"], w:"Number + singular noun, normally hyphenated: a five-year plan."},
+  {kind:"mc", diff:2, tag:"Order", q:"Which order is correct?", o:["a car luxury factory", "a luxury car factory"], a:1, w:"Each noun describes the one on its right: luxury → car → factory."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["It’s","a","three-bedrooms","apartment."], bad:2, fixOld:"three-bedrooms", fixNew:"three-bedroom", w:"Three bedrooms inside, but three-bedroom as a modifier."},
+  {kind:"fill", diff:3, tag:"Stack it", q:"Put in order: car / line / production / luxury → a ___ (four words)", accept:["luxury car production line","a luxury car production line"], w:"Head last, and each noun describes the one on its right: a luxury car production line."},
+  {kind:"mc", diff:3, tag:"Noun modifier or ’s?", q:"“Every sales rep gets a company car.” This means…", o:["a car of that type, one the company provides","the one particular car that belongs to the company"], a:0, w:"A noun modifier names a type; the possessive (the company’s car) names the owner."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["He","bought","a","sport","car","last","year."], bad:3, fixOld:"sport", fixNew:"sports", w:"A few fixed compounds keep the plural: a sports car, a clothes shop, a sales team."},
+  {kind:"fill", diff:3, tag:"Stack it", q:"Put in order: manufacturing / soft drink / process / can → a ___ (four parts, five words)", accept:["soft drink can manufacturing process","a soft drink can manufacturing process","soft-drink can manufacturing process","a soft-drink can manufacturing process"], w:"Read it right to left: a process for manufacturing cans for soft drinks."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i6_s8_drill_best")||0); if(dscore>best){ store("i6_s8_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Stacked perfectly. Ready for the ★★★ homework." : dscore>=8?"Good stacking — review the exceptions card and go again." : "Re-read Structure 8, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">✓ Correct.</span> ':'<span class="k">✗ Not that one: the green part is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

@@ -538,15 +538,15 @@ renderTrans();
 ===================================================================== */
 var DRILL = [
   {kind:"mc", diff:1, tag:"Which pattern?", q:"“We ask guests not to play music after 10.”", o:["verb + object + not + infinitive","negative verb + object + infinitive","verb + object + bare infinitive"], a:0, w:"The verb is positive and the infinitive is negative: ask + object + not + to-infinitive."},
-  {kind:"mc", diff:1, tag:"Choose the form", q:"“The flight attendant asked us ___ our seatbelts.”", o:["to fasten","fasten","fastening"], a:0, w:"ask + object + to-infinitive."},
-  {kind:"mc", diff:1, tag:"make", q:"“The heat made everyone ___ very slowly.”", o:["move","to move","moving"], a:0, w:"make + object + bare infinitive — no to."},
+  {kind:"mc", diff:1, tag:"Choose the form", q:"“The flight attendant asked us ___ our seatbelts.”", o:["fasten", "to fasten", "fastening"], a:1, w:"ask + object + to-infinitive."},
+  {kind:"mc", diff:1, tag:"make", q:"“The heat made everyone ___ very slowly.”", o:["moving", "to move", "move"], a:2, w:"make + object + bare infinitive — no to."},
   {kind:"mc", diff:1, tag:"would like", q:"“I’d like ___ the photos from Chiapas.”", o:["you to see","that you see","you seeing"], a:0, w:"would like / want + object + to-infinitive — never a that-clause."},
-  {kind:"mc", diff:1, tag:"allow", q:"“The park rangers don’t allow visitors ___ the monkeys.”", o:["to feed","feed","feeding"], a:0, w:"allow + object + to-infinitive (unlike let, allow keeps to)."},
+  {kind:"mc", diff:1, tag:"allow", q:"“The park rangers don’t allow visitors ___ the monkeys.”", o:["feed", "to feed", "feeding"], a:1, w:"allow + object + to-infinitive (unlike let, allow keeps to)."},
   {kind:"error", diff:2, tag:"Fix the error", words:["Security","made","everyone","to","remove","their","shoes."], bad:3, fixOld:"made everyone to remove", fixNew:"made everyone remove", w:"make + object + bare infinitive: no to after make."},
   {kind:"error", diff:2, tag:"Fix the error", words:["The","rain","prevented","us","to","climb","the","pyramid."], bad:4, fixOld:"prevented us to climb", fixNew:"prevented us from climbing", w:"prevent + object + from + -ing."},
   {kind:"fill", diff:2, tag:"Complete", q:"“The tour company expects clients ___ (arrive) 15 minutes early.”", accept:["to arrive"], w:"expect + object + to-infinitive: to arrive."},
   {kind:"fill", diff:2, tag:"Complete", q:"“Volunteers helped us ___ (carry) the kayaks to the beach.”", accept:["carry","to carry"], w:"help accepts both: helped us (to) carry."},
-  {kind:"mc", diff:3, tag:"suggest", q:"“The receptionist ___ the earlier shuttle.” (suggest)", o:["suggested taking","suggested us to take","suggested us taking"], a:0, w:"suggest never takes object + infinitive: suggest + -ing or suggested (that) we take."},
+  {kind:"mc", diff:3, tag:"suggest", q:"“The receptionist ___ the earlier shuttle.” (suggest)", o:["suggested us taking", "suggested us to take", "suggested taking"], a:2, w:"suggest never takes object + infinitive: suggest + -ing or suggested (that) we take."},
   {kind:"error", diff:3, tag:"Fix the error", words:["I","want","that","my","brother","comes","to","the","beach","with","us."], bad:2, fixOld:"want that my brother comes", fixNew:"want my brother to come", w:"want never takes a that-clause: want + object + to-infinitive."},
   {kind:"fill", diff:3, tag:"Passive of make", q:"They made us wait outside the embassy. → “We ___ outside the embassy.” (passive, 4 words)", accept:["were made to wait"], w:"In the passive, make recovers to: were made to wait."},
   {kind:"fill", diff:3, tag:"Translate", q:"“Te aconsejo que no bebas el agua de la llave.” → “I ___ the tap water.” (advise)", accept:["advise you not to drink"], w:"advise + object + not + to-infinitive: advise you not to drink."}

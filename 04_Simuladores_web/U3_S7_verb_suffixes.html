@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE VERB FORGE · English 6 · Unit 3 "The Shape of Things to Come"
+  Structure 7 — suffixes that form verbs (-ize/-ise, -en, -ate, -ify)
+  Three modes: Explore (forge a verb) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Structure 7 · The Verb Forge · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --indigo:#3A3A8C; --indigodark:#25255C; --indigolt:#E7E7F4;   /* Unit 3 identity */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--indigo),var(--indigodark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#C9C9EE; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#DCDCF3; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--indigodark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--indigodark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--indigodark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-indigo{background:var(--indigo)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--indigo); background:var(--indigolt); color:var(--indigodark)}
+  .chips button small{display:block; font-size:10px; font-weight:800; letter-spacing:.05em; text-transform:uppercase; color:#999}
+  .chips button.on small{color:var(--indigo)}
+
+  /* ---------- the forge ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .steplab{font-size:12px; font-weight:900; letter-spacing:.06em; text-transform:uppercase; color:#8A8AA8}
+  .sfxrow{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .sfxrow button{border:2px dashed var(--indigo); background:#fff; border-radius:12px; padding:9px 16px; font:900 16px Lato,sans-serif; color:var(--indigo); cursor:pointer; min-width:84px}
+  .sfxrow button b{display:block; font-size:10px; font-weight:800; letter-spacing:.04em; text-transform:uppercase; color:#999}
+  .sfxrow button.on{background:var(--indigo); color:#fff; border-style:solid}
+  .sfxrow button.on b{color:#D6D6F0}
+  .anvil{border-radius:12px; padding:16px; margin-top:10px; background:var(--indigolt); border:2px solid var(--indigo); text-align:center}
+  .anvil.bad{background:var(--thinklt); border-color:var(--think)}
+  .anvil .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase; color:var(--indigodark)}
+  .anvil.bad .role{color:var(--think)}
+  .forgeword{font-size:clamp(22px,5vw,36px); font-weight:900; margin:6px 0 2px; line-height:1.35}
+  .bse{color:var(--navy); background:var(--navylt); border-radius:6px 0 0 6px; padding:0 4px; box-shadow:inset 0 -3px 0 var(--navy)}
+  .sfx{color:var(--indigodark); background:#fff; border-radius:0 6px 6px 0; padding:0 4px; box-shadow:inset 0 -3px 0 var(--indigo)}
+  .sfx.masked{color:transparent; position:relative; cursor:pointer; min-width:62px; display:inline-block}
+  .sfx.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .meaning{font-size:15px; font-weight:800; color:var(--indigodark)}
+  .anvil .exs{font-size:14px; font-weight:600; color:#555; margin-top:7px}
+  .anvil .spn{display:inline-block; margin-top:8px; background:#fff; border:1.5px solid var(--rule); border-radius:999px; padding:3px 12px; font-size:12px; font-weight:800; color:var(--grammar)}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px; justify-content:center}
+  .legend span{border-radius:6px; padding:1px 8px}
+
+  /* suffix dial */
+  .tensechips{display:flex; gap:6px; flex-wrap:wrap; margin:8px 0}
+  .tensechips button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 11px; font:700 13px Lato,sans-serif; cursor:pointer}
+  .tensechips button.on{border-color:var(--navy); background:var(--navylt); color:var(--navy)}
+  .tenseout{background:var(--soft); border-radius:12px; padding:16px; text-align:center; margin-top:6px}
+  .tenseout .map{font-size:clamp(17px,2.8vw,22px); font-weight:800}
+  .tenseout .map .a{color:var(--navy)} .tenseout .map .b{color:var(--grammar)}
+  .tenseout .ex{font-size:14px; color:#555; margin-top:8px; font-weight:600}
+
+  /* grids & selectors */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+  .shiftgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(215px,1fr)); gap:6px; margin-top:4px}
+  .shiftgrid div{background:#fff; border:1.5px solid var(--rule); border-radius:8px; padding:6px 10px; font-size:14px; font-weight:700}
+  .shiftgrid .a{color:var(--navy)} .shiftgrid .b{color:var(--indigodark)} .shiftgrid i{color:var(--grammar); font-style:normal; font-weight:800; font-size:12px}
+  .errlist{list-style:none; margin-top:6px}
+  .errlist li{background:var(--thinklt); border-left:4px solid var(--think); border-radius:0 8px 8px 0; padding:7px 11px; margin-bottom:6px; font-size:15px; font-weight:700}
+  .errlist .no{color:var(--think); text-decoration:line-through} .errlist .yes{color:var(--green)}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--indigo); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--indigodark); border:2px solid var(--indigo)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--indigo); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--indigo)}
+  .segbig button.on{background:var(--indigo); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--indigo); background:var(--indigolt); color:var(--indigodark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--indigodark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--indigodark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--indigo); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick{background:var(--think); color:#fff}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--indigodark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--indigo); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} .sfxrow button{min-width:70px; padding:8px 12px; font-size:15px} .seg2{border-radius:12px} .seg2 button{flex:1 1 auto; text-align:center; border:1px solid var(--rule)} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">⚒️</span>
+  <div class="wrap">
+    <div class="kicker">English 6 · Unit 3 · The Shape of Things to Come</div>
+    <h1>⚒️ The Verb Forge</h1>
+    <div class="sub"><b>Structure 7</b> — suffixes that form verbs: <i>-ize, -en, -ate, -ify</i>. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>⚒️ Forge a verb</span><span>🔧 Build the word</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">⚒️ Explore<small>forge a verb</small></button>
+    <button data-tab="build">🔧 Build<small>make it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Turn a noun or an adjective into a verb</h2>
+      <p class="muted">English builds many verbs by adding a suffix to a noun or an adjective. Tap a base word, then tap
+        the suffix that forges it. <span class="es">(Toca la base y luego el sufijo: no hay que arrastrar nada.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the suffix, guess, then reveal</label>
+
+      <div class="steplab">1 · Tap a base word <span class="es">— noun or adjective</span></div>
+      <div class="chips" id="baseChips"></div>
+      <div class="steplab">2 · Tap the suffix that forges the verb</div>
+      <div class="sfxrow" id="sfxChips"></div>
+
+      <div class="anvil" id="anvil">
+        <div class="role" id="anvilRole">The anvil</div>
+        <div class="forgeword" id="forgeWord">— · —</div>
+        <div class="meaning" id="forgeMeaning">Pick a base word above to start.</div>
+        <div class="exs" id="forgeEx"></div>
+      </div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none; margin-top:8px">Reveal the suffix ✓</button></div>
+      <div class="legend"><span class="bse">base (noun / adjective)</span><span class="sfx">suffix</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">💡 The suffix dial</span>
+      <h2>Four suffixes, four meanings</h2>
+      <p class="muted">Tap a suffix to see what it means, what kind of base it takes and the manual’s examples.
+        <span class="es">(Los cuatro sufijos productivos del manual.)</span></p>
+      <div class="tensechips" id="dialChips"></div>
+      <div class="tenseout"><div class="map" id="dialMap"></div><div class="ex" id="dialEx"></div></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-grammar">✏️ Spelling</span>
+      <h2>What changes when the suffix arrives</h2>
+      <p class="muted">Most bases keep their shape, but some lose a letter or two — and one is irregular.
+        <span class="es">(Cambios de ortografía al formar el verbo.)</span></p>
+      <div class="shiftgrid" id="spellGrid"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">🚫 Verbs that do not exist</span>
+      <h2>Do not use the adjective as a verb</h2>
+      <p class="muted">Spanish keeps the suffix (<i>modernizar, simplificar</i>), so the English verb needs one too.
+        Without it, the word is still an adjective. <span class="es">(El adjetivo pelón no es verbo.)</span></p>
+      <div class="shiftgrid" id="noVerbGrid"></div>
+      <p class="muted" style="margin-top:8px"><b>-ise is not an error, it is British.</b> <i>organize / organise</i>, <i>realize / realise</i>:
+        both are correct, but pick one spelling and be consistent. This course uses American <b>-ize</b>.</p>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Exceptions &amp; special cases</span>
+      <h2>The five traps of Structure 7</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="ise" class="on">-ize or -ise</button><button data-v="en">limits of -en</button><button data-v="ify">-ify spelling</button><button data-v="family">word families</button><button data-v="hidden">hidden -en</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠️ Typical mistakes</span>
+      <h2>What Spanish speakers usually write</h2>
+      <ul class="errlist" id="errList"></ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Structure 7 made manipulable: the forge pairs every base word of the section with its suffix (tap the base, tap the suffix — no drag and drop, so it works on a phone), the dial holds the four-suffix table with its meanings and example lists, and two cards cover the spelling changes and the adjectives that are not verbs. The special-cases selector is the manual’s five exceptions; the last card is the pitfall box plus the Homework Book error hunt.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> the twelve items of exercise A (stem + suffix), then <i>transform</i> — the verb forms of exercise B, the word-family table of exercise C and two rewrites from the mixed review — with validation and a model answer.</li>
+          <li><b>Drill</b> merges the quizzes into one graded engine (★ choose the suffix · ★★ spelling changes and the adjective-as-verb error · ★★★ word families, <i>-ification</i>, US/UK consistency) with a score and streak.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-indigo">🔧 Your turn to produce</span>
+      <h2>Build the verb</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Choose the suffix this base needs. The forge welds it and shows the rule — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">The suffix should be…</div><div class="bchips" id="sufChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Forge it ⚒️</button><button class="btn ghost" id="bNext">New base →</button><span class="bscore" id="bScore">Forged: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Write the missing word: the verb, the noun of the family, or the whole rewritten sentence.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type your answer"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next item →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ choose the suffix · ★★ spelling and the adjective-as-verb error · ★★★ word families and consistency.
+        Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 6 · Unit 3 «The Shape of Things to Come» · Structure 7 — suffixes that form verbs · Level B1+
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE VERB FORGE — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 6 Class Manual (Structure 7).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · the forge: base + suffix → verb
+===================================================================== */
+var MEAN = {
+  ize:{lab:"-ize", mean:"make / turn into", es:"(convertir en, hacer que sea)"},
+  en:{lab:"-en", mean:"make more / become", es:"(hacer más…, volverse)"},
+  ate:{lab:"-ate", mean:"make / cause", es:"(hacer, causar)"},
+  ify:{lab:"-ify", mean:"make / cause to become", es:"(hacer que se vuelva)"}
+};
+var BASES = [
+  {w:"modern", t:"adjective", s:"ize", stem:"modern", v:"modernize", sp:"nothing changes", ex:"Companies that fail to <b>modernize</b> will come up against serious problems."},
+  {w:"personal", t:"adjective", s:"ize", stem:"personal", v:"personalize", sp:"nothing changes", ex:"The app lets you <b>personalize</b> the screen."},
+  {w:"critic", t:"noun", s:"ize", stem:"critic", v:"criticize", sp:"nothing changes", ex:"Many people <b>criticize</b> companies that ignore diversity."},
+  {w:"emphasis", t:"noun", s:"ize", stem:"emphas", v:"emphasize", sp:"drop -is", ex:"Researchers on AI need to <b>emphasize</b> the benefits to ordinary people."},
+  {w:"broad", t:"adjective", s:"en", stem:"broad", v:"broaden", sp:"nothing changes", ex:"Travel can <b>broaden</b> your mind."},
+  {w:"wide", t:"adjective", s:"en", stem:"wid", v:"widen", sp:"drop the final -e", ex:"Engineers plan to <b>widen</b> the main road."},
+  {w:"sharp", t:"adjective", s:"en", stem:"sharp", v:"sharpen", sp:"nothing changes", ex:"<b>Sharpen</b> the image before you print it."},
+  {w:"strong", t:"adjective", s:"en", stem:"strength", v:"strengthen", sp:"irregular: strong → strength + -en", ex:"Automation will <b>strengthen</b> some industries and weaken others."},
+  {w:"threat", t:"noun", s:"en", stem:"threat", v:"threaten", sp:"noun + -en", ex:"Do you think AI will <b>threaten</b> people’s jobs?"},
+  {w:"fright", t:"noun", s:"en", stem:"fright", v:"frighten", sp:"noun + -en", ex:"Adding technology to the body seems to <b>frighten</b> some people."},
+  {w:"motive", t:"noun", s:"ate", stem:"motiv", v:"motivate", sp:"drop the final -e", ex:"I sometimes find it hard to <b>motivate</b> myself to study."},
+  {w:"automatic", t:"adjective", s:"ate", stem:"autom", v:"automate", sp:"drop -ic", ex:"Factories increasingly <b>automate</b> repetitive work."},
+  {w:"active", t:"adjective", s:"ate", stem:"activ", v:"activate", sp:"drop the final -e", ex:"Scan the code to <b>activate</b> the device."},
+  {w:"simple", t:"adjective", s:"ify", stem:"simpl", v:"simplify", sp:"drop the final -e", ex:"New tools can <b>simplify</b> complex tasks."},
+  {w:"clear", t:"adjective", s:"ify", stem:"clar", v:"clarify", sp:"the base changes shape: clear → clar-", ex:"Can you <b>clarify</b> the last point?"}
+];
+var curBase = null, curSuf = null, predictMode = false, revealed = false;
+BASES.forEach(function(b,i){
+  var el = document.createElement("button");
+  el.innerHTML = b.w + "<small>" + b.t + "</small>"; el.dataset.k = i;
+  el.addEventListener("click", function(){
+    curBase = i; curSuf = null; revealed = false;
+    document.querySelectorAll("#baseChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); });
+    document.querySelectorAll("#sfxChips button").forEach(function(x){ x.classList.remove("on"); });
+    renderForge();
+  });
+  $("baseChips").appendChild(el);
+});
+["ize","en","ate","ify"].forEach(function(k){
+  var el = document.createElement("button");
+  el.innerHTML = "-" + k + "<b>" + MEAN[k].mean + "</b>"; el.dataset.s = k;
+  el.addEventListener("click", function(){
+    if(curBase===null){ $("anvil").className="anvil bad"; $("anvilRole").textContent="No base yet"; $("forgeWord").textContent="— · —"; $("forgeMeaning").innerHTML="Tap a base word first, then tap a suffix."; $("forgeEx").innerHTML=""; return; }
+    curSuf = k; revealed = false;
+    document.querySelectorAll("#sfxChips button").forEach(function(x){ x.classList.toggle("on", x.dataset.s===k); });
+    renderForge();
+  });
+  $("sfxChips").appendChild(el);
+});
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderForge(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderForge(); });
+function renderForge(){
+  var a=$("anvil"), rb=$("revealBtn");
+  rb.style.display="none";
+  if(curBase===null){ a.className="anvil"; $("anvilRole").textContent="The anvil"; $("forgeWord").textContent="— · —"; $("forgeMeaning").innerHTML="Pick a base word above to start."; $("forgeEx").innerHTML=""; return; }
+  var b=BASES[curBase];
+  if(curSuf===null){
+    a.className="anvil"; $("anvilRole").textContent="Base ready — now choose a suffix";
+    $("forgeWord").innerHTML='<span class="bse">'+b.w+'</span> + ?';
+    $("forgeMeaning").innerHTML="<b>"+b.w+"</b> is "+(b.t==="noun"?"a noun":"an adjective")+". Which suffix turns it into a verb?";
+    $("forgeEx").innerHTML=""; return;
+  }
+  if(curSuf!==b.s){
+    a.className="anvil bad"; $("anvilRole").textContent="The weld broke";
+    $("forgeWord").innerHTML='✘ '+b.w+' + -'+curSuf;
+    $("forgeMeaning").innerHTML='There is no verb “'+b.w+curSuf+'”. <b>'+b.w+'</b> takes <b>-'+b.s+'</b> → <b>'+b.v+'</b>.';
+    $("forgeEx").innerHTML='<span class="es">(Cada base pide su propio sufijo; no son intercambiables.)</span>';
+    return;
+  }
+  a.className="anvil"; $("anvilRole").textContent="Forged verb";
+  var mask = predictMode && !revealed;
+  $("forgeWord").innerHTML='<span class="bse">'+b.stem+'</span><span class="sfx'+(mask?" masked":"")+'" id="sfxPart">'+b.s+'</span>';
+  $("forgeMeaning").innerHTML='<b>'+b.v+'</b> = '+MEAN[b.s].mean+' <span class="es">'+MEAN[b.s].es+'</span>';
+  $("forgeEx").innerHTML=b.ex+'<br><span class="spn">spelling: '+b.sp+'</span>';
+  if(mask){ rb.style.display="inline-block"; $("sfxPart").addEventListener("click", function(){ revealed=true; renderForge(); }); }
+}
+renderForge();
+
+/* suffix dial */
+var DIAL = [
+  {t:"-ize / -ise", map:'<span class="a">noun / adjective</span> → <span class="b">verb in -ize</span>', ex:'<b>make / turn into.</b> modernize · personalize · digitize · criticize · prioritize<br>It attaches mostly to nouns and adjectives: <i>modern → modernize</i>. US <i>-ize</i>, UK <i>-ise</i>; this course uses <i>-ize</i>.'},
+  {t:"-en", map:'<span class="a">short adjective</span> → <span class="b">verb in -en</span>', ex:'<b>make more / become.</b> broaden · widen · strengthen · sharpen · threaten · frighten<br>It attaches mostly to short adjectives ending in a consonant: <i>wide → widen</i>. <i>threaten</i> and <i>frighten</i> come from the nouns <i>threat</i> and <i>fright</i>.'},
+  {t:"-ate", map:'<span class="a">noun / adjective</span> → <span class="b">verb in -ate</span>', ex:'<b>make / cause.</b> activate · motivate · automate · cooperate · generate<br>In the manual’s list the base is a noun or an adjective: <i>motive → motivate</i>, <i>automatic → automate</i>.'},
+  {t:"-ify", map:'<span class="a">noun / adjective</span> → <span class="b">verb in -ify</span>', ex:'<b>make / cause to become.</b> simplify · clarify · identify · amplify · modify<br>The base often loses a letter first: <i>simple → simplify</i>, <i>clear → clarify</i>. Many <i>-ify</i> verbs give nouns in <i>-ification</i>.'}
+];
+var curDial=0;
+DIAL.forEach(function(d,i){
+  var b=document.createElement("button"); b.textContent=d.t; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curDial=i; document.querySelectorAll("#dialChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderDial(); });
+  $("dialChips").appendChild(b);
+});
+function renderDial(){ var d=DIAL[curDial]; $("dialMap").innerHTML=d.map; $("dialEx").innerHTML=d.ex; }
+renderDial();
+
+/* spelling grid + no-such-verb grid */
+var SPELL = [
+  ["modern + -ize","modernize","nothing changes"],
+  ["wide + -en","widen","drop the final -e"],
+  ["motive + -ate","motivate","drop the final -e"],
+  ["simple + -ify","simplify","drop the final -e"],
+  ["automatic + -ate","automate","drop -ic"],
+  ["emphasis + -ize","emphasize","drop -is"],
+  ["clear + -ify","clarify","the base changes: clar-"],
+  ["strong + -en","strengthen","irregular: strength + -en"],
+  ["simplify → noun","simplification","-ify verbs give -ification"]
+];
+SPELL.forEach(function(r){
+  var d=document.createElement("div");
+  d.innerHTML='<span class="a">'+r[0]+'</span> → <span class="b">'+r[1]+'</span> <i>'+r[2]+'</i>';
+  $("spellGrid").appendChild(d);
+});
+var NOVERB = [
+  ["big","✘ bigen","not every adjective takes -en — say “make bigger”"],
+  ["modern","✘ to modern","✔ to modernize"],
+  ["strong","✘ to strong","✔ to strengthen"],
+  ["simple","✘ to simple","✔ to simplify"],
+  ["automatic","✘ to automatic","✔ to automate"]
+];
+NOVERB.forEach(function(r){
+  var d=document.createElement("div");
+  d.innerHTML='<span class="a">'+r[0]+'</span> → <span style="color:var(--think)">'+r[1]+'</span> <i>'+r[2]+'</i>';
+  $("noVerbGrid").appendChild(d);
+});
+
+/* special cases */
+var SC = {
+  ise:"<b>-ize (US) vs. -ise (UK).</b> <i>organize / organise</i>, <i>realize / realise</i> — both spellings exist, so pick one and be consistent inside a text. This course uses American <b>-ize</b>. Mixing <i>criticize</i> and <i>criticise</i> in the same page is the real mistake.",
+  en:"<b>Not every adjective takes -en.</b> <i>wide → widen</i>, but ✘ <s>bigen</s>: use <b>make bigger</b>. And <i>strong</i> becomes the irregular <b>strengthen</b>, with a <b>-th-</b> in the middle. <b>-en</b> likes short words ending in a consonant.",
+  ify:"<b>Spelling changes with -ify.</b> A final <i>-y</i> often stays, and the base is trimmed before the suffix: <i>clear → clarify</i>, <i>simple → simplify</i>. Many <b>-ify</b> verbs form nouns in <b>-ification</b>: <i>simplify → simplification</i>, <i>modify → modification</i>.",
+  family:'<b>Watch the whole word family.</b> One root gives four words, one per job:<div class="shiftgrid"><div><span class="a">critic / criticism</span> <i>noun</i></div><div><span class="b">criticize</span> <i>verb</i></div><div><span class="a">critical</span> <i>adjective</i></div><div><span class="a">critically</span> <i>adverb</i></div></div>Same pattern: <i>modernization · modernize · modern</i> — <i>strength · strengthen · strong · strongly</i> — <i>simplicity / simplification · simplify · simple · simply</i>.',
+  hidden:"<b>Some “verbs” hide a suffix.</b> <i>threaten</i> comes from the noun <i>threat</i>, and <i>frighten</i> from the noun <i>fright</i>: noun + <b>-en</b>. So the noun is <i>a threat</i>, not <s>a threaten</s>."
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.ise;
+
+var ERRS = [
+  ['We must <span class="no">to modern</span> the system.','… to <span class="yes">modernize</span> the system.'],
+  ['This will <span class="no">strong</span> the signal.','This will <span class="yes">strengthen</span> the signal.'],
+  ['They want to <span class="no">simple</span> the design.','They want to <span class="yes">simplify</span> the design.'],
+  ['Factories increasingly <span class="no">automatic</span> repetitive work.','Factories increasingly <span class="yes">automate</span> repetitive work.'],
+  ['<span class="no">criticize</span> and <span class="no">criticise</span> mixed in one text','choose <span class="yes">one</span> spelling and keep it.']
+];
+ERRS.forEach(function(e){ var li=document.createElement("li"); li.innerHTML="✘ "+e[0]+"<br>✔ "+e[1]; $("errList").appendChild(li); });
+
+/* =====================================================================
+   BUILD · assemble (stem + suffix) + transform (write the word)
+===================================================================== */
+var BUILD = [
+  {stem:"cooper", correct:"ate", v:"cooperate", note:"-ate = make / cause: cooperate."},
+  {stem:"broad", correct:"en", v:"broaden", note:"-en on a short adjective: broad → broaden."},
+  {stem:"critic", correct:"ize", v:"criticize", note:"-ize on the noun critic: criticize (US spelling)."},
+  {stem:"motiv", correct:"ate", v:"motivate", note:"motive → motivate: drop the final -e, add -ate."},
+  {stem:"simpl", correct:"ify", v:"simplify", note:"simple → simplify: drop the final -e, add -ify."},
+  {stem:"threat", correct:"en", v:"threaten", note:"noun + -en: threat → threaten."},
+  {stem:"personal", correct:"ize", v:"personalize", note:"-ize on an adjective: personal → personalize."},
+  {stem:"ampl", correct:"ify", v:"amplify", note:"-ify = make / cause to become: amplify."},
+  {stem:"wid", correct:"en", v:"widen", note:"wide → widen: drop the final -e, add -en."},
+  {stem:"autom", correct:"ate", v:"automate", note:"automatic → automate: drop -ic, add -ate."},
+  {stem:"modern", correct:"ize", v:"modernize", note:"modern → modernize: nothing changes."},
+  {stem:"clar", correct:"ify", v:"clarify", note:"clear → clarify: the base changes shape before -ify."}
+];
+var bi=0, bPick=null, bBuilt=0, bSolved=false;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function renderBuild(){
+  var it=BUILD[bi]; bPick=null; bSolved=false;
+  $("bctx").innerHTML = "Add the suffix: <b>"+it.stem+"___</b><small>Item "+(bi+1)+" of "+BUILD.length+" · exercise A of the manual</small>";
+  var wrap=$("sufChips"); wrap.innerHTML="";
+  ["ate","en","ize","ify"].forEach(function(op){
+    var b=document.createElement("button"); b.textContent="-"+op; b.dataset.v=op;
+    b.addEventListener("click", function(){ bPick=op; document.querySelectorAll("#sufChips button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bPick){ r.className="bresult bad"; r.innerHTML="Choose a suffix first."; return; }
+  if(bPick===it.correct){
+    r.className="bresult good";
+    r.innerHTML='✅ <span class="bse">'+it.stem+'</span><span class="sfx">'+it.correct+'</span> → <b>'+it.v+'</b><div class="bnote">'+it.note+"</div>";
+    if(!bSolved){ bSolved=true; bBuilt++; $("bScore").textContent="Forged: "+bBuilt; }
+  } else {
+    document.querySelector('#sufChips button[data-v="'+bPick+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML='❌ There is no “'+it.stem+bPick+'”. <span class="bnote">Hint — '+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:'Adding technology to the body seems to ___ (fright) some people.', accept:["frighten"], model:"frighten — noun + -en."},
+  {ctx:'I sometimes find it hard to ___ (motive) myself to study.', accept:["motivate"], model:"motivate — drop the final -e, add -ate."},
+  {ctx:'Researchers on AI need to ___ (emphasis) the benefits to ordinary people.', accept:["emphasize","emphasise"], model:"emphasize (US) / emphasise (UK) — drop -is, add -ize."},
+  {ctx:'Many people ___ (critic) companies that ignore diversity.', accept:["criticize","criticise"], model:"criticize (US) / criticise (UK) — the noun critic takes -ize."},
+  {ctx:'Do you think AI will ___ (threat) people’s jobs?', accept:["threaten"], model:"threaten — the noun threat takes -en."},
+  {ctx:'New tools can ___ (simple) complex tasks.', accept:["simplify"], model:"simplify — drop the final -e, add -ify."},
+  {ctx:'Factories increasingly ___ (automatic) repetitive work.', accept:["automate"], model:"automate — drop -ic, add -ate."},
+  {ctx:'Travel can ___ (broad) your mind.', accept:["broaden"], model:"broaden — short adjective + -en."},
+  {ctx:'Word family — verb: modernize · adjective: modern · noun: ___', accept:["modernization","modernisation"], model:"modernization (UK modernisation)."},
+  {ctx:'Word family — noun: strength · adjective: strong · verb: ___', accept:["strengthen"], model:"strengthen — irregular, with -th-."},
+  {ctx:'Word family — verb: simplify · adjective: simple · noun: simplicity / ___', accept:["simplification"], model:"simplification — -ify verbs give -ification."},
+  {ctx:'Rewrite: “They want to make the design simpler.” (SIMPLIFY)', accept:["they want to simplify the design"], model:"They want to simplify the design."},
+  {ctx:'Rewrite: “Automation will make some industries stronger.” (STRENGTHEN)', accept:["automation will strengthen some industries"], model:"Automation will strengthen some industries."}
+];
+var ti=0, tDone=0, tSolved=false;
+function renderTrans(){ var it=TRANS[ti]; tSolved=false; $("tctx").innerHTML=it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok && !tSolved){ tSolved=true; tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Which suffix?", q:"Which suffix turns <i>modern</i> into a verb?", o:["-ize", "-en", "-ify", "-ate"], a:0, w:"-ize = make / turn into: modern → modernize."},
+  {kind:"mc", diff:1, tag:"Which suffix?", q:"<i>broad</i> + ___ = “make broader”", o:["-ify","-en","-ize"], a:1, w:"-en goes on short adjectives: broad → broaden."},
+  {kind:"fill", diff:1, tag:"Add the suffix", q:"Complete the verb that means “work together”: cooper___", accept:["ate","-ate","cooperate"], w:"-ate = make / cause: cooperate."},
+  {kind:"mc", diff:1, tag:"Does it exist?", q:"Which word is NOT an English verb?", o:["widen","sharpen","bigen"], a:2, w:"Not every adjective takes -en: ✘ bigen. Say “make bigger”."},
+  {kind:"error", diff:1, tag:"Fix the error", words:["The","new","app","will","simple","the","process."], bad:4, fixOld:"simple", fixNew:"simplify", w:"“simple” is an adjective; the verb needs -ify: simplify."},
+  {kind:"fill", diff:2, tag:"Add the suffix", q:"Complete the verb that means “make a signal louder or stronger”: ampl___", accept:["ify","-ify","amplify"], w:"-ify = make / cause to become: amplify."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["This","update","will","strong","the","signal."], bad:3, fixOld:"strong", fixNew:"strengthen", w:"strong is irregular: strong → strength + -en = strengthen."},
+  {kind:"mc", diff:2, tag:"Word family", q:"critic → criticize → critical → ___ (the noun for what a critic writes)", o:["criticism","criticization","criticness"], a:0, w:"The family is critic / criticism · criticize · critical · critically."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["Companies","that","fail","to","modern","will","lose","customers."], bad:4, fixOld:"modern", fixNew:"modernize", w:"The adjective modern is not a verb: to modernize."},
+  {kind:"fill", diff:3, tag:"Word family", q:"The verb is <i>simplify</i>. Write the noun for the <b>process</b> — not <i>simplicity</i>, which is the quality: ___", accept:["simplification"], w:"Many -ify verbs form nouns in -ification: simplification."},
+  {kind:"fill", diff:3, tag:"Spelling change", q:"The noun is <i>emphasis</i>. Write the verb: ___", accept:["emphasize","emphasise"], w:"Drop -is and add -ize: emphasize (British emphasise)."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["Factories","increasingly","automatic","repetitive","work."], bad:2, fixOld:"automatic", fixNew:"automate", w:"automatic is an adjective; the verb drops -ic and adds -ate: automate."},
+  {kind:"mc", diff:3, tag:"Be consistent", q:"In one text you write <i>organize</i> and later <i>criticise</i>. What is wrong?", o:["Nothing at all: the two endings are interchangeable.","You mixed US -ize with UK -ise: keep one spelling.","The verb “criticise” does not exist in English."], a:1, w:"-ize (US) and -ise (UK) are both correct, but one text keeps one spelling. This course uses -ize."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i6_s7_drill_best")||0); if(dscore>best){ store("i6_s7_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Forged perfectly. Ready for the ★★★ homework." : dscore>=8?"Good work — review the spelling card and go again." : "Re-read Structure 7, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">\u2713 Correct.</span> ':'<span class="k">\u2717 Not that one: the green part is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

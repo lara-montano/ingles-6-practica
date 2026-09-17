@@ -471,8 +471,8 @@ renderTrans();
 ===================================================================== */
 var DRILL = [
   {kind:"mc", diff:1, tag:"Active or passive?", q:"“The theory is being tested.”", o:["Passive","Active"], a:0, w:"The subject (the theory) receives the action → passive."},
-  {kind:"mc", diff:1, tag:"Complete", q:"They have found a cure → “A cure ___.”", o:["has been found","has found","was find"], a:0, w:"Present perfect passive: has been + past participle."},
-  {kind:"mc", diff:1, tag:"Which is correct?", q:"Penicillin + discover (1928):", o:["Penicillin was discovered in 1928.","Penicillin was discover in 1928.","Penicillin were discovered in 1928."], a:0, w:"Singular subject + was + past participle."},
+  {kind:"mc", diff:1, tag:"Complete", q:"They have found a cure → “A cure ___.”", o:["has found", "has been found", "was find"], a:1, w:"Present perfect passive: has been + past participle."},
+  {kind:"mc", diff:1, tag:"Which is correct?", q:"Penicillin + discover (1928):", o:["Penicillin were discovered in 1928.", "Penicillin was discover in 1928.", "Penicillin was discovered in 1928."], a:2, w:"Singular subject + was + past participle."},
   {kind:"error", diff:2, tag:"Fix the error", words:["Penicillin","was","discover","in","1928."], bad:2, fixOld:"discover", fixNew:"discovered", w:"The passive needs the past participle: <i>was discovered</i>."},
   {kind:"error", diff:2, tag:"Fix the error", words:["The","results","was","published","last","week."], bad:2, fixOld:"was", fixNew:"were", w:"<b>Results</b> is plural — <i>be</i> must agree: were published."},
   {kind:"fill", diff:2, tag:"Complete", q:"“Radiation ___ (discover) in 1896.”", accept:["was discovered"], w:"Past simple passive: was + past participle."},

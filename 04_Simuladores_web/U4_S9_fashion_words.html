@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE STYLE BOARD · English 6 · Unit 4 "Ahead of the Curve"
+  Structure 9 — talking about clothes, style & trends (fashion collocations)
+  Three modes: Explore (board + matcher + formality dial) · Build · Drill.
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Structure 9 · The Style Board · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --wine:#8C2F53; --winedark:#5E1F38; --winelt:#F4E5EC;   /* Unit 4 identity */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--wine),var(--winedark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#F1C4D5; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#F7DCE7; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--winedark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--winedark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--winedark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-wine{background:var(--wine)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--wine); background:var(--winelt); color:var(--winedark)}
+
+  /* ---------- the style board ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .board{display:grid; grid-template-columns:repeat(auto-fit,minmax(245px,1fr)); gap:10px; margin-top:8px}
+  .bd{background:var(--soft); border:1.5px solid var(--rule); border-left:5px solid var(--wine); border-radius:12px; padding:11px 13px}
+  .bd .bt{font-size:17px; font-weight:900; color:var(--winedark)}
+  .bd .bm{font-size:14px; font-weight:700; color:#555; margin:2px 0 6px}
+  .bd .bex{font-size:15px; font-weight:700; line-height:1.5}
+  .bd .breg{font-size:12px; font-weight:800; color:var(--navy); background:var(--navylt); border-radius:999px; padding:2px 9px; display:inline-block; margin-top:7px}
+  .kw{background:var(--winelt); color:var(--winedark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--wine)}
+  .kw.masked{color:transparent; position:relative; cursor:pointer; min-width:64px; display:inline-block}
+  .kw.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+
+  /* ---------- tap-to-match (no drag: works with finger and mouse) ---------- */
+  .pool{display:flex; gap:7px; flex-wrap:wrap; margin:8px 0 12px}
+  .pool button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:8px 16px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .pool button.sel{border-color:var(--wine); background:var(--winelt); color:var(--winedark); transform:translateY(-2px); box-shadow:0 3px 8px rgba(0,0,0,.14)}
+  .pool button.used{opacity:.32; text-decoration:line-through; cursor:default}
+  .slots{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:8px}
+  .slot{background:#fff; border:2px solid var(--rule); border-radius:11px; padding:10px 13px; cursor:pointer; text-align:left; font:800 16px Lato,sans-serif; color:var(--ink)}
+  .slot small{display:block; font-size:12px; font-weight:700; color:#777; margin-top:2px}
+  .slot.done{border-color:var(--green); background:var(--greenlt); cursor:default}
+  .slot.bad{border-color:var(--think); background:var(--thinklt)}
+  .gapx{display:inline-block; min-width:78px; text-align:center; border-bottom:2px dashed var(--wine); color:var(--winedark)}
+  .slot.done .gapx{border-bottom-color:var(--green); color:var(--greendark)}
+  .mfeed{font-size:14px; font-weight:800; min-height:22px; margin-top:9px; color:#555}
+
+  /* ---------- formality dial ---------- */
+  input[type=range]{width:100%; -webkit-appearance:none; appearance:none; height:8px; border-radius:999px; background:linear-gradient(90deg,var(--navylt),var(--winelt)); outline:none; margin:10px 0 4px}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none; width:30px; height:30px; border-radius:50%; background:#fff; border:4px solid var(--winedark); box-shadow:0 2px 8px rgba(0,0,0,.3); cursor:grab}
+  input[type=range]::-moz-range-thumb{width:24px; height:24px; border-radius:50%; background:#fff; border:4px solid var(--winedark); box-shadow:0 2px 8px rgba(0,0,0,.3); cursor:grab}
+  .scale{display:grid; grid-template-columns:repeat(5,1fr); gap:4px; margin:6px 0}
+  .scale div{border:2px solid var(--rule); border-radius:9px; padding:8px 3px; text-align:center; font-size:11.5px; font-weight:800; background:#fff; color:#888; line-height:1.3}
+  .scale div.evt{border-color:var(--wine); background:var(--winelt); color:var(--winedark)}
+  .scale div.you{border-color:var(--navy); background:var(--navylt); color:var(--navy)}
+  .scale div.both{border-color:var(--green); background:var(--greenlt); color:var(--greendark)}
+  .ends{display:flex; justify-content:space-between; font-size:12px; font-weight:800; color:#888}
+  .verdict{border-radius:12px; padding:13px; font-weight:800; font-size:16px; text-align:center; margin-top:10px}
+  .verdict.ok{background:var(--greenlt); border:2px solid var(--green); color:var(--greendark)}
+  .verdict.over{background:var(--exceplt); border:2px solid var(--excep); color:var(--excep)}
+  .verdict.under{background:var(--thinklt); border:2px solid var(--think); color:var(--think)}
+  .verdict small{display:block; font-size:13px; font-weight:700; color:#555; margin-top:5px}
+
+  /* ---------- special cases + mistakes ---------- */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+  .shiftgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:6px; margin-top:8px}
+  .shiftgrid div{background:#fff; border:1.5px solid var(--rule); border-radius:8px; padding:6px 10px; font-size:14px; font-weight:700}
+  .shiftgrid .a{color:var(--navy)} .shiftgrid .b{color:var(--excep)}
+  .mis{display:grid; gap:7px; margin-top:6px}
+  .mis div{background:#fff; border:1.5px solid var(--rule); border-radius:9px; padding:8px 12px; font-size:15px; font-weight:700}
+  .mis .no{color:var(--think); text-decoration:line-through}
+  .mis .yes{color:var(--green)}
+  .mis span.n{display:block; color:#777; font-weight:600; font-size:13px; text-decoration:none}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--wine); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--winedark); border:2px solid var(--wine)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--wine); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--wine)}
+  .segbig button.on{background:var(--wine); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--wine); background:var(--winelt); color:var(--winedark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--winedark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--winedark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--wine); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .stn .w.wrongpick{background:var(--think); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--winedark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--wine); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} .scale div{font-size:10.5px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🧥</span>
+  <div class="wrap">
+    <div class="kicker">English 6 · Unit 4 · Ahead of the Curve</div>
+    <h1>🧥 The Style Board</h1>
+    <div class="sub"><b>Structure 9</b> — talking about clothes, style &amp; trends: <i>dress up, on-trend, a dress code, business casual</i>. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🧥 Explore the board</span><span>🔧 Build the phrase</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🧥 Explore<small>browse the board</small></button>
+    <button data-tab="build">🔧 Build<small>say it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Learn fashion words as blocks, not as single words</h2>
+      <p class="muted">These expressions travel together: you <b>dress up</b>, you are <b>on-trend</b>, a place has a
+        <b>dress code</b>. Learning the whole block is what makes you sound natural. Pick a job below and read the board.
+        <span class="es">(Aprende la colocación completa, no la palabra suelta.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the key expression, guess, then reveal</label>
+
+      <h3>1 · What do you want to talk about?</h3>
+      <div class="chips" id="grpChips"></div>
+      <div class="board" id="boardOut"></div>
+      <div style="text-align:center; margin-top:10px"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the expressions ✓</button></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-wine">🎯 Collocation matcher</span>
+      <h2>Tap a word, then tap where it belongs</h2>
+      <p class="muted">Six blocks, six missing words. <b>Tap a word</b> (it lights up), then <b>tap the block</b> it completes.
+        No dragging — it works with a finger too. <span class="es">(Toca la palabra y luego el bloque; se verifica al instante.)</span></p>
+      <div class="pool" id="mPool"></div>
+      <div class="slots" id="mSlots"></div>
+      <div class="mfeed" id="mFeed">Tap a word to start.</div>
+      <div class="bfoot"><button class="btn ghost small" id="mReset">Reset ↺</button><span class="bscore" id="mScore">Matched: 0 / 6</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">📏 The formality dial</span>
+      <h2>Dress code vs what you are wearing</h2>
+      <p class="muted">The manual gives one scale of formality: <b>formal &gt; smart / business &gt; business casual &gt; casual &gt; weekend casual</b>.
+        Set the <b>dress code</b> of the event with the slider, then tap what <b>you</b> are wearing.
+        <span class="es">(Si vas más formal que el código: overdressed; si vas menos: underdressed.)</span></p>
+      <div class="ends"><span>← more informal</span><span>more formal →</span></div>
+      <input type="range" id="evtRange" min="0" max="4" step="1" value="2">
+      <div class="scale" id="scaleOut"></div>
+      <h3>You are wearing…</h3>
+      <div class="chips" id="fitChips"></div>
+      <div class="verdict" id="verdictOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Traps to know</span>
+      <h2>Plurals, two meanings &amp; the verbs that go with clothes</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="clothes" class="on">clothes / clothing</button><button data-v="pairof">a pair of</button><button data-v="dressup">dress up ×2</button><button data-v="trendy">trendy vs stylish</button><button data-v="verbs">clothes verbs</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">🚫 Common mistakes</span>
+      <h2>What Spanish speakers usually get wrong</h2>
+      <div class="mis">
+        <div><span class="no">a jean</span> → <span class="yes">a pair of jeans</span><span class="n">Two-part garments are plural. <span class="es">(En español «un jean»; en inglés, un par.)</span></span></div>
+        <div><span class="no">These clothes is nice.</span> → <span class="yes">These clothes are nice.</span><span class="n"><i>clothes</i> is always plural, so the verb is plural.</span></div>
+        <div><span class="no">This dress fits me.</span> (meaning “it looks good”) → <span class="yes">This dress suits me.</span><span class="n"><i>fit</i> = the right size · <i>suit</i> = looks good on someone. <span class="es">(quedar de talla vs quedar bien.)</span></span></div>
+        <div><span class="no">very fashion</span> → <span class="yes">very fashionable</span><span class="n"><i>fashion</i> is the noun; the adjective is <i>fashionable</i>.</span></div>
+      </div>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> holds the whole Structure 9 word bank: the ten collocations grouped by job (clothes · trends · dress code), the tap-to-match version of exercise A (word bank <i>code · down · fashion · statement · trend · up</i>), and the formality scale turned into a dial that produces <i>overdressed / underdressed / dress up / dress down</i>.</li>
+          <li>The <b>traps</b> card is the manual's exceptions box (plural <i>clothes</i>, <i>a pair of</i>, the two meanings of <i>dress up</i>, <i>trendy/stylish/timeless/dated</i>, the clothes verbs); the red card is the pitfall box.</li>
+          <li><b>Build</b> is productive: <i>Assemble</i> replays exercise B (choose the collocation the sentence needs) and <i>Transform</i> asks students to write the fix or the missing expression (exercises A and C, plus the pitfalls).</li>
+          <li><b>Drill</b> is one graded flow of 13 items (★ recognise · ★★ fix the error &amp; complete · ★★★ dress code, over/under, two meanings) with score, streak and best result on the device.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-wine">🔧 Your turn to produce</span>
+      <h2>Build the expression</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the situation, then choose the <b>collocation</b> it needs. The machine writes the sentence — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">The sentence needs…</div><div class="bchips" id="verbChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New situation →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Write the missing expression, or rewrite the sentence so it is correct English. Then check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type your answer"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next one →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ recognise the collocation · ★★ fix the error &amp; complete · ★★★ dress code, over/under, two meanings.
+        Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 6 · Unit 4 «Ahead of the Curve» · Structure 9 — talking about clothes, style and trends · Level B1+
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE STYLE BOARD — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 6 Class Manual (Structure 9).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE 1 · the style board (collocations grouped by job)
+===================================================================== */
+var BOARD = {
+  wear:{label:"👗 Clothes &amp; how you dress", items:[
+    {t:"dress up", m:"wear clothes more formal than usual", ex:'For the interview, <span class="kw">dress up</span> a little.', reg:"everyday speech · also: wear a costume"},
+    {t:"dress down", m:"wear clothes more informal than usual", ex:'The office is relaxed on Fridays, so we <span class="kw">dress down</span>.', reg:"everyday speech · opposite of dress up"},
+    {t:"be overdressed", m:"wear clothes too formal for the situation", ex:'It is better to be <span class="kw">overdressed</span> than underdressed.', reg:"neutral · always measured against the dress code"},
+    {t:"be underdressed", m:"wear clothes not formal enough", ex:'You will be <span class="kw">underdressed</span> if you go to a wedding in jeans and a T-shirt.', reg:"neutral · always measured against the dress code"}
+  ]},
+  trend:{label:"📈 Style &amp; trends", items:[
+    {t:"make a fashion statement", m:"be fashionable in a bold, daring way", ex:'Layla <span class="kw">made a fashion statement</span> when she wore a bright suit to the party.', reg:"neutral · about a bold look"},
+    {t:"be in fashion / out of fashion", m:"be currently popular / no longer popular", ex:'Are dark denim jeans still <span class="kw">in fashion</span>?', reg:"neutral · works in any register"},
+    {t:"be on-trend", m:"be fashionable, trendy", ex:'I love them, but I am not sure they are <span class="kw">on-trend</span>.', reg:"informal · magazines, shops, social media"},
+    {t:"follow fashion", m:"take an interest in clothes and trends", ex:'I used to <span class="kw">follow fashion</span> when I was younger, but now I wear what is comfortable.', reg:"neutral · about a habit"}
+  ]},
+  code:{label:"🏢 Dress code at work", items:[
+    {t:"a dress code", m:"rules about what to wear somewhere", ex:'What is the <span class="kw">dress code</span> in this office? Do we have to wear business clothes?', reg:"workplaces and invitations"},
+    {t:"business casual", m:"smart but relaxed workwear", ex:'The code here is <span class="kw">business casual</span>: no suits, no shorts.', reg:"workplace label on the formality scale"},
+    {t:"the formality scale", m:"formal &gt; smart / business &gt; business casual &gt; casual &gt; weekend casual", ex:'A wedding is <span class="kw">formal</span>; a Saturday at home is weekend casual.', reg:"the manual's own scale — see the dial below"}
+  ]}
+};
+var curGroup = "wear", predictMode = false, revealed = false;
+Object.keys(BOARD).forEach(function(k){
+  var b = document.createElement("button"); b.innerHTML = BOARD[k].label; b.dataset.k = k;
+  if(k===curGroup) b.classList.add("on");
+  b.addEventListener("click", function(){ curGroup=k; document.querySelectorAll("#grpChips button").forEach(function(x){ x.classList.toggle("on", x.dataset.k===k); }); revealed=false; renderBoard(); });
+  $("grpChips").appendChild(b);
+});
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderBoard(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderBoard(); });
+function renderBoard(){
+  var g = BOARD[curGroup], h = "";
+  g.items.forEach(function(it){
+    h += '<div class="bd"><div class="bt">'+it.t+'</div><div class="bm">'+it.m+'</div><div class="bex">'+it.ex+'</div><div class="breg">'+it.reg+'</div></div>';
+  });
+  $("boardOut").innerHTML = h;
+  var mask = predictMode && !revealed;
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask){
+    document.querySelectorAll("#boardOut .kw").forEach(function(el){ el.classList.add("masked"); el.addEventListener("click", function(){ revealed=true; renderBoard(); }); });
+  }
+}
+renderBoard();
+
+/* =====================================================================
+   EXPLORE 2 · tap-to-match collocations (word bank of exercise A)
+===================================================================== */
+var MPOOL = ["code","down","fashion","statement","trend","up"];
+var MSLOT = [
+  {pre:"make a fashion", tight:false, a:"statement", hint:"be fashionable in a bold, daring way"},
+  {pre:"dress", tight:false, a:"down", hint:"wear clothes more informal than usual"},
+  {pre:"a dress", tight:false, a:"code", hint:"rules about what to wear somewhere"},
+  {pre:"on-", tight:true, a:"trend", hint:"fashionable, trendy"},
+  {pre:"follow", tight:false, a:"fashion", hint:"take an interest in clothes and trends"},
+  {pre:"dress", tight:false, a:"up", hint:"wear clothes more formal than usual"}
+];
+var mSel = null, mDone = {}, mCount = 0;
+function renderMatch(){
+  var p = $("mPool"); p.innerHTML = "";
+  MPOOL.forEach(function(w){
+    var b = document.createElement("button"); b.textContent = w; b.dataset.w = w;
+    var used = Object.keys(mDone).some(function(i){ return mDone[i]===w; });
+    if(used) b.classList.add("used");
+    if(w===mSel) b.classList.add("sel");
+    b.addEventListener("click", function(){
+      if(b.classList.contains("used")) return;
+      mSel = (mSel===w) ? null : w;
+      $("mFeed").innerHTML = mSel ? ('Selected <b>'+mSel+'</b> — now tap the block it completes.') : "Tap a word to start.";
+      renderMatch();
+    });
+    p.appendChild(b);
+  });
+  var s = $("mSlots"); s.innerHTML = "";
+  MSLOT.forEach(function(it,i){
+    var b = document.createElement("button"); b.className = "slot"; b.dataset.i = i;
+    var filled = mDone[i];
+    var gap = filled ? '<span class="gapx">'+filled+'</span>' : '<span class="gapx">?</span>';
+    b.innerHTML = it.pre + (it.tight ? "" : " ") + gap + '<small>' + it.hint + '</small>';
+    if(filled) b.classList.add("done");
+    b.addEventListener("click", function(){ pickSlot(i,b); });
+    s.appendChild(b);
+  });
+  $("mScore").textContent = "Matched: "+mCount+" / "+MSLOT.length;
+}
+function pickSlot(i, el){
+  if(mDone[i]) return;
+  if(!mSel){ $("mFeed").innerHTML = "Tap a <b>word</b> first, then tap the block."; return; }
+  var it = MSLOT[i];
+  if(mSel===it.a){
+    mDone[i] = mSel; mCount++;
+    var block = it.pre + (it.tight ? "" : " ") + it.a;
+    $("mFeed").innerHTML = '<span style="color:var(--green)">✔ <b>'+block+'</b> — '+it.hint+'.</span>';
+    mSel = null; renderMatch();
+    if(mCount===MSLOT.length) $("mFeed").innerHTML = '<span style="color:var(--green)">✔ All six blocks complete. These are the collocations of Structure 9.</span>';
+  } else {
+    el.classList.add("bad");
+    var tried = it.pre + (it.tight ? "" : " ") + mSel;
+    $("mFeed").innerHTML = '<span style="color:var(--think)">✘ <b>'+tried+'</b> is not the block that means “'+it.hint+'”. Try another block.</span>';
+    setTimeout(function(){ el.classList.remove("bad"); }, 700);
+  }
+}
+$("mReset").addEventListener("click", function(){ mSel=null; mDone={}; mCount=0; $("mFeed").innerHTML="Tap a word to start."; renderMatch(); });
+renderMatch();
+
+/* =====================================================================
+   EXPLORE 3 · formality dial (the manual's register scale)
+===================================================================== */
+var LEV = [
+  {n:"weekend casual", g:"the most relaxed end of the scale: a Saturday at home"},
+  {n:"casual", g:"everyday clothes — jeans and a T-shirt are fine"},
+  {n:"business casual", g:"smart but relaxed workwear"},
+  {n:"smart / business", g:"business clothes — a suit is normal"},
+  {n:"formal", g:"the most formal end: a wedding, a ceremony"}
+];
+var evt = 2, fit = 2;
+LEV.forEach(function(L,i){
+  var b = document.createElement("button"); b.textContent = L.n; b.dataset.i = i;
+  if(i===fit) b.classList.add("on");
+  b.addEventListener("click", function(){ fit=i; document.querySelectorAll("#fitChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.i===i); }); renderScale(); });
+  $("fitChips").appendChild(b);
+});
+$("evtRange").addEventListener("input", function(){ evt = +this.value; renderScale(); });
+function renderScale(){
+  var h = "";
+  LEV.forEach(function(L,i){
+    var cls = (i===evt && i===fit) ? "both" : (i===evt ? "evt" : (i===fit ? "you" : ""));
+    var mark = (i===evt && i===fit) ? "📋👤" : (i===evt ? "📋" : (i===fit ? "👤" : "·"));
+    h += '<div class="'+cls+'">'+mark+'<br>'+L.n+'</div>';
+  });
+  $("scaleOut").innerHTML = h;
+  var d = fit - evt, o = $("verdictOut");
+  var head = '📋 Dress code: <b>'+LEV[evt].n+'</b> — '+LEV[evt].g+'.<br>👤 You: <b>'+LEV[fit].n+'</b>.<br>';
+  if(d===0){ o.className = "verdict ok"; o.innerHTML = head+'✔ You are dressed right for the dress code.<small>Nothing to change — your clothes match the rules of the place.</small>'; }
+  else if(d>0){ o.className = "verdict over"; o.innerHTML = head+'You are <b>overdressed</b> — your clothes are too formal for the situation.<small>The fix: <b>dress down</b> ('+d+' step'+(d>1?"s":"")+' on the scale). Still, it is better to be overdressed than underdressed.</small>'; }
+  else { o.className = "verdict under"; o.innerHTML = head+'You are <b>underdressed</b> — your clothes are not formal enough.<small>The fix: <b>dress up</b> ('+(-d)+' step'+(d<-1?"s":"")+' on the scale).</small>'; }
+}
+renderScale();
+
+/* =====================================================================
+   EXPLORE 4 · traps (exceptions box of the manual)
+===================================================================== */
+var SC = {
+  clothes:"<b>clothes</b> is <b>always plural</b> — there is no “a clothe”. The uncountable word is <b>clothing</b>. ✔ warm <b>clothes</b> / warm <b>clothing</b> · ✘ <s>a clothes</s>. The verb is plural too: These clothes <b>are</b> comfortable.",
+  pairof:'<b>Two-part garments are plural</b> and take a plural verb. Count them with <b>a pair of</b>.<div class="shiftgrid"><div><span class="a">trousers</span> → <span class="b">a pair of trousers</span></div><div><span class="a">jeans</span> → <span class="b">a pair of jeans</span></div><div><span class="a">shorts</span> → <span class="b">a pair of shorts</span></div><div><span class="a">pajamas</span> → <span class="b">a pair of pajamas</span></div><div><span class="a">glasses</span> → <span class="b">a pair of glasses</span></div></div>',
+  dressup:"<b>dress up has two meanings:</b> (1) wear clothes more formal than usual — “For the interview, dress up a little.” (2) wear a <b>costume</b> — “It was a costume party, so we dressed up as pirates.” Only meaning (1) has the opposite <b>dress down</b>.",
+  trendy:'<b>Not all style words are compliments.</b><div class="shiftgrid"><div><span class="a">trendy</span> → <span class="b">slightly negative: follows fashion too eagerly</span></div><div><span class="a">stylish</span> → <span class="b">a compliment</span></div><div><span class="a">timeless</span> → <span class="b">a compliment: never goes out of fashion</span></div><div><span class="a">dated</span> → <span class="b">old-fashioned</span></div></div>',
+  verbs:'<b>The verbs that go with clothes:</b><div class="shiftgrid"><div><span class="a">try on</span> → <span class="b">test it in a shop</span></div><div><span class="a">put on / take off</span> → <span class="b">start / stop wearing it</span></div><div><span class="a">do up</span> → <span class="b">close buttons or a zip</span></div><div><span class="a">wear out</span> → <span class="b">use it until it is finished</span></div><div><span class="a">suit</span> → <span class="b">look good on someone</span></div><div><span class="a">fit</span> → <span class="b">be the right size</span></div></div>'
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.clothes;
+
+/* =====================================================================
+   BUILD · assemble (choose the collocation) + transform (write it)
+===================================================================== */
+var BUILD = [
+  {ctx:'Style talk: “I used to ___ closely — I read every magazine — but now I wear what is comfortable.”', frame:'I used to {V} closely, but now I wear what is comfortable.', options:["follow fashion","make a fashion statement","be on-trend"], correct:"follow fashion", note:"follow fashion = take an interest in clothes and trends; only this one takes closely."},
+  {ctx:'Shopping: “Are dark denim jeans still ___, or has everyone stopped wearing them?”', frame:'Are dark denim jeans still {V}, or has everyone stopped wearing them?', options:["in fashion","out of fashion","a dress code"], correct:"in fashion", note:"be in fashion = currently popular; out of fashion = no longer popular, so it cannot go before “or has everyone stopped wearing them?”."},
+  {ctx:'First day at work: “What is the ___ in this office? Do we have to wear business clothes?”', frame:'What is the {V} in this office?', options:["dress code","fashion statement","weekend casual"], correct:"dress code", note:"a dress code = the rules about what to wear somewhere."},
+  {ctx:'A wedding invitation and a pair of jeans: “You will be ___ if you go to a wedding in jeans and a T-shirt.”', frame:'You will be {V} if you go to a wedding in jeans and a T-shirt.', options:["underdressed","overdressed","on-trend"], correct:"underdressed", note:"be underdressed = not formal enough for the situation."},
+  {ctx:'A bright suit at a party: “Layla ___ when she wore a bright suit to the party.”', frame:'Layla {V} when she wore a bright suit to the party.', options:["made a fashion statement","dressed down","was underdressed"], correct:"made a fashion statement", note:"make a fashion statement = be fashionable in a bold, daring way."},
+  {ctx:'Safe advice: “It is better to be ___ than underdressed.”', frame:'It is better to be {V} than underdressed.', options:["overdressed","out of fashion","dated"], correct:"overdressed", note:"be overdressed = too formal for the situation — the safer mistake."},
+  {ctx:'The office rule is smart but relaxed: no suits, no shorts. Which label is it?', frame:'The dress code in this office is {V}.', options:["business casual","weekend casual","formal"], correct:"business casual", note:"business casual = smart but relaxed workwear, between casual and smart / business."},
+  {ctx:'Job interview tomorrow: “For the interview, ___ a little.”', frame:'For the interview, {V} a little.', options:["dress up","dress down","wear out"], correct:"dress up", note:"dress up = wear clothes more formal than usual."}
+];
+var bi=0, bPick=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function renderBuild(){
+  var it=BUILD[bi]; bPick=null;
+  $("bctx").innerHTML = it.ctx;
+  var wrap=$("verbChips"); wrap.innerHTML="";
+  it.options.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ bPick=op; document.querySelectorAll("#verbChips button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bPick){ r.className="bresult bad"; r.innerHTML="Choose a collocation first."; return; }
+  if(bPick===it.correct){
+    var sent=it.frame.replace("{V}", '<span class="kw">'+it.correct+'</span>');
+    r.className="bresult good"; r.innerHTML="✅ "+sent+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    document.querySelector('#verbChips button[data-v="'+bPick+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ Not that one. <span class='bnote'>Hint — "+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:'Correct the sentence: “I need a jean for work.”', accept:["i need a pair of jeans for work","i need jeans for work","i need some jeans for work"], model:"I need a pair of jeans for work. (two-part garments: a pair of + plural — “I need jeans for work” also works)"},
+  {ctx:'Correct the sentence: “These clothes is really comfortable.”', accept:["these clothes are really comfortable"], model:"These clothes are really comfortable. (clothes is always plural)"},
+  {ctx:'Correct the sentence — you mean it looks good on her: “This dress fits her.”', accept:["this dress suits her"], model:"This dress suits her. (fit = right size · suit = looks good)"},
+  {ctx:'Correct the sentence: “That jacket is very fashion.”', accept:["that jacket is very fashionable"], model:"That jacket is very fashionable. (fashion = noun · fashionable = adjective)"},
+  {ctx:'Write the expression: to wear clothes more formal than usual is to ___ (two words).', accept:["dress up","to dress up"], model:"dress up"},
+  {ctx:'Write the expression: rules about what to wear somewhere are a ___ (two words).', accept:["dress code","a dress code"], model:"a dress code"},
+  {ctx:'Complete: “Are dark denim jeans still ___? I love them, but I am not sure they are on-trend.” (two words)', accept:["in fashion"], model:"in fashion"},
+  {ctx:'Style words: “Nobody has worn that style since 2005 — it is completely ___.”', accept:["dated","out of fashion","old-fashioned","old fashioned"], model:"dated (= old-fashioned). “out of fashion” also works here."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML=it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow (13 items: 5★ · 4★★ · 4★★★)
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Collocation", q:"“She wore a bright yellow suit and ___ a fashion statement.”", o:["made","did","took"], a:0, w:"The block is make a fashion statement = be fashionable in a bold, daring way. Not “do” and not “take”."},
+  {kind:"mc", diff:1, tag:"Meaning", q:"“On Fridays we dress down at the office.” What do they do?", o:["They wear clothes that are more formal than usual.", "They wear more informal clothes than usual."], a:1, w:"dress down = more informal than usual; dress up = more formal than usual."},
+  {kind:"fill", diff:1, tag:"Collocation", q:"Rules about what to wear somewhere = a dress ___. (one word)", accept:["code"], w:"a dress code = rules about what to wear somewhere."},
+  {kind:"error", diff:1, tag:"Fix the error", words:["I","need","a","jean","for","work."], bad:3, fixOld:"jean", fixNew:"pair of jeans", w:"Two-part garments are plural: count them with a pair of → I need a pair of jeans for work."},
+  {kind:"mc", diff:1, tag:"Plural", q:"“These clothes ___ really comfortable.”", o:["are","is"], a:0, w:"clothes is always plural, so the verb is plural; the uncountable word is clothing."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["These","shoes","don't","suit","me;","they","are","too","small."], bad:3, fixOld:"suit", fixNew:"fit", w:"Size is fit, not suit: These shoes don't fit me. (suit = look good on someone)"},
+  {kind:"fill", diff:2, tag:"Right collocation", q:"“You will be ___ if you go to a wedding in jeans and a T-shirt.” (one word)", accept:["underdressed","under-dressed"], w:"be underdressed = wear clothes not formal enough for the situation."},
+  {kind:"mc", diff:2, tag:"Clothes verbs", q:"“Can I ___ these jeans before I buy them?”", o:["do up", "wear out", "try on"], a:2, w:"try on = test a garment in a shop; wear out = use it until it is finished."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["Nobody","wears","that","style","now;","it","is","really","timeless."], bad:8, fixOld:"timeless", fixNew:"dated", w:"dated = old-fashioned; timeless is a compliment (it never goes out of fashion)."},
+  {kind:"fill", diff:3, tag:"Dress code", q:"Smart but relaxed workwear — no suits, no shorts. On the manual's scale it sits between casual and smart / business. The dress code is ___. (two words)", accept:["business casual","business-casual"], w:"business casual sits between casual and smart / business on the formality scale."},
+  {kind:"mc", diff:3, tag:"Over or under?", q:"The barbecue is weekend casual and you arrive in a formal suit. You are…", o:["underdressed — next time, you should dress up", "overdressed — next time, dress down"], a:1, w:"Too formal for the situation = overdressed; the fix is to dress down."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["It","was","a","costume","party,","so","we","dressed","down","as","pirates."], bad:8, fixOld:"down", fixNew:"up", w:"dress up has two meanings: wear formal clothes, or wear a costume — so it is dressed up as pirates."},
+  {kind:"fill", diff:3, tag:"Right collocation", q:"“I used to ___ closely — I read every magazine and knew every designer — but now I wear what is comfortable.” (two words)", accept:["follow fashion"], w:"follow fashion = take an interest in clothes and trends; you follow fashion closely."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i6_s9_drill_best")||0); if(dscore>best){ store("i6_s9_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Every block in place. Ready for the ★★★ homework." : dscore>=8?"Good — review the traps card and the formality dial, then go again." : "Re-read Structure 9, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">✓ Correct.</span> ':'<span class="k">✗ Not that one: the green part is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

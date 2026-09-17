@@ -24,6 +24,21 @@ SIMS = [
  ("u5","Unit 5 · Grammar 13","The future in the past","was going to · would · was supposed to · was about to: the plans we never kept.","U5_G13_future_in_the_past.html"),
  ("u5","Unit 5 · Grammar 14","The future progressive","will be + -ing: an action in progress at a future moment, on a timeline.","U5_G14_future_progressive.html"),
 ]
+STRUCT = [
+ ("u1","Unit 1 · Structure 1","Adverb + adjective","Gradable vs extreme: very tired, but absolutely exhausted.","U1_S1_adverb_adjective.html"),
+ ("u1","Unit 1 · Structure 2","Building science words","-ist · -ism · -ology · -ical · -ify: roots, suffixes and word families.","U1_S2_science_word_formation.html"),
+ ("u2","Unit 2 · Structure 3","Compound adjectives","The five patterns and the hyphen: a two-hour delay, never two-hours.","U2_S3_compound_adjectives.html"),
+ ("u2","Unit 2 · Structure 4","Travel & marketing language","Travel expressions and how a brochure persuades you.","U2_S4_travel_marketing.html"),
+ ("u2","Unit 2 · Structure 5","Travel phrasal verbs","check in · set off · get away · put up with: separable or not.","U2_S5_travel_phrasal_verbs.html"),
+ ("u3","Unit 3 · Structure 6","Three-part verbs","keep up with · do away with · put up with · look up to.","U3_S6_phrasal_prepositional_verbs.html"),
+ ("u3","Unit 3 · Structure 7","Suffixes that form verbs","-ize · -en · -ate · -ify: turning nouns and adjectives into verbs.","U3_S7_verb_suffixes.html"),
+ ("u4","Unit 4 · Structure 8","Noun modifiers","a luxury car production line: stacking nouns in the right order.","U4_S8_noun_modifiers.html"),
+ ("u4","Unit 4 · Structure 9","Clothes, style & trends","dress up · dress down · on-trend · dress code.","U4_S9_fashion_words.html"),
+ ("u4","Unit 4 · Structure 10","How new words are made","Clippings, acronyms, initials and blends.","U4_S10_new_words.html"),
+ ("u5","Unit 5 · Structure 11","Getting things done","get down to · put off · catch up on: the verbs of finishing.","U5_S11_task_phrasal_verbs.html"),
+ ("u5","Unit 5 · Structure 12","Goals & motivation","dream big · put your mind to it · break it down.","U5_S12_goal_language.html"),
+ ("u5","Unit 5 · Structure 13","Prefixes","over- · under- · re- · mis- · dis- · un-.","U5_S13_prefixes.html"),
+]
 GYM = {1:"5:36",2:"4:56",3:"4:49",4:"3:58",5:"3:57",6:"4:01",7:"3:59",8:"3:01",9:"3:19",10:"3:06",11:"3:46",12:"3:48",13:"3:52",14:"3:49",15:"4:01",16:"4:05",17:"3:45",18:"4:21",19:"4:25",20:"3:55"}
 BLOCKS = [
  ("Core block · sesiones 1–3 · contexto, detalles y sonidos parecidos · se oyen dos veces · 15 s para responder", range(1,4)),
@@ -43,6 +58,13 @@ EPS = [
 ]
 def sim_cards():
     return "\n".join(f'    <a class="sim {u}" href="04_Simuladores_web/{f}"><div class="unit">{k}</div><h3>{t}</h3><p>{d}</p><span class="go">Abrir →</span></a>' for u,k,t,d,f in SIMS)
+def struct_cards():
+    out=[]
+    for u,k,t,d,f in STRUCT:
+        if not os.path.exists(os.path.join(WEB, f)):
+            print("  (Structure omitida, no existe aun):", f); continue
+        out.append(f'    <a class="sim {u}" href="04_Simuladores_web/{f}"><div class="unit">{k}</div><h3>{t}</h3><p>{d}</p><span class="go">Abrir \u2192</span></a>')
+    return "\n".join(out)
 def gym_rows():
     out=[]
     for label, rng in BLOCKS:
@@ -140,7 +162,7 @@ html = f"""<!DOCTYPE html>
   </div>
 </header>
 <nav><div class="wrap">
-  <a href="#simuladores">🧪 Simuladores</a><a href="#mock">📝 SELLI Mock</a><a href="#gym">🏋️ SELLI Gym</a><a href="#lab">🎧 Listening Lab</a>
+  <a href="#simuladores">🧪 Simuladores</a><a href="#structure">🔤 Structure</a><a href="#mock">📝 SELLI Mock</a><a href="#gym">🏋️ SELLI Gym</a><a href="#lab">🎧 Listening Lab</a>
 </div></nav>
 <main class="wrap">
 
@@ -149,6 +171,14 @@ html = f"""<!DOCTYPE html>
   <p class="lead">Una página por tema del manual. Tres modos: <b>Explore</b> (la regla en acción) → <b>Build</b> (arma oraciones) → <b>Drill</b> (práctica graduada ★ ★★ ★★★ con marcador y racha). Funcionan sin internet: puedes guardar la página en tu teléfono.</p>
   <div class="grid">
 {sim_cards()}
+  </div>
+</section>
+
+<section id="structure">
+  <h2>Vocabulario y formación de palabras</h2>
+  <p class="lead">Las páginas de <b>Structure</b> del manual: colocaciones, verbos frasales, prefijos y sufijos, y cómo se forman las palabras nuevas. Mismos tres modos, pero aquí clasificas, emparejas y construyes palabras en vez de transformar oraciones.</p>
+  <div class="grid">
+{struct_cards()}
   </div>
 </section>
 

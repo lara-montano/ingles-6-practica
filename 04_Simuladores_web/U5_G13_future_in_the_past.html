@@ -522,10 +522,10 @@ renderTrans();
 ===================================================================== */
 var DRILL = [
   {kind:"mc", diff:1, tag:"Which form?", q:"“I ___ call you, but I lost my phone.”", o:["was going to","used to"], a:0, w:"A past plan that changed → was going to; used to is a past habit."},
-  {kind:"mc", diff:1, tag:"Which form?", q:"“She said she ___ email me later.”", o:["would","will"], a:0, w:"Reported speech: will → would."},
+  {kind:"mc", diff:1, tag:"Which form?", q:"“She said she ___ email me later.”", o:["will", "would"], a:1, w:"Reported speech: will → would."},
   {kind:"mc", diff:1, tag:"Which form?", q:"“We ___ submit it on Friday, but nobody did.”", o:["were supposed to","were going"], a:0, w:"A past obligation → were supposed to + base (and going needs to)."},
-  {kind:"mc", diff:1, tag:"Plan or habit?", q:"“As a kid, I ___ play football every weekend.” (a habit)", o:["used to","was going to"], a:0, w:"A past habit → used to; was going to = a past plan."},
-  {kind:"mc", diff:1, tag:"What does it express?", q:"“You were supposed to hand it in on Monday.” This is…", o:["a past obligation (not done)","a past plan or intention","a reported future"], a:0, w:"was supposed to = a past obligation, often unmet."},
+  {kind:"mc", diff:1, tag:"Plan or habit?", q:"“As a kid, I ___ play football every weekend.” (a habit)", o:["was going to", "used to"], a:1, w:"A past habit → used to; was going to = a past plan."},
+  {kind:"mc", diff:1, tag:"What does it express?", q:"“You were supposed to hand it in on Monday.” This is…", o:["a reported future", "a past plan or intention", "a past obligation (not done)"], a:2, w:"was supposed to = a past obligation, often unmet."},
   {kind:"error", diff:2, tag:"Fix the error", words:["I","was","go","to","help","you,","but","I","ran","out","of","time."], bad:2, fixOld:"was go to", fixNew:"was going to", w:"The form is was/were going to + base."},
   {kind:"error", diff:2, tag:"Fix the error", words:["We","was","supposed","to","meet","at","noon."], bad:1, fixOld:"was", fixNew:"were", w:"Plural subject → were supposed to."},
   {kind:"fill", diff:2, tag:"Complete", q:"“Nobody thought that smartphones ___ change the world so fast.” (will → ?)", accept:["would"], w:"A foreseen future from the past → would."},
@@ -533,7 +533,7 @@ var DRILL = [
   {kind:"fill", diff:3, tag:"Report it", q:"“I will finish it tonight,” he said. → He said he ___ finish it that night. (one word)", accept:["would"], w:"Reported speech: will → would (and tonight → that night)."},
   {kind:"error", diff:3, tag:"Fix the error", words:["She","would","to","travel","the","world."], bad:2, fixOld:"would to", fixNew:"would", w:"No to after would: would + base verb."},
   {kind:"fill", diff:3, tag:"Complete", q:"“I ___ leave when it started to rain.” (on the point of leaving — 3 words)", accept:["was about to"], w:"On the point of → was about to + base, interrupted with when."},
-  {kind:"mc", diff:3, tag:"would: future or habit?", q:"“Every summer, we would visit the lake.” Here would is…", o:["a past habit (repeated action)","a future seen from the past","a reported will"], a:0, w:"would + base can be a past habit in narrative — context decides."}
+  {kind:"mc", diff:3, tag:"would: future or habit?", q:"“Every summer, we would visit the lake.” Here would is…", o:["a reported will", "a future seen from the past", "a past habit (repeated action)"], a:2, w:"would + base can be a past habit in narrative — context decides."}
 ];
 var di=0, dscore=0, dstreak=0, ddone=false;
 function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }

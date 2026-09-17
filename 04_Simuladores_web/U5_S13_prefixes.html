@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE PREFIX DIAL · English 6 · Unit 5 "Where There's a Will"
+  Structure 13 — prefixes of quantity & direction (over-, under-, re-, mis-, dis-, un-)
+  Three modes: Explore (dial + word machine) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Structure 13 · The Prefix Dial · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --mind:#6A2C91; --minddark:#45195E; --mindlt:#EEE6F4;   /* Unit 5 identity (royal purple) */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;                      /* exceptions boxes only — lighter violet, distinct from --mind */
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--mind),var(--minddark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#DCC8EC; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#E8DAF2; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--minddark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--minddark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--minddark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-mind{background:var(--mind)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--mind); background:var(--mindlt); color:var(--minddark)}
+
+  /* ---------- the dial ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .dialout{background:var(--soft); border-radius:12px; padding:16px; text-align:center; margin-top:6px}
+  .dialout .map{font-size:clamp(18px,3vw,25px); font-weight:900}
+  .dialout .map .a{color:var(--mind)} .dialout .map .b{color:var(--grammar)}
+  .dialout .ex{font-size:14px; color:#555; margin-top:8px; font-weight:600}
+  .msk{color:transparent; position:relative; cursor:pointer; min-width:92px; display:inline-block; box-shadow:inset 0 -3px 0 var(--grammar)}
+  .msk::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .wordlist{display:flex; gap:6px; flex-wrap:wrap; justify-content:center; margin-top:10px}
+  .wordlist span{background:#fff; border:1.5px solid var(--rule); border-radius:8px; padding:4px 10px; font-size:14px; font-weight:700}
+  .rpre{background:var(--mindlt); color:var(--minddark); padding:0 4px; box-shadow:inset 0 -3px 0 var(--mind)}
+  .rbase{background:var(--navylt); color:var(--navy); padding:0 4px; box-shadow:inset 0 -3px 0 var(--navy)}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px; justify-content:center}
+  .legend span{border-radius:6px; padding:1px 8px}
+
+  /* ---------- the word machine (tap to select, tap the target) ---------- */
+  .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin:12px 0 5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .bchips button.on{border-color:var(--mind); background:var(--mindlt); color:var(--minddark)}
+  .bchips button.sel{border-color:var(--navy); background:var(--navylt); color:var(--navy); box-shadow:0 0 0 3px rgba(31,58,95,.16)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bchips button[disabled]{opacity:.4; cursor:not-allowed}
+  .machout{border:2px dashed var(--rule); border-radius:12px; padding:16px; margin-top:12px; text-align:center; background:var(--soft)}
+  .machout .wd{font-size:clamp(20px,4vw,30px); font-weight:900; letter-spacing:.01em}
+  .machout .mn{font-size:15px; font-weight:700; color:#444; margin-top:8px}
+  .verdict{display:inline-block; border-radius:999px; padding:3px 12px; font-weight:900; font-size:12px; color:#fff; margin-bottom:8px}
+  .v-ok{background:var(--green)} .v-no{background:var(--think)}
+  .machout.no{border-color:var(--think); background:var(--thinklt)}
+  .machout.no .wd{color:var(--think); text-decoration:line-through}
+  .trapbar{margin-top:10px; font-size:14px; font-weight:800; color:var(--think); text-align:center}
+
+  /* ---------- compare & special cases ---------- */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; flex-wrap:wrap; max-width:100%}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .seg2.mindseg button.on{background:var(--mind); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+  .cmp{display:grid; grid-template-columns:repeat(auto-fit,minmax(215px,1fr)); gap:10px; margin-top:10px}
+  .cmp .side{border:2px solid var(--rule); border-radius:12px; padding:11px 13px; background:#fff}
+  .cmp .side h4{font-size:16px; color:var(--mind); margin-bottom:3px}
+  .cmp .side p{font-size:14px; font-weight:600; color:#555}
+  .cmp .side .ww{margin-top:6px; font-size:14px; font-weight:800; color:var(--navy)}
+  .cmprule{background:var(--mindlt); border-left:4px solid var(--mind); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:700; color:var(--minddark); margin-top:10px}
+  .nope{color:var(--think); font-weight:800}
+  .shiftgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:6px; margin-top:6px}
+  .shiftgrid div{background:#fff; border:1.5px solid var(--rule); border-radius:8px; padding:6px 10px; font-size:14px; font-weight:700}
+  .shiftgrid .a{color:var(--navy)} .shiftgrid .b{color:var(--excep)}
+
+  /* ---------- common errors ---------- */
+  .errlist{list-style:none; margin-top:6px}
+  .errlist li{display:flex; gap:10px; align-items:center; flex-wrap:wrap; padding:8px 0; border-bottom:1px dashed var(--rule); font-size:15px; font-weight:700}
+  .errlist .bad{color:var(--think)} .errlist .bad::before{content:"✘ "}
+  .errlist .good{color:var(--green); display:none} .errlist .good::before{content:"✔ "}
+  .errlist .why{display:none; margin:0; flex-basis:100%; font-size:13px; padding:6px 10px}
+  .errlist li.open .good,.errlist li.open .why{display:block}
+  .errlist li.open .fixbtn{display:none}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--mind); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--minddark); border:2px solid var(--mind)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--mind); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--mind)}
+  .segbig button.on{background:var(--mind); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--minddark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--minddark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--mind); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick{background:var(--think); color:#fff}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--minddark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--mind); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🎛️</span>
+  <div class="wrap">
+    <div class="kicker">English 6 · Unit 5 · Where There's a Will</div>
+    <h1>🎛️ The Prefix Dial</h1>
+    <div class="sub"><b>Structure 13</b> — prefixes of quantity &amp; direction: <i>over-, under-, re-, mis-, dis-, un-</i>. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🎛️ Explore the dial</span><span>🔧 Build the word</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🎛️ Explore<small>turn the dial</small></button>
+    <button data-tab="build">🔧 Build<small>make the word</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Six prefixes that change meaning from the front</h2>
+      <p class="muted">A prefix goes <b>before</b> the base word and changes its meaning without changing its class:
+        <i>cook</i> is still a verb in <i>overcook</i>. Tap a prefix and read what it does.
+        <span class="es">(El prefijo va delante y cambia el significado; la clase de palabra no cambia.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the meaning, guess it from the words, then reveal</label>
+
+      <h3>1 · Turn the dial</h3>
+      <div class="chips" id="dialChips"></div>
+      <div class="dialout">
+        <div class="map" id="dialMap"></div>
+        <div class="wordlist" id="dialWords"></div>
+        <div class="ex" id="dialNote"></div>
+      </div>
+      <div style="text-align:center; margin-top:8px"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the meaning ✓</button></div>
+      <div class="legend"><span class="rpre">prefix</span><span class="rbase">base word</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">🏭 The prefix machine</span>
+      <h2>Base + prefix → a new word (or no word at all)</h2>
+      <p class="muted"><b>Tap a base word</b>, then <b>tap a prefix</b> to attach it. The machine builds the word and explains
+        the change of meaning. Careful: not every prefix fits every base.
+        <span class="es">(Toca la base y luego el prefijo; no todas las combinaciones existen.)</span></p>
+
+      <div class="glab">1 · Tap a base word</div>
+      <div class="bchips" id="baseChips"></div>
+      <div class="glab">2 · Tap a prefix to attach</div>
+      <div class="bchips" id="preChips"></div>
+
+      <div class="machout" id="machOut"><div class="mn">Pick a base word to start the machine.</div></div>
+      <div class="trapbar">🚫 Not-a-word traps found: <b id="trapCount">0</b> / <span id="trapTotal">0</span> —
+        <span class="es">no inventes palabras: si no existe, no existe.</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-mind">⚖️ Prefixes that get confused</span>
+      <h2>Which one does this word take?</h2>
+      <div class="seg2 mindseg" id="cmpSeg">
+        <button data-v="undis" class="on">un- vs dis-</button><button data-v="misun">mis- vs un-</button><button data-v="overunder">over- vs under-</button><button data-v="reun">re- vs un-/dis-</button><button data-v="unim">un- vs im-</button>
+      </div>
+      <div id="cmpOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Points to watch</span>
+      <h2>Spelling, pairs, twins &amp; productivity</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="spelling" class="on">spelling</button><button data-v="pairs">do → redo → undo</button><button data-v="twins">formal ↔ phrasal twin</button><button data-v="productive">over-/under- are productive</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠️ Common errors</span>
+      <h2>Errors Spanish speakers make</h2>
+      <p class="muted">Read the word or sentence, find the problem, then tap <b>Fix</b> to check. <span class="es">(Adivina la corrección antes de verla.)</span></p>
+      <ul class="errlist" id="errList"></ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Structure 13 in two devices: the <i>dial</i> (the six prefixes of the manual's table with their meaning and word lists) and the <i>machine</i> (base + prefix, with the meaning change and a counter of the combinations that do <b>not</b> exist — the manual's <i>dislock</i> / <i>unagree</i> point). The compare card covers un- vs dis-, mis- vs un-, over- vs under-, re- vs un-/dis- and the im- trap; the points-to-watch card is the manual's exception box; the errors card is its pitfall box.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> words by choosing the prefix for a meaning (exercise A), then <i>transform</i> — typing the prefixed verb a sentence needs, the informal phrasal twin, or the corrected spelling (exercises B, C and D).</li>
+          <li><b>Drill</b> merges the quizzes into one graded engine of 13 items (★ meaning of the prefix &amp; real vs invented word · ★★ spelling and the right prefix · ★★★ im-, tense, and the redo/undo pair) with score, streak and medals.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-mind">🔧 Your turn to produce</span>
+      <h2>Build the word</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the meaning, then choose the <b>prefix</b> the base word needs. The machine builds it — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">The prefix should be…</div><div class="bchips" id="preBuild"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New word →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Write the word the prompt asks for: the prefixed verb a sentence needs, the informal twin, or the corrected spelling.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type your answer"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next item →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ meaning of the prefix &amp; real vs invented words · ★★ spelling and the right prefix · ★★★ the im- trap, tense and the redo/undo pair.
+        Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 6 · Unit 5 «Where There's a Will» · Structure 13 — prefixes of quantity and direction · Level B1+
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE PREFIX DIAL — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 6 Class Manual (Structure 13).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+function piece(pre,bse){ return '<span class="rpre">'+pre+'</span><span class="rbase">'+bse+'</span>'; }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · the dial of six prefixes (manual table)
+===================================================================== */
+var DIAL = [
+  {p:"re-", mean:"again", words:["rework","reappear","rewrite","review","redo"], note:"re- repeats the action: work again → rework."},
+  {p:"mis-", mean:"wrongly", words:["misunderstand","misuse","miscalculate","misspell"], note:"With mis- the action did happen — it just went wrong."},
+  {p:"dis-", mean:"reverse / not", words:["disappear","disagree","dislike","discover"], note:"dis- can say “not” (disagree) or undo an action (disconnect)."},
+  {p:"un-", mean:"not / reverse an action", words:["unhappy","unlock","undo","unusual"], note:"Before an adjective un- = not; before a verb un- reverses the action."},
+  {p:"over-", mean:"too much", words:["overestimate","overwork","overcook","overthink","overpriced"], note:"over- and under- are the opposites of amount."},
+  {p:"under-", mean:"too little", words:["underestimate","underpay","underused","underprepared","underrated"], note:"Don’t underestimate under-: it is the mirror of over-."}
+];
+var curDial = 0, predictMode = false, revealed = false;
+DIAL.forEach(function(d,i){
+  var b = document.createElement("button"); b.textContent = d.p; b.dataset.k = i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curDial=i; document.querySelectorAll("#dialChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); revealed=false; renderDial(); });
+  $("dialChips").appendChild(b);
+});
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderDial(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderDial(); });
+function renderDial(){
+  var d = DIAL[curDial], mask = predictMode && !revealed;
+  $("dialMap").innerHTML = '<span class="a">'+d.p+'</span> = '+(mask ? '<span class="b msk" id="mskMean">'+d.mean+"</span>" : '<span class="b">'+d.mean+"</span>");
+  var wl = $("dialWords"); wl.innerHTML = "";
+  d.words.forEach(function(w){ var s=document.createElement("span"); s.innerHTML=piece(d.p.replace("-",""), w.slice(d.p.length-1)); wl.appendChild(s); });
+  $("dialNote").innerHTML = mask ? "What do these words have in common?" : d.note;
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask) $("mskMean").addEventListener("click", function(){ revealed=true; renderDial(); });
+}
+renderDial();
+
+/* =====================================================================
+   EXPLORE · the prefix machine (tap a base, tap a prefix — no drag & drop)
+===================================================================== */
+var MACH = [
+  {b:"cook", o:[{p:"over-",ok:1,pre:"over",bse:"cook",m:"cook it <b>too much</b>."},{p:"under-",ok:1,pre:"under",bse:"cook",m:"cook it <b>too little</b>."}]},
+  {b:"estimate", o:[{p:"over-",ok:1,pre:"over",bse:"estimate",m:"think it is <b>more</b> than it really is."},{p:"under-",ok:1,pre:"under",bse:"estimate",m:"think it is <b>less</b> than it really is."}]},
+  {b:"pay", o:[{p:"over-",ok:1,pre:"over",bse:"pay",m:"pay <b>too much</b>."},{p:"under-",ok:1,pre:"under",bse:"pay",m:"pay <b>too little</b>."}]},
+  {b:"work", o:[{p:"re-",ok:1,pre:"re",bse:"work",m:"work on it <b>again</b>."},{p:"over-",ok:1,pre:"over",bse:"work",m:"work <b>too much</b>."}]},
+  {b:"rate", o:[{p:"over-",ok:1,pre:"over",bse:"rate",m:"rate it <b>too highly</b> — keep both r’s: overrate."},{p:"under-",ok:1,pre:"under",bse:"rate",m:"rate it <b>too low</b> — from this verb comes the adjective <i>underrated</i>."}]},
+  {b:"use", o:[{p:"mis-",ok:1,pre:"mis",bse:"use",m:"use it <b>wrongly</b>."},{p:"under-",ok:1,pre:"under",bse:"use",m:"use it <b>too little</b> — often as the adjective <i>underused</i>."}]},
+  {b:"appear", o:[{p:"re-",ok:1,pre:"re",bse:"appear",m:"appear <b>again</b>."},{p:"dis-",ok:1,pre:"dis",bse:"appear",m:"stop being visible — keep both p’s: disappear."},{p:"un-",ok:0,pre:"un",bse:"appear",m:"there is no <i>unappear</i>. This base takes <b>re-</b> or <b>dis-</b>."}]},
+  {b:"agree", o:[{p:"dis-",ok:1,pre:"dis",bse:"agree",m:"<b>not</b> agree."},{p:"un-",ok:0,pre:"un",bse:"agree",m:"there is no <i>unagree</i>. <i>agree</i> takes <b>dis-</b>: disagree."}]},
+  {b:"lock", o:[{p:"un-",ok:1,pre:"un",bse:"lock",m:"<b>reverse</b> the locking."},{p:"dis-",ok:0,pre:"dis",bse:"lock",m:"there is no <i>dislock</i>. <i>lock</i> takes <b>un-</b>: unlock."}]},
+  {b:"do", o:[{p:"re-",ok:1,pre:"re",bse:"do",m:"do it <b>again</b>."},{p:"un-",ok:1,pre:"un",bse:"do",m:"<b>reverse</b> what you did."},{p:"dis-",ok:0,pre:"dis",bse:"do",m:"there is no <i>disdo</i>. The pair is do → <b>redo</b> → <b>undo</b>."}]},
+  {b:"understand", o:[{p:"mis-",ok:1,pre:"mis",bse:"understand",m:"understand it <b>wrongly</b>."},{p:"un-",ok:0,pre:"un",bse:"understand",m:"there is no <i>ununderstand</i>. To say the action went wrong, use <b>mis-</b>."}]},
+  {b:"spell", o:[{p:"mis-",ok:1,pre:"mis",bse:"spell",m:"spell it <b>wrongly</b> — keep both s’s: misspell."},{p:"dis-",ok:0,pre:"dis",bse:"spell",m:"there is no <i>disspell</i>. “Wrongly” is always <b>mis-</b>."}]},
+  {b:"happy", o:[{p:"un-",ok:1,pre:"un",bse:"happy",m:"<b>not</b> happy."},{p:"dis-",ok:0,pre:"dis",bse:"happy",m:"there is no <i>dishappy</i>. This adjective takes <b>un-</b>."}]},
+  {b:"patient", o:[{p:"im-",ok:1,pre:"im",bse:"patient",m:"<b>not</b> patient — im- goes before p, b and m."},{p:"un-",ok:0,pre:"un",bse:"patient",m:"there is no <i>unpatient</i>. Before p, b, m the negative is <b>im-</b>: impatient."}]}
+];
+var curBase = -1, trapsFound = {}, trapTotal = 0;
+MACH.forEach(function(x){ x.o.forEach(function(op){ if(!op.ok) trapTotal++; }); });
+$("trapTotal").textContent = trapTotal;
+MACH.forEach(function(x,i){
+  var b=document.createElement("button"); b.textContent=x.b; b.dataset.k=i;
+  b.addEventListener("click", function(){ curBase=i; document.querySelectorAll("#baseChips button").forEach(function(y){ y.classList.toggle("sel", +y.dataset.k===i); }); renderPre(); });
+  $("baseChips").appendChild(b);
+});
+function renderPre(){
+  var wrap=$("preChips"); wrap.innerHTML="";
+  if(curBase<0){ wrap.innerHTML='<button disabled>choose a base first</button>'; return; }
+  MACH[curBase].o.forEach(function(op,j){
+    var b=document.createElement("button"); b.textContent=op.p; b.dataset.j=j;
+    b.addEventListener("click", function(){ runMachine(j, b); });
+    wrap.appendChild(b);
+  });
+  $("machOut").className="machout"; $("machOut").innerHTML='<div class="mn">Now tap a prefix to attach it to <b>'+MACH[curBase].b+"</b>.</div>";
+}
+function runMachine(j, btn){
+  var x=MACH[curBase], op=x.o[j], out=$("machOut");
+  document.querySelectorAll("#preChips button").forEach(function(y){ y.classList.remove("on","wrongpick"); });
+  btn.classList.add(op.ok ? "on" : "wrongpick");
+  if(op.ok){
+    out.className="machout";
+    out.innerHTML='<div class="verdict v-ok">✔ Real word</div><div class="wd">'+piece(op.pre,op.bse)+'</div><div class="mn">'+x.b+" → <b>"+op.pre+op.bse+"</b> = "+op.m+"</div>";
+  } else {
+    out.className="machout no";
+    out.innerHTML='<div class="verdict v-no">✘ Not a word</div><div class="wd">'+op.pre+op.bse+'</div><div class="mn" style="text-decoration:none">✘ In English '+op.m+"</div>";
+    var key=x.b+"|"+op.p;
+    if(!trapsFound[key]){ trapsFound[key]=1; $("trapCount").textContent=Object.keys(trapsFound).length; }
+  }
+}
+renderPre();
+
+/* EXPLORE · prefixes that get confused */
+var CMP = {
+  undis:{a:{h:"un-",p:"not (adjectives) · reverse an action (verbs)",w:"unhappy · unusual · unlock · undo"},
+         b:{h:"dis-",p:"not · reverse an action",w:"disagree · dislike · disappear · disconnect"},
+         r:"Both can undo an action, but <b>each word takes only one</b> — you have to learn which. ✔ unlock, undo, disagree, disappear · <span class=\"nope\">✘ dislock</span> · <span class=\"nope\">✘ unagree</span>."},
+  misun:{a:{h:"mis-",p:"wrongly — the action happened, but badly",w:"misunderstand · misuse · miscalculate · misspell"},
+         b:{h:"un-",p:"not, or reverse the action",w:"unhappy · unusual · unlock · undo"},
+         r:"If you did it <b>and got it wrong</b>, use mis-. If you <b>didn’t</b> do it, or you <b>undid</b> it, use un-. <span class=\"nope\">✘ ununderstand</span> · <span class=\"nope\">✘ mislock</span>."},
+  overunder:{a:{h:"over-",p:"too much",w:"overcook · overwork · overestimate · overpay · overthink"},
+         b:{h:"under-",p:"too little",w:"undercook · underpay · underestimate · underused · underprepared"},
+         r:"over- and under- are the <b>opposites of amount</b>, and both are productive: you can attach them to many verbs and adjectives (overpriced, underrated)."},
+  reun:{a:{h:"re-",p:"do it again — the action is repeated",w:"rework · reappear · rewrite · redo"},
+         b:{h:"un- / dis-",p:"reverse it — the action is cancelled",w:"undo · unlock · disappear · disagree"},
+         r:"They often work in <b>pairs</b> around the same base: do → <b>redo</b> (again) → <b>undo</b> (reverse); appear → <b>reappear</b> → <b>disappear</b>."},
+  unim:{a:{h:"un-",p:"the usual negative prefix",w:"unhappy · unusual · unlikely · unexpected"},
+         b:{h:"im-",p:"the negative before p, b and m",w:"impossible · impatient · imbalanced · immobile"},
+         r:"Some negatives do <b>not</b> take un-. Before p, b, m the prefix is im-: <span class=\"nope\">✘ unpatient</span> → ✔ <b>impatient</b>. (il- before l: illegal; ir- before r: irregular.)"}
+};
+function renderCmp(v){
+  var c=CMP[v];
+  $("cmpOut").innerHTML='<div class="cmp"><div class="side"><h4>'+c.a.h+"</h4><p>"+c.a.p+'</p><div class="ww">'+c.a.w+'</div></div><div class="side"><h4>'+c.b.h+"</h4><p>"+c.b.p+'</p><div class="ww">'+c.b.w+'</div></div></div><div class="cmprule">'+c.r+"</div>";
+}
+document.querySelectorAll("#cmpSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#cmpSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); renderCmp(b.dataset.v); });
+});
+renderCmp("undis");
+
+/* EXPLORE · points to watch (manual exception box) */
+var SC = {
+  spelling:'<b>A prefix never changes the base spelling.</b> Write the prefix, then the whole base — even if a letter doubles:<div class="shiftgrid"><div><span class="a">mis + spell</span> → <span class="b">misspell</span></div><div><span class="a">over + rate</span> → <span class="b">overrate</span></div><div><span class="a">dis + satisfied</span> → <span class="b">dissatisfied</span></div><div><span class="a">dis + appear</span> → <span class="b">disappear</span></div></div>',
+  pairs:"<b>re- and un-/dis- often work in pairs.</b> Around one base you get the whole family: do → <b>redo</b> (do it again) → <b>undo</b> (reverse it); appear → <b>reappear</b> → <b>disappear</b>; work → <b>rework</b>. And <b>over-/under-</b> pair off by amount: overpay ↔ underpay, overcook ↔ undercook, overestimate ↔ underestimate.",
+  twins:'<b>Formal vs informal.</b> A prefixed verb often has an informal phrasal-verb twin — use the formal one in an essay, the phrasal one when you speak:<div class="shiftgrid"><div><span class="a">postpone</span> ≈ <span class="b">put off</span></div><div><span class="a">discover</span> ≈ <span class="b">find out</span></div><div><span class="a">disappear</span> ≈ <span class="b">fade away</span></div><div><span class="a">continue</span> ≈ <span class="b">keep on / stick with</span></div><div><span class="a">tolerate</span> ≈ <span class="b">put up with</span></div></div>',
+  productive:"<b>over- and under- are productive.</b> Unlike un-/dis-, you can attach them to many verbs <i>and</i> adjectives and the word will be understood: <b>overthink, overreact, overpriced, underprepared, underrated, underused</b>. The reversing prefixes are not like that — you cannot invent <i>dislock</i> or <i>unagree</i>."
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.spelling;
+
+/* EXPLORE · common errors (manual pitfall box) */
+var ERR = [
+  {bad:"mispell", good:"misspell", why:"mis + spell — the base keeps both s’s."},
+  {bad:"disapear", good:"disappear", why:"dis + appear — the base keeps both p’s."},
+  {bad:"unagree", good:"disagree", why:"This word takes dis-, not un-. Each word takes only one reversing prefix."},
+  {bad:"overate (meaning “rate too highly”)", good:"overrate", why:"over + rate keeps both r’s. <i>overate</i> is the past of <i>overeat</i> — a different word."},
+  {bad:"unpatient", good:"impatient", why:"Before p, b and m the negative prefix is im-, not un-."},
+  {bad:"I underestimate my time and finished late.", good:"I underestimated my time and finished late.", why:"The action is finished, so the prefixed verb takes the past: underestimated."},
+  {bad:"Please dislock the lab before the class.", good:"Please unlock the lab before the class.", why:"<i>lock</i> takes un-: unlock. There is no <i>dislock</i>."}
+];
+ERR.forEach(function(e){
+  var li=document.createElement("li");
+  li.innerHTML='<span class="bad">'+e.bad+'</span><button class="btn ghost small fixbtn">Fix ✓</button><span class="good">'+e.good+'</span><div class="why">'+e.why+"</div>";
+  li.querySelector(".fixbtn").addEventListener("click", function(){ li.classList.add("open"); });
+  $("errList").appendChild(li);
+});
+
+/* =====================================================================
+   BUILD · assemble (choose the prefix) + transform (write the word)
+===================================================================== */
+var PREFIXES = ["re-","mis-","dis-","un-","over-","under-"];
+var BUILD = [
+  {base:"appear", gloss:"appear again", correct:"re-", pre:"re", bse:"appear", note:"re- = again: reappear."},
+  {base:"understand", gloss:"understand it wrongly", correct:"mis-", pre:"mis", bse:"understand", note:"mis- = wrongly: misunderstand."},
+  {base:"estimate", gloss:"think it is more than it really is", correct:"over-", pre:"over", bse:"estimate", note:"over- = too much: overestimate."},
+  {base:"lock", gloss:"reverse the locking, open it", correct:"un-", pre:"un", bse:"lock", note:"un- reverses an action: unlock (not ✘ dislock)."},
+  {base:"agree", gloss:"not agree", correct:"dis-", pre:"dis", bse:"agree", note:"This word takes dis-: disagree (not ✘ unagree)."},
+  {base:"pay", gloss:"pay too little", correct:"under-", pre:"under", bse:"pay", note:"under- = too little: underpay."},
+  {base:"work", gloss:"work on it again", correct:"re-", pre:"re", bse:"work", note:"re- = again: rework."},
+  {base:"cook", gloss:"cook it too much", correct:"over-", pre:"over", bse:"cook", note:"over- = too much: overcook."},
+  {base:"use", gloss:"use it wrongly", correct:"mis-", pre:"mis", bse:"use", note:"mis- = wrongly: misuse."},
+  {base:"appear", gloss:"stop being visible", correct:"dis-", pre:"dis", bse:"appear", note:"dis- reverses the action: disappear (keep both p’s)."},
+  {base:"estimate", gloss:"think it is less than it really is", correct:"under-", pre:"under", bse:"estimate", note:"under- = too little: underestimate."},
+  {base:"happy", gloss:"not happy", correct:"un-", pre:"un", bse:"happy", note:"Before an adjective un- = not: unhappy."}
+];
+var bi=0, bPick=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function renderBuild(){
+  var it=BUILD[bi]; bPick=null;
+  $("bctx").innerHTML = "Base word: <b>"+it.base+"</b><small>Meaning you need: "+it.gloss+"</small>";
+  var wrap=$("preBuild"); wrap.innerHTML="";
+  PREFIXES.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ bPick=op; document.querySelectorAll("#preBuild button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bPick){ r.className="bresult bad"; r.innerHTML="Choose a prefix first."; return; }
+  if(bPick===it.correct){
+    r.className="bresult good"; r.innerHTML="✅ "+piece(it.pre,it.bse)+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    document.querySelector('#preBuild button[data-v="'+bPick+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ That prefix doesn’t give this meaning. <span class='bnote'>Hint — "+it.gloss+".</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"The team had to ______ (work again) the whole design.", accept:["rework"], model:"rework"},
+  {ctx:"I completely ______ (understood wrongly) the instructions.", accept:["misunderstood"], model:"misunderstood"},
+  {ctx:"Don’t ______ (think too little of) how long this will take.", accept:["underestimate"], model:"underestimate"},
+  {ctx:"Companies often ______ (think too much of) how much people will pay.", accept:["overestimate"], model:"overestimate"},
+  {ctx:"Old ideas sometimes ______ (appear again) with a new name.", accept:["reappear"], model:"reappear"},
+  {ctx:"Please ______ (open, reverse the locking) the lab before the class starts.", accept:["unlock"], model:"unlock"},
+  {ctx:"Informal twin: <i>postpone</i> → ______ (a phrasal verb)", accept:["put off","put it off"], model:"put off"},
+  {ctx:"Informal twin: <i>discover</i> → ______ (a phrasal verb)", accept:["find out"], model:"find out"},
+  {ctx:"Informal twin: <i>disappear</i> → ______ (a phrasal verb)", accept:["fade away"], model:"fade away"},
+  {ctx:"Informal twin: <i>tolerate</i> → ______ (a phrasal verb)", accept:["put up with"], model:"put up with"},
+  {ctx:"Informal twin: <i>continue</i> → ______ (a phrasal verb)", accept:["keep on","stick with","carry on","go on"], model:"keep on / stick with"},
+  {ctx:"Correct the spelling: <i>mispell</i> → ______", accept:["misspell"], model:"misspell"},
+  {ctx:"Correct the spelling: <i>disapear</i> → ______", accept:["disappear"], model:"disappear"},
+  {ctx:"Correct the prefix: <i>unagree</i> → ______", accept:["disagree"], model:"disagree"},
+  {ctx:"Correct the word (meaning “rate too highly”): <i>overate</i> → ______", accept:["overrate"], model:"overrate"}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML=it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow — 13 items (5★ / 4★★ / 4★★★)
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"What does it mean?", q:"Which prefix means “too much”?", o:["over-","under-","mis-"], a:0, w:"over- = too much: overcook, overwork, overestimate."},
+  {kind:"mc", diff:1, tag:"What does it mean?", q:"“Don’t ___estimate how long this will take.” — you need “think it is less than it really is”.", o:["over", "under", "mis"], a:1, w:"under- = too little: underestimate."},
+  {kind:"fill", diff:1, tag:"Build the word", q:"“appear again” in one word: ___", accept:["reappear"], w:"re- = again: reappear."},
+  {kind:"mc", diff:1, tag:"Real or invented?", q:"Which one is NOT a real English word?", o:["unlock", "disagree", "unagree"], a:2, w:"<i>agree</i> takes dis-, not un-: ✔ disagree, ✘ unagree."},
+  {kind:"error", diff:1, tag:"Fix the error", words:["Please","dislock","the","lab","before","the","class."], bad:1, fixOld:"dislock", fixNew:"unlock", w:"Each word takes only one reversing prefix, and <i>lock</i> takes un-: unlock."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["I","always","mispell","that","word","in","my","essays."], bad:2, fixOld:"mispell", fixNew:"misspell", w:"A prefix never changes the base spelling: mis + spell = misspell, with both s’s."},
+  {kind:"fill", diff:2, tag:"Build the word", q:"“I ___ the instructions and did the wrong exercise.” (understand wrongly — past tense, one word)", accept:["misunderstood"], w:"mis- = wrongly; the past of <i>misunderstand</i> is <i>misunderstood</i>."},
+  {kind:"mc", diff:2, tag:"Formal ↔ informal", q:"Which pair is a correct formal → informal twin?", o:["postpone → put off","postpone → put up with","postpone → find out"], a:0, w:"A formal prefixed verb often has a phrasal twin: postpone ≈ put off (put up with = tolerate; find out = discover)."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["Old","trends","sometimes","disapear","and","come","back."], bad:3, fixOld:"disapear", fixNew:"disappear", w:"dis + appear keeps both p’s: disappear."},
+  {kind:"fill", diff:3, tag:"Fix the word", q:"Correct this word, meaning “rate it too highly”: <i>overate</i> → ___", accept:["overrate"], w:"over + rate keeps both r’s: overrate."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["Yesterday","I","underestimate","the","traffic","and","arrived","late."], bad:2, fixOld:"underestimate", fixNew:"underestimated", w:"<i>Yesterday</i> fixes the time in the past and <i>arrived</i> is already past, so the prefixed verb must be past too: underestimated."},
+  {kind:"fill", diff:3, tag:"Not always un-", q:"The negative of <i>patient</i> is ___ — careful, it is not un-.", accept:["impatient"], w:"Before p, b and m the negative prefix is im-: impatient, not ✘ unpatient."},
+  {kind:"mc", diff:3, tag:"The family", q:"do → ___ (do it again) → ___ (reverse it)", o:["undo … redo", "redo … undo", "redo … disdo"], a:1, w:"re- = again and un- = reverse the action: do → redo → undo."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i6_s13_drill_best")||0); if(dscore>best){ store("i6_s13_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Every prefix in place. Ready for the ★★★ homework." : dscore>=8?"Good building — review the points-to-watch card and go again." : "Re-read Structure 13, use the dial and the machine, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">✓ Correct.</span> ':'<span class="k">✗ Not that one: the green part is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

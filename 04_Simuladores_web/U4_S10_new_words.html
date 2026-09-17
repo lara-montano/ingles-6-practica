@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE COINAGE LAB · English 6 · Unit 4 "Ahead of the Curve"
+  Structure 10 — how new words are made (abbreviation, acronym, initialism,
+  blend, compound, conversion, borrowing).
+  Three modes: Explore (sort & blend) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Structure 10 · The Coinage Lab · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --wine:#8C2F53; --winedark:#5E1F38; --winelt:#F4E5EC;   /* Unit 4 identity */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+  header{background:linear-gradient(135deg,var(--wine),var(--winedark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#F0C9D9; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#F6DEE8; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px} header .wrap{padding-bottom:0}
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--winedark)} nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px} section.tab{display:none} section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--winedark); margin-bottom:6px} .card h3{font-size:15px; color:var(--winedark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px} .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-wine{background:var(--wine)} .tag-navy{background:var(--navy)}
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--wine); background:var(--winelt); color:var(--winedark)}
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .fb{border-radius:12px; padding:11px 13px; margin:10px 0 2px; font-size:15px; font-weight:700; display:none; line-height:1.5}
+  .fb.good{background:var(--greenlt); border:2px solid var(--green); color:var(--greendark); display:block}
+  .fb.bad{background:var(--thinklt); border:2px solid var(--think); color:var(--think); display:block}
+  .fb.info{background:var(--navylt); border:2px solid var(--navy); color:var(--navy); display:block}
+
+  /* ---------- sorting bench: tap a word, tap a process ---------- */
+  .pool{display:flex; gap:7px; flex-wrap:wrap; margin:8px 0 12px; min-height:46px}
+  .pool button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:7px 13px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--ink); line-height:1.25}
+  .pool button.sel{border-color:var(--wine); background:var(--winelt); color:var(--winedark); box-shadow:0 0 0 3px rgba(140,47,83,.2)}
+  .pool button i{display:block; font-style:normal; font-size:11px; font-weight:700; color:#999}
+  .bins{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:8px}
+  .bin{border:2px dashed var(--rule); border-radius:12px; padding:9px 10px; cursor:pointer; background:#fff; transition:background .15s,border-color .15s}
+  .bin:hover{border-color:var(--wine); background:var(--winelt)} .bin.nope{border-color:var(--think); background:var(--thinklt)} .bin.hit{border-color:var(--green); background:var(--greenlt)}
+  .bin b{display:block; font-size:14.5px; color:var(--winedark)} .bin small{display:block; font-size:11.5px; color:#777; font-weight:700; line-height:1.35}
+  .bin .got{display:block; margin-top:5px; font-size:13px; font-weight:800; color:var(--green); min-height:17px}
+  .counter{font-weight:900; color:var(--winedark); margin-left:auto}
+
+  /* ---------- blend machine ---------- */
+  .wlab{font-size:12px; font-weight:900; letter-spacing:.08em; text-transform:uppercase; color:#888; text-align:center; margin-top:10px}
+  .bw{display:flex; gap:3px; flex-wrap:wrap; justify-content:center; margin:4px 0}
+  .bw span{border:2px solid var(--rule); border-radius:8px; padding:5px 9px; font:900 17px Lato,sans-serif; cursor:pointer; background:#fff; color:#bbb; text-decoration:line-through}
+  .bw.a span.keep{background:var(--wine); border-color:var(--wine); color:#fff; text-decoration:none} .bw.b span.keep{background:var(--navy); border-color:var(--navy); color:#fff; text-decoration:none}
+  .blendout{text-align:center; font-size:clamp(23px,5.4vw,36px); font-weight:900; letter-spacing:.5px; margin:12px 0 2px; word-break:break-all}
+  .blendout .pa{color:var(--wine)} .blendout .pb{color:var(--navy)}
+  .blendkey{text-align:center; font-size:12.5px; font-weight:800; color:#888} .blendkey .a{color:var(--wine)} .blendkey .b{color:var(--navy)}
+
+  /* ---------- acronym vs initialism ---------- */
+  .sayword{text-align:center; font-size:clamp(26px,6vw,42px); font-weight:900; color:var(--winedark); letter-spacing:1px; margin:8px 0 2px}
+  .sayrow{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px}
+  .sayrow button{flex:1; min-width:170px; border:2px solid var(--rule); background:#fff; border-radius:12px; padding:12px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .sayrow button.right{border-color:var(--green); background:var(--greenlt)} .sayrow button.wrong{border-color:var(--think); background:var(--thinklt)}
+
+  /* ---------- special cases & errors ---------- */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777} .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333} .scout b{color:var(--excep)}
+  .shiftgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:6px; margin-top:4px}
+  .shiftgrid div{background:#fff; border:1.5px solid var(--rule); border-radius:8px; padding:6px 10px; font-size:14px; font-weight:700} .shiftgrid .a{color:var(--navy)} .shiftgrid .b{color:var(--excep)}
+  .errlist{list-style:none; margin-top:6px}
+  .errlist li{display:flex; gap:10px; align-items:center; flex-wrap:wrap; padding:8px 0; border-bottom:1px dashed var(--rule); font-size:15px; font-weight:700}
+  .errlist .bad{color:var(--think)} .errlist .bad::before{content:"✘ "} .errlist .good{color:var(--green); display:none} .errlist .good::before{content:"✔ "}
+  .errlist .why{display:none; margin:0; flex-basis:100%; font-size:13px; padding:6px 10px}
+  .errlist li.open .good,.errlist li.open .why{display:block} .errlist li.open .fixbtn{display:none}
+
+  /* ---------- buttons & builder ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--wine); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)} .btn.ghost{background:#fff; color:var(--winedark); border:2px solid var(--wine)} .btn.small{padding:8px 14px; font-size:14px} .btn[disabled]{opacity:.45; cursor:not-allowed}
+  .segbig{display:flex; border:2px solid var(--wine); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--wine)} .segbig button.on{background:var(--wine); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px} .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--wine); background:var(--winelt); color:var(--winedark)} .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block} .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center} .bscore{font-weight:900; color:var(--winedark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--winedark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px} .qbar i{display:block; height:100%; background:var(--wine); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)} .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick{background:var(--think); color:#fff}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)} .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block} .why .k{color:var(--green); font-weight:900} .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px} .medal{font-size:48px; text-align:center} .endbox{text-align:center; padding:10px 0}
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--winedark); list-style:none} details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px} details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--wine); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🧪</span>
+  <div class="wrap">
+    <div class="kicker">English 6 · Unit 4 · Ahead of the Curve</div>
+    <h1>🧪 The Coinage Lab</h1>
+    <div class="sub"><b>Structure 10</b> — how new words are made: abbreviations, acronyms, initialisms &amp; blends. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🧪 Sort &amp; blend</span><span>🔧 Coin a word</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🧪 Explore<small>sort &amp; blend</small></button>
+    <button data-tab="build">🔧 Build<small>make the word</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>The sorting bench: seven ways to make a word</h2>
+      <p class="muted">English never stops inventing. Knowing <b>how</b> a word was made helps you guess what it means.
+        <b>Tap a word, then tap the process that made it.</b> <span class="es">(Toca la palabra y luego el proceso: no hace falta arrastrar.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the process labels, guess, then check</label>
+
+      <div class="pool" id="wordPool"></div>
+      <div class="bins" id="binGrid"></div>
+      <div class="fb" id="sortFb"></div>
+      <div class="bfoot"><button class="btn ghost small" id="sortReset">Reset the bench ↺</button><span class="counter" id="sortCount">Sorted: 0 / 14</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-wine">🧬 The blend machine</span>
+      <h2>Two words in, one word out</h2>
+      <p class="muted">A <b>blend</b> (or <i>portmanteau</i>) fuses two words <b>and</b> their meanings. Tap a letter in each
+        word to choose <b>where to cut</b>: the machine keeps the <span style="color:var(--wine); font-weight:800">start of word 1</span>
+        and the <span style="color:var(--navy); font-weight:800">end of word 2</span>. <span class="es">(Elige dónde cortar cada palabra.)</span></p>
+      <div class="chips" id="blendChips"></div>
+      <div class="wlab" id="labA">word 1 — keep the start</div>
+      <div class="bw a" id="bwA"></div>
+      <div class="wlab" id="labB">word 2 — keep the end</div>
+      <div class="bw b" id="bwB"></div>
+      <div class="blendout" id="blendOut"></div>
+      <div class="blendkey"><span class="a">■ from word 1</span> &nbsp;+&nbsp; <span class="b">■ from word 2</span></div>
+      <div class="fb" id="blFb"></div>
+      <div class="bfoot"><button class="btn" id="blCheck">Check the blend ✓</button><button class="btn ghost" id="blShow">Show the real cut 👁</button></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">🔊 Acronym or initialism?</span>
+      <h2>Both are initials — the difference is how you say it</h2>
+      <p class="muted">An <b>acronym</b> is read as a <b>word</b> (<i>NASA</i> = “nasa”); an <b>initialism</b> is read
+        <b>letter by letter</b> (<i>BBC</i> = “bee-bee-cee”). Pick one and decide how it is said.
+        <span class="es">(En español casi todas las siglas se leen como palabra — ONU, OTAN —; en inglés no.)</span></p>
+      <div class="chips" id="sayChips"></div>
+      <div class="sayword" id="sayWord"></div>
+      <div class="sayrow"><button data-t="acronym">🗣️ Say it as a word<br><small>acronym</small></button><button data-t="initialism">🔠 Spell it out<br><small>initialism</small></button></div>
+      <div class="fb" id="sayFb"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Points to get right</span>
+      <h2>Special cases &amp; traps</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="acroinit" class="on">acronym vs initialism</button><button data-v="lostcaps">acronyms that became words</button><button data-v="buzz">buzzwords &amp; slang</button><button data-v="guess">guess from the form</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠️ Common errors</span>
+      <h2>Errors Spanish speakers make</h2>
+      <p class="muted">Read the sentence, find the problem, then tap <b>Fix</b> to check.
+        <span class="es">(Errores típicos: adivina la corrección antes de verla.)</span></p>
+      <ul class="errlist" id="errList"></ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Structure 10 in three benches: the <i>sorting bench</i> is the manual's table of seven processes (abbreviation, acronym, initialism, blend, compound, conversion, borrowing) with its own examples, sorted by tap-to-select / tap-to-place (no drag, so it works on a phone); the <i>blend machine</i> is the "Blends worth knowing" table turned into a cutting tool; the <i>acronym vs initialism</i> card is the first point of the exceptions box. The special-cases card is that exceptions box (acronym vs initialism, acronyms that lost their capitals, buzzwords &amp; slang, guessing from the form) and the errors card is the pitfall box.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> a blend from its two pieces (exercise B / Task set 28), then <i>transform</i> — type the missing source word, the process name or the rewrite with BLEND (exercises A, B, D and the Unit 4 check).</li>
+          <li><b>Drill</b> merges the quizzes into one graded engine (★ name the process · ★★ blend vs compound, conversion, missing piece · ★★★ capitals, <i>a blend of</i>, wrong source word, buzzword) with a score and streak.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-wine">🔧 Your turn to produce</span>
+      <h2>Coin the word</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the meaning, then choose the <b>two pieces</b> the blend needs. The machine glues them — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">Piece 1 — from the first word</div><div class="bchips" id="p1Chips"></div></div>
+        <div class="bgroup"><div class="glab">Piece 2 — from the second word</div><div class="bchips" id="p2Chips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New word →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Type the missing word or the process name. Then check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type your answer"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next item →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ name the process · ★★ blend vs compound &amp; conversion · ★★★ capitals, <i>a blend of</i>, buzzwords.
+        Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 6 · Unit 4 «Ahead of the Curve» · Structure 10 — how new words are made · Level B1+
+</footer>
+
+<script>
+"use strict";
+/* === THE COINAGE LAB — Prof. Daniel Lara (profe.daniellara) · Explore · Build · Drill. Companion to the English 6 Class Manual (Structure 10). === */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+/* === EXPLORE 1 · the sorting bench (tap a word, tap a process) === */
+var PROC = [
+  {k:"abbrev",  name:"abbreviation", how:"a shortened word", tip:"short"},
+  {k:"acronym", name:"acronym",      how:"initials read as a word", tip:"acronym"},
+  {k:"initial", name:"initialism",   how:"initials read letter by letter", tip:"initialism"},
+  {k:"blend",   name:"blend",        how:"two words cut and joined", tip:"blend"},
+  {k:"compound",name:"compound",     how:"two full words together", tip:"compound"},
+  {k:"conv",    name:"conversion",   how:"same word, new word class", tip:"conversion"},
+  {k:"borrow",  name:"borrowing",    how:"taken from another language", tip:"borrowing"}
+];
+var WORDS = [
+  {w:"app", p:"abbrev", why:"<b>app</b> is a shortened <i>application</i>. A shortened word is an abbreviation — never an acronym."},
+  {w:"NASA", p:"acronym", why:"<b>NASA</b> is made of initials and we say it as one word: that is an acronym."},
+  {w:"laptop", p:"compound", why:"<b>laptop</b> = lap + top. Both words stay complete, so it is a compound."},
+  {w:"brunch", p:"blend", why:"<b>brunch</b> = breakfast + lunch: both words are cut and fused — a blend."},
+  {w:"BBC", p:"initial", why:"We spell <b>B-B-C</b> letter by letter, so BBC is an initialism."},
+  {w:"to google", p:"conv", why:"A noun used as a verb: same word, new word class — conversion."},
+  {w:"barista", p:"borrow", why:"<b>barista</b> comes straight from Italian — a borrowing."},
+  {w:"fridge", p:"abbrev", why:"<b>fridge</b> is a shortened <i>refrigerator</i>: an abbreviation, like <i>exam</i> and <i>phone</i>."},
+  {w:"scuba", p:"acronym", why:"<b>scuba</b> is initials read as a word — and it even lost its capitals."},
+  {w:"smartphone", p:"compound", why:"<b>smartphone</b> = smart + phone: nothing is cut, so it is a compound, not a blend."},
+  {w:"staycation", p:"blend", why:"<b>staycation</b> = stay + vacation, a holiday at home — a blend."},
+  {w:"ASAP", p:"initial", why:"<b>A-S-A-P</b>, letter by letter: an initialism, like DIY, USB and FOMO."},
+  {w:"to text", p:"conv", why:"The noun <i>text</i> used as a verb — conversion, like <i>to friend</i>."},
+  {w:"ballet", p:"borrow", why:"<b>ballet</b> was taken from French — a borrowing."}
+];
+var selWord = null, sorted = 0, predictMode = false, placed = {};  PROC.forEach(function(p){ placed[p.k] = []; });
+function renderPool(){
+  var pool = $("wordPool"); pool.innerHTML = "";
+  WORDS.forEach(function(it,i){
+    if(it.done) return;
+    var b = document.createElement("button");
+    b.innerHTML = it.w + (predictMode ? "" : '<i>'+PROC.filter(function(p){ return p.k===it.p; })[0].tip+'</i>');
+    b.dataset.i = i;
+    if(selWord===i) b.classList.add("sel");
+    b.addEventListener("click", function(){ selWord = (selWord===i ? null : i); renderPool(); });
+    pool.appendChild(b);
+  });
+  if(!pool.children.length) pool.innerHTML = '<span class="muted">Bench clear — every word is filed. <span class="es">(¡Todas clasificadas!)</span></span>';
+  $("sortCount").textContent = "Sorted: " + sorted + " / " + WORDS.length;
+}
+function renderBins(){
+  var grid = $("binGrid"); grid.innerHTML = "";
+  PROC.forEach(function(p){
+    var d = document.createElement("div");
+    d.className = "bin"; d.dataset.k = p.k;
+    d.innerHTML = "<b>"+p.name+"</b><small>"+p.how+"</small><span class='got'>"+placed[p.k].join(" · ")+"</span>";
+    d.addEventListener("click", function(){ dropInto(p, d); });
+    grid.appendChild(d);
+  });
+}
+function dropInto(p, node){
+  var fb = $("sortFb");
+  if(selWord===null){ fb.className="fb info"; fb.innerHTML="Tap a word first, then tap its process. <span class='es'>(Primero la palabra, luego el proceso.)</span>"; return; }
+  var it = WORDS[selWord];
+  if(it.p === p.k){
+    it.done = true; placed[p.k].push(it.w); sorted++; selWord = null;
+    fb.className = "fb good"; fb.innerHTML = "✅ " + it.why;
+    node.classList.add("hit"); setTimeout(function(){ node.classList.remove("hit"); }, 700);
+    renderBins(); renderPool();
+    if(sorted===WORDS.length){ fb.innerHTML = "🏁 Bench clear — all seven processes filled. <span class='es'>(Pasa a Build.)</span>"; }
+  } else {
+    fb.className = "fb bad"; fb.innerHTML = "❌ <b>"+it.w+"</b> is not a "+p.name+" — that box is for “"+p.how+"”. Try another one.";
+    node.classList.add("nope"); setTimeout(function(){ node.classList.remove("nope"); }, 700);
+  }
+}
+$("predictChk").addEventListener("change", function(){ predictMode = this.checked; renderPool(); renderSay(); });
+$("sortReset").addEventListener("click", function(){
+  WORDS.forEach(function(w){ w.done = false; });
+  PROC.forEach(function(p){ placed[p.k] = []; });
+  sorted = 0; selWord = null; $("sortFb").className = "fb"; renderBins(); renderPool();
+});  renderBins(); renderPool();
+/* === EXPLORE 2 · the blend machine === */
+var BLENDS = [
+  {a:"breakfast", b:"lunch",      ca:2, cb:4, out:"brunch",      gloss:"a late-morning meal between breakfast and lunch"},
+  {a:"smoke",     b:"fog",        ca:2, cb:2, out:"smog",        gloss:"dirty air over a city"},
+  {a:"stay",      b:"vacation",   ca:4, cb:6, out:"staycation",  gloss:"a holiday you spend at home"},
+  {a:"hungry",    b:"angry",      ca:1, cb:5, out:"hangry",      gloss:"angry because you are hungry"},
+  {a:"mock",      b:"cocktail",   ca:4, cb:4, out:"mocktail",    gloss:"a cocktail with no alcohol"},
+  {a:"flexible",  b:"vegetarian", ca:5, cb:6, out:"flexitarian", gloss:"mostly vegetarian, but flexible"},
+  {a:"emotion",   b:"icon",       ca:4, cb:4, out:"emoticon",    gloss:"a small face made from keyboard characters"},
+  {a:"friend",    b:"enemy",      ca:2, cb:5, out:"frenemy",     gloss:"a person who is both a friend and an enemy"}
+];
+var bl = 0, cutA = 0, cutB = 0;
+BLENDS.forEach(function(x,i){
+  var b = document.createElement("button"); b.textContent = x.a + " + " + x.b; b.dataset.k = i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){
+    bl = i; cutA = BLENDS[i].a.length; cutB = BLENDS[i].b.length;
+    document.querySelectorAll("#blendChips button").forEach(function(y){ y.classList.toggle("on", +y.dataset.k===i); });
+    $("blFb").className = "fb"; renderBlend();
+  });
+  $("blendChips").appendChild(b);
+});
+function renderBlend(){
+  var it = BLENDS[bl], A = $("bwA"), B = $("bwB");
+  A.innerHTML = ""; B.innerHTML = "";
+  it.a.split("").forEach(function(ch,i){
+    var s = document.createElement("span"); s.textContent = ch;
+    if(i < cutA) s.className = "keep";
+    s.addEventListener("click", function(){ cutA = i+1; $("blFb").className="fb"; renderBlend(); });
+    A.appendChild(s);
+  });
+  it.b.split("").forEach(function(ch,i){
+    var s = document.createElement("span"); s.textContent = ch;
+    if(i >= it.b.length - cutB) s.className = "keep";
+    s.addEventListener("click", function(){ cutB = it.b.length - i; $("blFb").className="fb"; renderBlend(); });
+    B.appendChild(s);
+  });
+  $("labA").innerHTML = "word 1 — <b>" + it.a + "</b> — keep the start";
+  $("labB").innerHTML = "word 2 — <b>" + it.b + "</b> — keep the end";
+  $("blendOut").innerHTML = '<span class="pa">' + it.a.slice(0,cutA) + '</span><span class="pb">' + it.b.slice(it.b.length-cutB) + "</span>";
+}
+$("blCheck").addEventListener("click", function(){
+  var it = BLENDS[bl], made = it.a.slice(0,cutA) + it.b.slice(it.b.length-cutB), f = $("blFb");
+  if(made === it.out){
+    f.className = "fb good";
+    f.innerHTML = "✅ <b>" + it.out + "</b> = " + it.a + " + " + it.b + " — " + it.gloss + ". <span class='es'>(Una mezcla corta las dos palabras y funde sus significados.)</span>";
+  } else {
+    f.className = "fb bad";
+    f.innerHTML = "❌ You made <b>" + made + "</b>. The blend in the manual has <b>" + it.out.length + "</b> letters — move the two cuts.";
+  }
+});
+$("blShow").addEventListener("click", function(){
+  var it = BLENDS[bl]; cutA = it.ca; cutB = it.cb; renderBlend();
+  var f = $("blFb"); f.className = "fb info";
+  f.innerHTML = "👁 <b>" + it.a.slice(0,it.ca) + "</b> + <b>" + it.b.slice(it.b.length-it.cb) + "</b> → <b>" + it.out + "</b> — " + it.gloss + ".";
+});
+cutA = BLENDS[0].a.length; cutB = BLENDS[0].b.length; renderBlend();
+/* === EXPLORE 3 · acronym vs initialism === */
+var SAYIT = [
+  {w:"NASA",  t:"acronym",    say:"“NASA” — one word", why:"Initials read as a word = <b>acronym</b>."},
+  {w:"laser", t:"acronym",    say:"“laser” — one word", why:"An acronym that became an ordinary word and lost its capitals."},
+  {w:"scuba", t:"acronym",    say:"“scuba” — one word", why:"Like <i>laser</i> and <i>radar</i>: an acronym nobody spells out any more."},
+  {w:"radar", t:"acronym",    say:"“radar” — one word", why:"An acronym so common that few people remember the initials."},
+  {w:"BBC",   t:"initialism", say:"B – B – C", why:"Letter by letter = <b>initialism</b>, not an acronym."},
+  {w:"DIY",   t:"initialism", say:"D – I – Y", why:"The manual's own example: DIY is an initialism."},
+  {w:"USB",   t:"initialism", say:"U – S – B", why:"Letter by letter = initialism."},
+  {w:"UK",    t:"initialism", say:"U – K", why:"Country initials are spelled out: an initialism."},
+  {w:"US",    t:"initialism", say:"U – S", why:"“Do you have family in the US?” — letter by letter."}
+];
+var sayI = 0, sayLock = false;  SAYIT.forEach(function(x,i){
+  var b = document.createElement("button"); b.dataset.k = i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){
+    sayI = i; document.querySelectorAll("#sayChips button").forEach(function(y){ y.classList.toggle("on", +y.dataset.k===i); });
+    renderSay();
+  });
+  $("sayChips").appendChild(b);
+});
+function renderSay(){
+  document.querySelectorAll("#sayChips button").forEach(function(b){
+    var x = SAYIT[+b.dataset.k];
+    b.innerHTML = x.w + (predictMode ? "" : " " + (x.t==="acronym" ? "🗣️" : "🔠"));
+  });
+  sayLock = false;
+  $("sayWord").textContent = SAYIT[sayI].w;
+  $("sayFb").className = "fb";
+  document.querySelectorAll(".sayrow button").forEach(function(b){ b.classList.remove("right","wrong"); });
+}
+document.querySelectorAll(".sayrow button").forEach(function(b){
+  b.addEventListener("click", function(){
+    if(sayLock) return; sayLock = true;
+    var x = SAYIT[sayI], ok = (b.dataset.t === x.t), f = $("sayFb");
+    b.classList.add(ok ? "right" : "wrong");
+    if(!ok) document.querySelector('.sayrow button[data-t="'+x.t+'"]').classList.add("right");
+    f.className = ok ? "fb good" : "fb bad";
+    f.innerHTML = (ok ? "✅ " : "❌ ") + "<b>" + x.w + "</b> is an " + x.t + ": " + x.say + ". " + x.why;
+  });
+});  renderSay();
+/* special cases */
+var SC = {
+  acroinit:"<b>Both are initials — the difference is the voice.</b> An <b>acronym</b> is pronounced as a word (<i>NASA</i> = “nasa”, <i>scuba</i>, <i>laser</i>, <i>radar</i>); an <b>initialism</b> is pronounced letter by letter (<i>BBC</i> = “bee-bee-cee”, <i>DIY</i>, <i>ASAP</i>, <i>USB</i>, <i>FOMO</i>).",
+  lostcaps:"<b>Some acronyms became ordinary words and lost their capitals:</b> <i>laser</i>, <i>radar</i>, <i>scuba</i> — few people remember they were acronyms, so we write them in small letters like any other noun.<div class='shiftgrid'><div><span class='a'>still initials</span> → <span class='b'>NASA, BBC, DIY</span></div><div><span class='a'>now ordinary words</span> → <span class='b'>laser, radar, scuba</span></div></div>",
+  buzz:"<b>Slang and buzzwords change fastest.</b> A <b>buzzword</b> is a word that has suddenly become popular (<i>emoji</i>, <i>sustainable</i>, <i>work-life balance</i>); <b>slang</b> is very informal (<i>sick</i> = excellent, <i>epic</i> = great). Keep them out of formal writing.",
+  guess:"<b>Guess from form + context.</b> Break a new word into parts: if <i>frenemy</i> = friend + enemy, it must mean a person who is both. Same trick for <i>dancercise</i> (exercise done through dancing) and <i>cronut</i> (part croissant, part doughnut)."
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML = SC[b.dataset.v]; });
+});  $("scOut").innerHTML = SC.acroinit;
+/* common errors */
+var ERR = [
+  {bad:"BBC and DIY are acronyms.", good:"BBC and DIY are initialisms.", why:"You spell them letter by letter, so they are initialisms. Only <i>NASA</i>-type words are acronyms."},
+  {bad:"App is an acronym of application.", good:"App is an abbreviation of application.", why:"A shortened word is an abbreviation — <i>app</i>, <i>fridge</i>, <i>exam</i>, <i>phone</i>, <i>approx</i>."},
+  {bad:"NASA is an initialism.", good:"NASA is an acronym.", why:"We say it as one word, not N-A-S-A."},
+  {bad:"Laptop is a blend of lap and top.", good:"Laptop is a compound of lap and top.", why:"Nothing is cut: two complete words together make a compound, not a blend."},
+  {bad:"Scuba is always written SCUBA.", good:"Scuba is written scuba.", why:"It became an ordinary word and lost its capitals, like <i>laser</i> and <i>radar</i>."},
+  {bad:"Brunch comes from bread and lunch.", good:"Brunch comes from breakfast and lunch.", why:"Check both source words before you guess the meaning of a blend."},
+  {bad:"Every short form in English is an acronym.", good:"Short forms can be abbreviations, acronyms or initialisms.", why:"The manual's warning: name the process before you name the word."}
+];
+ERR.forEach(function(e){
+  var li = document.createElement("li");
+  li.innerHTML = '<span class="bad">'+e.bad+'</span><button class="btn ghost small fixbtn">Fix ✓</button><span class="good">'+e.good+'</span><div class="why">'+e.why+"</div>";
+  li.querySelector(".fixbtn").addEventListener("click", function(){ li.classList.add("open"); });
+  $("errList").appendChild(li);
+});
+/* === BUILD · assemble (two pieces) + transform (type it) === */
+var BUILD = [
+  {ctx:"a holiday you spend at home", src:"stay + vacation", p1:["stay","sta","stayca"], a1:"stay", p2:["cation","ation","vacation"], a2:"cation", note:"stay + vacation → staycation."},
+  {ctx:"angry because you are hungry", src:"hungry + angry", p1:["h","hun","hung"], a1:"h", p2:["angry","ngry","gry"], a2:"angry", note:"hungry + angry → hangry."},
+  {ctx:"a late-morning meal", src:"breakfast + lunch", p1:["br","bre","break"], a1:"br", p2:["unch","lunch","nch"], a2:"unch", note:"breakfast + lunch → brunch."},
+  {ctx:"dirty air over a city", src:"smoke + fog", p1:["sm","smok","smoke"], a1:"sm", p2:["og","fog","g"], a2:"og", note:"smoke + fog → smog."},
+  {ctx:"a cocktail with no alcohol", src:"mock + cocktail", p1:["mock","moc","mo"], a1:"mock", p2:["tail","ocktail","cocktail"], a2:"tail", note:"mock + cocktail → mocktail."},
+  {ctx:"mostly vegetarian, but flexible", src:"flexible + vegetarian", p1:["flexi","flex","flexib"], a1:"flexi", p2:["tarian","arian","vegetarian"], a2:"tarian", note:"flexible + vegetarian → flexitarian."},
+  {ctx:"a small face made from keyboard characters", src:"emotion + icon", p1:["emot","emo","emotion"], a1:"emot", p2:["icon","con","on"], a2:"icon", note:"emotion + icon → emoticon."},
+  {ctx:"a person who is both a friend and an enemy", src:"friend + enemy", p1:["fr","fri","frien"], a1:"fr", p2:["enemy","nemy","emy"], a2:"enemy", note:"friend + enemy → frenemy."}
+];
+var bi = 0, pick1 = null, pick2 = null, bBuilt = 0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m = b.dataset.m;
+    $("assembleBox").style.display = m==="assemble" ? "block" : "none";
+    $("transformBox").style.display = m==="transform" ? "block" : "none";
+  });
+});
+function fillChips(id, list, onPick){
+  var wrap = $(id); wrap.innerHTML = "";
+  list.forEach(function(op){
+    var b = document.createElement("button"); b.textContent = op; b.dataset.v = op;
+    b.addEventListener("click", function(){ onPick(op); document.querySelectorAll("#"+id+" button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+}
+function renderBuild(){
+  var it = BUILD[bi]; pick1 = null; pick2 = null;
+  $("bctx").innerHTML = "Meaning: <b>" + it.ctx + "</b><small>from: " + it.src + "</small>";
+  fillChips("p1Chips", it.p1, function(v){ pick1 = v; });
+  fillChips("p2Chips", it.p2, function(v){ pick2 = v; });
+  $("bresult").className = "bresult"; $("bresult").innerHTML = "";
+}
+$("bBuild").addEventListener("click", function(){
+  var it = BUILD[bi], r = $("bresult");
+  if(!pick1 || !pick2){ r.className = "bresult bad"; r.innerHTML = "Choose one piece in each row first."; return; }
+  var ok1 = pick1===it.a1, ok2 = pick2===it.a2;
+  if(ok1 && ok2){
+    r.className = "bresult good";
+    r.innerHTML = '✅ <span style="color:var(--wine)">'+it.a1+'</span><span style="color:var(--navy)">'+it.a2+'</span><div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent = "Built: " + bBuilt;
+  } else {
+    if(!ok1) document.querySelector('#p1Chips button[data-v="'+pick1+'"]').classList.add("wrongpick");
+    if(!ok2) document.querySelector('#p2Chips button[data-v="'+pick2+'"]').classList.add("wrongpick");
+    r.className = "bresult bad";
+    r.innerHTML = "❌ That gives <b>" + pick1 + pick2 + "</b>. <span class='bnote'>Hint — a blend cuts both words: " + it.src + ".</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi = (bi+1)%BUILD.length; renderBuild(); });  renderBuild();
+var TRANS = [
+  {ctx:"staycation = ______ + vacation", accept:["stay"], model:"stay"},
+  {ctx:"hangry = hungry + ______", accept:["angry"], model:"angry"},
+  {ctx:"brunch = ______ + lunch", accept:["breakfast"], model:"breakfast"},
+  {ctx:"smog = smoke + ______", accept:["fog"], model:"fog"},
+  {ctx:"mocktail = ______ + cocktail", accept:["mock"], model:"mock"},
+  {ctx:"flexitarian = flexible + ______", accept:["vegetarian"], model:"vegetarian"},
+  {ctx:"app is the short form of ______", accept:["application","an application"], model:"application"},
+  {ctx:"NASA is read as a word, so it is an ______", accept:["acronym","an acronym"], model:"acronym"},
+  {ctx:"BBC is read letter by letter, so it is an ______", accept:["initialism","an initialism"], model:"initialism"},
+  {ctx:"frenemy = a person who is both a ______ and an enemy", accept:["friend"], model:"friend"},
+  {ctx:"Rewrite with BLEND — “Brunch” comes from two words. →", accept:["brunch is a blend of breakfast and lunch",'"brunch" is a blend of breakfast and lunch'], model:"Brunch is a blend of breakfast and lunch."}
+];
+var ti = 0, tDone = 0;  function renderTrans(){ var it = TRANS[ti]; $("tctx").innerHTML = "Complete it: " + it.ctx; $("tInput").value = ""; $("tInput").className = ""; $("tWhy").className = "why"; $("tWhy").innerHTML = ""; }
+$("tCheck").addEventListener("click", function(){
+  var it = TRANS[ti], val = norm($("tInput").value), ok = it.accept.map(norm).indexOf(val) >= 0;
+  $("tInput").className = ok ? "ok" : "no";
+  $("tWhy").className = "why show";
+  $("tWhy").innerHTML = (ok ? '<span class="k">✓ Correct.</span> ' : '<span class="k" style="color:var(--think)">Model answer:</span> ') + "<b>" + it.model + "</b>";
+  if(ok){ tDone++; $("tScore").textContent = "Done: " + tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti = (ti+1)%TRANS.length; renderTrans(); });  renderTrans();
+/* === DRILL · one graded flow (13 items · 5★ / 4★★ / 4★★★) === */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Name the process", q:"“app” (from <i>application</i>) is an example of…", o:["an abbreviation", "an acronym"], a:0, w:"A shortened word is an abbreviation: app, fridge, exam, phone."},
+  {kind:"mc", diff:1, tag:"Name the process", q:"NASA is made of initials and we say it as one word, so it is…", o:["an initialism", "an acronym"], a:1, w:"Initials read as a word = acronym: NASA, laser, scuba, radar."},
+  {kind:"fill", diff:1, tag:"Blend sources", q:"brunch = breakfast + ______", accept:["lunch"], w:"brunch fuses breakfast and lunch — a blend."},
+  {kind:"error", diff:1, tag:"Fix the error", words:["DIY","and","BBC","are","acronyms:","we","spell","them","letter","by","letter."], bad:4, fixOld:"acronyms", fixNew:"initialisms", w:"Initials spelled letter by letter are initialisms, not acronyms."},
+  {kind:"mc", diff:1, tag:"How do you say it?", q:"ASAP is said A–S–A–P, so it is…", o:["an initialism","an acronym"], a:0, w:"Letter by letter = initialism: BBC, DIY, ASAP, USB, FOMO."},
+  {kind:"mc", diff:2, tag:"Blend or compound?", q:"Which word is a <b>blend</b> and not a compound?", o:["laptop","smog"], a:1, w:"A blend cuts both words (smoke+fog); a compound keeps them whole (laptop)."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["Laptop","is","a","blend:","it","joins","two","complete","words."], bad:3, fixOld:"blend", fixNew:"compound", w:"Two complete words together = compound. A blend always cuts something."},
+  {kind:"fill", diff:2, tag:"Blend sources", q:"flexitarian = flexible + ______", accept:["vegetarian"], w:"flexible + vegetarian = mostly vegetarian, but flexible."},
+  {kind:"mc", diff:2, tag:"Name the process", q:"“I’ll <i>google</i> it” — the verb <i>to google</i> is an example of…", o:["conversion","borrowing"], a:0, w:"Conversion: the same word changes word class (to google, to text, to friend)."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["Laser","and","radar","became","ordinary","words","and","kept","their","capital","letters."], bad:7, fixOld:"kept their capital letters", fixNew:"lost their capital letters", w:"Acronyms that turned into ordinary words are written in small letters: laser, radar, scuba."},
+  {kind:"fill", diff:3, tag:"Rewrite (BLEND)", q:"“Brunch” comes from two words. → Brunch is a ______ breakfast and lunch. <i>(2 words)</i>", accept:["blend of"], w:"The pattern is “a blend of X and Y”."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["Dancercise","comes","from","dance","and","exorcise."], bad:5, fixOld:"exorcise", fixNew:"exercise", w:"dancercise = dance + exercise: exercise done through dancing."},
+  {kind:"mc", diff:3, tag:"Slang or buzzword?", q:"“Do you have a good <i>work-life balance</i>?” — that expression is best described as…", o:["a blend","a buzzword"], a:1, w:"A buzzword is a word or phrase that has suddenly become popular; nothing is cut or fused here."}
+];
+var di = 0, dscore = 0, dstreak = 0, ddone = false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body = $("drillBody");
+  $("dFill").style.width = (di/DRILL.length*100) + "%";
+  $("dScore").textContent = "Score: " + dscore; $("dStreak").textContent = "🔥 " + dstreak;
+  if(di >= DRILL.length){
+    var best = +(load("i6_s10_drill_best")||0); if(dscore>best){ store("i6_s10_drill_best", dscore); best = dscore; }
+    var medal = dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg = dscore>=11 ? "Word-formation mastered. Ready for the ★★★ homework." : dscore>=8 ? "Good work — review the special-cases card and go again." : "Re-read Structure 10, use Explore and Build, then come back.";
+    body.innerHTML = '<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width = "100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it = DRILL[di]; ddone = false;
+  var head = '<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml = "";
+  if(it.kind==="mc"){
+    bodyHtml = '<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml += '<button data-j="'+j+'">'+o+"</button>"; }); bodyHtml += "</div>";
+  } else if(it.kind==="error"){
+    head = '<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml = '<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml += '<span class="w" data-j="'+j+'">'+w+"</span> "; }); bodyHtml += "</div>";
+  } else {
+    bodyHtml = '<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML = head + bodyHtml + '<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">✓ Correct.</span> ':'<span class="k">✗ Not that one: the green part is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+"</span> "+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent = "Score: " + dscore; $("dStreak").textContent = "🔥 " + dstreak;
+  var wy = $("dwhy"); wy.className = "why show"; wy.innerHTML = whyHtml;
+  $("dNext").disabled = false;
+}  renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

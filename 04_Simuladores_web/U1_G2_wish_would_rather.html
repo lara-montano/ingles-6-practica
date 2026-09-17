@@ -508,16 +508,16 @@ renderTrans();
 ===================================================================== */
 var DRILL = [
   {kind:"mc", diff:1, tag:"hope or wish?", q:"“I ___ the experiment works tomorrow.” (still possible)", o:["hope","wish"], a:0, w:"Still possible → hope + present/future."},
-  {kind:"mc", diff:1, tag:"hope or wish?", q:"“I ___ I had more free time this semester.” (I don’t)", o:["wish","hope"], a:0, w:"Not true now → wish + past simple."},
-  {kind:"mc", diff:1, tag:"Which form?", q:"“I wish I ___ the answer.” (I don’t know it)", o:["knew","know","had known"], a:0, w:"Regret about now → wish + past simple: knew."},
+  {kind:"mc", diff:1, tag:"hope or wish?", q:"“I ___ I had more free time this semester.” (I don’t)", o:["hope", "wish"], a:1, w:"Not true now → wish + past simple."},
+  {kind:"mc", diff:1, tag:"Which form?", q:"“I wish I ___ the answer.” (I don’t know it)", o:["had known", "know", "knew"], a:2, w:"Regret about now → wish + past simple: knew."},
   {kind:"mc", diff:1, tag:"Now or past?", q:"“She wishes she ___ better notes during the lecture.” (she didn’t)", o:["had taken","took","takes"], a:0, w:"Regret about the past → wish + past perfect: had taken."},
-  {kind:"mc", diff:1, tag:"would rather", q:"“I’d rather ___ home tonight.” (my own choice)", o:["stay","to stay","stayed"], a:0, w:"Same subject → would rather + base form, no ‘to’."},
+  {kind:"mc", diff:1, tag:"would rather", q:"“I’d rather ___ home tonight.” (my own choice)", o:["to stay", "stay", "stayed"], a:1, w:"Same subject → would rather + base form, no ‘to’."},
   {kind:"error", diff:2, tag:"Fix the error", words:["I","wish","I","would","have","more","money."], bad:3, fixOld:"would have", fixNew:"had", w:"A wish about now takes the past simple, and wish… would is never about yourself: had."},
   {kind:"error", diff:2, tag:"Fix the error", words:["It’s","time","we","go","home."], bad:3, fixOld:"go", fixNew:"went", w:"it’s time + past simple: went."},
   {kind:"fill", diff:2, tag:"Complete", q:"“I wish my lab partner ___ (arrive) on time for once.” (an annoying habit you want to change — 2 words)", accept:["would arrive"], w:"Someone else’s annoying habit → wish + would + base: would arrive."},
   {kind:"error", diff:2, tag:"Fix the error", words:["I’d","rather","you","don’t","record","this."], bad:3, fixOld:"don’t", fixNew:"didn’t", w:"would rather + someone + past simple: didn’t."},
   {kind:"fill", diff:3, tag:"Complete", q:"“If only she ___ (listen) to me last week.” (she didn’t — 2 words)", accept:["had listened"], w:"Past regret → if only + past perfect: had listened."},
-  {kind:"mc", diff:3, tag:"wish… would?", q:"“I wish I ___ taller.”", o:["were","would be","am"], a:0, w:"No wish… would about yourself; were for all persons."},
+  {kind:"mc", diff:3, tag:"wish… would?", q:"“I wish I ___ taller.”", o:["am", "would be", "were"], a:2, w:"No wish… would about yourself; were for all persons."},
   {kind:"fill", diff:3, tag:"Rewrite as a wish", q:"“I didn’t back up my files.” → (start with I wish or If only)", accept:["i wish i had backed up my files","if only i had backed up my files","i wish i'd backed up my files","if only i'd backed up my files"], w:"Past regret → wish / if only + past perfect: I wish I had backed up my files."},
   {kind:"error", diff:3, tag:"Fix the error", words:["I","hope","I","had","studied","harder","last","semester."], bad:1, fixOld:"hope", fixNew:"wish", w:"A past regret takes wish (+ past perfect), not hope."}
 ];

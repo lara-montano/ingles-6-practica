@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE GET-IT-DONE MACHINE · English 6 · Unit 5 "Where There's a Will"
+  Structure 11 — phrasal verbs for getting things done (get down to, put off,
+  catch up on, get around to, stress out, get … over with, stick with, do over,
+  keep at, give up)
+  Three modes: Explore (particle machine + task line) · Build · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Structure 11 · The Get-It-Done Machine · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --mind:#6A2C91; --minddark:#45195E; --mindlt:#EEE6F4;   /* Unit 5 identity (royal purple) */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;                      /* exceptions boxes only — lighter violet, distinct from --mind */
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--mind),var(--minddark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#DCC4EC; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#E6D7F1; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--minddark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--minddark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--minddark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-mind{background:var(--mind)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--mind); background:var(--mindlt); color:var(--minddark)}
+
+  /* ---------- particle machine ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .pvbox{background:var(--mindlt); border:2px solid var(--mind); border-radius:12px; padding:16px; text-align:center; margin:8px 0}
+  .pvword{display:flex; gap:8px; justify-content:center; flex-wrap:wrap; align-items:center; font-size:clamp(20px,4vw,33px); font-weight:900}
+  .pv-v{background:var(--navylt); color:var(--navy); border-radius:8px; padding:2px 11px; box-shadow:inset 0 -3px 0 var(--navy)}
+  .pv-p{background:#fff; color:var(--minddark); border-radius:8px; padding:2px 11px; box-shadow:inset 0 -3px 0 var(--mind)}
+  .pv-p2{background:var(--greenlt); color:var(--greendark); border-radius:8px; padding:2px 11px; box-shadow:inset 0 -3px 0 var(--green)}
+  .masked{color:transparent !important; position:relative; cursor:pointer; min-width:62px; display:inline-block}
+  .masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .pvmean{font-size:clamp(15px,2.6vw,19px); font-weight:800; color:var(--minddark); margin-top:11px}
+  .pvex{font-size:15px; font-weight:600; color:#444; margin-top:7px}
+  .pvtags{display:flex; gap:6px; justify-content:center; flex-wrap:wrap; margin-top:9px; font-size:12px; font-weight:800}
+  .pvtags span{border-radius:999px; padding:2px 10px; background:#fff; border:1.5px solid var(--rule); color:#666}
+  .pvtags span.hot{background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px; justify-content:center}
+  .legend span{border-radius:6px; padding:1px 8px}
+
+  /* ---------- task line ---------- */
+  .tline{display:flex; gap:4px; position:relative; margin:16px 0 6px}
+  .tline::before{content:""; position:absolute; left:10%; right:10%; top:12px; height:4px; background:var(--rule); border-radius:2px}
+  .tstage{flex:1; text-align:center; cursor:pointer; position:relative; z-index:1; min-width:0}
+  .tstage i{display:block; width:28px; height:28px; line-height:22px; border-radius:50%; background:#fff; border:3px solid var(--rule); margin:0 auto 6px; font-style:normal; font-size:13px; font-weight:900; color:#999}
+  .tstage b{display:block; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:#999; word-break:break-word}
+  .tstage.on i{border-color:var(--mind); background:var(--mind); color:#fff}
+  .tstage.on b{color:var(--minddark)}
+  .stageout{background:var(--soft); border-radius:12px; padding:13px 15px; margin-top:6px}
+  .stageout .sd{font-size:15px; font-weight:700; color:#444}
+  .stagepv{display:flex; gap:7px; flex-wrap:wrap; margin-top:9px}
+  .stagepv button{border:2px solid var(--mind); background:#fff; border-radius:999px; padding:6px 13px; font:800 14px Lato,sans-serif; color:var(--minddark); cursor:pointer}
+
+  /* ---------- object slot machine ---------- */
+  .omach{background:var(--soft); border-radius:12px; padding:15px; margin-top:8px}
+  .oframe{display:flex; gap:7px; justify-content:center; flex-wrap:wrap; align-items:center; font-size:clamp(17px,3vw,24px); font-weight:900}
+  .oslot{min-width:104px; min-height:42px; border:2px dashed var(--rule); border-radius:10px; display:inline-flex; align-items:center; justify-content:center; padding:4px 12px; font:800 12px Lato,sans-serif; color:#aaa; cursor:pointer; background:#fff; text-transform:uppercase; letter-spacing:.04em}
+  .oslot.armed{border-color:var(--mind); background:var(--mindlt); color:var(--mind)}
+  .oslot.filled{border-style:solid; border-color:var(--grammar); background:var(--grammarlt); color:var(--grammar); font:900 clamp(17px,3vw,24px) Lato,sans-serif; text-transform:none; letter-spacing:0}
+  .otoks{display:flex; gap:9px; justify-content:center; flex-wrap:wrap; margin-top:13px}
+  .otok{border:2px solid var(--grammar); background:var(--grammarlt); color:var(--grammar); border-radius:10px; padding:8px 15px; font:800 15px Lato,sans-serif; cursor:pointer}
+  .otok.sel{background:var(--grammar); color:#fff; box-shadow:0 0 0 3px rgba(217,118,26,.3)}
+  .overdict{margin-top:11px; border-radius:10px; padding:10px 13px; font-size:15px; font-weight:700; display:none}
+  .overdict.ok{display:block; background:var(--greenlt); border:2px solid var(--green); color:var(--greendark)}
+  .overdict.no{display:block; background:var(--thinklt); border:2px solid var(--think); color:var(--think)}
+  .tip{margin-top:12px; border-left:4px solid var(--mind); background:var(--mindlt); border-radius:0 10px 10px 0; padding:8px 12px; font-size:14px; font-weight:700; color:#333}
+
+  /* ---------- special cases + errors ---------- */
+  /* max-width:100% is what lets flex-wrap actually fire: width:max-content alone
+     keeps all five buttons on one line and overflows a 375px phone. */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:14px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+  .errlist{list-style:none; margin-top:6px}
+  .errlist li{display:flex; gap:10px; align-items:center; flex-wrap:wrap; padding:8px 0; border-bottom:1px dashed var(--rule); font-size:15px; font-weight:700}
+  .errlist .bad{color:var(--think)} .errlist .bad::before{content:"✘ "}
+  .errlist .good{color:var(--green); display:none} .errlist .good::before{content:"✔ "}
+  .errlist .why{display:none; margin:0; flex-basis:100%; font-size:13px; padding:6px 10px}
+  .errlist li.open .good,.errlist li.open .why{display:block}
+  .errlist li.open .fixbtn{display:none}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--mind); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--minddark); border:2px solid var(--mind)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--mind); border-radius:12px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--mind)}
+  .segbig button.on{background:var(--mind); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--mind); background:var(--mindlt); color:var(--minddark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--minddark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--minddark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--mind); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick{background:var(--think); color:#fff}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--minddark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--mind); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} .tstage b{font-size:10px} .oslot{min-width:88px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🛠️</span>
+  <div class="wrap">
+    <div class="kicker">English 6 · Unit 5 · Where There's a Will</div>
+    <h1>🛠️ The Get-It-Done Machine</h1>
+    <div class="sub"><b>Structure 11</b> — phrasal verbs for getting things done: <i>get down to, put off, catch up on</i>. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>⚙️ Explore the particles</span><span>🔧 Build the expression</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">⚙️ Explore<small>see the parts</small></button>
+    <button data-tab="build">🔧 Build<small>say it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Verb + particle = a new meaning</h2>
+      <p class="muted">A phrasal verb is an ordinary verb plus one or two small words. The particle changes the
+        meaning completely: <i>put</i> is not <i>put off</i>. Tap a task verb and watch the machine take it apart.
+        <span class="es">(El verbo solo no basta: la partícula cambia el significado.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the particle, guess, then reveal</label>
+
+      <h3>1 · Choose a task verb</h3>
+      <div class="chips" id="pvChips"></div>
+
+      <div class="pvbox">
+        <div class="pvword" id="pvWord"></div>
+        <div class="pvmean" id="pvMean"></div>
+        <div class="pvex" id="pvEx"></div>
+        <div class="pvtags" id="pvTags"></div>
+      </div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the particle ✓</button></div>
+      <div class="legend"><span class="pv-v">verb</span><span class="pv-p">particle</span><span class="pv-p2">preposition</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">🧭 The task line</span>
+      <h2>Where does each verb live in the job?</h2>
+      <p class="muted">Every task runs the same circuit: you start, you delay, you keep going, you finish — and then you
+        catch up on what piled up. Tap a stage to see its verbs; tap a verb to load it into the machine above.
+        <span class="es">(Cada verbo ocupa un momento del ciclo de la tarea.)</span></p>
+      <div class="tline" id="tLine"></div>
+      <div class="stageout"><div class="sd" id="stageDesc"></div><div class="stagepv" id="stagePv"></div></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-mind">🧲 The object slot</span>
+      <h2>Separable or not? Move the object and find out</h2>
+      <p class="muted"><b>Tap an object</b> (it turns orange), then <b>tap a slot</b> to drop it there. The machine judges the
+        word order for the verb you chose above. <span class="es">(Toca el objeto y luego la casilla: sin arrastrar, funciona con dedo.)</span></p>
+      <div class="omach">
+        <div class="oframe" id="oFrame"></div>
+        <div class="otoks" id="oToks"></div>
+        <div class="overdict" id="oVerdict"></div>
+      </div>
+      <div class="tip" id="oRule"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Separable or not? The five rules</span>
+      <h2>The traps of Structure 11</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="sep" class="on">separable</button><button data-v="frame">get … over with</button><button data-v="three">three-word</button><button data-v="ing">around to + -ing</button><button data-v="reg">register</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠️ Common errors</span>
+      <h2>Errors Spanish speakers make</h2>
+      <p class="muted">Read the sentence, find the problem, then tap <b>Fix</b> to check. <span class="es">(Errores típicos: adivina la corrección antes de verla.)</span></p>
+      <ul class="errlist" id="errList"></ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> takes the ten task phrasal verbs of Structure 11 apart (verb navy · particle purple · preposition green), places each one on the task line (start · put off · keep going · finish · catch up), and turns the separability rule into a tap-to-place object slot. The special-cases card is the manual's "Separable or not?" box; the error list is its pitfall box.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> the expression (which verb + where the object goes) and then <i>transform</i> the formal sentences and the pronoun-placement items of the manual's practice set.</li>
+          <li><b>Drill</b> is one graded flow (★ meaning &amp; formal twin · ★★ separability and <i>-ing</i> · ★★★ the fixed frame and register) with score, streak and a best score on this device.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-mind">🔧 Your turn to produce</span>
+      <h2>Build the expression</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the situation, choose the <b>phrasal verb</b> and then <b>where the object goes</b>. The machine builds the sentence — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">1 · The phrasal verb</div><div class="bchips" id="verbChips"></div></div>
+        <div class="bgroup"><div class="glab">2 · The object goes…</div><div class="bchips" id="posChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New situation →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Rewrite each sentence with a phrasal verb, or put the pronoun where it belongs. Type the whole sentence and check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the new sentence"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next sentence →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ meaning &amp; formal twin · ★★ separability and <i>-ing</i> · ★★★ the fixed frame and register.
+        Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 6 · Unit 5 «Where There's a Will» · Structure 11 — phrasal verbs for getting things done · Level B1+
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE GET-IT-DONE MACHINE — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 6 Class Manual (Structure 11).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · the particle machine (the ten task verbs of Structure 11)
+   type: sep = separable · insep = verb + preposition · three = three-word
+         frame = fixed frame (get … over with) · none = no object here
+===================================================================== */
+var PV = [
+  {v:"get", p:["down","to"], type:"three", stage:"start", label:"get down to", formal:"begin", mean:"start doing something seriously", es:"ponerse manos a la obra con algo", ex:'I finally <b>got down to</b> my biology project.', obj:{noun:"work", pron:"it"}, rule:"Three-word verb — <b>inseparable</b>. The object comes after all three parts: get down to <b>work</b>."},
+  {v:"put", p:["off"], type:"sep", stage:"delay", label:"put (something) off", formal:"postpone", mean:"postpone, delay", es:"posponer, aplazar", ex:'I have been <b>putting</b> the essay <b>off</b> for weeks.', obj:{noun:"the essay", pron:"it"}, rule:"<b>Separable</b>: put off the essay / put the essay off — but a <b>pronoun must</b> go in the middle: put <b>it</b> off."},
+  {v:"catch", p:["up","on"], type:"three", stage:"catch", label:"catch up on (something)", mean:"do something you are behind on", es:"ponerse al día con algo", ex:'On Sunday I <b>catch up on</b> sleep.', obj:{noun:"sleep", pron:"it"}, rule:"Three-word verb — <b>inseparable</b>: catch up on <b>sleep</b>, never <i>catch sleep up on</i>."},
+  {v:"get", p:["around","to"], type:"three", stage:"start", label:"get around to (something)", mean:"finally do something you had planned", es:"por fin llegar a hacer algo", ex:'I finally <b>got around to</b> cleaning my desk.', obj:{noun:"the report", pron:"it"}, rule:"Three-word verb — <b>inseparable</b>, and the verb after it takes <b>-ing</b>: got around to <b>cleaning</b>."},
+  {v:"stress", p:["out"], type:"sep", stage:"delay", label:"stress (someone) out", mean:"make someone anxious", es:"estresar a alguien", ex:'Three deadlines are <b>stressing</b> me <b>out</b>.', obj:{noun:"the students", pron:"me"}, rule:"<b>Separable</b>: the person goes in the middle when it is a pronoun — stressing <b>me</b> out."},
+  {v:"get", p:["over","with"], type:"frame", stage:"finish", label:"get (something) over with", mean:"finish something unpleasant", es:"quitarse algo de encima", ex:'Let’s <b>get</b> it <b>over with</b>.', obj:{noun:"this job", pron:"it"}, rule:"A <b>fixed frame</b>: the object sits inside it — get <b>it</b> over with. ✘ <i>get over with it</i>."},
+  {v:"stick", p:["with"], type:"insep", stage:"keep", label:"stick with (something)", mean:"continue, not give up", es:"seguir con algo", ex:'I’ll start Saturday and <b>stick with</b> it until I finish.', obj:{noun:"the plan", pron:"it"}, rule:"Verb + preposition — <b>inseparable</b>: stick with <b>it</b>, never <i>stick it with</i>."},
+  {v:"do", p:["over"], type:"sep", stage:"finish", label:"do (something) over", mean:"do it again because it was done badly", es:"rehacer algo", ex:'The lab report was sloppy, so I had to <b>do</b> it <b>over</b>.', obj:{noun:"the report", pron:"it"}, rule:"<b>Separable</b>: do the report over / do over the report — but a pronoun must go in the middle: do <b>it</b> over."},
+  {v:"keep", p:["at"], type:"insep", stage:"keep", label:"keep at (something)", mean:"keep working hard at it", es:"seguir dándole duro", ex:'<b>Keep at</b> it and you will finish before Monday.', obj:{noun:"the project", pron:"it"}, rule:"Verb + preposition — <b>inseparable</b>: keep at <b>it</b>."},
+  {v:"give", p:["up"], type:"none", stage:"keep", label:"give up", mean:"stop trying", es:"rendirse", ex:'She refused to <b>give up</b>.', obj:null, rule:"In the manual <b>give up</b> is used with no object: <i>She refused to give up.</i> It is the ✘ exit from the task line."}
+];
+var pvIdx = 0, predictMode = false, revealed = false;
+var selTok = null, placedTok = null, placedSlot = null;
+
+PV.forEach(function(d,i){
+  var b = document.createElement("button"); b.textContent = d.label; b.dataset.k = i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ pickPv(i); });
+  $("pvChips").appendChild(b);
+});
+function pickPv(i){
+  pvIdx = i; revealed = false; selTok = null; placedTok = null; placedSlot = null;
+  document.querySelectorAll("#pvChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); });
+  curStage = PV[i].stage; renderStages(); renderPv();
+}
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderPv(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderPv(); });
+
+var TYPELAB = {sep:"separable", insep:"inseparable (verb + preposition)", three:"three-word · inseparable", frame:"fixed frame", none:"no object"};
+/* colour code: pv-p = particle (adverb) · pv-p2 = preposition.
+   In a verb + preposition pair (stick with, keep at) the single small word IS a
+   preposition, so it must be green — otherwise the colour contradicts the type tag. */
+function partCls(d,j){ return d.type==="insep" ? "pv-p2" : (j===0 ? "pv-p" : "pv-p2"); }
+function renderPv(){
+  var d = PV[pvIdx], mask = predictMode && !revealed;
+  var html = '<span class="pv-v">'+d.v+"</span>";
+  d.p.forEach(function(part,j){
+    html += '<span class="'+partCls(d,j)+(mask?" masked":"")+'">'+part+"</span>";
+  });
+  $("pvWord").innerHTML = html;
+  $("pvMean").innerHTML = "= "+d.mean+' <span class="es">('+d.es+")</span>";
+  $("pvEx").innerHTML = d.ex;
+  var tags = '<span class="hot">'+TYPELAB[d.type]+"</span>";
+  if(d.formal) tags += "<span>formal twin: <b>"+d.formal+"</b></span>";
+  tags += "<span>informal register</span>";
+  $("pvTags").innerHTML = tags;
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask){ document.querySelectorAll("#pvWord .masked").forEach(function(el){ el.addEventListener("click", function(){ revealed=true; renderPv(); }); }); }
+  renderObj();
+}
+
+/* ---- the task line ---- */
+var STAGES = [
+  {k:"start",  n:"1", lab:"Start",     desc:"You sit down and actually begin the job. <span class=\"es\">(Empezar en serio.)</span>"},
+  {k:"delay",  n:"2", lab:"Put off",   desc:"The job moves to tomorrow — and the pressure grows. To <b>procrastinate</b> is to keep putting things off. <span class=\"es\">(Posponer.)</span>"},
+  {k:"keep",   n:"3", lab:"Keep going",desc:"You stay with the job — or you stop trying. <span class=\"es\">(Seguir… o rendirse.)</span>"},
+  {k:"finish", n:"4", lab:"Finish",    desc:"The job is over — unless it was done badly and comes back. <span class=\"es\">(Terminar o rehacer.)</span>"},
+  {k:"catch",  n:"5", lab:"Catch up",  desc:"You do the work that piled up while you delayed. <span class=\"es\">(Ponerse al día.)</span>"}
+];
+var curStage = "start";
+STAGES.forEach(function(s){
+  var d = document.createElement("div"); d.className="tstage"; d.dataset.k=s.k;
+  d.innerHTML = "<i>"+s.n+"</i><b>"+s.lab+"</b>";
+  d.addEventListener("click", function(){ curStage=s.k; renderStages(); });
+  $("tLine").appendChild(d);
+});
+function renderStages(){
+  document.querySelectorAll("#tLine .tstage").forEach(function(x){ x.classList.toggle("on", x.dataset.k===curStage); });
+  var s = STAGES.filter(function(x){ return x.k===curStage; })[0];
+  $("stageDesc").innerHTML = s.desc;
+  var box = $("stagePv"); box.innerHTML = "";
+  PV.forEach(function(d,i){
+    if(d.stage!==curStage) return;
+    var b = document.createElement("button"); b.textContent = d.label;
+    b.addEventListener("click", function(){ pickPv(i); });
+    box.appendChild(b);
+  });
+}
+renderStages();
+
+/* ---- the object slot: tap the object, then tap a slot ---- */
+function slotHtml(id, label){
+  var filled = placedSlot===id;
+  var cls = "oslot" + (filled ? " filled" : (selTok ? " armed" : ""));
+  return '<span class="'+cls+'" data-s="'+id+'">'+(filled ? PV[pvIdx].obj[placedTok] : label)+"</span>";
+}
+function renderObj(){
+  var d = PV[pvIdx], frame = $("oFrame"), toks = $("oToks");
+  $("oRule").innerHTML = "📌 "+d.rule;
+  if(d.type==="none"){
+    frame.innerHTML = '<span class="pv-v">'+d.v+'</span><span class="pv-p">'+d.p[0]+"</span>";
+    toks.innerHTML = '<span class="muted">No object with this verb in the manual.</span>';
+    $("oVerdict").className = "overdict"; return;
+  }
+  var html = '<span class="pv-v">'+d.v+"</span>" + slotHtml("mid","middle");
+  d.p.forEach(function(part,j){ html += '<span class="'+partCls(d,j)+'">'+part+"</span>"; });
+  html += slotHtml("end","after the particles");
+  frame.innerHTML = html;
+  toks.innerHTML = '<span class="otok'+(selTok==="noun"?" sel":"")+'" data-t="noun">'+d.obj.noun+'</span><span class="otok'+(selTok==="pron"?" sel":"")+'" data-t="pron">'+d.obj.pron+" <small>(pronoun)</small></span>";
+  document.querySelectorAll("#oToks .otok").forEach(function(el){
+    el.addEventListener("click", function(){ selTok = el.dataset.t; placedTok=null; placedSlot=null; $("oVerdict").className="overdict"; renderObj(); });
+  });
+  document.querySelectorAll("#oFrame .oslot").forEach(function(el){
+    el.addEventListener("click", function(){
+      if(!selTok){ var vv=$("oVerdict"); vv.className="overdict no"; vv.innerHTML="Tap an object first, then tap a slot."; return; }
+      placedTok = selTok; placedSlot = el.dataset.s; judgeObj(); renderObj();
+    });
+  });
+}
+function judgeObj(){
+  var d = PV[pvIdx], mid = placedSlot==="mid", pron = placedTok==="pron", o = d.obj[placedTok], v = $("oVerdict");
+  var said = mid ? d.v+" "+o+" "+d.p.join(" ") : d.v+" "+d.p.join(" ")+" "+o;
+  var ok, why;
+  if(d.type==="sep"){
+    ok = mid || !pron;
+    why = mid ? (pron ? "A pronoun <b>must</b> sit between the verb and the particle." : "With a noun the middle slot is fine.")
+              : (pron ? "Never put a pronoun after the particle of a separable verb." : "With a noun both slots work — this one too.");
+  } else if(d.type==="frame"){
+    ok = mid; why = mid ? "The frame closes around the object: get <b>it</b> over with." : "✘ <i>get over with it</i> — the object never comes after <i>with</i>.";
+  } else {
+    ok = !mid; why = mid ? "This verb is <b>inseparable</b>: nothing goes between its parts." : "Inseparable — the object comes after all the parts.";
+  }
+  v.className = "overdict "+(ok?"ok":"no");
+  v.innerHTML = (ok?"✔ ":"✘ ")+"<b>"+said+"</b> — "+why;
+}
+
+/* ---- special cases (the manual's "Separable or not?" box) ---- */
+var SC = {
+  sep:"<b>Separable verbs</b> let the object go in the middle: <i>put off the meeting</i> / <i>put the meeting off</i>. With a <b>pronoun</b> the middle is the only option: ✔ <i>put <b>it</b> off</i>, ✔ <i>do <b>it</b> over</i>, ✔ <i>stress <b>me</b> out</i> — ✘ <i>put off it</i>.",
+  frame:"<b>get … over with</b> keeps a fixed frame around the object: ✔ <i>Let’s <b>get it over with</b>.</i> ✘ <i>get over with it</i>. The same with a noun: <i>get this job over with</i>.",
+  three:"<b>Three-word verbs are inseparable</b> — the object comes after all the parts: <i>catch up on <b>sleep</b></i>, <i>get around to <b>it</b></i>, <i>get down to <b>work</b></i>. And don’t drop the last part: ✘ <i>get down work</i>.",
+  ing:"<b>get around to + -ing</b>: the verb that follows takes <i>-ing</i>, because <i>to</i> here is a preposition. ✔ <i>I finally got around to <b>cleaning</b> my desk.</i> ✘ <i>got around to clean</i>.",
+  reg:"<b>Register:</b> these verbs are <b>informal</b>. Formal writing prefers the single verb: <i>put off</i> → <b>postpone</b>, <i>get down to</i> → <b>begin</b>. To <b>procrastinate</b> is to keep putting things off — the enemy of every deadline."
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.sep;
+
+/* ---- common errors (the manual's pitfall box + homework book) ---- */
+var ERR = [
+  {bad:"I put off it.", good:"I put it off.", why:"<b>put off</b> is separable and a <b>pronoun must</b> go in the middle."},
+  {bad:"Let’s get over with it.", good:"Let’s get it over with.", why:"<b>get … over with</b> is a fixed frame: the object goes inside."},
+  {bad:"I got around to clean.", good:"I got around to cleaning.", why:"<b>get around to</b> + <b>-ing</b> — <i>to</i> here is a preposition."},
+  {bad:"Get down work!", good:"Get down to work!", why:"Three parts: <b>get down to</b>. Don’t drop <i>to</i>."},
+  {bad:"This deadline is stressing out me.", good:"This deadline is stressing me out.", why:"Separable verb + pronoun: <b>stressing me out</b>."}
+];
+ERR.forEach(function(e){
+  var li=document.createElement("li");
+  li.innerHTML='<span class="bad">'+e.bad+'</span><button class="btn ghost small fixbtn">Fix ✓</button><span class="good">'+e.good+'</span><div class="why">'+e.why+'</div>';
+  li.querySelector(".fixbtn").addEventListener("click", function(){ li.classList.add("open"); });
+  $("errList").appendChild(li);
+});
+
+/* =====================================================================
+   BUILD · assemble (verb + object slot) + transform (rewrite it)
+===================================================================== */
+var BUILD = [
+  {sit:"You are postponing the essay again.", obj:"it", verbs:["stick with","put off","get over with"], vA:"put off", pos:"mid", out:"I keep <b>putting it off</b>.", note:"put off is separable, and a pronoun must go in the middle."},
+  {sit:"You must finally start working seriously on your project.", obj:"my project", verbs:["get down to","do over","catch up on"], vA:"get down to", pos:"end", out:"I finally have to <b>get down to my project</b>.", note:"get down to is a three-word verb — inseparable."},
+  {sit:"On Sunday you do something you are behind on: sleep.", obj:"sleep", verbs:["keep at","stress out","catch up on"], vA:"catch up on", pos:"end", out:"On Sunday I <b>catch up on sleep</b>.", note:"catch up on is inseparable: the object follows all three parts."},
+  {sit:"Three deadlines are making you anxious.", obj:"me", verbs:["stress out","give up","put off"], vA:"stress out", pos:"mid", out:"Three deadlines are <b>stressing me out</b>.", note:"stress out is separable; the pronoun me goes in the middle."},
+  {sit:"You want to finish an unpleasant job right now.", obj:"it", verbs:["get around to","get over with","do over"], vA:"get over with", pos:"mid", out:"Let’s <b>get it over with</b>.", note:"get … over with is a fixed frame: the object sits inside it."},
+  {sit:"You promise not to abandon the plan you started.", obj:"it", verbs:["do over","put off","stick with"], vA:"stick with", pos:"end", out:"I’ll <b>stick with it</b> until I finish.", note:"stick with is verb + preposition — inseparable."},
+  {sit:"The lab report was sloppy, so you must do it again.", obj:"it", verbs:["catch up on","do over","keep at"], vA:"do over", pos:"mid", out:"I had to <b>do it over</b>.", note:"do over is separable; a pronoun must go in the middle."},
+  {sit:"After months of planning, you finally cleaned your desk.", obj:"cleaning my desk", verbs:["get around to","keep at","stress out"], vA:"get around to", pos:"end", out:"I finally <b>got around to cleaning my desk</b>.", note:"get around to is inseparable and takes -ing."}
+];
+var POSOPTS = [{k:"mid", t:"in the middle (verb + object + particle)"}, {k:"end", t:"after the particle(s)"}];
+var bi=0, bVerb=null, bPos=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function chipGroup(id, opts, onPick){
+  var wrap=$(id); wrap.innerHTML="";
+  opts.forEach(function(o){
+    var b=document.createElement("button"); b.textContent=o.t; b.dataset.v=o.k;
+    b.addEventListener("click", function(){ onPick(o.k); document.querySelectorAll("#"+id+" button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+}
+function renderBuild(){
+  var it=BUILD[bi]; bVerb=null; bPos=null;
+  $("bctx").innerHTML = it.sit+"<small>object: <b>"+it.obj+"</b></small>";
+  chipGroup("verbChips", it.verbs.map(function(v){ return {k:v, t:v}; }), function(v){ bVerb=v; });
+  chipGroup("posChips", POSOPTS, function(p){ bPos=p; });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bVerb || !bPos){ r.className="bresult bad"; r.innerHTML="Choose a verb <i>and</i> an object position first."; return; }
+  var vOk = bVerb===it.vA, pOk = bPos===it.pos;
+  if(vOk && pOk){
+    r.className="bresult good"; r.innerHTML="✅ "+it.out+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    if(!vOk) document.querySelector('#verbChips button[data-v="'+bVerb+'"]').classList.add("wrongpick");
+    if(!pOk) document.querySelector('#posChips button[data-v="'+bPos+'"]').classList.add("wrongpick");
+    r.className="bresult bad";
+    r.innerHTML="❌ "+(!vOk ? "That verb doesn’t fit the situation." : "Right verb, wrong slot.")+'<span class="bnote">Hint — '+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"You shouldn’t postpone your homework. <i>(use a phrasal verb)</i>", model:"You shouldn’t put off your homework. (or: …put your homework off.)", accept:["you shouldn't put off your homework","you shouldn't put your homework off","you shouldnt put off your homework","you shouldnt put your homework off","you should not put off your homework","you should not put your homework off"]},
+  {ctx:"I need to begin studying seriously. <i>(GET)</i>", model:"I need to get down to studying (seriously).", accept:["i need to get down to studying","i need to get down to studying seriously","i need to get down to some serious studying","i need to get down to serious studying","i need to get down to my studies"]},
+  {ctx:"Let’s finish this unpleasant task. <i>(OVER)</i>", model:"Let’s get it over with. (or: Let’s get this task over with.)", accept:["let's get it over with","lets get it over with","let's get this task over with","lets get this task over with","let's get this over with","lets get this over with"]},
+  {ctx:"She refused to stop trying. <i>(use a phrasal verb)</i>", model:"She refused to give up.", accept:["she refused to give up"]},
+  {ctx:"I finally did the report I had been planning. <i>(AROUND)</i>", model:"I finally got around to doing the report.", accept:["i finally got around to doing the report","i got around to doing the report","i finally got around to the report","i got around to the report"]},
+  {ctx:"Put the pronoun in its place: Don’t put off ___ any longer. <i>(it)</i>", model:"Don’t put it off any longer.", accept:["don't put it off any longer","dont put it off any longer","do not put it off any longer","don't put it off","dont put it off"]},
+  {ctx:"Put the pronoun in its place: This deadline is stressing out ___ . <i>(me)</i>", model:"This deadline is stressing me out.", accept:["this deadline is stressing me out","it is stressing me out","it's stressing me out","its stressing me out"]},
+  {ctx:"Fix the form: I got around to clean my room.", model:"I got around to cleaning my room.", accept:["i got around to cleaning my room","i finally got around to cleaning my room"]}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML=it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow — 13 items (5★ / 4★★ / 4★★★)
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Meaning", q:"Which phrasal verb means <i>start doing something seriously</i>?", o:["get down to","get around to","catch up on"], a:0, w:"get down to = start doing something seriously."},
+  {kind:"mc", diff:1, tag:"Meaning", q:"“On Sunday I ___ sleep.” (do the thing you are behind on)", o:["get over with","catch up on","put off"], a:1, w:"catch up on = do something you are behind on."},
+  {kind:"mc", diff:1, tag:"Collocation", q:"“Three deadlines on Monday are really ___ me out.”", o:["getting","sticking","stressing"], a:2, w:"stress somebody out = make someone anxious — the manual’s own line: “Three deadlines on Monday are really stressing me out.”"},
+  {kind:"fill", diff:1, tag:"Formal → informal", q:"postpone = ___ (two words)", accept:["put off"], w:"The informal twin of postpone is put off."},
+  {kind:"error", diff:1, tag:"Fix the error", ask:"Click the <b>object pronoun</b> that is in the wrong place.", words:["Don’t","put","off","it","any","longer."], bad:3, fixOld:"put off it", fixNew:"put it off", w:"put off is separable: a pronoun must go between the verb and the particle."},
+  {kind:"mc", diff:2, tag:"Separable?", q:"Which sentence is correct?", o:["I’ll do it over.", "I’ll do over it.", "I’ll do over with it."], a:0, w:"do over is separable; the pronoun it must sit in the middle. (The frame over with belongs to get … over with, not to do over.)"},
+  {kind:"error", diff:2, tag:"Fix the error", ask:"Click the <b>object pronoun</b> that is in the wrong place.", words:["This","deadline","is","stressing","out","me."], bad:5, fixOld:"stressing out me", fixNew:"stressing me out", w:"Separable verb + pronoun: the pronoun goes in the middle."},
+  {kind:"error", diff:2, tag:"Fix the error", ask:"Click the <b>verb form</b> that is wrong.", words:["I","got","around","to","clean","my","room."], bad:4, fixOld:"to clean", fixNew:"to cleaning", w:"get around to takes -ing, because to here is a preposition."},
+  {kind:"fill", diff:2, tag:"Complete the verb", q:"“I must get down ___ work.” (one word)", accept:["to"], w:"get down to has three parts — don’t drop to."},
+  {kind:"fill", diff:3, tag:"Form after the verb", q:"“I finally got around to ___ my desk.” (clean)", accept:["cleaning"], w:"get around to + -ing: got around to cleaning."},
+  {kind:"error", diff:3, tag:"Fix the error", ask:"Click the <b>object pronoun</b> that is in the wrong place.", words:["Let’s","get","over","with","it","now."], bad:4, fixOld:"get over with it", fixNew:"get it over with", w:"get … over with is a fixed frame: the object goes inside it."},
+  {kind:"mc", diff:3, tag:"Register", q:"In a formal report, which single verb replaces <i>put off</i>?", o:["procrastinate","postpone","catch up"], a:1, w:"These phrasal verbs are informal; formal writing prefers postpone."},
+  {kind:"fill", diff:3, tag:"Rewrite", q:"“Let’s finish this unpleasant task.” → Let’s ___ . (get · it · over · with)", accept:["get it over with","let's get it over with","lets get it over with"], w:"get it over with = finish something unpleasant."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i6_s11_drill_best")||0); if(dscore>best){ store("i6_s11_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Nothing left to put off — ready for the ★★★ homework." : dscore>=8?"Solid. Review the object-slot card and go again." : "Re-read Structure 11, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.ask||"Click the word that is wrong.")+"</div>";
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">✓ Correct.</span> ':'<span class="k">✗ Not that one: the green part is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderPv();
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

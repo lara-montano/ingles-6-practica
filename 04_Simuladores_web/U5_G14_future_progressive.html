@@ -519,9 +519,9 @@ renderTrans();
 ===================================================================== */
 var DRILL = [
   {kind:"mc", diff:1, tag:"Which use?", q:"“This time next year, I’ll be working in my dream job.”", o:["an action in progress at a future point","a prediction about the future","an action in progress right now"], a:0, w:"this time next year + will be + -ing = an action in progress at a future point."},
-  {kind:"mc", diff:1, tag:"Simple or progressive?", q:"“I ___ you the moment I arrive.” (a single action)", o:["’ll call","’ll be calling"], a:0, w:"A single complete action at a point → will + base."},
+  {kind:"mc", diff:1, tag:"Simple or progressive?", q:"“I ___ you the moment I arrive.” (a single action)", o:["’ll be calling", "’ll call"], a:1, w:"A single complete action at a point → will + base."},
   {kind:"mc", diff:1, tag:"Simple or progressive?", q:"“This time tomorrow, I ___ to the coast.”", o:["’ll be traveling","’ll travel"], a:0, w:"this time tomorrow = in progress at that moment → will be + -ing."},
-  {kind:"mc", diff:1, tag:"Stative verb", q:"“I ___ the answer by Friday.”", o:["’ll know","’ll be knowing"], a:0, w:"know is stative — it rarely takes the progressive → will know."},
+  {kind:"mc", diff:1, tag:"Stative verb", q:"“I ___ the answer by Friday.”", o:["’ll be knowing", "’ll know"], a:1, w:"know is stative — it rarely takes the progressive → will know."},
   {kind:"mc", diff:1, tag:"Polite enquiry", q:"“___ us for the meeting?” (a neutral question about plans)", o:["Will you be joining","Will you join"], a:0, w:"A neutral question about plans → Will you be + -ing; Will you join…? can sound like an invitation."},
   {kind:"error", diff:2, tag:"Fix the error", words:["This","time","tomorrow","I","fly","to","Cancún."], bad:4, fixOld:"fly", fixNew:"will be flying", w:"this time tomorrow = in progress at that moment → will be + -ing, not the present."},
   {kind:"error", diff:2, tag:"Fix the error", words:["This","time","next","week,","I","will","be","lie","on","a","beach."], bad:7, fixOld:"will be lie", fixNew:"will be lying", w:"Don’t drop the -ing: will be + lying."},

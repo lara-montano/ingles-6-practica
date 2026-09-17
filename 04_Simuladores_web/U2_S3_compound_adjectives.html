@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE HYPHEN WORKSHOP · English 6 · Unit 2 "Wish You Were Here"
+  Structure 3 — compound adjectives (five patterns, the hyphen, the
+  singular-noun rule, when the hyphen disappears)
+  Three modes: Explore (sort & build) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Structure 3 · The Hyphen Workshop · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --teal:#0E7C7B; --tealdark:#09504F; --teallt:#E1F1F0;
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF; --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4; --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--teal),var(--tealdark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#BFE6E4; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#D6EEED; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--tealdark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--tealdark); margin-bottom:6px} .card h3{font-size:15px; color:var(--tealdark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px} .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-teal{background:var(--teal)} .tag-navy{background:var(--navy)}
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--teal); background:var(--teallt); color:var(--tealdark)}
+
+  /* ---------- tap-to-sort classifier (no HTML5 drag: tap source, tap target) ---------- */
+  .bank{display:flex; gap:7px; flex-wrap:wrap; margin:8px 0}
+  .bank button.done{display:none} .bank button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 15px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .bank button.sel{border-color:var(--grammar); background:var(--grammarlt); color:var(--grammar); box-shadow:0 0 0 3px var(--grammarlt)}
+  .sortnote{background:var(--soft); border-radius:10px; padding:9px 12px; font-size:14px; font-weight:700; color:#555; margin:6px 0 10px}
+  .sortnote b{color:var(--tealdark)} .bucket h4{font-size:14px; color:var(--tealdark)}
+  .buckets{display:grid; grid-template-columns:repeat(auto-fit,minmax(182px,1fr)); gap:9px}
+  .bucket{border:2px dashed var(--rule); border-radius:12px; padding:10px; background:#fff; cursor:pointer; transition:background .15s,border-color .15s}
+  .bucket.arm{border-color:var(--grammar); background:var(--grammarlt)}
+  .bucket.hit{border-color:var(--green); background:var(--greenlt)} .bucket.miss{border-color:var(--think); background:var(--thinklt)}
+  .bucket .mean{font-size:12px; color:#777; font-weight:700; margin-top:2px}
+  .bucket .mdl{font-size:12px; color:#999; font-style:italic; margin-top:3px}
+  .bucket .got{display:flex; gap:5px; flex-wrap:wrap; margin-top:7px}
+  .bucket .got span{background:var(--greenlt); border:1.5px solid var(--green); color:var(--greendark); border-radius:8px; padding:3px 8px; font-size:13px; font-weight:800}
+
+  /* ---------- hyphen machine ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .xcard{border-radius:12px; padding:14px 16px; margin:8px 0; position:relative}
+  .xcard .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase}
+  .xcard .snt{font-size:clamp(18px,3.1vw,24px); font-weight:800; margin-top:4px; line-height:1.55}
+  .xdirect{background:var(--navylt); border:2px solid var(--navy)} .xdirect .role{color:var(--navy)}
+  .xreported{background:var(--teallt); border:2px solid var(--teal)} .xreported .role{color:var(--tealdark)}
+  .arrowdown{text-align:center; font-size:26px; color:var(--grammar); margin:-2px 0}
+  .rrep{background:var(--teallt); color:var(--tealdark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--teal)}
+  .rverb{background:var(--grammarlt); color:var(--grammar); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--grammar)}
+  .mach{display:flex; gap:6px; flex-wrap:wrap; align-items:center; justify-content:center; margin:10px 0}
+  .piece{background:var(--navylt); border:2px solid var(--navy); color:var(--navy); border-radius:10px; padding:8px 14px; font-size:clamp(16px,2.6vw,20px); font-weight:900}
+  .piece.masked{color:transparent; position:relative; cursor:pointer; min-width:78px}
+  .piece.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .join{font-weight:900; border-radius:8px; padding:4px 9px}
+  .join.hy{background:var(--grammarlt); color:var(--grammar); font-size:clamp(18px,3vw,24px); border:2px solid var(--grammar); line-height:1}
+  .join.sp,.join.so{background:var(--soft); color:#888; font-size:11px; text-transform:uppercase; letter-spacing:.06em; border:1.5px dashed var(--rule)}
+  .hyl{color:var(--grammar); font-weight:900} .mk{color:#999}
+  .changes{list-style:none; margin:10px 0 0} .changes li{position:relative; padding:3px 0 3px 22px; font-size:14px; font-weight:600; color:#555}
+  .changes li::before{content:"→"; position:absolute; left:0; top:3px; color:var(--grammar); font-weight:900}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px} .legend span{border-radius:6px; padding:1px 8px}
+  .vs{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:8px; margin:8px 0}
+  .vsbad{background:var(--thinklt); border:2px solid var(--think); color:var(--think); border-radius:10px; padding:9px 12px; font-weight:800}
+  .vsgood{background:var(--greenlt); border:2px solid var(--green); color:var(--greendark); border-radius:10px; padding:9px 12px; font-weight:800}
+
+  /* ---------- position switch · special cases · errors ---------- */
+  .tensechips{display:flex; gap:6px; flex-wrap:wrap; margin:8px 0}
+  .tensechips button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 11px; font:700 13px Lato,sans-serif; cursor:pointer}
+  .tensechips button.on{border-color:var(--navy); background:var(--navylt); color:var(--navy)}
+  .tenseout{background:var(--soft); border-radius:12px; padding:16px; text-align:center; margin-top:6px}
+  .tenseout .map{font-size:clamp(17px,2.8vw,22px); font-weight:800} .tenseout .ex{font-size:14px; color:#555; margin-top:8px; font-weight:600}
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)} .shiftgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); gap:6px; margin-top:4px}
+  .shiftgrid div{background:#fff; border:1.5px solid var(--rule); border-radius:8px; padding:6px 10px; font-size:14px; font-weight:700}
+  .shiftgrid .a{color:var(--navy)} .shiftgrid .b{color:var(--excep)}
+  .errlist{list-style:none; margin-top:6px} .errlist li{display:flex; gap:10px; align-items:center; flex-wrap:wrap; padding:8px 0; border-bottom:1px dashed var(--rule); font-size:15px; font-weight:700}
+  .errlist .bad{color:var(--think)} .errlist .bad::before{content:"✘ "}
+  .errlist .good{color:var(--green); display:none} .errlist .good::before{content:"✔ "}
+  .errlist .why{display:none; margin:0; flex-basis:100%; font-size:13px; padding:6px 10px}
+  .errlist li.open .good,.errlist li.open .why{display:block} .errlist li.open .fixbtn{display:none}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--teal); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--tealdark); border:2px solid var(--teal)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--teal); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--teal)}
+  .segbig button.on{background:var(--teal); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px} .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap} .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--teal); background:var(--teallt); color:var(--tealdark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--tealdark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--tealdark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--teal); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px} .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)} .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick{background:var(--think); color:#fff}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)} .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block} .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px} .medal{font-size:48px; text-align:center} .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--tealdark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px} details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--teal); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🔗</span>
+  <div class="wrap">
+    <div class="kicker">English 6 · Unit 2 · Wish You Were Here</div>
+    <h1>🔗 The Hyphen Workshop</h1>
+    <div class="sub"><b>Structure 3</b> — compound adjectives: five patterns, the hyphen and the singular rule. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🧩 Sort the patterns</span><span>🔧 Build the compound</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🧩 Explore<small>sort &amp; assemble</small></button>
+    <button data-tab="build">🔧 Build<small>make the word</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Two words, one adjective</h2>
+      <p class="muted">English compresses a whole description into a two-word adjective joined by a hyphen: <i>a hotel that welcomes families</i> → <b>a family-friendly hotel</b>. Five patterns do most of the work in travel writing. <span class="es">(Cinco patrones productivos; el guion une las dos piezas.)</span></p>
+      <h3>Tap a compound, then tap its pattern</h3>
+      <p class="muted">Tap to select, then tap the pattern box. No dragging — it works with a mouse and with your finger. Compounds are shown in the form they take <b>before a noun</b>. <span class="es">(Tocar para seleccionar, tocar el destino para colocar.)</span></p>
+      <div class="bank" id="bank"></div>
+      <div class="sortnote" id="sortNote">Tap a compound above to select it.</div>
+      <div class="buckets" id="buckets"></div>
+      <div class="bfoot"><button class="btn ghost small" id="sortReset">Start over ↺</button><span class="bscore" id="sortScore">Sorted: 0 / 15</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">🔧 The hyphen machine</span>
+      <h2>Build the compound, piece by piece</h2>
+      <p class="muted">Choose a description; the machine compresses it and shows you exactly what goes between the pieces — a hyphen, a space, or nothing at all. <span class="es">(Mira dónde aparece el guion… y dónde no.)</span></p>
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the second half, guess, then reveal</label>
+      <div class="chips" id="machChips"></div>
+      <div class="xcard xdirect"><div class="role">The long description</div><div class="snt" id="machLong"></div></div>
+      <div class="arrowdown">⬇</div>
+      <div class="mach" id="machRow"></div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the second half ✓</button></div>
+      <div class="xcard xreported"><div class="role">The compound adjective</div><div class="snt" id="machOut"></div></div>
+      <ul class="changes" id="machWhy"></ul>
+      <div class="legend"><span class="rrep">hyphen</span><span class="rverb">no hyphen</span></div>
+      <h3>The singular rule — never “two-hours”</h3>
+      <p class="muted">In a number compound the number already says how many, so the noun inside stays <b>singular</b>. <span class="es">(El sustantivo dentro del compuesto va en singular.)</span></p>
+      <div class="vs"><div class="vsbad">✘ a two-<b>hours</b> delay</div><div class="vsgood">✔ a two-<b>hour</b> delay</div></div>
+      <div class="vs"><div class="vsbad">✘ a three-<b>weeks</b> vacation</div><div class="vsgood">✔ a three-<b>week</b> vacation</div></div>
+      <p class="muted">Outside the compound the plural comes back: <i>The delay lasted two <b>hours</b>.</i> · More: <i>a five-star resort · a ten-hour flight · an 18-year-old traveler</i></p>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-teal">📍 When the hyphen disappears</span>
+      <h2>Position matters: before the noun vs after <i>be</i></h2>
+      <p class="muted">Pick a compound, then move it. Before a noun you hyphenate; after <i>be</i> an <b>adverb + past participle</b> compound usually drops the hyphen, while a <b>noun + adjective</b> compound keeps it. <span class="es">(La posición decide el guion.)</span></p>
+      <div class="tensechips" id="posChips"></div>
+      <div class="seg2" id="posSeg"><button data-v="before" class="on">before the noun</button><button data-v="after">after “be”</button></div>
+      <div class="tenseout"><div class="map" id="posOut"></div><div class="ex" id="posRule"></div></div>
+      <p class="muted" style="margin-top:10px">And never over-hyphenate: compounds that dictionaries list as <b>one word</b> stay solid — <i>shortsighted, sunburned, waterproof</i>.</p>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Special cases</span>
+      <h2>Five things that decide the hyphen</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="ly" class="on">-ly adverbs</button><button data-v="afterbe">after “be”</button><button data-v="numbers">numbers</button><button data-v="solid">one-word compounds</button><button data-v="meanings">meanings to learn</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠️ Common errors</span>
+      <h2>Errors Spanish speakers make</h2>
+      <p class="muted">Read the phrase, find the problem, then tap <b>Fix</b> to check. <span class="es">(Adivina la corrección antes de verla.)</span></p>
+      <ul class="errlist" id="errList"></ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Structure 3 in three moves: the tap-to-sort classifier covers the five productive patterns of the manual's table (noun + -ing, adverb + past participle, noun + adjective, adjective + past participle, adjective/number + noun) with the manual's own examples and its glossary of meanings; the hyphen machine assembles each compound piece by piece and shows the three joins (hyphen, space, one word) plus the singular-noun rule; the position card is hyphen rules 1–2, and the special-cases and errors cards are rules 3–5.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> a compound by choosing the second piece and the join (exercise 3 of the manual), then <i>transform</i> descriptions into compounds and repair badly hyphenated sentences (exercises 3 and 4, plus Task set 13).</li>
+          <li><b>Drill</b> merges the quizzes into one graded engine (★ identify the pattern and the hyphen · ★★ fix the error and compress · ★★★ after <i>be</i>, number compounds, solid words) with a score and streak.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-teal">🔧 Your turn to produce</span>
+      <h2>Build a compound adjective</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+      <div id="assembleBox">
+        <p class="muted">Read the description, then choose the <b>second piece</b> and the <b>join</b>. The machine writes the phrase — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">The second piece is…</div><div class="bchips" id="pieceChips"></div></div>
+        <div class="bgroup"><div class="glab">…joined with…</div><div class="bchips" id="joinChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New description →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+      <div id="transformBox" style="display:none">
+        <p class="muted">Compress the description, or repair the sentence. Type it and check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type your answer"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next item →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ the pattern &amp; the hyphen · ★★ fix the error &amp; compress · ★★★ after <i>be</i>, numbers and one-word compounds. Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 6 · Unit 2 «Wish You Were Here» · Structure 3 — compound adjectives · Level B1+
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE HYPHEN WORKSHOP — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 6 Class Manual (Structure 3).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE 1 · tap-to-sort classifier (the five patterns of the manual)
+===================================================================== */
+var PAT = [
+  {k:"ning",  name:"noun + -ing form",            mean:"“that does X”",          models:"English-speaking, decision-making"},
+  {k:"advpp", name:"adverb + past participle",    mean:"“X-ed in that way”",     models:"widely used, well-preserved"},
+  {k:"nadj",  name:"noun + adjective",            mean:"“adjective for/with N”", models:"world-famous, ocean-blue"},
+  {k:"adjpp", name:"adjective + past participle", mean:"character &amp; style",  models:"shortsighted, brand-new"},
+  {k:"numn",  name:"adjective / number + noun",   mean:"measurement &amp; type", models:"long-term, high-risk"}
+];
+var WORDS = [
+  {w:"eye-catching", p:"ning", m:"attracting attention"}, {w:"award-winning", p:"ning"}, {w:"time-consuming", p:"ning"},
+  {w:"well-known", p:"advpp"}, {w:"densely populated", p:"advpp", m:"with many people per km²"}, {w:"freshly baked", p:"advpp"},
+  {w:"family-friendly", p:"nadj", m:"suitable for children"}, {w:"duty-free", p:"nadj"}, {w:"smoke-free", p:"nadj"},
+  {w:"old-fashioned", p:"adjpp"}, {w:"open-minded", p:"adjpp", m:"willing to consider new ideas"}, {w:"kind-hearted", p:"adjpp"},
+  {w:"last-minute", p:"numn", m:"done at the latest possible time"}, {w:"five-star", p:"numn"}, {w:"high-speed", p:"numn"}
+];
+var picked = null, sorted = 0, placed = [];
+function patOf(k){ for(var i=0;i<PAT.length;i++){ if(PAT[i].k===k) return PAT[i]; } return PAT[0]; }
+function buildBuckets(){
+  var host = $("buckets"); host.innerHTML = "";
+  PAT.forEach(function(p){
+    var d = document.createElement("div"); d.className = "bucket"; d.dataset.k = p.k;
+    d.innerHTML = '<h4>'+p.name+'</h4><div class="mean">'+p.mean+'</div><div class="mdl">e.g. '+p.models+'</div><div class="got" id="got-'+p.k+'"></div>';
+    d.addEventListener("click", function(){ dropInto(p.k, d); });
+    host.appendChild(d);
+  });
+}
+function buildBank(){
+  var host = $("bank"); host.innerHTML = "";
+  WORDS.forEach(function(it, i){
+    var b = document.createElement("button"); b.textContent = it.w; b.dataset.i = i;
+    if(placed.indexOf(i)>=0) b.classList.add("done");
+    b.addEventListener("click", function(){
+      picked = i; document.querySelectorAll("#bank button").forEach(function(x){ x.classList.toggle("sel", +x.dataset.i===i); });
+      document.querySelectorAll(".bucket").forEach(function(x){ x.classList.add("arm"); });
+      $("sortNote").innerHTML = 'Selected <b>'+it.w+'</b> — now tap the pattern box it belongs to.';
+    });
+    host.appendChild(b);
+  });
+}
+function flash(el, cls){ el.classList.add(cls); setTimeout(function(){ el.classList.remove(cls); }, 650); }
+function dropInto(k, box){
+  if(picked===null){ $("sortNote").innerHTML = "Tap a compound first, then tap a pattern box."; return; }
+  var it = WORDS[picked], p = patOf(k);
+  if(it.p===k){
+    placed.push(picked); sorted++; flash(box, "hit");
+    var sp = document.createElement("span"); sp.textContent = it.w; $("got-"+k).appendChild(sp);
+    document.querySelector('#bank button[data-i="'+picked+'"]').classList.add("done");
+    $("sortNote").innerHTML = '✅ <b>'+it.w+'</b> — '+p.name+': '+p.mean+(it.m?' · <i>'+it.m+'</i>':'');
+    picked = null; document.querySelectorAll(".bucket").forEach(function(x){ x.classList.remove("arm"); });
+    $("sortScore").textContent = "Sorted: "+sorted+" / "+WORDS.length;
+    if(sorted===WORDS.length) $("sortNote").innerHTML = '🎉 All '+WORDS.length+' sorted. Now open the hyphen machine below.';
+  } else {
+    flash(box, "miss");
+    $("sortNote").innerHTML = '❌ <b>'+it.w+'</b> is not '+p.name+'. Look at the <b>first</b> piece: is it a noun, an adverb (well, densely…), an adjective or a number? Try another box.';
+  }
+}
+$("sortReset").addEventListener("click", function(){
+  picked = null; sorted = 0; placed = []; buildBuckets(); buildBank();
+  $("sortScore").textContent = "Sorted: 0 / "+WORDS.length;
+  $("sortNote").innerHTML = "Tap a compound above to select it.";
+});
+buildBuckets(); buildBank();
+
+/* =====================================================================
+   EXPLORE 2 · the hyphen machine (pieces + join + singular rule)
+===================================================================== */
+var MACH = [
+  {lab:"🏨 hotel", long:"a hotel that welcomes families", pre:"a ", post:" hotel", pieces:["family","friendly"], joins:["-"], why:["noun + adjective = “adjective for/with N”","Before the noun, hyphenate: <b>family-friendly</b>"]},
+  {lab:"🚌 tour", long:"a tour that lasts three hours", pre:"a ", post:" tour", pieces:["three","hour"], joins:["-"], why:["number + noun = measurement","The noun inside stays singular: <b>three-hour</b>, not <i>three-hours</i>"]},
+  {lab:"🏖️ beach", long:"a beach known all over the world", pre:"a ", post:" beach", pieces:["world","famous"], joins:["-"], why:["noun + adjective: known internationally","Hyphenated before the noun: <b>world-famous</b>"]},
+  {lab:"🍲 dish", long:"a dish that makes your mouth water", pre:"a ", post:" dish", pieces:["mouth","watering"], joins:["-"], why:["noun + -ing form = “that does X”","<b>mouth-watering</b> = looking delicious"]},
+  {lab:"🎟️ deal", long:"a deal booked at the latest possible time", pre:"a ", post:" deal", pieces:["last","minute"], joins:["-"], why:["adjective + noun = type","<b>last-minute</b> = done at the latest possible time"]},
+  {lab:"🧳 traveler", long:"a traveler who is 25 years old", pre:"a ", post:" traveler", pieces:["25","year","old"], joins:["-","-"], why:["number + singular noun + adjective","Every gap takes a hyphen: <b>25-year-old</b>, not <i>25-years-old</i>"]},
+  {lab:"🚭 zone", long:"a zone where you cannot smoke", pre:"a ", post:" zone", pieces:["smoke","free"], joins:["-"], why:["noun + adjective: <b>smoke-free</b>","Same family: duty-free, sugar-free, plastic-free"]},
+  {lab:"🌆 city", long:"a city with many people per km²", pre:"a ", post:" city", pieces:["densely","populated"], joins:[" "], why:["adverb + past participle","The adverb ends in <b>-ly</b>, so there is <b>no hyphen</b>: densely populated"]},
+  {lab:"📉 plan", long:"a plan that ignores future consequences", pre:"a ", post:" plan", pieces:["short","sighted"], joins:[""], why:["adjective + past participle","The dictionary lists it as <b>one word</b>, so no hyphen: shortsighted"]}
+];
+var curM = 0, predictMode = false, revealed = false;
+MACH.forEach(function(m, i){
+  var b = document.createElement("button"); b.innerHTML = m.lab; b.dataset.k = i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curM = i; revealed = false; document.querySelectorAll("#machChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderMach(); });
+  $("machChips").appendChild(b);
+});
+$("predictChk").addEventListener("change", function(){ predictMode = this.checked; revealed = false; renderMach(); });
+$("revealBtn").addEventListener("click", function(){ revealed = true; renderMach(); });
+function joinBox(j){ return j==="-" ? '<span class="join hy">-</span>' : (j===" " ? '<span class="join sp">space</span>' : '<span class="join so">no gap</span>'); }
+function renderMach(){
+  var it = MACH[curM], mask = predictMode && !revealed, h = "", c = "";
+  it.pieces.forEach(function(p, i){
+    if(i>0) h += joinBox(it.joins[i-1]);
+    h += '<span class="piece'+((mask && i>0)?" masked":"")+'">'+p+"</span>";
+    if(i>0){ var j = it.joins[i-1]; c += (j==="-") ? '<span class="hyl">-</span>' : (j===" " ? " " : ""); }
+    c += (mask && i>0) ? '<span class="mk">?</span>' : p;
+  });
+  $("machLong").textContent = it.long; $("machRow").innerHTML = h;
+  $("machOut").innerHTML = it.pre+'<span class="'+(it.joins.indexOf("-")>=0?"rrep":"rverb")+'">'+c+"</span>"+it.post;
+  var ul = $("machWhy"); ul.innerHTML = "";
+  it.why.forEach(function(w){ var li = document.createElement("li"); li.innerHTML = w; ul.appendChild(li); });
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask){ document.querySelectorAll("#machRow .piece.masked").forEach(function(el){ el.addEventListener("click", function(){ revealed = true; renderMach(); }); }); }
+}
+renderMach();
+
+/* =====================================================================
+   EXPLORE 3 · position switch (before the noun / after "be")
+===================================================================== */
+var POS = {
+  wellknown:{lab:"well known", before:'a <span class="rrep">well<span class="hyl">-</span>known</span> beach', after:'The beach is <span class="rverb">well known</span>.', ruleB:"Before a noun: hyphenate the compound.", ruleA:"After <i>be</i>, an <b>adverb + past participle</b> compound usually drops the hyphen."},
+  familyfriendly:{lab:"family-friendly", before:'a <span class="rrep">family<span class="hyl">-</span>friendly</span> hotel', after:'The hotel is <span class="rrep">family<span class="hyl">-</span>friendly</span>.', ruleB:"Before a noun: hyphenate the compound.", ruleA:"<b>Noun + adjective</b> compounds usually <b>keep</b> the hyphen, even after <i>be</i>."},
+  densely:{lab:"densely populated", before:'a <span class="rverb">densely populated</span> city', after:'The city is <span class="rverb">densely populated</span>.', ruleB:"The adverb ends in <b>-ly</b>: no hyphen, in any position.", ruleA:"The adverb ends in <b>-ly</b>: no hyphen, in any position."},
+  widely:{lab:"widely used", before:'a <span class="rverb">widely used</span> road', after:'The road is <span class="rverb">widely used</span>.', ruleB:"The adverb ends in <b>-ly</b>: no hyphen, in any position.", ruleA:"The adverb ends in <b>-ly</b>: no hyphen, in any position."}
+};
+var curPos = "wellknown", curSide = "before";
+Object.keys(POS).forEach(function(k, i){
+  var b = document.createElement("button"); b.textContent = POS[k].lab; b.dataset.k = k;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curPos = k; document.querySelectorAll("#posChips button").forEach(function(x){ x.classList.toggle("on", x.dataset.k===k); }); renderPos(); });
+  $("posChips").appendChild(b);
+});
+document.querySelectorAll("#posSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ curSide = b.dataset.v; document.querySelectorAll("#posSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); renderPos(); });
+});
+function renderPos(){
+  var p = POS[curPos], b = curSide==="before";
+  $("posOut").innerHTML = b ? p.before : p.after; $("posRule").innerHTML = b ? p.ruleB : p.ruleA;
+}
+renderPos();
+
+/* =====================================================================
+   EXPLORE 4 · special cases   ·   EXPLORE 5 · common errors
+===================================================================== */
+var SC = {
+  ly:'<b>Adverbs ending in -ly never take a hyphen</b>, before a noun or after <i>be</i>: ✔ a <b>densely populated</b> city · ✘ a <s>densely-populated</s> city. Same for <b>widely used</b>, <b>freshly baked</b>, <b>beautifully restored</b>. Adverbs without -ly do take one: a <b>well-known</b> beach.',
+  afterbe:'<b>Position decides.</b> Before a noun, hyphenate: a <b>well-known</b> beach · a <b>last-minute</b> deal. After the verb <i>be</i>, an <b>adverb + past participle</b> compound usually loses the hyphen: The beach is <b>well known</b>. But a <b>noun + adjective</b> compound keeps it: The hotel is <b>family-friendly</b>.',
+  numbers:'<b>Number compounds use a SINGULAR noun.</b><div class="shiftgrid"><div><span class="a">a three-week vacation</span> — <span class="b">not three-weeks</span></div><div><span class="a">a five-star resort</span> — <span class="b">not five-stars</span></div><div><span class="a">a ten-hour flight</span> — <span class="b">not ten-hours</span></div><div><span class="a">an 18-year-old traveler</span> — <span class="b">not 18-years-old</span></div></div>Outside the compound the plural returns: <i>The flight lasted ten <b>hours</b>.</i>',
+  solid:'<b>Don’t over-hyphenate.</b> Compounds that dictionaries list as one word stay solid: <b>shortsighted</b>, <b>sunburned</b>, <b>waterproof</b>. And a compound is never glued at random either: ✘ <s>lastminute</s> → ✔ <b>last-minute</b>. When in doubt, check the dictionary entry.',
+  meanings:'<b>Meanings to learn now:</b><div class="shiftgrid"><div><span class="a">decision-making</span> — the process of deciding</div><div><span class="a">open-minded</span> — willing to consider new ideas</div><div><span class="a">widely used</span> — used by many people</div><div><span class="a">world-famous</span> — known internationally</div><div><span class="a">family-friendly</span> — suitable for children</div><div><span class="a">shortsighted</span> — not thinking of the future</div><div><span class="a">long-term</span> — with effects for many years</div><div><span class="a">densely populated</span> — with many people per km²</div><div><span class="a">high-risk</span> — dangerous</div><div><span class="a">eye-catching</span> — attracting attention</div><div><span class="a">last-minute</span> — done at the latest possible time</div><div><span class="a">jet-lagged</span> — tired after a long flight</div><div><span class="a">far-flung</span> — very distant</div><div><span class="a">mouth-watering</span> — (food) looking delicious</div><div><span class="a">sun-drenched</span> — receiving a lot of sun</div><div><span class="a">budget-friendly</span> — cheap in a good way</div></div>'
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML = SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.ly;
+
+var ERR = [
+  {bad:"a three-days trek", good:"a three-day trek", why:"Number compounds use a <b>singular</b> noun."},
+  {bad:"a densely-populated city", good:"a densely populated city", why:"Adverbs ending in <i>-ly</i> never take a hyphen."},
+  {bad:"a beautifully-restored colonial house", good:"a beautifully restored colonial house", why:"Same rule: no hyphen after an <i>-ly</i> adverb."},
+  {bad:"We booked a lastminute deal.", good:"We booked a last-minute deal.", why:"Two words joined by a <b>hyphen</b>, not glued into one."},
+  {bad:"The resort is family friendly.", good:"The resort is family-friendly.", why:"<b>Noun + adjective</b> compounds keep the hyphen, even after <i>be</i>."},
+  {bad:"a water-proof jacket", good:"a waterproof jacket", why:"The dictionary lists it as <b>one word</b>: waterproof."},
+  {bad:"an 18-years-old traveler", good:"an 18-year-old traveler", why:"Singular noun inside the compound: <b>18-year-old</b>."}
+];
+ERR.forEach(function(e){
+  var li = document.createElement("li");
+  li.innerHTML = '<span class="bad">'+e.bad+'</span><button class="btn ghost small fixbtn">Fix ✓</button><span class="good">'+e.good+'</span><div class="why">'+e.why+"</div>";
+  li.querySelector(".fixbtn").addEventListener("click", function(){ li.classList.add("open"); });
+  $("errList").appendChild(li);
+});
+
+/* =====================================================================
+   BUILD · assemble (second piece + join) + transform (write it)
+===================================================================== */
+var JOINS = ["hyphen","space","one word"];
+var BUILD = [
+  {ctx:"a tour that lasts three hours", pre:"a ", p1:"three", post:" tour", o2:["hour","hours"], c2:"hour", cJ:"hyphen", note:"Number + noun: the noun inside stays singular and takes a hyphen before the noun — a three-hour tour."},
+  {ctx:"a hotel that welcomes families", pre:"a ", p1:"family", post:" hotel", o2:["friendly","friend"], c2:"friendly", cJ:"hyphen", note:"Noun + adjective, hyphenated before the noun — a family-friendly hotel."},
+  {ctx:"a city with many people per km²", pre:"a ", p1:"densely", post:" city", o2:["populated","populating"], c2:"populated", cJ:"space", note:"Adverbs ending in -ly never take a hyphen — a densely populated city."},
+  {ctx:"a beach known all over the world", pre:"a ", p1:"world", post:" beach", o2:["famous","fame"], c2:"famous", cJ:"hyphen", note:"Noun + adjective — a world-famous beach."},
+  {ctx:"a poster that attracts the eye", pre:"an ", p1:"eye", post:" poster", o2:["catching","caught"], c2:"catching", cJ:"hyphen", note:"Noun + -ing form = “that does X” — an eye-catching poster."},
+  {ctx:"a jacket that keeps the rain out", pre:"a ", p1:"water", post:" jacket", o2:["proof","proofs"], c2:"proof", cJ:"one word", note:"The dictionary lists it as one word, so no hyphen — a waterproof jacket."},
+  {ctx:"a flight that lasts ten hours", pre:"a ", p1:"ten", post:" flight", o2:["hour","hours"], c2:"hour", cJ:"hyphen", note:"Ten-hour, not ten-hours: the number already says how many."},
+  {ctx:"the old town everybody knows — this time after “is”", pre:"The old town is ", p1:"well", post:" for its rooftop cafés.", o2:["known","knowing"], c2:"known", cJ:"space", note:"After be, an adverb + past participle compound drops the hyphen — is well known."}
+];
+var bi = 0, bP = null, bJ = null, bBuilt = 0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m = b.dataset.m;
+    $("assembleBox").style.display = m==="assemble" ? "block" : "none"; $("transformBox").style.display = m==="transform" ? "block" : "none";
+  });
+});
+function chipRow(host, list, onPick){
+  host.innerHTML = ""; list.forEach(function(op){
+    var b = document.createElement("button"); b.textContent = op; b.dataset.v = op;
+    b.addEventListener("click", function(){ onPick(op); host.querySelectorAll("button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    host.appendChild(b);
+  });
+}
+function renderBuild(){
+  var it = BUILD[bi]; bP = null; bJ = null;
+  $("bctx").innerHTML = "Compress this: <i>"+it.ctx+"</i><small>First piece: "+it.p1+"</small>";
+  chipRow($("pieceChips"), it.o2, function(v){ bP = v; });
+  chipRow($("joinChips"), JOINS, function(v){ bJ = v; });
+  $("bresult").className = "bresult"; $("bresult").innerHTML = "";
+}
+function joinGlue(j){ return j==="hyphen" ? '<span class="hyl">-</span>' : (j==="space" ? " " : ""); }
+$("bBuild").addEventListener("click", function(){
+  var it = BUILD[bi], r = $("bresult");
+  if(!bP || !bJ){ r.className = "bresult bad"; r.innerHTML = "Choose the second piece <b>and</b> the join first."; return; }
+  var pOk = bP===it.c2, jOk = bJ===it.cJ;
+  if(pOk && jOk){
+    var word = it.p1+joinGlue(it.cJ)+it.c2, cls = it.cJ==="hyphen" ? "rrep" : "rverb";
+    r.className = "bresult good"; bBuilt++; $("bScore").textContent = "Built: "+bBuilt;
+    r.innerHTML = "✅ "+it.pre+'<span class="'+cls+'">'+word+"</span>"+it.post+'<div class="bnote">'+it.note+"</div>";
+  } else {
+    if(!pOk) $("pieceChips").querySelector('button[data-v="'+bP+'"]').classList.add("wrongpick");
+    if(!jOk) $("joinChips").querySelector('button[data-v="'+bJ+'"]').classList.add("wrongpick");
+    var msg = (!pOk && !jOk) ? "Both choices need a rethink." : (!pOk ? "The join is right; the second piece is not." : "The second piece is right; the join is not.");
+    r.className = "bresult bad"; r.innerHTML = "❌ "+msg+' <span class="bnote">Hint — '+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi = (bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"a hotel that is friendly to families → a ______ hotel", accept:["family-friendly","family-friendly hotel","a family-friendly hotel"], model:"a family-friendly hotel (noun + adjective)"},
+  {ctx:"a tour that lasts three hours → a ______ tour", accept:["three-hour","three-hour tour","a three-hour tour"], model:"a three-hour tour — singular noun inside the compound"},
+  {ctx:"a dish that makes your mouth water → a ______ dish", accept:["mouth-watering","mouth-watering dish","a mouth-watering dish"], model:"a mouth-watering dish (noun + -ing form)"},
+  {ctx:"a guide who thinks quickly → a ______ guide", accept:["quick-thinking","quick-thinking guide","a quick-thinking guide"], model:"a quick-thinking guide"},
+  {ctx:"a traveler who is 25 years old → a ______ traveler", accept:["25-year-old","twenty-five-year-old","25-year-old traveler","a 25-year-old traveler"], model:"a 25-year-old traveler — not 25-years-old"},
+  {ctx:"a road used by many drivers → a ______ road", accept:["widely used","widely used road","a widely used road"], model:"a widely used road — no hyphen after an -ly adverb"},
+  {ctx:"a zone where you cannot smoke → a ______ zone", accept:["smoke-free","smoke-free zone","a smoke-free zone"], model:"a smoke-free zone (noun + adjective)"},
+  {ctx:"Repair the sentence: “It’s a three-days trek to the base camp.”", accept:["it's a three-day trek to the base camp","its a three-day trek to the base camp","it is a three-day trek to the base camp","three-day","three-day trek"], model:"It’s a three-day trek to the base camp."},
+  {ctx:"Repair the sentence: “We stayed in a beautifully-restored colonial house.”", accept:["we stayed in a beautifully restored colonial house","beautifully restored"], model:"We stayed in a beautifully restored colonial house."},
+  {ctx:"Repair the sentence: “We booked a lastminute deal to the coast.”", accept:["we booked a last-minute deal to the coast","last-minute"], model:"We booked a last-minute deal to the coast."}
+];
+var ti = 0, tDone = 0;
+function renderTrans(){ var it = TRANS[ti]; $("tctx").innerHTML = it.ctx; $("tInput").value = ""; $("tInput").className = ""; $("tWhy").className = "why"; $("tWhy").innerHTML = ""; }
+$("tCheck").addEventListener("click", function(){
+  var it = TRANS[ti], val = norm($("tInput").value), ok = it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok ? "ok" : "no"; $("tWhy").className = "why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent = "Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti = (ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow (13 items: 5★ · 4★★ · 4★★★)
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Which pattern?", q:"“an <b>eye-catching</b> poster” — which pattern is it?", o:["noun + -ing form", "adverb + past participle", "adjective + past participle"], a:0, w:"eye (noun) + catching (-ing form) = “that does X”."},
+  {kind:"mc", diff:1, tag:"Which pattern?", q:"“an <b>old-fashioned</b> hotel” — which pattern is it?", o:["noun + -ing form", "adjective + past participle", "number + noun"], a:1, w:"old (adjective) + fashioned (past participle): character and style."},
+  {kind:"mc", diff:1, tag:"Hyphen or not?", q:"Before the noun, which one is correct?", o:["a well-known beach","a well known beach"], a:0, w:"Before a noun, hyphenate the compound: a well-known beach."},
+  {kind:"fill", diff:1, tag:"Compress it", q:"a hotel that welcomes families → a ______ hotel", accept:["family-friendly","family-friendly hotel","a family-friendly hotel"], w:"noun + adjective: family-friendly."},
+  {kind:"mc", diff:1, tag:"Hyphen or not?", q:"Which one is correct?", o:["a densely-populated city","a densely populated city"], a:1, w:"Adverbs ending in -ly never take a hyphen."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["It’s","a","three-days","trek","to","the","base","camp."], bad:2, fixOld:"three-days", fixNew:"three-day", w:"Number compounds use a singular noun: a three-day trek."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["We","stayed","in","a","beautifully-restored","colonial","house."], bad:4, fixOld:"beautifully-restored", fixNew:"beautifully restored", w:"Adverbs ending in -ly never take a hyphen."},
+  {kind:"fill", diff:2, tag:"Compress it", q:"a resort with five stars → a ______ resort", accept:["five-star","5-star","five-star resort","5-star resort","a five-star resort","a 5-star resort"], w:"Number + singular noun: five-star, not five-stars."},
+  {kind:"mc", diff:2, tag:"After “be”", q:"Which one follows the rule for <b>adverb + past participle</b> after <i>be</i>?", o:["The old town is well known for its cafés.","The old town is well-known for its cafés."], a:0, w:"After be, an adverb + past participle compound drops the hyphen."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["The","resort","is","family friendly","and","pet-friendly."], bad:3, fixOld:"family friendly", fixNew:"family-friendly", w:"Noun + adjective compounds keep the hyphen, even after be."},
+  {kind:"fill", diff:3, tag:"Compress it", q:"a traveler who is 25 years old → a ______ traveler", accept:["25-year-old","twenty-five-year-old","25-year-old traveler","a 25-year-old traveler"], w:"Number + singular noun + old: a 25-year-old traveler."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["The","tent","is","light,","water-proof","and","easy","to","carry."], bad:4, fixOld:"water-proof", fixNew:"waterproof", w:"Compounds the dictionary lists as one word stay solid: waterproof."},
+  {kind:"fill", diff:3, tag:"Compress it", q:"a road used by many drivers → a ______ road", accept:["widely used","widely used road","a widely used road"], w:"Adverb in -ly + past participle, no hyphen: widely used."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i6_s3_drill_best")||0); if(dscore>best){ store("i6_s3_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Hyphens under control. Ready for the ★★★ homework." : dscore>=8?"Good work — review the special-cases card and go again." : "Re-read Structure 3, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the part that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">✓ Correct.</span> ':'<span class="k">✗ Not that one: the green part is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml; $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

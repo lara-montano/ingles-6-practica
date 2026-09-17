@@ -560,10 +560,10 @@ renderTrans();
 ===================================================================== */
 var DRILL = [
   {kind:"mc", diff:1, tag:"Active or passive?", q:"“The shoes will be made in Vietnam.”", o:["Passive","Active"], a:0, w:"The subject (the shoes) receives the action: will be + past participle → passive."},
-  {kind:"mc", diff:1, tag:"Complete", q:"Designers will use recycled plastic → “Recycled plastic ___.”", o:["will be used","will used","will be use"], a:0, w:"Future passive: will + be + past participle."},
-  {kind:"mc", diff:1, tag:"Negative", q:"“Size labels ___ because everything will fit.”", o:["won’t be needed","won’t needed","won’t be need"], a:0, w:"Negative: won’t be + past participle."},
+  {kind:"mc", diff:1, tag:"Complete", q:"Designers will use recycled plastic → “Recycled plastic ___.”", o:["will used", "will be used", "will be use"], a:1, w:"Future passive: will + be + past participle."},
+  {kind:"mc", diff:1, tag:"Negative", q:"“Size labels ___ because everything will fit.”", o:["won’t be need", "won’t needed", "won’t be needed"], a:2, w:"Negative: won’t be + past participle."},
   {kind:"mc", diff:1, tag:"going to", q:"They are going to close the factory → “The factory ___ next year.”", o:["is going to be closed","is going to closed","will going to be closed"], a:0, w:"going to works the same way: is going to be + past participle."},
-  {kind:"mc", diff:1, tag:"Question", q:"“How ___?” (make / sneakers)", o:["will sneakers be made","will be sneakers made","sneakers will be made"], a:0, w:"Question: (Wh-) + will + subject + be + past participle."},
+  {kind:"mc", diff:1, tag:"Question", q:"“How ___?” (make / sneakers)", o:["will be sneakers made", "will sneakers be made", "sneakers will be made"], a:1, w:"Question: (Wh-) + will + subject + be + past participle."},
   {kind:"error", diff:2, tag:"Fix the error", words:["The","jackets","will","be","make","from","ocean","plastic."], bad:4, fixOld:"make", fixNew:"made", w:"The passive needs the past participle, not the base form: will be made."},
   {kind:"error", diff:2, tag:"Fix the error", words:["New","designs","will","be","show","online."], bad:4, fixOld:"show", fixNew:"shown", w:"Irregular participle: show – showed – shown."},
   {kind:"fill", diff:2, tag:"Don’t drop be", q:"“The clothes will sold directly to buyers.” Correct the verb: The clothes ___ directly to buyers.", accept:["will be sold","'ll be sold"], w:"The participle alone is not a passive: will + be + sold."},
@@ -571,7 +571,7 @@ var DRILL = [
   {kind:"error", diff:3, tag:"Fix the error", words:["When","the","store","will","be","opened,","prices","will","drop."], bad:3, fixOld:"will be opened", fixNew:"is opened", w:"No will after when: use the present passive."},
   {kind:"fill", diff:3, tag:"Two objects", q:"“Every buyer ___ (give) a digital receipt.”", accept:["will be given","'ll be given"], w:"Two-object verbs put the person first: will be given (give – gave – given)."},
   {kind:"fill", diff:3, tag:"Future perfect passive", q:"“By 2050, most petrol cars ___ (ban).”", accept:["will have been banned","'ll have been banned","will've been banned"], w:"by + a point → will have been + past participle."},
-  {kind:"mc", diff:3, tag:"Keep the doer?", q:"A famous artist will design the next collection. → Which passive keeps the useful information?", o:["The next collection will be designed by a famous artist.","The next collection will be designed.","The next collection will be designed for a famous artist."], a:0, w:"Keep the doer with by only when it adds information — a famous artist does."}
+  {kind:"mc", diff:3, tag:"Keep the doer?", q:"A famous artist will design the next collection. → Which passive keeps the useful information?", o:["The next collection will be designed for a famous artist.", "The next collection will be designed.", "The next collection will be designed by a famous artist."], a:2, w:"Keep the doer with by only when it adds information — a famous artist does."}
 ];
 var di=0, dscore=0, dstreak=0, ddone=false;
 function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }

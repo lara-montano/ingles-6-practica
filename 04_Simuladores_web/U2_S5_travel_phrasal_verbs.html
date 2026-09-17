@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE PARTICLE MACHINE · English 6 · Unit 2 "Wish You Were Here"
+  Structure 5 — travel phrasal verbs (particles, separability, pronoun rule)
+  Three modes: Explore (particle + object slot) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Structure 5 · The Particle Machine · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --teal:#0E7C7B; --tealdark:#09504F; --teallt:#E1F1F0;
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--teal),var(--tealdark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#BFE6E4; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#D6EEED; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--tealdark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--tealdark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--tealdark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-teal{background:var(--teal)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--teal); background:var(--teallt); color:var(--tealdark)}
+
+  /* ---------- particle machine ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .pvrow{display:flex; gap:8px; justify-content:center; align-items:center; flex-wrap:wrap; margin:12px 0 6px}
+  .mbox{border-radius:12px; padding:12px 20px; font-size:clamp(18px,3.2vw,26px); font-weight:900; line-height:1.2; text-align:center}
+  .mbox .rl{display:block; font-size:10px; font-weight:900; letter-spacing:.1em; text-transform:uppercase; opacity:.75}
+  .vbox{background:var(--teallt); border:2px solid var(--teal); color:var(--tealdark)} .pbox{background:var(--grammarlt); border:2px solid var(--grammar); color:var(--grammar)}
+  .pbox.masked{color:transparent; cursor:pointer; position:relative; min-width:92px} .pbox.masked .rl{color:var(--grammar)}
+  .pbox.masked::after{content:"?"; position:absolute; left:0; right:0; bottom:10px; color:#B98A56; font-weight:900; font-size:24px}
+  .plus{font-size:24px; font-weight:900; color:#aaa} .badge{display:inline-block; border-radius:999px; padding:3px 12px; font-size:12px; font-weight:900; letter-spacing:.02em}
+  .b-sep{background:var(--greenlt); color:var(--greendark); border:1.5px solid var(--green)} .b-insep{background:var(--exceplt); color:var(--excep); border:1.5px solid var(--excep)} .b-none{background:var(--navylt); color:var(--navy); border:1.5px solid var(--navy)}
+  .meanline{text-align:center; font-size:clamp(16px,2.6vw,20px); font-weight:800; margin-top:8px} .exline{text-align:center; font-size:15px; color:#555; font-weight:600; margin-top:6px}
+  .pvnote{background:var(--soft); border-radius:10px; padding:9px 12px; font-size:14px; font-weight:600; color:#444; margin-top:10px}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px; justify-content:center}
+  .legend span{border-radius:6px; padding:1px 8px}
+  .lv{background:var(--teallt); color:var(--tealdark)} .lp{background:var(--grammarlt); color:var(--grammar)} .lo{background:var(--greenlt); color:var(--greendark)}
+
+  /* ---------- object slot (tap to select, tap to place) ---------- */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .seg2.teal button.on{background:var(--teal); color:#fff} .seg2 button[disabled]{opacity:.4; cursor:not-allowed}
+  .slotrow{display:flex; gap:7px; justify-content:center; align-items:center; flex-wrap:wrap; margin:12px 0 4px}
+  .slot{min-width:118px; min-height:52px; border:2px dashed var(--rule); border-radius:12px; padding:8px 10px; display:flex; align-items:center; justify-content:center; background:#fff; cursor:pointer}
+  .slot.here{border-style:solid; border-color:var(--green); background:var(--greenlt)} .slot.lock{background:#F2F2F2; border-color:#DDD; cursor:not-allowed}
+  .slot .ph{font-size:12px; font-weight:800; color:#B5B5B5; letter-spacing:.06em; text-transform:uppercase} .slot.lock .ph{color:#C9A9A5}
+  .objchip{display:inline-block; background:#fff; border:2px solid var(--green); color:var(--greendark); border-radius:999px; padding:6px 14px; font:800 15px Lato,sans-serif; cursor:pointer}
+  .objchip.sel{background:var(--green); color:#fff; box-shadow:0 0 0 4px rgba(31,122,77,.22)}
+  .tailbox{font-size:15px; font-weight:700; color:#888; padding:0 4px}
+  .verdict{border-radius:12px; padding:13px 15px; margin-top:10px; font-size:clamp(16px,2.6vw,20px); font-weight:800; text-align:center}
+  .verdict.ok{background:var(--greenlt); border:2px solid var(--green); color:var(--greendark)} .verdict.no{background:var(--thinklt); border:2px solid var(--think); color:var(--think)}
+  .verdict .rule{display:block; font-size:14px; font-weight:700; color:#555; margin-top:6px}
+  .alsoline{text-align:center; font-size:14px; font-weight:700; color:#666; margin-top:8px} .alsoline s{color:var(--think)}
+  .hintline{text-align:center; font-size:13px; font-weight:700; color:#999; margin-top:8px}
+
+  /* particle families */
+  .tensechips{display:flex; gap:6px; flex-wrap:wrap; margin:8px 0}
+  .tensechips button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 11px; font:700 13px Lato,sans-serif; cursor:pointer}
+  .tensechips button.on{border-color:var(--navy); background:var(--navylt); color:var(--navy)}
+  .tenseout{background:var(--soft); border-radius:12px; padding:16px; text-align:center; margin-top:6px}
+  .tenseout .map{font-size:clamp(16px,2.6vw,21px); font-weight:800; color:var(--navy)} .tenseout .ex{font-size:14px; color:#555; margin-top:8px; font-weight:600}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333} .scout b{color:var(--excep)}
+  .shiftgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:6px; margin-top:8px}
+  .shiftgrid div{background:#fff; border:1.5px solid var(--rule); border-radius:8px; padding:6px 10px; font-size:14px; font-weight:700}
+
+  /* errors card */
+  .errlist{list-style:none; margin-top:6px}
+  .errlist li{display:flex; gap:10px; align-items:center; flex-wrap:wrap; padding:8px 0; border-bottom:1px dashed var(--rule); font-size:15px; font-weight:700}
+  .errlist .bad{color:var(--think)} .errlist .bad::before{content:"✘ "}
+  .errlist .good{color:var(--green); display:none} .errlist .good::before{content:"✔ "}
+  .errlist .why{display:none; margin:0; flex-basis:100%; font-size:13px; padding:6px 10px}
+  .errlist li.open .good,.errlist li.open .why{display:block}
+  .errlist li.open .fixbtn{display:none}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--teal); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--tealdark); border:2px solid var(--teal)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--teal); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--teal)}
+  .segbig button.on{background:var(--teal); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--teal); background:var(--teallt); color:var(--tealdark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--tealdark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--tealdark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--teal); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick{background:var(--think); color:#fff}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--tealdark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--teal); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} .slot{min-width:104px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🧳</span>
+  <div class="wrap">
+    <div class="kicker">English 6 · Unit 2 · Wish You Were Here</div>
+    <h1>🧳 The Particle Machine</h1>
+    <div class="sub"><b>Structure 5</b> — travel phrasal verbs: particles, separability &amp; the pronoun rule. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🔁 Explore the particles</span><span>🔧 Build the verb</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🔁 Explore<small>see the pattern</small></button>
+    <button data-tab="build">🔧 Build<small>use it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Verb + particle = one new meaning</h2>
+      <p class="muted">A phrasal verb is a <b>verb</b> plus a <b>particle</b> (<i>off, in, out, up, around…</i>) whose meaning is often <b>not</b> the sum of its parts. Learn each one as a whole unit. Pick a travel phrasal verb from the manual and read it in the machine. <span class="es">(El significado no se deduce de las partes: apréndelos completos.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the particle, guess, then reveal</label>
+
+      <h3>1 · Choose a travel phrasal verb</h3>
+      <div class="chips" id="pvChips"></div>
+
+      <div class="pvrow"><div class="mbox vbox" id="pvVerb"></div><span class="plus">+</span><div class="mbox pbox" id="pvPart"></div></div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the particle ✓</button></div>
+      <div style="text-align:center; margin-top:8px"><span class="badge" id="pvBadge"></span></div>
+      <div class="meanline" id="pvMean"></div>
+      <div class="exline" id="pvEx"></div>
+      <div class="pvnote" id="pvNote"></div>
+      <div class="legend"><span class="lv">verb</span><span class="lp">particle</span><span class="lo">object</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">🧳 The object slot</span>
+      <h2>Where does the object go?</h2>
+      <p class="muted">Tap the green object to pick it up, then tap a slot to drop it there — no dragging, so it works on a phone. Separable verbs accept a noun object in <b>both</b> slots; a <b>pronoun</b> object is forced into the middle; inseparable verbs lock the middle slot. <span class="es">(Toca el objeto y luego la casilla de destino.)</span></p>
+      <div class="chips" id="objChips"></div>
+      <div class="seg2 teal" id="objKind" style="margin:8px auto 0"><button data-k="noun" class="on">🧳 noun object</button><button data-k="pron">👤 pronoun object</button></div>
+      <div class="slotrow" id="slotRow"></div>
+      <div class="verdict" id="objOut"></div>
+      <div class="alsoline" id="objAlso"></div>
+      <div class="hintline" id="objHint"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-teal">🔤 Particle families</span>
+      <h2>Same particle, same idea</h2>
+      <p class="muted">The manual lists these verbs in one table; this card sorts the <b>same</b> verbs by particle so the pattern is visible. Tap a particle. <span class="es">(Mismos verbos del manual, agrupados por partícula.)</span></p>
+      <div class="tensechips" id="famChips"></div>
+      <div class="tenseout"><div class="map" id="famList"></div><div class="ex" id="famNote"></div></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Special cases &amp; the key rule</span>
+      <h2>Separable, inseparable, pronouns &amp; register</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="sep" class="on">separable</button><button data-v="pron">pronoun rule</button><button data-v="insep">inseparable</button><button data-v="reg">register</button><button data-v="checkin">check in</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">🚧 Typical mistakes</span>
+      <h2>The traps Spanish speakers fall into</h2>
+      <p class="muted">Straight from the manual's pitfall box. Tap <b>Fix ✓</b> to see the correction.</p>
+      <ul class="errlist" id="errList"></ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Structure 5 in three views: the particle machine (the manual's twelve travel phrasal verbs with meaning, example and a separable / inseparable / no-object badge), the object slot (tap-to-place, so separability, the pronoun rule and the locked middle slot of inseparable verbs are physical), and the particle families card, which re-sorts the same list by particle. The special-cases card is the manual's exception box (separable list, pronoun rule, inseparable list, register) and the errors card is its pitfall box.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> the verb and the particle for the manual's exercise A sentences, then <i>transform</i> — pronoun placement (exercise B) and formal verb → phrasal verb (exercise C), with validation and a model answer.</li>
+          <li><b>Drill</b> merges the quizzes into one graded engine (★ meaning and form · ★★ pronoun placement and separability · ★★★ register, inseparable verbs and the <i>set off for</i> trap) with a score and a streak.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-teal">🔧 Your turn to produce</span>
+      <h2>Build the phrasal verb</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the sentence, then choose the <b>verb</b> and the <b>particle</b>. The machine builds the sentence in the right form — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">1 · the verb</div><div class="bchips" id="verbChips"></div></div>
+        <div class="bgroup"><div class="glab">2 · the particle</div><div class="bchips" id="partChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New sentence →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Put the pronoun in the right place, or replace the formal verb with a phrasal verb. Type it and check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the phrasal verb"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next item →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ meaning &amp; form · ★★ pronoun placement &amp; separability · ★★★ register, inseparable verbs &amp; traps. Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 6 · Unit 2 «Wish You Were Here» · Structure 5 — travel phrasal verbs · Level B1+
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE PARTICLE MACHINE — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 6 Class Manual (Structure 5).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · the particle machine (the manual's travel phrasal verbs)
+===================================================================== */
+var PV = [
+  {v:"set", p:"off", mean:"begin a journey", ex:"We <b>set off</b> before dawn.", kind:"insep", note:"Also <b>set out</b>, same meaning. Formal writing prefers <i>depart</i>. It takes no direct object: set off <b>for</b> the airport."},
+  {v:"check", p:"in", mean:"register at a hotel (or for a flight)", ex:"We <b>checked in</b> at noon.", kind:"none", note:"Its opposite is <b>check out</b> = leave the hotel. In the manual it appears with no direct object: check in at noon, check in online."},
+  {v:"get", p:"away", mean:"escape for a holiday", ex:"They <b>got away</b> for the weekend.", kind:"none", note:"Used about leaving routine behind, not about a specific vehicle."},
+  {v:"look", p:"around", mean:"explore a place", ex:"Let's <b>look around</b> the old town.", kind:"insep", note:"Inseparable: the object follows the particle. Formal writing prefers <i>explore</i>."},
+  {v:"see", p:"off", mean:"say goodbye at the station or airport", ex:"We <b>saw them off</b> at the gate.", kind:"sep", note:"Separable: see (sb) off. With a pronoun it is always <b>saw them off</b>."},
+  {v:"pick", p:"up", mean:"collect someone", ex:"A taxi will <b>pick us up</b>.", kind:"sep", note:"Separable: pick up the tourists / pick the tourists up. With a pronoun: <b>pick us up</b>."},
+  {v:"drop", p:"off", mean:"take someone and leave them somewhere", ex:"<b>Drop me off</b> at the hostel.", kind:"sep", note:"Separable: drop off the passengers / drop the passengers off. With a pronoun: <b>drop me off</b>."},
+  {v:"put", p:"up", mean:"give someone a place to stay", ex:"A friend <b>put me up</b> for a week.", kind:"sep", note:"Separable: put (sb) up. Formal writing prefers <i>accommodate</i>."},
+  {v:"stop", p:"over", mean:"break a journey briefly", ex:"We <b>stopped over</b> in Panama.", kind:"none", note:"The place follows a preposition: stopped over <b>in</b> Panama."},
+  {v:"get", p:"on / off", mean:"board / leave a bus, train or plane", ex:"<b>Get off</b> at the last stop.", kind:"insep", note:"Inseparable: get on the bus, get off the train — never get the bus on."},
+  {v:"take", p:"off", mean:"(a plane) leave the ground", ex:"The plane <b>took off</b> late.", kind:"none", note:"With this meaning there is no object. <b>take off</b> = remove clothes is separable: take your boots off."},
+  {v:"end", p:"up", mean:"finally arrive or become", ex:"We <b>ended up</b> in the wrong town.", kind:"none", note:"Often about an unplanned result: ended up in the wrong town."}
+];
+var BADGE = {sep:['b-sep',"✂ separable"], insep:['b-insep',"🔗 inseparable"], none:['b-none',"— no object in these examples"]};
+var curPV = 0, predictMode = false, revealed = false;
+PV.forEach(function(d,i){
+  var b=document.createElement("button"); b.textContent=d.v+" "+d.p; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curPV=i; revealed=false; document.querySelectorAll("#pvChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderPV(); });
+  $("pvChips").appendChild(b);
+});
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderPV(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderPV(); });
+function renderPV(){
+  var d=PV[curPV];
+  $("pvVerb").innerHTML='<span class="rl">verb</span>'+d.v;
+  var mask = predictMode && !revealed;
+  var pp=$("pvPart");
+  pp.innerHTML='<span class="rl">particle</span>'+d.p;
+  pp.className = "mbox pbox"+(mask?" masked":"");
+  $("revealBtn").style.display = mask?"inline-block":"none";
+  if(mask){ pp.onclick=function(){ revealed=true; renderPV(); }; } else { pp.onclick=null; }
+  $("pvBadge").className="badge "+BADGE[d.kind][0];
+  $("pvBadge").textContent=BADGE[d.kind][1];
+  $("pvMean").innerHTML = mask ? "meaning hidden — guess the particle first" : "= "+d.mean;
+  $("pvEx").innerHTML = mask ? "" : d.ex;
+  $("pvNote").innerHTML = mask ? "🔮 Which particle completes this verb?" : d.note;
+}
+renderPV();
+
+/* ---- the object slot: tap to select, tap to place (no HTML5 drag) ---- */
+var OBJ = [
+  {k:"pick up", v:"pick", p:"up", sep:true, noun:"the tourists", pron:"them", tail:"at six"},
+  {k:"drop off", v:"drop", p:"off", sep:true, noun:"the passengers", pron:"me", tail:"at the hostel"},
+  {k:"see off", v:"see", p:"off", sep:true, noun:"our friends", pron:"them", tail:"at the gate"},
+  {k:"put up", v:"put", p:"up", sep:true, noun:"two backpackers", pron:"us", tail:"for a week"},
+  {k:"take off (clothes)", v:"take", p:"off", sep:true, noun:"your boots", pron:"them", tail:""},
+  {k:"look after", v:"look", p:"after", sep:false, noun:"the children", pron:"them", tail:"this evening"},
+  {k:"look around", v:"look", p:"around", sep:false, noun:"the old town", pron:"it", tail:""},
+  {k:"get on", v:"get", p:"on", sep:false, noun:"the bus", pron:"it", tail:"at the corner"},
+  {k:"set off", v:"set", p:"off", sep:false, noun:"for the airport", pron:"", tail:"at dawn", nodo:true}
+];
+var oi=0, oPron=false, oPos="end", oSel=false, oMsg="";
+OBJ.forEach(function(d,i){
+  var b=document.createElement("button"); b.textContent=d.k; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ oi=i; oPron=false; oSel=false; oMsg=""; oPos="end"; document.querySelectorAll("#objChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); syncKind(); renderObj(); });
+  $("objChips").appendChild(b);
+});
+document.querySelectorAll("#objKind button").forEach(function(b){
+  b.addEventListener("click", function(){
+    if(b.disabled) return;
+    oPron = b.dataset.k==="pron"; oSel=false; oMsg="";
+    oPos = (oPron && OBJ[oi].sep) ? "mid" : "end";
+    document.querySelectorAll("#objKind button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    renderObj();
+  });
+});
+function syncKind(){
+  var nodo = !!OBJ[oi].nodo;
+  document.querySelectorAll("#objKind button").forEach(function(x){
+    x.disabled = nodo && x.dataset.k==="pron";
+    x.classList.toggle("on", x.dataset.k===(oPron?"pron":"noun"));
+  });
+}
+function objText(){ return oPron ? OBJ[oi].pron : OBJ[oi].noun; }
+function phrase(pos){
+  var it=OBJ[oi], o=objText();
+  var s = pos==="mid" ? (it.v+" "+o+" "+it.p) : (it.v+" "+it.p+" "+o);
+  return s+(it.tail?" "+it.tail:"");
+}
+function allowed(pos){ var it=OBJ[oi]; if(!it.sep) return pos==="end"; if(oPron) return pos==="mid"; return true; }
+function renderObj(){
+  var it=OBJ[oi], midLock=!it.sep, chip='<span class="objchip'+(oSel?" sel":"")+'" id="objChip">'+objText()+"</span>";
+  var row='<div class="mbox vbox" style="font-size:20px; padding:10px 16px">'+it.v+"</div>";
+  row+='<div class="slot'+(oPos==="mid"?" here":"")+(midLock?" lock":"")+'" data-s="mid">'+(oPos==="mid"?chip:'<span class="ph">'+(midLock?"🔒 locked":"slot 1")+"</span>")+"</div>";
+  row+='<div class="mbox pbox" style="font-size:20px; padding:10px 16px">'+it.p+"</div>";
+  row+='<div class="slot'+(oPos==="end"?" here":"")+'" data-s="end">'+(oPos==="end"?chip:'<span class="ph">slot 2</span>')+"</div>";
+  if(it.tail) row+='<span class="tailbox">'+it.tail+"</span>";
+  $("slotRow").innerHTML=row;
+  var out=$("objOut"), also=$("objAlso");
+  if(oMsg){ out.className="verdict no"; out.innerHTML=oMsg; }
+  else{
+    out.className="verdict ok";
+    out.innerHTML="✔ "+phrase(oPos)+'<span class="rule">'+ruleFor(oPos)+"</span>";
+  }
+  if(it.nodo) also.innerHTML="It takes no direct object: <s>set off the airport</s> — use <b>for</b> + destination.";
+  else if(!it.sep) also.innerHTML='The middle slot is locked: <s>'+it.v+" "+objText()+" "+it.p+"</s>";
+  else if(oPron) also.innerHTML="A pronoun never follows the particle: <s>"+it.v+" "+it.p+" "+objText()+"</s>";
+  else also.innerHTML="Also correct: <b>"+phrase(oPos==="mid"?"end":"mid")+"</b>";
+  $("objHint").textContent = oSel ? "Object selected — now tap a slot." : "Tap the green object, then tap a slot.";
+  var chipEl=$("objChip");
+  if(chipEl) chipEl.addEventListener("click", function(ev){ ev.stopPropagation(); oSel=!oSel; oMsg=""; renderObj(); });
+  document.querySelectorAll("#slotRow .slot").forEach(function(sl){
+    sl.addEventListener("click", function(){
+      var pos=sl.dataset.s;
+      if(pos===oPos) return;
+      if(!oSel){ oMsg="Tap the green object first, then tap the slot."; renderObj(); return; }
+      if(allowed(pos)){ oPos=pos; oSel=false; oMsg=""; }
+      else oMsg="✘ "+(pos==="mid" ? (it.v+" "+objText()+" "+it.p) : (it.v+" "+it.p+" "+objText()))+'<span class="rule">'+rejectFor(pos)+"</span>";
+      renderObj();
+    });
+  });
+}
+function ruleFor(pos){
+  var it=OBJ[oi];
+  if(!it.sep) return it.nodo ? "set off is inseparable and takes no direct object: set off for the airport." : "Inseparable: the verb and the particle never separate, so the object follows them.";
+  if(oPron) return "A pronoun object MUST go between the verb and the particle.";
+  return pos==="mid" ? "Separable: a noun object can sit between the verb and the particle." : "Separable: a noun object can also follow the particle.";
+}
+function rejectFor(pos){
+  var it=OBJ[oi];
+  if(!it.sep) return it.nodo ? "set off takes no direct object; use for + destination." : "Inseparable: the object cannot split "+it.v+" "+it.p+".";
+  return "With a pronoun the middle slot is the only option: "+it.v+" "+objText()+" "+it.p+".";
+}
+syncKind(); renderObj();
+
+/* ---- particle families (same verbs, sorted by particle) ---- */
+var FAM = [
+  {p:"off", list:"set off · take off · see (sb) off · drop (sb) off · get off", note:"In these travel verbs <b>off</b> marks leaving: a journey starts, a plane leaves the ground, a person is left behind."},
+  {p:"up", list:"pick (sb) up · put (sb) up · end up", note:"<b>up</b> here is about collecting someone, taking someone in, or finishing somewhere."},
+  {p:"in / out", list:"check in · check out", note:"<b>in / out</b> is the hotel or airport desk: you register (in) and you leave (out)."},
+  {p:"on / off", list:"get on · get off", note:"<b>on / off</b> with transport: you board a bus, train or plane, and you leave it."},
+  {p:"around", list:"look around", note:"<b>around</b> = moving about a place: exploring it."},
+  {p:"over", list:"stop over", note:"<b>over</b> = a short break inside a longer journey."},
+  {p:"away", list:"get away", note:"<b>away</b> = distance from home or from routine."}
+];
+var curFam=0;
+FAM.forEach(function(f,i){
+  var b=document.createElement("button"); b.textContent=f.p; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curFam=i; document.querySelectorAll("#famChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderFam(); });
+  $("famChips").appendChild(b);
+});
+function renderFam(){ $("famList").innerHTML=FAM[curFam].list; $("famNote").innerHTML=FAM[curFam].note; }
+renderFam();
+
+/* ---- special cases ---- */
+var SC = {
+  sep:'<b>Separable</b> phrasal verbs take a noun object in the middle <i>or</i> after the particle: ✔ pick <b>up</b> the tourists · ✔ pick the tourists <b>up</b>. From the manual:<div class="shiftgrid"><div>pick (sb) up</div><div>drop (sb) off</div><div>see (sb) off</div><div>put (sb) up</div><div>take off (clothes)</div></div>',
+  pron:'<b>A pronoun object MUST go in the middle.</b> ✔ pick <b>them</b> up · ✘ <s>pick up them</s>. The same for drop <b>me</b> off, saw <b>us</b> off, put <b>them</b> up. <span class="es">(Con pronombre, siempre en medio; es el error más frecuente.)</span>',
+  insep:'<b>Inseparable</b> phrasal verbs keep the parts together: ✔ look after <b>the children</b> · ✘ <s>look the children after</s>. From the manual:<div class="shiftgrid"><div>look after</div><div>get on / get off</div><div>set off</div><div>look around</div></div>',
+  reg:'<b>Register.</b> Phrasal verbs are informal. Formal or academic writing prefers a single verb:<div class="shiftgrid"><div>set off → <b>depart</b></div><div>look around → <b>explore</b></div><div>put up → <b>accommodate</b></div></div>',
+  checkin:'<b>check in / check out.</b> In the manual this verb has no direct object: check in at noon · check in online · you can\'t check in before 3 p.m. Writing <b>checked in to the hotel</b> is acceptable, but <b>checked-in</b> with a hyphen is not a verb: ✔ We <b>checked in</b> at midnight.'
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.sep;
+
+/* ---- common errors (the manual's pitfall box) ---- */
+var ERR = [
+  {bad:"We set off to the airport.", good:"We set off for the airport.", why:"<i>set off</i> takes <b>for</b> + destination, and it never takes a direct object."},
+  {bad:"The plane took up.", good:"The plane took off.", why:"The particle carries the meaning: <b>take off</b> = a plane leaves the ground."},
+  {bad:"The taxi will pick up me.", good:"The taxi will pick me up.", why:"A pronoun object goes between the verb and the particle."},
+  {bad:"We checked-in at midnight.", good:"We checked in at midnight.", why:"<i>checked-in</i> with a hyphen is not a verb; the two words stay apart."},
+  {bad:"Can you look the children after?", good:"Can you look after the children?", why:"<i>look after</i> is inseparable: the object cannot split it."}
+];
+ERR.forEach(function(e){
+  var li=document.createElement("li");
+  li.innerHTML='<span class="bad">'+e.bad+'</span><button class="btn ghost small fixbtn">Fix ✓</button><span class="good">'+e.good+'</span><div class="why">'+e.why+"</div>";
+  li.querySelector(".fixbtn").addEventListener("click", function(){ li.classList.add("open"); });
+  $("errList").appendChild(li);
+});
+
+/* =====================================================================
+   BUILD · assemble (verb + particle) + transform (write it)
+===================================================================== */
+var VERBS = ["set","check","get","look","see","pick","drop","put","stop","take","end"];
+var PARTS = ["off","in","away","around","up","over"];
+var BUILD = [
+  {ctx:"Our flight finally ___ two hours late.", v:"take", p:"off", out:"Our flight finally <b>took off</b> two hours late.", note:"take off = a plane leaves the ground. Past: took off."},
+  {ctx:"We ___ at 5 a.m. to avoid the traffic.", v:"set", p:"off", out:"We <b>set off</b> at 5 a.m. to avoid the traffic.", note:"set off (or set out) = begin a journey. Past: set off."},
+  {ctx:"You can't ___ to the hotel before 3 p.m.", v:"check", p:"in", out:"You can't <b>check in</b> to the hotel before 3 p.m.", note:"check in = register at a hotel; check out = leave it."},
+  {ctx:"We got lost and ___ in a village nobody had heard of.", v:"end", p:"up", out:"We got lost and <b>ended up</b> in a village nobody had heard of.", note:"end up = finally arrive or become. Past: ended up."},
+  {ctx:"The taxi dropped us off, and our friends waited at the gate to ___ us ___.", v:"see", p:"off", out:"The taxi dropped us off, and our friends waited at the gate to <b>see us off</b>.", note:"see (sb) off = say goodbye at the station or airport. It is separable, and the pronoun goes in the middle."},
+  {ctx:"Everyone needs to ___ from routine once in a while.", v:"get", p:"away", out:"Everyone needs to <b>get away</b> from routine once in a while.", note:"get away = escape for a holiday."},
+  {ctx:"On the way to Asia, we ___ in Dubai for a night and reached Tokyo the next day.", v:"stop", p:"over", out:"On the way to Asia, we <b>stopped over</b> in Dubai for a night and reached Tokyo the next day.", note:"stop over = break a journey briefly. Past: stopped over. (Not end up: the journey continued to Tokyo.)"},
+  {ctx:"My aunt kindly ___ me ___ for a whole week in Madrid.", v:"put", p:"up", out:"My aunt kindly <b>put me up</b> for a whole week in Madrid.", note:"put (sb) up = give someone a place to stay. Formal: accommodate."},
+  {ctx:"Let's ___ the old town before lunch.", v:"look", p:"around", out:"Let's <b>look around</b> the old town before lunch.", note:"look around = explore. It is inseparable: the object follows the particle."},
+  {ctx:"A taxi will ___ us ___ at the hotel and drive us to the airport.", v:"pick", p:"up", out:"A taxi will <b>pick us up</b> at the hotel and drive us to the airport.", note:"pick (sb) up = collect someone. A pronoun goes in the middle."}
+];
+var bi=0, bV=null, bP=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function chipRow(id, list, onPick){
+  var wrap=$(id); wrap.innerHTML="";
+  list.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ onPick(op); document.querySelectorAll("#"+id+" button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+}
+function renderBuild(){
+  var it=BUILD[bi]; bV=null; bP=null;
+  $("bctx").innerHTML = it.ctx+"<small>Choose the verb and the particle.</small>";
+  chipRow("verbChips", VERBS, function(v){ bV=v; });
+  chipRow("partChips", PARTS, function(p){ bP=p; });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bV||!bP){ r.className="bresult bad"; r.innerHTML="Choose a verb <b>and</b> a particle first."; return; }
+  var vOk=bV===it.v, pOk=bP===it.p;
+  if(vOk&&pOk){
+    r.className="bresult good"; r.innerHTML="✅ "+it.out+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    if(!vOk) document.querySelector('#verbChips button[data-v="'+bV+'"]').classList.add("wrongpick");
+    if(!pOk) document.querySelector('#partChips button[data-v="'+bP+'"]').classList.add("wrongpick");
+    r.className="bresult bad";
+    r.innerHTML="❌ "+(vOk?"The verb is right, the particle is not.":pOk?"The particle is right, the verb is not.":"Neither piece fits yet.")+'<span class="bnote">Hint — the meaning you need is: '+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"The taxi will pick up / (us) at six.", accept:["pick us up","will pick us up","the taxi will pick us up","the taxi will pick us up at six"], model:"pick us up — The taxi will pick us up at six."},
+  {ctx:"Can you drop off / (me) near the port?", accept:["drop me off","can you drop me off","can you drop me off near the port"], model:"drop me off — Can you drop me off near the port?"},
+  {ctx:"They saw off / (them) at the gate.", accept:["saw them off","they saw them off","they saw them off at the gate"], model:"saw them off — They saw them off at the gate."},
+  {ctx:"A local family put up / (us) for the night.", accept:["put us up","a local family put us up","a local family put us up for the night"], model:"put us up — A local family put us up for the night."},
+  {ctx:"Replace the formal verb: We will depart at dawn.", accept:["set off","set out","will set off","will set out","we will set off","we will set out","we will set off at dawn","we will set out at dawn"], model:"set off / set out — We will set off at dawn."},
+  {ctx:"Replace the formal verb: Let's explore the market.", accept:["look around","look round","look around the market","look round the market","let's look around the market","lets look around the market"], model:"look around — Let's look around the market."},
+  {ctx:"Replace the formal verb: They accommodated us for two nights.", accept:["put us up","they put us up","they put us up for two nights"], model:"put us up — They put us up for two nights."},
+  {ctx:"Replace the formal verb: The plane will collect passengers in Lima.", accept:["pick up","pick up passengers","pick up the passengers","pick passengers up","pick the passengers up","will pick up","will pick up passengers","the plane will pick up passengers in lima"], model:"pick up — The plane will pick up passengers in Lima."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML=it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow (13 items: 5★ / 4★★ / 4★★★)
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Which particle?", q:"“The plane ___ two hours late.”", o:["took off", "took up"], a:0, w:"take off = a plane leaves the ground; the particle carries the meaning."},
+  {kind:"mc", diff:1, tag:"Meaning", q:"Which phrasal verb means “give someone a place to stay”?", o:["see (sb) off", "put (sb) up", "stop over"], a:1, w:"put (sb) up = give someone a place to stay (formal: accommodate)."},
+  {kind:"fill", diff:1, tag:"Begin a journey", q:"“We ___ at 5 a.m. to avoid the traffic.” (2 words, past)", accept:["set off","set out"], w:"set off / set out = begin a journey; the past form is the same."},
+  {kind:"mc", diff:1, tag:"Pronoun rule", q:"“A taxi will ___ at six.”", o:["pick us up","pick up us"], a:0, w:"A pronoun object must go between the verb and the particle: pick us up."},
+  {kind:"error", diff:1, tag:"Fix the error", words:["We","got","lost","and","ended","off","in","the","wrong","town."], bad:5, fixOld:"ended off", fixNew:"ended up", w:"end up = finally arrive somewhere; the particle is up, not off."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["Can","you","look","around","the","children","tonight?"], bad:3, fixOld:"look around the children", fixNew:"look after the children", w:"look after = take care of somebody; look around = explore a place. Both are inseparable, so the object always follows the particle: look after the children, look after them."},
+  {kind:"fill", diff:2, tag:"Pronoun placement", q:"“Can you drop ___ near the port?” (object: me — 2 words)", accept:["me off"], w:"Pronoun between verb and particle: drop me off."},
+  {kind:"mc", diff:2, tag:"Separable or not?", q:"Which sentence is correct?", o:["We looked the old town around.","We looked around the old town."], a:1, w:"look around is inseparable: the verb and the particle never separate."},
+  {kind:"fill", diff:2, tag:"Break a journey", q:"“We ___ in Seoul for one night and reached Tokyo the next day.” (2 words, past)", accept:["stopped over"], w:"stop over = break a journey briefly; past: stopped over. (Not ended up: the journey continued to Tokyo.)"},
+  {kind:"fill", diff:3, tag:"Formal → phrasal", q:"“They accommodated us for two nights.” → They ___ for two nights. (3 words)", accept:["put us up"], w:"put (sb) up = accommodate, and the pronoun goes in the middle: put us up."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["We","checked-in","at","noon","after","a","long","flight."], bad:1, fixOld:"checked-in", fixNew:"checked in", w:"check in is a two-word verb. checked-in with a hyphen is not a verb: We checked in at noon."},
+  {kind:"mc", diff:3, tag:"Register", q:"Formal writing prefers one verb. “look around” →", o:["accommodate", "depart", "explore"], a:2, w:"Register: look around → explore (set off → depart, put up → accommodate)."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["We","set","off","to","the","airport","at","dawn."], bad:3, fixOld:"set off to the airport", fixNew:"set off for the airport", w:"set off takes for + destination; it never takes a direct object."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i6_s5_drill_best")||0); if(dscore>best){ store("i6_s5_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Particles mastered. Ready for the ★★★ homework." : dscore>=8?"Good work — review the separable / pronoun card and go again." : "Re-read Structure 5, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">\u2713 Correct.</span> ':'<span class="k">\u2717 Not that one: the green part is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer: "+it.accept[0]+".")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

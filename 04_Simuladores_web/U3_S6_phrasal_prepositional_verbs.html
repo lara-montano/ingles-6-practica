@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE THREE-PART MACHINE · English 6 · Unit 3 "The Shape of Things to Come"
+  Structure 6 — phrasal-prepositional verbs (verb + adverb + preposition,
+  inseparability, object & pronoun position, look forward to + -ing, register)
+  Three modes: Explore (build the verb) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Structure 6 · The Three-Part Machine · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --indigo:#3A3A8C; --indigodark:#25255C; --indigolt:#E7E7F4;   /* Unit 3 identity */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--indigo),var(--indigodark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#C9C9EE; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#DCDCF3; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--indigodark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--indigodark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--indigodark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-indigo{background:var(--indigo)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--indigo); background:var(--indigolt); color:var(--indigodark)}
+
+  /* ---------- the three-part machine ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .machine{display:flex; gap:8px; align-items:stretch; justify-content:center; flex-wrap:wrap; margin:10px 0 4px}
+  .mbox{flex:1 1 150px; min-width:104px; border-radius:12px; padding:9px 8px 11px; text-align:center; border:2px solid}
+  .mbox .mlab{font-size:10px; font-weight:900; letter-spacing:.09em; text-transform:uppercase}
+  .mbox .mval{font-size:clamp(18px,3.3vw,26px); font-weight:900; line-height:1.3}
+  .mb1{background:var(--navylt); border-color:var(--navy)} .mb1 .mlab{color:var(--navy)} .mb1 .mval{color:var(--navy)}
+  .mb2{background:var(--grammarlt); border-color:var(--grammar)} .mb2 .mlab{color:var(--grammar)} .mb2 .mval{color:var(--grammar)}
+  .mb3{background:var(--greenlt); border-color:var(--green)} .mb3 .mlab{color:var(--greendark)} .mb3 .mval{color:var(--greendark)}
+  .mbox.masked{cursor:pointer} .mbox.masked .mval{color:transparent; position:relative}
+  .mbox.masked .mval::after{content:"?"; position:absolute; inset:0; color:#A9A9A9; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .plus{align-self:center; font-size:21px; font-weight:900; color:#B5B5B5}
+  .meanline{text-align:center; font-size:clamp(16px,2.7vw,20px); font-weight:800; color:var(--indigodark); margin-top:8px}
+  .exline{text-align:center; font-size:15px; font-weight:600; color:#555; margin-top:6px} .formalline{text-align:center; font-size:13px; font-weight:700; color:var(--excep); margin-top:6px}
+  .pw{border-radius:6px; padding:0 5px}
+  .pw1{background:var(--navylt); color:var(--navy); box-shadow:inset 0 -2px 0 var(--navy)}
+  .pw2{background:var(--grammarlt); color:var(--grammar); box-shadow:inset 0 -2px 0 var(--grammar)} .pw3{background:var(--greenlt); color:var(--greendark); box-shadow:inset 0 -2px 0 var(--green)}
+  .obw{background:var(--indigolt); color:var(--indigodark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--indigo)}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:12px; justify-content:center}  .legend span{border-radius:6px; padding:1px 8px}
+
+  /* ---------- tap-to-place object test ---------- */
+  .taphint{font-size:13px; font-weight:800; color:var(--indigo); text-align:center; margin:8px 0 2px}  .objrow{display:flex; gap:8px; justify-content:center; align-items:center; flex-wrap:wrap; margin:8px 0}
+  .objchip{border:2px solid var(--indigo); background:#fff; color:var(--indigodark); border-radius:999px; padding:7px 16px; font:800 15px Lato,sans-serif; cursor:pointer}
+  .objchip.sel{background:var(--indigo); color:#fff; box-shadow:0 0 0 4px var(--indigolt)}
+  .sentrow{display:flex; gap:5px; justify-content:center; align-items:center; flex-wrap:wrap; font-size:clamp(16px,2.9vw,22px); font-weight:800; margin:10px 0 2px}
+  .sentrow .fx{padding:2px 4px}
+  .slot{min-width:44px; min-height:34px; border:2px dashed var(--rule); border-radius:9px; background:#fff; cursor:pointer; font:800 15px Lato,sans-serif; color:#BBB; padding:0 8px}
+  .slot.armed{border-color:var(--indigo); background:var(--indigolt); color:var(--indigodark)}
+  .slot.good{border-style:solid; border-color:var(--green); background:var(--green); color:#fff} .slot.bad{border-style:solid; border-color:var(--think); background:var(--think); color:#fff}
+  .verdict{border-radius:12px; padding:12px 14px; margin-top:10px; font-weight:700; font-size:15px; display:none}
+  .verdict.good{display:block; background:var(--greenlt); border:2px solid var(--green)} .verdict.bad{display:block; background:var(--thinklt); border:2px solid var(--think)}
+  .verdict .fixline{display:block; margin-top:5px; font-size:16px} .verdict .old{color:var(--think); text-decoration:line-through} .verdict .new{color:var(--greendark); font-weight:900}
+
+  /* ---------- two vs three parts ---------- */
+  .cmp{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:10px; margin-top:8px}
+  .cmpcard{border:2px solid var(--rule); border-radius:12px; padding:12px; background:#fff}
+  .cmpcard h4{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.05em; margin-bottom:5px; color:var(--navy)}
+  .cmpcard.three{border-color:var(--indigo); background:var(--indigolt)} .cmpcard.three h4{color:var(--indigodark)}
+  .ln{font-size:15px; font-weight:700; padding:2px 0}
+  .ln.y{color:var(--greendark)} .ln.y::before{content:"✔ "; color:var(--green)} .ln.n{color:var(--think)} .ln.n::before{content:"✘ "}
+  .cmprule{margin-top:8px; font-size:13px; font-weight:700; color:#555}
+  /* ---------- special cases + errors ---------- */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)} .shiftgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:6px; margin-top:6px}
+  .shiftgrid div{background:#fff; border:1.5px solid var(--rule); border-radius:8px; padding:6px 10px; font-size:14px; font-weight:700}
+  .shiftgrid .a{color:var(--navy)} .shiftgrid .b{color:var(--excep)}
+  .errlist{list-style:none; margin-top:6px}
+  .errlist li{display:flex; gap:10px; align-items:center; flex-wrap:wrap; padding:8px 0; border-bottom:1px dashed var(--rule); font-size:15px; font-weight:700}
+  .errlist .bad{color:var(--think)} .errlist .bad::before{content:"✘ "}
+  .errlist .good{color:var(--green); display:none} .errlist .good::before{content:"✔ "}
+  .errlist .why{display:none; margin:0; flex-basis:100%; font-size:13px; padding:6px 10px}
+  .errlist li.open .good,.errlist li.open .why{display:block} .errlist li.open .fixbtn{display:none}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--indigo); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)} .btn.ghost{background:#fff; color:var(--indigodark); border:2px solid var(--indigo)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--indigo); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--indigo)}
+  .segbig button.on{background:var(--indigo); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--indigo); background:var(--indigolt); color:var(--indigodark)} .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block} .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px} .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--indigodark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--indigodark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--indigo); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)} .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick{background:var(--think); color:#fff}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)} .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none} .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900} .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center} .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--indigodark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px} details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--indigo); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">⚙️</span>
+  <div class="wrap">
+    <div class="kicker">English 6 · Unit 3 · The Shape of Things to Come</div>
+    <h1>⚙️ The Three-Part Machine</h1>
+    <div class="sub"><b>Structure 6</b> — phrasal-prepositional verbs: verb + adverb + preposition, and why they never split. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🔩 Explore the three parts</span><span>🔧 Build the verb</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🔩 Explore<small>see it assembled</small></button>
+    <button data-tab="build">🔧 Build<small>use it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Three pieces, one meaning</h2>
+      <p class="muted">A phrasal-prepositional verb is <b>verb + adverb + preposition</b>. The meaning is idiomatic,
+        so learn the whole unit, not the pieces. Tap a verb and watch the machine load all three boxes.
+        <span class="es">(Tres piezas que se aprenden juntas: el significado no es la suma de las partes.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the two particles, guess, then reveal</label>
+
+      <h3>1 · Choose a verb</h3>
+      <div class="chips" id="pvChips"></div>
+
+      <div class="machine">
+        <div class="mbox mb1" id="mb1"><div class="mlab">Verb</div><div class="mval" id="mv1"></div></div>
+        <div class="plus">+</div>
+        <div class="mbox mb2" id="mb2"><div class="mlab">Adverb</div><div class="mval" id="mv2"></div></div>
+        <div class="plus">+</div>
+        <div class="mbox mb3" id="mb3"><div class="mlab">Preposition</div><div class="mval" id="mv3"></div></div>
+      </div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the particles ✓</button></div>
+      <div class="meanline" id="mMean"></div>
+      <div class="exline" id="mEx"></div>
+      <div class="formalline" id="mFormal"></div>
+      <div class="legend"><span class="pw1">verb</span><span class="pw2">adverb</span><span class="pw3">preposition</span><span class="obw">object</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ The key rule</span>
+      <h2>They don’t split — put the object somewhere</h2>
+      <p class="muted">Tap the object, then tap the place where you think it goes. Only one slot works.
+        <span class="es">(Toca el objeto y después la casilla: el objeto va siempre después de las tres piezas.)</span></p>
+      <div class="chips" id="sepChips"></div>
+      <div class="objrow" id="objRow"></div>
+      <div class="taphint" id="tapHint">① Tap the object · ② tap a slot</div>
+      <div class="sentrow" id="sentRow"></div>
+      <div class="verdict" id="sepVerdict"></div>
+      <div style="text-align:center; margin-top:10px"><button class="btn ghost small" id="sepReset">Reset ↺</button></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">💡 Two pieces vs three pieces</span>
+      <h2>The third piece changes the rule</h2>
+      <p class="muted">In Unit 2 (Structure 5) some two-word phrasal verbs <b>split</b>, and a pronoun object even
+        <b>has to</b> sit in the middle. Add a third piece and that freedom disappears.
+        <span class="es">(Los de dos piezas pueden separarse; los de tres, nunca.)</span></p>
+      <label class="predictbar" style="justify-content:flex-start; color:var(--indigo)"><input type="checkbox" id="pronChk"> 🔁 Show the same examples with a <b>pronoun</b> object</label>
+      <div class="cmp" id="cmpGrid"></div>
+      <div class="cmprule">Test yourself: if you can say the object in the middle, it is a two-part separable verb. With three parts there is no middle — the object waits at the end.</div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Special cases &amp; traps</span>
+      <h2>-ing after <i>to</i>, register and stress</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="forward" class="on">look forward to + -ing</button><button data-v="insep">inseparable</button><button data-v="register">register</button><button data-v="stress">stress</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠️ Common errors</span>
+      <h2>Errors Spanish speakers make</h2>
+      <p class="muted">Read the sentence, find the problem, then tap <b>Fix</b> to check. <span class="es">(Errores típicos: adivina la corrección antes de verla.)</span></p>
+      <ul class="errlist" id="errList"></ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Structure 6 in four moves: the machine loads the twelve verbs of the manual table with their meanings; the tap-to-place test proves inseparability for nouns <i>and</i> pronouns; the two-vs-three comparison brings back Unit 2 Structure 5 (separable <i>pick up</i>, obligatory middle pronoun, inseparable <i>look after</i>); the special-cases card carries the four points of the exception box (inseparability, <i>look forward to</i> + -ing, register, stress on the middle word) and the errors card is the manual’s pitfall list plus <i>come up against</i>, one of the five verbs of the Unit 3 Check.</li>
+          <li><b>Build</b> is productive: <i>Assemble</i> chooses the verb stem and the particle pair for the eight sentences of exercise B; <i>Transform</i> is exercise C (formal → phrasal) and exercise D (fix the word order or form), validated by text with a model answer.</li>
+          <li><b>Drill</b> is one graded flow of 13 items (★ meaning &amp; recognition · ★★ word order and form · ★★★ -ing after <i>to</i>, pronoun position, register) with score, streak and best result on this device.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-indigo">🔧 Your turn to produce</span>
+      <h2>Build the verb</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the sentence and the meaning it needs. Choose the <b>verb</b> and then the <b>two particles</b>. The machine builds the whole verb — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">1 · The verb</div><div class="bchips" id="stemChips"></div></div>
+        <div class="bgroup"><div class="glab">2 · Adverb + preposition</div><div class="bchips" id="partChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New sentence →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Rewrite the sentence — replace the formal verb, or repair the word order. Type it and check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the whole sentence"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next sentence →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ meaning &amp; recognition · ★★ word order and form · ★★★ -ing after <i>to</i>, pronoun position, register.
+        Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 6 · Unit 3 «The Shape of Things to Come» · Structure 6 — phrasal-prepositional verbs · Level B1+
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE THREE-PART MACHINE — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 6 Class Manual (Structure 6).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE 1 · the machine — the twelve verbs of the manual table
+===================================================================== */
+var PV = [
+  {k:"watch out for", p:["watch","out","for"], mean:"notice / be careful about; anticipate", ex:'When you buy online, <span class="pw pw1">watch</span> <span class="pw pw2">out</span> <span class="pw pw3">for</span> <span class="obw">hidden fees</span>.'},
+  {k:"keep up with", p:["keep","up","with"], mean:"go at the same speed or level as", ex:'Farmers with cheap smartphones can <span class="pw pw1">keep</span> <span class="pw pw2">up</span> <span class="pw pw3">with</span> <span class="obw">market prices</span>.'},
+  {k:"catch up with", p:["catch","up","with"], mean:"reach the same level as (after being behind)", ex:'Older factories are trying to <span class="pw pw1">catch</span> <span class="pw pw2">up</span> <span class="pw pw3">with</span> <span class="obw">the new standards</span>.'},
+  {k:"come up against", p:["come","up","against"], mean:"meet / encounter (a problem)", ex:'Engineers often <span class="pw pw1">come</span> <span class="pw pw2">up</span> <span class="pw pw3">against</span> <span class="obw">unexpected problems</span> mid-project.'},
+  {k:"do away with", p:["do","away","with"], mean:"remove, get rid of, abolish", formal:"abolish", ex:'Cell phones have almost <span class="pw pw1">done</span> <span class="pw pw2">away</span> <span class="pw pw3">with</span> <span class="obw">public telephones</span>.'},
+  {k:"get away with", p:["get","away","with"], mean:"escape punishment for", ex:'They <span class="pw pw1">got</span> <span class="pw pw2">away</span> <span class="pw pw3">with</span> <span class="obw">it</span>.'},
+  {k:"look up to", p:["look","up","to"], mean:"admire, respect", ex:'I <span class="pw pw1">look</span> <span class="pw pw2">up</span> <span class="pw pw3">to</span> <span class="obw">engineers who care about society</span>.'},
+  {k:"make up for", p:["make","up","for"], mean:"compensate for", ex:'Can companies <span class="pw pw1">make</span> <span class="pw pw2">up</span> <span class="pw pw3">for</span> <span class="obw">the damage</span> they cause?'},
+  {k:"put up with", p:["put","up","with"], mean:"tolerate", formal:"tolerate", ex:'Environmentalists refuse to <span class="pw pw1">put</span> <span class="pw pw2">up</span> <span class="pw pw3">with</span> <span class="obw">high levels of pollution</span>.'},
+  {k:"look forward to", p:["look","forward","to"], mean:"anticipate with pleasure (+ -ing!)", ex:'I <span class="pw pw1">look</span> <span class="pw pw2">forward</span> <span class="pw pw3">to</span> <span class="obw">hearing</span> from you.'},
+  {k:"run out of", p:["run","out","of"], mean:"have no more of", ex:'We may <span class="pw pw1">run</span> <span class="pw pw2">out</span> <span class="pw pw3">of</span> <span class="obw">rare metals</span> if we keep replacing phones.'},
+  {k:"cut down on", p:["cut","down","on"], mean:"reduce", formal:"reduce", ex:'We must <span class="pw pw1">cut</span> <span class="pw pw2">down</span> <span class="pw pw3">on</span> <span class="obw">our screen time</span>.'}
+];
+var curPV = 0, predictMode = false, revealed = false;
+PV.forEach(function(v,i){
+  var b = document.createElement("button"); b.textContent = v.k; b.dataset.k = i;
+  if(i===curPV) b.classList.add("on");
+  b.addEventListener("click", function(){ curPV=i; revealed=false;
+    document.querySelectorAll("#pvChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); });
+    renderPV(); });
+  $("pvChips").appendChild(b);
+});
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderPV(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderPV(); });
+function renderPV(){
+  var v = PV[curPV];
+  $("mv1").textContent = v.p[0]; $("mv2").textContent = v.p[1]; $("mv3").textContent = v.p[2];
+  $("mMean").innerHTML = "“"+v.k+"” = "+v.mean;
+  $("mEx").innerHTML = v.ex;
+  $("mFormal").innerHTML = v.formal ? "Formal writing prefers one verb: <b>"+v.formal+"</b>." : "";
+  var mask = predictMode && !revealed;
+  $("mb2").classList.toggle("masked", mask); $("mb3").classList.toggle("masked", mask);
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+}
+function unmask(){ if(predictMode && !revealed){ revealed=true; renderPV(); } }
+$("mb2").addEventListener("click", unmask); $("mb3").addEventListener("click", unmask);
+renderPV();
+
+/* =====================================================================
+   EXPLORE 2 · tap the object, tap a slot (no HTML5 drag — works on phones)
+===================================================================== */
+var SEP = [
+  {k:"do away with", pre:"We must", p:["do","away","with"], noun:"this rule", pron:"it"},
+  {k:"look up to", pre:"I", p:["look","up","to"], noun:"my teacher", pron:"her"},
+  {k:"put up with", pre:"They refuse to", p:["put","up","with"], noun:"the noise", pron:"it"},
+  {k:"get away with", pre:"They", p:["got","away","with"], noun:"the mistake", pron:"it"},
+  {k:"keep up with", pre:"We can’t", p:["keep","up","with"], noun:"the demand", pron:"it"}
+];
+var curSep = 0, objKind = "noun", objArmed = false, sepLocked = false;
+SEP.forEach(function(s,i){
+  var b=document.createElement("button"); b.textContent=s.k; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curSep=i;
+    document.querySelectorAll("#sepChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); });
+    resetSep(); });
+  $("sepChips").appendChild(b);
+});
+function objText(){ var s=SEP[curSep]; return objKind==="noun" ? s.noun : s.pron; }
+function resetSep(){ objArmed=false; sepLocked=false; renderSep(); }
+function renderSep(){
+  var s = SEP[curSep];
+  var row = $("objRow"); row.innerHTML="";
+  ["noun","pron"].forEach(function(kind){
+    var b=document.createElement("button"); b.className="objchip"+(objKind===kind&&objArmed?" sel":"");
+    b.textContent = (kind==="noun"? s.noun : s.pron)+(kind==="pron"?" (pronoun)":"");
+    b.addEventListener("click", function(){ if(sepLocked) return; objKind=kind; objArmed=true; renderSep(); });
+    row.appendChild(b);
+  });
+  var sr=$("sentRow"); sr.innerHTML="";
+  function txt(t,cls){ var sp=document.createElement("span"); sp.className="fx "+(cls||""); sp.textContent=t; sr.appendChild(sp); }
+  function slot(n){ var b=document.createElement("button"); b.className="slot"+(objArmed&&!sepLocked?" armed":""); b.textContent="•"; b.dataset.n=n;
+    b.addEventListener("click", function(){ pickSlot(n,b); }); sr.appendChild(b); }
+  txt(s.pre); txt(s.p[0],"pw pw1"); slot(1); txt(s.p[1],"pw pw2"); slot(2); txt(s.p[2],"pw pw3"); slot(3);
+  $("tapHint").innerHTML = sepLocked ? "Tap <b>Reset</b> to try another position." : (objArmed ? "② Now tap a slot — where does <b>"+objText()+"</b> go?" : "① Tap the object · ② tap a slot");
+  $("sepVerdict").className="verdict"; $("sepVerdict").innerHTML="";
+}
+function pickSlot(n, btn){
+  if(sepLocked) return;
+  if(!objArmed){ $("tapHint").innerHTML = "Tap the <b>object</b> first, then a slot."; return; }
+  sepLocked = true;
+  var s = SEP[curSep], ob = objText(), v = $("sepVerdict");
+  btn.textContent = ob;
+  var right = s.pre+" "+s.p[0]+" "+s.p[1]+" "+s.p[2]+" "+ob+".";
+  if(n===3){
+    btn.classList.add("good"); btn.classList.remove("armed");
+    v.className="verdict good";
+    v.innerHTML = "✔ <b>Correct.</b> The object comes after all three parts — and that is true for a pronoun too."+
+      '<span class="fixline"><span class="new">'+right+"</span></span>";
+  } else {
+    btn.classList.add("bad"); btn.classList.remove("armed");
+    var wrong = n===1 ? s.pre+" "+s.p[0]+" "+ob+" "+s.p[1]+" "+s.p[2]+"." : s.pre+" "+s.p[0]+" "+s.p[1]+" "+ob+" "+s.p[2]+".";
+    v.className="verdict bad";
+    v.innerHTML = "✘ <b>These verbs never split.</b> Nothing goes between the three parts, not even a pronoun."+
+      '<span class="fixline"><span class="old">'+wrong+'</span> → <span class="new">'+right+"</span></span>";
+  }
+  document.querySelectorAll("#sentRow .slot").forEach(function(x){ x.classList.remove("armed"); });
+  $("tapHint").innerHTML = "Tap <b>Reset</b> to try another position.";
+}
+$("sepReset").addEventListener("click", resetSep); renderSep();
+
+/* =====================================================================
+   EXPLORE 3 · two parts (Unit 2, Structure 5) vs three parts
+===================================================================== */
+var CMP = [
+  {cls:"", h:"Two parts · separable (pick up)", noun:[["y","pick up the tourists"],["y","pick the tourists up"]], pron:[["n","pick up them"],["y","pick them up"]], rule:"Both positions work with a noun — but a <b>pronoun must sit in the middle</b>."},
+  {cls:"", h:"Two parts · inseparable (look after)", noun:[["y","look after the children"],["n","look the children after"]], pron:[["y","look after them"],["n","look them after"]], rule:"Some two-word verbs already keep their parts together (<i>look after, get on, set off</i>)."},
+  {cls:"three", h:"Three parts · always inseparable (put up with)", noun:[["y","put up with the noise"],["n","put the noise up with"]], pron:[["y","put up with it"],["n","put it up with"]], rule:"With three pieces there is only one possible order: object last, always."}
+];
+function renderCmp(){
+  var pron = $("pronChk").checked, g = $("cmpGrid"); g.innerHTML="";
+  CMP.forEach(function(c){
+    var d=document.createElement("div"); d.className="cmpcard "+c.cls;
+    var html='<h4>'+c.h+"</h4>";
+    (pron? c.pron : c.noun).forEach(function(l){ html+='<div class="ln '+l[0]+'">'+l[1]+"</div>"; });
+    html+='<div class="cmprule">'+c.rule+"</div>";
+    d.innerHTML=html; g.appendChild(d);
+  });
+}
+$("pronChk").addEventListener("change", renderCmp); renderCmp();
+
+/* =====================================================================
+   EXPLORE 4 · special cases
+===================================================================== */
+var SC = {
+  forward:'In <b>look forward to</b>, the last word <i>to</i> is a <b>preposition</b>, not part of an infinitive. A verb after it takes <b>-ing</b>: ✔ I look forward to <b>hearing</b> from you. · ✘ look forward to <s>hear</s>. The same happens with <i>get used to</i> and <i>be committed to</i>.<div class="shiftgrid"><div><span class="a">look forward to</span> → <span class="b">+ -ing</span></div><div><span class="a">get used to</span> → <span class="b">+ -ing</span></div><div><span class="a">be committed to</span> → <span class="b">+ -ing</span></div></div>',
+  insep:'<b>Inseparable.</b> The object — noun <i>or</i> pronoun — always comes after all three parts: ✔ We must <b>do away with</b> it. · ✘ do <s>it</s> away with · ✔ I <b>look up to</b> her. · ✘ look <s>her</s> up to. There is no middle position to use, so the pronoun rule of two-word verbs does not apply here.',
+  register:'<b>Register.</b> These verbs are informal. Formal writing prefers a single verb:<div class="shiftgrid"><div><span class="a">do away with</span> → <span class="b">abolish</span></div><div><span class="a">put up with</span> → <span class="b">tolerate</span></div><div><span class="a">cut down on</span> → <span class="b">reduce</span></div></div>Use the three-part verb when you speak or write to a friend; use the single verb in a report.',
+  stress:'<b>Stress in speech</b> usually falls on the <b>middle</b> word: keep <b>UP</b> with · get <b>A</b>way with · put <b>UP</b> with. Saying the three parts as one stressed unit helps you remember that they travel together.'
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.forward;
+
+/* common errors */
+var ERR = [
+  {bad:"I look forward to see you.", good:"I look forward to seeing you.", why:"<i>to</i> here is a preposition, so the verb takes <b>-ing</b>."},
+  {bad:"We can’t keep up the changes with.", good:"We can’t keep up with the changes.", why:"The three parts stay together; the object follows them."},
+  {bad:"They got away it with.", good:"They got away with it.", why:"A pronoun object also goes after the preposition."},
+  {bad:"Someone I really look up.", good:"Someone I really look up to.", why:"Without <i>to</i> the verb means something else — never drop the third piece."},
+  {bad:"We can’t keep the demand up with.", good:"We can’t keep up with the demand.", why:"No object in the middle: <i>keep up with</i> + object."},
+  {bad:"Companies will come up problems against.", good:"Companies will come up against problems.", why:"A noun object cannot break <i>come up against</i> either — it waits until after the preposition."}
+];
+ERR.forEach(function(e){
+  var li=document.createElement("li");
+  li.innerHTML='<span class="bad">'+e.bad+'</span><button class="btn ghost small fixbtn">Fix ✓</button><span class="good">'+e.good+'</span><div class="why">'+e.why+"</div>";
+  li.querySelector(".fixbtn").addEventListener("click", function(){ li.classList.add("open"); });
+  $("errList").appendChild(li);
+});
+
+/* =====================================================================
+   BUILD · assemble (verb + particles) + transform (rewrite / repair)
+===================================================================== */
+var BUILD = [
+  {ctx:"Cell phones have almost ____ public telephones.", hint:"meaning needed: remove / abolish", stems:["do","make","run"], sOk:"do", parts:["away with","up for","out of"], pOk:"away with", built:'Cell phones have almost <span class="pw pw1">done</span> <span class="pw pw2">away</span> <span class="pw pw3">with</span> public telephones.', note:"do away with = remove / abolish. Past participle: done away with."},
+  {ctx:"Environmentalists refuse to ____ high levels of pollution.", hint:"meaning needed: tolerate", stems:["put","look","cut"], sOk:"put", parts:["up with","up to","down on"], pOk:"up with", built:'Environmentalists refuse to <span class="pw pw1">put</span> <span class="pw pw2">up</span> <span class="pw pw3">with</span> high levels of pollution.', note:"put up with = tolerate."},
+  {ctx:"I ____ engineers who care about society.", hint:"meaning needed: admire, respect", stems:["look","keep","get"], sOk:"look", parts:["up to","up with","away with"], pOk:"up to", built:'I <span class="pw pw1">look</span> <span class="pw pw2">up</span> <span class="pw pw3">to</span> engineers who care about society.', note:"look up to = admire. Drop the <i>to</i> and the meaning is gone."},
+  {ctx:"Farmers with cheap smartphones can ____ market prices.", hint:"meaning needed: go at the same speed as", stems:["keep","catch","come"], sOk:"keep", parts:["up with","up against","out for"], pOk:"up with", built:'Farmers with cheap smartphones can <span class="pw pw1">keep</span> <span class="pw pw2">up</span> <span class="pw pw3">with</span> market prices.', note:"keep up with = go at the same speed or level as."},
+  {ctx:"Engineers often ____ unexpected problems mid-project.", hint:"meaning needed: meet / encounter a problem", stems:["come","watch","run"], sOk:"come", parts:["up against","out for","out of"], pOk:"up against", built:'Engineers often <span class="pw pw1">come</span> <span class="pw pw2">up</span> <span class="pw pw3">against</span> unexpected problems mid-project.', note:"come up against = encounter a problem."},
+  {ctx:"Can companies ____ the damage they cause by sharing profits?", hint:"meaning needed: compensate for", stems:["make","put","do"], sOk:"make", parts:["up for","up with","away with"], pOk:"up for", built:'Can companies <span class="pw pw1">make</span> <span class="pw pw2">up</span> <span class="pw pw3">for</span> the damage they cause by sharing profits?', note:"make up for = compensate for."},
+  {ctx:"When you buy online, ____ hidden fees.", hint:"meaning needed: notice, be careful about", stems:["watch","keep","run"], sOk:"watch", parts:["out for","up to","out of"], pOk:"out for", built:'When you buy online, <span class="pw pw1">watch</span> <span class="pw pw2">out</span> <span class="pw pw3">for</span> hidden fees.', note:"watch out for = notice / be careful about."},
+  {ctx:"We may ____ rare metals if we keep replacing phones.", hint:"meaning needed: have no more of", stems:["run","cut","get"], sOk:"run", parts:["out of","down on","away with"], pOk:"out of", built:'We may <span class="pw pw1">run</span> <span class="pw pw2">out</span> <span class="pw pw3">of</span> rare metals if we keep replacing phones.', note:"run out of = have no more of."}
+];
+var bi=0, bStem=null, bPart=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function fillChips(hostId, list, onPick){
+  var wrap=$(hostId); wrap.innerHTML="";
+  list.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ onPick(op);
+      wrap.querySelectorAll("button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+}
+function renderBuild(){
+  var it=BUILD[bi]; bStem=null; bPart=null;
+  $("bctx").innerHTML = it.ctx+"<small>"+it.hint+"</small>";
+  fillChips("stemChips", it.stems, function(v){ bStem=v; });
+  fillChips("partChips", it.parts, function(v){ bPart=v; });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bStem || !bPart){ r.className="bresult bad"; r.innerHTML="Choose a verb <b>and</b> the two particles first."; return; }
+  var okS = bStem===it.sOk, okP = bPart===it.pOk;
+  if(okS && okP){
+    r.className="bresult good"; r.innerHTML="✅ "+it.built+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    if(!okS){ document.querySelector('#stemChips button[data-v="'+bStem+'"]').classList.add("wrongpick"); }
+    if(!okP){ document.querySelector('#partChips button[data-v="'+bPart+'"]').classList.add("wrongpick"); }
+    var msg = okS ? "The verb is right — the particles are not." : okP ? "The particles are right — the verb is not." : "Neither piece fits yet.";
+    r.className="bresult bad"; r.innerHTML="❌ "+msg+'<span class="bnote">Hint — '+it.hint+".</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); }); renderBuild();
+
+var TRANS = [
+  {ctx:"The government should abolish this outdated law.", tag:"Use a three-part verb", accept:["the government should do away with this outdated law"], model:"The government should do away with this outdated law."},
+  {ctx:"I can’t tolerate slow internet.", tag:"Use a three-part verb", accept:["i can't put up with slow internet","i cannot put up with slow internet"], model:"I can’t put up with slow internet."},
+  {ctx:"We must reduce our screen time.", tag:"Use a three-part verb", accept:["we must cut down on our screen time"], model:"We must cut down on our screen time."},
+  {ctx:"She admires her science teacher.", tag:"Use a three-part verb (watch the -s)", accept:["she looks up to her science teacher"], model:"She looks up to her science teacher."},
+  {ctx:"It’s hard to stay level with new software.", tag:"Use a three-part verb", accept:["it's hard to keep up with new software","it is hard to keep up with new software"], model:"It’s hard to keep up with new software."},
+  {ctx:"I look forward to meet you at the fair.", tag:"Repair the form", accept:["i look forward to meeting you at the fair"], model:"I look forward to meeting you at the fair."},
+  {ctx:"They got away it with.", tag:"Repair the word order", accept:["they got away with it"], model:"They got away with it."},
+  {ctx:"We can’t keep the demand up with.", tag:"Repair the word order", accept:["we can't keep up with the demand","we cannot keep up with the demand"], model:"We can’t keep up with the demand."},
+  {ctx:"Someone I really look up.", tag:"Repair the missing piece", accept:["someone i really look up to"], model:"Someone I really look up to."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML=it.tag+": "+it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); }); renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow — 13 items (5★ / 4★★ / 4★★★)
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Meaning", q:"Which three-part verb means <i>tolerate</i>?", o:["put up with","make up for","run out of"], a:0, w:"put up with = tolerate."},
+  {kind:"mc", diff:1, tag:"Meaning", q:"Which three-part verb means <i>escape punishment for</i>?", o:["do away with", "get away with", "come up against"], a:1, w:"get away with = escape punishment for."},
+  {kind:"mc", diff:1, tag:"Choose the verb", q:"She ___ her science teacher. (= admires)", o:["looks forward to", "looks up", "looks up to"], a:2, w:"look up to = admire; all three parts must be there."},
+  {kind:"fill", diff:1, tag:"Complete it", q:"Cell phones have almost ___ public telephones. (= removed — 3 words)", accept:["done away with"], w:"do away with = remove / abolish; the participle is done away with."},
+  {kind:"error", diff:1, tag:"Fix the error", words:["We","must","do","it","away","with."], bad:3, fixOld:"do it away with", fixNew:"do away with it", w:"Three-part verbs never split: the object comes after all three parts."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["They","got","away","it","with."], bad:3, fixOld:"got away it with", fixNew:"got away with it", w:"A pronoun object also waits until after the preposition."},
+  {kind:"fill", diff:2, tag:"Formal → informal", q:"“We must reduce our screen time.” → We must ___ our screen time. (3 words)", accept:["cut down on"], w:"cut down on = reduce."},
+  {kind:"mc", diff:2, tag:"Word order", q:"Which sentence is correct?", o:["We can’t keep up with the demand.","We can’t keep the demand up with.","We can’t keep up the demand with."], a:0, w:"The object follows the whole verb: keep up with + the demand."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["Companies","will","come","up","problems","against."], bad:4, fixOld:"come up problems against", fixNew:"come up against problems", w:"A noun object cannot break the verb either: come up against + problems."},
+  {kind:"fill", diff:3, tag:"-ing after to", q:"I look forward to ___ you at the fair. (meet)", accept:["meeting"], w:"look forward to <b>meeting</b> — here <i>to</i> is a preposition, so the verb takes -ing, never the infinitive."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["I","look","forward","to","see","the","results."], bad:4, fixOld:"to see", fixNew:"to seeing", w:"Preposition <i>to</i> + -ing: to seeing, not to see."},
+  {kind:"mc", diff:3, tag:"Register", q:"In a formal report, which is better?", o:["The law should be done away with.", "The law should be abolished."], a:1, w:"Three-part verbs are informal; formal writing prefers one verb (do away with → abolish)."},
+  {kind:"fill", diff:3, tag:"Pronoun position", q:"Replace the object with a pronoun: “We must do away with this rule.” → We must ___. (4 words)", accept:["do away with it"], w:"The pronoun goes after all three parts: do away with it."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i6_s6_drill_best")||0); if(dscore>best){ store("i6_s6_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"The machine is assembled. Ready for the ★★★ homework." : dscore>=8?"Good work — review the special-cases card and go again." : "Re-read Structure 6, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">✓ Correct.</span> ':'<span class="k">✗ Not that one: the green part is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

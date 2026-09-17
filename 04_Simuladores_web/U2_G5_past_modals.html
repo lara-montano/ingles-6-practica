@@ -457,16 +457,16 @@ renderTrans();
 ===================================================================== */
 var DRILL = [
   {kind:"mc", diff:1, tag:"How certain?", q:"“The guide must have grown up here — she knows every street.”", o:["≈95% yes — almost certain","≈50% — possible","≈95% no — impossible"], a:0, w:"‘must have’ = the only logical conclusion (almost certain it happened)."},
-  {kind:"mc", diff:1, tag:"Choose the modal", q:"“The bus is empty. Everyone ___ at the beach stop.”", o:["must have got off","can’t have got off"], a:0, w:"The empty bus is strong evidence → must have got off."},
+  {kind:"mc", diff:1, tag:"Choose the modal", q:"“The bus is empty. Everyone ___ at the beach stop.”", o:["can’t have got off", "must have got off"], a:1, w:"The empty bus is strong evidence → must have got off."},
   {kind:"mc", diff:1, tag:"Choose the modal", q:"“You ___ the whole guidebook already — you started an hour ago!”", o:["can’t have finished","must have finished"], a:0, w:"An hour is far too short → can’t have finished (impossible)."},
   {kind:"error", diff:2, tag:"Fix the error", words:["She","must","have","took","the","early","ferry."], bad:3, fixOld:"took", fixNew:"taken", w:"Always the past participle after ‘have’: must have <b>taken</b>."},
   {kind:"error", diff:2, tag:"Fix the error", words:["He","musted","have","lost","our","reservation."], bad:1, fixOld:"musted have", fixNew:"must have", w:"Modals never take -ed: <b>must have</b> (not ‘musted’)."},
   {kind:"fill", diff:2, tag:"Complete", q:"“The streets are white. It ___ (snow) during the night.”", accept:["must have snowed"], w:"Strong evidence → must have + past participle: must have snowed."},
   {kind:"error", diff:2, tag:"Fix the error", words:["I","must","have","being","asleep","when","you","called."], bad:3, fixOld:"being", fixNew:"been", w:"The past participle of ‘be’ is <b>been</b>: must have been asleep."},
   {kind:"error", diff:2, tag:"Fix the error", words:["They","should","of","packed","sunscreen."], bad:2, fixOld:"should of", fixNew:"should have", w:"‘should’ve’ only sounds like ‘should of’. Write <b>should have</b>."},
-  {kind:"mc", diff:3, tag:"Deduction or missed opportunity?", q:"“You could have called me!” (said in an annoyed voice)", o:["A missed opportunity — you didn’t call","A deduction — maybe you called"], a:0, w:"Here ‘could have’ = an unused opportunity: you were able to call, but you didn’t."},
+  {kind:"mc", diff:3, tag:"Deduction or missed opportunity?", q:"“You could have called me!” (said in an annoyed voice)", o:["A deduction — maybe you called", "A missed opportunity — you didn’t call"], a:1, w:"Here ‘could have’ = an unused opportunity: you were able to call, but you didn’t."},
   {kind:"error", diff:3, tag:"Fix the error", words:["It","can","have","been","a","mistake."], bad:1, fixOld:"can have", fixNew:"could / may / might have", w:"There is no affirmative ‘can have’. Use could / may / might have been."},
-  {kind:"mc", diff:3, tag:"Which form?", q:"“The road is muddy — it ___ for hours.” (action in progress)", o:["must have been raining","must have rained","must be raining"], a:0, w:"Action in progress in the past = modal + have been + -ing: must have been raining."},
+  {kind:"mc", diff:3, tag:"Which form?", q:"“The road is muddy — it ___ for hours.” (action in progress)", o:["must be raining", "must have rained", "must have been raining"], a:2, w:"Action in progress in the past = modal + have been + -ing: must have been raining."},
   {kind:"fill", diff:3, tag:"Passive deduction", q:"“The tickets ___ (book) months ago.” (modal + passive)", accept:["must have been booked"], w:"Passive deduction: modal + have been + past participle."}
 ];
 var di=0, dscore=0, dstreak=0, ddone=false;
