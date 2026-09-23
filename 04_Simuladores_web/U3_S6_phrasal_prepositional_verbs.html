@@ -265,7 +265,7 @@
         <ul>
           <li><b>Explore</b> is Structure 6 in four moves: the machine loads the twelve verbs of the manual table with their meanings; the tap-to-place test proves inseparability for nouns <i>and</i> pronouns; the two-vs-three comparison brings back Unit 2 Structure 5 (separable <i>pick up</i>, obligatory middle pronoun, inseparable <i>look after</i>); the special-cases card carries the four points of the exception box (inseparability, <i>look forward to</i> + -ing, register, stress on the middle word) and the errors card is the manual’s pitfall list plus <i>come up against</i>, one of the five verbs of the Unit 3 Check.</li>
           <li><b>Build</b> is productive: <i>Assemble</i> chooses the verb stem and the particle pair for the eight sentences of exercise B; <i>Transform</i> is exercise C (formal → phrasal) and exercise D (fix the word order or form), validated by text with a model answer.</li>
-          <li><b>Drill</b> is one graded flow of 13 items (★ meaning &amp; recognition · ★★ word order and form · ★★★ -ing after <i>to</i>, pronoun position, register) with score, streak and best result on this device.</li>
+          <li><b>Drill</b> is one graded flow drawn from a bank of 25 items — 15 per attempt, five per level (★ meaning &amp; recognition · ★★ word order and form · ★★★ -ing after <i>to</i>, pronoun position, register) with score, streak and best result on this device.</li>
           <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
         </ul>
       </div>
@@ -303,6 +303,7 @@
     <div class="card">
       <span class="boxtag tag-navy">🎯 Graded practice</span>
       <h2>Drill — one flow, three levels</h2>
+      <p class="muted" style="margin:-4px 0 10px; font-size:13px">Bank of 25 questions — each attempt draws 15 new ones. <i>(Cada intento saca preguntas distintas: repítelo.)</i></p>
       <p class="muted">★ meaning &amp; recognition · ★★ word order and form · ★★★ -ing after <i>to</i>, pronoun position, register.
         Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
       <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
@@ -342,12 +343,12 @@ navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.d
    EXPLORE 1 · the machine — the twelve verbs of the manual table
 ===================================================================== */
 var PV = [
-  {k:"watch out for", p:["watch","out","for"], mean:"notice / be careful about; anticipate", ex:'When you buy online, <span class="pw pw1">watch</span> <span class="pw pw2">out</span> <span class="pw pw3">for</span> <span class="obw">hidden fees</span>.'},
+  {k:"watch out for", p:["watch","out","for"], mean:"be careful about; look out for (a danger)", ex:'When you buy online, <span class="pw pw1">watch</span> <span class="pw pw2">out</span> <span class="pw pw3">for</span> <span class="obw">hidden fees</span>.'},
   {k:"keep up with", p:["keep","up","with"], mean:"go at the same speed or level as", ex:'Farmers with cheap smartphones can <span class="pw pw1">keep</span> <span class="pw pw2">up</span> <span class="pw pw3">with</span> <span class="obw">market prices</span>.'},
   {k:"catch up with", p:["catch","up","with"], mean:"reach the same level as (after being behind)", ex:'Older factories are trying to <span class="pw pw1">catch</span> <span class="pw pw2">up</span> <span class="pw pw3">with</span> <span class="obw">the new standards</span>.'},
   {k:"come up against", p:["come","up","against"], mean:"meet / encounter (a problem)", ex:'Engineers often <span class="pw pw1">come</span> <span class="pw pw2">up</span> <span class="pw pw3">against</span> <span class="obw">unexpected problems</span> mid-project.'},
   {k:"do away with", p:["do","away","with"], mean:"remove, get rid of, abolish", formal:"abolish", ex:'Cell phones have almost <span class="pw pw1">done</span> <span class="pw pw2">away</span> <span class="pw pw3">with</span> <span class="obw">public telephones</span>.'},
-  {k:"get away with", p:["get","away","with"], mean:"escape punishment for", ex:'They <span class="pw pw1">got</span> <span class="pw pw2">away</span> <span class="pw pw3">with</span> <span class="obw">it</span>.'},
+  {k:"get away with", p:["get","away","with"], mean:"escape punishment for", ex:'No company should <span class="pw pw1">get</span> <span class="pw pw2">away</span> <span class="pw pw3">with</span> <span class="obw">dumping waste in a river</span>.'},
   {k:"look up to", p:["look","up","to"], mean:"admire, respect", ex:'I <span class="pw pw1">look</span> <span class="pw pw2">up</span> <span class="pw pw3">to</span> <span class="obw">engineers who care about society</span>.'},
   {k:"make up for", p:["make","up","for"], mean:"compensate for", ex:'Can companies <span class="pw pw1">make</span> <span class="pw pw2">up</span> <span class="pw pw3">for</span> <span class="obw">the damage</span> they cause?'},
   {k:"put up with", p:["put","up","with"], mean:"tolerate", formal:"tolerate", ex:'Environmentalists refuse to <span class="pw pw1">put</span> <span class="pw pw2">up</span> <span class="pw pw3">with</span> <span class="obw">high levels of pollution</span>.'},
@@ -447,7 +448,7 @@ $("sepReset").addEventListener("click", resetSep); renderSep();
 ===================================================================== */
 var CMP = [
   {cls:"", h:"Two parts · separable (pick up)", noun:[["y","pick up the tourists"],["y","pick the tourists up"]], pron:[["n","pick up them"],["y","pick them up"]], rule:"Both positions work with a noun — but a <b>pronoun must sit in the middle</b>."},
-  {cls:"", h:"Two parts · inseparable (look after)", noun:[["y","look after the children"],["n","look the children after"]], pron:[["y","look after them"],["n","look them after"]], rule:"Some two-word verbs already keep their parts together (<i>look after, get on, set off</i>)."},
+  {cls:"", h:"Two parts · inseparable (look after)", noun:[["y","look after the children"],["n","look the children after"]], pron:[["y","look after them"],["n","look them after"]], rule:"Some two-word verbs already keep their parts together (<i>look after, get on, run into</i>)."},
   {cls:"three", h:"Three parts · always inseparable (put up with)", noun:[["y","put up with the noise"],["n","put the noise up with"]], pron:[["y","put up with it"],["n","put it up with"]], rule:"With three pieces there is only one possible order: object last, always."}
 ];
 function renderCmp(){
@@ -469,7 +470,7 @@ var SC = {
   forward:'In <b>look forward to</b>, the last word <i>to</i> is a <b>preposition</b>, not part of an infinitive. A verb after it takes <b>-ing</b>: ✔ I look forward to <b>hearing</b> from you. · ✘ look forward to <s>hear</s>. The same happens with <i>get used to</i> and <i>be committed to</i>.<div class="shiftgrid"><div><span class="a">look forward to</span> → <span class="b">+ -ing</span></div><div><span class="a">get used to</span> → <span class="b">+ -ing</span></div><div><span class="a">be committed to</span> → <span class="b">+ -ing</span></div></div>',
   insep:'<b>Inseparable.</b> The object — noun <i>or</i> pronoun — always comes after all three parts: ✔ We must <b>do away with</b> it. · ✘ do <s>it</s> away with · ✔ I <b>look up to</b> her. · ✘ look <s>her</s> up to. There is no middle position to use, so the pronoun rule of two-word verbs does not apply here.',
   register:'<b>Register.</b> These verbs are informal. Formal writing prefers a single verb:<div class="shiftgrid"><div><span class="a">do away with</span> → <span class="b">abolish</span></div><div><span class="a">put up with</span> → <span class="b">tolerate</span></div><div><span class="a">cut down on</span> → <span class="b">reduce</span></div></div>Use the three-part verb when you speak or write to a friend; use the single verb in a report.',
-  stress:'<b>Stress in speech</b> usually falls on the <b>middle</b> word: keep <b>UP</b> with · get <b>A</b>way with · put <b>UP</b> with. Saying the three parts as one stressed unit helps you remember that they travel together.'
+  stress:'<b>Stress in speech</b> usually falls on the <b>middle</b> word: keep <b>UP</b> with · get a<b>WAY</b> with · put <b>UP</b> with. Saying the three parts as one stressed unit helps you remember that they travel together.'
 };
 document.querySelectorAll("#scSeg button").forEach(function(b){
   b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
@@ -500,7 +501,7 @@ var BUILD = [
   {ctx:"Environmentalists refuse to ____ high levels of pollution.", hint:"meaning needed: tolerate", stems:["put","look","cut"], sOk:"put", parts:["up with","up to","down on"], pOk:"up with", built:'Environmentalists refuse to <span class="pw pw1">put</span> <span class="pw pw2">up</span> <span class="pw pw3">with</span> high levels of pollution.', note:"put up with = tolerate."},
   {ctx:"I ____ engineers who care about society.", hint:"meaning needed: admire, respect", stems:["look","keep","get"], sOk:"look", parts:["up to","up with","away with"], pOk:"up to", built:'I <span class="pw pw1">look</span> <span class="pw pw2">up</span> <span class="pw pw3">to</span> engineers who care about society.', note:"look up to = admire. Drop the <i>to</i> and the meaning is gone."},
   {ctx:"Farmers with cheap smartphones can ____ market prices.", hint:"meaning needed: go at the same speed as", stems:["keep","catch","come"], sOk:"keep", parts:["up with","up against","out for"], pOk:"up with", built:'Farmers with cheap smartphones can <span class="pw pw1">keep</span> <span class="pw pw2">up</span> <span class="pw pw3">with</span> market prices.', note:"keep up with = go at the same speed or level as."},
-  {ctx:"Engineers often ____ unexpected problems mid-project.", hint:"meaning needed: meet / encounter a problem", stems:["come","watch","run"], sOk:"come", parts:["up against","out for","out of"], pOk:"up against", built:'Engineers often <span class="pw pw1">come</span> <span class="pw pw2">up</span> <span class="pw pw3">against</span> unexpected problems mid-project.', note:"come up against = encounter a problem."},
+  {ctx:"Engineers often ____ unexpected problems mid-project.", hint:"meaning needed: meet / encounter a problem", stems:["come","watch","put"], sOk:"come", parts:["up against","out for","out of"], pOk:"up against", built:'Engineers often <span class="pw pw1">come</span> <span class="pw pw2">up</span> <span class="pw pw3">against</span> unexpected problems mid-project.', note:"come up against = encounter a problem."},
   {ctx:"Can companies ____ the damage they cause by sharing profits?", hint:"meaning needed: compensate for", stems:["make","put","do"], sOk:"make", parts:["up for","up with","away with"], pOk:"up for", built:'Can companies <span class="pw pw1">make</span> <span class="pw pw2">up</span> <span class="pw pw3">for</span> the damage they cause by sharing profits?', note:"make up for = compensate for."},
   {ctx:"When you buy online, ____ hidden fees.", hint:"meaning needed: notice, be careful about", stems:["watch","keep","run"], sOk:"watch", parts:["out for","up to","out of"], pOk:"out for", built:'When you buy online, <span class="pw pw1">watch</span> <span class="pw pw2">out</span> <span class="pw pw3">for</span> hidden fees.', note:"watch out for = notice / be careful about."},
   {ctx:"We may ____ rare metals if we keep replacing phones.", hint:"meaning needed: have no more of", stems:["run","cut","get"], sOk:"run", parts:["out of","down on","away with"], pOk:"out of", built:'We may <span class="pw pw1">run</span> <span class="pw pw2">out</span> <span class="pw pw3">of</span> rare metals if we keep replacing phones.', note:"run out of = have no more of."}
@@ -549,9 +550,9 @@ $("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderB
 var TRANS = [
   {ctx:"The government should abolish this outdated law.", tag:"Use a three-part verb", accept:["the government should do away with this outdated law"], model:"The government should do away with this outdated law."},
   {ctx:"I can’t tolerate slow internet.", tag:"Use a three-part verb", accept:["i can't put up with slow internet","i cannot put up with slow internet"], model:"I can’t put up with slow internet."},
-  {ctx:"We must reduce our screen time.", tag:"Use a three-part verb", accept:["we must cut down on our screen time"], model:"We must cut down on our screen time."},
+  {ctx:"We must reduce our screen time.", tag:"Use a three-part verb", accept:["we must cut down on our screen time","we must cut back on our screen time"], model:"We must cut down on our screen time."},
   {ctx:"She admires her science teacher.", tag:"Use a three-part verb (watch the -s)", accept:["she looks up to her science teacher"], model:"She looks up to her science teacher."},
-  {ctx:"It’s hard to stay level with new software.", tag:"Use a three-part verb", accept:["it's hard to keep up with new software","it is hard to keep up with new software"], model:"It’s hard to keep up with new software."},
+  {ctx:"It’s hard to stay at the same level as new software.", tag:"Use a three-part verb", accept:["it's hard to keep up with new software","it is hard to keep up with new software"], model:"It’s hard to keep up with new software."},
   {ctx:"I look forward to meet you at the fair.", tag:"Repair the form", accept:["i look forward to meeting you at the fair"], model:"I look forward to meeting you at the fair."},
   {ctx:"They got away it with.", tag:"Repair the word order", accept:["they got away with it"], model:"They got away with it."},
   {ctx:"We can’t keep the demand up with.", tag:"Repair the word order", accept:["we can't keep up with the demand","we cannot keep up with the demand"], model:"We can’t keep up with the demand."},
@@ -569,45 +570,98 @@ $("tCheck").addEventListener("click", function(){
 $("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); }); renderTrans();
 
 /* =====================================================================
-   DRILL · one graded flow — 13 items (5★ / 4★★ / 4★★★)
+   DRILL · one graded flow — bank of 25 items (9★ / 8★★ / 8★★★), 15 per attempt
 ===================================================================== */
 var DRILL = [
   {kind:"mc", diff:1, tag:"Meaning", q:"Which three-part verb means <i>tolerate</i>?", o:["put up with","make up for","run out of"], a:0, w:"put up with = tolerate."},
   {kind:"mc", diff:1, tag:"Meaning", q:"Which three-part verb means <i>escape punishment for</i>?", o:["do away with", "get away with", "come up against"], a:1, w:"get away with = escape punishment for."},
   {kind:"mc", diff:1, tag:"Choose the verb", q:"She ___ her science teacher. (= admires)", o:["looks forward to", "looks up", "looks up to"], a:2, w:"look up to = admire; all three parts must be there."},
-  {kind:"fill", diff:1, tag:"Complete it", q:"Cell phones have almost ___ public telephones. (= removed — 3 words)", accept:["done away with"], w:"do away with = remove / abolish; the participle is done away with."},
-  {kind:"error", diff:1, tag:"Fix the error", words:["We","must","do","it","away","with."], bad:3, fixOld:"do it away with", fixNew:"do away with it", w:"Three-part verbs never split: the object comes after all three parts."},
-  {kind:"error", diff:2, tag:"Fix the error", words:["They","got","away","it","with."], bad:3, fixOld:"got away it with", fixNew:"got away with it", w:"A pronoun object also waits until after the preposition."},
-  {kind:"fill", diff:2, tag:"Formal → informal", q:"“We must reduce our screen time.” → We must ___ our screen time. (3 words)", accept:["cut down on"], w:"cut down on = reduce."},
+  {kind:"fill", diff:1, tag:"Complete it", q:"Cell phones have almost ___ public telephones. (= abolished; use <b>do</b> + two particles — 3 words)", accept:["done away with"], w:"do away with = remove / abolish; the participle is done away with."},
+  {kind:"error", diff:1, tag:"Fix the error", ask:"Click the <b>object pronoun</b> that is in the wrong place.", words:["We","must","do","it","away","with."], bad:3, fixOld:"do it away with", fixNew:"do away with it", w:"Three-part verbs never split: the object comes after all three parts."},
+  {kind:"error", diff:2, tag:"Fix the error", ask:"Click the <b>object pronoun</b> that is in the wrong place.", words:["They","got","away","it","with."], bad:3, fixOld:"got away it with", fixNew:"got away with it", w:"A pronoun object also waits until after the preposition."},
+  {kind:"fill", diff:2, tag:"Formal → informal", q:"“We must reduce our screen time.” → We must ___ our screen time. (3 words)", accept:["cut down on","cut back on"], w:"cut down on = reduce. (cut back on works too.)"},
   {kind:"mc", diff:2, tag:"Word order", q:"Which sentence is correct?", o:["We can’t keep up with the demand.","We can’t keep the demand up with.","We can’t keep up the demand with."], a:0, w:"The object follows the whole verb: keep up with + the demand."},
-  {kind:"error", diff:2, tag:"Fix the error", words:["Companies","will","come","up","problems","against."], bad:4, fixOld:"come up problems against", fixNew:"come up against problems", w:"A noun object cannot break the verb either: come up against + problems."},
-  {kind:"fill", diff:3, tag:"-ing after to", q:"I look forward to ___ you at the fair. (meet)", accept:["meeting"], w:"look forward to <b>meeting</b> — here <i>to</i> is a preposition, so the verb takes -ing, never the infinitive."},
-  {kind:"error", diff:3, tag:"Fix the error", words:["I","look","forward","to","see","the","results."], bad:4, fixOld:"to see", fixNew:"to seeing", w:"Preposition <i>to</i> + -ing: to seeing, not to see."},
+  {kind:"error", diff:2, tag:"Fix the error", ask:"Click the <b>object</b> that is in the wrong place.", words:["Companies","will","come","up","problems","against."], bad:4, fixOld:"come up problems against", fixNew:"come up against problems", w:"A noun object cannot break the verb either: come up against + problems."},
+  {kind:"fill", diff:3, tag:"-ing after to", q:"I look forward to ___ you at the fair. (meet — 1 word)", accept:["meeting"], w:"look forward to <b>meeting</b> — here <i>to</i> is a preposition, so the verb takes -ing, never the infinitive."},
+  {kind:"error", diff:3, tag:"Fix the error", ask:"Click the <b>verb</b> that is in the wrong form.", words:["I","look","forward","to","see","the","results."], bad:4, fixOld:"to see", fixNew:"to seeing", w:"Preposition <i>to</i> + -ing: to seeing, not to see."},
   {kind:"mc", diff:3, tag:"Register", q:"In a formal report, which is better?", o:["The law should be done away with.", "The law should be abolished."], a:1, w:"Three-part verbs are informal; formal writing prefers one verb (do away with → abolish)."},
-  {kind:"fill", diff:3, tag:"Pronoun position", q:"Replace the object with a pronoun: “We must do away with this rule.” → We must ___. (4 words)", accept:["do away with it"], w:"The pronoun goes after all three parts: do away with it."}
+  {kind:"fill", diff:3, tag:"Pronoun position", q:"Replace the object with a pronoun: “We must do away with this rule.” → We must ___. (4 words)", accept:["do away with it"], w:"The pronoun goes after all three parts: do away with it."},
+  {kind:"mc", diff:1, tag:"Meaning", q:"“At busy stations you should ___ pickpockets.” (= be careful about)", o:["watch out for", "look up to", "make up for"], a:0, w:"watch out for = notice a danger and be careful about it. The three pieces carry one meaning together, so you cannot swap any of them."},
+  {kind:"mc", diff:1, tag:"Which particles?", q:"“By Sunday the museum shop had run ___ postcards.”", o:["out of", "up for", "down on"], a:0, w:"run out of = have no more of. The particle pair is fixed: change one piece and the verb no longer exists."},
+  {kind:"fill", diff:1, tag:"Complete it", q:"“A free dinner does not ___ a ruined weekend.” (= compensate for — 3 words)", accept:["make up for"], w:"make up for = compensate for. All three pieces appear together and the object follows them."},
+  {kind:"error", diff:1, tag:"Fix the error", words:["The", "hotel", "refuses", "to", "put", "up", "of", "late", "check-outs."], bad:6, fixOld:"put up of", fixNew:"put up with", w:"put up with = tolerate. The third piece is <i>with</i>; these verbs come as one fixed set of three words."},
+  {kind:"mc", diff:2, tag:"Pronoun position", q:"“Our taxi left first, but the hotel van ___ near the bridge.”", o:["caught up with us","caught us up with","caught up us with"], a:0, w:"Three-part verbs are inseparable: even a pronoun waits until after the preposition — catch up with us, never catch us up with."},
+  {kind:"fill", diff:2, tag:"Complete it", q:"“Our guide walked fast, but we managed to ___ her all the way to the temple.” (= go at the same speed as — 3 words)", accept:["keep up with"], w:"keep up with = move at the same speed as someone for a whole period; catch up with is different — it means reach someone after falling behind, so it cannot describe the whole walk."},
+  {kind:"error", diff:2, tag:"Fix the error", ask:"Click the <b>object</b> that is in the wrong place.", words:["The", "resort", "chain", "cut", "down", "packaging", "on", "last", "year."], bad:5, fixOld:"cut down packaging on", fixNew:"cut down on packaging", w:"cut down on = reduce. A noun object cannot sit inside the verb; it waits until after <i>on</i>."},
+  {kind:"mc", diff:2, tag:"All three pieces", q:"“Last year the airline ___ strong opposition from local residents.”", o:["came up against", "came up", "came against"], a:0, w:"come up against = meet or encounter a problem. Without the third piece the verb cannot take an object: <i>came up strong opposition</i> is impossible."},
+  {kind:"mc", diff:3, tag:"Passive", q:"“Paper tickets ___ ten years ago.” (= were abolished)", o:["were done away with", "were done away", "were done with away"], a:0, w:"In the passive the three pieces stay together and in the same order, so the preposition ends the clause: were done away with."},
+  {kind:"mc", diff:3, tag:"Two parts or three?", q:"Only ONE of these is correct. Which one?", o:["The driver picked us up and we put up with the traffic.", "The driver picked up us and we put up with the traffic.", "The driver picked us up and we put the traffic up with."], a:0, w:"pick up has two parts and splits, so a pronoun must go in the middle; put up with has three parts and never splits."},
+  {kind:"fill", diff:3, tag:"-ing after to", q:"“After a week on the island, I got used to ___ on the left.” (drive — 1 word)", accept:["driving"], w:"In get used to, <i>to</i> is a preposition, exactly as in look forward to, so the verb after it takes -ing."},
+  {kind:"error", diff:3, tag:"Fix the error", ask:"Click the <b>verb</b> that is in the wrong form.", words:["The", "tour", "company", "is", "committed", "to", "reduce", "plastic", "waste."], bad:6, fixOld:"to reduce", fixNew:"to reducing", w:"be committed to ends in the preposition <i>to</i>, so the next verb takes -ing — the same trap as look forward to."}
 ];
+
+/* Banco ampliado: cada intento toma DRILL_N preguntas nuevas, repartidas
+   ★/★★/★★★. Pon DRILL_N = 0 para que el intento use el banco completo. */
+var DRILL_N = 15;
+function drillShuffle(a){ for(var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=a[i]; a[i]=a[j]; a[j]=t; } return a; }
+function barajaOpciones(lista){
+  // Las claves estaban concentradas en la primera opción: quien tocara siempre la
+  // primera acertaba ~70 % sin leer. Se barajan al sortear y se remapea la clave.
+  var out=[];
+  for(var i=0;i<lista.length;i++){
+    var it=lista[i];
+    if(it.kind!=="mc" || !it.o || it.o.length<2){ out.push(it); continue; }
+    var pares=[];
+    for(var j=0;j<it.o.length;j++) pares.push({t:it.o[j], ok:(j===it.a)});
+    drillShuffle(pares);
+    var copia={}; for(var k in it){ if(Object.prototype.hasOwnProperty.call(it,k)) copia[k]=it[k]; }
+    copia.o=[]; copia.a=0;
+    for(var m=0;m<pares.length;m++){ copia.o.push(pares[m].t); if(pares[m].ok) copia.a=m; }
+    out.push(copia);
+  }
+  return out;
+}
+function pickRun(){
+  var por={1:[],2:[],3:[]};
+  DRILL.forEach(function(it){ (por[it.diff]||por[1]).push(it); });
+  var todos=drillShuffle(por[1].slice()).concat(drillShuffle(por[2].slice()), drillShuffle(por[3].slice()));
+  if(!DRILL_N || DRILL_N>=DRILL.length) return barajaOpciones(todos);
+  var base=Math.floor(DRILL_N/3), sobra=DRILL_N-base*3, out=[];
+  [1,2,3].forEach(function(d,i){
+    var n=base+(i<sobra?1:0), pool=drillShuffle(por[d].slice());
+    out=out.concat(pool.slice(0, Math.min(n, pool.length)));
+  });
+  // si algún nivel tenía menos de los que tocaban, se completa con lo que quede
+  if(out.length<DRILL_N){
+    var resto=todos.filter(function(it){ return out.indexOf(it)<0; });
+    out=out.concat(resto.slice(0, DRILL_N-out.length));
+  }
+  return barajaOpciones(out);
+}
+var RUN = pickRun();
 var di=0, dscore=0, dstreak=0, ddone=false;
 function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
 function renderDrill(){
   var body=$("drillBody");
-  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dFill").style.width=(di/RUN.length*100)+"%";
   $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
-  if(di>=DRILL.length){
+  if(di>=RUN.length){
     var best=+(load("i6_s6_drill_best")||0); if(dscore>best){ store("i6_s6_drill_best", dscore); best=dscore; }
-    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
-    var msg=dscore>=11?"The machine is assembled. Ready for the ★★★ homework." : dscore>=8?"Good work — review the special-cases card and go again." : "Re-read Structure 6, use Explore and Build, then come back.";
-    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    var gold=Math.ceil(RUN.length*0.85), silver=Math.ceil(RUN.length*0.6);
+    var medal=dscore>=gold?"🥇":dscore>=silver?"🥈":"🔁";
+    var msg=dscore>=gold?"The machine is assembled. Ready for the ★★★ homework." : dscore>=silver?"Good work — review the special-cases card and go again." : "Re-read Structure 6, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+RUN.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+RUN.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
     $("dFill").style.width="100%";
-    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    $("dRetry").addEventListener("click", function(){ RUN=pickRun(); di=0; dscore=0; dstreak=0; renderDrill(); });
     return;
   }
-  var it=DRILL[di]; ddone=false;
-  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var it=RUN[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+RUN.length+'</span></div>'+(it.q||"")+"</div>";
   var bodyHtml="";
   if(it.kind==="mc"){
     bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
   } else if(it.kind==="error"){
-    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+RUN.length+'</span></div>'+(it.ask||"Click the word that is wrong.")+"</div>";
     bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
   } else {
     bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';

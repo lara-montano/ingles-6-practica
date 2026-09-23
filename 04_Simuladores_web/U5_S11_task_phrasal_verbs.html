@@ -257,7 +257,7 @@
       <span class="boxtag tag-excep">⭐ Separable or not? The five rules</span>
       <h2>The traps of Structure 11</h2>
       <div class="seg2" id="scSeg">
-        <button data-v="sep" class="on">separable</button><button data-v="frame">get … over with</button><button data-v="three">three-word</button><button data-v="ing">around to + -ing</button><button data-v="reg">register</button>
+        <button data-v="sep" class="on">separable</button><button data-v="frame">get … over with</button><button data-v="three">three-word</button><button data-v="ing">to + -ing</button><button data-v="reg">register</button>
       </div>
       <div class="scout" id="scOut"></div>
     </div>
@@ -313,6 +313,7 @@
     <div class="card">
       <span class="boxtag tag-navy">🎯 Graded practice</span>
       <h2>Drill — one flow, three levels</h2>
+      <p class="muted" style="margin:-4px 0 10px; font-size:13px">Bank of 25 questions — each attempt draws 15 new ones. <i>(Cada intento saca preguntas distintas: repítelo.)</i></p>
       <p class="muted">★ meaning &amp; formal twin · ★★ separability and <i>-ing</i> · ★★★ the fixed frame and register.
         Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
       <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
@@ -354,7 +355,7 @@ navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.d
          frame = fixed frame (get … over with) · none = no object here
 ===================================================================== */
 var PV = [
-  {v:"get", p:["down","to"], type:"three", stage:"start", label:"get down to", formal:"begin", mean:"start doing something seriously", es:"ponerse manos a la obra con algo", ex:'I finally <b>got down to</b> my biology project.', obj:{noun:"work", pron:"it"}, rule:"Three-word verb — <b>inseparable</b>. The object comes after all three parts: get down to <b>work</b>."},
+  {v:"get", p:["down","to"], type:"three", stage:"start", label:"get down to", formal:"begin", mean:"start doing something seriously", es:"ponerse manos a la obra con algo", ex:'I finally <b>got down to</b> my biology project.', obj:{noun:"work", pron:"it"}, rule:"Three-word verb — <b>inseparable</b>. The object comes after all three parts: get down to <b>work</b>. And <i>to</i> is a preposition here, so a verb after it takes <b>-ing</b>: get down to <b>writing</b>."},
   {v:"put", p:["off"], type:"sep", stage:"delay", label:"put (something) off", formal:"postpone", mean:"postpone, delay", es:"posponer, aplazar", ex:'I have been <b>putting</b> the essay <b>off</b> for weeks.', obj:{noun:"the essay", pron:"it"}, rule:"<b>Separable</b>: put off the essay / put the essay off — but a <b>pronoun must</b> go in the middle: put <b>it</b> off."},
   {v:"catch", p:["up","on"], type:"three", stage:"catch", label:"catch up on (something)", mean:"do something you are behind on", es:"ponerse al día con algo", ex:'On Sunday I <b>catch up on</b> sleep.', obj:{noun:"sleep", pron:"it"}, rule:"Three-word verb — <b>inseparable</b>: catch up on <b>sleep</b>, never <i>catch sleep up on</i>."},
   {v:"get", p:["around","to"], type:"three", stage:"start", label:"get around to (something)", mean:"finally do something you had planned", es:"por fin llegar a hacer algo", ex:'I finally <b>got around to</b> cleaning my desk.', obj:{noun:"the report", pron:"it"}, rule:"Three-word verb — <b>inseparable</b>, and the verb after it takes <b>-ing</b>: got around to <b>cleaning</b>."},
@@ -485,7 +486,7 @@ var SC = {
   sep:"<b>Separable verbs</b> let the object go in the middle: <i>put off the meeting</i> / <i>put the meeting off</i>. With a <b>pronoun</b> the middle is the only option: ✔ <i>put <b>it</b> off</i>, ✔ <i>do <b>it</b> over</i>, ✔ <i>stress <b>me</b> out</i> — ✘ <i>put off it</i>.",
   frame:"<b>get … over with</b> keeps a fixed frame around the object: ✔ <i>Let’s <b>get it over with</b>.</i> ✘ <i>get over with it</i>. The same with a noun: <i>get this job over with</i>.",
   three:"<b>Three-word verbs are inseparable</b> — the object comes after all the parts: <i>catch up on <b>sleep</b></i>, <i>get around to <b>it</b></i>, <i>get down to <b>work</b></i>. And don’t drop the last part: ✘ <i>get down work</i>.",
-  ing:"<b>get around to + -ing</b>: the verb that follows takes <i>-ing</i>, because <i>to</i> here is a preposition. ✔ <i>I finally got around to <b>cleaning</b> my desk.</i> ✘ <i>got around to clean</i>.",
+  ing:"<b>get around to + -ing</b>: the verb that follows takes <i>-ing</i>, because <i>to</i> here is a preposition, not the <i>to</i> of the infinitive. ✔ <i>I finally got around to <b>cleaning</b> my desk.</i> ✘ <i>got around to clean</i>. The same happens with <b>get down to</b>: ✔ <i>I got down to <b>writing</b> the report.</i> ✘ <i>got down to write</i>.",
   reg:"<b>Register:</b> these verbs are <b>informal</b>. Formal writing prefers the single verb: <i>put off</i> → <b>postpone</b>, <i>get down to</i> → <b>begin</b>. To <b>procrastinate</b> is to keep putting things off — the enemy of every deadline."
 };
 document.querySelectorAll("#scSeg button").forEach(function(b){
@@ -513,7 +514,7 @@ ERR.forEach(function(e){
 ===================================================================== */
 var BUILD = [
   {sit:"You are postponing the essay again.", obj:"it", verbs:["stick with","put off","get over with"], vA:"put off", pos:"mid", out:"I keep <b>putting it off</b>.", note:"put off is separable, and a pronoun must go in the middle."},
-  {sit:"You must finally start working seriously on your project.", obj:"my project", verbs:["get down to","do over","catch up on"], vA:"get down to", pos:"end", out:"I finally have to <b>get down to my project</b>.", note:"get down to is a three-word verb — inseparable."},
+  {sit:"You must finally start working seriously on your project.", obj:"my project", verbs:["get down to","do over","catch up on"], vA:"get down to", pos:"end", out:"I really have to <b>get down to my project</b>.", note:"get down to is a three-word verb — inseparable."},
   {sit:"On Sunday you do something you are behind on: sleep.", obj:"sleep", verbs:["keep at","stress out","catch up on"], vA:"catch up on", pos:"end", out:"On Sunday I <b>catch up on sleep</b>.", note:"catch up on is inseparable: the object follows all three parts."},
   {sit:"Three deadlines are making you anxious.", obj:"me", verbs:["stress out","give up","put off"], vA:"stress out", pos:"mid", out:"Three deadlines are <b>stressing me out</b>.", note:"stress out is separable; the pronoun me goes in the middle."},
   {sit:"You want to finish an unpleasant job right now.", obj:"it", verbs:["get around to","get over with","do over"], vA:"get over with", pos:"mid", out:"Let’s <b>get it over with</b>.", note:"get … over with is a fixed frame: the object sits inside it."},
@@ -568,7 +569,7 @@ var TRANS = [
   {ctx:"I need to begin studying seriously. <i>(GET)</i>", model:"I need to get down to studying (seriously).", accept:["i need to get down to studying","i need to get down to studying seriously","i need to get down to some serious studying","i need to get down to serious studying","i need to get down to my studies"]},
   {ctx:"Let’s finish this unpleasant task. <i>(OVER)</i>", model:"Let’s get it over with. (or: Let’s get this task over with.)", accept:["let's get it over with","lets get it over with","let's get this task over with","lets get this task over with","let's get this over with","lets get this over with"]},
   {ctx:"She refused to stop trying. <i>(use a phrasal verb)</i>", model:"She refused to give up.", accept:["she refused to give up"]},
-  {ctx:"I finally did the report I had been planning. <i>(AROUND)</i>", model:"I finally got around to doing the report.", accept:["i finally got around to doing the report","i got around to doing the report","i finally got around to the report","i got around to the report"]},
+  {ctx:"I finally did the report I had been planning. <i>(AROUND)</i>", model:"I finally got around to doing the report.", accept:["i finally got around to doing the report","i got around to doing the report","i finally got around to the report","i got around to the report","i finally got around to writing the report","i finally got around to doing it","i got around to doing it"]},
   {ctx:"Put the pronoun in its place: Don’t put off ___ any longer. <i>(it)</i>", model:"Don’t put it off any longer.", accept:["don't put it off any longer","dont put it off any longer","do not put it off any longer","don't put it off","dont put it off"]},
   {ctx:"Put the pronoun in its place: This deadline is stressing out ___ . <i>(me)</i>", model:"This deadline is stressing me out.", accept:["this deadline is stressing me out","it is stressing me out","it's stressing me out","its stressing me out"]},
   {ctx:"Fix the form: I got around to clean my room.", model:"I got around to cleaning my room.", accept:["i got around to cleaning my room","i finally got around to cleaning my room"]}
@@ -586,7 +587,7 @@ $("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderT
 renderTrans();
 
 /* =====================================================================
-   DRILL · one graded flow — 13 items (5★ / 4★★ / 4★★★)
+   DRILL · one graded flow — bank of 25 items (9★ / 8★★ / 8★★★); each run draws DRILL_N
 ===================================================================== */
 var DRILL = [
   {kind:"mc", diff:1, tag:"Meaning", q:"Which phrasal verb means <i>start doing something seriously</i>?", o:["get down to","get around to","catch up on"], a:0, w:"get down to = start doing something seriously."},
@@ -600,31 +601,84 @@ var DRILL = [
   {kind:"fill", diff:2, tag:"Complete the verb", q:"“I must get down ___ work.” (one word)", accept:["to"], w:"get down to has three parts — don’t drop to."},
   {kind:"fill", diff:3, tag:"Form after the verb", q:"“I finally got around to ___ my desk.” (clean)", accept:["cleaning"], w:"get around to + -ing: got around to cleaning."},
   {kind:"error", diff:3, tag:"Fix the error", ask:"Click the <b>object pronoun</b> that is in the wrong place.", words:["Let’s","get","over","with","it","now."], bad:4, fixOld:"get over with it", fixNew:"get it over with", w:"get … over with is a fixed frame: the object goes inside it."},
-  {kind:"mc", diff:3, tag:"Register", q:"In a formal report, which single verb replaces <i>put off</i>?", o:["procrastinate","postpone","catch up"], a:1, w:"These phrasal verbs are informal; formal writing prefers postpone."},
-  {kind:"fill", diff:3, tag:"Rewrite", q:"“Let’s finish this unpleasant task.” → Let’s ___ . (get · it · over · with)", accept:["get it over with","let's get it over with","lets get it over with"], w:"get it over with = finish something unpleasant."}
+  {kind:"mc", diff:3, tag:"Register", q:"This line from a report is too informal: <i>We put off the audit until June.</i> Which single verb replaces <i>put off</i> <b>in that sentence</b>?", o:["procrastinate","postpone","catch up"], a:1, w:"postpone takes an object, so it slots straight in: We postponed the audit until June. procrastinate is formal too, but it takes no object — it names the habit of delaying, not the act of moving one task to a later date. ✘ We procrastinated the audit."},
+  {kind:"fill", diff:3, tag:"Rewrite", q:"“Let’s finish this unpleasant task.” → Let’s ___ . (get · it · over · with)", accept:["get it over with","let's get it over with","lets get it over with"], w:"get it over with = finish something unpleasant."},
+  {kind:"mc", diff:1, tag:"Meaning", q:"“The first tours were almost empty, but the guide refused to ___.”", o:["do over","give up","keep at"], a:1, w:"give up = stop trying, and in this unit it takes no object. do over and keep at cannot close the sentence like this: both need an object (do it over, keep at it)."},
+  {kind:"mc", diff:1, tag:"Which particle?", q:"“Two tour groups arrived at the same time and it really stressed the new guide ___.”", o:["up","off","out"], a:2, w:"stress somebody out = make someone anxious. The particle out completes the meaning, and the verb is separable, so the object can sit in the middle: stressed the new guide out."},
+  {kind:"fill", diff:1, tag:"Word order", q:"“Don’t stop now — ___ and the brochure will be ready tonight.” (verb keep, object it — three words)", accept:["keep at it"], w:"keep at = keep working hard at something. It is verb + preposition, so it is inseparable: keep at it, never keep it at."},
+  {kind:"error", diff:1, tag:"Fix the error", ask:"Click the <b>particle</b> that is wrong.", words:["We","put","the","meeting","up","until","next","week."], bad:4, fixOld:"put the meeting up", fixNew:"put the meeting off", w:"postpone = put off. The particle carries the meaning, so changing off for up gives a different verb altogether."},
+  {kind:"mc", diff:2, tag:"Separable?", q:"Only one of these is possible. Which one?", o:["I’ll catch it up on this weekend.", "I’ll catch up it on this weekend.", "I’ll catch up on it this weekend."], a:2, w:"catch up on is a three-word verb, so it is inseparable: even a pronoun comes after all three parts."},
+  {kind:"mc", diff:2, tag:"Verb + pronoun", q:"“I’ll start the tour script on Saturday and ___ it until it’s finished.”", o:["put off", "stick with", "give up"], a:1, w:"stick with = continue and not abandon something. It is verb + preposition — inseparable — so the pronoun follows it: stick with it. A separable verb like put off would need the pronoun in the middle: put it off."},
+  {kind:"fill", diff:2, tag:"Pronoun placement", q:"“The photos came out blurry, so the designer did ___ .” (object: them — two words)", accept:["them over","did them over","them over again"], w:"do over is separable, and a pronoun must sit between the verb and the particle: did them over, never did over them."},
+  {kind:"error", diff:2, tag:"Fix the error", ask:"Click the <b>object pronoun</b> that is in the wrong place.", words:["I’ll","stick","it","with","until","the","tour","ends."], bad:2, fixOld:"stick it with", fixNew:"stick with it", w:"stick with is verb + preposition and therefore inseparable: nothing goes between the verb and with."},
+  {kind:"mc", diff:3, tag:"Formal → informal", q:"A formal report says: <i>We will begin the audit on Monday.</i> Which informal twin keeps the same meaning?", o:["get down to", "get around to", "catch up on"], a:0, w:"get down to is the informal twin of begin: start working seriously. get around to adds the extra idea of finally doing something you had been delaying."},
+  {kind:"mc", diff:3, tag:"Meaning contrast", q:"“The questionnaire was full of mistakes, so we had to ___ from the start.”", o:["do it over", "get it over with", "catch up on it"], a:0, w:"do something over = repeat it because it was done badly. get … over with means finish an unpleasant job and catch up on means deal with work you are behind on — neither means repeat."},
+  {kind:"fill", diff:3, tag:"Pronoun placement", q:"“I missed a whole week of client emails. On Sunday I’ll catch ___ .” (catch up on + them — three words)", accept:["up on them","catch up on them","i'll catch up on them"], w:"catch up on is inseparable, so even a pronoun goes after all three parts: catch up on them. ✘ catch them up on."},
+  {kind:"error", diff:3, tag:"Fix the error", ask:"Click the <b>verb form</b> that is wrong.", words:["On","Monday","I","finally","got","down","to","write","the","report."], bad:7, fixOld:"got down to write", fixNew:"got down to writing", w:"In get down to, to is a preposition, not an infinitive marker, so the verb after it takes -ing — the same rule as got around to cleaning."}
 ];
+
+/* Banco ampliado: cada intento toma DRILL_N preguntas nuevas, repartidas
+   ★/★★/★★★. Pon DRILL_N = 0 para que el intento use el banco completo. */
+var DRILL_N = 15;
+function drillShuffle(a){ for(var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=a[i]; a[i]=a[j]; a[j]=t; } return a; }
+function barajaOpciones(lista){
+  // Las claves estaban concentradas en la primera opción: quien tocara siempre la
+  // primera acertaba ~70 % sin leer. Se barajan al sortear y se remapea la clave.
+  var out=[];
+  for(var i=0;i<lista.length;i++){
+    var it=lista[i];
+    if(it.kind!=="mc" || !it.o || it.o.length<2){ out.push(it); continue; }
+    var pares=[];
+    for(var j=0;j<it.o.length;j++) pares.push({t:it.o[j], ok:(j===it.a)});
+    drillShuffle(pares);
+    var copia={}; for(var k in it){ if(Object.prototype.hasOwnProperty.call(it,k)) copia[k]=it[k]; }
+    copia.o=[]; copia.a=0;
+    for(var m=0;m<pares.length;m++){ copia.o.push(pares[m].t); if(pares[m].ok) copia.a=m; }
+    out.push(copia);
+  }
+  return out;
+}
+function pickRun(){
+  var por={1:[],2:[],3:[]};
+  DRILL.forEach(function(it){ (por[it.diff]||por[1]).push(it); });
+  var todos=drillShuffle(por[1].slice()).concat(drillShuffle(por[2].slice()), drillShuffle(por[3].slice()));
+  if(!DRILL_N || DRILL_N>=DRILL.length) return barajaOpciones(todos);
+  var base=Math.floor(DRILL_N/3), sobra=DRILL_N-base*3, out=[];
+  [1,2,3].forEach(function(d,i){
+    var n=base+(i<sobra?1:0), pool=drillShuffle(por[d].slice());
+    out=out.concat(pool.slice(0, Math.min(n, pool.length)));
+  });
+  // si algún nivel tenía menos de los que tocaban, se completa con lo que quede
+  if(out.length<DRILL_N){
+    var resto=todos.filter(function(it){ return out.indexOf(it)<0; });
+    out=out.concat(resto.slice(0, DRILL_N-out.length));
+  }
+  return barajaOpciones(out);
+}
+var RUN = pickRun();
 var di=0, dscore=0, dstreak=0, ddone=false;
 function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
 function renderDrill(){
   var body=$("drillBody");
-  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dFill").style.width=(di/RUN.length*100)+"%";
   $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
-  if(di>=DRILL.length){
+  if(di>=RUN.length){
     var best=+(load("i6_s11_drill_best")||0); if(dscore>best){ store("i6_s11_drill_best", dscore); best=dscore; }
-    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
-    var msg=dscore>=11?"Nothing left to put off — ready for the ★★★ homework." : dscore>=8?"Solid. Review the object-slot card and go again." : "Re-read Structure 11, use Explore and Build, then come back.";
-    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    var gold=Math.ceil(RUN.length*0.85), silver=Math.ceil(RUN.length*0.6);
+    var medal=dscore>=gold?"🥇":dscore>=silver?"🥈":"🔁";
+    var msg=dscore>=gold?"Nothing left to put off — ready for the ★★★ homework." : dscore>=silver?"Solid. Review the object-slot card and go again." : "Re-read Structure 11, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+RUN.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+RUN.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
     $("dFill").style.width="100%";
-    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    $("dRetry").addEventListener("click", function(){ RUN=pickRun(); di=0; dscore=0; dstreak=0; renderDrill(); });
     return;
   }
-  var it=DRILL[di]; ddone=false;
-  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var it=RUN[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+RUN.length+'</span></div>'+(it.q||"")+"</div>";
   var bodyHtml="";
   if(it.kind==="mc"){
     bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
   } else if(it.kind==="error"){
-    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.ask||"Click the word that is wrong.")+"</div>";
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+RUN.length+'</span></div>'+(it.ask||"Click the word that is wrong.")+"</div>";
     bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
   } else {
     bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
