@@ -298,6 +298,7 @@
     <div class="card">
       <span class="boxtag tag-navy">🎯 Graded practice</span>
       <h2>Drill — one flow, three levels</h2>
+      <p class="muted" style="margin:-4px 0 10px; font-size:13px">Bank of 36 questions — each attempt draws 18 new ones. <i>(Cada intento saca preguntas distintas: repítelo.)</i></p>
       <p class="muted">★ meaning &amp; form · ★★ pronoun placement &amp; separability · ★★★ register, inseparable verbs &amp; traps. Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
       <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
       <div id="drillBody"></div>
@@ -465,7 +466,7 @@ syncKind(); renderObj();
 
 /* ---- particle families (same verbs, sorted by particle) ---- */
 var FAM = [
-  {p:"off", list:"set off · take off · see (sb) off · drop (sb) off · get off", note:"In these travel verbs <b>off</b> marks leaving: a journey starts, a plane leaves the ground, a person is left behind."},
+  {p:"off", list:"set off · take off · see (sb) off · drop (sb) off · get off", note:"In these travel verbs <b>off</b> marks a departure: a journey starts, a plane leaves the ground, a passenger is left at a place, or you go to say goodbye to someone who is leaving."},
   {p:"up", list:"pick (sb) up · put (sb) up · end up", note:"<b>up</b> here is about collecting someone, taking someone in, or finishing somewhere."},
   {p:"in / out", list:"check in · check out", note:"<b>in / out</b> is the hotel or airport desk: you register (in) and you leave (out)."},
   {p:"on / off", list:"get on · get off", note:"<b>on / off</b> with transport: you board a bus, train or plane, and you leave it."},
@@ -519,11 +520,11 @@ var PARTS = ["off","in","away","around","up","over"];
 var BUILD = [
   {ctx:"Our flight finally ___ two hours late.", v:"take", p:"off", out:"Our flight finally <b>took off</b> two hours late.", note:"take off = a plane leaves the ground. Past: took off."},
   {ctx:"We ___ at 5 a.m. to avoid the traffic.", v:"set", p:"off", out:"We <b>set off</b> at 5 a.m. to avoid the traffic.", note:"set off (or set out) = begin a journey. Past: set off."},
-  {ctx:"You can't ___ to the hotel before 3 p.m.", v:"check", p:"in", out:"You can't <b>check in</b> to the hotel before 3 p.m.", note:"check in = register at a hotel; check out = leave it."},
+  {ctx:"You can't ___ at the hotel before 3 p.m.", v:"check", p:"in", out:"You can't <b>check in</b> at the hotel before 3 p.m.", note:"check in = register at a hotel; check out = leave it."},
   {ctx:"We got lost and ___ in a village nobody had heard of.", v:"end", p:"up", out:"We got lost and <b>ended up</b> in a village nobody had heard of.", note:"end up = finally arrive or become. Past: ended up."},
   {ctx:"The taxi dropped us off, and our friends waited at the gate to ___ us ___.", v:"see", p:"off", out:"The taxi dropped us off, and our friends waited at the gate to <b>see us off</b>.", note:"see (sb) off = say goodbye at the station or airport. It is separable, and the pronoun goes in the middle."},
   {ctx:"Everyone needs to ___ from routine once in a while.", v:"get", p:"away", out:"Everyone needs to <b>get away</b> from routine once in a while.", note:"get away = escape for a holiday."},
-  {ctx:"On the way to Asia, we ___ in Dubai for a night and reached Tokyo the next day.", v:"stop", p:"over", out:"On the way to Asia, we <b>stopped over</b> in Dubai for a night and reached Tokyo the next day.", note:"stop over = break a journey briefly. Past: stopped over. (Not end up: the journey continued to Tokyo.)"},
+  {ctx:"On the way to Asia, we ___ in Dubai for a night and reached Tokyo the next day.", v:"stop", p:"over", out:"On the way to Asia, we <b>stopped over</b> in Dubai for a night and reached Tokyo the next day.", note:"stop over = break a journey briefly. Past: stopped over. (Not end up: the journey continued to Tokyo.)", also:[{v:"stop", p:"off", out:"On the way to Asia, we <b>stopped off</b> in Dubai for a night and reached Tokyo the next day.", note:"stop off is also correct English for a short break inside a journey. The verb this unit practises is <b>stop over</b>, the usual word for a night between two flights."}]},
   {ctx:"My aunt kindly ___ me ___ for a whole week in Madrid.", v:"put", p:"up", out:"My aunt kindly <b>put me up</b> for a whole week in Madrid.", note:"put (sb) up = give someone a place to stay. Formal: accommodate."},
   {ctx:"Let's ___ the old town before lunch.", v:"look", p:"around", out:"Let's <b>look around</b> the old town before lunch.", note:"look around = explore. It is inseparable: the object follows the particle."},
   {ctx:"A taxi will ___ us ___ at the hotel and drive us to the airport.", v:"pick", p:"up", out:"A taxi will <b>pick us up</b> at the hotel and drive us to the airport.", note:"pick (sb) up = collect someone. A pronoun goes in the middle."}
@@ -555,9 +556,15 @@ function renderBuild(){
 $("bBuild").addEventListener("click", function(){
   var it=BUILD[bi], r=$("bresult");
   if(!bV||!bP){ r.className="bresult bad"; r.innerHTML="Choose a verb <b>and</b> a particle first."; return; }
-  var vOk=bV===it.v, pOk=bP===it.p;
+  var vOk=bV===it.v, pOk=bP===it.p, alt=null;
+  if(!(vOk&&pOk) && it.also){
+    for(var ai=0; ai<it.also.length; ai++){ if(it.also[ai].v===bV && it.also[ai].p===bP){ alt=it.also[ai]; break; } }
+  }
   if(vOk&&pOk){
     r.className="bresult good"; r.innerHTML="✅ "+it.out+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else if(alt){
+    r.className="bresult good"; r.innerHTML="✅ "+alt.out+'<div class="bnote">'+alt.note+"</div>";
     bBuilt++; $("bScore").textContent="Built: "+bBuilt;
   } else {
     if(!vOk) document.querySelector('#verbChips button[data-v="'+bV+'"]').classList.add("wrongpick");
@@ -574,7 +581,7 @@ var TRANS = [
   {ctx:"Can you drop off / (me) near the port?", accept:["drop me off","can you drop me off","can you drop me off near the port"], model:"drop me off — Can you drop me off near the port?"},
   {ctx:"They saw off / (them) at the gate.", accept:["saw them off","they saw them off","they saw them off at the gate"], model:"saw them off — They saw them off at the gate."},
   {ctx:"A local family put up / (us) for the night.", accept:["put us up","a local family put us up","a local family put us up for the night"], model:"put us up — A local family put us up for the night."},
-  {ctx:"Replace the formal verb: We will depart at dawn.", accept:["set off","set out","will set off","will set out","we will set off","we will set out","we will set off at dawn","we will set out at dawn"], model:"set off / set out — We will set off at dawn."},
+  {ctx:"Replace the formal verb: We will depart at dawn.", accept:["set off","set out","will set off","will set out","we will set off","we will set out","we will set off at dawn","we will set out at dawn","we'll set off","we'll set out","we'll set off at dawn","we'll set out at dawn"], model:"set off / set out — We will set off at dawn."},
   {ctx:"Replace the formal verb: Let's explore the market.", accept:["look around","look round","look around the market","look round the market","let's look around the market","lets look around the market"], model:"look around — Let's look around the market."},
   {ctx:"Replace the formal verb: They accommodated us for two nights.", accept:["put us up","they put us up","they put us up for two nights"], model:"put us up — They put us up for two nights."},
   {ctx:"Replace the formal verb: The plane will collect passengers in Lima.", accept:["pick up","pick up passengers","pick up the passengers","pick passengers up","pick the passengers up","will pick up","will pick up passengers","the plane will pick up passengers in lima"], model:"pick up — The plane will pick up passengers in Lima."}
@@ -592,45 +599,108 @@ $("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderT
 renderTrans();
 
 /* =====================================================================
-   DRILL · one graded flow (13 items: 5★ / 4★★ / 4★★★)
+   DRILL · one graded flow (36 items: 13★ / 12★★ / 11★★★; cada intento saca DRILL_N)
 ===================================================================== */
 var DRILL = [
   {kind:"mc", diff:1, tag:"Which particle?", q:"“The plane ___ two hours late.”", o:["took off", "took up"], a:0, w:"take off = a plane leaves the ground; the particle carries the meaning."},
   {kind:"mc", diff:1, tag:"Meaning", q:"Which phrasal verb means “give someone a place to stay”?", o:["see (sb) off", "put (sb) up", "stop over"], a:1, w:"put (sb) up = give someone a place to stay (formal: accommodate)."},
   {kind:"fill", diff:1, tag:"Begin a journey", q:"“We ___ at 5 a.m. to avoid the traffic.” (2 words, past)", accept:["set off","set out"], w:"set off / set out = begin a journey; the past form is the same."},
   {kind:"mc", diff:1, tag:"Pronoun rule", q:"“A taxi will ___ at six.”", o:["pick us up","pick up us"], a:0, w:"A pronoun object must go between the verb and the particle: pick us up."},
-  {kind:"error", diff:1, tag:"Fix the error", words:["We","got","lost","and","ended","off","in","the","wrong","town."], bad:5, fixOld:"ended off", fixNew:"ended up", w:"end up = finally arrive somewhere; the particle is up, not off."},
-  {kind:"error", diff:2, tag:"Fix the error", words:["Can","you","look","around","the","children","tonight?"], bad:3, fixOld:"look around the children", fixNew:"look after the children", w:"look after = take care of somebody; look around = explore a place. Both are inseparable, so the object always follows the particle: look after the children, look after them."},
+  {kind:"error", diff:1, tag:"Fix the error", ask:"Click the <b>particle</b> that is wrong.", words:["We","got","lost","and","ended","off","in","the","wrong","town."], bad:5, fixOld:"ended off", fixNew:"ended up", w:"end up = finally arrive somewhere; the particle is up, not off."},
+  {kind:"error", diff:2, tag:"Fix the error", ask:"Click the <b>particle</b> that is wrong.", words:["Can","you","look","around","the","children","tonight?"], bad:3, fixOld:"look around the children", fixNew:"look after the children", w:"look after = take care of somebody; look around = explore a place. Both are inseparable, so the object always follows the particle: look after the children, look after them."},
   {kind:"fill", diff:2, tag:"Pronoun placement", q:"“Can you drop ___ near the port?” (object: me — 2 words)", accept:["me off"], w:"Pronoun between verb and particle: drop me off."},
   {kind:"mc", diff:2, tag:"Separable or not?", q:"Which sentence is correct?", o:["We looked the old town around.","We looked around the old town."], a:1, w:"look around is inseparable: the verb and the particle never separate."},
-  {kind:"fill", diff:2, tag:"Break a journey", q:"“We ___ in Seoul for one night and reached Tokyo the next day.” (2 words, past)", accept:["stopped over"], w:"stop over = break a journey briefly; past: stopped over. (Not ended up: the journey continued to Tokyo.)"},
+  {kind:"fill", diff:2, tag:"Break a journey", q:"“We ___ in Seoul for one night and reached Tokyo the next day.” (2 words, past — the verb is stop)", accept:["stopped over","stopped off"], w:"stop over = break a journey briefly; past: stopped over. (stopped off is also correct English for a short break inside a journey, so the drill accepts it too. Not ended up: the journey continued to Tokyo.)"},
   {kind:"fill", diff:3, tag:"Formal → phrasal", q:"“They accommodated us for two nights.” → They ___ for two nights. (3 words)", accept:["put us up"], w:"put (sb) up = accommodate, and the pronoun goes in the middle: put us up."},
   {kind:"error", diff:3, tag:"Fix the error", words:["We","checked-in","at","noon","after","a","long","flight."], bad:1, fixOld:"checked-in", fixNew:"checked in", w:"check in is a two-word verb. checked-in with a hyphen is not a verb: We checked in at noon."},
   {kind:"mc", diff:3, tag:"Register", q:"Formal writing prefers one verb. “look around” →", o:["accommodate", "depart", "explore"], a:2, w:"Register: look around → explore (set off → depart, put up → accommodate)."},
-  {kind:"error", diff:3, tag:"Fix the error", words:["We","set","off","to","the","airport","at","dawn."], bad:3, fixOld:"set off to the airport", fixNew:"set off for the airport", w:"set off takes for + destination; it never takes a direct object."}
+  {kind:"error", diff:3, tag:"Fix the error", ask:"Click the <b>preposition</b> that is wrong.", words:["We","set","off","to","the","airport","at","dawn."], bad:3, fixOld:"set off to the airport", fixNew:"set off for the airport", w:"set off takes for + destination; it never takes a direct object."},
+  {kind:"mc", diff:1, tag:"Meaning", q:"Which phrasal verb means “escape from your routine for a short holiday”?", o:["get away", "get off", "get on"], a:0, w:"get away = leave home or your routine for a holiday; get on and get off are about boarding or leaving a vehicle."},
+  {kind:"mc", diff:1, tag:"check in / check out", q:"“We ___ at the hotel on Friday and ___ on Monday morning.”", o:["checked in … checked out", "checked out … checked in"], a:0, w:"You check in when you arrive and register, and you check out when you leave at the end of your stay."},
+  {kind:"mc", diff:1, tag:"Which verb?", q:"“This is not our stop — we ___ the train at the next station.”", o:["get off", "take off", "get away"], a:0, w:"get off = leave a bus, train or plane; take off is what a plane does, and get away means go on holiday."},
+  {kind:"mc", diff:1, tag:"Meaning", q:"Which phrasal verb means “take someone somewhere and leave them there”?", o:["drop (sb) off", "see (sb) off", "put (sb) up"], a:0, w:"drop (sb) off = leave someone at a place; see (sb) off = go to the station or airport to say goodbye to them."},
+  {kind:"fill", diff:1, tag:"Board the coach", q:"“The tour group ___ the coach at the main square and found their seats.” (2 words, past)", accept:["got on","got onto"], w:"get on = board a bus, train or plane. It is inseparable, so the vehicle follows the particle: got on the coach (got onto the coach is also possible)."},
+  {kind:"fill", diff:1, tag:"Two meanings", q:"“Visitors have to ___ their shoes before entering the temple.” (2 words)", accept:["take off"], w:"take off means a plane leaves the ground, but also remove clothes or shoes. With clothes it is separable: take off your shoes / take your shoes off."},
+  {kind:"error", diff:1, tag:"Fix the error", ask:"Click the <b>particle</b> that is wrong.", words:["My", "cousins", "saw", "us", "away", "at", "the", "airport."], bad:4, fixOld:"saw us away", fixNew:"saw us off", w:"see (sb) off = say goodbye to someone who is leaving; the particle is off. away belongs to get away = go on holiday."},
+  {kind:"error", diff:1, tag:"Fix the error", ask:"Click the <b>particle</b> that is wrong.", words:["My", "cousin", "put", "us", "on", "for", "three", "nights", "in", "Lisbon."], bad:4, fixOld:"put us on", fixNew:"put us up", w:"put (sb) up = give someone a place to stay; the particle is up. The pronoun object stays in the middle: put us up."},
+  {kind:"mc", diff:2, tag:"Noun or pronoun?", q:"Which sentence is impossible?", o:["They saw their cousins off at the station.", "They saw off their cousins at the station.", "They saw off them at the station."], a:2, w:"A separable verb takes a noun object in either position, but a pronoun object only in the middle: saw them off."},
+  {kind:"mc", diff:2, tag:"Two meanings", q:"In which sentence does take off mean “remove clothes”?", o:["Our flight took off in heavy rain.", "Please take your coat off — the heating is on.", "The plane could not take off because of the fog."], a:1, w:"With the plane meaning take off has no object; with the clothes meaning it is separable: take your coat off / take off your coat."},
+  {kind:"mc", diff:2, tag:"Same meaning", q:"Which verb means the same as “set off”?", o:["set out", "set up", "set in"], a:0, w:"set off and set out both mean begin a journey. set up means establish or arrange, and it has nothing to do with travelling."},
+  {kind:"mc", diff:2, tag:"pick up or drop off?", q:"“The driver will ___ at the hotel at six and take us to the airport.”", o:["pick us up", "drop us off", "see us off"], a:0, w:"pick (sb) up = collect someone and take them somewhere; drop (sb) off is the opposite, leaving them at a place. Note the pronoun in the middle of both."},
+  {kind:"fill", diff:2, tag:"Escape for a holiday", q:"“They were exhausted, so they ___ to the coast for three days.” (2 words, past — the verb is get)", accept:["got away"], w:"get away = escape from home or routine for a holiday; the past form is got away."},
+  {kind:"fill", diff:2, tag:"No object", q:"“You can ___ online up to 24 hours before the flight.” (2 words)", accept:["check in"], w:"check in = register for a flight or at a hotel. Here it takes no object: check in online, check in at the desk."},
+  {kind:"error", diff:2, tag:"Fix the error", ask:"Click the word that <b>should not be there</b>.", words:["Remember", "to", "get", "off", "from", "the", "bus", "at", "the", "cathedral."], bad:4, fixOld:"get off from the bus", fixNew:"get off the bus", w:"get on and get off are followed directly by the vehicle, with no extra preposition: get off the bus, get on the train."},
+  {kind:"error", diff:2, tag:"Fix the error", ask:"Click the <b>particle</b> that is wrong.", words:["On", "the", "way", "home", "we", "stopped", "away", "in", "Madrid."], bad:6, fixOld:"stopped away", fixNew:"stopped over", w:"stop over = break a journey briefly and then continue; away belongs to get away = go on holiday."},
+  {kind:"mc", diff:3, tag:"Register", q:"Formal: “The coach will depart at seven.” Which phrasal verb replaces depart?", o:["set off", "stop over", "check out"], a:0, w:"Register: depart → set off / set out. Phrasal verbs are informal, so academic writing prefers the single verb."},
+  {kind:"mc", diff:3, tag:"stop over or end up?", q:"“We ___ in Doha for one night, then missed our connection and finally ___ in Kuala Lumpur instead of Jakarta.”", o:["stopped over … ended up", "ended up … stopped over"], a:0, w:"stop over = a short, planned break inside a longer journey; end up = where you finally are, often not where you planned."},
+  {kind:"mc", diff:3, tag:"Separability", q:"In which sentence can the object move between the verb and the particle?", o:["The driver dropped off the tourists at the port.","Let’s look around the cathedral.","We got off the train at the last stop."], a:0, w:"drop (sb) off is separable: dropped the tourists off. look around and get off are inseparable, so nothing can come between the two parts."},
+  {kind:"fill", diff:3, tag:"Escape from what?", q:"“They needed to ___ the noise of the city for a weekend.” (3 words)", accept:["get away from"], w:"get away takes no direct object; what you escape from follows from: get away from the city, get away from routine."},
+  {kind:"fill", diff:3, tag:"Leave the hotel", q:"“We have to ___ the hotel before eleven on Sunday.” (3 words)", accept:["check out of"], w:"check out = leave a hotel at the end of your stay; before the place it needs of: check out of the hotel."},
+  {kind:"error", diff:3, tag:"Fix the error", ask:"Click the word that <b>should not be there</b>.", words:["We","ended","up","to","spend","three","nights","in","Doha."], bad:3, fixOld:"ended up to spend", fixNew:"ended up spending", w:"end up is followed by an -ing form, never by to + infinitive: ended up spending three nights, ended up costing more."},
+  {kind:"mc", diff:3, tag:"Meaning trap", q:"“We had nowhere to sleep, so a friend ___ for two nights.”", o:["put us up","put up with us","put up us"], a:0, w:"put (sb) up = give someone a place to stay, and a pronoun object goes in the middle; put up with = tolerate, which makes no sense here."}
 ];
+
+/* Banco ampliado: cada intento toma DRILL_N preguntas nuevas, repartidas
+   ★/★★/★★★. Pon DRILL_N = 0 para que el intento use el banco completo. */
+var DRILL_N = 18;
+function drillShuffle(a){ for(var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=a[i]; a[i]=a[j]; a[j]=t; } return a; }
+function barajaOpciones(lista){
+  // Las claves estaban concentradas en la primera opción: quien tocara siempre la
+  // primera acertaba ~70 % sin leer. Se barajan al sortear y se remapea la clave.
+  var out=[];
+  for(var i=0;i<lista.length;i++){
+    var it=lista[i];
+    if(it.kind!=="mc" || !it.o || it.o.length<2){ out.push(it); continue; }
+    var pares=[];
+    for(var j=0;j<it.o.length;j++) pares.push({t:it.o[j], ok:(j===it.a)});
+    drillShuffle(pares);
+    var copia={}; for(var k in it){ if(Object.prototype.hasOwnProperty.call(it,k)) copia[k]=it[k]; }
+    copia.o=[]; copia.a=0;
+    for(var m=0;m<pares.length;m++){ copia.o.push(pares[m].t); if(pares[m].ok) copia.a=m; }
+    out.push(copia);
+  }
+  return out;
+}
+function pickRun(){
+  var por={1:[],2:[],3:[]};
+  DRILL.forEach(function(it){ (por[it.diff]||por[1]).push(it); });
+  var todos=drillShuffle(por[1].slice()).concat(drillShuffle(por[2].slice()), drillShuffle(por[3].slice()));
+  if(!DRILL_N || DRILL_N>=DRILL.length) return barajaOpciones(todos);
+  var base=Math.floor(DRILL_N/3), sobra=DRILL_N-base*3, out=[];
+  [1,2,3].forEach(function(d,i){
+    var n=base+(i<sobra?1:0), pool=drillShuffle(por[d].slice());
+    out=out.concat(pool.slice(0, Math.min(n, pool.length)));
+  });
+  // si algún nivel tenía menos de los que tocaban, se completa con lo que quede
+  if(out.length<DRILL_N){
+    var resto=todos.filter(function(it){ return out.indexOf(it)<0; });
+    out=out.concat(resto.slice(0, DRILL_N-out.length));
+  }
+  return barajaOpciones(out);
+}
+var RUN = pickRun();
 var di=0, dscore=0, dstreak=0, ddone=false;
 function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
 function renderDrill(){
   var body=$("drillBody");
-  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dFill").style.width=(di/RUN.length*100)+"%";
   $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
-  if(di>=DRILL.length){
+  if(di>=RUN.length){
     var best=+(load("i6_s5_drill_best")||0); if(dscore>best){ store("i6_s5_drill_best", dscore); best=dscore; }
-    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
-    var msg=dscore>=11?"Particles mastered. Ready for the ★★★ homework." : dscore>=8?"Good work — review the separable / pronoun card and go again." : "Re-read Structure 5, use Explore and Build, then come back.";
-    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    var medal=dscore>=Math.ceil(RUN.length*0.85)?"🥇":dscore>=Math.ceil(RUN.length*0.6)?"🥈":"🔁";
+    var msg=dscore>=Math.ceil(RUN.length*0.85)?"Particles mastered. Ready for the ★★★ homework." : dscore>=Math.ceil(RUN.length*0.6)?"Good work — review the separable / pronoun card and go again." : "Re-read Structure 5, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+RUN.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+RUN.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
     $("dFill").style.width="100%";
-    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    $("dRetry").addEventListener("click", function(){ RUN=pickRun(); di=0; dscore=0; dstreak=0; renderDrill(); });
     return;
   }
-  var it=DRILL[di]; ddone=false;
-  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var it=RUN[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+RUN.length+'</span></div>'+(it.q||"")+"</div>";
   var bodyHtml="";
   if(it.kind==="mc"){
     bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
   } else if(it.kind==="error"){
-    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+RUN.length+'</span></div>'+(it.ask||"Click the word that is wrong.")+"</div>";
     bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
   } else {
     bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';

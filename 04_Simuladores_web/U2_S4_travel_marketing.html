@@ -229,7 +229,7 @@
         <ul>
           <li><b>Explore</b> is Structure 4 in four objects: the two word lists of the manual as a searchable bank with meanings, examples and the register note (<i>rough it, red-eye, couchsurf</i> informal, <i>promo</i> informal); an ad decoder built on the persuasion techniques the unit identifies (magic words, fact-shaped numbers, scarcity, inviting imperatives, superlatives, evaluative adjectives); a tap-to-match collocation board; the special-cases card and the manual's pitfall list.</li>
           <li><b>Build</b> is productive: students <i>assemble</i> the expression a situation needs (manual exercise A and the definitions of the marketing list), then <i>transform</i> — replacing underlined words with a travel expression and completing the marketing report cloze, with validation.</li>
-          <li><b>Drill</b> merges the quizzes into one graded engine (★ meaning and odd one out · ★★ fix the fixed phrase, complete the term · ★★★ two-word terms, <i>propaganda</i>, persuasion techniques) with a score and streak.</li>
+          <li><b>Drill</b> merges the quizzes into one graded engine of 37 items (★ meaning and odd one out · ★★ fix the fixed phrase, complete the term, register · ★★★ two-word terms, <i>propaganda</i>, persuasion techniques), with a score and a streak. Each attempt draws 18 items, six per level, so the bank outlasts several runs. A few items reach forward to the travel phrasal verbs of Structure 5 (<i>check out, get on/off, set off, pick up</i>): they share the unit's vocabulary, and the Particle Machine page drills them in full.</li>
           <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
         </ul>
       </div>
@@ -266,6 +266,7 @@
     <div class="card">
       <span class="boxtag tag-navy">🎯 Graded practice</span>
       <h2>Drill — one flow, three levels</h2>
+      <p class="muted" style="margin:-4px 0 10px; font-size:13px">Bank of 37 questions — each attempt draws 18 new ones. <i>(Cada intento saca preguntas distintas: repítelo.)</i></p>
       <p class="muted">★ meaning &amp; odd one out · ★★ fix the fixed phrase &amp; complete the term · ★★★ two-word terms &amp; persuasion techniques.
         Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
       <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
@@ -322,12 +323,12 @@ var BANK = {
   ]},
   market:{label:"📣 Marketing language", items:[
     {h:"marketing strategy", k:"strategy", m:"long-term plan for selling a product", ex:"Our new marketing strategy for the coastal region rests on one USP.", r:"business"},
-    {h:"boost sales", k:"boost", m:"increase purchases", ex:"We expect these actions to boost bookings by 18 % in the first year.", r:"business"},
+    {h:"boost sales", k:"boost", m:"make sales rise (boost takes no particle)", ex:"We expect these actions to boost bookings by 18 % in the first year.", r:"business"},
     {h:"celebrity endorsement", k:"endorsement", m:"a famous person promoting a product", ex:"…and a celebrity endorsement from a well-known athlete.", r:"business"},
     {h:"product placement", k:"placement", m:"showing a product inside a movie or show", ex:"…supported by product placement in a popular travel series.", r:"business"},
-    {h:"promo", k:"promo", m:"something that advertises", ex:"A short promo video will run on three streaming platforms.", r:"informal"},
+    {h:"promo", k:"promo", m:"a short advertisement (video, clip or offer)", ex:"A short promo video will run on three streaming platforms.", r:"informal"},
     {h:"USP (unique selling point)", k:"USP", m:"what makes a product special", ex:"One USP: travelers can swim with whale sharks twenty minutes from their hotel.", r:"business"},
-    {h:"end-user", k:"end-user", m:"the person who finally uses the product", ex:"Our forecast depends on reviews from early end-users.", r:"business"},
+    {h:"end-user", k:"end-user", m:"the person who finally uses the product", ex:"The agency books the tour, but the traveler is the end-user.", r:"business"},
     {h:"forecast", k:"forecast", m:"a statement about the likely future", ex:"Our forecast for year two depends on reviews.", r:"business"},
     {h:"target audience", k:"audience", m:"the group an ad is designed for", ex:"The target audience is adults aged 25–40 who post their trips online.", r:"business"},
     {h:"word of mouth", k:"mouth", m:"recommendations between real people", ex:"In tourism nothing persuades like word of mouth.", r:"business"}
@@ -376,7 +377,7 @@ var ADS = [
   {t:'<span class="hl">Escape</span> to a world of calm.', a:"imp", lit:"An order: leave the place where you are.", sug:"We are inviting you — and your routine is worth escaping.", note:"Ads give orders that feel like invitations: <i>discover, escape, wake up, live</i>. The verb comes first, with no subject."},
   {t:'The <span class="hl">most spectacular</span> sunsets on the coast.', a:"sup", lit:"These sunsets are ranked first among all of them.", sug:"Somebody compared and measured them.", note:"Superlatives signal opinion, not fact. Nothing here was measured, and no competitor was named."},
   {t:'<span class="hl">Sun-drenched</span> terraces and mouth-watering food.', a:"emo", lit:"Terraces that get a lot of sun.", sug:"Warmth, light and the better version of yourself.", note:"Evaluative adjectives (<i>sun-drenched, mouth-watering, magical</i>) carry judgment, not data — and they are compound adjectives, from Structure 3."},
-  {t:'<span class="hl">14 people are looking at this hotel right now.</span>', a:"scar", lit:"A counter on the booking page.", sug:"There is competition — book before they do.", note:"Booking platforms display these messages because they work: pressure beats care."}
+  {t:'<span class="hl">Other travelers are looking at this hotel right now.</span>', a:"scar", lit:"Somebody else has the same page open.", sug:"There is competition — book before they do.", note:"Booking platforms display these messages because they work: pressure beats care. Notice that no number is given, so nothing here can be checked."}
 ];
 var ai=0, aDone=false, aScore=0;
 TECH.forEach(function(t){
@@ -463,7 +464,7 @@ newMatch();
    EXPLORE 4 · special cases + common errors
 ===================================================================== */
 var SC = {
-  register:'<b>Three of these are informal.</b> <i>rough it</i>, <i>a red-eye</i> and <i>couchsurf</i> (and <i>promo</i>) are perfect for a blog or a conversation, but too casual for a formal report. In a report write <i>basic accommodation</i>, <i>an overnight flight</i>, <i>stay with local hosts</i>, <i>promotional video</i>.',
+  register:'<b>Four items in this deck are informal.</b> <i>rough it</i>, <i>a red-eye</i>, <i>couchsurf</i> and <i>promo</i> are perfect for a blog or a conversation, but too casual for a formal report. In a report write <i>basic accommodation</i>, <i>an overnight flight</i>, <i>stay with local hosts</i>, <i>promotional video</i>.',
   glamping:'<b>Cheap and basic vs. luxury.</b> <i>rough it</i>, <i>travel on a shoestring</i> and <i>couchsurf</i> all describe travelling with little money or comfort. <i>Go glamping</i> is the odd one out: glamping = “glamorous camping”, camping <b>with</b> luxury — a real bed, hot water, and a price to match.',
   propaganda:'<b>False friend.</b> Spanish <i>propaganda</i> ≠ English <i>propaganda</i>. In English, <b>propaganda</b> means political manipulation. For products and services, say <b>advertising</b> (or <i>an advertisement</i>, <i>a commercial</i>, <i>a promo</i>). <span class="es">(✘ the propaganda of the hotel → ✔ the hotel’s advertising.)</span>',
   forecast:'<b>Predicting vs. advertising.</b> A <b>forecast</b> is a statement about the likely future (sales, weather, bookings). A <b>promo</b>, an <b>advertisement</b> and a <b>commercial</b> all advertise. They are not interchangeable: <i>Our forecast for year two</i> ≠ <i>Our promo for year two</i>.',
@@ -567,45 +568,109 @@ $("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderT
 renderTrans();
 
 /* =====================================================================
-   DRILL · one graded flow (13 items · 5★ / 4★★ / 4★★★)
+   DRILL · one graded flow (37 items · 13★ / 12★★ / 12★★★; cada intento saca DRILL_N)
 ===================================================================== */
 var DRILL = [
   {kind:"mc", diff:1, tag:"What does it mean?", q:"“Backpackers can cross Asia on a shoestring.” <i>On a shoestring</i> means…", o:["with very little money", "with very little luggage", "with a late-night flight"], a:0, w:"travel on a shoestring = travel with very little money. (Little luggage is travel light.)"},
-  {kind:"mc", diff:1, tag:"Odd one out", q:"Which one is NOT a travel expression?", o:["jet off", "boost sales", "couchsurf"], a:1, w:"boost sales is marketing language: it means increase purchases."},
+  {kind:"mc", diff:1, tag:"Odd one out", q:"Which one is NOT a travel expression?", o:["jet off", "boost sales", "couchsurf"], a:1, w:"boost sales is marketing language: it means make sales rise. (The subject is the company selling, not the customer buying.)"},
   {kind:"fill", diff:1, tag:"Complete", q:"“Pack one backpack only — we travel ___ in this family.” (one word)", accept:["light"], w:"travel light = travel with little luggage."},
-  {kind:"fill", diff:1, tag:"Complete", q:"“We ___ a red-eye and landed at 5 a.m., half asleep.” The manual fixes one verb to <i>red-eye</i>, and it is not <i>take</i>. (one word, past tense)", accept:["caught"], w:"catch a red-eye = take a late-night flight. The fixed-forms card lists <b>catch</b> a red-eye."},
-  {kind:"error", diff:1, tag:"Fix the error", words:["We","took","the","trip","of","a","life."], bad:6, fixOld:"life", fixNew:"lifetime", w:"The fixed phrase is the trip of a lifetime."},
-  {kind:"error", diff:2, tag:"Fix the error", words:["Students","can","cross","Asia","in","a","shoestring."], bad:4, fixOld:"in a shoestring", fixNew:"on a shoestring", w:"The preposition is fixed: travel on a shoestring."},
-  {kind:"error", diff:2, tag:"Fix the error", words:["Let’s","hit","the","route","before","the","traffic","starts."], bad:3, fixOld:"hit the route", fixNew:"hit the road", w:"hit the road = start a journey; route never replaces road here."},
+  {kind:"fill", diff:1, tag:"Complete", q:"“We ___ a red-eye and landed at 5 a.m., half asleep.” Your manual pairs one fixed verb with <i>a red-eye</i>, and it is not <i>take</i>. (one word, past tense)", accept:["caught"], w:"catch a red-eye = take a late-night flight. The fixed-forms card lists <b>catch</b> a red-eye."},
+  {kind:"error", diff:1, tag:"Fix the error", ask:"Click the <b>last noun</b>: it is the word that breaks the fixed phrase.", words:["We","took","the","trip","of","a","life."], bad:6, fixOld:"life", fixNew:"lifetime", w:"The fixed phrase is the trip of a lifetime. The verb (took) and the article (a) are already right; only the noun is wrong."},
+  {kind:"error", diff:2, tag:"Fix the error", ask:"Click the <b>preposition</b> that the expression does not accept.", words:["Students","can","cross","Asia","in","a","shoestring."], bad:4, fixOld:"in a shoestring", fixNew:"on a shoestring", w:"The preposition is fixed: travel on a shoestring."},
+  {kind:"error", diff:2, tag:"Fix the error", ask:"Click the noun that comes right after <b>hit the</b>: it is not the one this expression uses.", words:["Let’s","hit","the","route","before","the","traffic","starts."], bad:3, fixOld:"hit the route", fixNew:"hit the road", w:"hit the road = start a journey; route never replaces road here."},
   {kind:"fill", diff:2, tag:"Complete the term", q:"A famous person promoting a product is a celebrity ___. (one word)", accept:["endorsement"], w:"celebrity endorsement = a famous person promoting a product."},
-  {kind:"mc", diff:2, tag:"Odd one out", q:"Cross out the one that doesn’t belong: <i>rough it · travel on a shoestring · go glamping · couchsurf</i>.", o:["travel on a shoestring", "couchsurf", "go glamping", "rough it"], a:2, w:"Glamping is camping with luxury; the other three are cheap or basic ways to travel."},
+  {kind:"mc", diff:2, tag:"Odd one out", q:"Three of these describe travelling cheaply or without comfort. Which one does <b>not</b> belong?", o:["travel on a shoestring", "couchsurf", "go glamping", "rough it"], a:2, w:"Glamping is camping with luxury; the other three are cheap or basic ways to travel."},
   {kind:"fill", diff:3, tag:"Complete the term", q:"Showing a product inside a movie or a series is called ___. (two words)", accept:["product placement"], w:"product placement = the product appears inside the movie or show."},
-  {kind:"error", diff:3, tag:"Fix the error", words:["The","agency","used","propaganda","to","sell","the","tour."], bad:3, fixOld:"propaganda", fixNew:"advertising", w:"In English propaganda means political manipulation; for products, say advertising."},
+  {kind:"error", diff:3, tag:"Fix the error", ask:"Click the <b>false friend</b> — the word that does not mean in English what it means in Spanish.", words:["The","agency","used","propaganda","to","sell","the","tour."], bad:3, fixOld:"propaganda", fixNew:"advertising", w:"In English propaganda means political manipulation; for products, say advertising."},
   {kind:"mc", diff:3, tag:"Decode the ad", q:"“Only 2 rooms left — offer ends tonight.” Which technique is the ad using?", o:["scarcity pressure", "product placement", "celebrity endorsement"], a:0, w:"Scarcity pressure: a decision made under pressure is rarely a careful one."},
-  {kind:"mc", diff:3, tag:"Which term?", q:"Travelers post photos of their trip and their friends book the same tour. That is…", o:["a promo","word of mouth","a forecast"], a:1, w:"word of mouth = recommendations between real people, and it costs nothing."}
+  {kind:"mc", diff:3, tag:"Which term?", q:"Travelers post photos of their trip and their friends book the same tour. That is…", o:["a promo","word of mouth","a forecast"], a:1, w:"word of mouth = recommendations between real people, and it costs nothing."},
+  {kind:"mc", diff:1, tag:"Meaning", q:"“Guests must check out before 11 a.m.” <i>Check out</i> means…", o:["leave the hotel", "register at the hotel", "explore the town"], a:0, w:"check out = leave the hotel at the end of your stay. Its opposite is check in = register when you arrive; the particle carries the whole meaning."},
+  {kind:"mc", diff:1, tag:"Which particle?", q:"“We ___ the train at the last stop and walked to the hostel.”", o:["got off", "got on", "got away"], a:0, w:"get off = leave a bus, train or plane; get on = board it. Both are inseparable: get off the train, never get the train off."},
+  {kind:"mc", diff:1, tag:"Which phrasal verb?", q:"“The shuttle will ___ at the hotel and take us to the airport.”", o:["pick us up", "drop us off", "see us off"], a:0, w:"pick (sb) up = collect someone; drop (sb) off = leave someone somewhere. The shuttle collects us first, so it picks us up."},
+  {kind:"mc", diff:1, tag:"Odd one out", q:"Which one is NOT a phrasal verb?", o:["travel light", "set off", "check in"], a:0, w:"A phrasal verb is verb + particle: set off, check in. <i>Travel light</i> is a fixed expression — light is not a particle, and the form never becomes travel lightly."},
+  {kind:"fill", diff:1, tag:"Complete", q:"“After six months of work we need a weekend to ___ .” (escape for a holiday — 2 words)", accept:["get away"], w:"get away = escape for a holiday. To escape your routine completely the manual adds three more words: get away from it all."},
+  {kind:"fill", diff:1, tag:"Complete", q:"“No hot water and a tent on the sand — we ___ it for a week.” (live without comforts — one word, past)", accept:["roughed"], w:"rough it = live without comforts. The <i>it</i> is obligatory and never changes. It is informal: fine in a blog, too casual for a report."},
+  {kind:"error", diff:1, tag:"Fix the error", ask:"Click the <b>particle</b> that is in the wrong place.", words:["Get", "the", "bus", "on", "at", "the", "main", "square."], bad:3, fixOld:"get the bus on", fixNew:"get on the bus", w:"get on is inseparable: the object always follows the particle — get on the bus, get off the train. Nothing can split these two verbs."},
+  {kind:"error", diff:1, tag:"Fix the error", ask:"Click the <b>particle</b> that gives the wrong meaning.", words:["We", "checked", "off", "at", "11", "a.m.", "and", "took", "a", "taxi."], bad:2, fixOld:"checked off", fixNew:"checked out", w:"check out = leave the hotel; check in = register when you arrive. Changing the particle changes the verb, and checked off is not a travel verb."},
+  {kind:"mc", diff:2, tag:"Particle family", q:"Which particle completes all three travel verbs? “set ___ · take ___ · drop (sb) ___”", o:["off", "up", "around"], a:0, w:"In these travel verbs <i>off</i> marks leaving: a journey starts (set off), a plane leaves the ground (take off), a passenger is left somewhere (drop sb off)."},
+  {kind:"mc", diff:2, tag:"Which term?", q:"“We expect bookings to rise 12 % next year.” In a marketing report, that sentence is…", o:["a forecast", "a promo", "a USP"], a:0, w:"A forecast is a statement about the likely future. A promo advertises and a USP is what makes the product special — neither of them predicts anything."},
+  {kind:"mc", diff:2, tag:"Register", q:"Three of these are too casual for a formal report. Which one is fine in a report?", o:["explore the globe", "rough it", "catch a red-eye", "couchsurf"], a:0, w:"rough it, catch a red-eye and couchsurf are informal — good for a blog or a conversation. Explore the globe is neutral, so it also works in a report."},
+  {kind:"mc", diff:2, tag:"Which phrasal verb?", q:"“We planned to sleep in the capital, but the last bus left and we ___ in a village nearby.”", o:["ended up", "checked out", "set off"], a:0, w:"end up = finally arrive or become, normally as an unplanned result. The plan failed, so they ended up somewhere they had not chosen."},
+  {kind:"fill", diff:2, tag:"Fixed form", q:"“Two weeks with no phone and no email — they just wanted to get away from ___ .” (2 words)", accept:["it all"], w:"The fixed expression is get away from it all = escape your routine completely. Get away on its own only means escape for a holiday."},
+  {kind:"fill", diff:2, tag:"Pronoun placement", q:"“Our cousins came to the airport to ___ before the flight.” (say goodbye to us — 3 words)", accept:["see us off"], w:"see (sb) off = say goodbye at the station or the airport. It is separable, and a pronoun object must sit in the middle: see us off, never see off us."},
+  {kind:"error", diff:2, tag:"Fix the error", ask:"Click the <b>extra word</b> — the one that should not be there at all.", words:["These", "actions", "will", "boost", "up", "our", "sales", "this", "summer."], bad:4, fixOld:"boost up our sales", fixNew:"boost our sales", w:"boost is not a phrasal verb and takes no particle: boost sales, boost bookings. The verb alone already means increase."},
+  {kind:"error", diff:2, tag:"Fix the error", ask:"Click the <b>particle</b> that belongs to another expression.", words:["They", "jetted", "away", "to", "the", "islands", "for", "a", "week."], bad:2, fixOld:"jetted away", fixNew:"jetted off", w:"The expression is jet off = fly somewhere quickly. Away belongs to get away; each expression keeps its own particle."},
+  {kind:"mc", diff:3, tag:"Register", q:"All three sentences are correct English. Which one is the <b>most formal</b> — the one a written tourism report would use?", o:["The group departed at dawn.","The group set off at dawn.","The group hit the road at dawn."], a:0, w:"Most formal → least formal: departed (one precise verb, standard in a written report) · set off (neutral phrasal verb, fine in a blog or an email) · hit the road (informal idiom). All three are correct English; only the register changes."},
+  {kind:"mc", diff:3, tag:"Which term?", q:"The advertising is aimed at travel agencies, but the tour guides are the people who finally use the app. The guides are the…", o:["end-users", "target audience", "word of mouth"], a:0, w:"end-user = the person who finally uses the product; target audience = the group the advertising is designed for. Here the advertising targets the agencies, so the guides are the end-users."},
+  {kind:"mc", diff:3, tag:"Separable or not?", q:"“Take off” has two meanings. Which sentence uses the separable one?", o:["Take your boots off before you enter the tent.", "The plane took off in heavy rain.", "Bookings really took off after the promo."], a:0, w:"take off = remove clothes is separable, so the object can sit in the middle: take your boots off / take off your boots. The other two meanings — a plane leaving the ground and sales rising suddenly — have no object at all, so nothing can be separated."},
+  {kind:"mc", diff:3, tag:"Register", q:"A student report says: “We couchsurfed for five nights.” Which rewrite fits a formal report?", o:["We stayed with local hosts for five nights.", "We slept on sofas for five nights.", "We roughed it for five nights."], a:0, w:"couchsurf is informal, and so is rough it. The formal equivalent is stay with local hosts; sleeping on sofas describes the furniture, not the arrangement."},
+  {kind:"fill", diff:3, tag:"Pronoun placement", q:"“Your boots are covered in mud — please ___ before you come in.” (remove your boots — object: them — 3 words)", accept:["take them off"], w:"take off (clothes) is separable, and a pronoun object must go between the verb and the particle: take them off, never take off them."},
+  {kind:"fill", diff:3, tag:"Complete the term", q:"“Only this tour sleeps inside the canyon — that is our USP.” Write the three words USP stands for. (3 words)", accept:["unique selling point", "unique selling proposition"], w:"USP = unique selling point in your manual (unique selling proposition is the other standard expansion): what makes a product special. Write the full term the first time, then use the acronym."},
+  {kind:"error", diff:3, tag:"Fix the error", ask:"Click the <b>one word too many</b> — a word English does not use in this expression.", words:["Our", "best", "advertising", "is", "the", "word", "of", "mouth."], bad:4, fixOld:"the word of mouth", fixNew:"word of mouth", w:"word of mouth takes no article in English: our best advertising is word of mouth. Spanish adds the article here; English does not."},
+  {kind:"error", diff:3, tag:"Fix the error", ask:"Click the <b>second particle</b>: one of the two verbs has the wrong one.", words:["We", "got", "on", "the", "train", "and", "got", "down", "at", "the", "port."], bad:7, fixOld:"got down", fixNew:"got off", w:"Spanish <i>bajarse</i> becomes get off, not get down: you get on the train and you get off the train. The pair is get on / get off."}
 ];
+
+/* Banco ampliado: cada intento toma DRILL_N preguntas nuevas, repartidas
+   ★/★★/★★★. Pon DRILL_N = 0 para que el intento use el banco completo. */
+var DRILL_N = 18;
+function drillShuffle(a){ for(var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=a[i]; a[i]=a[j]; a[j]=t; } return a; }
+function barajaOpciones(lista){
+  // Las claves estaban concentradas en la primera opción: quien tocara siempre la
+  // primera acertaba ~70 % sin leer. Se barajan al sortear y se remapea la clave.
+  var out=[];
+  for(var i=0;i<lista.length;i++){
+    var it=lista[i];
+    if(it.kind!=="mc" || !it.o || it.o.length<2){ out.push(it); continue; }
+    var pares=[];
+    for(var j=0;j<it.o.length;j++) pares.push({t:it.o[j], ok:(j===it.a)});
+    drillShuffle(pares);
+    var copia={}; for(var k in it){ if(Object.prototype.hasOwnProperty.call(it,k)) copia[k]=it[k]; }
+    copia.o=[]; copia.a=0;
+    for(var m=0;m<pares.length;m++){ copia.o.push(pares[m].t); if(pares[m].ok) copia.a=m; }
+    out.push(copia);
+  }
+  return out;
+}
+function pickRun(){
+  var por={1:[],2:[],3:[]};
+  DRILL.forEach(function(it){ (por[it.diff]||por[1]).push(it); });
+  var todos=drillShuffle(por[1].slice()).concat(drillShuffle(por[2].slice()), drillShuffle(por[3].slice()));
+  if(!DRILL_N || DRILL_N>=DRILL.length) return barajaOpciones(todos);
+  var base=Math.floor(DRILL_N/3), sobra=DRILL_N-base*3, out=[];
+  [1,2,3].forEach(function(d,i){
+    var n=base+(i<sobra?1:0), pool=drillShuffle(por[d].slice());
+    out=out.concat(pool.slice(0, Math.min(n, pool.length)));
+  });
+  // si algún nivel tenía menos de los que tocaban, se completa con lo que quede
+  if(out.length<DRILL_N){
+    var resto=todos.filter(function(it){ return out.indexOf(it)<0; });
+    out=out.concat(resto.slice(0, DRILL_N-out.length));
+  }
+  return barajaOpciones(out);
+}
+var RUN = pickRun();
 var di=0, dscore=0, dstreak=0, ddone=false;
 function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
 function renderDrill(){
   var body=$("drillBody");
-  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dFill").style.width=(di/RUN.length*100)+"%";
   $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
-  if(di>=DRILL.length){
+  if(di>=RUN.length){
     var best=+(load("i6_s4_drill_best")||0); if(dscore>best){ store("i6_s4_drill_best", dscore); best=dscore; }
-    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
-    var msg=dscore>=11?"You read ads like a scientist. Ready for the ★★★ homework." : dscore>=8?"Solid — review the special-cases card and the errors list, then go again." : "Re-read Structure 4, use Explore and Build, then come back.";
-    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    var medal=dscore>=Math.ceil(RUN.length*0.85)?"🥇":dscore>=Math.ceil(RUN.length*0.6)?"🥈":"🔁";
+    var msg=dscore>=Math.ceil(RUN.length*0.85)?"You read ads like a scientist. Ready for the ★★★ homework." : dscore>=Math.ceil(RUN.length*0.6)?"Solid — review the special-cases card and the errors list, then go again." : "Re-read Structure 4, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+RUN.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+RUN.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
     $("dFill").style.width="100%";
-    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    $("dRetry").addEventListener("click", function(){ RUN=pickRun(); di=0; dscore=0; dstreak=0; renderDrill(); });
     return;
   }
-  var it=DRILL[di]; ddone=false;
-  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var it=RUN[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+RUN.length+'</span></div>'+(it.q||"")+"</div>";
   var bodyHtml="";
   if(it.kind==="mc"){
     bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
   } else if(it.kind==="error"){
-    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+RUN.length+'</span></div>'+(it.ask||"Click the word that is wrong.")+"</div>";
     bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
   } else {
     bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
