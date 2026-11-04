@@ -1,7 +1,7 @@
 # Inglés 6 · Material de práctica (B1+)
 
-Ejercicios de práctica de **Inglés 6** (nivel B1+): un simulacro tipo SELLI, la
-**práctica del segundo parcial** tipo TOEFL, el
+Ejercicios de práctica de **Inglés 6** (nivel B1+): un simulacro tipo SELLI, dos
+**prácticas del segundo parcial** (tipo TOEFL y formato de examen), el
 **SELLI Gym** de comprensión auditiva, el **Listening Lab** con los episodios de *In the Lab FM* y
 veintisiete **páginas web interactivas**, una por tema del manual. Todo es material original de práctica; **no incluye
 exámenes ni claves de respuesta** (las claves se revisan en clase).
@@ -11,7 +11,7 @@ exámenes ni claves de respuesta** (las claves se revisan en clase).
 ## Cómo descargar
 
 - **Sitio web (recomendado):** <https://lara-montano.github.io/ingles-6-practica/> abre los simuladores con un clic y reproduce los audios sin descargar nada.
-- **Todo de una vez:** botón verde **Code → Download ZIP** (≈ 52 MB) y descomprime.
+- **Todo de una vez:** botón verde **Code → Download ZIP** (≈ 54 MB) y descomprime.
 - **Un archivo suelto:** entra a la carpeta, abre el archivo y usa el botón de descarga
   (*Download raw file*). Los audios son `.m4a`: se reproducen en cualquier teléfono o computadora.
 
@@ -21,6 +21,7 @@ exámenes ni claves de respuesta** (las claves se revisan en clase).
 |---|---|---|
 | `01_SELLI_Mock_U1-U2/` | **Simulacro tipo SELLI** de las Units 1–2: 70 reactivos, 75 min (Listening 16 · Structure 20 · Vocabulary 14 · Reading 20). Cuadernillo de 10 págs. + audio de 10:30. | Reproduce el audio **una sola vez y sin pausar**: trae las instrucciones, el ejemplo y los 12 s de respuesta de cada reactivo. Después resuelve las Partes II–IV en unos 60 min. Al final llena la hoja de perfil: lo que importa es qué fila salió baja. |
 | `05_Practica_2P/` | **Práctica del segundo parcial** tipo TOEFL (Units 3–5 del manual): 70 reactivos, 75 min, mismo formato que el examen con otras preguntas. Cuadernillo de 10 págs. con hoja de respuestas y perfil, versión para pantalla, hoja suelta y audio de 11:20. | Hazla de corrido con el audio, que se reproduce **una sola vez y sin pausar**. Contesta en la hoja y luego llena el perfil. La clave comentada la comparte tu profesor. |
+| `06_Practica_2P_Tradicional/` | **Práctica del segundo parcial en formato de examen**: la misma estructura que el examen (15 ejercicios de 5 puntos: listening, vocabulario, gramática y lectura), con otras preguntas. Examen de 4 págs. + audio de 6:40. | Contesta en la misma hoja. El audio de los ejercicios 1 y 2 se reproduce **una sola vez**. Calificación de referencia: total ÷ 7.5. La clave comentada la comparte tu profesor. |
 | `02_SELLI_Gym/` | **20 sesiones de listening** en formato SELLI/ITP: 8 reactivos cada una, 160 en total. Cuadernillo de 21 págs. + un audio por sesión (3–6 min). | Una sesión por día. Lee las cuatro opciones **antes** de darle *play*; el audio corre solo (numera, habla, pregunta y deja los segundos de respuesta). Sesiones 1–3 se oyen dos veces; de la 4 en adelante, una sola. |
 | `03_Listening_Lab/` | **Fichas de listening** de las 5 unidades (8 págs.), **cuestionarios** de los episodios (11 págs.), los **6 episodios** de *In the Lab FM*, sus **transcripts** y una **lectura del manual leída en voz alta** (*Four Trips That Went Sideways*, 2:53). | Cada episodio se escucha **dos veces**: primero por la idea general, luego con la tarea de la ficha. El transcript se abre **después** de la segunda escucha. |
 | `04_Simuladores_web/` | **27 páginas interactivas**, el curso completo: **Grammar 1–14** y **Structure 1–13**. Gramática: condicionales, wish / would rather, conectores condicionales, voz pasiva, modales de deducción en pasado, verbo + objeto + infinitivo, reported speech, relative clauses, noun clauses, future forms, gerundio tras preposición, future passive, future in the past y future progressive. Vocabulario y formación de palabras: colocaciones de adverbio + adjetivo, palabras científicas, adjetivos compuestos, lenguaje de viaje y marketing, phrasal verbs de viaje y de tareas, verbos de tres piezas, sufijos que forman verbos, noun modifiers, ropa y tendencias, cómo se forman las palabras nuevas, metas y motivación, y prefijos. | Descarga el `.html` y ábrelo con doble clic: funciona **sin internet**, en computadora o celular. Tres modos: *Explore* (ver la regla en acción) → *Build* (armar oraciones) → *Drill* (práctica graduada con marcador). |
